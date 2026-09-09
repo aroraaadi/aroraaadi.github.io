@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model — Quant Portfolio</title>
+<meta name="description" content="Editable three-statement model and DCF for any ticker.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Model — Quant Portfolio">
+<meta property="og:description" content="Editable three-statement model and DCF for any ticker.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Model</h1>
+  <p class="sub">Three years of reported history, street consensus carried forward, and every other
+     line driven by an assumption you can override. Statements are linked; the balance sheet ties.</p>
+
+  <div id="content">
+    <div class="panel">
+      <div class="panel-b">
+        <div class="controls">
+          <input class="input" id="ticker" type="search" placeholder="Ticker (e.g. MSFT)"
+                 aria-label="Ticker" autocomplete="off" spellcheck="false" style="width:160px">
+          <button class="pill on" id="load" type="button">Load</button>
+          <span class="clabel">Interest</span>
+          <div class="seg" id="interest-mode" role="group" aria-label="Interest basis">
+            <button data-v="avg" class="active">Average balance</button>
+            <button data-v="open">Opening balance</button>
+          </div>
+          <span class="spacer"></span>
+          <button class="pill" id="reset" type="button">Reset overrides</button>
+          <button class="pill" id="export" type="button">Export</button>
+          <label class="pill" style="cursor:pointer">Import<input type="file" id="import" accept="application/json" hidden></label>
+          <button class="pill" id="keybtn" type="button">API key</button>
+        </div>
+        <p class="note" id="status">Enter a ticker to begin. The 24 portfolio and watchlist names load
+           without a key; anything else needs your own FMP key.</p>
+      </div>
+    </div>
+
+    <div id="model" hidden>
+      <div id="summary" class="strip"></div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Drivers</h2><span class="spacer"></span>
+          <span class="note">Editable. Double-click or press Enter on a cell; Delete resets it.</span></div>
+        <div class="panel-b flush"><div class="tbl-wrap" id="g-drivers"></div></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Income statement</h2></div>
+        <div class="panel-b flush"><div class="tbl-wrap" id="g-income"></div></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Cash flow</h2></div>
+        <div class="panel-b flush"><div class="tbl-wrap" id="g-cash"></div></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Balance sheet</h2><span class="spacer"></span>
+          <span class="note" id="balance-check"></span></div>
+        <div class="panel-b flush"><div class="tbl-wrap" id="g-balance"></div></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Discounted cash flow</h2><span class="spacer"></span>
+          <span class="note" id="dcf-verify"></span></div>
+        <div class="panel-b">
+          <div class="controls" id="dcf-controls"></div>
+          <div id="dcf-out" class="strip" style="margin-top:12px"></div>
+          <div class="grid-2" style="margin-top:16px">
+            <div><h2>Cash flows</h2><div class="tbl-wrap" id="g-dcf"></div></div>
+            <div><h2>Sensitivity — value per share</h2><div class="tbl-wrap" id="g-sens"></div></div>
+          </div>
+          <p class="note" id="dcf-note"></p>
+        </div>
+      </div>
+      <div class="panel" id="thesis-panel" hidden>
+        <div class="panel-h"><h2>Rationale</h2><span class="spacer"></span>
+          <span class="note">Starting assumptions, not recommendations — every value above is editable.</span></div>
+        <div class="panel-b"><div class="prose" id="thesis"></div></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-h"><h2>Notes</h2><span class="spacer"></span>
+          <span class="note" id="notes-state">Saved in this browser, per ticker.</span></div>
+        <div class="panel-b">
+          <textarea id="notes" class="input" rows="7" style="width:100%;resize:vertical"
+            aria-label="Your notes on this model"
+            placeholder="Your reasoning: what you disagree with above, what would change your mind, what to check next time."></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Projections are assumptions, not forecasts;
+  street figures are consensus estimates and carry no guarantee.</footer>
+
+<script type="module" src="../js/model.js"></script>
+</body>
+</html>

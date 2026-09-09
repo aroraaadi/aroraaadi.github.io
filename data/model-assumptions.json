@@ -1,0 +1,444 @@
+{
+ "as_of": "2026-09-08",
+ "source": "Curated starting assumptions for the watchlist",
+ "note": "These are considered STARTING assumptions with written reasoning, not recommendations and not forecasts. They exist to be argued with: every value is editable and 'Reset overrides' returns to raw street consensus. Where they differ from consensus the reason is stated, because a model that silently disagrees with the street is worse than one that agrees.",
+ "house_view": {
+  "terminal_growth": "FMP defaults terminal growth to 4% (6% for MU). Nominal long-run GDP is nearer 4% and no company grows faster than the economy in perpetuity, so a terminal g at or above it capitalises an impossibility. These use 2.0-3.0%, scaled to franchise durability.",
+  "equity_risk_premium": "4.5% throughout, close to current implied ERP. FMP's 4.72% is defensible; this is marginally more conservative.",
+  "risk_free": "Live 10-year Treasury from FMP's treasury-rates endpoint, currently ~4.78%.",
+  "cyclicals": "Semiconductor and memory margins are normalised toward mid-cycle rather than extrapolated from the current point in the cycle. Discounting peak margins to perpetuity is the standard way to lose money in semis.",
+  "fade": "Growth fades toward terminal over the forecast rather than stepping down at the terminal year. A DCF whose terminal year is also its peak year embeds a discontinuity.",
+  "read_it_this_way": "Every name here prices above the model, so read the market-implied terminal growth rather than the downside percentage \u2014 a model that says the whole market is wrong is usually the thing that is wrong. Implied g at current prices: NEE 3.9%, COST 7.0%, APH 7.1%, NVDA 10.5%, AMD 13.7%, MU 14.1%, against 2.5-3.0% assumed here. Only NEE's is defensible as perpetuity growth. Above roughly 4% nominal GDP the price is not being set by a perpetuity DCF at all \u2014 it embeds a longer explicit forecast, cycle earnings, or option value that this five-year structure cannot represent. That is a statement about the tool's limits as much as about the price.",
+  "what_this_is_not": "Not a recommendation, not a price target, and not a forecast. A five-year DCF with 64-85% of value in the terminal is mostly an opinion about the terminal, expressed with false precision. The useful output is the disagreement it exposes, not the per-share number."
+ },
+ "tickers": {
+  "NVDA": {
+   "thesis": "Extraordinary current economics; the whole valuation question is how fast the margin normalises.",
+   "flags": [
+    "60% operating margin is roughly double any historical semiconductor peak. Faded, not held flat."
+   ],
+   "rationale": [
+    [
+     "Growth",
+     "Revenue grew 126%, 114%, 65% \u2014 decelerating hard even while enormous. Street has 89% then fading to 8%. Accepted broadly, because the order book is real, but the back half is trimmed: the base is now $216bn and compounding off that is arithmetically harder."
+    ],
+    [
+     "Margins",
+     "This is the assumption that matters. A 60% operating margin exists because supply is scarce and competition is absent. Both change: AMD is shipping, hyperscalers are building custom silicon, and memory is now the binding constraint. Faded 60% to 48% over five years \u2014 still exceptional, just not permanent."
+    ],
+    [
+     "Capital",
+     "Fabless, so capex stays ~3% of revenue. The capital intensity sits in the supply chain, not the balance sheet."
+    ],
+    [
+     "Terminal",
+     "3.0%. Accelerated compute is a genuine secular shift, so a premium to GDP is defensible; a durable 60% margin is not, which is why the fade does the work rather than the terminal rate."
+    ]
+   ],
+   "risks": [
+    "Customer concentration \u2014 a handful of hyperscalers are most of revenue.",
+    "Margin mean-reversion is the single largest sensitivity.",
+    "Export controls on the China business."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.89,
+     0.55,
+     0.28,
+     0.14,
+     0.08
+    ],
+    "grossMargin": [
+     0.7,
+     0.675,
+     0.65,
+     0.63,
+     0.61
+    ],
+    "opexPctRevenue": [
+     0.115,
+     0.125,
+     0.135,
+     0.14,
+     0.145
+    ],
+    "capexPctRevenue": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "taxRate": [
+     0.16,
+     0.17,
+     0.17,
+     0.18,
+     0.18
+    ]
+   },
+   "dcf": {
+    "g": 0.03,
+    "marketRiskPremium": 0.045
+   }
+  },
+  "AMD": {
+   "thesis": "Real share gain, but the street's margin step-up is a year early.",
+   "flags": [
+    "Street models a 26.5% EBIT margin against 10.7% actual \u2014 a 16-point jump in one year. Phased over three."
+   ],
+   "rationale": [
+    [
+     "Growth",
+     "34% revenue growth and genuine MI-series traction. Street's 47% then 74% is plausible in direction and aggressive in slope; trimmed to 40% then fading, because AMD is supply-constrained by the same packaging and memory bottlenecks as everyone else."
+    ],
+    [
+     "Margins",
+     "Gross margin ~49.5% is credible and improving with mix. Operating margin is the disagreement: 10.7% today, street at 26.5% next year. Modelled 16% to 22% over five years \u2014 the operating leverage is real, but AMD carries heavier R&D intensity than NVIDIA and discounts to win sockets."
+    ],
+    [
+     "Capital",
+     "Fabless, capex ~3%. Balance sheet is nearly unlevered (D/E 0.07), so the WACC is almost entirely cost of equity \u2014 and with beta 2.48 that is punishing."
+    ],
+    [
+     "Terminal",
+     "3.0%, same secular-compute logic as NVDA."
+    ]
+   ],
+   "risks": [
+    "Beta 2.48 makes the discount rate dominate the answer.",
+    "Competes with a rival earning 60% margins and funding R&D from it.",
+    "Execution risk on rack-scale systems."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.4,
+     0.42,
+     0.3,
+     0.22,
+     0.15
+    ],
+    "grossMargin": [
+     0.505,
+     0.52,
+     0.535,
+     0.545,
+     0.55
+    ],
+    "opexPctRevenue": [
+     0.345,
+     0.335,
+     0.33,
+     0.325,
+     0.33
+    ],
+    "capexPctRevenue": [
+     0.03,
+     0.03,
+     0.032,
+     0.032,
+     0.032
+    ],
+    "taxRate": [
+     0.13,
+     0.15,
+     0.16,
+     0.17,
+     0.18
+    ]
+   },
+   "dcf": {
+    "g": 0.03,
+    "marketRiskPremium": 0.045
+   }
+  },
+  "MU": {
+   "thesis": "Peak-cycle earnings. The street model capitalises the peak; this one does not.",
+   "flags": [
+    "Street shows +246.6% revenue with a 74.7% EBIT margin against 26.4% actual. FMP's own DCF uses a 6% terminal growth rate. Both are rejected here \u2014 this is the largest deviation from consensus on the list, and deliberately so."
+   ],
+   "rationale": [
+    [
+     "The cycle is the whole story",
+     "Operating margin by fiscal year: -37.0%, +5.2%, +26.4%. That is not a trend, it is a cycle. HBM demand is genuinely structural, but memory has repeatedly converted structural demand into oversupply. Modelling the upswing forward to perpetuity is the classic semis error."
+    ],
+    [
+     "Growth",
+     "Near-term strength accepted but heavily trimmed: 90% then fading to mid-single-digit. The street's 247% is a price-driven spike, and price spikes in memory mean-revert."
+    ],
+    [
+     "Margins",
+     "Normalised toward mid-cycle: 45% gross fading to 35%, operating settling near 22% rather than the 74% peak the street implies. Through-cycle, Micron earns a mid-20s operating margin in good years and loses money in bad ones."
+    ],
+    [
+     "Capital",
+     "Capex is 42% of revenue and D&A 22% \u2014 this business consumes cash to stand still. Held high deliberately; a memory model with light capex is not a memory model."
+    ],
+    [
+     "Terminal",
+     "2.5%. A commodity manufacturer with periodic negative earnings does not deserve a growth premium."
+    ]
+   ],
+   "risks": [
+    "If the cycle runs hotter and longer, this model is badly too conservative \u2014 that is the honest failure mode.",
+    "Capital intensity means a downturn hits FCF immediately.",
+    "Beta 2.22 plus cyclicality gives a very high discount rate."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.9,
+     0.25,
+     0.05,
+     -0.05,
+     0.04
+    ],
+    "grossMargin": [
+     0.45,
+     0.42,
+     0.39,
+     0.36,
+     0.35
+    ],
+    "opexPctRevenue": [
+     0.13,
+     0.135,
+     0.14,
+     0.15,
+     0.145
+    ],
+    "capexPctRevenue": [
+     0.38,
+     0.35,
+     0.32,
+     0.3,
+     0.28
+    ],
+    "daPctRevenue": [
+     0.2,
+     0.21,
+     0.22,
+     0.24,
+     0.23
+    ],
+    "taxRate": [
+     0.13,
+     0.15,
+     0.15,
+     0.15,
+     0.15
+    ]
+   },
+   "dcf": {
+    "g": 0.025,
+    "marketRiskPremium": 0.045
+   }
+  },
+  "COST": {
+   "thesis": "One of the best businesses on the list, and the model will almost certainly say it is expensive. Both things are true.",
+   "rationale": [
+    [
+     "Growth",
+     "Remarkably steady: 6.8%, 5.0%, 8.2%. Membership renewal rates and warehouse openings make this among the most predictable revenue lines in retail. Modelled 8% fading to 5.5%."
+    ],
+    [
+     "Margins",
+     "Gross margin is only 12.8% and operating 3.8% \u2014 and that is the point, not a weakness. Costco deliberately runs thin merchandise margins and earns its return on membership fees and turns. ROIC is 19% on those margins. Modelled with slow creep to 4.1%; assuming more would misunderstand the model."
+    ],
+    [
+     "Capital",
+     "Capex ~2% of revenue, low leverage, negative working capital \u2014 it is paid by customers before it pays suppliers. That funds growth internally."
+    ],
+    [
+     "Terminal",
+     "2.5%. Durable franchise, but a retailer cannot outgrow nominal GDP forever."
+    ],
+    [
+     "Expect a low value",
+     "At ~$916 and 40x+ earnings the DCF will likely show meaningful downside. That is the model working, not failing \u2014 quality and price are separate questions and this page only answers the second."
+    ]
+   ],
+   "risks": [
+    "Multiple compression is the dominant risk, not operations.",
+    "Membership fee increases are the main margin lever and they are infrequent."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.085,
+     0.075,
+     0.07,
+     0.065,
+     0.055
+    ],
+    "grossMargin": [
+     0.129,
+     0.13,
+     0.131,
+     0.132,
+     0.133
+    ],
+    "capexPctRevenue": [
+     0.021,
+     0.021,
+     0.021,
+     0.02,
+     0.02
+    ],
+    "taxRate": [
+     0.25,
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ]
+   },
+   "dcf": {
+    "g": 0.025,
+    "marketRiskPremium": 0.045
+   }
+  },
+  "APH": {
+   "thesis": "High-quality serial acquirer; the reported growth rate is not the organic growth rate.",
+   "flags": [
+    "FY25 revenue grew 51.7% and street models +52.7% again. Much of that is acquisition, not organic. Modelled closer to underlying."
+   ],
+   "rationale": [
+    [
+     "Growth",
+     "Growth by year: -0.5%, 21.3%, 51.7%. A company does not organically accelerate from -0.5% to 51.7%; that is M&A plus an AI-datacentre interconnect surge. Modelled 30% then fading to 8%, which credits the current cycle without assuming the acquisition cadence continues indefinitely."
+    ],
+    [
+     "Margins",
+     "Operating margin has expanded 20.7% to 25.9% and held. Amphenol's decentralised operating model genuinely does protect margins through integration. Held near 25.5%."
+    ],
+    [
+     "Capital",
+     "Capex ~4% of revenue. The real capital use is acquisitions, which the model does not project \u2014 so this understates both the cash outflow and the growth it buys. Worth knowing when reading the output."
+    ],
+    [
+     "Terminal",
+     "2.5%."
+    ]
+   ],
+   "risks": [
+    "Roll-up economics depend on continued disciplined pricing on deals.",
+    "Datacentre interconnect demand is correlated with the same AI capex cycle as NVDA and AMD \u2014 less diversification than it appears.",
+    "Model ignores future M&A entirely."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.3,
+     0.16,
+     0.12,
+     0.09,
+     0.08
+    ],
+    "grossMargin": [
+     0.368,
+     0.37,
+     0.372,
+     0.373,
+     0.375
+    ],
+    "capexPctRevenue": [
+     0.043,
+     0.042,
+     0.041,
+     0.04,
+     0.04
+    ],
+    "taxRate": [
+     0.23,
+     0.23,
+     0.23,
+     0.23,
+     0.23
+    ]
+   },
+   "dcf": {
+    "g": 0.025,
+    "marketRiskPremium": 0.045
+   }
+  },
+  "NEE": {
+   "thesis": "Regulated utility with a renewables growth arm \u2014 a bond proxy with a capex problem.",
+   "flags": [
+    "Street models a 45.4% EBIT margin against 30.1% actual. Utility margins are set by regulators and do not jump 15 points; held near reported."
+   ],
+   "rationale": [
+    [
+     "Growth",
+     "Rate-base growth plus renewables development, roughly 7-8% and unusually visible because it is contracted and regulated. Street's 12.6% is at the optimistic end; modelled 8% fading to 6%."
+    ],
+    [
+     "Margins",
+     "Operating margin has been 36.4%, 30.2%, 30.1%. Regulated returns are allowed, not earned at will. Held ~30%, rejecting the street's 45%."
+    ],
+    [
+     "Capital",
+     "Capex is 34% of revenue and D&A 25% \u2014 this is the defining feature. NextEra outspends its operating cash flow and funds the gap with debt and equity issuance, which is why D/E is 1.75. FCF is structurally thin; the DCF will reflect that honestly."
+    ],
+    [
+     "Discount rate",
+     "Beta 0.64 gives a WACC near 7.6% \u2014 the lowest on the list. That is doing a lot of work in the valuation, and it is precisely the number that rises if rates do."
+    ],
+    [
+     "Terminal",
+     "2.5%, consistent with regulated rate-base growth over the long run."
+    ]
+   ],
+   "risks": [
+    "Rate sensitivity cuts both ways: low WACC flatters the value, and a higher-for-longer curve reverses it directly.",
+    "Heavy capex plus 1.75 D/E means financing conditions matter as much as operations.",
+    "Renewables policy and tax-credit regime risk."
+   ],
+   "drivers": {
+    "revenueGrowth": [
+     0.08,
+     0.075,
+     0.07,
+     0.065,
+     0.06
+    ],
+    "grossMargin": [
+     0.625,
+     0.625,
+     0.625,
+     0.625,
+     0.625
+    ],
+    "opexPctRevenue": [
+     0.325,
+     0.325,
+     0.325,
+     0.325,
+     0.325
+    ],
+    "capexPctRevenue": [
+     0.33,
+     0.32,
+     0.31,
+     0.3,
+     0.29
+    ],
+    "daPctRevenue": [
+     0.25,
+     0.25,
+     0.25,
+     0.25,
+     0.25
+    ],
+    "taxRate": [
+     0.1,
+     0.12,
+     0.13,
+     0.14,
+     0.15
+    ]
+   },
+   "dcf": {
+    "g": 0.025,
+    "marketRiskPremium": 0.045
+   }
+  }
+ }
+}

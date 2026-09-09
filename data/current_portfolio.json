@@ -1,0 +1,340 @@
+{
+  "as_of": "2026-09-07",
+  "source": "brokerage account \u2014 allocation only (relative)",
+  "positions": [
+    {
+      "symbol": "SCHG",
+      "usd_symbol": "SCHG",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.1293,
+      "stale_price": false
+    },
+    {
+      "symbol": "ISSXF",
+      "usd_symbol": "XSP.TO",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.0974,
+      "stale_price": true
+    },
+    {
+      "symbol": "GOOG.TO",
+      "usd_symbol": "GOOG",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0839,
+      "stale_price": false
+    },
+    {
+      "symbol": "SHOP",
+      "usd_symbol": "SHOP",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.078,
+      "stale_price": false
+    },
+    {
+      "symbol": "AMZN.TO",
+      "usd_symbol": "AMZN",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0728,
+      "stale_price": false
+    },
+    {
+      "symbol": "IUTSF",
+      "usd_symbol": "XIU.TO",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.064,
+      "stale_price": true
+    },
+    {
+      "symbol": "BE",
+      "usd_symbol": "BE",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0627,
+      "stale_price": false
+    },
+    {
+      "symbol": "GE.TO",
+      "usd_symbol": "GE",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0581,
+      "stale_price": false
+    },
+    {
+      "symbol": "AVGO",
+      "usd_symbol": "AVGO",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0561,
+      "stale_price": false
+    },
+    {
+      "symbol": "META",
+      "usd_symbol": "META",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0475,
+      "stale_price": false
+    },
+    {
+      "symbol": "XNDU",
+      "usd_symbol": "XNDU",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.043,
+      "stale_price": false
+    },
+    {
+      "symbol": "META.TO",
+      "usd_symbol": "META",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0386,
+      "stale_price": false
+    },
+    {
+      "symbol": "MSFT",
+      "usd_symbol": "MSFT",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0385,
+      "stale_price": false
+    },
+    {
+      "symbol": "JPM.TO",
+      "usd_symbol": "JPM",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0358,
+      "stale_price": false
+    },
+    {
+      "symbol": "MDA",
+      "usd_symbol": "MDA",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0274,
+      "stale_price": false
+    },
+    {
+      "symbol": "SPGI.TO",
+      "usd_symbol": "SPGI",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0269,
+      "stale_price": false
+    },
+    {
+      "symbol": "IALT",
+      "usd_symbol": "IALT",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.0225,
+      "stale_price": false
+    },
+    {
+      "symbol": "UBER",
+      "usd_symbol": "UBER",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0176,
+      "stale_price": false
+    }
+  ],
+  "usd_positions": [
+    {
+      "symbol": "SCHG",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.1293,
+      "held_as": [
+        "SCHG"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "XSP.TO",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.0974,
+      "held_as": [
+        "ISSXF"
+      ],
+      "merged": false,
+      "stale_price": true
+    },
+    {
+      "symbol": "META",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0861,
+      "held_as": [
+        "META",
+        "META.TO"
+      ],
+      "merged": true,
+      "stale_price": false
+    },
+    {
+      "symbol": "GOOG",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0839,
+      "held_as": [
+        "GOOG.TO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "SHOP",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.078,
+      "held_as": [
+        "SHOP"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0728,
+      "held_as": [
+        "AMZN.TO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "XIU.TO",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.064,
+      "held_as": [
+        "IUTSF"
+      ],
+      "merged": false,
+      "stale_price": true
+    },
+    {
+      "symbol": "BE",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0627,
+      "held_as": [
+        "BE"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "GE",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0581,
+      "held_as": [
+        "GE.TO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0561,
+      "held_as": [
+        "AVGO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "XNDU",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.043,
+      "held_as": [
+        "XNDU"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0385,
+      "held_as": [
+        "MSFT"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "JPM",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0358,
+      "held_as": [
+        "JPM.TO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "MDA",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0274,
+      "held_as": [
+        "MDA"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "SPGI",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0269,
+      "held_as": [
+        "SPGI.TO"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "IALT",
+      "kind": "etf",
+      "currency": "USD",
+      "weight": 0.0225,
+      "held_as": [
+        "IALT"
+      ],
+      "merged": false,
+      "stale_price": false
+    },
+    {
+      "symbol": "UBER",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0176,
+      "held_as": [
+        "UBER"
+      ],
+      "merged": false,
+      "stale_price": false
+    }
+  ]
+}

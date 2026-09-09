@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Positions — Quant Portfolio</title>
+<meta name="description" content="Every position and its weight in the book.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Positions — Quant Portfolio">
+<meta property="og:description" content="Every position and its weight in the book.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Positions</h1>
+  <p class="sub">Every position by weight, USD-equivalent. CDRs are mapped to their US underlying and duplicate lines merged.</p>
+
+  <div id="content">
+    <div id="stats" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Weight by position</h2></div>
+      <div class="panel-b">
+        <div class="legend" id="weights-legend"></div>
+        <div class="chart" id="weights-box" style="height:420px"><canvas id="weights-chart"></canvas></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/my.js"></script>
+</body>
+</html>

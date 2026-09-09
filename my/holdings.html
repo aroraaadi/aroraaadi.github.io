@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holdings — Quant Portfolio</title>
+<meta name="description" content="Holdings table with weights, currency and pricing status.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Holdings — Quant Portfolio">
+<meta property="og:description" content="Holdings table with weights, currency and pricing status.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Holdings</h1>
+  <p class="sub">Sortable holdings table. Click any column header to re-sort; “book cost” marks a line the broker returned no live quote for.</p>
+
+  <div id="content">
+    <div id="stats" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Positions</h2><span class="spacer"></span><span class="note" id="pos-count"></span></div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap"><table id="pos-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/my.js"></script>
+</body>
+</html>

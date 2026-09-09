@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Quant Portfolio</title>
+<meta name="description" content="Notes on method and portfolio decisions.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Blog — Quant Portfolio">
+<meta property="og:description" content="Notes on method and portfolio decisions.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  window.ASSET_BASE = "";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1></h1>
+  <p class="sub"></p>
+
+  <div id="content">
+    <div id="post"></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. No performance figure is shown without its sample period and cost assumptions.</footer>
+
+<script type="module" src="js/blog.js"></script>
+</body>
+</html>

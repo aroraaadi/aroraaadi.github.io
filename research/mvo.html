@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimizer — Quant Portfolio</title>
+<meta name="description" content="Interactive mean-variance frontier over the S&P 500 and held names.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Optimizer — Quant Portfolio">
+<meta property="og:description" content="Interactive mean-variance frontier over the S&P 500 and held names.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Optimizer</h1>
+  <p class="sub">Long-only mean-variance frontier computed in the browser for whatever subset you select.
+     Expected returns from realised means are in-sample by construction — treat the frontier as a shape, not a forecast.</p>
+
+  <div id="content">
+    <div class="panel">
+      <div class="panel-b">
+        <div class="controls">
+          <div style="position:relative;min-width:260px">
+            <input class="input" id="search" type="search" style="width:100%"
+                   placeholder="Add a ticker…" role="combobox" aria-expanded="false"
+                   aria-controls="dropdown" aria-autocomplete="list" autocomplete="off">
+            <div id="dropdown" role="listbox" aria-label="Search results"
+                 style="position:absolute;z-index:30;left:0;right:0;top:100%;margin-top:4px;
+                        background:var(--raised);border:1px solid var(--border-2);
+                        border-radius:var(--r-md);box-shadow:var(--shadow-pop);
+                        max-height:280px;overflow:auto;display:none"></div>
+          </div>
+          <button class="pill" id="load-holdings" type="button">Load my holdings</button>
+          <button class="pill" id="clear" type="button">Clear</button>
+          <span class="clabel">Expected return</span>
+          <div class="seg" id="mu-seg" role="group" aria-label="Expected return method">
+            <button data-v="mean" class="active">Historical</button>
+            <button data-v="shrunk">Shrunk</button>
+            <button data-v="risk">Risk-only</button>
+          </div>
+          <span class="clabel">Objective</span>
+          <div class="seg" id="opt-seg" role="group" aria-label="Objective">
+            <button data-v="sharpe" class="active">Max Sharpe</button>
+            <button data-v="minvar">Min variance</button>
+          </div>
+          <label class="pill" style="cursor:pointer">
+            <input type="checkbox" id="show-cloud" checked> Random cloud
+          </label>
+        </div>
+        <div class="controls" id="chips" style="margin-top:12px"></div>
+        <p class="note" id="sel-note"></p>
+      </div>
+    </div>
+
+    <div id="tiles" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h"><h2 id="frontier-title">Efficient frontier</h2></div>
+      <div class="panel-b">
+        <div class="legend" id="frontier-legend"></div>
+        <div class="chart" style="height:380px"><canvas id="frontier-chart" role="img" aria-label="Efficient frontier — add at least two symbols to plot."></canvas></div>
+        <p class="note" id="frontier-note"></p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel"><div class="panel-h"><h2 id="weights-title">Optimal weights</h2></div>
+        <div class="panel-b"><div class="chart" id="weights-box" style="height:280px"><canvas id="weights-chart" role="img" aria-label="Optimal weights — add at least two symbols to plot."></canvas></div></div></div>
+      <div class="panel"><div class="panel-h"><h2>Risk contribution</h2></div>
+        <div class="panel-b"><div class="chart" id="risk-box" style="height:280px"><canvas id="risk-chart" role="img" aria-label="Risk contribution — add at least two symbols to plot."></canvas></div>
+        <p class="note">Share of portfolio variance contributed by each position.</p></div></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Frontiers built on realised means are in-sample and are not forecasts.</footer>
+
+<script type="module" src="../js/mvo.js"></script>
+</body>
+</html>

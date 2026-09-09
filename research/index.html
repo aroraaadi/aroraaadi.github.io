@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Quant Portfolio</title>
+<meta name="description" content="Signal-driven model portfolio, risk model and construction.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Research — Quant Portfolio">
+<meta property="og:description" content="Signal-driven model portfolio, risk model and construction.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Model portfolio</h1>
+  <p class="sub">A signal-driven long-only book rebuilt monthly. Figures below carry their sample period and cost assumptions.</p>
+
+  <div id="content">
+    <div id="tiles" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Growth of 100 vs benchmarks</h2></div>
+      <div class="panel-b">
+        <div class="legend" id="perf-legend"></div>
+        <div class="chart" style="height:320px"><canvas id="perf-chart"></canvas></div>
+        <p class="note" id="perf-note"></p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Current holdings</h2><span class="spacer"></span><span class="note" id="holdings-note"></span></div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap"><table id="holdings-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Methodology</h2></div>
+      <div class="panel-b"><div class="prose" id="methodology"></div></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. No performance figure is shown without its sample period and cost assumptions.</footer>
+
+<script type="module" src="../js/main.js"></script>
+</body>
+</html>

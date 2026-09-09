@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transactions — Quant Portfolio</title>
+<meta name="description" content="Full transaction log, sizes shown as percent of book.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Transactions — Quant Portfolio">
+<meta property="og:description" content="Full transaction log, sizes shown as percent of book.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Transactions</h1>
+  <p class="sub">Every trade, dividend and contribution. Sizes are percent of book at the time — no dollar values.</p>
+
+  <div id="content">
+    <div id="stats" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h">
+        <h2>Log</h2>
+        <div class="controls" id="filters" role="group" aria-label="Filter by activity"></div>
+        <span class="spacer"></span>
+        <input class="input" id="tx-search" type="search" placeholder="Filter security…" aria-label="Filter by security">
+        <span class="note" id="tx-count"></span>
+      </div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap" id="tx-scroll" style="max-height:64vh">
+          <table id="tx-table">
+            <thead><tr>
+              <th class="sortable" data-k="date" tabindex="0" scope="col">Date</th>
+              <th class="sortable" data-k="activity" tabindex="0" scope="col">Activity</th>
+              <th class="sortable" data-k="description" tabindex="0" scope="col">Security</th>
+              <th scope="col">Ccy</th>
+              <th class="num sortable" data-k="price" tabindex="0" scope="col">Price</th>
+              <th class="num sortable" data-k="size_pct" tabindex="0" scope="col">Size</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel-b"><p class="note" id="tx-note"></p></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Trade sizes are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/my_transactions.js"></script>
+</body>
+</html>

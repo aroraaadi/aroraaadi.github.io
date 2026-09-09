@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model — Quant Portfolio</title>
+<meta name="description" content="Model target weights and sector exposure.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Model — Quant Portfolio">
+<meta property="og:description" content="Model target weights and sector exposure.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Target allocation</h1>
+  <p class="sub">Optimizer output: target weights, vol band and sector exposure.</p>
+
+  <div id="content">
+    <div id="tiles" class="strip"></div>
+    <div class="grid-2">
+      <div class="panel"><div class="panel-h"><h2>Target allocation</h2></div>
+        <div class="panel-b"><div class="legend" id="alloc-legend"></div>
+        <div class="chart" style="height:280px"><canvas id="alloc-chart"></canvas></div></div></div>
+      <div class="panel"><div class="panel-h"><h2>By sector</h2></div>
+        <div class="panel-b"><div class="chart" id="sector-box" style="height:280px"><canvas id="sector-chart"></canvas></div>
+        <p class="note" id="sector-note"></p></div></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Model inputs</h2><span class="spacer"></span>
+        <span class="note">how mu and sigma were built</span></div>
+      <div class="panel-b flush"><div id="inputs-strip" class="strip" style="margin:0;border:0"></div></div>
+      <div class="panel-b"><p class="note" id="inputs-note"></p></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Equilibrium prior vs view</h2><span class="spacer"></span>
+        <span class="note">what the market implies, and where we disagree</span></div>
+      <div class="panel-b flush"><div class="tbl-wrap" style="max-height:420px">
+        <table id="er-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note" id="er-note"></p></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Construction constraints</h2><span class="spacer"></span>
+        <span class="note">what the optimizer was allowed to do</span></div>
+      <div class="panel-b flush"><div id="cons-strip" class="strip" style="margin:0;border:0"></div></div>
+      <div class="panel-b"><div id="cons-detail"></div>
+        <p class="note" id="cons-note"></p></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. No performance figure is shown without its sample period and cost assumptions.</footer>
+
+<script type="module" src="../js/research_portfolio.js"></script>
+</body>
+</html>

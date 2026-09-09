@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rebalances — Quant Portfolio</title>
+<meta name="description" content="Latest rebalance changes and composition over time.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Rebalances — Quant Portfolio">
+<meta property="og:description" content="Latest rebalance changes and composition over time.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Rebalances</h1>
+  <p class="sub">What changed at the most recent rebalance, and how composition has evolved.</p>
+
+  <div id="content">
+    <div class="panel">
+      <div class="panel-h"><h2>Latest rebalance</h2><span class="spacer"></span><span class="note" id="turnover-note"></span></div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap"><table id="changes-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+    <div class="panel"><div class="panel-h"><h2>Composition over time</h2></div>
+      <div class="panel-b"><div class="legend" id="comp-legend"></div>
+      <div class="chart" id="comp-box" style="height:220px"><canvas id="comp-chart"></canvas></div></div></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. No performance figure is shown without its sample period and cost assumptions.</footer>
+
+<script type="module" src="../js/holdings.js"></script>
+</body>
+</html>

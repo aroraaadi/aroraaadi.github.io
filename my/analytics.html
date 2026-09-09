@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analytics — Quant Portfolio</title>
+<meta name="description" content="Return, market sensitivity, tail risk and concentration.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Analytics — Quant Portfolio">
+<meta property="og:description" content="Return, market sensitivity, tail risk and concentration.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Risk analytics</h1>
+  <p class="sub"></p>
+
+  <div id="content">
+    <div class="controls" style="margin-bottom:16px">
+      <span class="clabel">Book</span>
+      <div class="seg" id="book" role="group" aria-label="Which book to analyse">
+        <button data-v="live" class="active">My portfolio</button>
+        <button data-v="model">Model portfolio</button>
+      </div>
+      <span class="spacer"></span>
+      <span class="note" id="book-note"></span>
+    </div>
+    <p class="sub" id="intro"></p>
+    <div class="panel"><div class="panel-h"><h2>Return &amp; risk</h2></div>
+      <div class="panel-b flush"><div id="g-return" class="strip" style="margin:0;border:0"></div></div></div>
+    <div class="panel"><div class="panel-h"><h2>Market sensitivity vs S&amp;P 500</h2></div>
+      <div class="panel-b flush"><div id="g-market" class="strip" style="margin:0;border:0"></div></div></div>
+    <div class="panel"><div class="panel-h"><h2>Tail risk</h2></div>
+      <div class="panel-b flush"><div id="g-tail" class="strip" style="margin:0;border:0"></div></div></div>
+    <div class="grid-2">
+      <div class="panel"><div class="panel-h"><h2>Drawdown</h2></div>
+        <div class="panel-b"><div class="chart" style="height:220px"><canvas id="dd-chart"></canvas></div>
+        <p class="note" id="dd-note"></p></div></div>
+      <div class="panel"><div class="panel-h"><h2>Daily return distribution</h2></div>
+        <div class="panel-b"><div class="chart" style="height:220px"><canvas id="hist-chart"></canvas></div>
+        <p class="note" id="hist-note"></p></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Diversification</h2><span class="spacer"></span>
+        <span class="note">Weight dispersion vs independent risk sources</span></div>
+      <div class="panel-b flush"><div id="g-div" class="strip" style="margin:0;border:0"></div></div>
+      <div class="panel-b"><p class="note" id="div-note"></p></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel"><div class="panel-h"><h2>Theme exposure</h2><span class="spacer"></span>
+        <span class="note">ETF-intersection signal</span></div>
+        <div class="panel-b"><div id="theme-bars"></div><p class="note" id="theme-note"></p></div></div>
+      <div class="panel"><div class="panel-h"><h2>Risk contribution</h2><span class="spacer"></span>
+        <span class="note">share of portfolio variance</span></div>
+        <div class="panel-b flush"><div class="tbl-wrap" style="max-height:340px">
+          <table id="rc-table"><thead><tr></tr></thead><tbody></tbody></table></div></div></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Factor exposures</h2><span class="spacer"></span>
+        <span class="note">PCA loadings per holding</span></div>
+      <div class="panel-b flush"><div class="tbl-wrap" style="max-height:420px">
+        <table id="fx-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note" id="fx-note"></p></div>
+    </div>
+
+    <div class="panel"><div class="panel-h"><h2>Concentration</h2></div>
+      <div class="panel-b flush"><div id="g-conc" class="strip" style="margin:0;border:0"></div></div>
+      <div class="panel-b">
+        <div class="legend" id="sector-legend"></div>
+        <div class="chart" id="sector-box" style="height:260px"><canvas id="sector-chart"></canvas></div>
+        <p class="note" id="conc-note"></p></div></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/my_analytics.js"></script>
+</body>
+</html>

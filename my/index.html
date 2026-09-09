@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Quant Portfolio</title>
+<meta name="description" content="Live portfolio allocation, risk metrics and relative performance.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Dashboard — Quant Portfolio">
+<meta property="og:description" content="Live portfolio allocation, risk metrics and relative performance.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp the saved theme before first paint to avoid a flash of the wrong ground.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Dashboard</h1>
+  <p class="sub">Brokerage account — allocation and relative performance. Dollar values are kept private;
+     only relative weights are published.</p>
+
+  <div id="content">
+    <div id="stats" class="strip"></div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Risk</h2><span class="spacer"></span><span class="note" id="risk-window"></span></div>
+      <div class="panel-b flush"><div id="risk" class="strip" style="margin:0;border:0;border-radius:0"></div></div>
+      <div class="panel-b"><p class="note" id="risk-note"></p></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-h"><h2>Value since Jan 2024</h2></div>
+        <div class="panel-b">
+          <div class="legend" id="value-legend"></div>
+          <div class="chart" style="height:260px"><canvas id="value-chart"></canvas></div>
+          <p class="note" id="value-note"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Allocation</h2><span class="spacer"></span>
+        <span class="note">Complete breakdown — every position, no residual bucket.</span></div>
+      <div class="panel-b">
+        <div class="alloc-split">
+          <div class="chart" style="height:300px"><canvas id="alloc-chart"></canvas></div>
+          <div id="alloc-breakdown" class="alloc-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-h"><h2>Positions</h2><span class="spacer"></span><span class="note" id="pos-count"></span></div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap"><table id="pos-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/my.js"></script>
+</body>
+</html>

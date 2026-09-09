@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundamentals — Quant Portfolio</title>
+<meta name="description" content="Reported financials for holdings and watchlist names.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Fundamentals — Quant Portfolio">
+<meta property="og:description" content="Reported financials for holdings and watchlist names.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Fundamentals</h1>
+  <p class="sub">Latest reported annual figures with TTM ratios where available. No forecasts.</p>
+
+  <div id="content">
+    <div class="panel">
+      <div class="panel-h">
+        <div class="seg" id="scope" role="tablist" aria-label="Which names to show">
+          <button role="tab" data-scope="holdings" class="active" aria-selected="true">Holdings</button>
+          <button role="tab" data-scope="radar" aria-selected="false">Radar</button>
+        </div>
+        <div class="seg" id="sortby" role="group" aria-label="Sort by">
+          <button data-sort="weight" class="active">Weight</button>
+          <button data-sort="pe">P/E</button>
+          <button data-sort="roic">ROIC</button>
+          <button data-sort="revenue">Rev growth</button>
+          <button data-sort="theme">Theme</button>
+        </div>
+        <span class="spacer"></span>
+        <span class="note" id="count"></span>
+      </div>
+      <div class="panel-b flush">
+        <div class="tbl-wrap"><table id="fx-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+      </div>
+      <div class="panel-b"><p class="note" id="note"></p></div>
+    </div>
+
+    <div id="detail"></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/fundamentals.js"></script>
+</body>
+</html>

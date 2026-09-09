@@ -1,0 +1,141 @@
+/* Design tokens — dark is the default ground; light is opt-in.
+   ------------------------------------------------------------------
+   Theme resolution order:
+     1. [data-theme="light"|"dark"] on <html>  — explicit user choice, wins
+     2. prefers-color-scheme                    — initial guess only
+   shell.js stamps data-theme from localStorage before first paint.
+
+   The categorical ramp (--s1..--s8) is NOT hand-picked. It was built by a
+   greedy max-min search over an OKLCH grid under the constraint that every
+   PREFIX n=2..8 passes all-pairs CVD separation — because slots are assigned
+   by first appearance, so a donut showing six slices uses exactly s1..s6 and
+   they must all be mutually distinguishable. Verified with the dataviz
+   validator on both grounds:
+     dark  #0B0D10 --pairs all -> ALL CHECKS PASS
+     light #fcfcfb --pairs all -> ALL CHECKS PASS
+   Two documented reliefs, both covered by design and NOT to be removed:
+     - CVD separation sits in the 6-8 floor band (dE 6.3 deutan, s6<->s1),
+       which is legal only with secondary encoding. Every chart therefore
+       keeps a direct label or an HTML legend. Do not ship a bare chart.
+     - Two slots fall under 3:1 on the light ground; the same visible labels
+       provide the required relief.
+   Re-run the validator after touching any --s* value. */
+
+:root {
+  color-scheme: dark;
+
+  /* ground */
+  --page:       #0b0d10;
+  --surface:    #12151a;
+  --surface-2:  #171b21;
+  --raised:     #1d222a;
+
+  /* ink */
+  --ink:        #e8eaed;
+  --ink-2:      #9ba3ae;
+  --muted:      #6b7480;
+
+  /* structure */
+  --border:     #232830;
+  --border-2:   #2e343e;
+  --grid:       #1e232b;
+  --baseline:   #39414d;
+
+  /* one restrained accent — navigation and focus only, never data */
+  --accent:     #4d80ff;
+  --accent-dim: #2a3f7a;
+
+  /* signed values + severity. Colour is never the sole cue: a sign or an
+     icon always accompanies these. */
+  --up:         #2fbf71;
+  --down:       #ff6b5a;
+  --warn:       #d9a021;
+  --crit:       #ff6b5a;
+
+  /* benchmark context lines — deliberately desaturated so the portfolio
+     series reads as the subject */
+  --ctx-1:      #6b7480;
+  --ctx-2:      #444c57;
+
+  /* categorical — prefix-safe, see header */
+  --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
+  --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+
+  /* sequential ramp: 250 = lowest, 650 = highest. Direction is inverted per
+     theme so "high value = more prominent" reads correctly on both grounds. */
+  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
+  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
+
+  /* type scale — 6 steps, no half-pixels (the old sheet had 21 ad-hoc sizes) */
+  --t-xs:   10px;
+  --t-sm:   11px;
+  --t-base: 12px;
+  --t-md:   14px;
+  --t-lg:   18px;
+  --t-xl:   24px;
+
+  --lh-tight: 1.25;
+  --lh-base:  1.5;
+
+  --fw-normal: 400;
+  --fw-med:    500;
+  --fw-bold:   600;
+
+  /* one family for prose, one for every figure. All numerics are tabular. */
+  --font-ui:  ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* space scale — 4px base */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+
+  /* radius — 3 values, not 8 */
+  --r-sm: 3px;
+  --r-md: 5px;
+  --r-pill: 999px;
+
+  --shadow-pop: 0 8px 28px rgba(0, 0, 0, 0.55);
+
+  --content-max: 1400px;   /* wider than the old 1060 — density needs room */
+}
+
+/* Light ground. Same hues; the categorical ramp is unchanged because the same
+   eight values validate on both surfaces (see header). */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --page:       #f7f7f5;
+  --surface:    #ffffff;
+  --surface-2:  #fbfbfa;
+  --raised:     #ffffff;
+
+  --ink:        #16181d;
+  --ink-2:      #4c525b;
+  --muted:      #7b828c;
+
+  --border:     #e2e2dd;
+  --border-2:   #d2d3cd;
+  --grid:       #ececE7;
+  --baseline:   #c3c5bf;
+
+  --accent:     #2a63d6;
+  --accent-dim: #b9ccf5;
+
+  --up:         #067647;
+  --down:       #c53727;
+  --warn:       #9a6b00;
+  --crit:       #c53727;
+
+  --ctx-1:      #7b828c;
+  --ctx-2:      #b8bcc3;
+
+  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+  --ramp-550: #2a63d6; --ramp-650: #16407f;
+
+  --shadow-pop: 0 8px 28px rgba(0, 0, 0, 0.14);
+}
+
+/* Dark is the default ground, deliberately — this is a terminal, not a document,
+   and the spec fixes #0B0D10. Light is therefore an explicit opt-in via the
+   toggle (which writes data-theme), NOT a prefers-color-scheme fallback. A
+   light-mode OS user still lands on the dark terminal, then chooses. */

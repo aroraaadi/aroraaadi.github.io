@@ -1,0 +1,4031 @@
+{
+ "as_of": "2026-09-09",
+ "source": "Financial Modeling Prep (stable API) via data/fmp.db",
+ "note": "Latest reported annual figures and TTM ratios. No projections. Holdings are shown as USD-equivalent securities: CDRs are mapped to their US underlying and duplicate lines merged.",
+ "holdings": [
+  {
+   "symbol": "SCHG",
+   "held_as": "SCHG",
+   "role": "holding",
+   "weight": 0.1293,
+   "is_fund": true,
+   "name": "Schwab U.S. Large-Cap Growth ETF",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "exchange": "AMEX",
+   "currency": "USD",
+   "reporting_currency": null,
+   "resolved_via": "direct",
+   "price": 35.53,
+   "price_date": "2026-09-04",
+   "market_cap": 61456505912,
+   "beta": 1.197,
+   "holdings": [
+    {
+     "asset": "NVDA",
+     "name": "NVIDIA",
+     "weight": 11.179152
+    },
+    {
+     "asset": "AAPL",
+     "name": "APPLE",
+     "weight": 9.41539759
+    },
+    {
+     "asset": "MSFT",
+     "name": "MICROSOFT",
+     "weight": 7.43551092
+    },
+    {
+     "asset": "AMZN",
+     "name": "AMAZON COM INC",
+     "weight": 5.06753262
+    },
+    {
+     "asset": "GOOGL",
+     "name": "ALPHABET CLASS A",
+     "weight": 3.97571819
+    },
+    {
+     "asset": "AVGO",
+     "name": "BROADCOM INC",
+     "weight": 3.39784896
+    },
+    {
+     "asset": "GOOG",
+     "name": "ALPHABET CLASS C",
+     "weight": 3.17422287
+    },
+    {
+     "asset": "LLY",
+     "name": "ELI LILLY",
+     "weight": 2.92279829
+    },
+    {
+     "asset": "META",
+     "name": "META PLATFORMS CLASS A",
+     "weight": 2.71629499
+    },
+    {
+     "asset": "AMD",
+     "name": "ADVANCED MICRO DEVICES",
+     "weight": 2.41487226
+    }
+   ],
+   "sectors": [
+    {
+     "sector": "Technology",
+     "weight": 46.22
+    },
+    {
+     "sector": "Communication Services",
+     "weight": 13.28
+    },
+    {
+     "sector": "Consumer Cyclical",
+     "weight": 10.35
+    },
+    {
+     "sector": "Healthcare",
+     "weight": 9.8
+    },
+    {
+     "sector": "Financial Services",
+     "weight": 8.19
+    },
+    {
+     "sector": "Industrials",
+     "weight": 6.81
+    },
+    {
+     "sector": "Consumer Defensive",
+     "weight": 1.89
+    },
+    {
+     "sector": "Basic Materials",
+     "weight": 1.55
+    },
+    {
+     "sector": "Energy",
+     "weight": 0.91
+    },
+    {
+     "sector": "Real Estate",
+     "weight": 0.56
+    },
+    {
+     "sector": "Utilities",
+     "weight": 0.43
+    },
+    {
+     "sector": "Cash & Others",
+     "weight": 0.010000000000005116
+    }
+   ],
+   "expense_ratio": 0.04,
+   "aum": 62899528942,
+   "holdings_count": 196
+  },
+  {
+   "symbol": "XSP.TO",
+   "held_as": "XSP.TO",
+   "role": "holding",
+   "weight": 0.0974,
+   "is_fund": true,
+   "name": "iShares Core S&P 500 Index ETF (CAD- Hedged)",
+   "sector": "Financial Services",
+   "industry": "Asset Management - Global",
+   "exchange": "TSX",
+   "currency": "CAD",
+   "reporting_currency": null,
+   "resolved_via": "direct",
+   "price": 77.43,
+   "price_date": "2026-09-04",
+   "market_cap": 15941950272,
+   "beta": 1.025,
+   "holdings": [
+    {
+     "asset": "NVDA",
+     "name": "NVIDIA",
+     "weight": 8.22912662
+    },
+    {
+     "asset": "AAPL",
+     "name": "APPLE",
+     "weight": 7.16925613
+    },
+    {
+     "asset": "MSFT",
+     "name": "MICROSOFT",
+     "weight": 5.63570851
+    },
+    {
+     "asset": "AMZN",
+     "name": "AMAZON.COM INC",
+     "weight": 3.7691936
+    },
+    {
+     "asset": "GOOGL",
+     "name": "ALPHABET CLASS A",
+     "weight": 2.98664844
+    },
+    {
+     "asset": "AVGO",
+     "name": "BROADCOM INC",
+     "weight": 2.51495887
+    },
+    {
+     "asset": "GOOG",
+     "name": "ALPHABET CLASS C",
+     "weight": 2.38348127
+    },
+    {
+     "asset": "META",
+     "name": "META PLATFORMS CLASS A",
+     "weight": 1.99450433
+    },
+    {
+     "asset": "MU",
+     "name": "MICRON TECHNOLOGY",
+     "weight": 1.60709757
+    },
+    {
+     "asset": "TSLA",
+     "name": "TESLA INC",
+     "weight": 1.57584306
+    }
+   ],
+   "sectors": [
+    {
+     "sector": "Technology",
+     "weight": 37.86
+    },
+    {
+     "sector": "Financial Services",
+     "weight": 12.34
+    },
+    {
+     "sector": "Communication Services",
+     "weight": 9.55
+    },
+    {
+     "sector": "Healthcare",
+     "weight": 9.21
+    },
+    {
+     "sector": "Consumer Cyclical",
+     "weight": 9.1
+    },
+    {
+     "sector": "Industrials",
+     "weight": 8.15
+    },
+    {
+     "sector": "Consumer Defensive",
+     "weight": 4.66
+    },
+    {
+     "sector": "Energy",
+     "weight": 3.35
+    },
+    {
+     "sector": "Utilities",
+     "weight": 2.18
+    },
+    {
+     "sector": "Real Estate",
+     "weight": 1.91
+    },
+    {
+     "sector": "Basic Materials",
+     "weight": 1.68
+    },
+    {
+     "sector": "Cash & Others",
+     "weight": 0.009999999999990905
+    }
+   ],
+   "expense_ratio": 0.09,
+   "aum": 16122291676,
+   "holdings_count": 1
+  },
+  {
+   "symbol": "META",
+   "held_as": "META",
+   "role": "holding",
+   "weight": 0.0861,
+   "is_fund": false,
+   "name": "Meta Platforms, Inc.",
+   "sector": "Communication Services",
+   "industry": "Internet Content & Information",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 616.77,
+   "price_date": "2026-09-04",
+   "market_cap": 1571213291779,
+   "beta": 1.243,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 200966000000,
+    "grossProfit": 164791000000,
+    "operatingIncome": 83276000000,
+    "ebitda": 104548000000,
+    "netIncome": 60458000000,
+    "eps": 23.49,
+    "rd": 57372000000,
+    "sga": 24143000000,
+    "interestExpense": 1165000000,
+    "taxExpense": 25474000000,
+    "shares": 2574000000
+   },
+   "balance": {
+    "totalAssets": 366021000000,
+    "totalLiabilities": 148778000000,
+    "totalEquity": 217243000000,
+    "cash": 35873000000,
+    "totalDebt": 83897000000,
+    "netDebt": 48024000000,
+    "inventory": 0,
+    "goodwill": 24534000000,
+    "currentAssets": 108722000000,
+    "currentLiabilities": 41836000000,
+    "workingCapital": 66886000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 115800000000,
+    "capex": -69691000000,
+    "freeCashFlow": 46109000000,
+    "sbc": 20427000000,
+    "dividendsPaid": -5324000000,
+    "buybacks": -26248000000,
+    "acquisitions": -4231000000
+   },
+   "valuation": {
+    "pe": 22.919732441471574,
+    "pb": 6.0042879783784615,
+    "ps": 6.883798726731451,
+    "pfcf": 38.34472109964369,
+    "evEbitda": 15.57894960194075,
+    "earningsYield": 0.04341749427399836,
+    "fcfYield": 0.026079209114635918,
+    "enterpriseValue": 1712110890000
+   },
+   "profitability": {
+    "grossMargin": 0.8199944269179861,
+    "operatingMargin": 0.41437855159579234,
+    "netMargin": 0.3008369574952977,
+    "ebitdaMargin": 0.5202273021307087,
+    "roe": 0.2973026955581193,
+    "roa": 0.1513436869382784,
+    "roic": 0.17079081539682006,
+    "effectiveTaxRate": 0.2964436996695061
+   },
+   "growth": {
+    "revenue": 0.2216703849824621,
+    "grossProfit": 0.22667113294625577,
+    "operatingIncome": 0.20028826751225137,
+    "netIncome": -0.030500320718409236,
+    "eps": -0.02559934985778135,
+    "fcf": -0.14726660748631454,
+    "revenue3y": 0.836899255831749,
+    "revenue5y": 1.6437798765597276
+   },
+   "health": {
+    "currentRatio": 2.225562709519502,
+    "quickRatio": 2.5987666124868536,
+    "debtToEquity": 0.38618965858508675,
+    "netDebtToEbitda": 0.4593488158549183,
+    "interestCoverage": 71.48154506437768,
+    "altmanZ": 6.842829817919861,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 27638000000,
+     "netIncome": 10188000000,
+     "fcf": 11617000000,
+     "margin": 0.36862291048556334
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 40653000000,
+     "netIncome": 15920000000,
+     "fcf": 17483000000,
+     "margin": 0.39160701547241283
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 55838000000,
+     "netIncome": 22112000000,
+     "fcf": 15359000000,
+     "margin": 0.39600272216053584
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 70697000000,
+     "netIncome": 18485000000,
+     "fcf": 21212000000,
+     "margin": 0.2614679547929898
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 85965000000,
+     "netIncome": 29146000000,
+     "fcf": 23632000000,
+     "margin": 0.3390449601582039
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 117929000000,
+     "netIncome": 39370000000,
+     "fcf": 39116000000,
+     "margin": 0.3338449405998525
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 116609000000,
+     "netIncome": 23200000000,
+     "fcf": 19044000000,
+     "margin": 0.19895548371051977
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 134902000000,
+     "netIncome": 39098000000,
+     "fcf": 43847000000,
+     "margin": 0.28982520644616094
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 164501000000,
+     "netIncome": 62360000000,
+     "fcf": 54072000000,
+     "margin": 0.3790858414234564
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 200966000000,
+     "netIncome": 60458000000,
+     "fcf": 46109000000,
+     "margin": 0.3008369574952977
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Family of Apps",
+     "value": 198759000000
+    },
+    {
+     "segment": "Reality Labs",
+     "value": 2207000000
+    }
+   ]
+  },
+  {
+   "symbol": "GOOG",
+   "held_as": "GOOG",
+   "role": "holding",
+   "weight": 0.0839,
+   "is_fund": false,
+   "name": "Alphabet Inc.",
+   "sector": "Communication Services",
+   "industry": "Internet Content & Information",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 335.31,
+   "price_date": "2026-09-04",
+   "market_cap": 4069289451180,
+   "beta": 1.215,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 402836000000,
+    "grossProfit": 240301000000,
+    "operatingIncome": 129039000000,
+    "ebitda": 180698000000,
+    "netIncome": 132170000000,
+    "eps": 10.81,
+    "rd": 61087000000,
+    "sga": 50175000000,
+    "interestExpense": 736000000,
+    "taxExpense": 26656000000,
+    "shares": 12230000000
+   },
+   "balance": {
+    "totalAssets": 595281000000,
+    "totalLiabilities": 180016000000,
+    "totalEquity": 415265000000,
+    "cash": 30708000000,
+    "totalDebt": 59291000000,
+    "netDebt": 28583000000,
+    "inventory": 0,
+    "goodwill": 33380000000,
+    "currentAssets": 206038000000,
+    "currentLiabilities": 102745000000,
+    "workingCapital": 103293000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 164713000000,
+    "capex": -91447000000,
+    "freeCashFlow": 73266000000,
+    "sbc": 24953000000,
+    "dividendsPaid": -10049000000,
+    "buybacks": -45709000000,
+    "acquisitions": -1592000000
+   },
+   "valuation": {
+    "pe": 16.805362462760673,
+    "pb": 6.421164532850362,
+    "ps": 9.186776742526359,
+    "pfcf": 76.88849109042104,
+    "evEbitda": 12.709484039748071,
+    "earningsYield": 0.05937931465350863,
+    "fcfYield": 0.013005847634908035,
+    "enterpriseValue": 3820891000000
+   },
+   "profitability": {
+    "grossMargin": 0.5965231508603998,
+    "operatingMargin": 0.32032638592380025,
+    "netMargin": 0.3280987796522654,
+    "ebitdaMargin": 0.44856467644401193,
+    "roe": 0.5084008289969907,
+    "roa": 0.26486930887012017,
+    "roic": 0.1513625130294986,
+    "effectiveTaxRate": 0.16783146336242177
+   },
+   "growth": {
+    "revenue": 0.15090081081544376,
+    "grossProfit": 0.1796114121897581,
+    "operatingIncome": 0.1481359551561527,
+    "netIncome": 0.3201422321660441,
+    "eps": 0.3419434194341942,
+    "fcf": 0.0068990159969215545,
+    "revenue3y": 0.535596984177068,
+    "revenue5y": 1.4802853253349821
+   },
+   "health": {
+    "currentRatio": 2.723981254609035,
+    "quickRatio": 2.005333592875566,
+    "debtToEquity": 0.14277870757227312,
+    "netDebtToEbitda": 0.15818105347043132,
+    "interestCoverage": 175.32472826086956,
+    "altmanZ": 11.288827367506626,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 90272000000,
+     "netIncome": 19478000000,
+     "fcf": 25824000000,
+     "margin": 0.2157701169797944
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 110855000000,
+     "netIncome": 12662000000,
+     "fcf": 23907000000,
+     "margin": 0.11422128005051645
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 136819000000,
+     "netIncome": 30736000000,
+     "fcf": 22832000000,
+     "margin": 0.22464716157843576
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 161857000000,
+     "netIncome": 34343000000,
+     "fcf": 30972000000,
+     "margin": 0.2121811228430034
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 182527000000,
+     "netIncome": 40269000000,
+     "fcf": 42843000000,
+     "margin": 0.22061941520980458
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 257637000000,
+     "netIncome": 76033000000,
+     "fcf": 67012000000,
+     "margin": 0.2951167728237792
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 282836000000,
+     "netIncome": 59972000000,
+     "fcf": 60010000000,
+     "margin": 0.2120380715326196
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 307394000000,
+     "netIncome": 73795000000,
+     "fcf": 69495000000,
+     "margin": 0.24006649446638517
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 350018000000,
+     "netIncome": 100118000000,
+     "fcf": 72764000000,
+     "margin": 0.28603671811164
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 402836000000,
+     "netIncome": 132170000000,
+     "fcf": 73266000000,
+     "margin": 0.3280987796522654
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Google Search & Other",
+     "value": 224532000000
+    },
+    {
+     "segment": "Google Cloud",
+     "value": 58705000000
+    },
+    {
+     "segment": "Google Inc.",
+     "value": 48030000000
+    },
+    {
+     "segment": "YouTube Advertising Revenue",
+     "value": 40367000000
+    },
+    {
+     "segment": "Google Network",
+     "value": 29792000000
+    },
+    {
+     "segment": "Other Bets",
+     "value": 1537000000
+    },
+    {
+     "segment": "Other Segments",
+     "value": -127000000
+    }
+   ]
+  },
+  {
+   "symbol": "SHOP",
+   "held_as": "SHOP",
+   "role": "holding",
+   "weight": 0.078,
+   "is_fund": false,
+   "name": "Shopify Inc.",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 145.09,
+   "price_date": "2026-09-04",
+   "market_cap": 188276717956,
+   "beta": 2.616,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 11556000000,
+    "grossProfit": 5555000000,
+    "operatingIncome": 1468000000,
+    "ebitda": 1540000000,
+    "netIncome": 1231000000,
+    "eps": 0.94,
+    "rd": 1536000000,
+    "sga": 2134000000,
+    "interestExpense": 0,
+    "taxExpense": 278000000,
+    "shares": 1304953000
+   },
+   "balance": {
+    "totalAssets": 15189000000,
+    "totalLiabilities": 1716000000,
+    "totalEquity": 13473000000,
+    "cash": 1534000000,
+    "totalDebt": 188000000,
+    "netDebt": -1346000000,
+    "inventory": 21000000,
+    "goodwill": 491000000,
+    "currentAssets": 8296000000,
+    "currentLiabilities": 1392000000,
+    "workingCapital": 6904000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 2033000000,
+    "capex": -26000000,
+    "freeCashFlow": 2007000000,
+    "sbc": 449000000,
+    "dividendsPaid": 0,
+    "buybacks": 0,
+    "acquisitions": -56000000
+   },
+   "valuation": {
+    "pe": 97.37583892617451,
+    "pb": 14.815792679172976,
+    "ps": 14.189216817846109,
+    "pfcf": 80.04962498129252,
+    "evEbitda": -359.9204584894027,
+    "earningsYield": 0.010259493106779547,
+    "fcfYield": 0.012492250903532634,
+    "enterpriseValue": 207746947320
+   },
+   "profitability": {
+    "grossMargin": 0.48070266528210454,
+    "operatingMargin": 0.12703357563170647,
+    "netMargin": 0.10652474904811353,
+    "ebitdaMargin": 0.13326410522672205,
+    "roe": 0.15063112633266074,
+    "roa": 0.13324118866620593,
+    "roic": 0.11664215864791852,
+    "effectiveTaxRate": 0.18422796554009277
+   },
+   "growth": {
+    "revenue": 0.3013513513513513,
+    "grossProfit": 0.24217352415026833,
+    "operatingIncome": 0.3655813953488372,
+    "netIncome": -0.39029222387320456,
+    "eps": -0.3910256410256411,
+    "fcf": 0.2567313713212273,
+    "revenue3y": 1.0116420153679457,
+    "revenue5y": 2.631132230409547
+   },
+   "health": {
+    "currentRatio": 5.353424657534247,
+    "quickRatio": 5.944683908045977,
+    "debtToEquity": 0.01395383359311215,
+    "netDebtToEbitda": -0.874025974025974,
+    "interestCoverage": 0.0,
+    "altmanZ": 64.93580526470538,
+    "piotroski": 7
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 389330000,
+     "netIncome": -35355000,
+     "fcf": -12219000,
+     "margin": -0.0908098528240824
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 673304000,
+     "netIncome": -39995000,
+     "fcf": -16361000,
+     "margin": -0.05940110262229246
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 1073229000,
+     "netIncome": -64553000,
+     "fcf": -32221000,
+     "margin": -0.06014839330655433
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 1578173000,
+     "netIncome": -124842000,
+     "fcf": 8218000,
+     "margin": -0.07910539592300718
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 2929491000,
+     "netIncome": 319509000,
+     "fcf": 382963000,
+     "margin": 0.10906638730072904
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 4611856000,
+     "netIncome": 2914659000,
+     "fcf": 484923000,
+     "margin": 0.6319926294316215
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 5600000000,
+     "netIncome": -3460000000,
+     "fcf": -186000000,
+     "margin": -0.6178571428571429
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 7060000000,
+     "netIncome": 132000000,
+     "fcf": 905000000,
+     "margin": 0.018696883852691217
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 8880000000,
+     "netIncome": 2019000000,
+     "fcf": 1597000000,
+     "margin": 0.22736486486486487
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 11556000000,
+     "netIncome": 1231000000,
+     "fcf": 2007000000,
+     "margin": 0.10652474904811353
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Service",
+     "value": 8804000000
+    },
+    {
+     "segment": "Subscription and Circulation",
+     "value": 2752000000
+    }
+   ]
+  },
+  {
+   "symbol": "AMZN",
+   "held_as": "AMZN",
+   "role": "holding",
+   "weight": 0.0728,
+   "is_fund": false,
+   "name": "Amazon.com, Inc.",
+   "sector": "Consumer Cyclical",
+   "industry": "Specialty Retail",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 258.51,
+   "price_date": "2026-09-04",
+   "market_cap": 2780817921000,
+   "beta": 1.443,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 716924000000,
+    "grossProfit": 360510000000,
+    "operatingIncome": 79975000000,
+    "ebitda": 165341000000,
+    "netIncome": 77670000000,
+    "eps": 7.17,
+    "rd": 108521000000,
+    "sga": 58301000000,
+    "interestExpense": 2274000000,
+    "taxExpense": 19087000000,
+    "shares": 10827000000
+   },
+   "balance": {
+    "totalAssets": 818042000000,
+    "totalLiabilities": 406977000000,
+    "totalEquity": 411065000000,
+    "cash": 86810000000,
+    "totalDebt": 152987000000,
+    "netDebt": 66177000000,
+    "inventory": 38325000000,
+    "goodwill": 23273000000,
+    "currentAssets": 229083000000,
+    "currentLiabilities": 218005000000,
+    "workingCapital": 11078000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 139514000000,
+    "capex": -131819000000,
+    "freeCashFlow": 7695000000,
+    "sbc": 19467000000,
+    "dividendsPaid": 0,
+    "buybacks": 0,
+    "acquisitions": -3841000000
+   },
+   "valuation": {
+    "pe": 20.516666666666666,
+    "pb": 5.040668503680069,
+    "ps": 3.5850066019492575,
+    "pfcf": -239.21014374193547,
+    "evEbitda": 11.51917904935885,
+    "earningsYield": 0.048652892360702166,
+    "fcfYield": -0.004180424727635377,
+    "enterpriseValue": 2525794920000
+   },
+   "profitability": {
+    "grossMargin": 0.5028566486824266,
+    "operatingMargin": 0.11155296795755199,
+    "netMargin": 0.10833784334183261,
+    "ebitdaMargin": 0.23062556142631577,
+    "roe": 0.3049908974597431,
+    "roa": 0.12346660411850444,
+    "roic": 0.08484086365312504,
+    "effectiveTaxRate": 0.19726738117138812
+   },
+   "growth": {
+    "revenue": 0.12377754683294695,
+    "grossProfit": 0.15670049507333053,
+    "operatingIncome": 0.1659352995203592,
+    "netIncome": 0.3109303267620848,
+    "eps": 0.2879858657243816,
+    "fcf": -0.7659529168440903,
+    "revenue3y": 0.3337109435076199,
+    "revenue5y": 0.7426878420133426
+   },
+   "health": {
+    "currentRatio": 1.0331158765552857,
+    "quickRatio": 0.8750166280589895,
+    "debtToEquity": 0.37217228418863196,
+    "netDebtToEbitda": 0.40024555312959276,
+    "interestCoverage": 35.16930518909411,
+    "altmanZ": 4.760702515484961,
+    "piotroski": 6
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 135987000000,
+     "netIncome": 2371000000,
+     "fcf": 9399000000,
+     "margin": 0.017435490157147373
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 177866000000,
+     "netIncome": 3033000000,
+     "fcf": 6410000000,
+     "margin": 0.01705216286417865
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 232887000000,
+     "netIncome": 10073000000,
+     "fcf": 17296000000,
+     "margin": 0.04325273630559026
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 280522000000,
+     "netIncome": 11588000000,
+     "fcf": 21653000000,
+     "margin": 0.04130870306072251
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 386064000000,
+     "netIncome": 21331000000,
+     "fcf": 25924000000,
+     "margin": 0.05525249699531684
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 469822000000,
+     "netIncome": 33364000000,
+     "fcf": -14726000000,
+     "margin": 0.07101412875514557
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 513983000000,
+     "netIncome": -2722000000,
+     "fcf": -16893000000,
+     "margin": -0.005295895000418302
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 574785000000,
+     "netIncome": 30425000000,
+     "fcf": 32217000000,
+     "margin": 0.05293283575597832
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 637959000000,
+     "netIncome": 59248000000,
+     "fcf": 32878000000,
+     "margin": 0.09287117197186653
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 716924000000,
+     "netIncome": 77670000000,
+     "fcf": 7695000000,
+     "margin": 0.10833784334183261
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Online Stores",
+     "value": 269287000000
+    },
+    {
+     "segment": "Third-Party Seller Services",
+     "value": 172162000000
+    },
+    {
+     "segment": "Amazon Web Services",
+     "value": 128725000000
+    },
+    {
+     "segment": "Advertising Services",
+     "value": 68635000000
+    },
+    {
+     "segment": "Subscription Services",
+     "value": 49619000000
+    },
+    {
+     "segment": "Physical Stores",
+     "value": 22561000000
+    },
+    {
+     "segment": "Other Services",
+     "value": 5935000000
+    }
+   ]
+  },
+  {
+   "symbol": "XIU.TO",
+   "held_as": "XIU.TO",
+   "role": "holding",
+   "weight": 0.064,
+   "is_fund": true,
+   "name": "iShares S&P/TSX 60 Index ETF",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "exchange": "TSX",
+   "currency": "CAD",
+   "reporting_currency": null,
+   "resolved_via": "direct",
+   "price": 54.11,
+   "price_date": "2026-09-04",
+   "market_cap": 24887102059,
+   "beta": 0.957,
+   "holdings": [
+    {
+     "asset": "RY.TO",
+     "name": "ROYAL BANK OF CANADA",
+     "weight": 9.7260837
+    },
+    {
+     "asset": "TD.TO",
+     "name": "TORONTO DOMINION",
+     "weight": 6.75820976
+    },
+    {
+     "asset": "SHOP.TO",
+     "name": "SHOPIFY SUBORDINATE VOTING CLASS A",
+     "weight": 5.83453605
+    },
+    {
+     "asset": "BMO.TO",
+     "name": "BANK OF MONTREAL",
+     "weight": 4.06307768
+    },
+    {
+     "asset": "BNS.TO",
+     "name": "BANK OF NOVA SCOTIA",
+     "weight": 3.82531691
+    },
+    {
+     "asset": "ENB.TO",
+     "name": "ENBRIDGE",
+     "weight": 3.62239085
+    },
+    {
+     "asset": "CM.TO",
+     "name": "CANADIAN IMPERIAL BANK OF COMMERCE",
+     "weight": 3.57059836
+    },
+    {
+     "asset": "CNQ.TO",
+     "name": "CANADIAN NATURAL RESOURCES LTD",
+     "weight": 3.50253224
+    },
+    {
+     "asset": "AEM.TO",
+     "name": "AGNICO EAGLE MINES",
+     "weight": 3.45997989
+    },
+    {
+     "asset": "BN.TO",
+     "name": "BROOKFIELD CLASS A",
+     "weight": 2.8343522
+    }
+   ],
+   "sectors": [
+    {
+     "sector": "Financial Services",
+     "weight": 42.61
+    },
+    {
+     "sector": "Energy",
+     "weight": 17.65
+    },
+    {
+     "sector": "Basic Materials",
+     "weight": 11.5
+    },
+    {
+     "sector": "Technology",
+     "weight": 8.43
+    },
+    {
+     "sector": "Industrials",
+     "weight": 7.89
+    },
+    {
+     "sector": "Consumer Cyclical",
+     "weight": 4.1
+    },
+    {
+     "sector": "Consumer Defensive",
+     "weight": 3.26
+    },
+    {
+     "sector": "Utilities",
+     "weight": 2.69
+    },
+    {
+     "sector": "Communication Services",
+     "weight": 1.67
+    },
+    {
+     "sector": "Real Estate",
+     "weight": 0.2
+    }
+   ],
+   "expense_ratio": 0.17,
+   "aum": 22634301857,
+   "holdings_count": 61
+  },
+  {
+   "symbol": "BE",
+   "held_as": "BE",
+   "role": "holding",
+   "weight": 0.0627,
+   "is_fund": false,
+   "name": "Bloom Energy Corporation",
+   "sector": "Industrials",
+   "industry": "Electrical Equipment & Parts",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 252.87,
+   "price_date": "2026-09-04",
+   "market_cap": 74477042490,
+   "beta": 3.811,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 2023994000,
+    "grossProfit": 587400000,
+    "operatingIncome": 72802000,
+    "ebitda": 20050000,
+    "netIncome": -88434000,
+    "eps": -0.37,
+    "rd": 185993000,
+    "sga": 328605000,
+    "interestExpense": 53888000,
+    "taxExpense": 2736000,
+    "shares": 240402000
+   },
+   "balance": {
+    "totalAssets": 4396711000,
+    "totalLiabilities": 3603748000,
+    "totalEquity": 768641000,
+    "cash": 2454108000,
+    "totalDebt": 2991952000,
+    "netDebt": 537844000,
+    "inventory": 643306000,
+    "goodwill": 0,
+    "currentAssets": 3730567000,
+    "currentLiabilities": 623832000,
+    "workingCapital": 3106735000
+   },
+   "cashflow": {
+    "operatingCashFlow": 113949000,
+    "capex": -56759000,
+    "freeCashFlow": 57190000,
+    "sbc": 0,
+    "dividendsPaid": -947000,
+    "buybacks": 0,
+    "acquisitions": 131000
+   },
+   "valuation": {
+    "pe": 302.548456568557,
+    "pb": 45.06613318378807,
+    "ps": 23.923371019706728,
+    "pfcf": 118.56305437751925,
+    "evEbitda": 213.34415416328352,
+    "earningsYield": 0.003371682657319144,
+    "fcfYield": 0.008434330620531063,
+    "enterpriseValue": 21426373780
+   },
+   "profitability": {
+    "grossMargin": 0.2902182516351333,
+    "operatingMargin": 0.035969474217808946,
+    "netMargin": -0.04369281727119744,
+    "ebitdaMargin": 0.009906155848288087,
+    "roe": 0.24771679049590184,
+    "roa": 0.043518754260757186,
+    "roic": 0.07513332233759316,
+    "effectiveTaxRate": -0.03241552533055306
+   },
+   "growth": {
+    "revenue": 0.37326441660515003,
+    "grossProfit": 0.4516320357446472,
+    "operatingIncome": 2.1778776899908334,
+    "netIncome": -2.0257638484962537,
+    "eps": -1.846153846153846,
+    "fcf": 0.725396729620467,
+    "revenue3y": 0.30527623070718574,
+    "revenue5y": 0.47048602933988243
+   },
+   "health": {
+    "currentRatio": 4.086640960053847,
+    "quickRatio": 4.948866040857154,
+    "debtToEquity": 3.8925219966148044,
+    "netDebtToEbitda": 26.825137157107232,
+    "interestCoverage": 1.3509872327790975,
+    "altmanZ": 11.746927658309161,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 208540000,
+     "netIncome": -279658000,
+     "fcf": -291805000,
+     "margin": -1.3410281001246762
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 375996000,
+     "netIncome": -262599000,
+     "fcf": -153420000,
+     "margin": -0.6984090256279322
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 742038000,
+     "netIncome": -273540000,
+     "fcf": -140409000,
+     "margin": -0.3686334123050302
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 785177000,
+     "netIncome": -304414000,
+     "fcf": 112717000,
+     "margin": -0.38770111707296573
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 794247000,
+     "netIncome": -157553000,
+     "fcf": -136606000,
+     "margin": -0.19836776216970287
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 972176000,
+     "netIncome": -164445000,
+     "fcf": -110491000,
+     "margin": -0.1691514705156268
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 1199125000,
+     "netIncome": -301408000,
+     "fcf": -308546000,
+     "margin": -0.2513566141978526
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 1333470000,
+     "netIncome": -302116000,
+     "fcf": -456270000,
+     "margin": -0.2265637772128357
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 1473856000,
+     "netIncome": -29227000,
+     "fcf": 33146000,
+     "margin": -0.019830295496982064
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 2023994000,
+     "netIncome": -88434000,
+     "fcf": 57190000,
+     "margin": -0.04369281727119744
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Product",
+     "value": 1531281000
+    },
+    {
+     "segment": "Service",
+     "value": 228295000
+    },
+    {
+     "segment": "Installation",
+     "value": 205946000
+    },
+    {
+     "segment": "Electricity",
+     "value": 60350000
+    }
+   ]
+  },
+  {
+   "symbol": "GE",
+   "held_as": "GE",
+   "role": "holding",
+   "weight": 0.0581,
+   "is_fund": false,
+   "name": "GE Aerospace",
+   "sector": "Industrials",
+   "industry": "Aerospace & Defense",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 337.12,
+   "price_date": "2026-09-04",
+   "market_cap": 349783074383,
+   "beta": 1.366,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 45855000000,
+    "grossProfit": 16887000000,
+    "operatingIncome": 8770000000,
+    "ebitda": 12063000000,
+    "netIncome": 8704000000,
+    "eps": 8.16,
+    "rd": 1580000000,
+    "sga": 4088000000,
+    "interestExpense": 843000000,
+    "taxExpense": 1405000000,
+    "shares": 1067000000
+   },
+   "balance": {
+    "totalAssets": 130169000000,
+    "totalLiabilities": 111269000000,
+    "totalEquity": 18677000000,
+    "cash": 12392000000,
+    "totalDebt": 20494000000,
+    "netDebt": 8102000000,
+    "inventory": 11868000000,
+    "goodwill": 9060000000,
+    "currentAssets": 40596000000,
+    "currentLiabilities": 38980000000,
+    "workingCapital": 1616000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 8537000000,
+    "capex": -1273000000,
+    "freeCashFlow": 7264000000,
+    "sbc": 0,
+    "dividendsPaid": -1452000000,
+    "buybacks": -7551000000,
+    "acquisitions": -360000000
+   },
+   "valuation": {
+    "pe": 39.568075117370896,
+    "pb": 19.865497072,
+    "ps": 6.901933234337694,
+    "pfcf": 41.66068060778942,
+    "evEbitda": 29.45810390620136,
+    "earningsYield": 0.025600169422377687,
+    "fcfYield": 0.02400344846533849,
+    "enterpriseValue": 336770010000
+   },
+   "profitability": {
+    "grossMargin": 0.36826954530585543,
+    "operatingMargin": 0.19125504307054847,
+    "netMargin": 0.1898157234761749,
+    "ebitdaMargin": 0.2630683676807327,
+    "roe": 0.4903123548219605,
+    "roa": 0.07026599410990664,
+    "roic": 0.10449715148309945,
+    "effectiveTaxRate": 0.1405
+   },
+   "growth": {
+    "revenue": 0.1848224897938091,
+    "grossProfit": 0.173197165485619,
+    "operatingIncome": 0.2971453926933886,
+    "netIncome": 0.32763880414887125,
+    "eps": 0.3509933774834437,
+    "fcf": 0.9749864056552474,
+    "revenue3y": 0.6164347900006667,
+    "revenue5y": -0.3799520790848872
+   },
+   "health": {
+    "currentRatio": 0.9818698985901558,
+    "quickRatio": 0.7369933299127758,
+    "debtToEquity": 1.0972854312791134,
+    "netDebtToEbitda": 0.6716405537594297,
+    "interestCoverage": 10.40332147093713,
+    "altmanZ": 3.590396235693132,
+    "piotroski": 6
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 119468000000,
+     "netIncome": 7500000000,
+     "fcf": -7443000000,
+     "margin": 0.06277831720628119
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 99279000000,
+     "netIncome": -8484000000,
+     "fcf": 2506000000,
+     "margin": -0.08545613876046294
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 97012000000,
+     "netIncome": -22355000000,
+     "fcf": -3810000000,
+     "margin": -0.23043541005236465
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 90221000000,
+     "netIncome": -4979000000,
+     "fcf": 2677000000,
+     "margin": -0.05518670819432283
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 75834000000,
+     "netIncome": 5704000000,
+     "fcf": 194000000,
+     "margin": 0.07521692116992378
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 56469000000,
+     "netIncome": -6337000000,
+     "fcf": 2368000000,
+     "margin": -0.11222086454514867
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 29139000000,
+     "netIncome": 336000000,
+     "fcf": 4742000000,
+     "margin": 0.011530937918253886
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 35348000000,
+     "netIncome": 9482000000,
+     "fcf": 3584000000,
+     "margin": 0.2682471426954849
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 38702000000,
+     "netIncome": 6556000000,
+     "fcf": 3678000000,
+     "margin": 0.16939693039119424
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 45855000000,
+     "netIncome": 8704000000,
+     "fcf": 7264000000,
+     "margin": 0.1898157234761749
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Operating Segments",
+     "value": 43868000000
+    },
+    {
+     "segment": "Capital Segment",
+     "value": 1987000000
+    }
+   ]
+  },
+  {
+   "symbol": "AVGO",
+   "held_as": "AVGO",
+   "role": "holding",
+   "weight": 0.0561,
+   "is_fund": false,
+   "name": "Broadcom Inc.",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 357.9,
+   "price_date": "2026-09-04",
+   "market_cap": 1702714094100,
+   "beta": 1.457,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-11-02",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 63887000000,
+    "grossProfit": 43294000000,
+    "operatingIncome": 25484000000,
+    "ebitda": 34714000000,
+    "netIncome": 23126000000,
+    "eps": 4.77,
+    "rd": 10977000000,
+    "sga": 4211000000,
+    "interestExpense": 3210000000,
+    "taxExpense": -397000000,
+    "shares": 4853000000
+   },
+   "balance": {
+    "totalAssets": 171092000000,
+    "totalLiabilities": 89800000000,
+    "totalEquity": 81292000000,
+    "cash": 16178000000,
+    "totalDebt": 65136000000,
+    "netDebt": 48958000000,
+    "inventory": 2270000000,
+    "goodwill": 97801000000,
+    "currentAssets": 31573000000,
+    "currentLiabilities": 18514000000,
+    "workingCapital": 13059000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 27537000000,
+    "capex": -623000000,
+    "freeCashFlow": 26914000000,
+    "sbc": 7568000000,
+    "dividendsPaid": -11142000000,
+    "buybacks": -6310000000,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": 44.403846153846146,
+    "pb": 17.11031768482295,
+    "ps": 19.10928907905369,
+    "pfcf": 43.212803443900206,
+    "evEbitda": 33.25790892409544,
+    "earningsYield": 0.02243324237293063,
+    "fcfYield": 0.023141289624919185,
+    "enterpriseValue": 1757293600000
+   },
+   "profitability": {
+    "grossMargin": 0.6776652527118193,
+    "operatingMargin": 0.3988917933225852,
+    "netMargin": 0.3619828760154648,
+    "ebitdaMargin": 0.5433656299403634,
+    "roe": 0.4391398528167095,
+    "roa": 0.20337712864340837,
+    "roic": 0.2398559234828887,
+    "effectiveTaxRate": -0.0174666725328875
+   },
+   "growth": {
+    "revenue": 0.23874432853763525,
+    "grossProfit": 0.3317542834292042,
+    "operatingIncome": 0.8928916289088613,
+    "netIncome": 2.922985581000848,
+    "eps": 2.866141732283465,
+    "fcf": 0.38631915112805193,
+    "revenue3y": 0.6701412241729339,
+    "revenue5y": 1.281673382121661
+   },
+   "health": {
+    "currentRatio": 2.503743161531817,
+    "quickRatio": 1.5827481905584964,
+    "debtToEquity": 0.8012596565467697,
+    "netDebtToEbitda": 1.410324364809587,
+    "interestCoverage": 7.938940809968847,
+    "altmanZ": 13.15051348457033,
+    "piotroski": 8
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-10-31",
+     "revenue": 13240000000,
+     "netIncome": -1739000000,
+     "fcf": 2688000000,
+     "margin": -0.13134441087613294
+    },
+    {
+     "year": "2017",
+     "date": "2017-10-31",
+     "revenue": 17636000000,
+     "netIncome": 1692000000,
+     "fcf": 5482000000,
+     "margin": 0.0959401224767521
+    },
+    {
+     "year": "2018",
+     "date": "2018-11-04",
+     "revenue": 20848000000,
+     "netIncome": 12259000000,
+     "fcf": 8245000000,
+     "margin": 0.5880180353031466
+    },
+    {
+     "year": "2019",
+     "date": "2019-11-03",
+     "revenue": 22597000000,
+     "netIncome": 2724000000,
+     "fcf": 9265000000,
+     "margin": 0.12054697526220294
+    },
+    {
+     "year": "2020",
+     "date": "2020-11-01",
+     "revenue": 23888000000,
+     "netIncome": 2960000000,
+     "fcf": 11598000000,
+     "margin": 0.12391158740790355
+    },
+    {
+     "year": "2021",
+     "date": "2021-10-31",
+     "revenue": 27450000000,
+     "netIncome": 6736000000,
+     "fcf": 13321000000,
+     "margin": 0.24539162112932605
+    },
+    {
+     "year": "2022",
+     "date": "2022-10-30",
+     "revenue": 33203000000,
+     "netIncome": 11495000000,
+     "fcf": 16312000000,
+     "margin": 0.3462036562961178
+    },
+    {
+     "year": "2023",
+     "date": "2023-10-29",
+     "revenue": 35819000000,
+     "netIncome": 14082000000,
+     "fcf": 17633000000,
+     "margin": 0.39314330383316115
+    },
+    {
+     "year": "2024",
+     "date": "2024-11-03",
+     "revenue": 51574000000,
+     "netIncome": 5895000000,
+     "fcf": 19414000000,
+     "margin": 0.11430177996664986
+    },
+    {
+     "year": "2025",
+     "date": "2025-11-02",
+     "revenue": 63887000000,
+     "netIncome": 23126000000,
+     "fcf": 26914000000,
+     "margin": 0.3619828760154648
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Semiconductor Solutions",
+     "value": 36858000000
+    },
+    {
+     "segment": "Infrastructure Software",
+     "value": 27029000000
+    }
+   ]
+  },
+  {
+   "symbol": "XNDU",
+   "held_as": "XNDU",
+   "role": "holding",
+   "weight": 0.043,
+   "is_fund": false,
+   "name": "Xanadu Quantum Technologies Limited Class B Subordinate Voting Shares",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "CAD",
+   "resolved_via": "direct",
+   "price": 9.72,
+   "price_date": "2026-09-04",
+   "market_cap": 220060800,
+   "beta": 2.7619195,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "CAD",
+   "income": {
+    "revenue": 4617000,
+    "grossProfit": 4256000,
+    "operatingIncome": -69322000,
+    "ebitda": -63931000,
+    "netIncome": -70667000,
+    "eps": -2.36,
+    "rd": 55237000,
+    "sga": 16605000,
+    "interestExpense": 0,
+    "taxExpense": 0,
+    "shares": 29973333
+   },
+   "balance": {
+    "totalAssets": 310838967,
+    "totalLiabilities": 14152848,
+    "totalEquity": 296686118,
+    "cash": 367345,
+    "totalDebt": 0,
+    "netDebt": -367345,
+    "inventory": 0,
+    "goodwill": 0,
+    "currentAssets": 554850,
+    "currentLiabilities": 2078104,
+    "workingCapital": -1523254
+   },
+   "cashflow": {
+    "operatingCashFlow": -2727274.4,
+    "capex": 0,
+    "freeCashFlow": -2727273,
+    "sbc": 0,
+    "dividendsPaid": 0,
+    "buybacks": 0,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": -3.2487393704600485,
+    "pb": 0.9039327088600418,
+    "ps": 38.73975060870506,
+    "pfcf": -4.023960718659774,
+    "evEbitda": 0.5758146721957232,
+    "earningsYield": -0.3075470053594656,
+    "fcfYield": -0.24851137223155134,
+    "enterpriseValue": 351682423.5435224
+   },
+   "profitability": {
+    "grossMargin": 0.9218106995884774,
+    "operatingMargin": -15.014511587611002,
+    "netMargin": -15.305826294130387,
+    "ebitdaMargin": -13.84687026207494,
+    "roe": -0.47253824722460597,
+    "roa": -0.22664940887542392,
+    "roic": -0.20213609286841733,
+    "effectiveTaxRate": 0.0
+   },
+   "growth": {
+    "revenue": 1.9056010069225928,
+    "grossProfit": 2.789848619768477,
+    "operatingIncome": -0.37010830895722985,
+    "netIncome": -0.5373085624782458,
+    "eps": -14.733333333333334,
+    "fcf": 0.9436653515657275,
+    "revenue3y": 17.51635901734738,
+    "revenue5y": 17.51635901734738
+   },
+   "health": {
+    "currentRatio": 25.535426501318472,
+    "quickRatio": 0.2669981868087449,
+    "debtToEquity": 0.0,
+    "netDebtToEbitda": 0.005745960488651828,
+    "interestCoverage": 0.0,
+    "altmanZ": 1.191165781555162,
+    "piotroski": 4
+   },
+   "history": [
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 2479000,
+     "netIncome": -35592000,
+     "fcf": -39967000,
+     "margin": -14.3574021782977
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 1589000,
+     "netIncome": -45968000,
+     "fcf": -48412000,
+     "margin": -28.928886091881687
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 4617000,
+     "netIncome": -70667000,
+     "fcf": -2727273,
+     "margin": -15.305826294130387
+    }
+   ],
+   "segments": []
+  },
+  {
+   "symbol": "MSFT",
+   "held_as": "MSFT",
+   "role": "holding",
+   "weight": 0.0385,
+   "is_fund": false,
+   "name": "Microsoft Corporation",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 499.7,
+   "price_date": "2026-09-04",
+   "market_cap": 3710547335000,
+   "beta": 1.108,
+   "fiscal_year": "2026",
+   "fiscal_date": "2026-06-30",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 331839000000,
+    "grossProfit": 225465000000,
+    "operatingIncome": 155237000000,
+    "ebitda": 207519000000,
+    "netIncome": 133749000000,
+    "eps": 17.95,
+    "rd": 35562000000,
+    "sga": 34666000000,
+    "interestExpense": 3051000000,
+    "taxExpense": 32185000000,
+    "shares": 7453000000
+   },
+   "balance": {
+    "totalAssets": 758376000000,
+    "totalLiabilities": 315989000000,
+    "totalEquity": 442387000000,
+    "cash": 20935000000,
+    "totalDebt": 128808300000,
+    "netDebt": 107873300000,
+    "inventory": 1397000000,
+    "goodwill": 119651000000,
+    "currentAssets": 207710000000,
+    "currentLiabilities": 168825000000,
+    "workingCapital": 38885000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 182935000000,
+    "capex": -115948000000,
+    "freeCashFlow": 66987000000,
+    "sbc": 12405000000,
+    "dividendsPaid": -26445000000,
+    "buybacks": -22271000000,
+    "acquisitions": -1743000000
+   },
+   "valuation": {
+    "pe": 27.76111111111111,
+    "pb": 8.391456575351445,
+    "ps": 11.181769879369213,
+    "pfcf": 55.39205121889322,
+    "evEbitda": 18.400342306005715,
+    "earningsYield": 0.03602888614310059,
+    "fcfYield": 0.018053131776042956,
+    "enterpriseValue": 2879038880000
+   },
+   "profitability": {
+    "grossMargin": 0.6794409337058032,
+    "operatingMargin": 0.4678081840892722,
+    "netMargin": 0.4030538905915218,
+    "ebitdaMargin": 0.6253604910815185,
+    "roe": 0.33215020751782603,
+    "roa": 0.17636238488559763,
+    "roic": 0.20564635220712557,
+    "effectiveTaxRate": 0.19396265985271252
+   },
+   "growth": {
+    "revenue": 0.1778868679984666,
+    "grossProfit": 0.16283207748603612,
+    "operatingIncome": 0.20780685920577618,
+    "netIncome": 0.3134279990572708,
+    "eps": 0.3138686131386862,
+    "fcf": -0.06457108544776641,
+    "revenue3y": 0.5694894508619259,
+    "revenue5y": 1.005555606576455
+   },
+   "health": {
+    "currentRatio": 1.2303272619576484,
+    "quickRatio": 1.2220524211461572,
+    "debtToEquity": 0.29116655778763845,
+    "netDebtToEbitda": 0.5198237269840352,
+    "interestCoverage": 50.880694854146185,
+    "altmanZ": 8.885997937450442,
+    "piotroski": 6
+   },
+   "history": [
+    {
+     "year": "2017",
+     "date": "2017-06-30",
+     "revenue": 96571000000,
+     "netIncome": 25489000000,
+     "fcf": 31378000000,
+     "margin": 0.26394052044609667
+    },
+    {
+     "year": "2018",
+     "date": "2018-06-30",
+     "revenue": 110360000000,
+     "netIncome": 16571000000,
+     "fcf": 32252000000,
+     "margin": 0.1501540413193186
+    },
+    {
+     "year": "2019",
+     "date": "2019-06-30",
+     "revenue": 125843000000,
+     "netIncome": 39240000000,
+     "fcf": 38260000000,
+     "margin": 0.3118171054409065
+    },
+    {
+     "year": "2020",
+     "date": "2020-06-30",
+     "revenue": 143015000000,
+     "netIncome": 44281000000,
+     "fcf": 45234000000,
+     "margin": 0.3096248645247002
+    },
+    {
+     "year": "2021",
+     "date": "2021-06-30",
+     "revenue": 168088000000,
+     "netIncome": 61271000000,
+     "fcf": 56118000000,
+     "margin": 0.36451739564989766
+    },
+    {
+     "year": "2022",
+     "date": "2022-06-30",
+     "revenue": 198270000000,
+     "netIncome": 72738000000,
+     "fcf": 65149000000,
+     "margin": 0.3668633681343622
+    },
+    {
+     "year": "2023",
+     "date": "2023-06-30",
+     "revenue": 211915000000,
+     "netIncome": 72361000000,
+     "fcf": 59475000000,
+     "margin": 0.3414623787839464
+    },
+    {
+     "year": "2024",
+     "date": "2024-06-30",
+     "revenue": 245122000000,
+     "netIncome": 88136000000,
+     "fcf": 74071000000,
+     "margin": 0.35955972944084985
+    },
+    {
+     "year": "2025",
+     "date": "2025-06-30",
+     "revenue": 281724000000,
+     "netIncome": 101832000000,
+     "fcf": 71611000000,
+     "margin": 0.3614601524896707
+    },
+    {
+     "year": "2026",
+     "date": "2026-06-30",
+     "revenue": 331839000000,
+     "netIncome": 133749000000,
+     "fcf": 66987000000,
+     "margin": 0.4030538905915218
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Server Products And Cloud Services",
+     "value": 129425000000
+    },
+    {
+     "segment": "Microsoft Three Six Five Commercial Products And Cloud Services",
+     "value": 101997000000
+    },
+    {
+     "segment": "XBOX",
+     "value": 21790000000
+    },
+    {
+     "segment": "Linked In Corporation",
+     "value": 19817000000
+    },
+    {
+     "segment": "Windows",
+     "value": 17084000000
+    },
+    {
+     "segment": "Search Advertising",
+     "value": 15176000000
+    },
+    {
+     "segment": "Microsoft Three Six Five Consumer Products and Cloud Services",
+     "value": 9175000000
+    },
+    {
+     "segment": "Dynamics Products And Cloud Services",
+     "value": 9006000000
+    },
+    {
+     "segment": "Enterprise Services",
+     "value": 8260000000
+    },
+    {
+     "segment": "Other Products And Services",
+     "value": 109000000
+    }
+   ]
+  },
+  {
+   "symbol": "JPM",
+   "held_as": "JPM",
+   "role": "holding",
+   "weight": 0.0358,
+   "is_fund": false,
+   "name": "JPMorgan Chase & Co.",
+   "sector": "Financial Services",
+   "industry": "Banks - Diversified",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 358.64,
+   "price_date": "2026-09-04",
+   "market_cap": 960979466400,
+   "beta": 0.975,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 279745000000,
+    "grossProfit": 167607000000,
+    "operatingIncome": 72595000000,
+    "ebitda": 81416000000,
+    "netIncome": 57048000000,
+    "eps": 20.05,
+    "rd": 0,
+    "sga": 60018000000,
+    "interestExpense": 97898000000,
+    "taxExpense": 15547000000,
+    "shares": 2793700000
+   },
+   "balance": {
+    "totalAssets": 4424900000000,
+    "totalLiabilities": 4062462000000,
+    "totalEquity": 362438000000,
+    "cash": 343338000000,
+    "totalDebt": 942378000000,
+    "netDebt": 599040000000,
+    "inventory": 0,
+    "goodwill": 52731000000,
+    "currentAssets": 1877537000000,
+    "currentLiabilities": 3584541000000,
+    "workingCapital": -1707004000000
+   },
+   "cashflow": {
+    "operatingCashFlow": -147782000000,
+    "capex": 0,
+    "freeCashFlow": -147782000000,
+    "sbc": 0,
+    "dividendsPaid": -16625000000,
+    "buybacks": -34591000000,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": 15.418744625967328,
+    "pb": 2.6699004479468655,
+    "ps": 3.228739643789499,
+    "pfcf": -5.912482719923216,
+    "evEbitda": 20.27736653499356,
+    "earningsYield": 0.06505793300599283,
+    "fcfYield": -0.16913368670496287,
+    "enterpriseValue": 1497614914000
+   },
+   "profitability": {
+    "grossMargin": 0.5991420758190495,
+    "operatingMargin": 0.25950419131709235,
+    "netMargin": 0.20392857781193588,
+    "ebitdaMargin": 0.29103647965111085,
+    "roe": 0.1781088712271246,
+    "roa": 0.012974298060505249,
+    "roic": 0.03211229902977594,
+    "effectiveTaxRate": 0.21416075487292513
+   },
+   "growth": {
+    "revenue": 0.03307372160612137,
+    "grossProfit": 0.05555940422583997,
+    "operatingIncome": -0.03311090688722846,
+    "netIncome": -0.02433685074652392,
+    "eps": 0.01515917129863571,
+    "fcf": -2.517614015043321,
+    "revenue3y": 0.9340972020399811,
+    "revenue5y": 1.3813925521884065
+   },
+   "health": {
+    "currentRatio": 0.8403662699432636,
+    "quickRatio": 0.5237872854571897,
+    "debtToEquity": 2.6001081564295134,
+    "netDebtToEbitda": 7.357767514984769,
+    "interestCoverage": 0.7415371100533208,
+    "altmanZ": 0.2191803583597511,
+    "piotroski": 4
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 106387000000,
+     "netIncome": 24733000000,
+     "fcf": 21884000000,
+     "margin": 0.23248141220261875
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 114579000000,
+     "netIncome": 24441000000,
+     "fcf": -10827000000,
+     "margin": 0.2133113397743042
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 129824000000,
+     "netIncome": 32474000000,
+     "fcf": 15614000000,
+     "margin": 0.25013864924821294
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 142515000000,
+     "netIncome": 36431000000,
+     "fcf": 4092000000,
+     "margin": 0.25562923201066556
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 129843000000,
+     "netIncome": 29131000000,
+     "fcf": -79910000000,
+     "margin": 0.22435556787812974
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 127238000000,
+     "netIncome": 48334000000,
+     "fcf": 78084000000,
+     "margin": 0.37987079331646206
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 153824000000,
+     "netIncome": 37676000000,
+     "fcf": 107119000000,
+     "margin": 0.24492926981485333
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 236273000000,
+     "netIncome": 49552000000,
+     "fcf": 12974000000,
+     "margin": 0.20972349781820182
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 270789000000,
+     "netIncome": 58471000000,
+     "fcf": -42012000000,
+     "margin": 0.215928268873551
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 279745000000,
+     "netIncome": 57048000000,
+     "fcf": -147782000000,
+     "margin": 0.20392857781193588
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Commercial And Investment Bank",
+     "value": 78454000000
+    },
+    {
+     "segment": "Consumer & Community Banking",
+     "value": 76029000000
+    },
+    {
+     "segment": "Asset and Wealth Management Segment",
+     "value": 24073000000
+    },
+    {
+     "segment": "Segment Reporting, Reconciling Item, Corporate Nonsegment",
+     "value": 7025000000
+    },
+    {
+     "segment": "Segment Reconciling Items",
+     "value": -3134000000
+    }
+   ]
+  },
+  {
+   "symbol": "MDA",
+   "held_as": "MDA",
+   "role": "holding",
+   "weight": 0.0274,
+   "is_fund": false,
+   "name": "MDA Space Ltd",
+   "sector": "Industrials",
+   "industry": "Aerospace & Defense",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 29.52,
+   "price_date": "2026-09-04",
+   "market_cap": 4779852836,
+   "beta": 0.7811395,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 1189296240,
+    "grossProfit": 236737820,
+    "operatingIncome": 82577880,
+    "ebitda": 193409920,
+    "netIncome": 79009700,
+    "eps": 0.61,
+    "rd": 60076500,
+    "sga": 94083439,
+    "interestExpense": 12379400,
+    "taxExpense": -364100,
+    "shares": 129711640
+   },
+   "balance": {
+    "totalAssets": 2443984840,
+    "totalLiabilities": 1457273840,
+    "totalEquity": 986711000,
+    "cash": 110686400,
+    "totalDebt": 299363020,
+    "netDebt": 188676620,
+    "inventory": 17112700,
+    "goodwill": 582851280,
+    "currentAssets": 447478900,
+    "currentLiabilities": 959621960,
+    "workingCapital": -512143060
+   },
+   "cashflow": {
+    "operatingCashFlow": 296741500,
+    "capex": -127653460,
+    "freeCashFlow": 169088040,
+    "sbc": 0,
+    "dividendsPaid": 0,
+    "buybacks": 0,
+    "acquisitions": -263899680
+   },
+   "valuation": {
+    "pe": 50.41975308641975,
+    "pb": 2.9992815209986246,
+    "ps": 3.027671959820475,
+    "pfcf": -37.10930478061559,
+    "evEbitda": 19.05869335133311,
+    "earningsYield": 0.018675793995609685,
+    "fcfYield": -0.026947419411703987,
+    "enterpriseValue": 3543353693
+   },
+   "profitability": {
+    "grossMargin": 0.1990570658829292,
+    "operatingMargin": 0.06943423952975752,
+    "netMargin": 0.06643399461180505,
+    "ebitdaMargin": 0.16262552045064904,
+    "roe": 0.06596486856858104,
+    "roa": 0.02811330271576097,
+    "roic": 0.03977057461461629,
+    "effectiveTaxRate": -0.004629629629629629
+   },
+   "growth": {
+    "revenue": 0.5845420473144712,
+    "grossProfit": 0.4515508112149244,
+    "operatingIncome": 0.8423905731793432,
+    "netIncome": 0.4319821310570392,
+    "eps": 0.3913043478260869,
+    "fcf": -0.6376364035944468,
+    "revenue3y": 1.4083444674140226,
+    "revenue5y": 3.8588713729239976
+   },
+   "health": {
+    "currentRatio": 0.7505870920722326,
+    "quickRatio": 0.44847473061162546,
+    "debtToEquity": 0.3033948339483395,
+    "netDebtToEbitda": 0.9755271084337349,
+    "interestCoverage": 6.670588235294118,
+    "altmanZ": 2.792376834640006,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 232025117,
+     "netIncome": -13579277,
+     "fcf": 42072213,
+     "margin": -0.05852503028799248
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 377037140,
+     "netIncome": 2292740,
+     "fcf": 15495760,
+     "margin": 0.006080939400293563
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 473013240,
+     "netIncome": 19401510,
+     "fcf": -59606160,
+     "margin": 0.041016843418590146
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 609334200,
+     "netIncome": 36819600,
+     "fcf": -101480250,
+     "margin": 0.06042595344229817
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 750561490,
+     "netIncome": 55175060,
+     "fcf": 466625350,
+     "margin": 0.07351171187852977
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 1189296240,
+     "netIncome": 79009700,
+     "fcf": 169088040,
+     "margin": 0.06643399461180505
+    }
+   ],
+   "segments": []
+  },
+  {
+   "symbol": "SPGI",
+   "held_as": "SPGI",
+   "role": "holding",
+   "weight": 0.0269,
+   "is_fund": false,
+   "name": "S&P Global Inc.",
+   "sector": "Financial Services",
+   "industry": "Financial - Data & Stock Exchanges",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 443.51,
+   "price_date": "2026-09-04",
+   "market_cap": 130746748000,
+   "beta": 1.072,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 15336000000,
+    "grossProfit": 10773000000,
+    "operatingIncome": 6478000000,
+    "ebitda": 7693000000,
+    "netIncome": 4471000000,
+    "eps": 14.66,
+    "rd": 0,
+    "sga": 3417000000,
+    "interestExpense": 287000000,
+    "taxExpense": 1407000000,
+    "shares": 305100000
+   },
+   "balance": {
+    "totalAssets": 61200000000,
+    "totalLiabilities": 25048000000,
+    "totalEquity": 31235000000,
+    "cash": 1745000000,
+    "totalDebt": 14200000000,
+    "netDebt": 12455000000,
+    "inventory": 0,
+    "goodwill": 36475000000,
+    "currentAssets": 6296000000,
+    "currentLiabilities": 7637000000,
+    "workingCapital": -1341000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 5651000000,
+    "capex": -195000000,
+    "freeCashFlow": 5456000000,
+    "sbc": 236000000,
+    "dividendsPaid": -1170000000,
+    "buybacks": -5001000000,
+    "acquisitions": -2023000000
+   },
+   "valuation": {
+    "pe": 26.993913572732804,
+    "pb": 4.143878226214575,
+    "ps": 8.110337323987347,
+    "pfcf": 23.46074789162031,
+    "evEbitda": 17.305342572331632,
+    "earningsYield": 0.03756883274980026,
+    "fcfYield": 0.04262438710903922,
+    "enterpriseValue": 171740432000
+   },
+   "profitability": {
+    "grossMargin": 0.7024647887323944,
+    "operatingMargin": 0.42240479916536255,
+    "netMargin": 0.29153625456442356,
+    "ebitdaMargin": 0.5016301512780386,
+    "roe": 0.15470446794801276,
+    "roa": 0.07824372873811719,
+    "roic": 0.10225269935402885,
+    "effectiveTaxRate": 0.22595150152561427
+   },
+   "growth": {
+    "revenue": 0.07939189189189189,
+    "grossProfit": 0.09738209228888663,
+    "operatingIncome": 0.16093189964157706,
+    "netIncome": 0.16069574247144341,
+    "eps": 0.1868932038834952,
+    "fcf": -0.01958670260557053,
+    "revenue3y": 0.42606305550684626,
+    "revenue5y": 0.6293880021245665
+   },
+   "health": {
+    "currentRatio": 0.9544109589041095,
+    "quickRatio": 0.8244074898520362,
+    "debtToEquity": 0.45461821674403713,
+    "netDebtToEbitda": 1.6190042896139347,
+    "interestCoverage": 22.571428571428573,
+    "altmanZ": 4.173468049661211,
+    "piotroski": 7
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 5661000000,
+     "netIncome": 2106000000,
+     "fcf": 1349000000,
+     "margin": 0.37201907790143085
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 6063000000,
+     "netIncome": 1496000000,
+     "fcf": 1893000000,
+     "margin": 0.24674253669800428
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 6258000000,
+     "netIncome": 1958000000,
+     "fcf": 1951000000,
+     "margin": 0.3128795142217961
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 6699000000,
+     "netIncome": 2123000000,
+     "fcf": 2661000000,
+     "margin": 0.3169129720853859
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 7442000000,
+     "netIncome": 2339000000,
+     "fcf": 3491000000,
+     "margin": 0.31429723192690134
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 8297000000,
+     "netIncome": 3024000000,
+     "fcf": 3563000000,
+     "margin": 0.3644690852115222
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 11181000000,
+     "netIncome": 3248000000,
+     "fcf": 2514000000,
+     "margin": 0.2904928002861998
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 12497000000,
+     "netIncome": 2626000000,
+     "fcf": 3567000000,
+     "margin": 0.21013043130351283
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 14208000000,
+     "netIncome": 3852000000,
+     "fcf": 5565000000,
+     "margin": 0.27111486486486486
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 15336000000,
+     "netIncome": 4471000000,
+     "fcf": 5456000000,
+     "margin": 0.29153625456442356
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Market Intelligence Segment",
+     "value": 4916000000
+    },
+    {
+     "segment": "Ratings Segment",
+     "value": 4724000000
+    },
+    {
+     "segment": "Indices Segment",
+     "value": 1850000000
+    },
+    {
+     "segment": "Mobility",
+     "value": 1747000000
+    }
+   ]
+  },
+  {
+   "symbol": "IALT",
+   "held_as": "IALT",
+   "role": "holding",
+   "weight": 0.0225,
+   "is_fund": true,
+   "name": "iShares Systematic Alternatives Active ETF",
+   "sector": "Financial Services",
+   "industry": "Asset Management",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": null,
+   "resolved_via": "direct",
+   "price": 29.12,
+   "price_date": "2026-09-04",
+   "market_cap": 95985198,
+   "beta": 0.0043147886,
+   "holdings": [
+    {
+     "asset": "GS",
+     "name": "GOLDMAN SACHS GROUP",
+     "weight": 0.903371
+    },
+    {
+     "asset": "8001.T",
+     "name": "ITOCHU",
+     "weight": 0.81375873
+    },
+    {
+     "asset": "CVX",
+     "name": "CHEVRON",
+     "weight": 0.80167811
+    },
+    {
+     "asset": "SU.TO",
+     "name": "SUNCOR ENERGY INC",
+     "weight": 0.79957819
+    },
+    {
+     "asset": "PH",
+     "name": "PARKER-HANNIFIN CORP",
+     "weight": 0.79458308
+    },
+    {
+     "asset": "ITW",
+     "name": "ILLINOIS TOOL INC",
+     "weight": 0.79227865
+    },
+    {
+     "asset": "0Y0Y.L",
+     "name": "ACCENTURE PLC CLASS A",
+     "weight": 0.7469615
+    },
+    {
+     "asset": "VLO",
+     "name": "VALERO ENERGY CORP",
+     "weight": 0.72312923
+    },
+    {
+     "asset": "ISP.MI",
+     "name": "INTESA SANPAOLO",
+     "weight": 0.71891605
+    },
+    {
+     "asset": "COST",
+     "name": "COSTCO WHOLESALE CORP",
+     "weight": 0.70611963
+    }
+   ],
+   "sectors": [],
+   "expense_ratio": 0.99,
+   "aum": 5759551405,
+   "holdings_count": 1731
+  },
+  {
+   "symbol": "UBER",
+   "held_as": "UBER",
+   "role": "holding",
+   "weight": 0.0176,
+   "is_fund": false,
+   "name": "Uber Technologies, Inc.",
+   "sector": "Technology",
+   "industry": "Software - Application",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 75.76,
+   "price_date": "2026-09-04",
+   "market_cap": 154216981225,
+   "beta": 1.159,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 52017000000,
+    "grossProfit": 20679000000,
+    "operatingIncome": 5565000000,
+    "ebitda": 6987000000,
+    "netIncome": 10053000000,
+    "eps": 4.73,
+    "rd": 3402000000,
+    "sga": 8139000000,
+    "interestExpense": 440000000,
+    "taxExpense": -4346000000,
+    "shares": 2119689000
+   },
+   "balance": {
+    "totalAssets": 61802000000,
+    "totalLiabilities": 33719000000,
+    "totalEquity": 27041000000,
+    "cash": 7105000000,
+    "totalDebt": 12080000000,
+    "netDebt": 4975000000,
+    "inventory": 0,
+    "goodwill": 8931000000,
+    "currentAssets": 13993000000,
+    "currentLiabilities": 12320000000,
+    "workingCapital": 1673000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 10099000000,
+    "capex": -336000000,
+    "freeCashFlow": 9763000000,
+    "sbc": 1826000000,
+    "dividendsPaid": 0,
+    "buybacks": -6523000000,
+    "acquisitions": -120000000
+   },
+   "valuation": {
+    "pe": 16.362850971922246,
+    "pb": 5.648047227998244,
+    "ps": 2.792420034131856,
+    "pfcf": 15.244857772340845,
+    "evEbitda": 20.4764733838762,
+    "earningsYield": 0.062087582439644365,
+    "fcfYield": 0.06559588911444794,
+    "enterpriseValue": 175361022630
+   },
+   "profitability": {
+    "grossMargin": 0.39754311090604993,
+    "operatingMargin": 0.10698425514735567,
+    "netMargin": 0.19326374070015573,
+    "ebitdaMargin": 0.13432147182651824,
+    "roe": 0.3572853919173458,
+    "roa": 0.1455752952082795,
+    "roic": 0.1297053008191319,
+    "effectiveTaxRate": -0.7562206368540108
+   },
+   "growth": {
+    "revenue": 0.18279594342625857,
+    "grossProfit": 0.19345530097535638,
+    "operatingIncome": 0.9882100750267953,
+    "netIncome": 0.019987824675324676,
+    "eps": 0.02335456475583871,
+    "fcf": 0.4159535895576505,
+    "revenue3y": 0.5432804833620005,
+    "revenue5y": 2.9256569821132996
+   },
+   "health": {
+    "currentRatio": 0.8425122722076525,
+    "quickRatio": 1.1357954545454545,
+    "debtToEquity": 0.44672904108575867,
+    "netDebtToEbitda": 0.7120366394733075,
+    "interestCoverage": 12.647727272727273,
+    "altmanZ": 3.464779005888116,
+    "piotroski": 6
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 3845000000,
+     "netIncome": -370000000,
+     "fcf": -4548000000,
+     "margin": -0.09622886866059818
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 7932000000,
+     "netIncome": -4033000000,
+     "fcf": -2247000000,
+     "margin": -0.5084467977811397
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 10433000000,
+     "netIncome": 997000000,
+     "fcf": -2099000000,
+     "margin": 0.09556215853541647
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 13000000000,
+     "netIncome": -8478000000,
+     "fcf": -4909000000,
+     "margin": -0.6521538461538462
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 11139000000,
+     "netIncome": -6754000000,
+     "fcf": -3361000000,
+     "margin": -0.6063380913906096
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 17455000000,
+     "netIncome": -496000000,
+     "fcf": -743000000,
+     "margin": -0.028415926668576338
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 31877000000,
+     "netIncome": -9141000000,
+     "fcf": 390000000,
+     "margin": -0.28675847789942593
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 37281000000,
+     "netIncome": 1887000000,
+     "fcf": 3362000000,
+     "margin": 0.0506155950752394
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 43978000000,
+     "netIncome": 9856000000,
+     "fcf": 6895000000,
+     "margin": 0.224112056028014
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 52017000000,
+     "netIncome": 10053000000,
+     "fcf": 9763000000,
+     "margin": 0.19326374070015573
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Mobility",
+     "value": 29670000000
+    },
+    {
+     "segment": "Delivery",
+     "value": 17248000000
+    },
+    {
+     "segment": "Freight",
+     "value": 5099000000
+    }
+   ]
+  }
+ ],
+ "radar": [
+  {
+   "symbol": "NVDA",
+   "held_as": "NVDA",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "NVIDIA Corporation",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 230.36,
+   "price_date": "2026-09-04",
+   "market_cap": 5579549560000,
+   "beta": 2.217,
+   "fiscal_year": "2026",
+   "fiscal_date": "2026-01-25",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 215938000000,
+    "grossProfit": 153463000000,
+    "operatingIncome": 130387000000,
+    "ebitda": 144552000000,
+    "netIncome": 120067000000,
+    "eps": 4.9,
+    "rd": 18497000000,
+    "sga": 4579000000,
+    "interestExpense": 259000000,
+    "taxExpense": 21383000000,
+    "shares": 24514000000
+   },
+   "balance": {
+    "totalAssets": 206803000000,
+    "totalLiabilities": 49510000000,
+    "totalEquity": 157293000000,
+    "cash": 10605000000,
+    "totalDebt": 11412000000,
+    "netDebt": 807000000,
+    "inventory": 21403000000,
+    "goodwill": 20832000000,
+    "currentAssets": 125605000000,
+    "currentLiabilities": 32163000000,
+    "workingCapital": 93442000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 102718000000,
+    "capex": -6042000000,
+    "freeCashFlow": 96676000000,
+    "sbc": 6386000000,
+    "dividendsPaid": -974000000,
+    "buybacks": -40086000000,
+    "acquisitions": -1535000000
+   },
+   "valuation": {
+    "pe": 28.976100628930812,
+    "pb": 24.33536142263215,
+    "ps": 18.41623915318069,
+    "pfcf": 43.93138560382974,
+    "evEbitda": 23.9484675200178,
+    "earningsYield": 0.034613220380616753,
+    "fcfYield": 0.022762769401765113,
+    "enterpriseValue": 4543029730000
+   },
+   "profitability": {
+    "grossMargin": 0.7106808435754708,
+    "operatingMargin": 0.6038168363141272,
+    "netMargin": 0.5560253406070261,
+    "ebitdaMargin": 0.6694143689392326,
+    "roe": 1.1011463673627842,
+    "roa": 0.6022349752710197,
+    "roic": 0.5950424906817126,
+    "effectiveTaxRate": 0.1511700247437257
+   },
+   "growth": {
+    "revenue": 0.654735357900948,
+    "grossProfit": 0.5682213002513846,
+    "operatingIncome": 0.6007636305599549,
+    "netIncome": 0.6474615806805708,
+    "eps": 0.6599326599326597,
+    "fcf": 0.5886809195931179,
+    "revenue3y": 7.173349146042393,
+    "revenue5y": 12.12045608625549
+   },
+   "health": {
+    "currentRatio": 4.588949069016016,
+    "quickRatio": 3.239809719242608,
+    "debtToEquity": 0.07255249756823254,
+    "netDebtToEbitda": 0.005582766063423543,
+    "interestCoverage": 503.42471042471044,
+    "altmanZ": 41.524285668368464,
+    "piotroski": 6
+   },
+   "history": [
+    {
+     "year": "2017",
+     "date": "2017-01-29",
+     "revenue": 6910000000,
+     "netIncome": 1666000000,
+     "fcf": 1496000000,
+     "margin": 0.2410998552821997
+    },
+    {
+     "year": "2018",
+     "date": "2018-01-28",
+     "revenue": 9714000000,
+     "netIncome": 3047000000,
+     "fcf": 2909000000,
+     "margin": 0.3136709903232448
+    },
+    {
+     "year": "2019",
+     "date": "2019-01-27",
+     "revenue": 11716000000,
+     "netIncome": 4141000000,
+     "fcf": 3143000000,
+     "margin": 0.35344827586206895
+    },
+    {
+     "year": "2020",
+     "date": "2020-01-26",
+     "revenue": 10918000000,
+     "netIncome": 2796000000,
+     "fcf": 4272000000,
+     "margin": 0.2560908591317091
+    },
+    {
+     "year": "2021",
+     "date": "2021-01-31",
+     "revenue": 16675000000,
+     "netIncome": 4332000000,
+     "fcf": 4694000000,
+     "margin": 0.25979010494752625
+    },
+    {
+     "year": "2022",
+     "date": "2022-01-30",
+     "revenue": 26914000000,
+     "netIncome": 9752000000,
+     "fcf": 8132000000,
+     "margin": 0.3623393029649996
+    },
+    {
+     "year": "2023",
+     "date": "2023-01-29",
+     "revenue": 26974000000,
+     "netIncome": 4368000000,
+     "fcf": 3808000000,
+     "margin": 0.16193371394676356
+    },
+    {
+     "year": "2024",
+     "date": "2024-01-28",
+     "revenue": 60922000000,
+     "netIncome": 29760000000,
+     "fcf": 27021000000,
+     "margin": 0.4884934834706674
+    },
+    {
+     "year": "2025",
+     "date": "2025-01-26",
+     "revenue": 130497000000,
+     "netIncome": 72880000000,
+     "fcf": 60853000000,
+     "margin": 0.5584802715771244
+    },
+    {
+     "year": "2026",
+     "date": "2026-01-25",
+     "revenue": 215938000000,
+     "netIncome": 120067000000,
+     "fcf": 96676000000,
+     "margin": 0.5560253406070261
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Data Center",
+     "value": 193737000000
+    },
+    {
+     "segment": "Gaming",
+     "value": 16042000000
+    },
+    {
+     "segment": "Professional Visualization",
+     "value": 3191000000
+    },
+    {
+     "segment": "Automotive",
+     "value": 2349000000
+    },
+    {
+     "segment": "OEM And Other",
+     "value": 619000000
+    }
+   ]
+  },
+  {
+   "symbol": "AMD",
+   "held_as": "AMD",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "Advanced Micro Devices, Inc.",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 477.57,
+   "price_date": "2026-09-04",
+   "market_cap": 778725642000,
+   "beta": 2.476,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-27",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 34639000000,
+    "grossProfit": 17152000000,
+    "operatingIncome": 3694000000,
+    "ebitda": 7275000000,
+    "netIncome": 4335000000,
+    "eps": 2.65,
+    "rd": 8091000000,
+    "sga": 4144000000,
+    "interestExpense": 131000000,
+    "taxExpense": -103000000,
+    "shares": 1636000000
+   },
+   "balance": {
+    "totalAssets": 76926000000,
+    "totalLiabilities": 13927000000,
+    "totalEquity": 62999000000,
+    "cash": 5539000000,
+    "totalDebt": 4472000000,
+    "netDebt": -1067000000,
+    "inventory": 7920000000,
+    "goodwill": 25126000000,
+    "currentAssets": 26947000000,
+    "currentLiabilities": 9455000000,
+    "workingCapital": 17492000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 7709000000,
+    "capex": -974000000,
+    "freeCashFlow": 6735000000,
+    "sbc": 1638000000,
+    "dividendsPaid": 0,
+    "buybacks": -1316000000,
+    "acquisitions": -1760000000
+   },
+   "valuation": {
+    "pe": 121.21065989847715,
+    "pb": 11.586883702249198,
+    "ps": 18.853059968526814,
+    "pfcf": 92.67233630846127,
+    "evEbitda": 72.58029874976675,
+    "earningsYield": 0.008260190400084775,
+    "fcfYield": 0.01079070669667251,
+    "enterpriseValue": 348076760000
+   },
+   "profitability": {
+    "grossMargin": 0.4951644100580271,
+    "operatingMargin": 0.10664280146655504,
+    "netMargin": 0.12514795461762754,
+    "ebitdaMargin": 0.21002338404688356,
+    "roe": 0.10073784127605441,
+    "roa": 0.07617446486076908,
+    "roic": 0.07577286290131517,
+    "effectiveTaxRate": -0.02472395583293327
+   },
+   "growth": {
+    "revenue": 0.34337793290672874,
+    "grossProfit": 0.3478978388998035,
+    "operatingIncome": 0.9442105263157895,
+    "netIncome": 1.6416819012797075,
+    "eps": 1.6435643564356435,
+    "fcf": 1.8004158004158004,
+    "revenue3y": 0.41075571753973034,
+    "revenue5y": 1.5867099519700651
+   },
+   "health": {
+    "currentRatio": 2.6092210909692906,
+    "quickRatio": 2.012374405076679,
+    "debtToEquity": 0.07098525373418625,
+    "netDebtToEbitda": -0.14666666666666667,
+    "interestCoverage": 28.198473282442748,
+    "altmanZ": 28.265477193054473,
+    "piotroski": 8
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 4319000000,
+     "netIncome": -498000000,
+     "fcf": 13000000,
+     "margin": -0.11530446862699699
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-30",
+     "revenue": 5253000000,
+     "netIncome": -33000000,
+     "fcf": -45000000,
+     "margin": -0.006282124500285551
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-29",
+     "revenue": 6475000000,
+     "netIncome": 337000000,
+     "fcf": -129000000,
+     "margin": 0.05204633204633204
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-28",
+     "revenue": 6731000000,
+     "netIncome": 341000000,
+     "fcf": 276000000,
+     "margin": 0.05066112019016491
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-26",
+     "revenue": 9763000000,
+     "netIncome": 2490000000,
+     "fcf": 777000000,
+     "margin": 0.25504455597664655
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-25",
+     "revenue": 16434000000,
+     "netIncome": 3162000000,
+     "fcf": 3220000000,
+     "margin": 0.1924059875867105
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 23601000000,
+     "netIncome": 1320000000,
+     "fcf": 3115000000,
+     "margin": 0.055929833481632135
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-30",
+     "revenue": 22680000000,
+     "netIncome": 854000000,
+     "fcf": 1121000000,
+     "margin": 0.037654320987654324
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-28",
+     "revenue": 25785000000,
+     "netIncome": 1641000000,
+     "fcf": 2405000000,
+     "margin": 0.06364165212332752
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-27",
+     "revenue": 34639000000,
+     "netIncome": 4335000000,
+     "fcf": 6735000000,
+     "margin": 0.12514795461762754
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Data Center",
+     "value": 16635000000
+    },
+    {
+     "segment": "Client and Gaming",
+     "value": 14550000000
+    },
+    {
+     "segment": "Gaming",
+     "value": 3910000000
+    },
+    {
+     "segment": "Embedded",
+     "value": 3454000000
+    }
+   ]
+  },
+  {
+   "symbol": "MU",
+   "held_as": "MU",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "Micron Technology, Inc.",
+   "sector": "Technology",
+   "industry": "Semiconductors",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 1016.59,
+   "price_date": "2026-09-04",
+   "market_cap": 1148126580100,
+   "beta": 2.222,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-08-28",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 37378000000,
+    "grossProfit": 14873000000,
+    "operatingIncome": 9870000000,
+    "ebitda": 18492000000,
+    "netIncome": 8539000000,
+    "eps": 7.59,
+    "rd": 3798000000,
+    "sga": 1205000000,
+    "interestExpense": 477000000,
+    "taxExpense": 1124000000,
+    "shares": 1125000000
+   },
+   "balance": {
+    "totalAssets": 82798000000,
+    "totalLiabilities": 28633000000,
+    "totalEquity": 54165000000,
+    "cash": 9642000000,
+    "totalDebt": 15278000000,
+    "netDebt": 5636000000,
+    "inventory": 8355000000,
+    "goodwill": 1150000000,
+    "currentAssets": 28841000000,
+    "currentLiabilities": 11454000000,
+    "workingCapital": 17387000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 17525000000,
+    "capex": -15857000000,
+    "freeCashFlow": 1668000000,
+    "sbc": 972000000,
+    "dividendsPaid": -522000000,
+    "buybacks": 0,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": 22.686677081008703,
+    "pb": 11.384709900321672,
+    "ps": 12.718242019850676,
+    "pfcf": 43.868507569157885,
+    "evEbitda": 16.526315806338335,
+    "earningsYield": 0.044011864445445796,
+    "fcfYield": 0.022795395955139772,
+    "enterpriseValue": 141788000000
+   },
+   "profitability": {
+    "grossMargin": 0.39790786023864305,
+    "operatingMargin": 0.26405907218149716,
+    "netMargin": 0.22844989030980792,
+    "ebitdaMargin": 0.49472952003852533,
+    "roe": 0.7054802658708248,
+    "roa": 0.3763197924123121,
+    "roic": 0.4400649630267567,
+    "effectiveTaxRate": 0.11631998344199523
+   },
+   "growth": {
+    "revenue": 0.48851101111066864,
+    "grossProfit": 1.6497416711206128,
+    "operatingIncome": 6.569018404907975,
+    "netIncome": 9.975578406169666,
+    "eps": 9.928571428571429,
+    "fcf": 12.785123966942148,
+    "revenue3y": 0.21087290050832708,
+    "revenue5y": 0.7344083513297264
+   },
+   "health": {
+    "currentRatio": 3.4245176518883413,
+    "quickRatio": 1.7885454862929981,
+    "debtToEquity": 0.28206406350964647,
+    "netDebtToEbitda": 0.30478044559809647,
+    "interestCoverage": 20.69182389937107,
+    "altmanZ": 24.17587955837937,
+    "piotroski": 8
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-09-01",
+     "revenue": 12399000000,
+     "netIncome": -276000000,
+     "fcf": -2695000000,
+     "margin": -0.022259859666102104
+    },
+    {
+     "year": "2017",
+     "date": "2017-08-31",
+     "revenue": 20322000000,
+     "netIncome": 5089000000,
+     "fcf": 2900000000,
+     "margin": 0.2504182659187088
+    },
+    {
+     "year": "2018",
+     "date": "2018-08-30",
+     "revenue": 30391000000,
+     "netIncome": 14135000000,
+     "fcf": 8315000000,
+     "margin": 0.4651048007633839
+    },
+    {
+     "year": "2019",
+     "date": "2019-08-29",
+     "revenue": 23406000000,
+     "netIncome": 6313000000,
+     "fcf": 3334000000,
+     "margin": 0.2697171665384944
+    },
+    {
+     "year": "2020",
+     "date": "2020-09-03",
+     "revenue": 21435000000,
+     "netIncome": 2687000000,
+     "fcf": 83000000,
+     "margin": 0.12535572661534872
+    },
+    {
+     "year": "2021",
+     "date": "2021-09-02",
+     "revenue": 27705000000,
+     "netIncome": 5861000000,
+     "fcf": 2438000000,
+     "margin": 0.2115502616856163
+    },
+    {
+     "year": "2022",
+     "date": "2022-09-01",
+     "revenue": 30758000000,
+     "netIncome": 8687000000,
+     "fcf": 3114000000,
+     "margin": 0.28243058716431496
+    },
+    {
+     "year": "2023",
+     "date": "2023-08-31",
+     "revenue": 15540000000,
+     "netIncome": -5833000000,
+     "fcf": -6117000000,
+     "margin": -0.37535392535392537
+    },
+    {
+     "year": "2024",
+     "date": "2024-08-29",
+     "revenue": 25111000000,
+     "netIncome": 778000000,
+     "fcf": 121000000,
+     "margin": 0.03098243797538927
+    },
+    {
+     "year": "2025",
+     "date": "2025-08-28",
+     "revenue": 37378000000,
+     "netIncome": 8539000000,
+     "fcf": 1668000000,
+     "margin": 0.22844989030980792
+    }
+   ],
+   "segments": [
+    {
+     "segment": "DRAM Products",
+     "value": 28578000000
+    },
+    {
+     "segment": "NAND Products",
+     "value": 8503000000
+    }
+   ]
+  },
+  {
+   "symbol": "COST",
+   "held_as": "COST",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "Costco Wholesale Corporation",
+   "sector": "Consumer Defensive",
+   "industry": "Discount Stores",
+   "exchange": "NASDAQ",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 915.74,
+   "price_date": "2026-09-04",
+   "market_cap": 406111459460,
+   "beta": 0.855,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-08-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 275235000000,
+    "grossProfit": 35349000000,
+    "operatingIncome": 10383000000,
+    "ebitda": 13398000000,
+    "netIncome": 8099000000,
+    "eps": 18.21,
+    "rd": 0,
+    "sga": 24966000000,
+    "interestExpense": 154000000,
+    "taxExpense": 2719000000,
+    "shares": 444803000
+   },
+   "balance": {
+    "totalAssets": 77099000000,
+    "totalLiabilities": 47935000000,
+    "totalEquity": 29164000000,
+    "cash": 14161000000,
+    "totalDebt": 10221000000,
+    "netDebt": -3940000000,
+    "inventory": 18116000000,
+    "goodwill": 994000000,
+    "currentAssets": 38380000000,
+    "currentLiabilities": 37108000000,
+    "workingCapital": 1272000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 13335000000,
+    "capex": -5498000000,
+    "freeCashFlow": 7837000000,
+    "sbc": 860000000,
+    "dividendsPaid": -2183000000,
+    "buybacks": -903000000,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": 45.99397287795078,
+    "pb": 12.13160786714017,
+    "ps": 1.383274666316969,
+    "pfcf": 46.11758567567568,
+    "evEbitda": 27.32532546371804,
+    "earningsYield": 0.021740732159486277,
+    "fcfYield": 0.02168370233065868,
+    "enterpriseValue": 414879930200
+   },
+   "profitability": {
+    "grossMargin": 0.12843206714262356,
+    "operatingMargin": 0.03772412665540356,
+    "netMargin": 0.029425763438516175,
+    "ebitdaMargin": 0.048678402092757096,
+    "roe": 0.28267353253960004,
+    "roa": 0.10225616105518917,
+    "roic": 0.19012350527371616,
+    "effectiveTaxRate": 0.2513403586614901
+   },
+   "growth": {
+    "revenue": 0.08167323631476146,
+    "grossProfit": 0.10138650880199408,
+    "operatingIncome": 0.11825525040387722,
+    "netIncome": 0.09936201981810777,
+    "eps": 0.09879518072289138,
+    "fcf": 0.1822295972243174,
+    "revenue3y": 0.21182242593791134,
+    "revenue5y": 0.6442008366998865
+   },
+   "health": {
+    "currentRatio": 1.0724510385756676,
+    "quickRatio": 0.5460817074485286,
+    "debtToEquity": 0.35046632835002056,
+    "netDebtToEbitda": -0.29407374234960443,
+    "interestCoverage": 67.42207792207792,
+    "altmanZ": 8.927048290205565,
+    "piotroski": 7
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-08-31",
+     "revenue": 118719000000,
+     "netIncome": 2350000000,
+     "fcf": 643000000,
+     "margin": 0.019794641127367986
+    },
+    {
+     "year": "2017",
+     "date": "2017-08-31",
+     "revenue": 129025000000,
+     "netIncome": 2679000000,
+     "fcf": 4224000000,
+     "margin": 0.020763417942259253
+    },
+    {
+     "year": "2018",
+     "date": "2018-08-31",
+     "revenue": 141576000000,
+     "netIncome": 3134000000,
+     "fcf": 2805000000,
+     "margin": 0.022136520314177545
+    },
+    {
+     "year": "2019",
+     "date": "2019-08-31",
+     "revenue": 152703000000,
+     "netIncome": 3659000000,
+     "fcf": 3358000000,
+     "margin": 0.023961546269555937
+    },
+    {
+     "year": "2020",
+     "date": "2020-08-30",
+     "revenue": 166761000000,
+     "netIncome": 4002000000,
+     "fcf": 6051000000,
+     "margin": 0.023998416896036844
+    },
+    {
+     "year": "2021",
+     "date": "2021-08-29",
+     "revenue": 195929000000,
+     "netIncome": 5007000000,
+     "fcf": 5370000000,
+     "margin": 0.025555175599324246
+    },
+    {
+     "year": "2022",
+     "date": "2022-08-28",
+     "revenue": 226954000000,
+     "netIncome": 5844000000,
+     "fcf": 3501000000,
+     "margin": 0.025749711395260715
+    },
+    {
+     "year": "2023",
+     "date": "2023-09-03",
+     "revenue": 242290000000,
+     "netIncome": 6292000000,
+     "fcf": 6745000000,
+     "margin": 0.025968880267448098
+    },
+    {
+     "year": "2024",
+     "date": "2024-09-01",
+     "revenue": 254453000000,
+     "netIncome": 7367000000,
+     "fcf": 6629000000,
+     "margin": 0.028952301603832536
+    },
+    {
+     "year": "2025",
+     "date": "2025-08-31",
+     "revenue": 275235000000,
+     "netIncome": 8099000000,
+     "fcf": 7837000000,
+     "margin": 0.029425763438516175
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Food and Sundries",
+     "value": 109564000000
+    },
+    {
+     "segment": "Non-Foods",
+     "value": 71190000000
+    },
+    {
+     "segment": "Other",
+     "value": 51170000000
+    },
+    {
+     "segment": "Fresh Food",
+     "value": 37988000000
+    },
+    {
+     "segment": "Membership",
+     "value": 5323000000
+    }
+   ]
+  },
+  {
+   "symbol": "APH",
+   "held_as": "APH",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "Amphenol Corporation",
+   "sector": "Technology",
+   "industry": "Hardware, Equipment & Parts",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 82.78,
+   "price_date": "2026-09-04",
+   "market_cap": 204132168800,
+   "beta": 1.242,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 23094700000,
+    "grossProfit": 8517700000,
+    "operatingIncome": 5972000000,
+    "ebitda": 6890900000,
+    "netIncome": 4270300000,
+    "eps": 1.67,
+    "rd": 0,
+    "sga": 2545700000,
+    "interestExpense": 367800000,
+    "taxExpense": 1295400000,
+    "shares": 2555000000
+   },
+   "balance": {
+    "totalAssets": 36236900000,
+    "totalLiabilities": 22727200000,
+    "totalEquity": 13413100000,
+    "cash": 11130600000,
+    "totalDebt": 15502000000,
+    "netDebt": 4371400000,
+    "inventory": 3424900000,
+    "goodwill": 10575400000,
+    "currentAssets": 20267200000,
+    "currentLiabilities": 6802800000,
+    "workingCapital": 13464400000
+   },
+   "cashflow": {
+    "operatingCashFlow": 5374700000,
+    "capex": -996600000,
+    "freeCashFlow": 4378100000,
+    "sbc": 0,
+    "dividendsPaid": -802200000,
+    "buybacks": -665200000,
+    "acquisitions": -3818600000
+   },
+   "valuation": {
+    "pe": 39.41904761904762,
+    "pb": 13.141904774200212,
+    "ps": 7.036225813123026,
+    "pfcf": 43.30614353904576,
+    "evEbitda": 23.290825031219647,
+    "earningsYield": 0.025314219621507105,
+    "fcfYield": 0.023091411940164522,
+    "enterpriseValue": 168998947999.99997
+   },
+   "profitability": {
+    "grossMargin": 0.3688162219037268,
+    "operatingMargin": 0.25858746812039124,
+    "netMargin": 0.1849038956990132,
+    "ebitdaMargin": 0.2983758178283329,
+    "roe": 0.37209621348042843,
+    "roa": 0.11502100137033383,
+    "roic": 0.1510127307917632,
+    "effectiveTaxRate": 0.23129251700680273
+   },
+   "growth": {
+    "revenue": 0.5171224552806006,
+    "grossProfit": 0.6572368037044963,
+    "operatingIncome": 0.8183478975733033,
+    "netIncome": 0.7616749174917492,
+    "eps": 0.746268656716418,
+    "fcf": 1.0369887870469454,
+    "revenue3y": 0.7908248622424169,
+    "revenue5y": 1.628451386283484
+   },
+   "health": {
+    "currentRatio": 1.8877728332273787,
+    "quickRatio": 2.475789380843182,
+    "debtToEquity": 1.1557358105136024,
+    "netDebtToEbitda": 0.6343728685657897,
+    "interestCoverage": 16.237085372485048,
+    "altmanZ": 6.0158237508259935,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 6286400000,
+     "netIncome": 822900000,
+     "fcf": 886800000,
+     "margin": 0.13090162891320947
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 7011300000,
+     "netIncome": 650500000,
+     "fcf": 917600000,
+     "margin": 0.09277879993724417
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 8202000000,
+     "netIncome": 1205000000,
+     "fcf": 802100000,
+     "margin": 0.14691538649109973
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 8225400000,
+     "netIncome": 1155000000,
+     "fcf": 1207300000,
+     "margin": 0.14041870304179735
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 8598900000,
+     "netIncome": 1203400000,
+     "fcf": 1315200000,
+     "margin": 0.13994813290071986
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 10876300000,
+     "netIncome": 1590800000,
+     "fcf": 1179700000,
+     "margin": 0.14626297546040473
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 12623000000,
+     "netIncome": 1902300000,
+     "fcf": 1790800000,
+     "margin": 0.1507011011645409
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 12554700000,
+     "netIncome": 1928000000,
+     "fcf": 2155900000,
+     "margin": 0.1535679864911149
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 15222700000,
+     "netIncome": 2424000000,
+     "fcf": 2149300000,
+     "margin": 0.15923587799798986
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 23094700000,
+     "netIncome": 4270300000,
+     "fcf": 4378100000,
+     "margin": 0.1849038956990132
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Communications Solutions",
+     "value": 12160600000
+    },
+    {
+     "segment": "Harsh Environment Solutions",
+     "value": 6001900000
+    },
+    {
+     "segment": "Interconnect Products And Assemblies",
+     "value": 5216100000
+    }
+   ]
+  },
+  {
+   "symbol": "NEE",
+   "held_as": "NEE",
+   "role": "radar",
+   "weight": null,
+   "is_fund": false,
+   "name": "NextEra Energy, Inc.",
+   "sector": "Utilities",
+   "industry": "Regulated Electric",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "reporting_currency": "USD",
+   "resolved_via": "direct",
+   "price": 83.43,
+   "price_date": "2026-09-04",
+   "market_cap": 174033160725,
+   "beta": 0.644,
+   "fiscal_year": "2025",
+   "fiscal_date": "2025-12-31",
+   "statement_currency": "USD",
+   "income": {
+    "revenue": 27476000000,
+    "grossProfit": 17255000000,
+    "operatingIncome": 8280000000,
+    "ebitda": 16165000000,
+    "netIncome": 6834000000,
+    "eps": 3.29,
+    "rd": 0,
+    "sga": 0,
+    "interestExpense": 4573000000,
+    "taxExpense": -802000000,
+    "shares": 2089000000
+   },
+   "balance": {
+    "totalAssets": 212721000000,
+    "totalLiabilities": 146242000000,
+    "totalEquity": 54608000000,
+    "cash": 2812000000,
+    "totalDebt": 95619000000,
+    "netDebt": 92807000000,
+    "inventory": 2420000000,
+    "goodwill": 4849000000,
+    "currentAssets": 13584000000,
+    "currentLiabilities": 22817000000,
+    "workingCapital": -9233000000
+   },
+   "cashflow": {
+    "operatingCashFlow": 12485000000,
+    "capex": -9274000000,
+    "freeCashFlow": 3211000000,
+    "sbc": 0,
+    "dividendsPaid": -4680000000,
+    "buybacks": 0,
+    "acquisitions": 0
+   },
+   "valuation": {
+    "pe": 18.664429530201346,
+    "pb": 3.0508922382102726,
+    "ps": 5.996800962234244,
+    "pfcf": -17.10399614004914,
+    "evEbitda": 15.894484280024855,
+    "earningsYield": 0.05335505404444105,
+    "fcfYield": -0.05846586913443533,
+    "enterpriseValue": 260511920000
+   },
+   "profitability": {
+    "grossMargin": 0.6280026204687728,
+    "operatingMargin": 0.30135390886591934,
+    "netMargin": 0.24872616101324793,
+    "ebitdaMargin": 0.588331634881351,
+    "roe": 0.16820342140844816,
+    "roa": 0.03994295704166971,
+    "roic": 0.03976491358483553,
+    "effectiveTaxRate": -0.1770810333406933
+   },
+   "growth": {
+    "revenue": 0.11000686785440149,
+    "grossProfit": 0.16062420125109303,
+    "operatingIncome": 0.10709987966305656,
+    "netIncome": -0.0161243881370573,
+    "eps": -0.020710059171597586,
+    "fcf": -0.32343025705857564,
+    "revenue3y": 0.23807144395455837,
+    "revenue5y": 0.4316913039040893
+   },
+   "health": {
+    "currentRatio": 0.5338234279008767,
+    "quickRatio": 0.48928430556164265,
+    "debtToEquity": 1.751007178435394,
+    "netDebtToEbitda": 5.741231054747912,
+    "interestCoverage": 1.8106275967636125,
+    "altmanZ": 1.0648867519119811,
+    "piotroski": 5
+   },
+   "history": [
+    {
+     "year": "2016",
+     "date": "2016-12-31",
+     "revenue": 16138000000,
+     "netIncome": 2912000000,
+     "fcf": 2096000000,
+     "margin": 0.1804436733176354
+    },
+    {
+     "year": "2017",
+     "date": "2017-12-31",
+     "revenue": 17173000000,
+     "netIncome": 5380000000,
+     "fcf": 968000000,
+     "margin": 0.3132824783089734
+    },
+    {
+     "year": "2018",
+     "date": "2018-12-31",
+     "revenue": 16727000000,
+     "netIncome": 6638000000,
+     "fcf": 583000000,
+     "margin": 0.3968434267950021
+    },
+    {
+     "year": "2019",
+     "date": "2019-12-31",
+     "revenue": 19204000000,
+     "netIncome": 3769000000,
+     "fcf": -2922000000,
+     "margin": 0.19626119558425328
+    },
+    {
+     "year": "2020",
+     "date": "2020-12-31",
+     "revenue": 17997000000,
+     "netIncome": 2919000000,
+     "fcf": 224000000,
+     "margin": 0.16219369894982497
+    },
+    {
+     "year": "2021",
+     "date": "2021-12-31",
+     "revenue": 17069000000,
+     "netIncome": 3573000000,
+     "fcf": -277000000,
+     "margin": 0.20932684984474778
+    },
+    {
+     "year": "2022",
+     "date": "2022-12-31",
+     "revenue": 20956000000,
+     "netIncome": 4147000000,
+     "fcf": -1480000000,
+     "margin": 0.1978908188585608
+    },
+    {
+     "year": "2023",
+     "date": "2023-12-31",
+     "revenue": 28114000000,
+     "netIncome": 7310000000,
+     "fcf": 1753000000,
+     "margin": 0.26001280500818097
+    },
+    {
+     "year": "2024",
+     "date": "2024-12-31",
+     "revenue": 24753000000,
+     "netIncome": 6946000000,
+     "fcf": 4746000000,
+     "margin": 0.28061245101603843
+    },
+    {
+     "year": "2025",
+     "date": "2025-12-31",
+     "revenue": 27476000000,
+     "netIncome": 6834000000,
+     "fcf": 3211000000,
+     "margin": 0.24872616101324793
+    }
+   ],
+   "segments": [
+    {
+     "segment": "Florida Power & Light Company",
+     "value": 18262000000
+    },
+    {
+     "segment": "NEER Segment",
+     "value": 8760000000
+    }
+   ]
+  }
+ ]
+}

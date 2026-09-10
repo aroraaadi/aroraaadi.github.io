@@ -8,10 +8,9 @@ import {
   loadJSON, showError, fmtPct, fmtNum, tok, alpha, SLOT_VARS, el,
   renderStats, buildLegend,
 } from "./common.js";
-import { applyChartDefaults, draw as drawChart, barLabels, describeCanvas } from "./charts.js";
+import { applyChartDefaults, draw as drawChart, destroyChart, barLabels, describeCanvas } from "./charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "./shell.js";
 let INDEX, IDX_MAP, MATRIX, RF = 0.04;
-let charts = {};
 const state = { selected: [], muMode: "mean", optType: "sharpe", showCloud: true };
 const sectorSlot = {}; let sectorN = 0;
 
@@ -131,29 +130,101 @@ async function loadHoldings() {
 }
 
 // ---------- search ----------
+/* The dropdown ships with `display:none` in its inline style (mvo.html). Nothing
+   here used to turn it back on — the old code set `dd.className` and trusted a
+   `.search-dropdown` rule that exists in no stylesheet, so the results were
+   built into the DOM and then never shown. Display is now driven explicitly.
+
+   Also wires the keyboard. The markup declares role="combobox" with
+   aria-expanded / aria-controls / aria-autocomplete, but nothing updated
+   aria-expanded and the only handler was `mousedown`, so a keyboard or
+   screen-reader user had no way to reach a result at all. */
+let searchHits = [], searchCursor = -1;
+
 function wireSearch() {
   const input = document.getElementById("search"), dd = document.getElementById("dropdown");
-  const close = () => { dd.innerHTML = ""; };
+
+  const close = () => {
+    dd.innerHTML = "";
+    dd.style.display = "none";
+    input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
+    searchHits = []; searchCursor = -1;
+  };
+
+  const highlight = (i) => {
+    const rows = [...dd.querySelectorAll(".search-result")];
+    if (!rows.length) return;
+    searchCursor = (i + rows.length) % rows.length;
+    rows.forEach((r, k) => {
+      const on = k === searchCursor;
+      r.classList.toggle("active", on);
+      r.setAttribute("aria-selected", on ? "true" : "false");
+      if (on) {
+        input.setAttribute("aria-activedescendant", r.id);
+        r.scrollIntoView({ block: "nearest" });
+      }
+    });
+  };
+
+  const choose = (sym) => { addSymbol(sym); input.value = ""; close(); };
+
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
     if (!q) return close();
-    const hits = INDEX.filter(x => !state.selected.includes(x.symbol) &&
+    searchHits = INDEX.filter(x => !state.selected.includes(x.symbol) &&
       (x.symbol.toLowerCase().startsWith(q) || x.name.toLowerCase().includes(q)))
       .sort((a, b) => (a.symbol.toLowerCase().startsWith(q) ? 0 : 1) - (b.symbol.toLowerCase().startsWith(q) ? 0 : 1))
       .slice(0, 20);
+
     dd.className = "search-dropdown";
     dd.innerHTML = "";
-    if (!hits.length) { const e = document.createElement("div"); e.className = "search-empty"; e.textContent = "No matches"; dd.appendChild(e); return; }
-    for (const h of hits) {
-      const row = document.createElement("div"); row.className = "search-result";
+    dd.style.display = "block";
+    input.setAttribute("aria-expanded", "true");
+    searchCursor = -1;
+
+    if (!searchHits.length) {
+      const e = document.createElement("div");
+      e.className = "search-empty";
+      e.textContent = `No match for “${input.value.trim()}”`;
+      dd.appendChild(e);
+      return;
+    }
+    searchHits.forEach((h, i) => {
+      const row = document.createElement("div");
+      row.className = "search-result";
+      row.id = `sr-${i}`;
+      row.setAttribute("role", "option");
+      row.setAttribute("aria-selected", "false");
       const sym = document.createElement("span"); sym.className = "sym"; sym.textContent = h.symbol;
       const nm = document.createElement("span"); nm.className = "nm"; nm.textContent = h.name;
       const sec = document.createElement("span"); sec.className = "sec"; sec.textContent = h.sector;
       row.append(sym, nm, sec);
-      row.addEventListener("mousedown", (e) => { e.preventDefault(); addSymbol(h.symbol); input.value = ""; close(); });
+      row.addEventListener("mousedown", (e) => { e.preventDefault(); choose(h.symbol); });
+      row.addEventListener("mouseenter", () => highlight(i));
       dd.appendChild(row);
+    });
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { close(); return; }
+    if (!searchHits.length) {
+      // Enter on an exact ticker with the list closed still adds it.
+      if (e.key === "Enter") {
+        const q = input.value.trim().toUpperCase();
+        if (IDX_MAP.has(q)) { e.preventDefault(); choose(q); }
+      }
+      return;
+    }
+    if (e.key === "ArrowDown") { e.preventDefault(); highlight(searchCursor + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); highlight(searchCursor - 1); }
+    else if (e.key === "Enter") {
+      e.preventDefault();
+      const pick = searchCursor >= 0 ? searchHits[searchCursor] : searchHits[0];
+      if (pick) choose(pick.symbol);
     }
   });
+
   input.addEventListener("blur", () => setTimeout(close, 150));
 }
 
@@ -190,7 +261,10 @@ function renderAll() {
 
   if (state.selected.length < 2) {
     note.textContent = "Search and add at least 2 stocks to build a frontier.";
-    ["frontier-chart", "weights-chart", "risk-chart"].forEach(id => { if (charts[id]) { charts[id].destroy(); delete charts[id]; } });
+    // charts.js owns the instance registry — this module's local `charts` map
+    // was never assigned to, so the old cleanup here was a no-op and stale
+    // frontier/weights/risk charts survived "Clear".
+    ["frontier-chart", "weights-chart", "risk-chart"].forEach(destroyChart);
     document.getElementById("tiles").innerHTML = "";
     document.getElementById("frontier-legend").innerHTML = "";
     document.getElementById("heatmap")?.replaceChildren();
@@ -296,7 +370,7 @@ function renderWeights(st, optimal) {
     .filter(r => r.w > 0.001).sort((a, b) => b.w - a.w);
   document.getElementById("weights-box").style.height = `${70 + rows.length * 30}px`;
   describeCanvas("weights-chart",
-    `Optimal weights: ${rows.map(r => `${r.sym} ${(r.w * 100).toFixed(1)}%`).join(", ")}.`);
+    `Optimal weights: ${rows.map(r => `${r.s} ${(r.w * 100).toFixed(1)}%`).join(", ")}.`);
   drawChart("weights-chart", {
     type: "bar",
     data: { labels: rows.map(r => r.s), datasets: [{ data: rows.map(r => r.w * 100),
@@ -315,7 +389,7 @@ function renderRisk(st, optimal) {
     .filter(r => r.rc > 0.0005).sort((a, b) => b.rc - a.rc);
   document.getElementById("risk-box").style.height = `${70 + rows.length * 30}px`;
   describeCanvas("risk-chart",
-    `Risk contribution: ${rows.map(r => `${r.sym} ${(r.rc * 100).toFixed(1)}%`).join(", ")}.`);
+    `Risk contribution: ${rows.map(r => `${r.s} ${(r.rc * 100).toFixed(1)}%`).join(", ")}.`);
   drawChart("risk-chart", {
     type: "bar",
     data: { labels: rows.map(r => r.s), datasets: [{ data: rows.map(r => r.rc * 100),

@@ -17,6 +17,11 @@ export function draw(id, cfg) {
   return c;
 }
 
+export function destroyChart(id) {
+  const c = registry.get(id);
+  if (c) { c.destroy(); registry.delete(id); }
+}
+
 export function destroyAll() {
   for (const c of registry.values()) c.destroy();
   registry.clear();

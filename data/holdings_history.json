@@ -33,21 +33,22 @@
  },
  {
   "date": "2026-09-09",
-  "turnover": 0.1043,
-  "model_vol": 0.1341,
+  "turnover": 0.2274,
+  "model_vol": 0.144,
   "weights": {
-   "AMZN": 0.1123,
-   "NVDA": 0.1043,
-   "GOOG": 0.1599,
-   "META": 0.03,
-   "MU": 0.0248,
-   "COST": 0.1498,
+   "AMZN": 0.066,
+   "NVDA": 0.1254,
+   "GOOG": 0.0786,
+   "META": 0.0336,
+   "MU": 0.0651,
+   "COST": 0.1113,
    "MSFT": 0.03,
    "JPM": 0.07,
    "SHOP": 0.03,
    "SPGI": 0.03,
-   "NEE": 0.0914,
-   "VLO": 0.1676
+   "GE": 0.08,
+   "NEE": 0.03,
+   "VLO": 0.25
   },
   "note": "monthly rebalance"
  }

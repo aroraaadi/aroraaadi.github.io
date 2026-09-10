@@ -26,7 +26,7 @@
     "SOXX",
     "SMH"
    ],
-   "unattributed_weight_pct": 0.08
+   "unattributed_weight_pct": -0.01
   },
   "robotics": {
    "etfs_requested": [
@@ -41,7 +41,7 @@
     "ARKQ",
     "IRBO"
    ],
-   "unattributed_weight_pct": 6.09
+   "unattributed_weight_pct": 5.94
   },
   "space": {
    "etfs_requested": [
@@ -60,7 +60,249 @@
     "ITA",
     "PPA"
    ],
-   "unattributed_weight_pct": 8.4
+   "unattributed_weight_pct": 8.29
+  },
+  "semiconductors": {
+   "etfs_requested": [
+    "SOXX",
+    "SMH",
+    "XSD",
+    "PSI",
+    "SOXQ"
+   ],
+   "etfs_used": [
+    "SOXX",
+    "SMH",
+    "XSD",
+    "PSI",
+    "SOXQ"
+   ],
+   "unattributed_weight_pct": 0.27
+  },
+  "cloud_software": {
+   "etfs_requested": [
+    "SKYY",
+    "WCLD",
+    "CLOU",
+    "IGV",
+    "XSW"
+   ],
+   "etfs_used": [
+    "SKYY",
+    "WCLD",
+    "CLOU",
+    "IGV",
+    "XSW"
+   ],
+   "unattributed_weight_pct": 0.23
+  },
+  "cybersecurity": {
+   "etfs_requested": [
+    "CIBR",
+    "BUG",
+    "HACK",
+    "IHAK",
+    "WCBR"
+   ],
+   "etfs_used": [
+    "CIBR",
+    "BUG",
+    "HACK",
+    "IHAK",
+    "WCBR"
+   ],
+   "unattributed_weight_pct": 1.31
+  },
+  "fintech": {
+   "etfs_requested": [
+    "FINX",
+    "ARKF",
+    "IPAY",
+    "TPAY"
+   ],
+   "etfs_used": [
+    "FINX",
+    "ARKF",
+    "IPAY",
+    "TPAY"
+   ],
+   "unattributed_weight_pct": 15.24
+  },
+  "clean_energy": {
+   "etfs_requested": [
+    "ICLN",
+    "TAN",
+    "QCLN",
+    "PBW",
+    "FAN",
+    "ACES"
+   ],
+   "etfs_used": [
+    "ICLN",
+    "TAN",
+    "QCLN",
+    "PBW",
+    "FAN",
+    "ACES"
+   ],
+   "unattributed_weight_pct": 4.14
+  },
+  "nuclear_uranium": {
+   "etfs_requested": [
+    "URA",
+    "URNM",
+    "NLR",
+    "URNJ"
+   ],
+   "etfs_used": [
+    "URA",
+    "URNM",
+    "NLR",
+    "URNJ"
+   ],
+   "unattributed_weight_pct": 21.83
+  },
+  "traditional_energy": {
+   "etfs_requested": [
+    "XLE",
+    "XOP",
+    "OIH",
+    "AMLP",
+    "IEO"
+   ],
+   "etfs_used": [
+    "XLE",
+    "XOP",
+    "OIH",
+    "AMLP",
+    "IEO"
+   ],
+   "unattributed_weight_pct": 0.93
+  },
+  "electric_vehicles": {
+   "etfs_requested": [
+    "DRIV",
+    "IDRV",
+    "LIT",
+    "KARS",
+    "BATT"
+   ],
+   "etfs_used": [
+    "DRIV",
+    "IDRV",
+    "LIT",
+    "KARS",
+    "BATT"
+   ],
+   "unattributed_weight_pct": 5.45
+  },
+  "biotech_genomics": {
+   "etfs_requested": [
+    "IBB",
+    "XBI",
+    "ARKG",
+    "GNOM"
+   ],
+   "etfs_used": [
+    "IBB",
+    "XBI",
+    "ARKG",
+    "GNOM"
+   ],
+   "unattributed_weight_pct": 1.37
+  },
+  "infrastructure": {
+   "etfs_requested": [
+    "PAVE",
+    "IFRA",
+    "IGF",
+    "NFRA"
+   ],
+   "etfs_used": [
+    "PAVE",
+    "IFRA",
+    "IGF",
+    "NFRA"
+   ],
+   "unattributed_weight_pct": 4.3
+  },
+  "quantum": {
+   "etfs_requested": [
+    "QTUM"
+   ],
+   "etfs_used": [
+    "QTUM"
+   ],
+   "unattributed_weight_pct": 0.23
+  },
+  "cannabis_consumer": {
+   "etfs_requested": [
+    "XLP",
+    "PBJ",
+    "FTXG"
+   ],
+   "etfs_used": [
+    "XLP",
+    "PBJ",
+    "FTXG"
+   ],
+   "unattributed_weight_pct": 0.81
+  },
+  "healthcare": {
+   "etfs_requested": [
+    "XLV",
+    "IHI",
+    "IHF",
+    "PJP"
+   ],
+   "etfs_used": [
+    "XLV",
+    "IHI",
+    "IHF",
+    "PJP"
+   ],
+   "unattributed_weight_pct": 0.53
+  },
+  "financials": {
+   "etfs_requested": [
+    "XLF",
+    "KBE",
+    "KRE",
+    "IAI"
+   ],
+   "etfs_used": [
+    "XLF",
+    "KBE",
+    "KRE",
+    "IAI"
+   ],
+   "unattributed_weight_pct": 2.17
+  },
+  "water": {
+   "etfs_requested": [
+    "PHO",
+    "FIW",
+    "CGW"
+   ],
+   "etfs_used": [
+    "PHO",
+    "FIW",
+    "CGW"
+   ],
+   "unattributed_weight_pct": 2.89
+  },
+  "gold_miners": {
+   "etfs_requested": [
+    "GDX",
+    "GDXJ",
+    "RING"
+   ],
+   "etfs_used": [
+    "GDX",
+    "GDXJ",
+    "RING"
+   ],
+   "unattributed_weight_pct": 0.62
   }
  },
  "tier_cuts": {
@@ -87,7 +329,7 @@
       "THNQ",
       "WTAI"
      ],
-     "mean_weight_pct": 7.887,
+     "mean_weight_pct": 7.773,
      "tier": "pure_play"
     },
     "robotics": {
@@ -99,294 +341,62 @@
       "IRBO",
       "ROBO"
      ],
-     "mean_weight_pct": 5.42,
+     "mean_weight_pct": 5.328,
      "tier": "pure_play"
     },
     "space": {
-     "score": 0.425,
+     "score": 0.4151,
      "etf_count": 1,
      "etfs": [
       "ARKX"
      ],
-     "mean_weight_pct": 4.523,
+     "mean_weight_pct": 4.382,
      "tier": "core"
+    },
+    "semiconductors": {
+     "score": 0.87,
+     "etf_count": 4,
+     "etfs": [
+      "SMH",
+      "SOXQ",
+      "SOXX",
+      "XSD"
+     ],
+     "mean_weight_pct": 12.394,
+     "tier": "pure_play"
+    },
+    "fintech": {
+     "score": 0.3805,
+     "etf_count": 1,
+     "etfs": [
+      "ARKF"
+     ],
+     "mean_weight_pct": 3.115,
+     "tier": "core"
+    },
+    "electric_vehicles": {
+     "score": 0.3531,
+     "etf_count": 1,
+     "etfs": [
+      "DRIV"
+     ],
+     "mean_weight_pct": 3.187,
+     "tier": "core"
+    },
+    "quantum": {
+     "score": 0.7427,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.324,
+     "tier": "pure_play"
     }
    },
    "primary_theme": "ai",
    "primary_score": 1.0,
    "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "LHX",
-   "themes": {
-    "robotics": {
-     "score": 0.3655,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 2.9,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.903,
-     "etf_count": 6,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.615,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.903,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "LMT",
-   "themes": {
-    "space": {
-     "score": 0.8956,
-     "etf_count": 6,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.509,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.8956,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "RTX",
-   "themes": {
-    "space": {
-     "score": 0.8917,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 7.039,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.8917,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BA",
-   "themes": {
-    "space": {
-     "score": 0.8917,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 5.088,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.8917,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AMD",
-   "themes": {
-    "ai": {
-     "score": 0.8582,
-     "etf_count": 8,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "SMH",
-      "SOXX",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 4.006,
-     "tier": "pure_play"
-    },
-    "robotics": {
-     "score": 0.6331,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 4.401,
-     "tier": "pure_play"
-    },
-    "space": {
-     "score": 0.3945,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 4.087,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.8582,
-   "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "RKLB",
-   "themes": {
-    "robotics": {
-     "score": 0.42,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 3.678,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.8454,
-     "etf_count": 6,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 2.791,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.8454,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AVGO",
-   "themes": {
-    "ai": {
-     "score": 0.8161,
-     "etf_count": 7,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 4.437,
-     "tier": "pure_play"
-    },
-    "robotics": {
-     "score": 0.608,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 4.043,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.8161,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TSLA",
-   "themes": {
-    "ai": {
-     "score": 0.361,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "BOTZ",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.062,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.7961,
-     "etf_count": 3,
-     "etfs": [
-      "ARKQ",
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 4.409,
-     "tier": "pure_play"
-    },
-    "space": {
-     "score": 0.3384,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 3.287,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.7961,
-   "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "NOC",
-   "themes": {
-    "space": {
-     "score": 0.7909,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.561,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.7909,
-   "primary_tier": "pure_play",
-   "theme_count": 1
+   "theme_count": 7
   },
   {
    "symbol": "MU",
@@ -402,20 +412,42 @@
       "SOXX",
       "WTAI"
      ],
-     "mean_weight_pct": 5.055,
+     "mean_weight_pct": 5.02,
+     "tier": "pure_play"
+    },
+    "semiconductors": {
+     "score": 1.0,
+     "etf_count": 5,
+     "etfs": [
+      "PSI",
+      "SMH",
+      "SOXQ",
+      "SOXX",
+      "XSD"
+     ],
+     "mean_weight_pct": 6.378,
+     "tier": "pure_play"
+    },
+    "quantum": {
+     "score": 0.7423,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.318,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "ai",
-   "primary_score": 0.7833,
+   "primary_theme": "semiconductors",
+   "primary_score": 1.0,
    "primary_tier": "pure_play",
-   "theme_count": 1
+   "theme_count": 3
   },
   {
-   "symbol": "MRVL",
+   "symbol": "AMD",
    "themes": {
     "ai": {
-     "score": 0.7414,
+     "score": 0.8626,
      "etf_count": 8,
      "etfs": [
       "AIQ",
@@ -427,151 +459,445 @@
       "THNQ",
       "WTAI"
      ],
-     "mean_weight_pct": 2.338,
+     "mean_weight_pct": 4.069,
      "tier": "pure_play"
     },
     "robotics": {
-     "score": 0.1766,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.202,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.7414,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "GD",
-   "themes": {
-    "space": {
-     "score": 0.6991,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.797,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.6991,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ISRG",
-   "themes": {
-    "ai": {
-     "score": 0.4222,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 5.938,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.6928,
-     "etf_count": 3,
+     "score": 0.639,
+     "etf_count": 2,
      "etfs": [
       "ARKQ",
-      "BOTZ",
-      "ROBO"
+      "IRBO"
      ],
-     "mean_weight_pct": 2.933,
+     "mean_weight_pct": 4.486,
+     "tier": "pure_play"
+    },
+    "space": {
+     "score": 0.4079,
+     "etf_count": 1,
+     "etfs": [
+      "ARKX"
+     ],
+     "mean_weight_pct": 4.279,
+     "tier": "core"
+    },
+    "semiconductors": {
+     "score": 1.0,
+     "etf_count": 5,
+     "etfs": [
+      "PSI",
+      "SMH",
+      "SOXQ",
+      "SOXX",
+      "XSD"
+     ],
+     "mean_weight_pct": 5.226,
+     "tier": "pure_play"
+    },
+    "fintech": {
+     "score": 0.2769,
+     "etf_count": 1,
+     "etfs": [
+      "ARKF"
+     ],
+     "mean_weight_pct": 1.634,
+     "tier": "diversified"
+    },
+    "quantum": {
+     "score": 0.742,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.314,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "robotics",
-   "primary_score": 0.6928,
+   "primary_theme": "semiconductors",
+   "primary_score": 1.0,
    "primary_tier": "pure_play",
-   "theme_count": 2
+   "theme_count": 6
   },
   {
-   "symbol": "HEI",
+   "symbol": "AVGO",
    "themes": {
+    "ai": {
+     "score": 0.8178,
+     "etf_count": 7,
+     "etfs": [
+      "AIQ",
+      "ARTY",
+      "CHAT",
+      "IRBO",
+      "SMH",
+      "SOXX",
+      "WTAI"
+     ],
+     "mean_weight_pct": 4.461,
+     "tier": "pure_play"
+    },
+    "robotics": {
+     "score": 0.6092,
+     "etf_count": 2,
+     "etfs": [
+      "ARKQ",
+      "IRBO"
+     ],
+     "mean_weight_pct": 4.06,
+     "tier": "pure_play"
+    },
+    "semiconductors": {
+     "score": 0.87,
+     "etf_count": 4,
+     "etfs": [
+      "SMH",
+      "SOXQ",
+      "SOXX",
+      "XSD"
+     ],
+     "mean_weight_pct": 6.219,
+     "tier": "pure_play"
+    },
+    "cybersecurity": {
+     "score": 0.61,
+     "etf_count": 2,
+     "etfs": [
+      "CIBR",
+      "HACK"
+     ],
+     "mean_weight_pct": 5.92,
+     "tier": "pure_play"
+    },
+    "quantum": {
+     "score": 0.7315,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.164,
+     "tier": "pure_play"
+    }
+   },
+   "primary_theme": "semiconductors",
+   "primary_score": 0.87,
+   "primary_tier": "pure_play",
+   "theme_count": 5
+  },
+  {
+   "symbol": "RKLB",
+   "themes": {
+    "robotics": {
+     "score": 0.4226,
+     "etf_count": 1,
+     "etfs": [
+      "ARKQ"
+     ],
+     "mean_weight_pct": 3.716,
+     "tier": "core"
+    },
     "space": {
-     "score": 0.6851,
-     "etf_count": 5,
+     "score": 0.8468,
+     "etf_count": 6,
      "etfs": [
       "ARKX",
       "ITA",
       "PPA",
       "ROKT",
+      "UFO",
       "XAR"
      ],
-     "mean_weight_pct": 2.049,
+     "mean_weight_pct": 2.812,
      "tier": "pure_play"
     }
    },
    "primary_theme": "space",
-   "primary_score": 0.6851,
+   "primary_score": 0.8468,
+   "primary_tier": "pure_play",
+   "theme_count": 2
+  },
+  {
+   "symbol": "MSFT",
+   "themes": {
+    "ai": {
+     "score": 0.5776,
+     "etf_count": 5,
+     "etfs": [
+      "AIQ",
+      "ARTY",
+      "CHAT",
+      "IRBO",
+      "THNQ"
+     ],
+     "mean_weight_pct": 3.093,
+     "tier": "core"
+    },
+    "robotics": {
+     "score": 0.359,
+     "etf_count": 1,
+     "etfs": [
+      "IRBO"
+     ],
+     "mean_weight_pct": 2.807,
+     "tier": "core"
+    },
+    "cloud_software": {
+     "score": 0.7955,
+     "etf_count": 4,
+     "etfs": [
+      "CLOU",
+      "IGV",
+      "SKYY",
+      "XSW"
+     ],
+     "mean_weight_pct": 3.936,
+     "tier": "pure_play"
+    },
+    "cybersecurity": {
+     "score": 0.2756,
+     "etf_count": 1,
+     "etfs": [
+      "CIBR"
+     ],
+     "mean_weight_pct": 2.081,
+     "tier": "diversified"
+    },
+    "electric_vehicles": {
+     "score": 0.3929,
+     "etf_count": 1,
+     "etfs": [
+      "DRIV"
+     ],
+     "mean_weight_pct": 3.755,
+     "tier": "core"
+    },
+    "quantum": {
+     "score": 0.7523,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.461,
+     "tier": "pure_play"
+    }
+   },
+   "primary_theme": "cloud_software",
+   "primary_score": 0.7955,
+   "primary_tier": "pure_play",
+   "theme_count": 6
+  },
+  {
+   "symbol": "NEE",
+   "themes": {
+    "clean_energy": {
+     "score": 0.2408,
+     "etf_count": 1,
+     "etfs": [
+      "FAN"
+     ],
+     "mean_weight_pct": 1.892,
+     "tier": "diversified"
+    },
+    "infrastructure": {
+     "score": 0.7477,
+     "etf_count": 3,
+     "etfs": [
+      "IFRA",
+      "IGF",
+      "NFRA"
+     ],
+     "mean_weight_pct": 3.717,
+     "tier": "pure_play"
+    }
+   },
+   "primary_theme": "infrastructure",
+   "primary_score": 0.7477,
+   "primary_tier": "pure_play",
+   "theme_count": 2
+  },
+  {
+   "symbol": "VLO",
+   "themes": {
+    "traditional_energy": {
+     "score": 0.74,
+     "etf_count": 3,
+     "etfs": [
+      "IEO",
+      "XLE",
+      "XOP"
+     ],
+     "mean_weight_pct": 6.797,
+     "tier": "pure_play"
+    }
+   },
+   "primary_theme": "traditional_energy",
+   "primary_score": 0.74,
    "primary_tier": "pure_play",
    "theme_count": 1
   },
   {
-   "symbol": "6861.T",
+   "symbol": "AMZN",
    "themes": {
     "ai": {
-     "score": 0.4222,
-     "etf_count": 1,
+     "score": 0.578,
+     "etf_count": 5,
      "etfs": [
-      "BOTZ"
+      "AIQ",
+      "CHAT",
+      "IRBO",
+      "THNQ",
+      "WTAI"
      ],
-     "mean_weight_pct": 10.292,
+     "mean_weight_pct": 3.098,
      "tier": "core"
     },
     "robotics": {
-     "score": 0.675,
+     "score": 0.5415,
      "etf_count": 2,
      "etfs": [
-      "BOTZ",
-      "ROBO"
+      "ARKQ",
+      "IRBO"
      ],
-     "mean_weight_pct": 5.862,
+     "mean_weight_pct": 3.093,
+     "tier": "core"
+    },
+    "space": {
+     "score": 0.4251,
+     "etf_count": 1,
+     "etfs": [
+      "ARKX"
+     ],
+     "mean_weight_pct": 4.525,
+     "tier": "core"
+    },
+    "cloud_software": {
+     "score": 0.4211,
+     "etf_count": 2,
+     "etfs": [
+      "CLOU",
+      "SKYY"
+     ],
+     "mean_weight_pct": 2.302,
+     "tier": "core"
+    },
+    "fintech": {
+     "score": 0.4222,
+     "etf_count": 1,
+     "etfs": [
+      "ARKF"
+     ],
+     "mean_weight_pct": 3.709,
+     "tier": "core"
+    },
+    "quantum": {
+     "score": 0.7388,
+     "etf_count": 1,
+     "etfs": [
+      "QTUM"
+     ],
+     "mean_weight_pct": 1.269,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "robotics",
-   "primary_score": 0.675,
+   "primary_theme": "quantum",
+   "primary_score": 0.7388,
    "primary_tier": "pure_play",
-   "theme_count": 2
+   "theme_count": 6
   },
   {
-   "symbol": "ABBN.SW",
+   "symbol": "XNDU",
    "themes": {
-    "ai": {
-     "score": 0.4222,
+    "quantum": {
+     "score": 0.7322,
      "etf_count": 1,
      "etfs": [
-      "BOTZ"
+      "QTUM"
      ],
-     "mean_weight_pct": 9.067,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.675,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 5.178,
+     "mean_weight_pct": 1.174,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "robotics",
+   "primary_theme": "quantum",
+   "primary_score": 0.7322,
+   "primary_tier": "pure_play",
+   "theme_count": 1
+  },
+  {
+   "symbol": "HOOD",
+   "themes": {
+    "ai": {
+     "score": 0.2235,
+     "etf_count": 1,
+     "etfs": [
+      "THNQ"
+     ],
+     "mean_weight_pct": 2.161,
+     "tier": "diversified"
+    },
+    "fintech": {
+     "score": 0.675,
+     "etf_count": 2,
+     "etfs": [
+      "ARKF",
+      "FINX"
+     ],
+     "mean_weight_pct": 7.317,
+     "tier": "pure_play"
+    },
+    "financials": {
+     "score": 0.5292,
+     "etf_count": 2,
+     "etfs": [
+      "IAI",
+      "XLF"
+     ],
+     "mean_weight_pct": 2.917,
+     "tier": "core"
+    }
+   },
+   "primary_theme": "fintech",
    "primary_score": 0.675,
    "primary_tier": "pure_play",
-   "theme_count": 2
+   "theme_count": 3
+  },
+  {
+   "symbol": "BE",
+   "themes": {
+    "ai": {
+     "score": 0.2535,
+     "etf_count": 2,
+     "etfs": [
+      "ARTY",
+      "WTAI"
+     ],
+     "mean_weight_pct": 1.558,
+     "tier": "diversified"
+    },
+    "clean_energy": {
+     "score": 0.675,
+     "etf_count": 3,
+     "etfs": [
+      "ICLN",
+      "PBW",
+      "QCLN"
+     ],
+     "mean_weight_pct": 6.55,
+     "tier": "pure_play"
+    },
+    "electric_vehicles": {
+     "score": 0.4927,
+     "etf_count": 2,
+     "etfs": [
+      "BATT",
+      "DRIV"
+     ],
+     "mean_weight_pct": 3.324,
+     "tier": "core"
+    }
+   },
+   "primary_theme": "clean_energy",
+   "primary_score": 0.675,
+   "primary_tier": "pure_play",
+   "theme_count": 3
   },
   {
    "symbol": "GE",
@@ -594,1316 +920,231 @@
    "theme_count": 1
   },
   {
-   "symbol": "BWXT",
+   "symbol": "JPM",
    "themes": {
-    "robotics": {
-     "score": 0.2791,
-     "etf_count": 1,
+    "financials": {
+     "score": 0.675,
+     "etf_count": 2,
      "etfs": [
-      "ARKQ"
+      "KBE",
+      "XLF"
      ],
-     "mean_weight_pct": 1.665,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.6576,
-     "etf_count": 5,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.657,
+     "mean_weight_pct": 6.403,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.6576,
+   "primary_theme": "financials",
+   "primary_score": 0.675,
    "primary_tier": "pure_play",
-   "theme_count": 2
+   "theme_count": 1
   },
   {
-   "symbol": "GOOGL",
+   "symbol": "WMB",
    "themes": {
-    "ai": {
-     "score": 0.6527,
-     "etf_count": 6,
+    "traditional_energy": {
+     "score": 0.3951,
+     "etf_count": 1,
      "etfs": [
-      "AIQ",
-      "BOTZ",
-      "CHAT",
-      "IRBO",
-      "THNQ",
-      "WTAI"
+      "XLE"
      ],
-     "mean_weight_pct": 3.134,
-     "tier": "pure_play"
+     "mean_weight_pct": 3.787,
+     "tier": "core"
     },
-    "robotics": {
-     "score": 0.6109,
+    "infrastructure": {
+     "score": 0.6487,
      "etf_count": 3,
      "etfs": [
-      "ARKQ",
-      "BOTZ",
-      "IRBO"
+      "IFRA",
+      "IGF",
+      "NFRA"
      ],
-     "mean_weight_pct": 1.763,
-     "tier": "pure_play"
-    },
-    "space": {
-     "score": 0.1272,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 0.269,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.6527,
-   "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "TDG",
-   "themes": {
-    "space": {
-     "score": 0.6472,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.056,
+     "mean_weight_pct": 2.303,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.6472,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6954.T",
-   "themes": {
-    "ai": {
-     "score": 0.4244,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 3.999,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.6457,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 4.582,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.6457,
+   "primary_theme": "infrastructure",
+   "primary_score": 0.6487,
    "primary_tier": "pure_play",
    "theme_count": 2
   },
   {
-   "symbol": "LUNR",
-   "themes": {
-    "robotics": {
-     "score": 0.2889,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.805,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.6451,
-     "etf_count": 5,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.477,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.6451,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TSM",
+   "symbol": "CEG",
    "themes": {
     "ai": {
-     "score": 0.6389,
-     "etf_count": 4,
-     "etfs": [
-      "AIQ",
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 5.083,
-     "tier": "pure_play"
-    },
-    "robotics": {
-     "score": 0.415,
+     "score": 0.2038,
      "etf_count": 1,
      "etfs": [
-      "ARKQ"
+      "ARTY"
      ],
-     "mean_weight_pct": 3.607,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.236,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 1.823,
+     "mean_weight_pct": 1.88,
      "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.6389,
-   "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "RDW",
-   "themes": {
-    "space": {
-     "score": 0.6284,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.239,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.6284,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "INTC",
-   "themes": {
-    "ai": {
-     "score": 0.6206,
-     "etf_count": 6,
-     "etfs": [
-      "AIQ",
-      "CHAT",
-      "IRBO",
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.675,
-     "tier": "pure_play"
     },
-    "robotics": {
-     "score": 0.2957,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.903,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.6206,
-   "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "FLY",
-   "themes": {
-    "space": {
-     "score": 0.6161,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.063,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.6161,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PLTR",
-   "themes": {
-    "ai": {
-     "score": 0.476,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.705,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.6144,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 4.134,
-     "tier": "pure_play"
-    },
-    "space": {
-     "score": 0.4055,
-     "etf_count": 2,
-     "etfs": [
-      "ARKX",
-      "PPA"
-     ],
-     "mean_weight_pct": 2.698,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.6144,
-   "primary_tier": "pure_play",
-   "theme_count": 3
-  },
-  {
-   "symbol": "VOYG",
-   "themes": {
-    "space": {
-     "score": 0.6109,
-     "etf_count": 5,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.989,
-     "tier": "pure_play"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.6109,
-   "primary_tier": "pure_play",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KTOS",
-   "themes": {
-    "robotics": {
+    "nuclear_uranium": {
      "score": 0.5125,
      "etf_count": 1,
      "etfs": [
-      "ARKQ"
+      "NLR"
      ],
-     "mean_weight_pct": 5.604,
+     "mean_weight_pct": 9.093,
      "tier": "core"
     },
-    "space": {
-     "score": 0.6101,
-     "etf_count": 4,
+    "infrastructure": {
+     "score": 0.6383,
+     "etf_count": 3,
      "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "XAR"
+      "IFRA",
+      "IGF",
+      "NFRA"
      ],
-     "mean_weight_pct": 2.526,
+     "mean_weight_pct": 2.154,
      "tier": "pure_play"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.6101,
+   "primary_theme": "infrastructure",
+   "primary_score": 0.6383,
    "primary_tier": "pure_play",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TER",
-   "themes": {
-    "ai": {
-     "score": 0.4275,
-     "etf_count": 4,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.981,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.5937,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 3.839,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.3642,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 3.655,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.5937,
-   "primary_tier": "core",
    "theme_count": 3
   },
   {
-   "symbol": "SNOW",
+   "symbol": "ETR",
    "themes": {
-    "ai": {
-     "score": 0.5885,
-     "etf_count": 6,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.216,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3608,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.833,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.5885,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "HWM",
-   "themes": {
-    "space": {
-     "score": 0.5878,
+    "infrastructure": {
+     "score": 0.5671,
      "etf_count": 3,
      "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
+      "IFRA",
+      "IGF",
+      "NFRA"
      ],
-     "mean_weight_pct": 3.754,
+     "mean_weight_pct": 1.138,
      "tier": "core"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.5878,
+   "primary_theme": "infrastructure",
+   "primary_score": 0.5671,
    "primary_tier": "core",
    "theme_count": 1
   },
   {
-   "symbol": "SYM",
+   "symbol": "COST",
    "themes": {
-    "ai": {
-     "score": 0.1574,
+    "cannabis_consumer": {
+     "score": 0.5667,
      "etf_count": 1,
      "etfs": [
-      "BOTZ"
+      "XLP"
      ],
-     "mean_weight_pct": 1.217,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.5847,
-     "etf_count": 3,
-     "etfs": [
-      "ARKQ",
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.389,
+     "mean_weight_pct": 8.746,
      "tier": "core"
     }
    },
-   "primary_theme": "robotics",
-   "primary_score": 0.5847,
+   "primary_theme": "cannabis_consumer",
+   "primary_score": 0.5667,
    "primary_tier": "core",
-   "theme_count": 2
+   "theme_count": 1
   },
   {
-   "symbol": "MSFT",
+   "symbol": "VST",
+   "themes": {
+    "infrastructure": {
+     "score": 0.5642,
+     "etf_count": 3,
+     "etfs": [
+      "IFRA",
+      "IGF",
+      "NFRA"
+     ],
+     "mean_weight_pct": 1.096,
+     "tier": "core"
+    }
+   },
+   "primary_theme": "infrastructure",
+   "primary_score": 0.5642,
+   "primary_tier": "core",
+   "theme_count": 1
+  },
+  {
+   "symbol": "SHOP",
    "themes": {
     "ai": {
-     "score": 0.5787,
-     "etf_count": 5,
+     "score": 0.2623,
+     "etf_count": 2,
      "etfs": [
       "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
       "THNQ"
      ],
-     "mean_weight_pct": 3.109,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.359,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.807,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.5787,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AMZN",
-   "themes": {
-    "ai": {
-     "score": 0.5786,
-     "etf_count": 5,
-     "etfs": [
-      "AIQ",
-      "CHAT",
-      "IRBO",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 3.108,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.5441,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.13,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.4307,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 4.605,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.5786,
-   "primary_tier": "core",
-   "theme_count": 3
-  },
-  {
-   "symbol": "IRDM",
-   "themes": {
-    "space": {
-     "score": 0.5783,
-     "etf_count": 4,
-     "etfs": [
-      "ARKX",
-      "PPA",
-      "ROKT",
-      "UFO"
-     ],
-     "mean_weight_pct": 2.071,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5783,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AVAV",
-   "themes": {
-    "ai": {
-     "score": 0.1862,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.629,
+     "mean_weight_pct": 1.684,
      "tier": "diversified"
     },
-    "robotics": {
-     "score": 0.469,
-     "etf_count": 2,
+    "cloud_software": {
+     "score": 0.5464,
+     "etf_count": 3,
      "etfs": [
-      "ARKQ",
-      "BOTZ"
+      "CLOU",
+      "SKYY",
+      "WCLD"
      ],
-     "mean_weight_pct": 2.057,
+     "mean_weight_pct": 2.234,
      "tier": "core"
     },
-    "space": {
-     "score": 0.57,
-     "etf_count": 4,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.953,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.57,
-   "primary_tier": "core",
-   "theme_count": 3
-  },
-  {
-   "symbol": "ASML",
-   "themes": {
-    "ai": {
-     "score": 0.568,
-     "etf_count": 5,
-     "etfs": [
-      "CHAT",
-      "SMH",
-      "SOXX",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.955,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.568,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SPCX",
-   "themes": {
-    "ai": {
-     "score": 0.3118,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 3.423,
-     "tier": "diversified"
-    },
-    "robotics": {
+    "fintech": {
      "score": 0.5125,
      "etf_count": 1,
      "etfs": [
-      "ARKQ"
+      "ARKF"
      ],
-     "mean_weight_pct": 8.145,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.5667,
-     "etf_count": 2,
-     "etfs": [
-      "ARKX",
-      "UFO"
-     ],
-     "mean_weight_pct": 7.873,
+     "mean_weight_pct": 6.974,
      "tier": "core"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.5667,
+   "primary_theme": "cloud_software",
+   "primary_score": 0.5464,
    "primary_tier": "core",
    "theme_count": 3
   },
   {
-   "symbol": "TRMB",
+   "symbol": "SPGI",
    "themes": {
-    "robotics": {
-     "score": 0.4472,
+    "financials": {
+     "score": 0.5231,
      "etf_count": 2,
      "etfs": [
-      "ARKQ",
-      "ROBO"
+      "IAI",
+      "XLF"
      ],
-     "mean_weight_pct": 1.745,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.5667,
-     "etf_count": 2,
-     "etfs": [
-      "ARKX",
-      "UFO"
-     ],
-     "mean_weight_pct": 5.015,
+     "mean_weight_pct": 2.829,
      "tier": "core"
     }
    },
-   "primary_theme": "space",
-   "primary_score": 0.5667,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "MOG-A",
-   "themes": {
-    "space": {
-     "score": 0.5665,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.902,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5665,
+   "primary_theme": "financials",
+   "primary_score": 0.5231,
    "primary_tier": "core",
    "theme_count": 1
-  },
-  {
-   "symbol": "HXL",
-   "themes": {
-    "space": {
-     "score": 0.563,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.852,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.563,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HII",
-   "themes": {
-    "space": {
-     "score": 0.5586,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.79,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5586,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HONA",
-   "themes": {
-    "space": {
-     "score": 0.5578,
-     "etf_count": 4,
-     "etfs": [
-      "ARKX",
-      "PPA",
-      "ROKT",
-      "UFO"
-     ],
-     "mean_weight_pct": 1.778,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5578,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "VSAT",
-   "themes": {
-    "space": {
-     "score": 0.5577,
-     "etf_count": 3,
-     "etfs": [
-      "PPA",
-      "ROKT",
-      "UFO"
-     ],
-     "mean_weight_pct": 3.324,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5577,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AXON",
-   "themes": {
-    "space": {
-     "score": 0.5533,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 3.262,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5533,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ALAB",
-   "themes": {
-    "ai": {
-     "score": 0.5476,
-     "etf_count": 6,
-     "etfs": [
-      "ARTY",
-      "CHAT",
-      "SMH",
-      "SOXX",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.633,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.5476,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6273.T",
-   "themes": {
-    "ai": {
-     "score": 0.3837,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 4.449,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.5341,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.987,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.5341,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "000660.KS",
-   "themes": {
-    "ai": {
-     "score": 0.53,
-     "etf_count": 5,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.413,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.1797,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.246,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.53,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "DCO",
-   "themes": {
-    "space": {
-     "score": 0.5298,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "ROKT",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.378,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5298,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SMCI",
-   "themes": {
-    "ai": {
-     "score": 0.521,
-     "etf_count": 5,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.284,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.4323,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.854,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.521,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AIR",
-   "themes": {
-    "space": {
-     "score": 0.5128,
-     "etf_count": 4,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.136,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.5128,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "QCOM",
-   "themes": {
-    "ai": {
-     "score": 0.5095,
-     "etf_count": 5,
-     "etfs": [
-      "AIQ",
-      "IRBO",
-      "SMH",
-      "SOXX",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.119,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3868,
-     "etf_count": 2,
-     "etfs": [
-      "IRBO",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.884,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.5095,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2330.TW",
-   "themes": {
-    "ai": {
-     "score": 0.4966,
-     "etf_count": 4,
-     "etfs": [
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.967,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3447,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.604,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4966,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ACHR",
-   "themes": {
-    "robotics": {
-     "score": 0.349,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 2.665,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.4944,
-     "etf_count": 3,
-     "etfs": [
-      "ARKX",
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 2.42,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4944,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "KRMN",
-   "themes": {
-    "space": {
-     "score": 0.4938,
-     "etf_count": 4,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.864,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4938,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ATI",
-   "themes": {
-    "space": {
-     "score": 0.4931,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 2.401,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4931,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DE",
-   "themes": {
-    "robotics": {
-     "score": 0.4863,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.304,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.4583,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 5.727,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4863,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ADSK",
-   "themes": {
-    "ai": {
-     "score": 0.3207,
-     "etf_count": 2,
-     "etfs": [
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.518,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4815,
-     "etf_count": 2,
-     "etfs": [
-      "IRBO",
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.235,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4815,
-   "primary_tier": "core",
-   "theme_count": 2
   },
   {
    "symbol": "GOOG",
    "themes": {
     "robotics": {
-     "score": 0.4814,
+     "score": 0.4768,
      "etf_count": 1,
      "etfs": [
       "ARKQ"
      ],
-     "mean_weight_pct": 4.555,
+     "mean_weight_pct": 4.49,
      "tier": "core"
     },
     "space": {
-     "score": 0.3809,
+     "score": 0.3779,
      "etf_count": 1,
      "etfs": [
       "ARKX"
      ],
-     "mean_weight_pct": 3.894,
+     "mean_weight_pct": 3.851,
      "tier": "core"
     }
    },
    "primary_theme": "robotics",
-   "primary_score": 0.4814,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6383.T",
-   "themes": {
-    "ai": {
-     "score": 0.2896,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 3.106,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4787,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.196,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4787,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ESLT",
-   "themes": {
-    "robotics": {
-     "score": 0.2381,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.08,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.4785,
-     "etf_count": 3,
-     "etfs": [
-      "ARKX",
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 2.193,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4785,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ORCL",
-   "themes": {
-    "ai": {
-     "score": 0.4776,
-     "etf_count": 4,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "IRBO",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.696,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.2134,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.727,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4776,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "300124.SZ",
-   "themes": {
-    "ai": {
-     "score": 0.3471,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 3.927,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4727,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.109,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4727,
+   "primary_score": 0.4768,
    "primary_tier": "core",
    "theme_count": 2
   },
@@ -1911,7 +1152,7 @@
    "symbol": "META",
    "themes": {
     "ai": {
-     "score": 0.4691,
+     "score": 0.4684,
      "etf_count": 4,
      "etfs": [
       "AIQ",
@@ -1919,7 +1160,7 @@
       "IRBO",
       "THNQ"
      ],
-     "mean_weight_pct": 2.574,
+     "mean_weight_pct": 2.564,
      "tier": "core"
     },
     "robotics": {
@@ -1930,880 +1171,49 @@
      ],
      "mean_weight_pct": 3.185,
      "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4691,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AUR",
-   "themes": {
-    "ai": {
-     "score": 0.2364,
+    },
+    "fintech": {
+     "score": 0.3957,
      "etf_count": 1,
      "etfs": [
-      "BOTZ"
+      "ARKF"
      ],
-     "mean_weight_pct": 2.346,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4659,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 2.013,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4659,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ANET",
-   "themes": {
-    "ai": {
-     "score": 0.465,
-     "etf_count": 4,
-     "etfs": [
-      "ARTY",
-      "CHAT",
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.515,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3866,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.202,
+     "mean_weight_pct": 3.332,
      "tier": "core"
     }
    },
    "primary_theme": "ai",
-   "primary_score": 0.465,
+   "primary_score": 0.4684,
    "primary_tier": "core",
-   "theme_count": 2
+   "theme_count": 3
   },
   {
-   "symbol": "CRS",
+   "symbol": "TRGP",
    "themes": {
-    "space": {
-     "score": 0.4602,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.931,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4602,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LRCX",
-   "themes": {
-    "ai": {
-     "score": 0.4599,
-     "etf_count": 3,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "THNQ"
-     ],
-     "mean_weight_pct": 3.475,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4599,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PL",
-   "themes": {
-    "space": {
-     "score": 0.4596,
-     "etf_count": 3,
-     "etfs": [
-      "PPA",
-      "ROKT",
-      "UFO"
-     ],
-     "mean_weight_pct": 1.923,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4596,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GRMN",
-   "themes": {
-    "space": {
-     "score": 0.4583,
+    "traditional_energy": {
+     "score": 0.3836,
      "etf_count": 1,
      "etfs": [
-      "UFO"
+      "XLE"
      ],
-     "mean_weight_pct": 6.6,
+     "mean_weight_pct": 3.624,
      "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4583,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SIRI",
-   "themes": {
-    "space": {
-     "score": 0.4583,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 5.706,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4583,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "WWD",
-   "themes": {
-    "space": {
-     "score": 0.4532,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.832,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4532,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AMAT",
-   "themes": {
-    "ai": {
-     "score": 0.4528,
-     "etf_count": 3,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 3.373,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4528,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "005930.KS",
-   "themes": {
-    "ai": {
-     "score": 0.4519,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 3.361,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4519,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PTC",
-   "themes": {
-    "ai": {
-     "score": 0.2313,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.272,
-     "tier": "diversified"
     },
-    "robotics": {
-     "score": 0.4519,
+    "infrastructure": {
+     "score": 0.4327,
      "etf_count": 2,
      "etfs": [
-      "IRBO",
-      "ROBO"
+      "IGF",
+      "NFRA"
      ],
-     "mean_weight_pct": 1.813,
+     "mean_weight_pct": 1.538,
      "tier": "core"
     }
    },
-   "primary_theme": "robotics",
-   "primary_score": 0.4519,
+   "primary_theme": "infrastructure",
+   "primary_score": 0.4327,
    "primary_tier": "core",
    "theme_count": 2
-  },
-  {
-   "symbol": "ADI",
-   "themes": {
-    "ai": {
-     "score": 0.4504,
-     "etf_count": 3,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "THNQ"
-     ],
-     "mean_weight_pct": 3.339,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.2611,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 2.182,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4504,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CGNX",
-   "themes": {
-    "ai": {
-     "score": 0.2859,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.021,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4502,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.788,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4502,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CW",
-   "themes": {
-    "space": {
-     "score": 0.4489,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.77,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4489,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TDY",
-   "themes": {
-    "robotics": {
-     "score": 0.1748,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 0.175,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.4475,
-     "etf_count": 3,
-     "etfs": [
-      "ARKX",
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.75,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4475,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AUTO.OL",
-   "themes": {
-    "ai": {
-     "score": 0.1662,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.342,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.44,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.643,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.44,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "IBM",
-   "themes": {
-    "ai": {
-     "score": 0.4397,
-     "etf_count": 4,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.154,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3981,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.365,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4397,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6645.T",
-   "themes": {
-    "ai": {
-     "score": 0.2019,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.852,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4388,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.625,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4388,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "1810.HK",
-   "themes": {
-    "ai": {
-     "score": 0.1963,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.773,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.434,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.558,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.434,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TXT",
-   "themes": {
-    "space": {
-     "score": 0.434,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.557,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.434,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PATH",
-   "themes": {
-    "ai": {
-     "score": 0.2965,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "BOTZ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.141,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4306,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.509,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4306,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "KLAC",
-   "themes": {
-    "ai": {
-     "score": 0.4292,
-     "etf_count": 3,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 3.037,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4292,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CRWV",
-   "themes": {
-    "ai": {
-     "score": 0.4276,
-     "etf_count": 4,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.982,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4276,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TXN",
-   "themes": {
-    "ai": {
-     "score": 0.4238,
-     "etf_count": 3,
-     "etfs": [
-      "SMH",
-      "SOXX",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.96,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4238,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NET",
-   "themes": {
-    "ai": {
-     "score": 0.4237,
-     "etf_count": 4,
-     "etfs": [
-      "CHAT",
-      "IRBO",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.926,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3276,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.358,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4237,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6506.T",
-   "themes": {
-    "ai": {
-     "score": 0.1955,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.761,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4229,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.398,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4229,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "JBTM",
-   "themes": {
-    "ai": {
-     "score": 0.1688,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.379,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4215,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.379,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4215,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ECHO",
-   "themes": {
-    "space": {
-     "score": 0.4209,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 4.466,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4209,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PANW",
-   "themes": {
-    "ai": {
-     "score": 0.4187,
-     "etf_count": 3,
-     "etfs": [
-      "IRBO",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.887,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.3779,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.078,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4187,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "BIDU",
-   "themes": {
-    "ai": {
-     "score": 0.2126,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.974,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.418,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.329,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.418,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SARO",
-   "themes": {
-    "space": {
-     "score": 0.4178,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.325,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4178,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CRWD",
-   "themes": {
-    "ai": {
-     "score": 0.4177,
-     "etf_count": 4,
-     "etfs": [
-      "CHAT",
-      "IRBO",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.84,
-     "tier": "core"
-    },
-    "robotics": {
-     "score": 0.2917,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.846,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.4177,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "RSW.L",
-   "themes": {
-    "ai": {
-     "score": 0.1527,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.15,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4134,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.263,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4134,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "OII",
-   "themes": {
-    "space": {
-     "score": 0.4099,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 4.309,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4099,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ASTS",
-   "themes": {
-    "space": {
-     "score": 0.4086,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 4.289,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4086,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FET",
-   "themes": {
-    "space": {
-     "score": 0.4031,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 4.211,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.4031,
-   "primary_tier": "core",
-   "theme_count": 1
   },
   {
    "symbol": "APH",
@@ -2825,6620 +1235,21 @@
    "theme_count": 1
   },
   {
-   "symbol": "FTNT",
-   "themes": {
-    "ai": {
-     "score": 0.311,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.412,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4013,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.412,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4013,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "XPEV",
-   "themes": {
-    "ai": {
-     "score": 0.1517,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.135,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.4005,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.079,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.4005,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "JOBY",
-   "themes": {
-    "robotics": {
-     "score": 0.3995,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.065,
-     "tier": "core"
-    },
-    "space": {
-     "score": 0.2445,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 1.945,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3995,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "9880.HK",
-   "themes": {
-    "ai": {
-     "score": 0.1472,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.071,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3984,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.048,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3984,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CTSH",
-   "themes": {
-    "ai": {
-     "score": 0.3054,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.331,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3957,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.331,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3957,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "DRS",
-   "themes": {
-    "space": {
-     "score": 0.3947,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.995,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3947,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ACN",
-   "themes": {
-    "ai": {
-     "score": 0.2911,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.096,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3924,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 3.284,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3924,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2049.TW",
-   "themes": {
-    "ai": {
-     "score": 0.0922,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.286,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.391,
-     "etf_count": 2,
-     "etfs": [
-      "IRBO",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.942,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.391,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "OUST",
-   "themes": {
-    "ai": {
-     "score": 0.1083,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.516,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3847,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.853,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3847,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "MRCY",
-   "themes": {
-    "space": {
-     "score": 0.3846,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.851,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3846,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PONY",
-   "themes": {
-    "ai": {
-     "score": 0.1744,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.428,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3831,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.829,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3831,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "LOAR",
-   "themes": {
-    "space": {
-     "score": 0.3827,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.824,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3827,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ATS.TO",
-   "themes": {
-    "ai": {
-     "score": 0.1027,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.436,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3796,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.78,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3796,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "WRD",
-   "themes": {
-    "ai": {
-     "score": 0.1028,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.437,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3794,
-     "etf_count": 2,
-     "etfs": [
-      "ARKQ",
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.778,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3794,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "PH",
-   "themes": {
-    "space": {
-     "score": 0.3773,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 3.842,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3773,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CRDO",
-   "themes": {
-    "ai": {
-     "score": 0.372,
-     "etf_count": 4,
-     "etfs": [
-      "ARTY",
-      "SOXX",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.188,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.372,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "3443.TW",
-   "themes": {
-    "ai": {
-     "score": 0.3679,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "ARTY",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.161,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3679,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6857.T",
-   "themes": {
-    "ai": {
-     "score": 0.3649,
-     "etf_count": 3,
-     "etfs": [
-      "ARTY",
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.118,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3649,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "002747.SZ",
-   "themes": {
-    "ai": {
-     "score": 0.1248,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.75,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3647,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.567,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3647,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "GSAT",
-   "themes": {
-    "space": {
-     "score": 0.3619,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 3.622,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3619,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LITE",
-   "themes": {
-    "ai": {
-     "score": 0.3618,
-     "etf_count": 3,
-     "etfs": [
-      "CHAT",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.073,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3618,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "VVX",
-   "themes": {
-    "space": {
-     "score": 0.3601,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.502,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3601,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FTAI",
-   "themes": {
-    "space": {
-     "score": 0.3587,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 2.029,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3587,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BABA",
-   "themes": {
-    "ai": {
-     "score": 0.3586,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "CHAT",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.028,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3586,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "300757.SZ",
-   "themes": {
-    "ai": {
-     "score": 0.2659,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 2.766,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3561,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 2.766,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3561,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CAPMF",
-   "themes": {
-    "ai": {
-     "score": 0.2626,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.72,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3529,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.72,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3529,
-   "primary_tier": "core",
-   "theme_count": 2
-  },
-  {
-   "symbol": "VSEC",
-   "themes": {
-    "space": {
-     "score": 0.3524,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.939,
-     "tier": "core"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3524,
-   "primary_tier": "core",
-   "theme_count": 1
-  },
-  {
-   "symbol": "YSS",
-   "themes": {
-    "space": {
-     "score": 0.3475,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.321,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3475,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LDOS",
-   "themes": {
-    "space": {
-     "score": 0.3461,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.849,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3461,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "9984.T",
-   "themes": {
-    "ai": {
-     "score": 0.3459,
-     "etf_count": 3,
-     "etfs": [
-      "CHAT",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.846,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2132,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.724,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3459,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CDRE",
-   "themes": {
-    "space": {
-     "score": 0.344,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "PPA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.272,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.344,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SERV",
-   "themes": {
-    "ai": {
-     "score": 0.078,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.083,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.3415,
-     "etf_count": 2,
-     "etfs": [
-      "BOTZ",
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.236,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3415,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ANSS",
-   "themes": {
-    "ai": {
-     "score": 0.2505,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.547,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3408,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.547,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3408,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SPCE",
-   "themes": {
-    "space": {
-     "score": 0.3392,
-     "etf_count": 3,
-     "etfs": [
-      "ITA",
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.203,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3392,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DSY.PA",
-   "themes": {
-    "ai": {
-     "score": 0.246,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.483,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3363,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.483,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3363,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "MDB",
-   "themes": {
-    "ai": {
-     "score": 0.3324,
-     "etf_count": 3,
-     "etfs": [
-      "ARTY",
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.653,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3129,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.149,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3324,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "GIB",
-   "themes": {
-    "ai": {
-     "score": 0.2413,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.416,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3316,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 2.416,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3316,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "NBIS",
-   "themes": {
-    "ai": {
-     "score": 0.3295,
-     "etf_count": 2,
-     "etfs": [
-      "CHAT",
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.644,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3295,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AIR.PA",
-   "themes": {
-    "space": {
-     "score": 0.3295,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 3.159,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3295,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MDA.TO",
-   "themes": {
-    "space": {
-     "score": 0.3286,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 3.147,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3286,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "285A.T",
-   "themes": {
-    "ai": {
-     "score": 0.3272,
-     "etf_count": 2,
-     "etfs": [
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.611,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3272,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ESE",
-   "themes": {
-    "space": {
-     "score": 0.3173,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 2.985,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3173,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KBR",
-   "themes": {
-    "space": {
-     "score": 0.3165,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.426,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3165,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SPIR",
-   "themes": {
-    "space": {
-     "score": 0.3147,
-     "etf_count": 2,
-     "etfs": [
-      "ROKT",
-      "UFO"
-     ],
-     "mean_weight_pct": 1.401,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3147,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ARM",
-   "themes": {
-    "ai": {
-     "score": 0.3127,
-     "etf_count": 3,
-     "etfs": [
-      "CHAT",
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.372,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3127,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CSCO",
-   "themes": {
-    "ai": {
-     "score": 0.3066,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.317,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3066,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ILMN",
-   "themes": {
-    "ai": {
-     "score": 0.2177,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.078,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3043,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 2.026,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3043,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CBRS",
-   "themes": {
-    "ai": {
-     "score": 0.3033,
-     "etf_count": 3,
-     "etfs": [
-      "CHAT",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.238,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.3033,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MPWR",
-   "themes": {
-    "ai": {
-     "score": 0.303,
-     "etf_count": 2,
-     "etfs": [
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 2.265,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.303,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OKTA",
-   "themes": {
-    "ai": {
-     "score": 0.226,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.165,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.3017,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.989,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3017,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ATRO",
-   "themes": {
-    "space": {
-     "score": 0.3006,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 1.199,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.3006,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KMTUY",
-   "themes": {
-    "robotics": {
-     "score": 0.3004,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.971,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.3004,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TTMI",
-   "themes": {
-    "space": {
-     "score": 0.2987,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.172,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2987,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "0EDE.L",
-   "themes": {
-    "ai": {
-     "score": 0.297,
-     "etf_count": 1,
-     "etfs": [
-      "SOXX"
-     ],
-     "mean_weight_pct": 3.212,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.297,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ZBRA",
-   "themes": {
-    "ai": {
-     "score": 0.0991,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.384,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2962,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.909,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2962,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2395.TW",
-   "themes": {
-    "ai": {
-     "score": 0.0952,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.329,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2948,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.89,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2948,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ZS",
-   "themes": {
-    "ai": {
-     "score": 0.2218,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.106,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2942,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.881,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2942,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "FTI",
-   "themes": {
-    "space": {
-     "score": 0.2923,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 2.628,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2923,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PSN",
-   "themes": {
-    "space": {
-     "score": 0.2921,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.077,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2921,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DDOG",
-   "themes": {
-    "ai": {
-     "score": 0.2918,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "THNQ",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.073,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2918,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NFLX",
-   "themes": {
-    "ai": {
-     "score": 0.2897,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 3.107,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2897,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "G1A.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.2894,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.813,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2894,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "VRT",
-   "themes": {
-    "ai": {
-     "score": 0.2865,
-     "etf_count": 2,
-     "etfs": [
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.03,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2865,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SNDK",
-   "themes": {
-    "ai": {
-     "score": 0.2857,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 3.049,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2857,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ADBE",
-   "themes": {
-    "ai": {
-     "score": 0.2849,
-     "etf_count": 3,
-     "etfs": [
-      "AIQ",
-      "IRBO",
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.974,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2297,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.961,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2849,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "S",
-   "themes": {
-    "ai": {
-     "score": 0.1945,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.747,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2848,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.747,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2848,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TEM",
-   "themes": {
-    "ai": {
-     "score": 0.284,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.993,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.284,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ROK",
-   "themes": {
-    "robotics": {
-     "score": 0.2817,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.704,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2817,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SU.PA",
-   "themes": {
-    "ai": {
-     "score": 0.2814,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.956,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.267,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.492,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2814,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "STX",
-   "themes": {
-    "ai": {
-     "score": 0.2808,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "ARTY"
-     ],
-     "mean_weight_pct": 1.948,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2808,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "EMR",
-   "themes": {
-    "robotics": {
-     "score": 0.2806,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.688,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2806,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "IOT",
-   "themes": {
-    "ai": {
-     "score": 0.2342,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.314,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2799,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.677,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2799,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CCJ",
-   "themes": {
-    "robotics": {
-     "score": 0.2798,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.675,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2798,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NOVT",
-   "themes": {
-    "robotics": {
-     "score": 0.2797,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.675,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2797,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NDSN",
-   "themes": {
-    "robotics": {
-     "score": 0.2791,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.666,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2791,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "1590.TW",
-   "themes": {
-    "robotics": {
-     "score": 0.2783,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.654,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2783,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DASH",
-   "themes": {
-    "robotics": {
-     "score": 0.2776,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.645,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.251,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 2.038,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2776,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "3661.TW",
-   "themes": {
-    "ai": {
-     "score": 0.2756,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.874,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2524,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.284,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2756,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "035420.KS",
-   "themes": {
-    "ai": {
-     "score": 0.2735,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.844,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.1675,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.072,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2735,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SHOP",
-   "themes": {
-    "ai": {
-     "score": 0.2723,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.827,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2723,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "9660.HK",
-   "themes": {
-    "ai": {
-     "score": 0.182,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.569,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2723,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 1.569,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2723,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ETN",
-   "themes": {
-    "space": {
-     "score": 0.2709,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 2.323,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2709,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KRN.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.2706,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.545,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2706,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2317.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1354,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.903,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2692,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.524,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2692,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AMBA",
-   "themes": {
-    "ai": {
-     "score": 0.2231,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.123,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2689,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.52,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2689,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "COHR",
-   "themes": {
-    "ai": {
-     "score": 0.2656,
-     "etf_count": 2,
-     "etfs": [
-      "CHAT",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.731,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2279,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.934,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2656,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "P",
-   "themes": {
-    "ai": {
-     "score": 0.2634,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.732,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2634,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "0700.HK",
-   "themes": {
-    "ai": {
-     "score": 0.2628,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 2.722,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2628,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AAPL",
-   "themes": {
-    "ai": {
-     "score": 0.2627,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 2.721,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2627,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KARN.SW",
-   "themes": {
-    "robotics": {
-     "score": 0.2626,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.429,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2626,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "RCAT",
-   "themes": {
-    "space": {
-     "score": 0.2623,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.652,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2623,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SXI",
-   "themes": {
-    "space": {
-     "score": 0.2618,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 2.193,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2618,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6841.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2615,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.414,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2615,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6134.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2605,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.4,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2605,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HAWK",
-   "themes": {
-    "space": {
-     "score": 0.2594,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "UFO"
-     ],
-     "mean_weight_pct": 0.61,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2594,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "XE",
-   "themes": {
-    "robotics": {
-     "score": 0.2586,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.373,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.2042,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 1.369,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2586,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6324.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2585,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.371,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2585,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CAT",
-   "themes": {
-    "robotics": {
-     "score": 0.2582,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 1.367,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2582,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "JEN.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.258,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.365,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.258,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BILL",
-   "themes": {
-    "ai": {
-     "score": 0.1674,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.359,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2576,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.359,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2576,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "GMED",
-   "themes": {
-    "robotics": {
-     "score": 0.2557,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.331,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2557,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CLS.TO",
-   "themes": {
-    "ai": {
-     "score": 0.1423,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 1.002,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2553,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.325,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2553,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "BE",
-   "themes": {
-    "ai": {
-     "score": 0.2535,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.558,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2535,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MCHP",
-   "themes": {
-    "ai": {
-     "score": 0.2517,
-     "etf_count": 2,
-     "etfs": [
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.532,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.23,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.965,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2517,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "402340.KS",
-   "themes": {
-    "ai": {
-     "score": 0.2495,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.532,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2495,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SATL",
-   "themes": {
-    "space": {
-     "score": 0.2476,
-     "etf_count": 2,
-     "etfs": [
-      "UFO",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.442,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2476,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "IPGP",
-   "themes": {
-    "robotics": {
-     "score": 0.2475,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.215,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2475,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6268.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2466,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.201,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2466,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SIE.DE",
-   "themes": {
-    "ai": {
-     "score": 0.2101,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 1.97,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2458,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.189,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2458,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "OCTV",
-   "themes": {
-    "robotics": {
-     "score": 0.2454,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.184,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2454,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KALMAR.HE",
-   "themes": {
-    "robotics": {
-     "score": 0.2446,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.173,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2446,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KGX.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.2444,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.17,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2444,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ONDS",
-   "themes": {
-    "robotics": {
-     "score": 0.2433,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.155,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.1209,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.179,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2433,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2513.HK",
-   "themes": {
-    "ai": {
-     "score": 0.2431,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.409,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2431,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6669.TW",
-   "themes": {
-    "ai": {
-     "score": 0.2431,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.409,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2431,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6503.T",
-   "themes": {
-    "robotics": {
-     "score": 0.243,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.15,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.243,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6481.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2411,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.123,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2411,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NPK",
-   "themes": {
-    "space": {
-     "score": 0.24,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.333,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.24,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BETA",
-   "themes": {
-    "space": {
-     "score": 0.2398,
-     "etf_count": 2,
-     "etfs": [
-      "ITA",
-      "XAR"
-     ],
-     "mean_weight_pct": 0.33,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2398,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DUE.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.2396,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.101,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2396,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BKSY",
-   "themes": {
-    "space": {
-     "score": 0.2381,
-     "etf_count": 2,
-     "etfs": [
-      "PPA",
-      "UFO"
-     ],
-     "mean_weight_pct": 0.307,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2381,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CRM",
-   "themes": {
-    "ai": {
-     "score": 0.2376,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 1.331,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2308,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.976,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2376,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "IFX.DE",
-   "themes": {
-    "ai": {
-     "score": 0.2192,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.067,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2362,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.053,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2362,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2308.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1421,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.999,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2352,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.039,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2352,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CDNS",
-   "themes": {
-    "ai": {
-     "score": 0.2348,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "SMH"
-     ],
-     "mean_weight_pct": 1.29,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2335,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.015,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2348,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "GXO",
-   "themes": {
-    "robotics": {
-     "score": 0.2347,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.031,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2347,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "3711.TW",
-   "themes": {
-    "ai": {
-     "score": 0.2335,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.273,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2335,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SHA0.DE",
-   "themes": {
-    "robotics": {
-     "score": 0.2332,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 1.011,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2332,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SKM",
-   "themes": {
-    "ai": {
-     "score": 0.2325,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 2.29,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2325,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SESG.PA",
-   "themes": {
-    "space": {
-     "score": 0.2318,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 1.763,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2318,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "688169.SS",
-   "themes": {
-    "ai": {
-     "score": 0.1413,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.987,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2316,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.987,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2316,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "US5128073062",
-   "themes": {
-    "ai": {
-     "score": 0.2306,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 2.263,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2306,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HOOD",
-   "themes": {
-    "ai": {
-     "score": 0.2302,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.256,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2302,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OKLO",
-   "themes": {
-    "robotics": {
-     "score": 0.2296,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 0.958,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2296,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SNPS",
-   "themes": {
-    "ai": {
-     "score": 0.2295,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "SMH"
-     ],
-     "mean_weight_pct": 1.214,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2242,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 0.882,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.1734,
-     "etf_count": 1,
-     "etfs": [
-      "ARKX"
-     ],
-     "mean_weight_pct": 0.93,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2295,
-   "primary_tier": "diversified",
-   "theme_count": 3
-  },
-  {
-   "symbol": "DRKTF",
-   "themes": {
-    "ai": {
-     "score": 0.1382,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.943,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2285,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.943,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2285,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "BYDDF",
-   "themes": {
-    "robotics": {
-     "score": 0.227,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 0.922,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.227,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HON",
-   "themes": {
-    "space": {
-     "score": 0.2265,
-     "etf_count": 1,
-     "etfs": [
-      "ROKT"
-     ],
-     "mean_weight_pct": 1.688,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2265,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HIAB.HE",
-   "themes": {
-    "ai": {
-     "score": 0.1347,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.892,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.225,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.892,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.225,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ESTC",
-   "themes": {
-    "ai": {
-     "score": 0.2249,
-     "etf_count": 2,
-     "etfs": [
-      "IRBO",
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.149,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.1649,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.034,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2249,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6622.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2208,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.833,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2208,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ON",
-   "themes": {
-    "ai": {
-     "score": 0.2202,
-     "etf_count": 2,
-     "etfs": [
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.083,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2202,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "RPI.L",
-   "themes": {
-    "ai": {
-     "score": 0.149,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.097,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.22,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.821,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.22,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SAP",
-   "themes": {
-    "ai": {
-     "score": 0.2191,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 2.098,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2191,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "WDC",
-   "themes": {
-    "ai": {
-     "score": 0.2175,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 2.076,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2175,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KDK",
-   "themes": {
-    "robotics": {
-     "score": 0.2162,
-     "etf_count": 1,
-     "etfs": [
-      "ARKQ"
-     ],
-     "mean_weight_pct": 0.768,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2162,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ENTG",
-   "themes": {
-    "ai": {
-     "score": 0.2155,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.016,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2155,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "454910.KS",
-   "themes": {
-    "ai": {
-     "score": 0.1237,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.736,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.214,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.736,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.214,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "APTV",
-   "themes": {
-    "robotics": {
-     "score": 0.2138,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.732,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2138,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "0Y0Y.L",
-   "themes": {
-    "ai": {
-     "score": 0.2136,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 2.02,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2136,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6914.T",
-   "themes": {
-    "robotics": {
-     "score": 0.2128,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.719,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2128,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "9412.T",
-   "themes": {
-    "space": {
-     "score": 0.2128,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 1.492,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2128,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2454.TW",
-   "themes": {
-    "ai": {
-     "score": 0.2125,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 2.004,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2125,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TECN.SW",
-   "themes": {
-    "ai": {
-     "score": 0.121,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.696,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2113,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.696,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2113,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "MELI",
-   "themes": {
-    "ai": {
-     "score": 0.2109,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.981,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2109,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "WDAY",
-   "themes": {
-    "ai": {
-     "score": 0.2091,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.924,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2091,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "300024.SZ",
-   "themes": {
-    "ai": {
-     "score": 0.1174,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.645,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2076,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.645,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2076,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "NOW",
-   "themes": {
-    "ai": {
-     "score": 0.2068,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.891,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.2063,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.626,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2068,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "HEI-A",
-   "themes": {
-    "space": {
-     "score": 0.2062,
-     "etf_count": 1,
-     "etfs": [
-      "ITA"
-     ],
-     "mean_weight_pct": 1.399,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.2062,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2252.HK",
-   "themes": {
-    "ai": {
-     "score": 0.1159,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.623,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2061,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.623,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2061,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "STM",
-   "themes": {
-    "ai": {
-     "score": 0.2042,
-     "etf_count": 2,
-     "etfs": [
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 0.853,
-     "tier": "diversified"
-    },
-    "space": {
-     "score": 0.1599,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.737,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2042,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CEG",
-   "themes": {
-    "ai": {
-     "score": 0.2038,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 1.88,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.2038,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SSYS",
-   "themes": {
-    "robotics": {
-     "score": 0.2028,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.576,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2028,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "JD",
-   "themes": {
-    "ai": {
-     "score": 0.202,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.853,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.202,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HSAI",
-   "themes": {
-    "ai": {
-     "score": 0.111,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.554,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.2013,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.554,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.2013,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "3231.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1994,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "CHAT"
-     ],
-     "mean_weight_pct": 0.785,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1994,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "POLICYBZR.NS",
-   "themes": {
-    "ai": {
-     "score": 0.109,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.525,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1992,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.525,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1992,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "CLS",
-   "themes": {
-    "ai": {
-     "score": 0.1983,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "CHAT"
-     ],
-     "mean_weight_pct": 0.769,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1983,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NXPI",
-   "themes": {
-    "ai": {
-     "score": 0.1979,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "SMH"
-     ],
-     "mean_weight_pct": 0.764,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1979,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GEV",
-   "themes": {
-    "ai": {
-     "score": 0.1955,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.761,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1955,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "277810.KQ",
-   "themes": {
-    "ai": {
-     "score": 0.1044,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.46,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1947,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.46,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1947,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2382.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1947,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "CHAT"
-     ],
-     "mean_weight_pct": 0.718,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1947,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FROG",
-   "themes": {
-    "ai": {
-     "score": 0.1914,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.703,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1914,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DELL",
-   "themes": {
-    "ai": {
-     "score": 0.1914,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.703,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1914,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2498.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1009,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.41,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1912,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.41,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1912,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "XYZ",
-   "themes": {
-    "ai": {
-     "score": 0.1907,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.692,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1907,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CMCSA",
-   "themes": {
-    "space": {
-     "score": 0.1903,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 1.17,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1903,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CACI",
-   "themes": {
-    "space": {
-     "score": 0.1902,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 1.169,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1902,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "APPN",
-   "themes": {
-    "ai": {
-     "score": 0.0982,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.371,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1885,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.371,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1885,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "DUERF",
-   "themes": {
-    "ai": {
-     "score": 0.0981,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.37,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1884,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.37,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1884,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "OMCL",
-   "themes": {
-    "ai": {
-     "score": 0.0969,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.352,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1871,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.352,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1871,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "EXA.PA",
-   "themes": {
-    "ai": {
-     "score": 0.0956,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.333,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1858,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.333,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1858,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "1357.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0944,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.316,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1846,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.316,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1846,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6600.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0937,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.307,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.184,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.307,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.184,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2388.TW",
-   "themes": {
-    "ai": {
-     "score": 0.0934,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.303,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1837,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.303,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1837,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "PRCT",
-   "themes": {
-    "ai": {
-     "score": 0.0925,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.289,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1828,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.289,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1828,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "018260.KS",
-   "themes": {
-    "ai": {
-     "score": 0.0925,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.29,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1828,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.29,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1828,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "002008.SZ",
-   "themes": {
-    "robotics": {
-     "score": 0.1821,
-     "etf_count": 1,
-     "etfs": [
-      "ROBO"
-     ],
-     "mean_weight_pct": 0.28,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1821,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6981.T",
-   "themes": {
-    "ai": {
-     "score": 0.1817,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.563,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1817,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2344.TW",
-   "themes": {
-    "ai": {
-     "score": 0.0914,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.274,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1816,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.274,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1816,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "TWD",
-   "themes": {
-    "ai": {
-     "score": 0.1815,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.561,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1815,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2432.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0906,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.263,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1809,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.263,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1809,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "BESI.AS",
-   "themes": {
-    "ai": {
-     "score": 0.1807,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.55,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1807,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AUTO",
-   "themes": {
-    "ai": {
-     "score": 0.0903,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.258,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1806,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.258,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1806,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2498.HK",
-   "themes": {
-    "ai": {
-     "score": 0.09,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.255,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1803,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.255,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1803,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SPOT",
-   "themes": {
-    "ai": {
-     "score": 0.1803,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.545,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1803,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "RMBS",
-   "themes": {
-    "ai": {
-     "score": 0.1793,
-     "etf_count": 2,
-     "etfs": [
-      "ARTY",
-      "SOXX"
-     ],
-     "mean_weight_pct": 0.498,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1793,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ETL.PA",
-   "themes": {
-    "space": {
-     "score": 0.1789,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 1.007,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1789,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KEYS",
-   "themes": {
-    "space": {
-     "score": 0.1747,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.948,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1747,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6258.T",
-   "themes": {
-    "ai": {
-     "score": 0.0835,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.161,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1738,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.161,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1738,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "6104.T",
-   "themes": {
-    "ai": {
-     "score": 0.0835,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.161,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1738,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.161,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1738,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "SWKS",
-   "themes": {
-    "ai": {
-     "score": 0.1729,
-     "etf_count": 2,
-     "etfs": [
-      "SMH",
-      "SOXX"
-     ],
-     "mean_weight_pct": 0.406,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1729,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "VRSK",
-   "themes": {
-    "ai": {
-     "score": 0.1704,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.402,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1704,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "XTSLA",
-   "themes": {
-    "ai": {
-     "score": 0.0796,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.105,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1699,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.105,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1699,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "AVIO.MI",
-   "themes": {
-    "space": {
-     "score": 0.1688,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.864,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1688,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CRNC",
-   "themes": {
-    "ai": {
-     "score": 0.0783,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.087,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1686,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.087,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1686,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "RR",
-   "themes": {
-    "ai": {
-     "score": 0.0773,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.072,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1676,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.072,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1676,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2121.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0767,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.064,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.167,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.064,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.167,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "EH",
-   "themes": {
-    "ai": {
-     "score": 0.0761,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.055,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1664,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.055,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1664,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "DT",
-   "themes": {
-    "ai": {
-     "score": 0.1584,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.2,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.1662,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.053,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1662,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "2431.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0744,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.031,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1647,
-     "etf_count": 1,
-     "etfs": [
-      "BOTZ"
-     ],
-     "mean_weight_pct": 0.031,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1647,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "G",
-   "themes": {
-    "ai": {
-     "score": 0.157,
-     "etf_count": 2,
-     "etfs": [
-      "AIQ",
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.179,
-     "tier": "diversified"
-    },
-    "robotics": {
-     "score": 0.1642,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.024,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1642,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "0136.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0736,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.02,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1639,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.02,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1639,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "IONQ",
-   "themes": {
-    "ai": {
-     "score": 0.1634,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.303,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1634,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HBCFT",
-   "themes": {
-    "ai": {
-     "score": 0.0731,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.012,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1633,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.012,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1633,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ZI",
-   "themes": {
-    "ai": {
-     "score": 0.0729,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.01,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1632,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.01,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1632,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "NCNO",
-   "themes": {
-    "ai": {
-     "score": 0.0729,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.01,
-     "tier": "peripheral"
-    },
-    "robotics": {
-     "score": 0.1632,
-     "etf_count": 1,
-     "etfs": [
-      "IRBO"
-     ],
-     "mean_weight_pct": 0.01,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "robotics",
-   "primary_score": 0.1632,
-   "primary_tier": "diversified",
-   "theme_count": 2
-  },
-  {
-   "symbol": "ASX",
-   "themes": {
-    "ai": {
-     "score": 0.1624,
-     "etf_count": 1,
-     "etfs": [
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.288,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1624,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CAE",
-   "themes": {
-    "space": {
-     "score": 0.1617,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.763,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1617,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "8035.T",
-   "themes": {
-    "ai": {
-     "score": 0.1593,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.244,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1593,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
    "symbol": "UBER",
    "themes": {
     "ai": {
-     "score": 0.1579,
+     "score": 0.1547,
      "etf_count": 1,
      "etfs": [
       "AIQ"
      ],
-     "mean_weight_pct": 1.224,
+     "mean_weight_pct": 1.179,
      "tier": "diversified"
     }
    },
    "primary_theme": "ai",
-   "primary_score": 0.1579,
+   "primary_score": 0.1547,
    "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "BAH",
-   "themes": {
-    "space": {
-     "score": 0.1567,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.692,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1567,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "042700.KS",
-   "themes": {
-    "ai": {
-     "score": 0.1566,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.205,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1566,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "VCYT",
-   "themes": {
-    "ai": {
-     "score": 0.156,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 1.197,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.156,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HO.PA",
-   "themes": {
-    "space": {
-     "score": 0.1511,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.61,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1511,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LR.PA",
-   "themes": {
-    "ai": {
-     "score": 0.1508,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 1.123,
-     "tier": "diversified"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1508,
-   "primary_tier": "diversified",
-   "theme_count": 1
-  },
-  {
-   "symbol": "YNDX",
-   "themes": {
-    "ai": {
-     "score": 0.1492,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.099,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1492,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "4062.T",
-   "themes": {
-    "ai": {
-     "score": 0.1482,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.085,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1482,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GILT",
-   "themes": {
-    "space": {
-     "score": 0.1463,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.543,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1463,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TSAT",
-   "themes": {
-    "space": {
-     "score": 0.1448,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.52,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1448,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "186A.T",
-   "themes": {
-    "space": {
-     "score": 0.1445,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.517,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1445,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LDO.MI",
-   "themes": {
-    "space": {
-     "score": 0.1444,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.516,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1444,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MTSI",
-   "themes": {
-    "ai": {
-     "score": 0.1439,
-     "etf_count": 1,
-     "etfs": [
-      "SOXX"
-     ],
-     "mean_weight_pct": 1.024,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1439,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6146.T",
-   "themes": {
-    "ai": {
-     "score": 0.1438,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 1.023,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1438,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CMI",
-   "themes": {
-    "ai": {
-     "score": 0.1428,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 1.009,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1428,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2383.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1414,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.988,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1414,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "3037.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1389,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.952,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1389,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "290A.T",
-   "themes": {
-    "space": {
-     "score": 0.1389,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.436,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1389,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "UMC",
-   "themes": {
-    "ai": {
-     "score": 0.1385,
-     "etf_count": 1,
-     "etfs": [
-      "SOXX"
-     ],
-     "mean_weight_pct": 0.947,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1385,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GIB-A.TO",
-   "themes": {
-    "ai": {
-     "score": 0.1378,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.937,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1378,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FTC.L",
-   "themes": {
-    "space": {
-     "score": 0.1374,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.415,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1374,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "464A.T",
-   "themes": {
-    "space": {
-     "score": 0.1373,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.414,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1373,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SAIC",
-   "themes": {
-    "space": {
-     "score": 0.1369,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.409,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1369,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TSEM",
-   "themes": {
-    "ai": {
-     "score": 0.1358,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.908,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1358,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "3324.TWO",
-   "themes": {
-    "ai": {
-     "score": 0.1351,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.898,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1351,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PKE",
-   "themes": {
-    "space": {
-     "score": 0.1344,
-     "etf_count": 1,
-     "etfs": [
-      "XAR"
-     ],
-     "mean_weight_pct": 0.373,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1344,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DOCN",
-   "themes": {
-    "ai": {
-     "score": 0.1336,
-     "etf_count": 1,
-     "etfs": [
-      "WTAI"
-     ],
-     "mean_weight_pct": 0.877,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1336,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FGXXX",
-   "themes": {
-    "space": {
-     "score": 0.1334,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.358,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1334,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OSK",
-   "themes": {
-    "space": {
-     "score": 0.1307,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.319,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1307,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "189300.KS",
-   "themes": {
-    "space": {
-     "score": 0.1293,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.3,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1293,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DGT.AX",
-   "themes": {
-    "ai": {
-     "score": 0.1291,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.813,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1291,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "4825.T",
-   "themes": {
-    "space": {
-     "score": 0.1282,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.283,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1282,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OVZON.ST",
-   "themes": {
-    "space": {
-     "score": 0.1281,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.282,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1281,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CSGP",
-   "themes": {
-    "ai": {
-     "score": 0.1273,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.787,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1273,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AMTM",
-   "themes": {
-    "space": {
-     "score": 0.1273,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.271,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1273,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ONTO",
-   "themes": {
-    "ai": {
-     "score": 0.127,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.782,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.127,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2376.TW",
-   "themes": {
-    "ai": {
-     "score": 0.127,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.782,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.127,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FEIM",
-   "themes": {
-    "space": {
-     "score": 0.1268,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.263,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1268,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "APP",
-   "themes": {
-    "ai": {
-     "score": 0.1267,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.779,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1267,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "099320.KS",
-   "themes": {
-    "space": {
-     "score": 0.1267,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.262,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1267,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "9348.T",
-   "themes": {
-    "space": {
-     "score": 0.1261,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.254,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1261,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OSIS",
-   "themes": {
-    "space": {
-     "score": 0.1254,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.243,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1254,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TOM2.AS",
-   "themes": {
-    "space": {
-     "score": 0.1249,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.237,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1249,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "OHB.DE",
-   "themes": {
-    "space": {
-     "score": 0.1234,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.215,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1234,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SIDU",
-   "themes": {
-    "space": {
-     "score": 0.1206,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.175,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1206,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "LASR",
-   "themes": {
-    "space": {
-     "score": 0.119,
-     "etf_count": 1,
-     "etfs": [
-      "PPA"
-     ],
-     "mean_weight_pct": 0.152,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.119,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NVMI.TA",
-   "themes": {
-    "ai": {
-     "score": 0.117,
-     "etf_count": 1,
-     "etfs": [
-      "SOXX"
-     ],
-     "mean_weight_pct": 0.639,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.117,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "402A.T",
-   "themes": {
-    "space": {
-     "score": 0.1167,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.119,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1167,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GOMX.ST",
-   "themes": {
-    "space": {
-     "score": 0.1157,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.105,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1157,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "1045.HK",
-   "themes": {
-    "space": {
-     "score": 0.1144,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.087,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1144,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "FJET",
-   "themes": {
-    "space": {
-     "score": 0.1138,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.078,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1138,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KVHI",
-   "themes": {
-    "space": {
-     "score": 0.1133,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.071,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1133,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2329.TW",
-   "themes": {
-    "ai": {
-     "score": 0.1126,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.577,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1126,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "462350.KS",
-   "themes": {
-    "space": {
-     "score": 0.1125,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.059,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1125,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CAMT.TA",
-   "themes": {
-    "ai": {
-     "score": 0.1124,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.573,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1124,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "RGR",
-   "themes": {
-    "space": {
-     "score": 0.1115,
-     "etf_count": 1,
-     "etfs": [
-      "ITA"
-     ],
-     "mean_weight_pct": 0.045,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1115,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "451760.KS",
-   "themes": {
-    "space": {
-     "score": 0.1114,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.044,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1114,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DNA",
-   "themes": {
-    "ai": {
-     "score": 0.1112,
-     "etf_count": 1,
-     "etfs": [
-      "THNQ"
-     ],
-     "mean_weight_pct": 0.557,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1112,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SWBI",
-   "themes": {
-    "space": {
-     "score": 0.1112,
-     "etf_count": 1,
-     "etfs": [
-      "ITA"
-     ],
-     "mean_weight_pct": 0.041,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1112,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MNTS",
-   "themes": {
-    "space": {
-     "score": 0.1109,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.037,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1109,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "474170.KS",
-   "themes": {
-    "space": {
-     "score": 0.1106,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.033,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1106,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AMKR",
-   "themes": {
-    "ai": {
-     "score": 0.1104,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.545,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1104,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HPE",
-   "themes": {
-    "ai": {
-     "score": 0.1102,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.543,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1102,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GOGO",
-   "themes": {
-    "space": {
-     "score": 0.1102,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.027,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1102,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CMTL",
-   "themes": {
-    "space": {
-     "score": 0.1088,
-     "etf_count": 1,
-     "etfs": [
-      "UFO"
-     ],
-     "mean_weight_pct": 0.006,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "space",
-   "primary_score": 0.1088,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "MAQ.AX",
-   "themes": {
-    "ai": {
-     "score": 0.1081,
-     "etf_count": 1,
-     "etfs": [
-      "ARTY"
-     ],
-     "mean_weight_pct": 0.512,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1081,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "0100.HK",
-   "themes": {
-    "ai": {
-     "score": 0.1067,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.493,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1067,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "3690.HK",
-   "themes": {
-    "ai": {
-     "score": 0.1044,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.46,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1044,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "5803.T",
-   "themes": {
-    "ai": {
-     "score": 0.104,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.454,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.104,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "NOK",
-   "themes": {
-    "ai": {
-     "score": 0.104,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.454,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.104,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "WIX",
-   "themes": {
-    "ai": {
-     "score": 0.1019,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.424,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1019,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "KRW",
-   "themes": {
-    "ai": {
-     "score": 0.1006,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": 0.405,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.1006,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "PEGA",
-   "themes": {
-    "ai": {
-     "score": 0.0995,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.39,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0995,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TRI",
-   "themes": {
-    "ai": {
-     "score": 0.0977,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.364,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0977,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "CCC",
-   "themes": {
-    "ai": {
-     "score": 0.0971,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.355,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0971,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AI",
-   "themes": {
-    "ai": {
-     "score": 0.0966,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.349,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0966,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GLOB",
-   "themes": {
-    "ai": {
-     "score": 0.0965,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.347,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0965,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6702.T",
-   "themes": {
-    "ai": {
-     "score": 0.0963,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.344,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0963,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TWLO",
-   "themes": {
-    "ai": {
-     "score": 0.0962,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.342,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0962,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "DXC",
-   "themes": {
-    "ai": {
-     "score": 0.0961,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.342,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0961,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SNAP",
-   "themes": {
-    "ai": {
-     "score": 0.0958,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.337,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0958,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "6701.T",
-   "themes": {
-    "ai": {
-     "score": 0.0956,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.334,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0956,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TEMN.SW",
-   "themes": {
-    "ai": {
-     "score": 0.095,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.325,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.095,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "WKL.AS",
-   "themes": {
-    "ai": {
-     "score": 0.0946,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.32,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0946,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TIETO.HE",
-   "themes": {
-    "ai": {
-     "score": 0.0938,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.308,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0938,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "GEHC",
-   "themes": {
-    "ai": {
-     "score": 0.0933,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.302,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0933,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "AMP.MI",
-   "themes": {
-    "ai": {
-     "score": 0.0932,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.3,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0932,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "ERIC",
-   "themes": {
-    "ai": {
-     "score": 0.0929,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.295,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0929,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "SOUN",
-   "themes": {
-    "ai": {
-     "score": 0.0928,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.294,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0928,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "EXPN.L",
-   "themes": {
-    "ai": {
-     "score": 0.0927,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.292,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0927,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "EFX",
-   "themes": {
-    "ai": {
-     "score": 0.0924,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.289,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0924,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "QUBT",
-   "themes": {
-    "ai": {
-     "score": 0.0916,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.277,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0916,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "TDC",
-   "themes": {
-    "ai": {
-     "score": 0.0915,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.275,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0915,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "4755.T",
-   "themes": {
-    "ai": {
-     "score": 0.0911,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.27,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0911,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "HUT",
-   "themes": {
-    "ai": {
-     "score": 0.0873,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.216,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0873,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "2718.HK",
-   "themes": {
-    "ai": {
-     "score": 0.0816,
-     "etf_count": 1,
-     "etfs": [
-      "AIQ"
-     ],
-     "mean_weight_pct": 0.135,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.0816,
-   "primary_tier": "peripheral",
-   "theme_count": 1
-  },
-  {
-   "symbol": "EUR",
-   "themes": {
-    "ai": {
-     "score": 0.042,
-     "etf_count": 1,
-     "etfs": [
-      "CHAT"
-     ],
-     "mean_weight_pct": -0.432,
-     "tier": "peripheral"
-    }
-   },
-   "primary_theme": "ai",
-   "primary_score": 0.042,
-   "primary_tier": "peripheral",
    "theme_count": 1
   }
  ]

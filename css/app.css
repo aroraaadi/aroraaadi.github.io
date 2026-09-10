@@ -450,6 +450,67 @@ footer {
   .alloc-split { grid-template-columns: 1fr; }
 }
 
+/* ---------- optimizer search + chips ----------
+   mvo.js renders these thirteen class names and none of them existed in any
+   stylesheet: the search results were built into the DOM with no width, no
+   padding and no background, and the tiles rendered as a flat border-coloured
+   block because .strip paints var(--border) and expects children to paint the
+   surface back over it. */
+
+.search-dropdown { padding: var(--sp-1) 0; }
+.search-result {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: baseline;
+  gap: var(--sp-2);
+  padding: 5px var(--sp-3);
+  cursor: pointer;
+  font-size: var(--t-base);
+}
+.search-result:hover,
+.search-result.active { background: var(--surface-2); }
+.search-result .nm {
+  color: var(--ink-2);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.search-result .sec { color: var(--muted); font-size: var(--t-xs); }
+.search-empty { padding: var(--sp-3); color: var(--muted); font-size: var(--t-base); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 2px 6px 2px 5px;
+  border: 1px solid var(--border-2); border-radius: var(--r-sm);
+  background: var(--surface-2); font-size: var(--t-base);
+}
+.chip .csec { width: 8px; height: 8px; border-radius: 2px; flex: 0 0 auto; }
+.chip .csym { font-family: var(--font-num); font-weight: var(--fw-med); }
+.chip .cx {
+  border: 0; background: none; color: var(--muted); cursor: pointer;
+  font-size: var(--t-md); line-height: 1; padding: 0 1px;
+}
+.chip .cx:hover { color: var(--down); }
+
+/* The tiles row: .strip paints var(--border) so its children must paint the
+   surface back, which is how the 1px gaps are made. */
+#tiles .tile {
+  background: var(--surface);
+  padding: var(--sp-2) var(--sp-3);
+  display: flex; flex-direction: column; gap: 2px;
+}
+#tiles .tile .label {
+  font-size: var(--t-xs); letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--muted);
+}
+#tiles .tile .value {
+  font-family: var(--font-num); font-size: var(--t-lg);
+  font-weight: var(--fw-med); color: var(--ink);
+}
+
+@media (max-width: 560px) {
+  .search-result { grid-template-columns: 56px 1fr; }
+  .search-result .sec { display: none; }
+}
+
 /* Constraint ledger: what the optimizer was allowed to do, and where it hit a
    limit. Narrow fixed columns keep the numbers on a shared decimal axis. */
 .cons-row {

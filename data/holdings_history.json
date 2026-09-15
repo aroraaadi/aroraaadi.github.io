@@ -51,5 +51,129 @@
    "VLO": 0.25
   },
   "note": "monthly rebalance"
+ },
+ {
+  "date": "2026-09-15",
+  "turnover": 0.6965,
+  "model_vol": 0.1955,
+  "weights": {
+   "AMZN": 0.05,
+   "GOOG": 0.0831,
+   "META": 0.0919,
+   "MSFT": 0.125,
+   "SPGI": 0.1,
+   "GE": 0.125,
+   "APH": 0.0919,
+   "UBER": 0.125,
+   "VST": 0.125,
+   "MDA": 0.0831
+  },
+  "cost_bp": 5.57,
+  "decision": {
+   "trade": true,
+   "reasons": [
+    "the book we hold breaks policy: VLO at 25.2% is 12.7% over its 12.5% cap"
+   ],
+   "blocked_by": [],
+   "bands_breached": {
+    "APH": {
+     "current": 0.0,
+     "target": 0.09187337721894426,
+     "gap": 0.09187337721894426,
+     "relative": 1.0
+    },
+    "COST": {
+     "current": 0.11186647358845805,
+     "target": 0.0,
+     "gap": -0.11186647358845805,
+     "relative": null
+    },
+    "GE": {
+     "current": 0.0797804895226619,
+     "target": 0.12500080808920547,
+     "gap": 0.04522031856654357,
+     "relative": 0.3617602098561842
+    },
+    "JPM": {
+     "current": 0.0704882971945151,
+     "target": 0.0,
+     "gap": -0.0704882971945151,
+     "relative": null
+    },
+    "MDA": {
+     "current": 0.0,
+     "target": 0.08311953275183914,
+     "gap": 0.08311953275183914,
+     "relative": 1.0
+    },
+    "META": {
+     "current": 0.03339830822973661,
+     "target": 0.09187342380049636,
+     "gap": 0.058475115570759746,
+     "relative": 0.6364747622526703
+    },
+    "MSFT": {
+     "current": 0.030323876404678287,
+     "target": 0.12500075446285744,
+     "gap": 0.09467687805817915,
+     "relative": 0.7574104529609964
+    },
+    "MU": {
+     "current": 0.06193945570617148,
+     "target": 0.0,
+     "gap": -0.06193945570617148,
+     "relative": null
+    },
+    "NEE": {
+     "current": 0.02995662750408755,
+     "target": 0.0,
+     "gap": -0.02995662750408755,
+     "relative": null
+    },
+    "NVDA": {
+     "current": 0.12271158348318295,
+     "target": 0.0,
+     "gap": -0.12271158348318295,
+     "relative": null
+    },
+    "SHOP": {
+     "current": 0.030554861310986565,
+     "target": 0.0,
+     "gap": -0.030554861310986565,
+     "relative": null
+    },
+    "SPGI": {
+     "current": 0.02953032987182642,
+     "target": 0.10000239835246365,
+     "gap": 0.07047206848063722,
+     "relative": 0.7047037835258186
+    },
+    "UBER": {
+     "current": 0.0,
+     "target": 0.12500087441585037,
+     "gap": 0.12500087441585037,
+     "relative": 1.0
+    },
+    "VLO": {
+     "current": 0.2516171336456878,
+     "target": 0.0,
+     "gap": -0.2516171336456878,
+     "relative": null
+    },
+    "VST": {
+     "current": 0.0,
+     "target": 0.12500084499354414,
+     "gap": 0.12500084499354414,
+     "relative": 1.0
+    }
+   },
+   "days_since": 6,
+   "ce_gain_bp": -5886.5,
+   "ce_note": "CE gain not meaningful \u2014 current book violates policy caps",
+   "cost_bp": 5.57,
+   "turnover": 0.6965,
+   "adjust_fraction": 0.3
+  },
+  "note": "monthly rebalance"
  }
 ]

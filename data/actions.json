@@ -118,6 +118,14 @@
   },
   {
    "type": "EXIT",
+   "symbol": "AVGO",
+   "triggers": [
+    "failed_earnings_screen"
+   ],
+   "reason": "failed the earnings screen only, and that screen's testable half has a negative point-in-time rank IC on this universe"
+  },
+  {
+   "type": "EXIT",
    "symbol": "GE",
    "triggers": [
     "failed_earnings_screen"
@@ -134,6 +142,14 @@
   },
   {
    "type": "EXIT",
+   "symbol": "SHOP",
+   "triggers": [
+    "failed_earnings_screen"
+   ],
+   "reason": "failed the earnings screen only, and that screen's testable half has a negative point-in-time rank IC on this universe"
+  },
+  {
+   "type": "EXIT",
    "symbol": "SPGI",
    "triggers": [
     "failed_earnings_screen"
@@ -143,28 +159,28 @@
   {
    "type": "TRIM",
    "symbol": "APH",
-   "from_weight": 0.0919,
+   "from_weight": 0.125,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0919,
+    "drifted": 0.125,
     "target": 0.0,
     "relative_gap": null,
     "view": 0.0664
    },
-   "benefit_bp_yr": 11.8,
-   "d_vol_pp": -0.03,
-   "cost_bp": 0.74,
-   "net_bp_yr": 8.8,
+   "benefit_bp_yr": 16.1,
+   "d_vol_pp": -0.17,
+   "cost_bp": 1.0,
+   "net_bp_yr": 12.1,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 6% of benefit; view 4d old",
-   "reason": "net 9bp below the 25bp floor"
+   "reason": "net 12bp below the 25bp floor"
   },
   {
    "type": "TRIM",
-   "symbol": "MDA",
+   "symbol": "AVGO",
    "from_weight": 0.0831,
    "to_weight": 0.0,
    "triggers": [
@@ -174,15 +190,59 @@
     "drifted": 0.0831,
     "target": 0.0,
     "relative_gap": null,
-    "view": 0.0657
+    "view": 0.0752
    },
-   "benefit_bp_yr": 12.2,
-   "d_vol_pp": -0.69,
+   "benefit_bp_yr": 4.4,
+   "d_vol_pp": -0.45,
    "cost_bp": 0.66,
-   "net_bp_yr": 9.5,
+   "net_bp_yr": 1.8,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 5% of benefit; view 4d old",
-   "reason": "net 10bp below the 25bp floor"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 15% of benefit; view 4d old",
+   "reason": "net 2bp below the 25bp floor"
+  },
+  {
+   "type": "ADD_TO",
+   "symbol": "GOOG",
+   "from_weight": 0.05,
+   "to_weight": 0.07746047875935275,
+   "triggers": [
+    "outside_band"
+   ],
+   "evidence": {
+    "drifted": 0.05,
+    "target": 0.0775,
+    "relative_gap": 0.355,
+    "view": 0.076
+   },
+   "benefit_bp_yr": -1.0,
+   "d_vol_pp": -0.23,
+   "cost_bp": 0.22,
+   "net_bp_yr": -1.9,
+   "confidence": "low",
+   "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
+   "reason": "net -2bp below the 25bp floor"
+  },
+  {
+   "type": "ADD_TO",
+   "symbol": "META",
+   "from_weight": 0.0419,
+   "to_weight": 0.12171864295418726,
+   "triggers": [
+    "outside_band"
+   ],
+   "evidence": {
+    "drifted": 0.0419,
+    "target": 0.1217,
+    "relative_gap": 0.656,
+    "view": 0.0861
+   },
+   "benefit_bp_yr": 4.7,
+   "d_vol_pp": 0.24,
+   "cost_bp": 0.64,
+   "net_bp_yr": 2.1,
+   "confidence": "medium",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 14% of benefit; view 4d old",
+   "reason": "net 2bp below the 25bp floor"
   },
   {
    "type": "TRIM",
@@ -198,13 +258,35 @@
     "relative_gap": null,
     "view": 0.078
    },
-   "benefit_bp_yr": 4.1,
-   "d_vol_pp": -0.1,
+   "benefit_bp_yr": 3.7,
+   "d_vol_pp": -0.12,
    "cost_bp": 1.0,
-   "net_bp_yr": 0.1,
+   "net_bp_yr": -0.3,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 24% of benefit; view 4d old",
-   "reason": "net 0bp below the 25bp floor"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 27% of benefit; view 4d old",
+   "reason": "net -0bp below the 25bp floor"
+  },
+  {
+   "type": "TRIM",
+   "symbol": "SHOP",
+   "from_weight": 0.05,
+   "to_weight": 0.0,
+   "triggers": [
+    "outside_band"
+   ],
+   "evidence": {
+    "drifted": 0.05,
+    "target": 0.0,
+    "relative_gap": null,
+    "view": 0.069
+   },
+   "benefit_bp_yr": 5.1,
+   "d_vol_pp": -0.81,
+   "cost_bp": 0.4,
+   "net_bp_yr": 3.5,
+   "confidence": "medium",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 8% of benefit; view 4d old",
+   "reason": "net 4bp below the 25bp floor"
   },
   {
    "type": "TRIM",
@@ -220,13 +302,13 @@
     "relative_gap": null,
     "view": 0.0765
    },
-   "benefit_bp_yr": 4.7,
-   "d_vol_pp": 1.02,
+   "benefit_bp_yr": 4.3,
+   "d_vol_pp": 1.13,
    "cost_bp": 0.8,
-   "net_bp_yr": 1.5,
+   "net_bp_yr": 1.1,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 17% of benefit; view 4d old",
-   "reason": "net 2bp below the 25bp floor"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 19% of benefit; view 4d old",
+   "reason": "net 1bp below the 25bp floor"
   },
   {
    "type": "TRIM",
@@ -242,13 +324,13 @@
     "relative_gap": null,
     "view": 0.0841
    },
-   "benefit_bp_yr": -2.3,
-   "d_vol_pp": 0.18,
+   "benefit_bp_yr": -2.7,
+   "d_vol_pp": 0.2,
    "cost_bp": 1.0,
-   "net_bp_yr": -6.3,
+   "net_bp_yr": -6.7,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "net -6bp below the 25bp floor"
+   "reason": "net -7bp below the 25bp floor"
   },
   {
    "type": "ENTER",
@@ -260,17 +342,17 @@
    ],
    "evidence": {
     "view": 0.0679,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0022
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0015
    },
-   "benefit_bp_yr": -12.9,
-   "d_vol_pp": -0.91,
+   "benefit_bp_yr": -12.5,
+   "d_vol_pp": -1.22,
    "cost_bp": 1.0,
-   "net_bp_yr": -16.9,
+   "net_bp_yr": -16.5,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 22bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 15bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -282,17 +364,17 @@
    ],
    "evidence": {
     "view": 0.0872,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0215
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0208
    },
-   "benefit_bp_yr": 9.3,
-   "d_vol_pp": 0.05,
+   "benefit_bp_yr": 9.7,
+   "d_vol_pp": -0.45,
    "cost_bp": 1.0,
-   "net_bp_yr": 5.3,
+   "net_bp_yr": 5.7,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 11% of benefit; view 4d old",
-   "reason": "edge 215bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 10% of benefit; view 4d old",
+   "reason": "edge 208bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -304,17 +386,17 @@
    ],
    "evidence": {
     "view": 0.0682,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0026
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0019
    },
    "benefit_bp_yr": 0.0,
-   "d_vol_pp": -0.0,
+   "d_vol_pp": 0.0,
    "cost_bp": 0.0,
-   "net_bp_yr": -0.0,
+   "net_bp_yr": 0.0,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 26bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 19bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -326,17 +408,17 @@
    ],
    "evidence": {
     "view": 0.0785,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0128
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0121
    },
-   "benefit_bp_yr": -2.4,
-   "d_vol_pp": -0.38,
+   "benefit_bp_yr": -2.0,
+   "d_vol_pp": -0.68,
    "cost_bp": 1.0,
-   "net_bp_yr": -6.4,
+   "net_bp_yr": -6.0,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 128bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 121bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -348,17 +430,17 @@
    ],
    "evidence": {
     "view": 0.0799,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0143
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0136
    },
-   "benefit_bp_yr": -1.5,
-   "d_vol_pp": -0.54,
+   "benefit_bp_yr": -1.1,
+   "d_vol_pp": -1.02,
    "cost_bp": 1.0,
-   "net_bp_yr": -5.5,
+   "net_bp_yr": -5.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 143bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 136bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -370,17 +452,17 @@
    ],
    "evidence": {
     "view": 0.0868,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0211
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0204
    },
-   "benefit_bp_yr": 7.4,
-   "d_vol_pp": -0.97,
+   "benefit_bp_yr": 7.8,
+   "d_vol_pp": -1.27,
    "cost_bp": 1.0,
-   "net_bp_yr": 3.4,
+   "net_bp_yr": 3.8,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 14% of benefit; view 4d old",
-   "reason": "edge 211bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 13% of benefit; view 4d old",
+   "reason": "edge 204bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -392,17 +474,17 @@
    ],
    "evidence": {
     "view": 0.0837,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.018
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0173
    },
-   "benefit_bp_yr": 6.5,
-   "d_vol_pp": 1.65,
+   "benefit_bp_yr": 6.9,
+   "d_vol_pp": 1.13,
    "cost_bp": 1.0,
-   "net_bp_yr": 2.5,
+   "net_bp_yr": 2.9,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 15% of benefit; view 4d old",
-   "reason": "edge 180bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 14% of benefit; view 4d old",
+   "reason": "edge 173bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -414,14 +496,14 @@
    ],
    "evidence": {
     "view": 0.1056,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0399
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0392
    },
-   "benefit_bp_yr": 26.4,
-   "d_vol_pp": -1.46,
+   "benefit_bp_yr": 26.9,
+   "d_vol_pp": -1.64,
    "cost_bp": 1.0,
-   "net_bp_yr": 22.4,
+   "net_bp_yr": 22.9,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 4% of benefit; view 4d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -436,17 +518,17 @@
    ],
    "evidence": {
     "view": 0.0786,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.013
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0123
    },
-   "benefit_bp_yr": -0.7,
-   "d_vol_pp": -0.92,
+   "benefit_bp_yr": -0.3,
+   "d_vol_pp": -1.29,
    "cost_bp": 1.0,
-   "net_bp_yr": -4.7,
+   "net_bp_yr": -4.3,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 130bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 123bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -458,17 +540,17 @@
    ],
    "evidence": {
     "view": 0.0695,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0039
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0032
    },
-   "benefit_bp_yr": -12.5,
-   "d_vol_pp": 1.36,
+   "benefit_bp_yr": -12.1,
+   "d_vol_pp": 0.62,
    "cost_bp": 1.0,
-   "net_bp_yr": -16.5,
+   "net_bp_yr": -16.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 39bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 32bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -480,17 +562,17 @@
    ],
    "evidence": {
     "view": 0.0556,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.01
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0107
    },
-   "benefit_bp_yr": -24.8,
-   "d_vol_pp": -1.84,
+   "benefit_bp_yr": -24.4,
+   "d_vol_pp": -1.83,
    "cost_bp": 1.0,
-   "net_bp_yr": -28.8,
+   "net_bp_yr": -28.4,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -100bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -107bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -502,17 +584,17 @@
    ],
    "evidence": {
     "view": 0.0532,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0124
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0131
    },
-   "benefit_bp_yr": -7.8,
-   "d_vol_pp": -0.09,
+   "benefit_bp_yr": -7.7,
+   "d_vol_pp": -0.03,
    "cost_bp": 0.24,
-   "net_bp_yr": -8.7,
+   "net_bp_yr": -8.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -124bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -131bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -524,17 +606,17 @@
    ],
    "evidence": {
     "view": 0.0918,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0262
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0255
    },
-   "benefit_bp_yr": 12.8,
-   "d_vol_pp": -0.23,
+   "benefit_bp_yr": 13.3,
+   "d_vol_pp": -0.33,
    "cost_bp": 1.0,
-   "net_bp_yr": 8.8,
+   "net_bp_yr": 9.3,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 8% of benefit; view 4d old",
-   "reason": "edge 262bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first; not eligible under the current rules"
+   "reason": "edge 255bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first; not eligible under the current rules"
   },
   {
    "type": "ENTER",
@@ -546,17 +628,17 @@
    ],
    "evidence": {
     "view": 0.0549,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0108
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0115
    },
-   "benefit_bp_yr": -31.0,
-   "d_vol_pp": -2.49,
+   "benefit_bp_yr": -30.6,
+   "d_vol_pp": -2.57,
    "cost_bp": 1.0,
-   "net_bp_yr": -35.0,
+   "net_bp_yr": -34.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -108bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -115bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -568,17 +650,17 @@
    ],
    "evidence": {
     "view": 0.0756,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.01
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0093
    },
-   "benefit_bp_yr": -11.7,
-   "d_vol_pp": -2.04,
+   "benefit_bp_yr": -11.3,
+   "d_vol_pp": -2.12,
    "cost_bp": 1.0,
-   "net_bp_yr": -15.7,
+   "net_bp_yr": -15.3,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 100bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 93bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -590,17 +672,17 @@
    ],
    "evidence": {
     "view": 0.0592,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0065
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0072
    },
-   "benefit_bp_yr": -24.2,
-   "d_vol_pp": 0.12,
+   "benefit_bp_yr": -23.8,
+   "d_vol_pp": -0.06,
    "cost_bp": 1.0,
-   "net_bp_yr": -28.2,
+   "net_bp_yr": -27.8,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -65bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -72bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -612,17 +694,17 @@
    ],
    "evidence": {
     "view": 0.0613,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0044
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0051
    },
-   "benefit_bp_yr": -19.9,
+   "benefit_bp_yr": -19.5,
    "d_vol_pp": 3.51,
    "cost_bp": 1.0,
-   "net_bp_yr": -23.9,
+   "net_bp_yr": -23.5,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -44bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -51bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -634,17 +716,17 @@
    ],
    "evidence": {
     "view": 0.0696,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0039
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0032
    },
-   "benefit_bp_yr": -16.0,
-   "d_vol_pp": -2.35,
+   "benefit_bp_yr": -15.6,
+   "d_vol_pp": -2.51,
    "cost_bp": 1.0,
-   "net_bp_yr": -20.0,
+   "net_bp_yr": -19.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 39bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 32bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -656,17 +738,17 @@
    ],
    "evidence": {
     "view": 0.0756,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0099
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0092
    },
-   "benefit_bp_yr": -9.5,
-   "d_vol_pp": -2.41,
+   "benefit_bp_yr": -9.1,
+   "d_vol_pp": -2.52,
    "cost_bp": 1.0,
-   "net_bp_yr": -13.5,
+   "net_bp_yr": -13.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge 99bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 92bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -678,17 +760,17 @@
    ],
    "evidence": {
     "view": 0.0526,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0131
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0138
    },
-   "benefit_bp_yr": -30.0,
-   "d_vol_pp": -0.51,
+   "benefit_bp_yr": -29.6,
+   "d_vol_pp": -0.71,
    "cost_bp": 1.0,
-   "net_bp_yr": -34.0,
+   "net_bp_yr": -33.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -131bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -138bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -700,17 +782,17 @@
    ],
    "evidence": {
     "view": 0.0573,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0084
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0091
    },
-   "benefit_bp_yr": -26.0,
-   "d_vol_pp": 0.17,
+   "benefit_bp_yr": -25.5,
+   "d_vol_pp": 0.05,
    "cost_bp": 1.0,
-   "net_bp_yr": -30.0,
+   "net_bp_yr": -29.5,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -84bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -91bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -722,14 +804,14 @@
    ],
    "evidence": {
     "view": 0.0989,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0333
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0326
    },
-   "benefit_bp_yr": 22.5,
-   "d_vol_pp": 0.71,
+   "benefit_bp_yr": 22.9,
+   "d_vol_pp": 0.75,
    "cost_bp": 1.0,
-   "net_bp_yr": 18.5,
+   "net_bp_yr": 18.9,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 4% of benefit; view 4d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -744,17 +826,17 @@
    ],
    "evidence": {
     "view": 0.0952,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0296
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0289
    },
-   "benefit_bp_yr": 18.6,
-   "d_vol_pp": 2.65,
+   "benefit_bp_yr": 19.0,
+   "d_vol_pp": 2.44,
    "cost_bp": 1.0,
-   "net_bp_yr": 14.6,
+   "net_bp_yr": 15.0,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 5% of benefit; view 4d old",
-   "reason": "edge 296bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 289bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -766,17 +848,17 @@
    ],
    "evidence": {
     "view": 0.0422,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0235
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0242
    },
-   "benefit_bp_yr": -45.3,
-   "d_vol_pp": 4.72,
+   "benefit_bp_yr": -44.9,
+   "d_vol_pp": 4.24,
    "cost_bp": 1.0,
-   "net_bp_yr": -49.3,
+   "net_bp_yr": -48.9,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -235bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -242bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -788,14 +870,14 @@
    ],
    "evidence": {
     "view": 0.0994,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0337
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.033
    },
-   "benefit_bp_yr": 20.1,
-   "d_vol_pp": -1.16,
+   "benefit_bp_yr": 20.5,
+   "d_vol_pp": -1.28,
    "cost_bp": 1.0,
-   "net_bp_yr": 16.1,
+   "net_bp_yr": 16.5,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 5% of benefit; view 4d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -810,14 +892,14 @@
    ],
    "evidence": {
     "view": 0.1395,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0738
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0732
    },
-   "benefit_bp_yr": 56.0,
-   "d_vol_pp": -0.38,
+   "benefit_bp_yr": 56.5,
+   "d_vol_pp": -0.8,
    "cost_bp": 1.0,
-   "net_bp_yr": 52.0,
+   "net_bp_yr": 52.5,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 2% of benefit; view 4d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -832,17 +914,17 @@
    ],
    "evidence": {
     "view": 0.094,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0284
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0277
    },
-   "benefit_bp_yr": 14.1,
-   "d_vol_pp": 2.26,
+   "benefit_bp_yr": 14.5,
+   "d_vol_pp": 1.98,
    "cost_bp": 1.0,
-   "net_bp_yr": 10.1,
+   "net_bp_yr": 10.5,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 7% of benefit; view 4d old",
-   "reason": "edge 284bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge 277bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -854,17 +936,17 @@
    ],
    "evidence": {
     "view": 0.0608,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.0049
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0056
    },
-   "benefit_bp_yr": -20.5,
-   "d_vol_pp": 0.31,
+   "benefit_bp_yr": -20.0,
+   "d_vol_pp": 0.33,
    "cost_bp": 1.0,
-   "net_bp_yr": -24.5,
+   "net_bp_yr": -24.0,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -49bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -56bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -876,17 +958,17 @@
    ],
    "evidence": {
     "view": 0.082,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0163
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0156
    },
-   "benefit_bp_yr": 0.3,
-   "d_vol_pp": -1.69,
+   "benefit_bp_yr": 0.7,
+   "d_vol_pp": -1.73,
    "cost_bp": 1.0,
-   "net_bp_yr": -3.7,
+   "net_bp_yr": -3.3,
    "confidence": "low",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 333% of benefit; view 4d old",
-   "reason": "edge 163bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 143% of benefit; view 4d old",
+   "reason": "edge 156bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -898,17 +980,17 @@
    ],
    "evidence": {
     "view": 0.0866,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": 0.0209
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": 0.0202
    },
-   "benefit_bp_yr": 5.2,
-   "d_vol_pp": 0.97,
+   "benefit_bp_yr": 5.7,
+   "d_vol_pp": 0.96,
    "cost_bp": 1.0,
-   "net_bp_yr": 1.2,
+   "net_bp_yr": 1.7,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 19% of benefit; view 4d old",
-   "reason": "edge 209bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "confidence_basis": "hand-written spec; 1 trigger; cost 18% of benefit; view 4d old",
+   "reason": "edge 202bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "ENTER",
@@ -920,17 +1002,17 @@
    ],
    "evidence": {
     "view": 0.0457,
-    "marginal_holding": "MDA",
-    "marginal_view": 0.0657,
-    "edge": -0.02
+    "marginal_holding": "APH",
+    "marginal_view": 0.0664,
+    "edge": -0.0207
    },
-   "benefit_bp_yr": -37.5,
-   "d_vol_pp": -2.89,
+   "benefit_bp_yr": -37.0,
+   "d_vol_pp": -3.05,
    "cost_bp": 1.0,
-   "net_bp_yr": -41.5,
+   "net_bp_yr": -41.0,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 4d old",
-   "reason": "edge -200bp over MDA is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
+   "reason": "edge -207bp over APH is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
    "type": "REGIME_TILT",

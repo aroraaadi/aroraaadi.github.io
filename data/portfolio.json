@@ -4,10 +4,10 @@
   0.19,
   0.22
  ],
- "model_vol": 0.1955,
+ "model_vol": 0.2031,
  "vol_band_met": true,
- "min_var_vol": 0.0825,
- "n_positions": 10,
+ "min_var_vol": 0.086,
+ "n_positions": 11,
  "max_weight": 0.125,
  "sector_neutral": true,
  "constraints": {
@@ -26,15 +26,16 @@
   "names_at_cap": [
    "MSFT",
    "GE",
+   "APH",
    "UBER",
    "VST"
   ],
   "sector_weights": {
-   "Communication Services": 0.175,
+   "Communication Services": 0.0919,
    "Consumer Cyclical": 0.05,
    "Financial Services": 0.1,
-   "Industrials": 0.2081,
-   "Technology": 0.3419,
+   "Industrials": 0.125,
+   "Technology": 0.5081,
    "Utilities": 0.125
   },
   "turnover_one_way": 0.0,
@@ -58,120 +59,121 @@
    "cannabis_consumer": 0.35
   },
   "theme_weights": {
-   "ai": 0.2669,
+   "ai": 0.35,
    "robotics": 0.35,
    "space": 0.35,
+   "semiconductors": 0.0831,
    "fintech": 0.1419,
    "electric_vehicles": 0.125,
-   "quantum": 0.175,
-   "cybersecurity": 0.125,
-   "cloud_software": 0.175,
+   "quantum": 0.2581,
+   "cybersecurity": 0.2081,
+   "cloud_software": 0.225,
    "infrastructure": 0.125,
    "financials": 0.1
   }
  },
  "expected_returns": {
   "model": "black_litterman",
-  "risk_aversion": 1.396,
+  "risk_aversion": 1.397,
   "erp_forward": 0.045,
   "universe_beta": 1.543,
-  "universe_vol": 0.223,
+  "universe_vol": 0.2229,
   "tau": 0.05,
   "ic_assumed": 0.05,
-  "n_views": 23,
-  "prior_posterior_corr": 0.33,
-  "max_abs_shift": 0.1338,
+  "n_views": 22,
+  "prior_posterior_corr": 0.357,
+  "max_abs_shift": 0.1335,
   "most_shifted": "BE",
   "per_name": {
    "AMZN": {
-    "prior": 0.0629,
+    "prior": 0.0632,
     "view": 0.0323,
     "mu": 0.0327,
     "mkt_weight": 0.1123
    },
    "NVDA": {
-    "prior": 0.106,
+    "prior": 0.1058,
     "view": 0.0192,
     "mu": 0.0313,
-    "mkt_weight": 0.2236
+    "mkt_weight": 0.2237
    },
    "GOOG": {
-    "prior": 0.0486,
+    "prior": 0.0483,
     "view": 0.0277,
     "mu": 0.0278,
     "mkt_weight": 0.1661
    },
    "META": {
-    "prior": 0.0627,
+    "prior": 0.0629,
     "view": 0.0378,
     "mu": 0.0375,
     "mkt_weight": 0.0687
    },
    "AMD": {
-    "prior": 0.1159,
+    "prior": 0.1149,
     "view": 0.0118,
-    "mu": 0.0203,
+    "mu": 0.02,
     "mkt_weight": 0.0352
    },
    "MU": {
-    "prior": 0.1213,
+    "prior": 0.1219,
     "view": 0.005,
-    "mu": 0.013,
-    "mkt_weight": 0.0476
+    "mu": 0.0131,
+    "mkt_weight": 0.0477
    },
    "COST": {
-    "prior": -0.0114,
+    "prior": -0.0116,
     "view": 0.0059,
     "mu": 0.0029,
     "mkt_weight": 0.0165
    },
    "MSFT": {
-    "prior": 0.0536,
+    "prior": 0.0532,
     "view": 0.0297,
     "mu": 0.0307,
     "mkt_weight": 0.1511
    },
    "AVGO": {
-    "prior": 0.0727,
+    "prior": 0.0732,
     "view": 0.0269,
-    "mu": 0.0259,
+    "mu": 0.0261,
     "mkt_weight": 0.0716
    },
    "BE": {
-    "prior": 0.1538,
+    "prior": 0.1551,
     "view": 0.0029,
-    "mu": 0.02,
+    "mu": 0.0216,
     "mkt_weight": 0.0033
    },
    "JPM": {
-    "prior": 0.014,
+    "prior": 0.0144,
     "view": 0.0311,
-    "mu": 0.0197,
-    "mkt_weight": 0.0389
+    "mu": 0.0198,
+    "mkt_weight": 0.039
    },
    "SHOP": {
-    "prior": 0.097,
+    "prior": 0.0981,
     "view": 0.0207,
-    "mu": 0.0254,
+    "mu": 0.0258,
     "mkt_weight": 0.0069
    },
    "SPGI": {
-    "prior": 0.0058,
+    "prior": 0.0067,
     "view": 0.0282,
     "mu": 0.0248,
     "mkt_weight": 0.0051
    },
    "GE": {
-    "prior": 0.0389,
+    "prior": 0.0378,
     "view": 0.0151,
-    "mu": 0.0149,
+    "mu": 0.0148,
     "mkt_weight": 0.0139
    },
    "APH": {
-    "prior": 0.0671,
+    "prior": 0.069,
     "view": 0.0181,
-    "mu": 0.0183,
-    "mkt_weight": 0.0082
+    "mu": 0.0185,
+    "mkt_weight": 0.0083
    },
    "NEE": {
     "prior": 0.0003,
@@ -180,71 +182,65 @@
     "mkt_weight": 0.0071
    },
    "UBER": {
-    "prior": 0.039,
+    "prior": 0.0411,
     "view": 0.0836,
-    "mu": 0.0747,
+    "mu": 0.0746,
     "mkt_weight": 0.006
    },
    "VST": {
-    "prior": 0.0562,
+    "prior": 0.0597,
     "view": 0.0358,
-    "mu": 0.0322,
+    "mu": 0.0324,
     "mkt_weight": 0.0021
    },
    "CEG": {
-    "prior": 0.05,
+    "prior": 0.0544,
     "view": 0.0079,
-    "mu": 0.0092,
+    "mu": 0.0098,
     "mkt_weight": 0.0043
    },
    "TRGP": {
-    "prior": -0.0193,
+    "prior": -0.0205,
     "view": 0.0102,
-    "mu": 0.0059,
+    "mu": 0.0057,
     "mkt_weight": 0.0026
    },
    "WMB": {
-    "prior": -0.0051,
+    "prior": -0.0068,
     "view": 0.0041,
-    "mu": 0.0021,
+    "mu": 0.002,
     "mkt_weight": 0.0038
    },
    "VLO": {
-    "prior": -0.0131,
+    "prior": -0.013,
     "view": -0.0043,
     "mu": -0.0049,
     "mkt_weight": 0.0046
-   },
-   "MDA": {
-    "prior": 0.0834,
-    "view": 0.0174,
-    "mu": 0.0188,
-    "mkt_weight": 0.0003
    }
   }
  },
  "pending": [],
  "holdings": [
   {
-   "ticker": "UBER",
-   "sector": "Technology",
+   "ticker": "GE",
+   "sector": "Industrials",
    "weight": 0.125,
-   "alpha_score": -0.5978,
+   "alpha_score": 0.3033,
    "signals": {
-    "value": 0.7331,
-    "quality": -0.9184,
-    "momentum": -2.0368,
-    "short_interest": -0.2197
+    "value": 0.4495,
+    "quality": 0.4233,
+    "momentum": -0.7416,
+    "short_interest": 1.5124
    },
    "raw": {
-    "pe": 15.7,
-    "ev_ebitda_yield": 0.0468,
-    "fcf_yield": 0.0495,
-    "roic_mean": 0.0454,
-    "operating_margin": 0.1332,
-    "roe": 0.3716,
-    "momentum_12_1": -0.2001,
-    "short_pct": 0.0236
+    "pe": 38.4,
+    "ev_ebitda_yield": 0.0321,
+    "fcf_yield": 0.0196,
+    "roic_mean": 0.0887,
+    "operating_margin": 0.2057,
+    "roe": 0.4823,
+    "momentum_12_1": 0.2891,
+    "short_pct": 0.0129
    }
   },
   {
@@ -270,25 +266,47 @@
    }
   },
   {
-   "ticker": "GE",
-   "sector": "Industrials",
+   "ticker": "UBER",
+   "sector": "Technology",
    "weight": 0.125,
-   "alpha_score": 0.3033,
+   "alpha_score": -0.5978,
    "signals": {
-    "value": 0.4495,
-    "quality": 0.4233,
-    "momentum": -0.7416,
-    "short_interest": 1.5124
+    "value": 0.7331,
+    "quality": -0.9184,
+    "momentum": -2.0368,
+    "short_interest": -0.2197
    },
    "raw": {
-    "pe": 38.4,
-    "ev_ebitda_yield": 0.0321,
-    "fcf_yield": 0.0196,
-    "roic_mean": 0.0887,
-    "operating_margin": 0.2057,
-    "roe": 0.4823,
-    "momentum_12_1": 0.2891,
-    "short_pct": 0.0129
+    "pe": 15.7,
+    "ev_ebitda_yield": 0.0468,
+    "fcf_yield": 0.0495,
+    "roic_mean": 0.0454,
+    "operating_margin": 0.1332,
+    "roe": 0.3716,
+    "momentum_12_1": -0.2001,
+    "short_pct": 0.0236
+   }
+  },
+  {
+   "ticker": "APH",
+   "sector": "Technology",
+   "weight": 0.125,
+   "alpha_score": -0.3431,
+   "signals": {
+    "value": -0.2553,
+    "quality": -0.6673,
+    "momentum": -0.6103,
+    "short_interest": 0.5751
+   },
+   "raw": {
+    "pe": 40.5,
+    "ev_ebitda_yield": 0.044,
+    "fcf_yield": 0.0191,
+    "roic_mean": 0.0631,
+    "operating_margin": 0.2978,
+    "roe": 0.3811,
+    "momentum_12_1": 0.4272,
+    "short_pct": 0.0136
    }
   },
   {
@@ -336,91 +354,25 @@
    }
   },
   {
-   "ticker": "META",
-   "sector": "Communication Services",
-   "weight": 0.0919,
-   "alpha_score": 0.2431,
-   "signals": {
-    "value": 0.6366,
-    "quality": 0.3939,
-    "momentum": -0.2641,
-    "short_interest": -0.0
-   },
-   "raw": {
-    "pe": 24.6,
-    "ev_ebitda_yield": 0.0692,
-    "fcf_yield": 0.013,
-    "roic_mean": 0.0693,
-    "operating_margin": 0.3483,
-    "roe": 0.2985,
-    "momentum_12_1": -0.2302,
-    "short_pct": 0.0127
-   }
-  },
-  {
-   "ticker": "APH",
+   "ticker": "AVGO",
    "sector": "Technology",
-   "weight": 0.0919,
-   "alpha_score": -0.3431,
-   "signals": {
-    "value": -0.2553,
-    "quality": -0.6673,
-    "momentum": -0.6103,
-    "short_interest": 0.5751
-   },
-   "raw": {
-    "pe": 40.5,
-    "ev_ebitda_yield": 0.044,
-    "fcf_yield": 0.0191,
-    "roic_mean": 0.0631,
-    "operating_margin": 0.2978,
-    "roe": 0.3811,
-    "momentum_12_1": 0.4272,
-    "short_pct": 0.0136
-   }
-  },
-  {
-   "ticker": "GOOG",
-   "sector": "Communication Services",
    "weight": 0.0831,
-   "alpha_score": 0.552,
+   "alpha_score": -0.296,
    "signals": {
-    "value": 0.3895,
-    "quality": 0.486,
-    "momentum": 0.8871,
-    "short_interest": 0.4507
+    "value": -0.588,
+    "quality": -0.0334,
+    "momentum": -1.0545,
+    "short_interest": 1.0272
    },
    "raw": {
-    "pe": 16.5,
-    "ev_ebitda_yield": 0.0433,
-    "fcf_yield": 0.0056,
-    "roic_mean": 0.115,
-    "operating_margin": 0.3403,
-    "roe": 0.4868,
-    "momentum_12_1": 0.4292,
-    "short_pct": 0.0043
-   }
-  },
-  {
-   "ticker": "MDA",
-   "sector": "Industrials",
-   "weight": 0.0831,
-   "alpha_score": -0.2975,
-   "signals": {
-    "value": -0.0522,
-    "quality": -0.5319,
-    "momentum": -0.4888,
-    "short_interest": null
-   },
-   "raw": {
-    "pe": 50.9,
-    "ev_ebitda_yield": null,
-    "fcf_yield": null,
-    "roic_mean": 0.0202,
-    "operating_margin": 0.1223,
-    "roe": null,
-    "momentum_12_1": 0.387,
-    "short_pct": null
+    "pe": 46.4,
+    "ev_ebitda_yield": 0.0291,
+    "fcf_yield": 0.0176,
+    "roic_mean": 0.0555,
+    "operating_margin": 0.5431,
+    "roe": 0.4425,
+    "momentum_12_1": 0.1258,
+    "short_pct": 0.012
    }
   },
   {
@@ -443,6 +395,72 @@
     "roe": 0.3056,
     "momentum_12_1": 0.1604,
     "short_pct": 0.0097
+   }
+  },
+  {
+   "ticker": "GOOG",
+   "sector": "Communication Services",
+   "weight": 0.05,
+   "alpha_score": 0.552,
+   "signals": {
+    "value": 0.3895,
+    "quality": 0.486,
+    "momentum": 0.8871,
+    "short_interest": 0.4507
+   },
+   "raw": {
+    "pe": 16.5,
+    "ev_ebitda_yield": 0.0433,
+    "fcf_yield": 0.0056,
+    "roic_mean": 0.115,
+    "operating_margin": 0.3403,
+    "roe": 0.4868,
+    "momentum_12_1": 0.4292,
+    "short_pct": 0.0043
+   }
+  },
+  {
+   "ticker": "SHOP",
+   "sector": "Technology",
+   "weight": 0.05,
+   "alpha_score": -0.7209,
+   "signals": {
+    "value": -1.1041,
+    "quality": -0.6051,
+    "momentum": -1.2582,
+    "short_interest": 0.7091
+   },
+   "raw": {
+    "pe": 87.0,
+    "ev_ebitda_yield": 0.0143,
+    "fcf_yield": 0.0095,
+    "roic_mean": 0.041,
+    "operating_margin": 0.1756,
+    "roe": 0.1554,
+    "momentum_12_1": 0.0577,
+    "short_pct": 0.0128
+   }
+  },
+  {
+   "ticker": "META",
+   "sector": "Communication Services",
+   "weight": 0.0419,
+   "alpha_score": 0.2431,
+   "signals": {
+    "value": 0.6366,
+    "quality": 0.3939,
+    "momentum": -0.2641,
+    "short_interest": -0.0
+   },
+   "raw": {
+    "pe": 24.6,
+    "ev_ebitda_yield": 0.0692,
+    "fcf_yield": 0.013,
+    "roic_mean": 0.0693,
+    "operating_margin": 0.3483,
+    "roe": 0.2985,
+    "momentum_12_1": -0.2302,
+    "short_pct": 0.0127
    }
   }
  ]

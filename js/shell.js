@@ -23,6 +23,7 @@ const SECTIONS = [
       ["Model", "research/portfolio.html"],
       ["Rebalances", "research/holdings.html"],
       ["Optimizer", "research/mvo.html"],
+      ["Regime", "research/regime.html"],
     ],
   },
   { id: "blog", label: "Blog", root: "blog.html", nav: [] },

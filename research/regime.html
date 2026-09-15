@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regime &amp; Actions — Quant Portfolio</title>
+<meta name="description" content="Market-state nowcast, the rebalance trigger's verdict, and suggested changes with evidence.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Regime &amp; Actions — Quant Portfolio">
+<meta property="og:description" content="Market-state nowcast, the rebalance trigger's verdict, and suggested changes with evidence.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Regime &amp; actions</h1>
+  <p class="sub">What state the market is in, whether that is reason enough to trade, and what
+     would change if it were. Nothing here is executed: the book moves only when the trigger
+     agrees and the run is not a dry one.</p>
+
+  <div id="error"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Rebalance decision</h2><span class="spacer"></span>
+      <span class="note" id="decision-date"></span></div>
+    <div class="panel-b" id="decision"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Stress state</h2><span class="spacer"></span>
+      <span class="note">Estimated — two-state Markov switching, 20 years of weekly returns</span></div>
+    <div class="panel-b" id="stress"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Narrative regimes</h2><span class="spacer"></span>
+      <span class="note">A published score sheet, not a fitted model</span></div>
+    <div class="panel-b" id="regime"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Conditions</h2><span class="spacer"></span>
+      <span class="note">Trailing z-scores, clipped at ±3</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="feat-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Suggested actions</h2><span class="spacer"></span>
+      <span class="note" id="actions-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="act-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Considered and not taken</h2><span class="spacer"></span>
+      <span class="note">Reported so "decided against" is distinguishable from "never saw it"</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="nt-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <p class="note" id="sources"></p>
+</main>
+
+<script type="module" src="../js/shell.js"></script>
+<script type="module" src="../js/regime.js"></script>
+</body>
+</html>

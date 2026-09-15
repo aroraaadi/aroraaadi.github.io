@@ -568,3 +568,7 @@ footer {
   border: 1px solid var(--accent); border-radius: var(--r-sm); padding: 1px 4px;
 }
 .cell-input:focus { outline: none; }
+
+/* Tables default to nowrap so numbers align; a reasoning column needs the
+   opposite, or it scrolls off the side of the panel. */
+td.wrap { white-space: normal; min-width: 22ch; max-width: 60ch; }

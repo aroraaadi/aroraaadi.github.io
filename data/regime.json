@@ -1,0 +1,68 @@
+{
+ "as_of": "2026-09-15",
+ "stress": {
+  "prob": 0.024689450016447033,
+  "vol_calm_weekly": 0.015074119854525614,
+  "vol_stress_weekly": 0.04093216778988075,
+  "persistence_calm": 0.9741946699583732,
+  "persistence_stress": 0.921163030630817,
+  "n_weeks": 1080,
+  "share_stressed": 0.21851851851851853,
+  "note": "filtered probability; parameters fitted full-sample"
+ },
+ "regime_probs": {
+  "ai_capex_continues": 0.1692,
+  "ai_digestion": 0.2366,
+  "inflation_energy_shock": 0.2663,
+  "disinflation_cuts": 0.1641,
+  "recession": 0.1638
+ },
+ "argmax": "inflation_energy_shock",
+ "max_prob": 0.2663476008914039,
+ "entropy": 0.986,
+ "confident": false,
+ "recommendation": "below the confidence floor \u2014 use the all-weather book",
+ "features_z": {
+  "vix": 0.073,
+  "credit": -1.241,
+  "turbulence": -0.789,
+  "absorption": -1.347,
+  "drawdown": 0.278,
+  "dispersion": 0.707,
+  "curve": 0.363,
+  "rate_impulse": 1.153,
+  "breakeven": 0.479,
+  "claims": -0.039,
+  "sahm": -0.436,
+  "ai_lead": -1.892,
+  "energy_lead": 1.658,
+  "defensive_lead": 0.159
+ },
+ "features_raw": {
+  "vix": 17.67,
+  "credit": 1.48,
+  "turbulence": 4.3445,
+  "absorption": 0.8184,
+  "drawdown": -0.0278,
+  "dispersion": 0.0112,
+  "curve": 0.32,
+  "rate_impulse": 0.51,
+  "breakeven": 0.06,
+  "claims": -24000.0,
+  "sahm": -0.07,
+  "ai_lead": -0.165,
+  "energy_lead": 0.1801,
+  "defensive_lead": -0.023
+ },
+ "missing": [],
+ "stale_series": [],
+ "scores": {
+  "ai_capex_continues": -0.1956,
+  "ai_digestion": 0.3073,
+  "inflation_energy_shock": 0.485,
+  "disinflation_cuts": -0.2418,
+  "recession": -0.2442
+ },
+ "credit_source": "Moody's Baa less 10y treasury (FRED DBAA-DGS10), daily to 1990",
+ "caveat": "Layer A (stress) is estimated. Layer B (regime_probs) is a published score sheet with no track record: treat it as a consistent way to read conditions, not as a forecast."
+}

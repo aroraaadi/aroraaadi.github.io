@@ -271,14 +271,66 @@ function renderActions(a) {
     (a.nav_note || "");
 }
 
+function renderClusters(port) {
+  const host = document.getElementById("clusters");
+  if (!host) return;
+  host.innerHTML = "";
+  const ex = (port && port.cluster_exposure) || {};
+  const caps = (port && port.cluster_caps) || {};
+  const rows = Object.entries(ex).sort((a, b) => b[1] - a[1]);
+  if (!rows.length) { host.appendChild(el("p", { class: "note", text: "No cluster data in this run." })); return; }
+  host.appendChild(el("div", { style: "display:grid;gap:6px" }, rows.map(([k, v], i) => {
+    const cap = caps[k];
+    const near = cap != null && v >= cap - 0.005;
+    return el("div", { style: "display:grid;grid-template-columns:minmax(0,1fr) minmax(60px,160px) 110px;align-items:center;gap:10px" }, [
+      el("span", { text: k }),
+      bar(v, { max: Math.max(0.5, cap || 0.5), slot: near ? 1 : i + 2 }),
+      el("span", { class: "num", text: `${fmtPct(v, 1)} / ${cap != null ? fmtPct(cap, 0) : "—"}${near ? " ●" : ""}` }),
+    ]);
+  })));
+  const bits = [];
+  if (port.active_share != null) bits.push(`active share vs equilibrium ${fmtPct(port.active_share, 0)}`);
+  if (port.vol_band_used) bits.push(`vol band used ${port.vol_band_used.map((x) => fmtPct(x, 0)).join("–")}` +
+    (port.p_stressed != null ? ` at P(stressed) ${fmtPct(port.p_stressed, 0)}` : ""));
+  if (bits.length) host.appendChild(el("p", { class: "note", style: "margin-top:10px", text: bits.join(" · ") + ". ● = at the cap." }));
+}
+
+function renderStressTest(st) {
+  const tbl = document.getElementById("stress-table");
+  if (!tbl || !st) return;
+  const rows = Object.values(st.episodes || {}).map((e) => ({
+    label: e.label, book: e.book, dd: e.max_drawdown, spy: e.spy,
+    proxied: Object.entries(e.proxied || {}).map(([n, x]) => `${n}→${x}`).join(", ") || "—",
+  }));
+  renderTable(tbl, rows, [
+    { key: "label", label: "Episode" },
+    { key: "book", label: "Book", num: true, cls: (r) => signClass(r.book), fmt: (v) => (v == null ? "—" : signed(v * 100, 1) + "%") },
+    { key: "dd", label: "Max drawdown", num: true, cls: () => "down", fmt: (v) => (v == null ? "—" : signed(v * 100, 1) + "%") },
+    { key: "spy", label: "SPY", num: true, cls: (r) => signClass(r.spy), fmt: (v) => (v == null ? "—" : signed(v * 100, 1) + "%") },
+    { key: "proxied", label: "Proxied names", fmt: (v) => el("span", { class: "note", text: v }) },
+  ]);
+  const c = st.cvar, host = document.getElementById("cvar");
+  if (c && host) {
+    host.innerHTML = "";
+    host.appendChild(el("p", { class: "note", text:
+      `Last ${c.n_days} trading days of the actual holdings: VaR95 ${signed(c.var_95_daily * 100, 2)}%/day, ` +
+      `CVaR95 ${signed(c.cvar_95_daily * 100, 2)}%/day (${signed(c.cvar_95_annualised * 100, 1)}% annualised), ` +
+      `worst day ${signed(c.worst_day * 100, 2)}% on ${c.worst_day_date}. Proxied names borrow their cluster's ETF and are listed, never hidden.` }));
+  }
+}
+
 async function init() {
   renderShell();
   try {
-    const [decision, regime, actions] = await Promise.all([
+    const [decision, regime, actions, port, st] = await Promise.all([
       loadJSON("data/decision.json").catch(() => null),
       loadJSON("data/regime.json").catch(() => null),
       loadJSON("data/actions.json").catch(() => null),
+      loadJSON("data/portfolio.json").catch(() => null),
+      loadJSON("data/stress.json").catch(() => null),
     ]);
+    renderClusters(port);
+    renderStressTest(st);
     if (regime) {
       setAsOf(regime.as_of);
       renderStress(regime);

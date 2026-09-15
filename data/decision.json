@@ -4,7 +4,7 @@
  "blocked_by": [],
  "bands_breached": {},
  "days_since": 0,
- "ce_gain_bp": 0.0,
+ "ce_gain_bp": -0.0,
  "ce_note": null,
  "cost_bp": 0.0,
  "turnover": 0.0,

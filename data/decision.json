@@ -4,10 +4,10 @@
  "blocked_by": [],
  "bands_breached": {},
  "days_since": 0,
- "ce_gain_bp": -0.0,
+ "ce_gain_bp": -0.1,
  "ce_note": null,
  "cost_bp": 0.0,
- "turnover": 0.0,
+ "turnover": 0.0001,
  "adjust_fraction": 0.3,
  "regime_note": "only 1 archived nowcast(s); need 3 before a shift can be confirmed"
 }

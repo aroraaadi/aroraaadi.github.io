@@ -1,17 +1,20 @@
 {
- "as_of": "2026-09-15",
+ "as_of": "2026-09-16",
  "episodes": {
   "gfc_2008": {
    "label": "Lehman to the March 2009 trough",
    "start": "2008-09-01",
    "end": "2009-03-09",
-   "book": -0.4545595701623599,
-   "max_drawdown": -0.5016817555299994,
+   "book": -0.46116325199429586,
+   "max_drawdown": -0.46995166650226894,
    "spy": -0.4678490507070865,
    "proxied": {
     "UBER": "SMH",
     "AVGO": "SMH",
-    "BE": "XLU"
+    "BE": "XLU",
+    "META": "SMH",
+    "RDDT": "SMH",
+    "TLN": "XLU"
    },
    "n_days": 130
   },
@@ -19,39 +22,45 @@
    "label": "COVID crash, peak to trough",
    "start": "2020-02-19",
    "end": "2020-03-23",
-   "book": -0.3415982767681972,
-   "max_drawdown": -0.3630465406522734,
+   "book": -0.36500854774034996,
+   "max_drawdown": -0.3834341989666672,
    "spy": -0.34104746704498434,
-   "proxied": {},
+   "proxied": {
+    "RDDT": "SMH",
+    "TLN": "XLU"
+   },
    "n_days": 24
   },
   "rates_2022": {
    "label": "2022 rate shock, peak to trough",
    "start": "2022-01-03",
    "end": "2022-10-12",
-   "book": -0.20917317578666528,
-   "max_drawdown": -0.2621687844258155,
+   "book": -0.22837962812550838,
+   "max_drawdown": -0.2626826393174193,
    "spy": -0.2536057440706705,
-   "proxied": {},
+   "proxied": {
+    "RDDT": "SMH",
+    "TLN": "XLU"
+   },
    "n_days": 196
   },
   "vol_aug_2024": {
    "label": "carry unwind / AI wobble",
    "start": "2024-07-10",
    "end": "2024-08-05",
-   "book": -0.12766883385684602,
-   "max_drawdown": -0.13274537682901244,
+   "book": -0.12122728267567673,
+   "max_drawdown": -0.13197636826839199,
    "spy": -0.07827976911565604,
    "proxied": {},
    "n_days": 19
   }
  },
  "cvar": {
-  "var_95_daily": -0.022145495835891264,
-  "cvar_95_daily": -0.03529230260060651,
-  "cvar_95_annualised": -0.5602479352562576,
-  "worst_day": -0.08115175895600574,
+  "var_95_daily": -0.024969343847430724,
+  "cvar_95_daily": -0.037805942908769,
+  "cvar_95_annualised": -0.6001507381014519,
+  "worst_day": -0.08099136310801872,
   "worst_day_date": "2025-04-04",
-  "n_days": 756
+  "n_days": 623
  }
 }

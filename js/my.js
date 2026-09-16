@@ -15,7 +15,13 @@ let PF = null, PHIST = [], MET = null;
 /* Positions are published as the USD-equivalent view where available: CDRs are
    mapped to their US underlying and duplicate lines merged, so META held two
    ways is one exposure rather than two. */
-const positions = () => (PF.usd_positions || PF.positions || []);
+/* Zero-weight rows are CLOSED positions. questrade_sync writes a line for every
+   symbol the account has ever held so the history is auditable, so after a
+   restructuring the file carried SCHG, MSFT, MDA, SPGI and IALT at qty 0 — and
+   the page counted them, reporting 23 positions against 18 actually held. A
+   position you have sold is not a position. */
+const positions = () =>
+  (PF.usd_positions || PF.positions || []).filter((p) => (p.weight || 0) > 0);
 
 function renderTopStats() {
   const host = document.getElementById("stats");

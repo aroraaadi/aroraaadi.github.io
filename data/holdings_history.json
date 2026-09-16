@@ -94,38 +94,45 @@
  },
  {
   "date": "2026-09-16",
-  "turnover": 0.0002,
-  "model_vol": 0.2024,
+  "turnover": 0.0336,
+  "model_vol": 0.1997,
   "weights": {
    "AMZN": 0.05,
-   "NVDA": 0.0462,
+   "NVDA": 0.0488,
    "GOOG": 0.05,
    "META": 0.05,
    "AVGO": 0.0831,
-   "BE": 0.0536,
-   "JPM": 0.0554,
-   "SPGI": 0.0446,
+   "BE": 0.0549,
+   "JPM": 0.0628,
+   "SPGI": 0.0372,
    "GE": 0.125,
    "UBER": 0.125,
-   "RDDT": 0.0457,
+   "RDDT": 0.0431,
+   "TKR": 0.0322,
    "RRX": 0.06,
-   "NRG": 0.0724,
-   "TLN": 0.0262,
-   "EQT": 0.1127
+   "NRG": 0.0757,
+   "EQT": 0.1023
   },
-  "cost_bp": 0.0,
+  "cost_bp": 0.33,
   "decision": {
    "trade": true,
    "reasons": [
     "--force"
    ],
    "blocked_by": [],
-   "bands_breached": {},
+   "bands_breached": {
+    "TKR": {
+     "current": 0.0,
+     "target": 0.03215429578889199,
+     "gap": 0.03215429578889199,
+     "relative": 1.0
+    }
+   },
    "days_since": 0,
-   "ce_gain_bp": -0.2,
+   "ce_gain_bp": -7.1,
    "ce_note": null,
-   "cost_bp": 0.0,
-   "turnover": 0.0002,
+   "cost_bp": 0.33,
+   "turnover": 0.0408,
    "adjust_fraction": 0.3
   },
   "note": "forced rebalance"

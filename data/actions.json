@@ -62,7 +62,7 @@
   {
    "type": "ADD_TO",
    "symbol": "AMZN",
-   "from_weight": 0.05000500050005001,
+   "from_weight": 0.04999500049995001,
    "to_weight": 0.11792619463611477,
    "triggers": [
     "outside_band"
@@ -73,54 +73,54 @@
     "relative_gap": 0.576,
     "view": 0.0806
    },
-   "benefit_bp_yr": 0.5,
-   "d_vol_pp": 0.12,
+   "benefit_bp_yr": 0.4,
+   "d_vol_pp": 0.17,
    "cost_bp": 0.54,
-   "net_bp_yr": -1.7,
+   "net_bp_yr": -1.8,
    "confidence": "low",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 108% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 135% of benefit; view 5d old",
    "reason": "net -2bp below the 25bp floor"
   },
   {
    "type": "TRIM",
    "symbol": "BE",
-   "from_weight": 0.05360536053605361,
+   "from_weight": 0.054894510548945105,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0536,
+    "drifted": 0.0549,
     "target": 0.0,
     "relative_gap": null,
     "view": 0.0512
    },
-   "benefit_bp_yr": 2.6,
-   "d_vol_pp": -1.23,
-   "cost_bp": 0.43,
-   "net_bp_yr": 0.9,
+   "benefit_bp_yr": 2.7,
+   "d_vol_pp": -1.27,
+   "cost_bp": 0.44,
+   "net_bp_yr": 1.0,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 17% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 16% of benefit; view 5d old",
    "reason": "net 1bp below the 25bp floor"
   },
   {
    "type": "TRIM",
    "symbol": "EQT",
-   "from_weight": 0.11271127112711271,
+   "from_weight": 0.10228977102289771,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.1127,
+    "drifted": 0.1023,
     "target": 0.0,
     "relative_gap": null,
     "view": 0.0756
    },
-   "benefit_bp_yr": 14.1,
-   "d_vol_pp": 1.7,
-   "cost_bp": 0.9,
-   "net_bp_yr": 10.5,
+   "benefit_bp_yr": 12.8,
+   "d_vol_pp": 1.52,
+   "cost_bp": 0.82,
+   "net_bp_yr": 9.5,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 6% of benefit; view 5d old",
    "reason": "net 10bp below the 25bp floor"
@@ -128,7 +128,7 @@
   {
    "type": "TRIM",
    "symbol": "GOOG",
-   "from_weight": 0.05000500050005001,
+   "from_weight": 0.04999500049995001,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
@@ -140,7 +140,7 @@
     "view": 0.076
    },
    "benefit_bp_yr": 2.4,
-   "d_vol_pp": 0.39,
+   "d_vol_pp": 0.36,
    "cost_bp": 0.4,
    "net_bp_yr": 0.8,
    "confidence": "medium",
@@ -150,43 +150,43 @@
   {
    "type": "ADD_TO",
    "symbol": "JPM",
-   "from_weight": 0.0554055405540554,
+   "from_weight": 0.0627937206279372,
    "to_weight": 0.12499998883578836,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0554,
+    "drifted": 0.0628,
     "target": 0.125,
-    "relative_gap": 0.557,
+    "relative_gap": 0.498,
     "view": 0.0794
    },
-   "benefit_bp_yr": -3.5,
-   "d_vol_pp": -0.91,
-   "cost_bp": 0.56,
-   "net_bp_yr": -5.7,
+   "benefit_bp_yr": -3.2,
+   "d_vol_pp": -0.78,
+   "cost_bp": 0.5,
+   "net_bp_yr": -5.2,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
-   "reason": "net -6bp below the 25bp floor"
+   "reason": "net -5bp below the 25bp floor"
   },
   {
    "type": "ADD_TO",
    "symbol": "NRG",
-   "from_weight": 0.07240724072407241,
+   "from_weight": 0.0756924307569243,
    "to_weight": 0.12499997552607497,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0724,
+    "drifted": 0.0757,
     "target": 0.125,
-    "relative_gap": 0.421,
+    "relative_gap": 0.394,
     "view": 0.0989
    },
-   "benefit_bp_yr": 5.0,
-   "d_vol_pp": 0.64,
-   "cost_bp": 0.42,
-   "net_bp_yr": 3.4,
+   "benefit_bp_yr": 4.7,
+   "d_vol_pp": 0.6,
+   "cost_bp": 0.39,
+   "net_bp_yr": 3.1,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 8% of benefit; view 5d old",
    "reason": "net 3bp below the 25bp floor"
@@ -194,68 +194,68 @@
   {
    "type": "TRIM",
    "symbol": "NVDA",
-   "from_weight": 0.0462046204620462,
+   "from_weight": 0.04879512048795121,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0462,
+    "drifted": 0.0488,
     "target": 0.0,
     "relative_gap": null,
     "view": 0.0675
    },
-   "benefit_bp_yr": 1.9,
-   "d_vol_pp": 0.0,
-   "cost_bp": 0.37,
-   "net_bp_yr": 0.5,
+   "benefit_bp_yr": 2.1,
+   "d_vol_pp": -0.01,
+   "cost_bp": 0.39,
+   "net_bp_yr": 0.6,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 19% of benefit; view 5d old",
-   "reason": "net 0bp below the 25bp floor"
+   "reason": "net 1bp below the 25bp floor"
   },
   {
    "type": "TRIM",
    "symbol": "SPGI",
-   "from_weight": 0.0446044604460446,
+   "from_weight": 0.0371962803719628,
    "to_weight": 0.0,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0446,
+    "drifted": 0.0372,
     "target": 0.0,
     "relative_gap": null,
     "view": 0.0765
    },
-   "benefit_bp_yr": 2.6,
-   "d_vol_pp": 0.49,
-   "cost_bp": 0.36,
-   "net_bp_yr": 1.2,
+   "benefit_bp_yr": 2.2,
+   "d_vol_pp": 0.39,
+   "cost_bp": 0.3,
+   "net_bp_yr": 1.0,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 14% of benefit; view 5d old",
    "reason": "net 1bp below the 25bp floor"
   },
   {
-   "type": "TRIM",
-   "symbol": "TLN",
-   "from_weight": 0.026202620262026202,
-   "to_weight": 0.0,
+   "type": "ADD_TO",
+   "symbol": "TKR",
+   "from_weight": 0.0321967803219678,
+   "to_weight": 0.12499998561541134,
    "triggers": [
     "outside_band"
    ],
    "evidence": {
-    "drifted": 0.0262,
-    "target": 0.0,
-    "relative_gap": null,
-    "view": 0.0866
+    "drifted": 0.0322,
+    "target": 0.125,
+    "relative_gap": 0.742,
+    "view": 0.082
    },
-   "benefit_bp_yr": 0.8,
-   "d_vol_pp": -0.21,
-   "cost_bp": 0.21,
-   "net_bp_yr": -0.0,
-   "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 26% of benefit; view 5d old",
-   "reason": "net -0bp below the 25bp floor"
+   "benefit_bp_yr": -2.1,
+   "d_vol_pp": -0.75,
+   "cost_bp": 0.74,
+   "net_bp_yr": -5.1,
+   "confidence": "low",
+   "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
+   "reason": "net -5bp below the 25bp floor"
   },
   {
    "type": "ENTER",
@@ -271,10 +271,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0167
    },
-   "benefit_bp_yr": -10.4,
-   "d_vol_pp": -0.53,
+   "benefit_bp_yr": -10.6,
+   "d_vol_pp": -0.47,
    "cost_bp": 1.0,
-   "net_bp_yr": -14.4,
+   "net_bp_yr": -14.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 167bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -293,12 +293,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0359
    },
-   "benefit_bp_yr": 4.5,
-   "d_vol_pp": 0.14,
+   "benefit_bp_yr": 4.4,
+   "d_vol_pp": 0.22,
    "cost_bp": 1.0,
-   "net_bp_yr": 0.5,
+   "net_bp_yr": 0.4,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 22% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 23% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
@@ -337,10 +337,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0273
    },
-   "benefit_bp_yr": -5.5,
-   "d_vol_pp": -0.06,
+   "benefit_bp_yr": -5.6,
+   "d_vol_pp": -0.02,
    "cost_bp": 1.0,
-   "net_bp_yr": -9.5,
+   "net_bp_yr": -9.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 273bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -359,10 +359,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0287
    },
-   "benefit_bp_yr": -8.9,
-   "d_vol_pp": -0.59,
+   "benefit_bp_yr": -9.1,
+   "d_vol_pp": -0.5,
    "cost_bp": 1.0,
-   "net_bp_yr": -12.9,
+   "net_bp_yr": -13.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 287bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -381,12 +381,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0356
    },
-   "benefit_bp_yr": 0.4,
-   "d_vol_pp": -0.55,
+   "benefit_bp_yr": 0.2,
+   "d_vol_pp": -0.43,
    "cost_bp": 1.0,
-   "net_bp_yr": -3.6,
+   "net_bp_yr": -3.8,
    "confidence": "low",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 250% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 500% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
@@ -403,10 +403,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0324
    },
-   "benefit_bp_yr": 14.1,
-   "d_vol_pp": 1.73,
+   "benefit_bp_yr": 13.9,
+   "d_vol_pp": 1.84,
    "cost_bp": 1.0,
-   "net_bp_yr": 10.1,
+   "net_bp_yr": 9.9,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 7% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -425,12 +425,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0544
    },
-   "benefit_bp_yr": 8.0,
-   "d_vol_pp": -1.05,
+   "benefit_bp_yr": 7.9,
+   "d_vol_pp": -0.96,
    "cost_bp": 1.0,
-   "net_bp_yr": 4.0,
+   "net_bp_yr": 3.9,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 12% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 13% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
@@ -447,10 +447,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0274
    },
-   "benefit_bp_yr": -2.1,
-   "d_vol_pp": -0.3,
+   "benefit_bp_yr": -2.3,
+   "d_vol_pp": -0.21,
    "cost_bp": 1.0,
-   "net_bp_yr": -6.1,
+   "net_bp_yr": -6.3,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 274bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -469,10 +469,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0183
    },
-   "benefit_bp_yr": -7.5,
-   "d_vol_pp": 1.62,
+   "benefit_bp_yr": -7.7,
+   "d_vol_pp": 1.67,
    "cost_bp": 1.0,
-   "net_bp_yr": -11.5,
+   "net_bp_yr": -11.7,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 183bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -491,10 +491,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0044
    },
-   "benefit_bp_yr": -17.9,
-   "d_vol_pp": -1.48,
+   "benefit_bp_yr": -18.0,
+   "d_vol_pp": -1.39,
    "cost_bp": 1.0,
-   "net_bp_yr": -21.9,
+   "net_bp_yr": -22.0,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 44bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -514,9 +514,9 @@
     "edge": 0.002
    },
    "benefit_bp_yr": -4.5,
-   "d_vol_pp": 0.17,
+   "d_vol_pp": 0.2,
    "cost_bp": 0.24,
-   "net_bp_yr": -5.4,
+   "net_bp_yr": -5.5,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 20bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -535,12 +535,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0406
    },
-   "benefit_bp_yr": 1.8,
-   "d_vol_pp": -0.11,
+   "benefit_bp_yr": 1.7,
+   "d_vol_pp": -0.08,
    "cost_bp": 1.0,
-   "net_bp_yr": -2.2,
+   "net_bp_yr": -2.3,
    "confidence": "low",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 56% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 59% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first; not eligible under the current rules"
   },
   {
@@ -557,10 +557,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0037
    },
-   "benefit_bp_yr": -26.8,
-   "d_vol_pp": -1.9,
+   "benefit_bp_yr": -26.9,
+   "d_vol_pp": -1.83,
    "cost_bp": 1.0,
-   "net_bp_yr": -30.8,
+   "net_bp_yr": -30.9,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 37bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -579,10 +579,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0079
    },
-   "benefit_bp_yr": -14.0,
-   "d_vol_pp": 0.64,
+   "benefit_bp_yr": -14.1,
+   "d_vol_pp": 0.65,
    "cost_bp": 1.0,
-   "net_bp_yr": -18.0,
+   "net_bp_yr": -18.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 79bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -601,12 +601,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0101
    },
-   "benefit_bp_yr": 2.3,
-   "d_vol_pp": 3.76,
+   "benefit_bp_yr": 2.2,
+   "d_vol_pp": 3.77,
    "cost_bp": 1.0,
-   "net_bp_yr": -1.7,
+   "net_bp_yr": -1.8,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 43% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 45% of benefit; view 5d old",
    "reason": "edge 101bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
@@ -623,10 +623,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0184
    },
-   "benefit_bp_yr": -16.5,
-   "d_vol_pp": -1.81,
+   "benefit_bp_yr": -16.7,
+   "d_vol_pp": -1.78,
    "cost_bp": 1.0,
-   "net_bp_yr": -20.5,
+   "net_bp_yr": -20.7,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 184bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -645,10 +645,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0244
    },
-   "benefit_bp_yr": -13.2,
-   "d_vol_pp": -1.93,
+   "benefit_bp_yr": -13.3,
+   "d_vol_pp": -1.89,
    "cost_bp": 1.0,
-   "net_bp_yr": -17.2,
+   "net_bp_yr": -17.3,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 244bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -667,10 +667,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0013
    },
-   "benefit_bp_yr": -18.5,
-   "d_vol_pp": -0.22,
+   "benefit_bp_yr": -18.6,
+   "d_vol_pp": -0.16,
    "cost_bp": 1.0,
-   "net_bp_yr": -22.5,
+   "net_bp_yr": -22.6,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 13bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -689,10 +689,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0061
    },
-   "benefit_bp_yr": -12.1,
-   "d_vol_pp": 0.39,
+   "benefit_bp_yr": -12.2,
+   "d_vol_pp": 0.53,
    "cost_bp": 1.0,
-   "net_bp_yr": -16.1,
+   "net_bp_yr": -16.2,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 61bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -711,10 +711,10 @@
     "marginal_view": 0.0512,
     "edge": -0.009
    },
-   "benefit_bp_yr": -12.7,
-   "d_vol_pp": 4.45,
+   "benefit_bp_yr": -12.8,
+   "d_vol_pp": 4.47,
    "cost_bp": 1.0,
-   "net_bp_yr": -16.7,
+   "net_bp_yr": -16.8,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge -90bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -733,10 +733,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0883
    },
-   "benefit_bp_yr": 9.9,
-   "d_vol_pp": -0.19,
+   "benefit_bp_yr": 9.8,
+   "d_vol_pp": -0.06,
    "cost_bp": 1.0,
-   "net_bp_yr": 5.9,
+   "net_bp_yr": 5.8,
    "confidence": "medium",
    "confidence_basis": "hand-written spec; 1 trigger; cost 10% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -755,12 +755,12 @@
     "marginal_view": 0.0512,
     "edge": 0.0428
    },
-   "benefit_bp_yr": 4.6,
-   "d_vol_pp": 2.91,
+   "benefit_bp_yr": 4.4,
+   "d_vol_pp": 2.99,
    "cost_bp": 1.0,
-   "net_bp_yr": 0.6,
+   "net_bp_yr": 0.4,
    "confidence": "medium",
-   "confidence_basis": "hand-written spec; 1 trigger; cost 22% of benefit; view 5d old",
+   "confidence_basis": "hand-written spec; 1 trigger; cost 23% of benefit; view 5d old",
    "reason": "not in the tradeable universe \u2014 needs a PROMOTE first"
   },
   {
@@ -777,10 +777,10 @@
     "marginal_view": 0.0512,
     "edge": 0.0095
    },
-   "benefit_bp_yr": -8.9,
-   "d_vol_pp": 0.49,
+   "benefit_bp_yr": -9.1,
+   "d_vol_pp": 0.56,
    "cost_bp": 1.0,
-   "net_bp_yr": -12.9,
+   "net_bp_yr": -13.1,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge 95bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"
@@ -799,10 +799,10 @@
     "marginal_view": 0.0512,
     "edge": -0.0056
    },
-   "benefit_bp_yr": -29.7,
-   "d_vol_pp": -2.35,
+   "benefit_bp_yr": -29.8,
+   "d_vol_pp": -2.26,
    "cost_bp": 1.0,
-   "net_bp_yr": -33.7,
+   "net_bp_yr": -33.8,
    "confidence": "low",
    "confidence_basis": "hand-written spec; 1 trigger; no measured benefit; view 5d old",
    "reason": "edge -56bp over BE is below the 300bp hurdle; not in the tradeable universe \u2014 needs a PROMOTE first"

@@ -1,8 +1,8 @@
 {
  "cluster_exposure": {
   "ai_complex": 0.45,
-  "real_economy": 0.185,
-  "power_energy": 0.265,
+  "real_economy": 0.2172,
+  "power_energy": 0.2329,
   "financials": 0.1
  },
  "cluster_caps": {
@@ -11,15 +11,15 @@
   "real_economy": 0.4,
   "financials": 0.2
  },
- "active_share": 0.6215,
- "max_active_weight": 0.1635,
+ "active_share": 0.6169,
+ "max_active_weight": 0.1631,
  "largest_active": {
-  "NVDA": -0.1635,
-  "MSFT": -0.1417,
+  "NVDA": -0.1631,
+  "MSFT": -0.1432,
   "UBER": 0.1193,
-  "GE": 0.1119,
-  "GOOG": -0.1058,
-  "EQT": 0.1023
+  "GE": 0.1118,
+  "GOOG": -0.1074,
+  "EQT": 0.0918
  },
  "vol_band_used": [
   0.19,
@@ -31,9 +31,9 @@
   0.19,
   0.22
  ],
- "model_vol": 0.2024,
+ "model_vol": 0.1997,
  "vol_band_met": true,
- "min_var_vol": 0.0968,
+ "min_var_vol": 0.097,
  "n_positions": 15,
  "max_weight": 0.125,
  "sector_neutral": true,
@@ -58,9 +58,9 @@
    "Communication Services": 0.1,
    "Consumer Cyclical": 0.05,
    "Financial Services": 0.1,
-   "Industrials": 0.1786,
-   "Technology": 0.2543,
-   "Unknown": 0.3171
+   "Industrials": 0.1799,
+   "Technology": 0.2569,
+   "Unknown": 0.3133
   },
   "turnover_one_way": 0.0001,
   "name_floors": {},
@@ -83,199 +83,193 @@
    "cannabis_consumer": 0.35
   },
   "theme_weights": {
-   "ai": 0.2829,
-   "robotics": 0.2793,
-   "space": 0.2712,
-   "semiconductors": 0.1293,
-   "fintech": 0.1462,
-   "electric_vehicles": 0.0998,
-   "quantum": 0.1793,
+   "ai": 0.2868,
+   "robotics": 0.2819,
+   "space": 0.2738,
+   "semiconductors": 0.132,
+   "fintech": 0.1488,
+   "electric_vehicles": 0.1038,
+   "quantum": 0.1819,
    "cybersecurity": 0.0831,
    "cloud_software": 0.05,
-   "clean_energy": 0.0536,
+   "clean_energy": 0.0549,
    "financials": 0.1
   }
  },
  "expected_returns": {
   "model": "black_litterman",
-  "risk_aversion": 1.559,
+  "risk_aversion": 1.564,
   "erp_forward": 0.045,
   "universe_beta": 1.534,
-  "universe_vol": 0.2104,
+  "universe_vol": 0.2101,
   "tau": 0.05,
   "ic_assumed": 0.05,
-  "n_views": 28,
-  "prior_posterior_corr": 0.873,
-  "max_abs_shift": 0.1041,
+  "n_views": 27,
+  "prior_posterior_corr": 0.882,
+  "max_abs_shift": 0.0997,
   "most_shifted": "BE",
   "per_name": {
    "AMZN": {
-    "prior": 0.0588,
+    "prior": 0.0587,
     "view": 0.0323,
-    "mu": 0.0344,
-    "mkt_weight": 0.1053
+    "mu": 0.0345,
+    "mkt_weight": 0.1064
    },
    "NVDA": {
-    "prior": 0.1041,
+    "prior": 0.1046,
     "view": 0.0192,
-    "mu": 0.052,
-    "mkt_weight": 0.2097
+    "mu": 0.053,
+    "mkt_weight": 0.2119
    },
    "GOOG": {
-    "prior": 0.0488,
+    "prior": 0.049,
     "view": 0.0277,
-    "mu": 0.0296,
-    "mkt_weight": 0.1558
+    "mu": 0.0297,
+    "mkt_weight": 0.1574
    },
    "META": {
-    "prior": 0.0582,
+    "prior": 0.0586,
     "view": 0.0378,
-    "mu": 0.0377,
-    "mkt_weight": 0.0644
+    "mu": 0.0378,
+    "mkt_weight": 0.0651
    },
    "AMD": {
-    "prior": 0.1179,
+    "prior": 0.1202,
     "view": 0.0118,
-    "mu": 0.0514,
-    "mkt_weight": 0.033
+    "mu": 0.0558,
+    "mkt_weight": 0.0334
    },
    "MU": {
-    "prior": 0.1404,
+    "prior": 0.143,
     "view": 0.005,
-    "mu": 0.0597,
-    "mkt_weight": 0.0447
+    "mu": 0.0649,
+    "mkt_weight": 0.0452
    },
    "COST": {
-    "prior": -0.0143,
+    "prior": -0.0141,
     "view": 0.0059,
-    "mu": 0.0019,
-    "mkt_weight": 0.0155
+    "mu": 0.0018,
+    "mkt_weight": 0.0156
    },
    "MSFT": {
-    "prior": 0.0472,
+    "prior": 0.0477,
     "view": 0.0297,
-    "mu": 0.0315,
-    "mkt_weight": 0.1417
+    "mu": 0.0317,
+    "mkt_weight": 0.1432
    },
    "AVGO": {
-    "prior": 0.0776,
+    "prior": 0.0783,
     "view": 0.0269,
-    "mu": 0.0387,
-    "mkt_weight": 0.0671
+    "mu": 0.0402,
+    "mkt_weight": 0.0678
    },
    "BE": {
-    "prior": 0.1689,
+    "prior": 0.1659,
     "view": 0.0029,
-    "mu": 0.0648,
+    "mu": 0.0662,
     "mkt_weight": 0.0031
    },
    "JPM": {
-    "prior": 0.0157,
+    "prior": 0.0152,
     "view": 0.0311,
-    "mu": 0.0235,
-    "mkt_weight": 0.0365
+    "mu": 0.0236,
+    "mkt_weight": 0.0369
    },
    "SHOP": {
-    "prior": 0.0833,
+    "prior": 0.082,
     "view": 0.0207,
-    "mu": 0.0365,
+    "mu": 0.036,
     "mkt_weight": 0.0065
    },
    "SPGI": {
-    "prior": 0.0032,
+    "prior": 0.0026,
     "view": 0.0282,
-    "mu": 0.0199,
-    "mkt_weight": 0.0048
+    "mu": 0.0196,
+    "mkt_weight": 0.0049
    },
    "GE": {
-    "prior": 0.043,
+    "prior": 0.0428,
     "view": 0.0151,
-    "mu": 0.0175,
-    "mkt_weight": 0.0131
+    "mu": 0.0177,
+    "mkt_weight": 0.0132
    },
    "APH": {
-    "prior": 0.0762,
+    "prior": 0.0757,
     "view": 0.0181,
-    "mu": 0.0259,
-    "mkt_weight": 0.0077
+    "mu": 0.0262,
+    "mkt_weight": 0.0078
    },
    "NEE": {
-    "prior": 0.0015,
+    "prior": 0.0011,
     "view": 0.0076,
     "mu": 0.0041,
-    "mkt_weight": 0.0067
+    "mkt_weight": 0.0068
    },
    "UBER": {
-    "prior": 0.0367,
+    "prior": 0.0366,
     "view": 0.0836,
-    "mu": 0.0603,
+    "mu": 0.0607,
     "mkt_weight": 0.0057
    },
    "VST": {
-    "prior": 0.0689,
+    "prior": 0.0642,
     "view": 0.0358,
-    "mu": 0.0338,
+    "mu": 0.0336,
     "mkt_weight": 0.002
    },
    "CEG": {
-    "prior": 0.0678,
+    "prior": 0.063,
     "view": 0.0079,
-    "mu": 0.0212,
-    "mkt_weight": 0.004
+    "mu": 0.0188,
+    "mkt_weight": 0.0041
    },
    "TRGP": {
-    "prior": -0.0163,
+    "prior": -0.016,
     "view": 0.0102,
-    "mu": 0.0027,
-    "mkt_weight": 0.0024
+    "mu": 0.0028,
+    "mkt_weight": 0.0025
    },
    "WMB": {
-    "prior": -0.0023,
+    "prior": -0.0025,
     "view": 0.0041,
-    "mu": 0.0017,
+    "mu": 0.0018,
     "mkt_weight": 0.0036
    },
    "VLO": {
-    "prior": -0.0108,
+    "prior": -0.0101,
     "view": -0.0043,
-    "mu": -0.0051,
+    "mu": -0.005,
     "mkt_weight": 0.0043
    },
    "RDDT": {
-    "prior": 0.12,
+    "prior": 0.1216,
     "view": 0.0469,
-    "mu": 0.0626,
-    "mkt_weight": 0.0104
+    "mu": 0.063,
+    "mkt_weight": 0.0105
    },
    "TKR": {
-    "prior": 0.0481,
+    "prior": 0.0483,
     "view": 0.0337,
-    "mu": 0.0292,
-    "mkt_weight": 0.0104
+    "mu": 0.0298,
+    "mkt_weight": 0.0105
    },
    "RRX": {
-    "prior": 0.0707,
+    "prior": 0.0728,
     "view": 0.0511,
-    "mu": 0.0435,
-    "mkt_weight": 0.0104
+    "mu": 0.0446,
+    "mkt_weight": 0.0105
    },
    "NRG": {
-    "prior": 0.0871,
+    "prior": 0.0829,
     "view": 0.0506,
-    "mu": 0.0428,
-    "mkt_weight": 0.0104
-   },
-   "TLN": {
-    "prior": 0.1051,
-    "view": 0.0383,
-    "mu": 0.0451,
-    "mkt_weight": 0.0104
+    "mu": 0.0431,
+    "mkt_weight": 0.0105
    },
    "EQT": {
-    "prior": -0.0015,
+    "prior": -0.0014,
     "view": 0.0273,
-    "mu": 0.0185,
-    "mkt_weight": 0.0104
+    "mu": 0.0187,
+    "mkt_weight": 0.0105
    }
   }
  },
@@ -334,7 +328,7 @@
   {
    "ticker": "EQT",
    "sector": "Unknown",
-   "weight": 0.1127,
+   "weight": 0.1023,
    "alpha_score": 0.0526,
    "signals": {
     "value": null,
@@ -378,7 +372,7 @@
   {
    "ticker": "NRG",
    "sector": "Unknown",
-   "weight": 0.0724,
+   "weight": 0.0757,
    "alpha_score": -0.0963,
    "signals": {
     "value": null,
@@ -395,6 +389,28 @@
     "roe": null,
     "momentum_12_1": -0.2632,
     "short_pct": null
+   }
+  },
+  {
+   "ticker": "JPM",
+   "sector": "Financial Services",
+   "weight": 0.0628,
+   "alpha_score": 0.8282,
+   "signals": {
+    "value": 1.5341,
+    "quality": 0.7389,
+    "momentum": 0.3853,
+    "short_interest": 0.333
+   },
+   "raw": {
+    "pe": 15.2,
+    "ev_ebitda_yield": null,
+    "fcf_yield": null,
+    "roic_mean": null,
+    "operating_margin": 0.5039,
+    "roe": 0.1779,
+    "momentum_12_1": 0.1685,
+    "short_pct": 0.0095
    }
   },
   {
@@ -420,31 +436,9 @@
    }
   },
   {
-   "ticker": "JPM",
-   "sector": "Financial Services",
-   "weight": 0.0554,
-   "alpha_score": 0.8282,
-   "signals": {
-    "value": 1.5341,
-    "quality": 0.7389,
-    "momentum": 0.3853,
-    "short_interest": 0.333
-   },
-   "raw": {
-    "pe": 15.2,
-    "ev_ebitda_yield": null,
-    "fcf_yield": null,
-    "roic_mean": null,
-    "operating_margin": 0.5039,
-    "roe": 0.1779,
-    "momentum_12_1": 0.1685,
-    "short_pct": 0.0095
-   }
-  },
-  {
    "ticker": "BE",
    "sector": "Industrials",
-   "weight": 0.0536,
+   "weight": 0.0549,
    "alpha_score": -0.3313,
    "signals": {
     "value": -0.8409,
@@ -461,28 +455,6 @@
     "roe": 0.2221,
     "momentum_12_1": 2.464,
     "short_pct": 0.0706
-   }
-  },
-  {
-   "ticker": "META",
-   "sector": "Communication Services",
-   "weight": 0.05,
-   "alpha_score": 0.235,
-   "signals": {
-    "value": 0.6366,
-    "quality": 0.3939,
-    "momentum": -0.2967,
-    "short_interest": -0.0
-   },
-   "raw": {
-    "pe": 24.6,
-    "ev_ebitda_yield": 0.0692,
-    "fcf_yield": 0.013,
-    "roic_mean": 0.0693,
-    "operating_margin": 0.3483,
-    "roe": 0.2985,
-    "momentum_12_1": -0.256,
-    "short_pct": 0.0127
    }
   },
   {
@@ -530,9 +502,31 @@
    }
   },
   {
+   "ticker": "META",
+   "sector": "Communication Services",
+   "weight": 0.05,
+   "alpha_score": 0.235,
+   "signals": {
+    "value": 0.6366,
+    "quality": 0.3939,
+    "momentum": -0.2967,
+    "short_interest": -0.0
+   },
+   "raw": {
+    "pe": 24.6,
+    "ev_ebitda_yield": 0.0692,
+    "fcf_yield": 0.013,
+    "roic_mean": 0.0693,
+    "operating_margin": 0.3483,
+    "roe": 0.2985,
+    "momentum_12_1": -0.256,
+    "short_pct": 0.0127
+   }
+  },
+  {
    "ticker": "NVDA",
    "sector": "Technology",
-   "weight": 0.0462,
+   "weight": 0.0489,
    "alpha_score": 0.2168,
    "signals": {
     "value": -0.4039,
@@ -554,7 +548,7 @@
   {
    "ticker": "RDDT",
    "sector": "Unknown",
-   "weight": 0.0457,
+   "weight": 0.0431,
    "alpha_score": -0.1959,
    "signals": {
     "value": null,
@@ -576,7 +570,7 @@
   {
    "ticker": "SPGI",
    "sector": "Financial Services",
-   "weight": 0.0446,
+   "weight": 0.0372,
    "alpha_score": 0.1492,
    "signals": {
     "value": 0.8574,
@@ -596,14 +590,14 @@
    }
   },
   {
-   "ticker": "TLN",
+   "ticker": "TKR",
    "sector": "Unknown",
-   "weight": 0.0263,
-   "alpha_score": -0.0104,
+   "weight": 0.0322,
+   "alpha_score": 0.2591,
    "signals": {
     "value": null,
     "quality": null,
-    "momentum": -0.0418,
+    "momentum": 1.0364,
     "short_interest": null
    },
    "raw": {
@@ -613,7 +607,7 @@
     "roic_mean": null,
     "operating_margin": null,
     "roe": null,
-    "momentum_12_1": -0.1197,
+    "momentum_12_1": 0.7308,
     "short_pct": null
    }
   }

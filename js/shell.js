@@ -24,6 +24,7 @@ const SECTIONS = [
       ["Rebalances", "research/holdings.html"],
       ["Optimizer", "research/mvo.html"],
       ["Regime", "research/regime.html"],
+      ["Options", "research/options.html"],
     ],
   },
   { id: "blog", label: "Blog", root: "blog.html", nav: [] },

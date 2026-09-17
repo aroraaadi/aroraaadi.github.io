@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Options — Quant Portfolio</title>
+<meta name="description" content="The hedge overlay: stress-gated SPY puts sized to the book's beta, with the surface and the budget.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Quant Portfolio">
+<meta property="og:title" content="Options — Quant Portfolio">
+<meta property="og:description" content="The hedge overlay: stress-gated SPY puts sized to the book's beta, with the surface and the budget.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Options</h1>
+  <p class="sub">A hedge overlay on the USD sleeve: index puts, sized to cut the held book's beta to
+     target, opened only when the stress state and the term structure agree. A long-put program has
+     negative expected return; this one tries to pay for convexity only when it is likely to matter.
+     Suggest-only.</p>
+  <div id="error"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Proposal</h2><span class="spacer"></span><span class="note" id="prop-note"></span></div>
+    <div class="panel-b" id="proposal"></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="legs-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Signal</h2><span class="spacer"></span><span class="note">Two of three must fire; hysteresis on the way out</span></div>
+    <div class="panel-b" id="signal"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Surface &amp; cone</h2><span class="spacer"></span><span class="note" id="surf-note"></span></div>
+    <div class="panel-b" id="surface"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Beta</h2><span class="spacer"></span><span class="note">Held sleeve vs SPY, 252-day OLS</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="beta-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>What the budget buys</h2><span class="spacer"></span><span class="note" id="bt-note"></span></div>
+    <div class="panel-b" id="bt-summary"></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="bt-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="ep-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Budget &amp; data</h2></div>
+    <div class="panel-b" id="budget"></div>
+  </div>
+
+  <p class="note" id="caveat"></p>
+</main>
+
+<script type="module" src="../js/shell.js"></script>
+<script type="module" src="../js/options.js"></script>
+</body>
+</html>

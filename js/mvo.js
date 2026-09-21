@@ -11,6 +11,27 @@ import {
 import { applyChartDefaults, draw as drawChart, destroyChart, barLabels, describeCanvas } from "./charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "./shell.js";
 let INDEX, IDX_MAP, MATRIX, RF = 0.04;
+let matrixPromise = null;
+
+/* The returns matrix is ~930KB gzipped and the page opens with nothing
+   selected, so loading it in init() made every visitor pay for data they had
+   not asked for yet. It is fetched on the first action that needs it, once. */
+function returnsMatrix() {
+  if (!matrixPromise) {
+    matrixPromise = loadJSON("data/returns_matrix.json").then((m) => {
+      MATRIX = m;
+      return m;
+    });
+  }
+  return matrixPromise;
+}
+
+/* Returns ship as integers in units of `scale` (see build_research_universe).
+   Undo it once here rather than in the inner loops of the covariance. */
+const unscale = (col) => {
+  const s = MATRIX.scale || 1;
+  return s === 1 ? col : col.map((v) => (v == null ? null : v / s));
+};
 const state = { selected: [], muMode: "mean", optType: "sharpe", showCloud: true };
 const sectorSlot = {}; let sectorN = 0;
 
@@ -19,10 +40,7 @@ async function init() {
   const content = document.getElementById("content");
   setAsOf("loading…", "UNIVERSE");
   try {
-    [INDEX, MATRIX] = await Promise.all([
-      loadJSON("data/universe_index.json"),
-      loadJSON("data/returns_matrix.json"),
-    ]);
+    INDEX = await loadJSON("data/universe_index.json");
   } catch (err) { showError(content, err); return; }
   IDX_MAP = new Map(INDEX.map(x => [x.symbol, x]));
   setAsOf(`${INDEX.length} symbols · 3y`, "UNIVERSE");
@@ -53,7 +71,7 @@ function frankWolfe(mu, S, lam, iters = 300) {
 const TRADING = 252;
 function subsetStats() {
   const syms = state.selected;
-  const cols = syms.map(s => MATRIX.data[s]);
+  const cols = syms.map(s => unscale(MATRIX.data[s]));
   const T = MATRIX.dates.length;
   // intersection window: rows where every selected name has data
   const rows = [];
@@ -113,7 +131,12 @@ function sectorHex(sec) {
   if (!(sec in sectorSlot)) { sectorSlot[sec] = SLOT_VARS[sectorN % SLOT_VARS.length]; sectorN++; }
   return tok(sectorSlot[sec]);
 }
-function addSymbol(sym) { if (!state.selected.includes(sym) && IDX_MAP.has(sym)) { state.selected.push(sym); renderAll(); } }
+function addSymbol(sym) {
+  if (state.selected.includes(sym) || !IDX_MAP.has(sym)) return;
+  state.selected.push(sym);
+  returnsMatrix();            // start the fetch on the first add, before the 2nd
+  renderAll();
+}
 function removeSymbol(sym) { state.selected = state.selected.filter(s => s !== sym); renderAll(); }
 
 async function loadHoldings() {
@@ -254,10 +277,16 @@ function renderChips() {
   }
 }
 
-function renderAll() {
+async function renderAll() {
   applyChartDefaults();
   renderChips();
   const note = document.getElementById("sel-note");
+
+  if (state.selected.length >= 2 && !MATRIX) {
+    note.textContent = "Loading return history…";
+    try { await returnsMatrix(); }
+    catch (err) { note.textContent = `Could not load return history: ${err.message}`; return; }
+  }
 
   if (state.selected.length < 2) {
     note.textContent = "Search and add at least 2 stocks to build a frontier.";

@@ -22,6 +22,8 @@ const status = (t, bad = false) => {
 async function load(symbol) {
   const sym = symbol.trim().toUpperCase();
   if (!sym) return;
+  // Remembered so a return visit reopens what you were working on.
+  try { localStorage.setItem("qp-model-last", sym); } catch { /* private mode */ }
   status(`Loading ${sym}…`);
   try {
     // Pre-built payloads cover the portfolio + watchlist so the page works with
@@ -398,6 +400,26 @@ function promptKey() {
   });
 
   wireNotes();
-  const t = new URLSearchParams(location.search).get("t");
-  if (t) { document.getElementById("ticker").value = t; load(t); }
+  // Open on something real. A tool whose whole point is a linked three-statement
+  // model showed an empty page and the sentence "Enter a ticker to begin", so
+  // nothing about what it does was visible until you already knew. Order:
+  // an explicit ?t=, then the last ticker looked at, then the book's largest
+  // holding that has a cached model.
+  const t = new URLSearchParams(location.search).get("t")
+    || (() => { try { return localStorage.getItem("qp-model-last"); } catch { return null; } })()
+    || await defaultTicker();
+  if (t) { document.getElementById("ticker").value = t; await load(t); }
 })();
+
+/* The largest USD holding with a model cached in docs/data/models/. */
+async function defaultTicker() {
+  try {
+    const pf = await loadJSON("data/current_portfolio.json");
+    const held = (pf.books?.usd?.positions || []).map((p) => p.usd_symbol || p.symbol);
+    for (const sym of held) {
+      const r = await fetch(`${window.ASSET_BASE || ""}data/models/${sym}.json`, { method: "HEAD" });
+      if (r.ok) return sym;
+    }
+  } catch { /* offline or no book published — the manual path still works */ }
+  return null;
+}

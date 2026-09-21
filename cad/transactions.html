@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAD book activity — Two Books</title>
+<meta name="description" content="Every trade, dividend and contribution in the CAD book, as relative sizes.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="CAD book activity — Two Books">
+<meta property="og:description" content="Every trade, dividend and contribution in the CAD book, as relative sizes.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main" data-book="cad">
+  <p class="eyebrow" id="book-eyebrow"></p>
+  <h1>Activity</h1>
+  <p class="sub">Every trade, dividend and contribution the broker reports for this book. Sizes are a
+     percent of the book — no dollar values, no share counts.</p>
+  <div id="error"></div>
+
+  <div class="controls" id="source-controls" style="margin-bottom:16px" hidden>
+    <span class="clabel">Source</span>
+    <div class="seg" id="source" role="group" aria-label="Which ledger">
+      <button data-v="questrade" class="active">Questrade</button>
+      <button data-v="legacy">Pre-split ledger</button>
+    </div>
+    <span class="spacer"></span>
+    <span class="note" id="source-note"></span>
+  </div>
+
+  <div id="stats" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <h2>Log</h2>
+      <div class="controls" id="filters" role="group" aria-label="Filter by activity"></div>
+      <span class="spacer"></span>
+      <input class="input" id="tx-search" type="search" placeholder="Filter security…" aria-label="Filter by security">
+      <span class="note" id="tx-count"></span>
+    </div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:64vh">
+      <table id="tx-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="tx-note"></p></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights and indices are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/transactions.js"></script>
+</body>
+</html>

@@ -1,141 +1,173 @@
-/* Design tokens — dark is the default ground; light is opt-in.
+/* Design tokens — a factsheet, not a terminal.
    ------------------------------------------------------------------
-   Theme resolution order:
-     1. [data-theme="light"|"dark"] on <html>  — explicit user choice, wins
-     2. prefers-color-scheme                    — initial guess only
-   shell.js stamps data-theme from localStorage before first paint.
+   Redesigned 2026-09-21 for two books. Light is the default ground; dark
+   follows the OS unless the viewer has chosen explicitly (shell.js stamps
+   data-theme from localStorage before first paint).
 
-   The categorical ramp (--s1..--s8) is NOT hand-picked. It was built by a
-   greedy max-min search over an OKLCH grid under the constraint that every
-   PREFIX n=2..8 passes all-pairs CVD separation — because slots are assigned
-   by first appearance, so a donut showing six slices uses exactly s1..s6 and
-   they must all be mutually distinguishable. Verified with the dataviz
-   validator on both grounds:
-     dark  #0B0D10 --pairs all -> ALL CHECKS PASS
-     light #fcfcfb --pairs all -> ALL CHECKS PASS
-   Two documented reliefs, both covered by design and NOT to be removed:
-     - CVD separation sits in the 6-8 floor band (dE 6.3 deutan, s6<->s1),
-       which is legal only with secondary encoding. Every chart therefore
-       keeps a direct label or an HTML legend. Do not ship a bare chart.
-     - Two slots fall under 3:1 on the light ground; the same visible labels
-       provide the required relief.
-   Re-run the validator after touching any --s* value. */
+   Theme resolution:
+     1. [data-theme="light"|"dark"] on <html>  — explicit choice, wins
+     2. prefers-color-scheme                    — otherwise
+
+   Two hues carry identity: --usd (cobalt) and --cad (copper). They mark a
+   BOOK wherever one is named — nav, cards, chart series — and are never used
+   for signed values, which keep --up / --down. [data-book] on <html> or on a
+   container binds --book to the right one.
+
+   The categorical ramp (--s1..--s8) is unchanged from the previous site: it
+   was built by a greedy max-min search over an OKLCH grid so every prefix
+   n=2..8 passes all-pairs CVD separation, verified on a light ground
+   (#fcfcfb) and a dark one (#0B0D10). Charts keep a direct label or an HTML
+   legend as the secondary cue. Re-run the validator after touching any
+   --s* value. */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 
   /* ground */
-  --page:       #0b0d10;
-  --surface:    #12151a;
-  --surface-2:  #171b21;
-  --raised:     #1d222a;
+  --page:       #f3f5f7;
+  --surface:    #ffffff;
+  --surface-2:  #f7f9fb;
+  --raised:     #ffffff;
 
   /* ink */
-  --ink:        #e8eaed;
-  --ink-2:      #9ba3ae;
-  --muted:      #6b7480;
+  --ink:        #12161b;
+  --ink-2:      #4b5563;
+  --muted:      #7b8591;
 
   /* structure */
-  --border:     #232830;
-  --border-2:   #2e343e;
-  --grid:       #1e232b;
-  --baseline:   #39414d;
+  --border:     #dfe4e9;
+  --border-2:   #c9d1d9;
+  --grid:       #eef1f4;
+  --baseline:   #b6bfc9;
 
-  /* one restrained accent — navigation and focus only, never data */
-  --accent:     #4d80ff;
-  --accent-dim: #2a3f7a;
+  /* focus and links only — never data */
+  --accent:     #1f4fd1;
+  --accent-dim: #dbe4fb;
 
-  /* signed values + severity. Colour is never the sole cue: a sign or an
-     icon always accompanies these. */
-  --up:         #2fbf71;
-  --down:       #ff6b5a;
-  --warn:       #d9a021;
-  --crit:       #ff6b5a;
+  /* the two books */
+  --usd:        #2457d5;
+  --usd-soft:   #e6edfc;
+  --cad:        #b0641a;
+  --cad-soft:   #f8ecdf;
+  --book:       var(--accent);
+  --book-soft:  var(--accent-dim);
 
-  /* benchmark context lines — deliberately desaturated so the portfolio
-     series reads as the subject */
-  --ctx-1:      #6b7480;
-  --ctx-2:      #444c57;
+  /* signed values + severity. Colour is never the sole cue. */
+  --up:         #1a7f4b;
+  --down:       #c2382a;
+  --warn:       #a56b00;
+  --crit:       #c2382a;
+
+  /* benchmark context lines — desaturated so the subject series reads */
+  --ctx-1:      #7b8591;
+  --ctx-2:      #b6bfc9;
 
   /* categorical — prefix-safe, see header */
   --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
   --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
 
-  /* sequential ramp: 250 = lowest, 650 = highest. Direction is inverted per
-     theme so "high value = more prominent" reads correctly on both grounds. */
-  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
-  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
+  /* sequential ramp: 250 = lowest, 650 = highest */
+  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+  --ramp-550: #2a63d6; --ramp-650: #16407f;
 
-  /* type scale — 6 steps, no half-pixels (the old sheet had 21 ad-hoc sizes) */
-  --t-xs:   10px;
-  --t-sm:   11px;
-  --t-base: 12px;
-  --t-md:   14px;
-  --t-lg:   18px;
-  --t-xl:   24px;
+  /* type scale — 8 steps */
+  --t-xs:   11px;
+  --t-sm:   12px;
+  --t-base: 13px;
+  --t-md:   15px;
+  --t-lg:   20px;
+  --t-xl:   28px;
+  --t-2xl:  40px;
 
-  --lh-tight: 1.25;
+  --lh-tight: 1.15;
   --lh-base:  1.5;
 
   --fw-normal: 400;
   --fw-med:    500;
-  --fw-bold:   600;
+  --fw-bold:   700;
+  --fw-black:  800;
 
-  /* one family for prose, one for every figure. All numerics are tabular. */
-  --font-ui:  ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-num: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  /* one humanist grotesque for prose and headings, one mono for every figure */
+  --font-ui:  "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   /* space scale — 4px base */
   --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
-  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 72px;
 
-  /* radius — 3 values, not 8 */
-  --r-sm: 3px;
-  --r-md: 5px;
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
   --r-pill: 999px;
 
-  --shadow-pop: 0 8px 28px rgba(0, 0, 0, 0.55);
+  --shadow-pop: 0 12px 32px rgba(18, 22, 27, 0.16);
 
-  --content-max: 1400px;   /* wider than the old 1060 — density needs room */
+  --content-max: 1280px;
 }
 
-/* Light ground. Same hues; the categorical ramp is unchanged because the same
-   eight values validate on both surfaces (see header). */
-:root[data-theme="light"] {
-  color-scheme: light;
+[data-book="usd"] { --book: var(--usd); --book-soft: var(--usd-soft); }
+[data-book="cad"] { --book: var(--cad); --book-soft: var(--cad-soft); }
 
-  --page:       #f7f7f5;
-  --surface:    #ffffff;
-  --surface-2:  #fbfbfa;
-  --raised:     #ffffff;
-
-  --ink:        #16181d;
-  --ink-2:      #4c525b;
-  --muted:      #7b828c;
-
-  --border:     #e2e2dd;
-  --border-2:   #d2d3cd;
-  --grid:       #ececE7;
-  --baseline:   #c3c5bf;
-
-  --accent:     #2a63d6;
-  --accent-dim: #b9ccf5;
-
-  --up:         #067647;
-  --down:       #c53727;
-  --warn:       #9a6b00;
-  --crit:       #c53727;
-
-  --ctx-1:      #7b828c;
-  --ctx-2:      #b8bcc3;
-
-  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
-  --ramp-550: #2a63d6; --ramp-650: #16407f;
-
-  --shadow-pop: 0 8px 28px rgba(0, 0, 0, 0.14);
+/* Dark ground — the OS preference, unless the viewer chose light. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page:       #0e1114;
+    --surface:    #151920;
+    --surface-2:  #1a1f27;
+    --raised:     #202630;
+    --ink:        #e8ebee;
+    --ink-2:      #a5adb8;
+    --muted:      #737d89;
+    --border:     #262c35;
+    --border-2:   #333b46;
+    --grid:       #1f252d;
+    --baseline:   #3f4854;
+    --accent:     #6e95ff;
+    --accent-dim: #24356b;
+    --usd:        #6d94ff;
+    --usd-soft:   #18244a;
+    --cad:        #e2a45c;
+    --cad-soft:   #3a2a14;
+    --up:         #35c072;
+    --down:       #ff6f5e;
+    --warn:       #d9a021;
+    --crit:       #ff6f5e;
+    --ctx-1:      #737d89;
+    --ctx-2:      #454d58;
+    --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
+    --ramp-550: #4d80ff; --ramp-650: #86a9ff;
+    --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.55);
+  }
 }
 
-/* Dark is the default ground, deliberately — this is a terminal, not a document,
-   and the spec fixes #0B0D10. Light is therefore an explicit opt-in via the
-   toggle (which writes data-theme), NOT a prefers-color-scheme fallback. A
-   light-mode OS user still lands on the dark terminal, then chooses. */
+/* Dark ground — explicit choice. Same values; the toggle must win both ways. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page:       #0e1114;
+  --surface:    #151920;
+  --surface-2:  #1a1f27;
+  --raised:     #202630;
+  --ink:        #e8ebee;
+  --ink-2:      #a5adb8;
+  --muted:      #737d89;
+  --border:     #262c35;
+  --border-2:   #333b46;
+  --grid:       #1f252d;
+  --baseline:   #3f4854;
+  --accent:     #6e95ff;
+  --accent-dim: #24356b;
+  --usd:        #6d94ff;
+  --usd-soft:   #18244a;
+  --cad:        #e2a45c;
+  --cad-soft:   #3a2a14;
+  --up:         #35c072;
+  --down:       #ff6f5e;
+  --warn:       #d9a021;
+  --crit:       #ff6f5e;
+  --ctx-1:      #737d89;
+  --ctx-2:      #454d58;
+  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
+  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.55);
+}

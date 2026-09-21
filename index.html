@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Quant Portfolio</title>
-<link rel="canonical" href="my/index.html">
-<script>location.replace("my/index.html");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview — Two Books</title>
+<meta name="description" content="Two actively managed portfolios: a USD growth book run by a quant engine and a CAD quality book run by hand.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Overview — Two Books">
+<meta property="og:description" content="Two actively managed portfolios: a USD growth book run by a quant engine and a CAD quality book run by hand.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  window.ASSET_BASE = "";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
 </head>
-<body><p><a href="my/index.html">Continue to the dashboard</a></p></body>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <header class="masthead">
+    <p class="eyebrow" style="--book:var(--ink-2)">Two actively managed portfolios · Questrade TFSAs · synced daily</p>
+    <h1>One owner, two books.</h1>
+    <p class="lede">A USD growth book run by a quant engine, and a CAD quality-and-income book run by
+       hand. Every figure on this site is relative — weights, indices, ratios — and none of it is advice.</p>
+    <p class="meta" id="home-meta"></p>
+  </header>
+  <div id="error"></div>
+
+  <section class="two-up" id="books" aria-label="The two books"></section>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Combined</h2><span class="spacer"></span><span class="note">both accounts, relative</span></div>
+    <div class="panel-b flush"><div id="combined" class="strip" style="margin:0;border:0;border-radius:0"></div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Recent activity</h2><span class="spacer"></span><span class="note" id="activity-note"></span></div>
+      <div class="panel-b flush"><div class="tbl-wrap" style="max-height:360px">
+        <table id="activity-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>The engine</h2><span class="spacer"></span><span class="note" id="engine-note"></span></div>
+      <div class="panel-b flush"><div id="engine" class="strip" style="margin:0;border:0;border-radius:0"></div></div>
+      <div class="panel-b"><div class="engine-links" id="engine-links"></div></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights and indices are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="js/home.js"></script>
+</body>
 </html>

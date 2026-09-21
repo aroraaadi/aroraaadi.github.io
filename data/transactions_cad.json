@@ -1,0 +1,6 @@
+{
+ "as_of": "2026-09-21",
+ "book": "cad",
+ "note": "Questrade activity. Sizes are percent of the book's equity at the time of the sync, not of the trade; no dollar figures are published.",
+ "rows": []
+}

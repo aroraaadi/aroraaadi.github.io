@@ -1,499 +1,653 @@
 {
-  "as_of": "2026-09-16",
-  "source": "brokerage account \u2014 allocation only (relative)",
+  "as_of": "2026-09-21",
+  "source": "brokerage accounts \u2014 allocation only (relative)",
+  "note": "Two books, one per account. Weights are within each book, of invested market value, in the book's own currency; cash_weight is cash over total equity. share_of_total is the book's share of both accounts combined. No dollar figures are published.",
+  "books": {
+    "usd": {
+      "key": "usd",
+      "label": "USD book",
+      "currency": "USD",
+      "benchmark": "S&P 500",
+      "managed_by": "model",
+      "mandate": "Growth and AI infrastructure, run by the quant engine: Black-Litterman views from the DCF book, a stress-scaled vol band, cluster caps, quarterly rebalances. Suggest-only; the owner executes.",
+      "n_positions": 13,
+      "cash_weight": 0.0027,
+      "share_of_total": 0.6967,
+      "positions": [
+        {
+          "symbol": "GE",
+          "name": "GE AEROSPACE",
+          "usd_symbol": "GE",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.1198,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0115
+        },
+        {
+          "symbol": "UBER",
+          "name": "UBER TECHNOLOGIES INC",
+          "usd_symbol": "UBER",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.1168,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": -0.0306
+        },
+        {
+          "symbol": "SHOP",
+          "name": "SHOPIFY INC",
+          "usd_symbol": "SHOP",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.1017,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": -0.11
+        },
+        {
+          "symbol": "COST",
+          "name": "COSTCO WHOLESALE CORP",
+          "usd_symbol": "COST",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.1001,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0015
+        },
+        {
+          "symbol": "BE",
+          "name": "BLOOM ENERGY CORPORATION",
+          "usd_symbol": "BE",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0936,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.3482
+        },
+        {
+          "symbol": "AVGO",
+          "name": "BROADCOM INC",
+          "usd_symbol": "AVGO",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0803,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": -0.0417
+        },
+        {
+          "symbol": "META",
+          "name": "META PLATFORMS INC",
+          "usd_symbol": "META",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0798,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0727
+        },
+        {
+          "symbol": "JPM",
+          "name": "JPMORGAN CHASE & CO.",
+          "usd_symbol": "JPM",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.059,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0056
+        },
+        {
+          "symbol": "RRX",
+          "name": "REGAL REXNORD CORPORATION",
+          "usd_symbol": "RRX",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.057,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0021
+        },
+        {
+          "symbol": "AMZN",
+          "name": "AMAZON COM INC",
+          "usd_symbol": "AMZN",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0491,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0349
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA CORP",
+          "usd_symbol": "NVDA",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0479,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0505
+        },
+        {
+          "symbol": "XNDU",
+          "name": "XANADU QUANTUM TECHNOLOGIES LTD",
+          "usd_symbol": "XNDU",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0478,
+          "stale_price": false,
+          "in_model": false,
+          "return_pct": -0.2788
+        },
+        {
+          "symbol": "GOOG",
+          "name": "ALPHABET INC",
+          "usd_symbol": "GOOG",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0472,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.0316
+        }
+      ]
+    },
+    "cad": {
+      "key": "cad",
+      "label": "CAD book",
+      "currency": "CAD",
+      "benchmark": "S&P/TSX Composite",
+      "managed_by": "discretionary",
+      "mandate": "Canadian quality and income, run by hand: the big banks, an alternative lender, a pipeline, an asset manager and an equipment dealer, held near equal weight. No model has a view on it; the engine only measures it.",
+      "n_positions": 7,
+      "cash_weight": 0.011,
+      "share_of_total": 0.3033,
+      "positions": [
+        {
+          "symbol": "BN.TO",
+          "name": "BROOKFIELD CORPORATION",
+          "usd_symbol": "BN.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1834,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.0042
+        },
+        {
+          "symbol": "EQB.TO",
+          "name": "EQB INC",
+          "usd_symbol": "EQB.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1774,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.0157
+        },
+        {
+          "symbol": "BNS.TO",
+          "name": "BANK OF NOVA SCOTIA",
+          "usd_symbol": "BNS.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1481,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.0145
+        },
+        {
+          "symbol": "RY.TO",
+          "name": "ROYAL BANK OF CANADA",
+          "usd_symbol": "RY.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1434,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.009
+        },
+        {
+          "symbol": "ENB.TO",
+          "name": "ENBRIDGE INC",
+          "usd_symbol": "ENB.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1385,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": -0.0001
+        },
+        {
+          "symbol": "SHOP.TO",
+          "name": "SHOPIFY INC",
+          "usd_symbol": "SHOP",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.1346,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.0148
+        },
+        {
+          "symbol": "TIH.TO",
+          "name": "TOROMONT INDUSTRIES LTD",
+          "usd_symbol": "TIH.TO",
+          "kind": "stock",
+          "currency": "CAD",
+          "weight": 0.0746,
+          "stale_price": false,
+          "in_model": null,
+          "return_pct": 0.0087
+        }
+      ]
+    }
+  },
   "positions": [
     {
+      "symbol": "GE",
+      "name": "GE AEROSPACE",
+      "usd_symbol": "GE",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.1198,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0115,
+      "book": "usd"
+    },
+    {
       "symbol": "UBER",
+      "name": "UBER TECHNOLOGIES INC",
       "usd_symbol": "UBER",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0883,
-      "stale_price": false
-    },
-    {
-      "symbol": "GE",
-      "usd_symbol": "GE",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0882,
-      "stale_price": false
+      "weight": 0.1168,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": -0.0306,
+      "book": "usd"
     },
     {
       "symbol": "SHOP",
+      "name": "SHOPIFY INC",
       "usd_symbol": "SHOP",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0763,
-      "stale_price": false
+      "weight": 0.1017,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": -0.11,
+      "book": "usd"
+    },
+    {
+      "symbol": "COST",
+      "name": "COSTCO WHOLESALE CORP",
+      "usd_symbol": "COST",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.1001,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0015,
+      "book": "usd"
     },
     {
       "symbol": "BE",
+      "name": "BLOOM ENERGY CORPORATION",
       "usd_symbol": "BE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.068,
-      "stale_price": false
+      "weight": 0.0936,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.3482,
+      "book": "usd"
     },
     {
       "symbol": "AVGO",
+      "name": "BROADCOM INC",
       "usd_symbol": "AVGO",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0569,
-      "stale_price": false
+      "weight": 0.0803,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": -0.0417,
+      "book": "usd"
     },
     {
       "symbol": "META",
+      "name": "META PLATFORMS INC",
       "usd_symbol": "META",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0565,
-      "stale_price": false
-    },
-    {
-      "symbol": "NRG",
-      "usd_symbol": "NRG",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0536,
-      "stale_price": false
-    },
-    {
-      "symbol": "BNS.TO",
-      "usd_symbol": "BNS.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0479,
-      "stale_price": false
-    },
-    {
-      "symbol": "ENB.TO",
-      "usd_symbol": "ENB.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0479,
-      "stale_price": false
-    },
-    {
-      "symbol": "RY.TO",
-      "usd_symbol": "RY.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0477,
-      "stale_price": false
-    },
-    {
-      "symbol": "BN.TO",
-      "usd_symbol": "BN.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0476,
-      "stale_price": false
-    },
-    {
-      "symbol": "EQB.TO",
-      "usd_symbol": "EQB.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0475,
-      "stale_price": false
-    },
-    {
-      "symbol": "SHOP.TO",
-      "usd_symbol": "SHOP",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0475,
-      "stale_price": false
+      "weight": 0.0798,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0727,
+      "book": "usd"
     },
     {
       "symbol": "JPM",
+      "name": "JPMORGAN CHASE & CO.",
       "usd_symbol": "JPM",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0439,
-      "stale_price": false
+      "weight": 0.059,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0056,
+      "book": "usd"
     },
     {
       "symbol": "RRX",
+      "name": "REGAL REXNORD CORPORATION",
       "usd_symbol": "RRX",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0423,
-      "stale_price": false
-    },
-    {
-      "symbol": "XNDU",
-      "usd_symbol": "XNDU",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0361,
-      "stale_price": false
+      "weight": 0.057,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0021,
+      "book": "usd"
     },
     {
       "symbol": "AMZN",
+      "name": "AMAZON COM INC",
       "usd_symbol": "AMZN",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0355,
-      "stale_price": false
-    },
-    {
-      "symbol": "GOOG",
-      "usd_symbol": "GOOG",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0342,
-      "stale_price": false
+      "weight": 0.0491,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0349,
+      "book": "usd"
     },
     {
       "symbol": "NVDA",
+      "name": "NVIDIA CORP",
       "usd_symbol": "NVDA",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0341,
-      "stale_price": false
+      "weight": 0.0479,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0505,
+      "book": "usd"
     },
     {
-      "symbol": "SCHG",
-      "usd_symbol": "SCHG",
-      "kind": "etf",
-      "currency": "USD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "MSFT",
-      "usd_symbol": "MSFT",
+      "symbol": "XNDU",
+      "name": "XANADU QUANTUM TECHNOLOGIES LTD",
+      "usd_symbol": "XNDU",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0,
-      "stale_price": false
+      "weight": 0.0478,
+      "stale_price": false,
+      "in_model": false,
+      "return_pct": -0.2788,
+      "book": "usd"
     },
     {
-      "symbol": "MDA",
-      "usd_symbol": "MDA",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "SPGI.TO",
-      "usd_symbol": "SPGI",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "JPM.TO",
-      "usd_symbol": "JPM",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "META.TO",
-      "usd_symbol": "META",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "AMZN.TO",
-      "usd_symbol": "AMZN",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "GOOG.TO",
+      "symbol": "GOOG",
+      "name": "ALPHABET INC",
       "usd_symbol": "GOOG",
       "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
-    },
-    {
-      "symbol": "IALT",
-      "usd_symbol": "IALT",
-      "kind": "etf",
       "currency": "USD",
-      "weight": 0.0,
-      "stale_price": false
+      "weight": 0.0472,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.0316,
+      "book": "usd"
     },
     {
-      "symbol": "GE.TO",
-      "usd_symbol": "GE",
+      "symbol": "BN.TO",
+      "name": "BROOKFIELD CORPORATION",
+      "usd_symbol": "BN.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0,
-      "stale_price": false
+      "weight": 0.1834,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.0042,
+      "book": "cad"
+    },
+    {
+      "symbol": "EQB.TO",
+      "name": "EQB INC",
+      "usd_symbol": "EQB.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.1774,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.0157,
+      "book": "cad"
+    },
+    {
+      "symbol": "BNS.TO",
+      "name": "BANK OF NOVA SCOTIA",
+      "usd_symbol": "BNS.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.1481,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.0145,
+      "book": "cad"
+    },
+    {
+      "symbol": "RY.TO",
+      "name": "ROYAL BANK OF CANADA",
+      "usd_symbol": "RY.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.1434,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.009,
+      "book": "cad"
+    },
+    {
+      "symbol": "ENB.TO",
+      "name": "ENBRIDGE INC",
+      "usd_symbol": "ENB.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.1385,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": -0.0001,
+      "book": "cad"
+    },
+    {
+      "symbol": "SHOP.TO",
+      "name": "SHOPIFY INC",
+      "usd_symbol": "SHOP",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.1346,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.0148,
+      "book": "cad"
+    },
+    {
+      "symbol": "TIH.TO",
+      "name": "TOROMONT INDUSTRIES LTD",
+      "usd_symbol": "TIH.TO",
+      "kind": "stock",
+      "currency": "CAD",
+      "weight": 0.0746,
+      "stale_price": false,
+      "in_model": null,
+      "return_pct": 0.0087,
+      "book": "cad"
     }
   ],
   "usd_positions": [
     {
-      "symbol": "SHOP",
+      "symbol": "GE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.1238,
+      "weight": 0.1198,
       "held_as": [
-        "SHOP",
-        "SHOP.TO"
+        "GE"
       ],
-      "merged": true,
-      "stale_price": false
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "UBER",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0883,
+      "weight": 0.1168,
       "held_as": [
         "UBER"
       ],
       "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
-      "symbol": "GE",
+      "symbol": "SHOP",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0882,
+      "weight": 0.1017,
       "held_as": [
-        "GE",
-        "GE.TO"
+        "SHOP"
       ],
-      "merged": true,
-      "stale_price": false
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
+    },
+    {
+      "symbol": "COST",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.1001,
+      "held_as": [
+        "COST"
+      ],
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "BE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.068,
+      "weight": 0.0936,
       "held_as": [
         "BE"
       ],
       "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "AVGO",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0569,
+      "weight": 0.0803,
       "held_as": [
         "AVGO"
       ],
       "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "META",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0565,
+      "weight": 0.0798,
       "held_as": [
-        "META",
-        "META.TO"
-      ],
-      "merged": true,
-      "stale_price": false
-    },
-    {
-      "symbol": "NRG",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0536,
-      "held_as": [
-        "NRG"
+        "META"
       ],
       "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "BNS.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0479,
-      "held_as": [
-        "BNS.TO"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "ENB.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0479,
-      "held_as": [
-        "ENB.TO"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "RY.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0477,
-      "held_as": [
-        "RY.TO"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "BN.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0476,
-      "held_as": [
-        "BN.TO"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "EQB.TO",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0475,
-      "held_as": [
-        "EQB.TO"
-      ],
-      "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "JPM",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0439,
+      "weight": 0.059,
       "held_as": [
-        "JPM",
-        "JPM.TO"
+        "JPM"
       ],
-      "merged": true,
-      "stale_price": false
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "RRX",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0423,
+      "weight": 0.057,
       "held_as": [
         "RRX"
       ],
       "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "XNDU",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0361,
-      "held_as": [
-        "XNDU"
-      ],
-      "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "AMZN",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0355,
+      "weight": 0.0491,
       "held_as": [
-        "AMZN",
-        "AMZN.TO"
+        "AMZN"
       ],
-      "merged": true,
-      "stale_price": false
-    },
-    {
-      "symbol": "GOOG",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0342,
-      "held_as": [
-        "GOOG",
-        "GOOG.TO"
-      ],
-      "merged": true,
-      "stale_price": false
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
     },
     {
       "symbol": "NVDA",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0341,
+      "weight": 0.0479,
       "held_as": [
         "NVDA"
       ],
       "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     },
     {
-      "symbol": "SCHG",
-      "kind": "etf",
-      "currency": "USD",
-      "weight": 0.0,
-      "held_as": [
-        "SCHG"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "MSFT",
+      "symbol": "XNDU",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0,
+      "weight": 0.0478,
       "held_as": [
-        "MSFT"
+        "XNDU"
       ],
       "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": false
     },
     {
-      "symbol": "MDA",
+      "symbol": "GOOG",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0,
+      "weight": 0.0472,
       "held_as": [
-        "MDA"
+        "GOOG"
       ],
       "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "SPGI",
-      "kind": "stock",
-      "currency": "CAD",
-      "weight": 0.0,
-      "held_as": [
-        "SPGI.TO"
-      ],
-      "merged": false,
-      "stale_price": false
-    },
-    {
-      "symbol": "IALT",
-      "kind": "etf",
-      "currency": "USD",
-      "weight": 0.0,
-      "held_as": [
-        "IALT"
-      ],
-      "merged": false,
-      "stale_price": false
+      "stale_price": false,
+      "in_model": true
     }
   ]
 }

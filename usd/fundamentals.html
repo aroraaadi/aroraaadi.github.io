@@ -3,28 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fundamentals — Quant Portfolio</title>
-<meta name="description" content="Reported financials for holdings and watchlist names.">
+<title>USD book fundamentals — Two Books</title>
+<meta name="description" content="Latest reported figures and TTM ratios for every holding.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Quant Portfolio">
-<meta property="og:title" content="Fundamentals — Quant Portfolio">
-<meta property="og:description" content="Reported financials for holdings and watchlist names.">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="USD book fundamentals — Two Books">
+<meta property="og:description" content="Latest reported figures and TTM ratios for every holding.">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0b0d10">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/app.css">
 <script>
   window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
   try { var t = localStorage.getItem("qp-theme");
         if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
+
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to content</a>
 <div id="shell"></div>
 
-<main id="main">
+<main id="main" data-book="usd">
+  <p class="eyebrow" style="--book:var(--usd)">USD book</p>
   <h1>Fundamentals</h1>
   <p class="sub">Latest reported annual figures with TTM ratios where available. No forecasts.</p>
 
@@ -55,7 +62,7 @@
   </div>
 </main>
 
-<footer>Personal research project, not investment advice. Weights are relative; absolute dollar values are private.</footer>
+<footer>Personal research project, not investment advice.</footer>
 
 <script type="module" src="../js/fundamentals.js"></script>
 </body>

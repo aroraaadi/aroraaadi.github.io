@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USD book — Two Books</title>
+<meta name="description" content="Allocation, positions and drift for the USD book.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="USD book — Two Books">
+<meta property="og:description" content="Allocation, positions and drift for the USD book.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main" data-book="usd">
+  <p class="eyebrow" id="book-eyebrow"></p>
+  <h1 id="book-title"></h1>
+  <p class="sub" id="book-mandate"></p>
+  <div id="error"></div>
+
+  <div id="stats" class="strip"></div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Allocation</h2><span class="spacer"></span><span class="note">every position, no residual bucket</span></div>
+      <div class="panel-b">
+        <div class="alloc-split">
+          <div class="chart" style="height:260px"><canvas id="alloc-chart"></canvas></div>
+          <div id="alloc-breakdown" class="alloc-list"></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2 id="value-title">Value since the split</h2><span class="spacer"></span><span class="note" id="value-meta"></span></div>
+      <div class="panel-b">
+        <div class="legend" id="value-legend"></div>
+        <div class="chart" style="height:220px"><canvas id="value-chart"></canvas></div>
+        <p class="note" id="value-note"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Positions</h2><span class="spacer"></span><span class="note" id="pos-count"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="pos-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2 id="drift-title">Held vs target</h2><span class="spacer"></span><span class="note" id="drift-meta"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="drift-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="drift-note"></p></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Recent activity</h2><span class="spacer"></span><a class="note" id="activity-link" href="transactions.html">full log →</a></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:320px">
+      <table id="activity-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="activity-note"></p></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights and indices are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="../js/book.js"></script>
+</body>
+</html>

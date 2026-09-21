@@ -1,34 +1,43 @@
 /* Shared application shell: nav, as-of control, theme toggle, command palette.
-   Replaces the topbar that was copy-pasted into 9 pages with hand-authored
-   class="active" (which silently went wrong whenever it was forgotten).
-   Active state is derived from location.pathname and exposed as aria-current. */
+   Active state is derived from location.pathname and exposed as aria-current.
+   Sections are the two books, the engine that runs the first of them, and the
+   notes; a book section binds data-book on <html> so --book resolves. */
 
 const SECTIONS = [
+  { id: "home", label: "Overview", root: "index.html", nav: [] },
   {
-    id: "my", label: "Portfolio", root: "my/index.html",
+    id: "usd", label: "USD book", root: "usd/index.html", book: "usd",
     nav: [
-      ["Dashboard", "my/index.html"],
-      ["Positions", "my/portfolio.html"],
-      ["Holdings", "my/holdings.html"],
-      ["Fundamentals", "my/fundamentals.html"],
-      ["Model", "my/model.html"],
-      ["Transactions", "my/transactions.html"],
-      ["Analytics", "my/analytics.html"],
+      ["Overview", "usd/index.html"],
+      ["Analytics", "usd/analytics.html"],
+      ["Fundamentals", "usd/fundamentals.html"],
+      ["Model", "usd/model.html"],
+      ["Activity", "usd/transactions.html"],
     ],
   },
   {
-    id: "research", label: "Research", root: "research/index.html",
+    id: "cad", label: "CAD book", root: "cad/index.html", book: "cad",
     nav: [
-      ["Dashboard", "research/index.html"],
-      ["Model", "research/portfolio.html"],
+      ["Overview", "cad/index.html"],
+      ["Analytics", "cad/analytics.html"],
+      ["Activity", "cad/transactions.html"],
+    ],
+  },
+  {
+    id: "research", label: "Engine", root: "research/index.html",
+    nav: [
+      ["Model book", "research/index.html"],
+      ["Target", "research/portfolio.html"],
       ["Rebalances", "research/holdings.html"],
       ["Optimizer", "research/mvo.html"],
       ["Regime", "research/regime.html"],
       ["Options", "research/options.html"],
     ],
   },
-  { id: "blog", label: "Blog", root: "blog.html", nav: [] },
+  { id: "blog", label: "Notes", root: "blog.html", nav: [] },
 ];
+
+const DIRS = new Set(["usd", "cad", "research"]);
 
 /* Pages live at two depths; window.ASSET_BASE ("" or "../") is already the
    convention for data paths, so links reuse it rather than hard-coding "../". */
@@ -39,7 +48,7 @@ function currentPath() {
   const parts = location.pathname.split("/").filter(Boolean);
   const file = parts[parts.length - 1] || "index.html";
   const dir = parts[parts.length - 2];
-  return dir === "my" || dir === "research" ? `${dir}/${file}` : file;
+  return DIRS.has(dir) ? `${dir}/${file}` : (DIRS.has(file) ? `${file}/index.html` : file);
 }
 
 function el(tag, attrs = {}, kids = []) {
@@ -56,6 +65,7 @@ function el(tag, attrs = {}, kids = []) {
 /* ---------- theme ---------- */
 
 const THEME_KEY = "qp-theme";
+const mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
 
 export function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
@@ -64,10 +74,10 @@ export function initTheme() {
   }
 }
 
-/* Dark is the default ground (see tokens.css) — the OS preference is not
-   consulted, only an explicit stored choice. */
+/* Light is the default ground; the OS preference is honoured until the
+   viewer chooses explicitly, and the choice is remembered. */
 function resolvedTheme() {
-  return document.documentElement.getAttribute("data-theme") || "dark";
+  return document.documentElement.getAttribute("data-theme") || (mq && mq.matches ? "dark" : "light");
 }
 
 function toggleTheme() {
@@ -84,6 +94,11 @@ function toggleTheme() {
 export function onThemeChange(fn) {
   window.addEventListener("themechange", fn);
 }
+if (mq) mq.addEventListener?.("change", () => {
+  if (!document.documentElement.getAttribute("data-theme")) {
+    window.dispatchEvent(new CustomEvent("themechange", { detail: { theme: resolvedTheme() } }));
+  }
+});
 
 /* ---------- command palette ---------- */
 
@@ -167,13 +182,19 @@ export function renderShell({ asOf = null, asOfLabel = "AS OF" } = {}) {
     SECTIONS.find((s) => s.nav.some(([, p]) => p === here)) ||
     SECTIONS.find((s) => s.root === here) ||
     SECTIONS[0];
+  if (section.book) document.documentElement.setAttribute("data-book", section.book);
+  document.documentElement.setAttribute("data-section", section.id);
 
+  const mark = el("span", { class: "brand-mark", "aria-hidden": "true" },
+    [el("i"), el("i"), el("i"), el("i")]);
   const r1 = el("div", { class: "shell-r1" }, [
-    el("span", { class: "brand", text: "Quant Portfolio" }),
+    el("a", { class: "brand", href: href("index.html") }, [mark, el("span", { text: "Two Books" })]),
     el("nav", { class: "shell-sections", "aria-label": "Sections" },
       SECTIONS.map((s) =>
-        el("a", { href: href(s.root), text: s.label,
-                  "aria-current": s.id === section.id ? "page" : null }))),
+        el("a", { href: href(s.root), "data-book": s.book || null,
+                  "aria-current": s.id === section.id ? "page" : null },
+           [s.book ? el("span", { class: "bk", "aria-hidden": "true" }) : null,
+            el("span", { text: s.label })]))),
     el("div", { class: "shell-right" }, [
       el("span", { class: "asof", id: "asof" }),
       el("button", { class: "icon-btn", id: "cmdk-btn", type: "button",

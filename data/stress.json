@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-16",
+ "as_of": "2026-09-18",
  "episodes": {
   "gfc_2008": {
    "label": "Lehman to the March 2009 trough",
@@ -53,11 +53,11 @@
   }
  },
  "cvar": {
-  "var_95_daily": -0.02509262491629032,
+  "var_95_daily": -0.025074462287899044,
   "cvar_95_daily": -0.036998306749994526,
   "cvar_95_annualised": -0.5873299115458075,
   "worst_day": -0.08050052465720096,
   "worst_day_date": "2025-04-04",
-  "n_days": 623
+  "n_days": 625
  }
 }

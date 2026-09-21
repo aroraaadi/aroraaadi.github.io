@@ -3,28 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Model — Quant Portfolio</title>
+<title>USD book model — Two Books</title>
 <meta name="description" content="Editable three-statement model and DCF for any ticker.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Quant Portfolio">
-<meta property="og:title" content="Model — Quant Portfolio">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="USD book model — Two Books">
 <meta property="og:description" content="Editable three-statement model and DCF for any ticker.">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0b0d10">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/app.css">
 <script>
   window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
   try { var t = localStorage.getItem("qp-theme");
         if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
 </script>
+
 </head>
 <body>
 <a class="sr-only" href="#main">Skip to content</a>
 <div id="shell"></div>
 
-<main id="main">
+<main id="main" data-book="usd">
+  <p class="eyebrow" style="--book:var(--usd)">USD book</p>
   <h1>Model</h1>
   <p class="sub">Three years of reported history, street consensus carried forward, and every other
      line driven by an assumption you can override. Statements are linked; the balance sheet ties.</p>
@@ -47,7 +54,7 @@
           <label class="pill" style="cursor:pointer">Import<input type="file" id="import" accept="application/json" hidden></label>
           <button class="pill" id="keybtn" type="button">API key</button>
         </div>
-        <p class="note" id="status">Enter a ticker to begin. The 24 portfolio and watchlist names load
+        <p class="note" id="status">Enter a ticker to begin. The portfolio and watchlist names load
            without a key; anything else needs your own FMP key.</p>
       </div>
     </div>
@@ -109,8 +116,7 @@
   </div>
 </main>
 
-<footer>Personal research project, not investment advice. Projections are assumptions, not forecasts;
-  street figures are consensus estimates and carry no guarantee.</footer>
+<footer>Personal research project, not investment advice. Projections are assumptions, not forecasts; street figures are consensus estimates and carry no guarantee.</footer>
 
 <script type="module" src="../js/model.js"></script>
 </body>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — Two Books</title>
+<meta name="description" content="Every step from universe to order: the data, the valuation, the risk model, the optimizer, the trigger, and what none of it claims.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Methodology — Two Books">
+<meta property="og:description" content="Every step from universe to order: the data, the valuation, the risk model, the optimizer, the trigger, and what none of it claims.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  window.ASSET_BASE = "";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <header class="masthead">
+    <p class="eyebrow" style="--book:var(--ink-2)">How the books are run</p>
+    <h1>Methodology</h1>
+    <p class="lede">Every step from a list of companies to an order, with the real parameter values, the
+       papers each step rests on, and — at the end — everything this does not claim. Two books:
+       one run by the engine described here, one run by hand to a rule stated in section&nbsp;9.</p>
+    <p class="meta" id="meth-meta"></p>
+  </header>
+  <div id="error"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Where the numbers on this page come from</h2><span class="spacer"></span>
+      <span class="note">live, from the last run</span></div>
+    <div class="panel-b flush"><div id="meth-live" class="strip" style="margin:0;border:0;border-radius:0"></div></div>
+    <div class="panel-b"><p class="note">Figures in this page are read from the published run, not typed in,
+      so the description cannot drift away from the system it describes.</p></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>1 · What this is</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>A long-only equity book, held in two brokerage accounts, and a set of programs that decide what
+         it should hold. Nothing here places an order. The engine produces a <em>target</em> and a list of
+         <em>suggested changes</em> with the evidence for each; a human reads them and trades.</p>
+      <p>The chain is: a hand-picked universe → a ten-year discounted cash-flow model per company →
+         implied returns → Black-Litterman views against an equilibrium prior → a shrunk covariance with
+         a forecast diagonal → a constrained optimizer → a trigger that decides whether the difference is
+         worth trading → a partial move toward it. A regime nowcast scales the risk budget, a stress test
+         applies four historical crashes to today's weights, and an options overlay is sized against the
+         held book's beta.</p>
+      <p>The system is scaled for a $100,000 book. Real dollar values are never published.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>2 · Data</h2><span class="spacer"></span><span class="note">four sources, one rule each</span></div>
+    <div class="panel-b"><div class="prose">
+      <h3>The universe</h3>
+      <p><code>universe.py</code> is one dict per company and the <code>role</code> field decides its fate:
+         <b id="n-trade">—</b> names the optimizer may hold, <b id="n-watch">—</b> on the radar (priced and
+         valued, never held), <b id="n-research">—</b> valued for research only, and two benchmarks. A name
+         added to the traded set <em>seasons</em>: it is scored but held out until it has
+         <b id="min-hist">252</b> daily bars, so a name cannot enter the book on a window too short to
+         estimate its covariance.</p>
+      <h3>Prices</h3>
+      <p>Three sources per name — the broker (IBKR), yfinance, and the vendor statement database — with
+         identical schemas. The freshest file wins, <em>provided</em> it carries a comparable span of
+         history; IBKR breaks ties because it is the execution venue. Both halves of that rule are scars.
+         The unconditional-IBKR version let 17 names serve week-old prices after a successful backfill; the
+         freshness-only version replaced 2.5 years of one name's history with a five-month stub from a
+         different listing of the same company.</p>
+      <p>A staleness gate runs before every rebalance, per name and on the aligned panel, and aborts the
+         run rather than solving on old prices. It exists because the daily price job reported success to
+         the scheduler for 35 business days while every symbol silently failed.</p>
+      <h3>Statements, macro, news</h3>
+      <p>Company financials come from a vendor API into a local database; the loader computes no
+         projections, only stores what was reported. Macro comes from FRED — 16 series back to 1990 — and
+         every series carries a <em>publication lag</em>, so a reading is only visible on a date it could
+         actually have been known. News is counted as a robust z-score against each name's own trailing
+         baseline, with a publisher cap so one syndicated release is one piece of news, and a 20-day
+         cool-off between a name appearing and any suggestion to buy it.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>3 · Valuation, and how it becomes a view</h2></div>
+    <div class="panel-b"><div class="prose">
+      <h3>The model</h3>
+      <p>Each company gets a ten-year three-statement projection: five explicit years on stated
+         assumptions, five fading to a steady state. Interest is solved to a fixed point (it depends on
+         balances that depend on it), amortisation of acquired intangibles is separated from depreciation,
+         and stock compensation is charged as a cash cost once. <strong>Every projected balance sheet
+         ties</strong> — the test suite asserts the residual is under 1e-9 of total assets — because a
+         projection that does not tie is hiding its error somewhere.</p>
+      <p>Value is the discounted free cash flow plus a value-driver terminal,
+         <code>TV = NOPAT(1 − g/RONIC)/(WACC − g)</code>, which makes growth cost capital: at a return on
+         new capital equal to the cost of capital, growth adds nothing. Ten years rather than five because
+         a five-year DCF leaves 65–85% of the value in the terminal.</p>
+      <h3>From value to an expected return</h3>
+      <p>The output that matters is not a price target. It is the <em>implied return</em>: the discount
+         rate at which the model's value equals today's price, solved by root-find. Three of them, under
+         a bear, base and bull case. That is a forward expected return an optimizer can use, and the
+         spread between bear and bull is an honest statement of how sure the model is.</p>
+      <h3>The prior</h3>
+      <p>Views need something to disagree with. The prior is the <em>equilibrium</em> return —
+         <code>π = λ Σ w<sub>cap</sub></code>, what the market's own weights imply — with risk aversion
+         set as <code>λ = β<sub>universe</sub> × ERP / var(universe)</code> rather than estimated from
+         realised means. The textbook estimator implied returns of 55–69% a year for high-beta names and
+         negative ones for low-beta names on this window: not merely imprecise, it inverted the
+         cross-section. Both β and variance are second moments and estimate far better than a mean.
+         Live: risk aversion <b id="risk-aversion">—</b> against a forward equity risk premium of
+         <b id="erp">—</b>, the one number in the system asserted rather than estimated.</p>
+      <h3>Black-Litterman</h3>
+      <p>The posterior blends prior and views by their stated precisions. Views are in excess-return units
+         to match the prior — mixing levels silently biases high-beta names — and each view's uncertainty
+         is its own bear-to-bull spread, rescaled so the views and the prior get equal say
+         (<b id="bl-conf">—</b> confidence, τ = <b id="tau">—</b>). Before that rescaling the posterior
+         correlated 0.93 with the views and 0.36 with the prior: the prior was decorative, and every
+         weakness in a DCF passed straight through. It sits at equal weight because the scorecard that
+         will measure whether these views predict has one archived run.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>4 · Risk</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Covariance is a statistical factor model, <code>Σ = B F Bᵀ + D</code>, on the trailing year of
+         daily returns, with a Ledoit–Wolf shrinkage estimate computed alongside every run as a
+         cross-check; if the two disagree on equal-weight volatility by more than 20%, the run says so.</p>
+      <p>Then the diagonal is replaced. <strong>Correlations are estimated long and volatility is
+         forecast short</strong>, because they move at different speeds: correlation structure comes from
+         the risk model, while each name's volatility comes from an EWMA forecast (λ =
+         <b id="lambda">—</b>, a half-life of about 11 days) or a GARCH(1,1) fit. Trailing one-year
+         realised volatility is still published beside the forecast — purely so the change is auditable.
+         It is never used as a fallback, because after a shock trailing vol stays elevated for a year by
+         construction, which is exactly when the difference matters.</p>
+      <p>A complexity panel reports the ratio of names to observations, the Marchenko–Pastur eigenvalue
+         edges and the realised shrinkage intensity. It is reported, never gating: the well-known result
+         that Sharpe peaks at 10–15 holdings is evidence about unshrunk covariance, not an argument for a
+         cap on holdings.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>5 · Construction</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>The optimizer maximises expected return minus a risk penalty minus a turnover penalty, long-only
+         and fully invested. The risk-aversion multiplier is not chosen — it is bisected until portfolio
+         volatility lands inside the target band, so the band is the actual risk statement and the
+         multiplier is its Lagrange multiplier.</p>
+      <h3>Concentration by construction</h3>
+      <p>Two passes. The first solves relaxed over every name; the second fixes the support that produced
+         and re-solves with a <b id="prune">2%</b> <em>lower</em> bound on every surviving name. Dust
+         becomes impossible rather than something a cleanup heuristic chases afterwards — the greedy prune
+         this replaced failed four distinct ways in a single afternoon. A cardinality floor of
+         <b id="min-pos">8</b> names is imposed convexly, and the name cap is <b id="name-cap">—</b>,
+         which is the same statement said twice: one over eight.</p>
+      <h3>Caps that see the bet, not the label</h3>
+      <p>Sector and theme budgets both apply, but the binding constraint is a <em>cluster</em> cap. A
+         review found the book 65% in one exposure — hyperscale, AI compute and internet — with every one
+         of those three inside its own 35% theme cap. A cap that only sees labels cannot see a bet that
+         spans three of them. The AI complex cap is deliberately generous at
+         <b id="ai-cap">45%</b>: it exists to stop 65%, not to forbid 45%.</p>
+      <h3>Standing instructions</h3>
+      <p>The owner overrides the model in specific, dated places: fixed weights, floors and exclusions. A
+         fixed weight is <em>a floor and a cap at the same number</em> — when only the floor half was
+         wired, one name fixed at 8.31% solved to 8.63%, and a fixed weight the optimizer may exceed is
+         not an instruction, it is a suggestion. Every override is recorded with its reason and reported
+         as an override, including the ones that raise the book's expected return.</p>
+      <h3>The risk budget moves with the regime</h3>
+      <p>The volatility band is <b id="band">—</b> normally and <b id="band-stress">—</b> when the stress
+         probability clears <b id="stress-trigger">50%</b>. It scales exposure <em>down</em> in stress and
+         never up in calm — the calm band is already the chosen risk appetite. The band's floor is a
+         target rather than a minimum appetite: because the bisection stops at the first volatility inside
+         the band, a wide band systematically under-spends the budget.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>6 · When it actually trades</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Solving a portfolio and trading a portfolio are different decisions. Before this layer existed,
+         running the script <em>was</em> the rebalance — which on the record meant three rebalances in two
+         months, twice within a day.</p>
+      <p>Four measurements on this book decide the design. Over a quarter the median largest name drifts
+         3.0% and the certainty-equivalent cost of that drift is 20bp; restoring it costs about 0.5bp at
+         zero commissions. <strong>Cost is not what limits trading — estimation noise is.</strong>
+         Re-drawing the same views within half their stated uncertainty and re-solving moves the target by
+         20.5% one-way turnover and changes three names. Noise moves the target three to six times more
+         than a quarter of drift does. So the bands are sized against noise, and the move is partial.</p>
+      <h3>Triggers</h3>
+      <p><em>Hard</em> triggers ignore the calendar entirely: the held book breaking a cap or a floor,
+         holding a name that has been excluded, or volatility above the ceiling. <em>Soft</em> triggers —
+         a name outside its band, a certainty-equivalent gain, a confirmed regime change — need
+         <b id="cadence">80</b> days since the last trade first.</p>
+      <p>A name is outside its band only if it is outside <em>both</em> an absolute
+         <b id="band-abs">2pp</b> and a relative <b id="band-rel">25%</b>: a 25% relative move on a 1%
+         position is 25bp and not worth a ticket, while a 2pp move on a 12.5% position is inside the
+         noise.</p>
+      <h3>The certainty-equivalent test</h3>
+      <p>Is the new book actually better, net of cost? Score both books on the objective the optimizer
+         maximises, using the <em>investor's</em> risk aversion. Using the optimizer's bisected multiplier
+         instead — about 31.6 — makes the risk term roughly 13,000bp against a 319bp return term, which
+         collapses the comparison into "which book has less variance" and once reported a 1,594bp loss for
+         a trade whose entire content was the vol band doing its job. The gain must clear both twice the
+         cost and a floor of <b id="ce-floor">25bp</b>, because twice-a-zero cost is trivially cleared by
+         a rounding artefact.</p>
+      <h3>The move is partial</h3>
+      <p>When it does trade, the book moves <b id="adjust">30%</b> of the way to the target, and only in
+         the names that were outside their bands. A noisy target deserves a partial response. The one
+         exception is a policy breach — a name over its cap is brought <em>inside</em> the cap, because
+         moving 30% of the way out of a breach still leaves a breach, and the hard trigger would simply
+         fire again next run.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>7 · Regime and stress</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Two layers, because they are two different kinds of claim.</p>
+      <p><strong>Layer A is estimated.</strong> A two-state Markov-switching model on twenty years of
+         weekly index returns. Nothing about it is hand-set, and it finds weekly volatility of
+         <b id="vol-calm">—</b> calm against <b id="vol-stress">—</b> stressed, with persistence around
+         0.97 and 0.92, identifying 2008, 2011, 2020 and 2022 on its own. Its probability is
+         <em>filtered</em>, not smoothed: at each date it uses only data up to that date, because smoothed
+         probabilities call the 2020 crash a week earlier than was knowable. Live reading:
+         <b id="p-stress">—</b>.</p>
+      <p><strong>Layer B is not estimated.</strong> Five narrative regimes — AI capex continues, AI
+         digestion, inflation and energy shock, disinflation and cuts, recession — scored by a hand-written
+         sheet over about a dozen conditions. It is an elicitation device, a consistent way to read
+         conditions, and that is the entire claim made for it. It carries an entropy-based confidence
+         floor, and below that floor the recommendation is explicitly to use the all-weather book rather
+         than a regime one. Any action driven by Layer B is capped at low confidence in code.</p>
+      <p>The two cannot be merged: a recession and an inflation shock both look "stressed" and are opposite
+         trades, so no amount of return data separates them.</p>
+      <h3>Stress</h3>
+      <p>A forecast covariance estimated on three calm years has never seen a crash. So today's weights are
+         applied to the realised paths of four episodes — Lehman to the March 2009 trough, the COVID
+         crash, the 2022 rate shock, and the August 2024 carry unwind — plus a daily VaR and conditional
+         VaR on the actual holdings. Names too young to have been there borrow their cluster's sector ETF,
+         and every borrowing is named in the output rather than silently substituted.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>8 · The options overlay</h2><span class="spacer"></span>
+      <span class="note">and why it is currently close to a no-op</span></div>
+    <div class="panel-b"><div class="prose">
+      <p>The volatility band de-risks by rotating equities on a quarterly cadence with a 30% partial
+         adjustment: it takes months. A 2008 or 2020 move takes weeks. The overlay exists for that gap —
+         index puts on one underlying, opened only when two of three conditions agree (stress probability,
+         an inverted volatility term structure, a 5% drawdown from the 63-day high), with hysteresis on
+         the way out so the boundary cannot whipsaw. Structure depends on where implied volatility sits in
+         its own year: a plain put when it is cheap, a put spread when it is not, because after a spike
+         the far tail is the most overpriced part of the surface.</p>
+      <p>Size comes from the held book's beta: enough delta to pull beta to <b id="hedge-beta">0.90</b>,
+         no more, so once the stressed vol band has already rotated the book lower the hedge shrinks by
+         construction.</p>
+      <p><strong>A long-put program has negative expected return.</strong> The case rests on convexity in
+         those four episodes, on paying premium mostly when stress is likely, and on a hard budget cap of
+         <b id="hedge-budget">150bp</b> of NAV a year. A synthetic backtest from 2006 — options priced off
+         the VIX term structure with a fixed skew, so it understates crash payoffs — says the conditioning
+         is worth a great deal: hedging always costs about 18% a year in calm years and turns a +775%
+         period into a loss, while the gate cuts that to about 2.4%. It also says the cap then buys most
+         of the protection back: at 150bp the program funds about <b id="hedge-funded">8%</b> of the
+         contracts its own sizing calls for, delivering roughly 0.03 of the 0.40 beta reduction it targets,
+         and its episode outcomes are within half a point of unhedged. That number is published rather
+         than buried, because it is the finding that matters.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>9 · How the CAD book is run</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Nothing above applies to it. The CAD book holds <b id="cad-n">—</b> Canadian names — the big
+         banks, an alternative lender, a pipeline, an asset manager and an equipment dealer — at
+         <strong>equal weight</strong>, rebalanced by hand when drift makes a ticket worth paying for. Its
+         target is equal weight over whatever is held, its bands are 5 percentage points on a name and 12%
+         one-way across the book, and its benchmark is the S&amp;P/TSX Composite.</p>
+      <p>No model has a view on these names: none is valued by the research stack, none is in the traded
+         universe, and the engine never proposes a trade in them. What the engine does is <em>measure</em>
+         the book — the same risk analytics, against its own benchmark. A book run by hand still deserves
+         a stated target and an honest drift number; it just does not get an optimizer. The rule lives in
+         <code>books/cad.py</code> so it can be read and tested, rather than in a chart.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>10 · What this does not claim</h2><span class="spacer"></span>
+      <span class="note">the part worth reading twice</span></div>
+    <div class="panel-b flush">
+      <div class="tbl-wrap"><table id="limits-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="panel-b"><div class="prose">
+      <p>Two claims in this system have a way to be checked, and both are still accumulating evidence: a
+         scorecard archives every run's expected returns and scores them against realised ones, and a
+         point-in-time backtest tests the computable half of the earnings screen. The second has already
+         returned a verdict — and the screen lost its veto because of it.</p>
+      <p class="note">Appendices: <a href="ADDENDUM_STATUS.md">the construction addendum's implementation
+         status</a>, item by item, including what is <em>not</em> built; and
+         <a href="REGIME_READING.md">the regime reading list</a>, organised by what each paper actually
+         licenses you to do.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Papers this rests on</h2><span class="spacer"></span>
+      <span class="note">each one load-bearing somewhere above</span></div>
+    <div class="panel-b flush">
+      <div class="tbl-wrap"><table id="papers-table"><thead><tr></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Weights and indices are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="js/methodology.js"></script>
+</body>
+</html>

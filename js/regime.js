@@ -7,15 +7,8 @@
 
 import {
   loadJSON, showError, fmtPct, fmtNum, el, renderTable,
-  slotColor, signClass,
+  slotColor, signClass, signed,
 } from "./common.js";
-
-/* common.fmtSigned is a PERCENTAGE formatter (x * 100 + "%"). Everything on
-   this page is already in its own unit — z-scores, basis points, percentage
-   points — so using it turned a z of 1.66 into "+165.80%" and 55bp into
-   "+5510% bp". This is the plain signed number. */
-const signed = (x, dp = 0) =>
-  x == null ? "—" : (x >= 0 ? "+" : "\u2212") + Math.abs(x).toFixed(dp);
 import { renderShell, setAsOf } from "./shell.js";
 
 const REGIME_LABEL = {
@@ -227,6 +220,11 @@ function renderActions(a) {
     triggers: (x.triggers || []).join(", "),
     note: x.note,
   }));
+  const actNote = document.getElementById("actions-note");
+  if (!rows.length && actNote) {
+    actNote.textContent = `Nothing suggested this run${(a.not_taken || []).length
+      ? ` — ${a.not_taken.length} candidate(s) were considered and rejected; the table below says why.` : "."}`;
+  }
   renderTable(document.getElementById("act-table"), rows, [
     { key: "type", label: "Action", fmt: (v) => el("span", { class: "pill", text: v }) },
     { key: "symbol", label: "Name", fmt: (v) => el("span", { class: "sym", text: v }) },

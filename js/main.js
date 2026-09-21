@@ -1,36 +1,41 @@
 /* Research dashboard: model performance, holdings, methodology. */
 
 import {
-  loadJSON, showError, fmtPct, fmtNum, fmtSigned, tok, slotColor, el,
+  loadJSON, showError, fmtPct, fmtNum, tok, breakdownColors, el,
   renderStats, buildLegend, renderTable, signClass,
 } from "./common.js";
 import {
-  applyChartDefaults, draw, lineConfig, liveMarker, describeCanvas,
+  applyChartDefaults, draw, lineConfig, describeCanvas,
 } from "./charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "./shell.js";
 
 let PERF = null, PORT = null, RISK = null, SIG = null;
 
-/* Prefer the live track record. Fall back to the hypothetical ONLY with an
-   explicit label and NO benchmark comparison: those figures come from holding
-   today's optimised weights over the window they are measured on, so a
-   "vs SPX" delta on them is guaranteed positive by construction rather than
-   earned. This is deliberate — do not "simplify" it into one number. */
-function renderTiles() {
-  const live = PERF.stats.portfolio_live;
-  const hypo = PERF.stats.portfolio_hypothetical || {};
-  const isLive = live != null;
-  const s = isLive ? live : hypo;
-  const spx = PERF.stats.spx || {};
+/* Tiles and chart describe ONE object: the live record.
 
-  const vs = (k, fmt) => (isLive && spx[k] != null ? { delta: `SPX ${fmt(spx[k])}` } : {});
+   They used not to. The tiles read stats.portfolio_live (49 days) while the
+   chart plotted a spliced series whose first 678 points were a fabricated
+   flat line, and the disclosure that would have said so was behind
+   `if (!isLive)` and so never rendered. Every number here now carries the
+   window it was measured on, and the period is stated next to the total. */
+function renderTiles() {
+  const s = PERF.stats.portfolio_live;
+  const spx = PERF.stats.spx || {};
+  const d = PERF.disclosure || {};
+
+  if (!s) {
+    renderStats("tiles", [
+      { label: "Live record", value: "—", delta: "no rebalances recorded yet" },
+      { label: "Positions", value: String(PORT.n_positions), delta: `model vol ${fmtPct(PORT.model_vol)}` },
+    ]);
+    return;
+  }
+  const vs = (k, fmt) => (spx[k] != null ? { delta: `S&P 500 ${fmt(spx[k])}` } : {});
+  const gap = s.total_return - (spx.total_return ?? 0);
   renderStats("tiles", [
-    { label: isLive ? "CAGR (live)" : "CAGR (hypothetical)", value: fmtPct(s.cagr),
-      tone: signClass(s.cagr),
-      ...(isLive && spx.cagr != null
-        ? { delta: `${s.cagr - spx.cagr >= 0 ? "+" : ""}${((s.cagr - spx.cagr) * 100).toFixed(1)}pp vs SPX`,
-            deltaTone: signClass(s.cagr - spx.cagr) }
-        : {}) },
+    { label: `Return, ${s.n_obs} sessions`, value: fmtPct(s.total_return, 1), tone: signClass(s.total_return),
+      delta: `${gap >= 0 ? "+" : "−"}${(Math.abs(gap) * 100).toFixed(1)}pp vs S&P 500`,
+      deltaTone: signClass(gap) },
     { label: "Volatility", value: fmtPct(s.vol),
       delta: `target ${PORT.vol_target_band.map((v) => fmtPct(v, 0)).join("–")}` },
     { label: "Sharpe", value: fmtNum(s.sharpe), ...vs("sharpe", (x) => x.toFixed(2)) },
@@ -40,36 +45,32 @@ function renderTiles() {
 
   const old = document.getElementById("hypo-note");
   if (old) old.remove();
-  if (!isLive) {
-    const d = PERF.hypothetical_disclosure || {};
-    document.getElementById("tiles").insertAdjacentElement("afterend", el("p", {
-      id: "hypo-note", class: "disclosure",
-      text: "Hypothetical — not a track record. " + (d.basis || "") +
-            ", so these figures are in-sample and are deliberately not compared to a benchmark." +
-            (d.cost_model ? " Costs: " + d.cost_model + "." : ""),
-    }));
-  }
+  document.getElementById("tiles").insertAdjacentElement("afterend", el("p", {
+    id: "hypo-note", class: "disclosure",
+    text: `${s.n_obs} sessions is far too short to judge a strategy — an annualised ` +
+          `figure from it would be noise, so none is shown. ${d.is_model_book || ""} ` +
+          `${d.cost_model ? "Costs: " + d.cost_model + "." : ""}`,
+  }));
 }
 
 function renderPerf() {
   const labels = PERF.dates;
   const series = [
-    { label: "Model", data: PERF.portfolio, color: tok("--s6"), order: 0, width: 2 },
+    { label: "Model book", data: PERF.portfolio, color: tok("--usd"), order: 0, width: 2 },
     { label: "S&P 500", data: PERF.spx, color: tok("--ctx-1"), width: 1.5 },
     { label: "Nasdaq", data: PERF.comp, color: tok("--ctx-2"), width: 1.5 },
   ];
-  buildLegend("perf-legend", series.map((s) => ({ label: s.label, color: s.color, shape: "line" })));
-  draw("perf-chart", lineConfig({
-    labels, series, yFmt: (v) => Math.round(v),
-    plugins: [liveMarker(labels, PERF.live_start)],
-  }));
+  buildLegend("perf-legend", series.map((x) => ({ label: x.label, color: x.color, shape: "line" })));
+  // No liveMarker: every point on this chart IS live, so there is no boundary
+  // to draw. It was marking a hypothetical region that no longer exists.
+  draw("perf-chart", lineConfig({ labels, series, yFmt: (v) => v.toFixed(0) }));
   describeCanvas("perf-chart",
-    `Growth of 100 from ${labels[0]} to ${labels[labels.length - 1]}. ` +
-    `Shading marks the hypothetical period before ${PERF.live_start}.`);
-  const d = PERF.hypothetical_disclosure || {};
+    `Growth of 100 over the live record, ${labels[0]} to ${labels[labels.length - 1]}, ` +
+    `against the S&P 500 and Nasdaq rebased to the same day.`);
+  const d = PERF.disclosure || {};
   document.getElementById("perf-note").textContent =
-    `Indexed to 100. Shaded region is hypothetical (${d.hypothetical_points ?? "?"} of ` +
-    `${d.total_points ?? labels.length} points); live record starts ${PERF.live_start}.`;
+    `All three series start at 100 on ${PERF.live_start}, the first recorded rebalance. ` +
+    (d.no_backtest || "");
 }
 
 function renderHoldings() {
@@ -80,12 +81,15 @@ function renderHoldings() {
     pe: h.raw?.pe,
   }));
   const order = rows.map((r) => r.ticker);
+  // breakdownColors, not slotColor: there are 15 holdings and only 8 validated
+  // hues, so slotColor painted rows 9-15 the same grey.
+  const colors = breakdownColors(rows.length);
   const sig = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(2));
   const sigCls = (k) => (r) => (r[k] > 0.5 ? "pos" : r[k] < -0.5 ? "neg" : "");
 
   renderTable(document.getElementById("holdings-table"), rows, [
     { key: "ticker", label: "Ticker", fmt: (v) => el("span", {}, [
-        el("span", { class: "dot", style: `background:${slotColor(order.indexOf(v))}` }),
+        el("span", { class: "dot", style: `background:${colors[order.indexOf(v)]}` }),
         el("span", { class: "sym", text: v })]) },
     { key: "sector", label: "Sector" },
     { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v, 2) },
@@ -97,8 +101,7 @@ function renderHoldings() {
     { key: "pe", label: "P/E", num: true, fmt: (v) => (v == null ? "—" : v.toFixed(1)) },
   ], { sortKey: "weight", dir: -1 });
 
-  const pending = PORT.pending && Object.keys(PORT.pending).length
-    ? ` ${Object.keys(PORT.pending).length} name(s) seasoning and held out.` : "";
+  const pending = PORT.pending?.length ? ` ${PORT.pending.length} name(s) seasoning and held out.` : "";
   document.getElementById("holdings-note").textContent =
     `${rows.length} positions · scores are cross-sectional z-ranks.${pending}`;
 }
@@ -114,12 +117,15 @@ function renderMethodology() {
     <h3>Risk model</h3>
     <p>${RISK ? `Statistical factor model, Σ = B F Bᵀ + D. Factors explain
        ${RISK.factors_explained_var.map((v) => fmtPct(v, 0)).join(", ")} of variance;
-       equal-weight vol ${fmtPct(RISK.eq_weight_vol)}.` : "Risk diagnostics unavailable."}</p>
+       equal-weight vol ${fmtPct(RISK.eq_weight_vol?.pca)} on the factor model,
+       ${fmtPct(RISK.eq_weight_vol?.realized)} realised.` : "Risk diagnostics unavailable."}</p>
     <h3>Construction</h3>
     <p>Long-only, fully invested, max ${fmtPct(PORT.max_weight, 0)} per name, targeting the
     ${PORT.vol_target_band.map((v) => fmtPct(v, 0)).join("–")} volatility band
     (${PORT.vol_band_met ? "met" : "not met"} this run at ${fmtPct(PORT.model_vol)};
-    long-only minimum-variance is ${fmtPct(PORT.min_var_vol)}).</p>`;
+    long-only minimum-variance is ${fmtPct(PORT.min_var_vol)}).</p>
+    <p class="note">The full chain, with the papers behind each step and what it does
+    not claim, is on the <a href="${window.ASSET_BASE || ""}methodology.html">methodology page</a>.</p>`;
 }
 
 function renderAll() {

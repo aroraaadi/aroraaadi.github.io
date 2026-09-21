@@ -1,20 +1,20 @@
 {
  "momentum": {
-  "ic": 0.04155044066056301,
+  "ic": 0.030084709506289036,
   "periods": 26,
   "snapshots": 26
  },
  "value": {
-  "ic": 0.21813725490196081,
-  "snapshots": 1
+  "ic": 0.1681990622335891,
+  "snapshots": 2
  },
  "quality": {
-  "ic": 0.1519607843137255,
-  "snapshots": 1
+  "ic": 0.12032821824381927,
+  "snapshots": 2
  },
  "short_interest": {
-  "ic": -0.16764705882352943,
-  "snapshots": 1
+  "ic": -0.08184724482678447,
+  "snapshots": 2
  },
  "fwd_days": 21,
  "weighting": "static (fallback until every signal has 6 snapshots)",
@@ -26,8 +26,8 @@
  },
  "snapshot_counts": {
   "momentum": 26,
-  "value": 1,
-  "quality": 1,
-  "short_interest": 1
+  "value": 2,
+  "quality": 2,
+  "short_interest": 2
  }
 }

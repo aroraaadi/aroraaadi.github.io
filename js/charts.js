@@ -2,7 +2,7 @@
    6 bar-tip-label plugins, 4 draw() destroy-then-recreate wrappers, 7 nearly
    identical horizontal-bar configs, and 4 copies of the date-tick callback. */
 
-import { tok, alpha, clearTokCache, fmtMonth } from "./common.js";
+import { tok, alpha, clearTokCache, fmtMonth, fmtDay } from "./common.js";
 
 const registry = new Map();
 
@@ -120,12 +120,22 @@ export function liveMarker(dates, liveStart) {
 
 /* ---------- config factories ---------- */
 
-const dateTicks = (labels) => ({
-  callback(v) { return fmtMonth(labels[v] ?? ""); },
-  maxRotation: 0,
-  autoSkip: true,
-  maxTicksLimit: 8,
-});
+/* Tick granularity follows the window. A short series labelled by month
+   repeats the same tick four times; a multi-year one labelled by day is
+   unreadable. The switch is at roughly four months. */
+const dateTicks = (labels) => {
+  const span = labels.length;
+  const byDay = span > 1 && span <= 90;
+  return {
+    callback(v) {
+      const d = labels[v] ?? "";
+      return byDay ? fmtDay(d) : fmtMonth(d);
+    },
+    maxRotation: 0,
+    autoSkip: true,
+    maxTicksLimit: 8,
+  };
+};
 
 export function lineConfig({ labels, series, yFmt = (v) => v, plugins = [] }) {
   return {

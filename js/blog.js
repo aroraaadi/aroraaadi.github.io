@@ -51,7 +51,7 @@ async function renderPost(host, slug) {
     body = raw.slice(fm[0].length);
   }
   const title = meta.title || slug;
-  document.title = `${title} — Quant Portfolio`;
+  document.title = `${title} — Two Books`;
   document.querySelector("h1").textContent = title;
   document.querySelector(".sub").textContent = meta.summary || "";
   if (meta.date) setAsOf(fmtDate(meta.date), "PUBLISHED");

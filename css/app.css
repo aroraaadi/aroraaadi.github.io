@@ -6,6 +6,12 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* The UA sheet's [hidden] rule is a bare `display:none`, which any class with
+   its own `display` beats. `.controls { display:flex }` therefore un-hid every
+   element the page had hidden by attribute — the CAD analytics page shipped a
+   "Model target" toggle that loaded the USD model's numbers. */
+[hidden] { display: none !important; }
+
 html { background: var(--page); }
 
 body {
@@ -586,6 +592,19 @@ footer {
 .cons-row:hover { background: var(--surface-2); }
 .cons-row .num { text-align: right; font-variant-numeric: tabular-nums; }
 .cons-row .pill { justify-self: end; }
+
+/* ---------- correlation heatmap (mvo) ---------- */
+
+.heatmap { display: grid; gap: 1px; width: max-content; font-size: var(--t-xs); }
+.heatmap > div {
+  display: flex; align-items: center; justify-content: center;
+  height: 30px; min-width: 30px;
+  font-family: var(--font-num); font-variant-numeric: tabular-nums;
+}
+.hm-corner { background: transparent; }
+.hm-collabel, .hm-rowlabel { color: var(--ink-2); font-weight: var(--fw-med); }
+.hm-rowlabel { justify-content: flex-end !important; padding-right: var(--sp-2); min-width: 64px; }
+.hm-cell { border-radius: 2px; }
 
 /* ---------- model grid ---------- */
 

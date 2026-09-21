@@ -44,8 +44,35 @@ export const parseDate = (iso) => new Date(iso + "T00:00:00");
 export const fmtDate = (iso) =>
   parseDate(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
 
+export const fmtDay = (iso) =>
+  parseDate(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
 export const fmtMonth = (iso) =>
   parseDate(iso).toLocaleDateString(undefined, { month: "short", year: "2-digit" });
+
+/* fmtSigned is a PERCENT formatter (it multiplies by 100). `signed` is for
+   values that are already in their display unit — points, betas, bp. Both
+   regime.js and options.js had grown a private copy of this. */
+export const signed = (x, dp = 0) =>
+  x == null ? "–" : (x >= 0 ? "+" : "\u2212") + Math.abs(x).toFixed(dp);
+
+/* One shape for an activity row, whatever wrote it. The Questrade sync emits
+   `action`; the CIBC statement ledger emits `activity`; home.js and book.js
+   read `action` raw and would have rendered a blank column for the legacy
+   file. Every activity table goes through this. */
+export const normActivity = (r) => ({
+  date: r.date,
+  activity: (r.action || r.activity || r.kind || "").toLowerCase(),
+  symbol: r.symbol || null,
+  description: r.description || "",
+  currency: r.currency || "",
+  price: r.price ?? null,
+  size_pct: r.size_pct ?? null,
+});
+
+export const ACTIVITY_PENDING =
+  "No broker activity is published yet \u2014 Questrade's activity endpoint timed out at " +
+  "the last sync. It is retried daily and the log fills in when it answers.";
 
 export const signClass = (x) => (x == null ? "" : x > 0 ? "up" : x < 0 ? "down" : "");
 

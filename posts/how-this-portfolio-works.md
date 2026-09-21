@@ -1,8 +1,16 @@
 ---
 title: How this portfolio works
 date: 2026-07-09
-summary: The signals, the risk model, and the optimizer behind the book — and what the backtest does and doesn't claim.
+summary: The signals, the risk model, and the optimizer behind the book — and what the backtest does and doesn't claim. Superseded by the methodology page.
 ---
+
+> **Superseded, 2026-09-21.** This post describes the system as it stood in July
+> 2026: eighteen names, four signals, a 12–18% volatility band, a 20% position
+> cap and a seven-name book. Almost none of that is still true — the universe,
+> the expected-return model, the risk model, the constraint set and the
+> rebalance rule have all been replaced. It is kept because a dated record of
+> what was believed is worth more than a tidy one. For how the books are
+> actually run, read the [methodology page](../methodology.html).
 
 This site tracks a concentrated, long-only equity portfolio built from a small
 universe of 18 hand-picked names. This first post documents the machinery.

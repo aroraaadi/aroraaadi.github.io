@@ -34,6 +34,7 @@ const SECTIONS = [
       ["Options", "research/options.html"],
     ],
   },
+  { id: "methodology", label: "Methodology", root: "methodology.html", nav: [] },
   { id: "blog", label: "Notes", root: "blog.html", nav: [] },
 ];
 

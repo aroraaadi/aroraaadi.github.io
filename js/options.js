@@ -1,8 +1,7 @@
 /* The options hedge page. Reads docs/data/options.json only. */
-import { loadJSON, showError, fmtPct, fmtNum, el, renderTable, signClass } from "./common.js";
+import { loadJSON, showError, fmtPct, fmtNum, el, renderTable, signClass, signed } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 
-const signed = (x, dp = 0) => (x == null ? "—" : (x >= 0 ? "+" : "\u2212") + Math.abs(x).toFixed(dp));
 const pct = (x, dp = 1) => (x == null ? "—" : fmtPct(x, dp));
 
 function stat(label, value, delta, tone) {

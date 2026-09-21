@@ -1,8 +1,8 @@
 /* Home: the two books side by side, what they have in common, what moved. */
 
 import {
-  loadJSON, showError, fmtPct, fmtNum, fmtSigned, fmtDate, signClass, tok,
-  breakdownColors, el, renderStats, renderTable,
+  loadJSON, showError, fmtPct, fmtNum, fmtSigned, fmtDate, signClass,
+  breakdownColors, el, renderStats, renderTable, normActivity, ACTIVITY_PENDING,
 } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 
@@ -89,11 +89,13 @@ function renderCombined() {
 
 function renderActivity() {
   const rows = [];
-  for (const key of BOOK_ORDER) for (const r of (TX[key]?.rows || [])) rows.push({ ...r, book: key });
+  for (const key of BOOK_ORDER) for (const r of (TX[key]?.rows || [])) rows.push({ ...normActivity(r), book: key });
   rows.sort((a, b) => b.date.localeCompare(a.date));
   const note = document.getElementById("activity-note");
   if (!rows.length) {
-    note.textContent = "No activity published yet — Questrade's activity endpoint timed out at the last sync; the log fills in when it answers.";
+    note.textContent = "none published yet";
+    document.querySelector("#activity-table").closest(".panel").querySelector(".panel-b:last-child")
+      ?.appendChild(el("p", { class: "note", text: ACTIVITY_PENDING }));
     document.querySelector("#activity-table").closest(".tbl-wrap").hidden = true;
     return;
   }
@@ -101,7 +103,7 @@ function renderActivity() {
   renderTable(document.getElementById("activity-table"), rows.slice(0, 12), [
     { key: "date", label: "Date", fmt: (v) => fmtDate(v) },
     { key: "book", label: "Book", fmt: (v) => el("span", { class: "pill book", "data-book": v, text: v.toUpperCase() }) },
-    { key: "action", label: "Action", fmt: (v) => el("span", { class: `pill ${v === "buy" ? "up" : v === "sell" ? "down" : ""}`.trim(), text: v }) },
+    { key: "activity", label: "Action", fmt: (v) => el("span", { class: `pill ${v === "buy" ? "up" : v === "sell" ? "down" : ""}`.trim(), text: v }) },
     { key: "symbol", label: "Security", fmt: (v, r) => v ? el("span", { class: "sym", text: v }) : (r.description || "—") },
     { key: "size_pct", label: "Size", num: true, fmt: (v) => (v == null ? "—" : fmtPct(v, 2)) },
   ]);
@@ -118,8 +120,12 @@ function renderEngine() {
              delta: MODEL?.vol_band_met ? "model inside band" : "model outside band" } : null,
     MODEL ? { label: "Model vol", value: fmtPct(MODEL.model_vol, 1), delta: `${MODEL.n_positions} target names` } : null,
     MODEL?.active_share != null ? { label: "Active share", value: fmtPct(MODEL.active_share, 0), delta: "vs equilibrium" } : null,
-    DECISION?.decision ? { label: "Decision", value: String(DECISION.decision).toUpperCase(),
-                           delta: DECISION.as_of || "" } : null,
+    // decision.json carries `trade` (a boolean) and `reasons`, not a `decision`
+    // string — this tile silently never rendered.
+    DECISION ? { label: "Rebalance trigger", value: DECISION.trade ? "TRADE" : "HOLD",
+                 tone: DECISION.trade ? "down" : "up",
+                 delta: (DECISION.reasons || [])[0] || (DECISION.blocked_by || [])[0] ||
+                        `${DECISION.days_since ?? "?"} days since the last` } : null,
   ].filter(Boolean);
   renderStats("engine", defs.length ? defs : [{ label: "Engine", value: "—", delta: "no published state" }]);
   document.getElementById("engine-note").textContent = "suggest-only; runs the USD book";

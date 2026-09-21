@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model portfolio revisions — Two Books</title>
+<meta name="description" content="Candidate model books solved under different policies, side by side.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Model portfolio revisions — Two Books">
+<meta property="og:description" content="Candidate model books solved under different policies, side by side.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <p class="eyebrow">Engine · candidate books</p>
+  <h1>Model portfolio revisions</h1>
+  <p class="sub">What the book would look like under a different policy. Every revision below is
+     solved by the same optimizer, risk model and constraint code as the live book — exactly one
+     thing varies per revision, and the table says which. Expected returns are inputs, not
+     outcomes.</p>
+  <div id="error"></div>
+
+  <div id="headline" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>The revisions</h2><span class="spacer"></span>
+      <span class="note">one variation each, same machinery</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="rev-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Return against risk</h2></div>
+      <div class="panel-b">
+        <div class="chart" style="height:300px"><canvas id="rev-chart"></canvas></div>
+        <p class="note" id="rev-chart-note"></p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>The candidates</h2><span class="spacer"></span>
+        <span class="note">from the deep-value screen</span></div>
+      <div class="panel-b flush"><div class="tbl-wrap"><table id="cand-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note" id="cand-note"></p>
+        <p class="note" id="cand-heldout"></p></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Every weight, every revision</h2><span class="spacer"></span>
+      <span class="note">so a book can be read, not inferred from its summary</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="w-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>How to read this</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>These are not forecasts and they are not recommendations. Each revision is the portfolio a
+         mean-variance optimizer chooses given a set of expected returns, a covariance estimated on
+         three years of daily data, and a stated constraint set. Change any of those three and the
+         answer changes.</p>
+      <p>The candidates' expected returns are the weakest input on the page. They are not discounted
+         cash flows — the screen that produced these names deliberately does not project. Each view
+         is the company's normalised equity earnings yield: this year's revenue at its own five-year
+         median EBIT margin, less interest, taxed, over market capitalisation. That is a no-growth
+         perpetuity return, and it assumes a margin returns to a median that nothing guarantees. The
+         <b>Views halved</b> revision exists precisely because that assumption deserves a stress
+         test: if a satellite still earns its place with every candidate view cut in half, it is a
+         position; if it does not, it was a forecast.</p>
+      <p>Volatility is the other thing to watch. These candidates carry two to three times the
+         book's volatility, so a mean-variance optimizer inside a 19–22% band can only fund them by
+         selling something safer. That is why the revision with a wider band is on the page: it
+         separates "is this name worth owning" from "is there room for it".</p>
+    </div></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Expected returns are inputs, not outcomes; no revision here has been traded.</footer>
+
+<script type="module" src="../js/revisions.js"></script>
+</body>
+</html>

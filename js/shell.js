@@ -32,6 +32,7 @@ const SECTIONS = [
       ["Optimizer", "research/mvo.html"],
       ["Regime", "research/regime.html"],
       ["Options", "research/options.html"],
+      ["Revisions", "research/revisions.html"],
     ],
   },
   { id: "methodology", label: "Methodology", root: "methodology.html", nav: [] },

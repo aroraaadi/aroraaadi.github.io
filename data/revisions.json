@@ -1,0 +1,373 @@
+{
+ "as_of": "2026-09-21",
+ "candidates": {
+  "KSS": {
+   "normalised_ebit": 624000000.0,
+   "interest": 288000000.0,
+   "market_cap": 2007747000.0,
+   "cash_cover": 6.125,
+   "verdict": "levered cyclical",
+   "why": "0.5x tangible book on owned real estate, 6.1x cash cover, margin already at its own median",
+   "view": 0.12551382220967083,
+   "vol": 0.7244915953434107,
+   "corr_to_book": null
+  },
+  "WS": {
+   "normalised_ebit": 172785620.53470403,
+   "interest": 26900000.0,
+   "market_cap": 1694025655.0,
+   "cash_cover": 8.479553903345725,
+   "verdict": "sound \u00b7 fairly priced",
+   "why": "steel processing at 3.5pp below its own median margin, 8.5x cash cover, 1.4x leverage",
+   "view": 0.064588287124275,
+   "vol": 0.530862612340873,
+   "corr_to_book": null
+  },
+  "DXC": {
+   "normalised_ebit": 353000000.0,
+   "interest": 216000000.0,
+   "market_cap": 1786934900.0,
+   "cash_cover": 6.777777777777778,
+   "verdict": "sound \u00b7 fairly priced",
+   "why": "22% of the share count retired in three years out of real cash flow, 6.8x cover",
+   "view": 0.05750069574442807,
+   "vol": 0.4781455760298344,
+   "corr_to_book": null
+  },
+  "QNST": {
+   "normalised_ebit": -10439058.070877977,
+   "interest": 4393000.0,
+   "market_cap": 1009315151.0,
+   "cash_cover": 30.803323469155476,
+   "verdict": "sound \u00b7 fairly priced",
+   "why": "net cash, 30.8x cash cover, revenue compounding 31% over three years",
+   "view": -0.0110213777551413,
+   "vol": 0.5144483005328847,
+   "corr_to_book": null
+  },
+  "CNXC": {
+   "normalised_ebit": 841380391.2448385,
+   "interest": 290349000.0,
+   "market_cap": 1653345755.0,
+   "cash_cover": 3.779300083692384,
+   "verdict": "levered cyclical \u00b7 cyclically cheap",
+   "why": "7.9x a normal year and a 34% free-cash-flow yield, against negative tangible equity",
+   "view": 0.2499619587638091,
+   "vol": 0.5763610294704156,
+   "corr_to_book": null
+  },
+  "GOLD": {
+   "normalised_ebit": 250269253.03310975,
+   "interest": 61110000.0,
+   "market_cap": 1290952782.0,
+   "cash_cover": 22.128358697430862,
+   "verdict": "sound \u00b7 cyclically cheap",
+   "why": "net cash, 22x cash cover; a bullion trader, so the cash flow is inventory, not earnings",
+   "view": 0.1098951423730944,
+   "vol": 0.47473196866870115,
+   "corr_to_book": null
+  }
+ },
+ "held_out": [],
+ "view_basis": "normalised equity earnings yield: (this year's revenue at the company's own five-year median EBIT margin, less interest) x (1 - 25% tax) / market cap. A no-growth perpetuity return, with view uncertainty set wide.",
+ "revisions": [
+  {
+   "key": "live",
+   "label": "As run today",
+   "change": "The live policy: 19\u201322% vol band, 12.5% name cap, no deep-value names.",
+   "satellite": 0.0,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.125,
+   "use_candidates": false,
+   "ok": true,
+   "n_positions": 14,
+   "vol": 0.19360188498267172,
+   "expected_return": 0.086867089224886,
+   "sharpe": 0.19920823202903176,
+   "satellite_weight": 0.0,
+   "satellite_names": {},
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.2532,
+    "power_energy": 0.1968,
+    "financials": 0.1
+   },
+   "active_share": 0.6248797521433471,
+   "weights": {
+    "GE": 0.125,
+    "UBER": 0.125,
+    "NVDA": 0.092,
+    "AVGO": 0.0831,
+    "NRG": 0.0795,
+    "TKR": 0.0682,
+    "EQT": 0.0669,
+    "SPGI": 0.0655,
+    "RRX": 0.06,
+    "BE": 0.0504,
+    "GOOG": 0.05,
+    "AMZN": 0.05,
+    "META": 0.05,
+    "JPM": 0.0345
+   }
+  },
+  {
+   "key": "sat5",
+   "label": "5% deep-value satellite",
+   "change": "The same book, with the screen's candidates allowed a combined 5%.",
+   "satellite": 0.05,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.125,
+   "use_candidates": true,
+   "ok": true,
+   "n_positions": 15,
+   "vol": 0.19540422863192258,
+   "expected_return": 0.09596466910506743,
+   "sharpe": 0.24392854463171323,
+   "satellite_weight": 0.05000607817894093,
+   "satellite_names": {
+    "CNXC": 0.05000607817894093
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.224,
+    "power_energy": 0.176,
+    "financials": 0.1
+   },
+   "active_share": 0.6219970684129598,
+   "weights": {
+    "GE": 0.125,
+    "UBER": 0.125,
+    "NVDA": 0.092,
+    "AVGO": 0.0831,
+    "NRG": 0.0798,
+    "JPM": 0.0669,
+    "RRX": 0.06,
+    "BE": 0.0541,
+    "CNXC": 0.05,
+    "GOOG": 0.05,
+    "META": 0.05,
+    "AMZN": 0.05,
+    "EQT": 0.0421,
+    "TKR": 0.039,
+    "SPGI": 0.0331
+   }
+  },
+  {
+   "key": "sat10",
+   "label": "10% deep-value satellite",
+   "change": "The satellite doubled to 10% combined. Nothing else moves.",
+   "satellite": 0.1,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.125,
+   "use_candidates": true,
+   "ok": true,
+   "n_positions": 11,
+   "vol": 0.19836377868729446,
+   "expected_return": 0.10327647329162784,
+   "sharpe": 0.2771497581637326,
+   "satellite_weight": 0.09999962107874283,
+   "satellite_names": {
+    "CNXC": 0.09999962107874283
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.185,
+    "power_energy": 0.165,
+    "financials": 0.1
+   },
+   "active_share": 0.6283852965346968,
+   "weights": {
+    "GOOG": 0.125,
+    "UBER": 0.125,
+    "NRG": 0.125,
+    "GE": 0.125,
+    "CNXC": 0.1,
+    "JPM": 0.1,
+    "AVGO": 0.0831,
+    "AMZN": 0.0669,
+    "RRX": 0.06,
+    "META": 0.05,
+    "BE": 0.04
+   }
+  },
+  {
+   "key": "sat15wide",
+   "label": "15% satellite, wider risk budget",
+   "change": "15% satellite AND the vol ceiling raised to 25%, so the optimizer is allowed to spend risk on them rather than being forced to fund them by selling something safer.",
+   "satellite": 0.15,
+   "band": [
+    0.21,
+    0.25
+   ],
+   "cap": 0.125,
+   "use_candidates": true,
+   "ok": true,
+   "n_positions": 13,
+   "vol": 0.23380853382798075,
+   "expected_return": 0.11247768354499652,
+   "sharpe": 0.2744881997857861,
+   "satellite_weight": 0.15003809438517693,
+   "satellite_names": {
+    "KSS": 0.02502705798764011,
+    "CNXC": 0.12501103639753683
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.4376,
+    "real_economy": 0.185,
+    "power_energy": 0.2073,
+    "financials": 0.02
+   },
+   "active_share": 0.6580970451398765,
+   "weights": {
+    "UBER": 0.125,
+    "GE": 0.125,
+    "CNXC": 0.125,
+    "NRG": 0.1198,
+    "BE": 0.0875,
+    "AVGO": 0.0831,
+    "NVDA": 0.0794,
+    "RRX": 0.06,
+    "GOOG": 0.05,
+    "META": 0.05,
+    "AMZN": 0.05,
+    "KSS": 0.025,
+    "JPM": 0.02
+   }
+  },
+  {
+   "key": "uncapped",
+   "label": "No satellite cap",
+   "change": "The candidates compete with everything else on their own merits, under the same 12.5% name cap as any other holding.",
+   "satellite": null,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.125,
+   "use_candidates": true,
+   "ok": true,
+   "n_positions": 12,
+   "vol": 0.19071270007201793,
+   "expected_return": 0.1078728014575643,
+   "sharpe": 0.31236934632600816,
+   "satellite_weight": 0.20997334637585935,
+   "satellite_names": {
+    "KSS": 0.0903862264138031,
+    "CNXC": 0.11958711996205625
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.185,
+    "power_energy": 0.155,
+    "financials": 0.0
+   },
+   "active_share": 0.6403320482598612,
+   "weights": {
+    "EQT": 0.125,
+    "GE": 0.125,
+    "GOOG": 0.125,
+    "CNXC": 0.1196,
+    "UBER": 0.1,
+    "KSS": 0.0904,
+    "AVGO": 0.0831,
+    "AMZN": 0.0647,
+    "RRX": 0.06,
+    "META": 0.05,
+    "BE": 0.03,
+    "NVDA": 0.0272
+   }
+  },
+  {
+   "key": "haircut",
+   "label": "Views halved",
+   "change": "The uncapped book, but every candidate's view cut in half \u2014 because the whole satellite case rests on margins returning to a five-year median that no statement guarantees. If the answer survives this, it is a position; if it does not, it was a forecast.",
+   "satellite": null,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.125,
+   "use_candidates": true,
+   "view_haircut": 0.5,
+   "ok": true,
+   "n_positions": 11,
+   "vol": 0.194680945992076,
+   "expected_return": 0.09399426192323912,
+   "sharpe": 0.2347135806762465,
+   "satellite_weight": 0.12300100069342566,
+   "satellite_names": {
+    "CNXC": 0.12300100069342566
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.185,
+    "power_energy": 0.142,
+    "financials": 0.1
+   },
+   "active_share": 0.6253146668849195,
+   "weights": {
+    "GE": 0.125,
+    "GOOG": 0.125,
+    "CNXC": 0.123,
+    "NRG": 0.122,
+    "UBER": 0.1219,
+    "JPM": 0.1,
+    "AVGO": 0.0831,
+    "AMZN": 0.07,
+    "RRX": 0.06,
+    "META": 0.05,
+    "BE": 0.02
+   }
+  },
+  {
+   "key": "concentrated",
+   "label": "20% names, 10% satellite",
+   "change": "A more concentrated book \u2014 the name cap raised to 20% \u2014 with a 10% satellite, to see whether the candidates survive when the winners are allowed to be bigger.",
+   "satellite": 0.1,
+   "band": [
+    0.19,
+    0.22
+   ],
+   "cap": 0.2,
+   "use_candidates": true,
+   "ok": true,
+   "n_positions": 11,
+   "vol": 0.19836377868729446,
+   "expected_return": 0.10327647329162784,
+   "sharpe": 0.2771497581637326,
+   "satellite_weight": 0.09999962107874283,
+   "satellite_names": {
+    "CNXC": 0.09999962107874283
+   },
+   "cluster_exposure": {
+    "ai_complex": 0.45,
+    "real_economy": 0.185,
+    "power_energy": 0.165,
+    "financials": 0.1
+   },
+   "active_share": 0.6283852965346968,
+   "weights": {
+    "GOOG": 0.125,
+    "UBER": 0.125,
+    "NRG": 0.125,
+    "GE": 0.125,
+    "CNXC": 0.1,
+    "JPM": 0.1,
+    "AVGO": 0.0831,
+    "AMZN": 0.0669,
+    "RRX": 0.06,
+    "META": 0.05,
+    "BE": 0.04
+   }
+  }
+ ]
+}

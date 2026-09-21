@@ -33,6 +33,7 @@ const SECTIONS = [
       ["Regime", "research/regime.html"],
       ["Options", "research/options.html"],
       ["Revisions", "research/revisions.html"],
+      ["Small caps", "research/smallcap.html"],
     ],
   },
   { id: "methodology", label: "Methodology", root: "methodology.html", nav: [] },

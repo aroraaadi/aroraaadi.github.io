@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small-cap screen — Two Books</title>
+<meta name="description" content="Five tests over every US-listed company between $300m and $3bn, each one computable.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Small-cap screen — Two Books">
+<meta property="og:description" content="Five tests over every US-listed company between $300m and $3bn, each one computable.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <p class="eyebrow">Engine · market-wide screen</p>
+  <h1>Small-cap screen</h1>
+  <p class="sub">Five tests over every US-listed company between $300m and $3bn, each test replaced
+     by something a filing can settle. The composite is a stated weighted average of five 0–1
+     pillar scores, and every pillar is shown beside it — a rank you cannot decompose is a rank
+     you cannot argue with.</p>
+  <div id="error"></div>
+
+  <div id="headline" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>The five pillars</h2><span class="spacer"></span>
+      <span class="note">weight · what it measures</span></div>
+    <div class="panel-b"><div id="pillars"></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Top twenty</h2><span class="spacer"></span>
+      <span class="note">by composite score</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="top-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Score against size</h2><span class="spacer"></span>
+      <span class="note">the screen is looking for quality that is still small — top left</span></div>
+    <div class="panel-b"><div class="chart" style="height:340px"><canvas id="sc-chart"></canvas></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Everything scored</h2><span class="spacer"></span>
+      <span class="note" id="all-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:70vh"><table id="all-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>What this screen cannot do</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>The framework it implements asks first for a <em>paradigm shift</em> — a company that is
+         the new thing rather than a division of something older. No filing states that. What a
+         paradigm shift looks like in the numbers is pricing power in a niche the company owns, so
+         the pure-play pillar scores gross margin and whether thematic ETF baskets treat the name as
+         a pure play on something. That is a proxy and it will miss a genuinely new business with
+         thin early margins.</p>
+      <p>The second test asks for a <em>huge, quantifiable market</em>. Addressable market is not in
+         any statement and every management overstates it, so this scores the computable half: a
+         revenue base small enough that the growth rate still means something. A company adding 25%
+         on $300m has somewhere to go; the same rate on $9bn is a different claim.</p>
+      <p>The third asks for names <em>institutions have not found</em>. Institutional ownership is a
+         premium data field on this plan, so the screen uses analyst coverage count instead — which
+         is arguably the better proxy, since funds follow sell-side coverage. Zero analysts is
+         scored below two, deliberately: a name nobody covers may be uncoverable.</p>
+      <p>Financials and real estate are excluded rather than scored. Their balance sheets do not
+         mean what the growth-and-value pillar assumes — leverage <em>is</em> the business — so a
+         net-cash test would rank every bank last for the wrong reason.</p>
+      <p>And the obvious one: a high score is a statement about reported history and today's price.
+         It is not a forecast, it has no view on management, competition, or what the company said
+         on its last call, and nothing here has been bought.</p>
+    </div></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. A score is a statement about reported history and today's price, not a forecast.</footer>
+
+<script type="module" src="../js/smallcap.js"></script>
+</body>
+</html>

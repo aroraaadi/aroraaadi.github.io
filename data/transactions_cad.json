@@ -1,8 +1,48 @@
 {
- "as_of": "2026-09-21",
+ "as_of": "2026-09-22",
  "book": "cad",
  "note": "Questrade activity. Sizes are percent of the book's equity at the time of the sync, not of the trade; no dollar figures are published.",
  "rows": [
+  {
+   "date": "2026-09-21",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "RY.TO",
+   "description": "ROYAL BANK OF CANADA",
+   "currency": "CAD",
+   "price": 288.05,
+   "size_pct": 0.0358
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "BN.TO",
+   "description": "BROOKFIELD CORP VTG SHS CL A",
+   "currency": "CAD",
+   "price": 53.01,
+   "size_pct": 0.0358
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "TIH.TO",
+   "description": "TOROMONT INDUSTRIES LTD",
+   "currency": "CAD",
+   "price": 206.41,
+   "size_pct": 0.0715
+  },
+  {
+   "date": "2026-09-21",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "EQB.TO",
+   "description": "EQB INC COM",
+   "currency": "CAD",
+   "price": 125.41,
+   "size_pct": 0.0358
+  },
   {
    "date": "2026-09-18",
    "kind": "transfer",
@@ -31,7 +71,7 @@
    "description": "146.16 TRANSFER FROM 5350105416",
    "currency": "CAD",
    "price": null,
-   "size_pct": 0.1915
+   "size_pct": 0.1895
   },
   {
    "date": "2026-09-18",

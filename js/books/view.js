@@ -16,7 +16,7 @@ import {
   normActivity, ACTIVITY_PENDING,
 } from "../common.js";
 import {
-  applyChartDefaults, draw, lineConfig, doughnutConfig, describeCanvas, crosshair,
+  applyChartDefaults, draw, lineConfig, doughnutConfig, describeCanvas,
 } from "../charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "../shell.js";
 

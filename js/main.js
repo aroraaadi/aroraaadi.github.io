@@ -8,6 +8,7 @@ import {
   applyChartDefaults, draw, lineConfig, describeCanvas,
 } from "./charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "./shell.js";
+import { ticker, timeframes, crosshair } from "./terminal.js";
 
 let PERF = null, PORT = null, RISK = null, SIG = null;
 
@@ -53,23 +54,69 @@ function renderTiles() {
   }));
 }
 
+// Trading-day counts, so a window means the same thing on a chart of daily
+// closes whatever the calendar did. "ALL" is the whole live record, which on a
+// short record is every other option as well — the chips still render so the
+// control does not appear and disappear as history accumulates.
+const PERF_WINDOWS = [["1M", 21], ["3M", 63], ["6M", 126], ["1Y", 252], ["ALL", null]];
+let perfWindow = "ALL";
+
 function renderPerf() {
-  const labels = PERF.dates;
+  const host = document.getElementById("perf-chips");
+  if (host) timeframes(host, PERF_WINDOWS.map(([k]) => [k, k]), perfWindow, (k) => {
+    perfWindow = k;
+    drawPerf();
+  });
+  drawPerf();
+}
+
+function drawPerf() {
+  const n = (PERF_WINDOWS.find(([k]) => k === perfWindow) || [])[1];
+  const from = n == null ? 0 : Math.max(0, PERF.dates.length - n);
+  const labels = PERF.dates.slice(from);
+  // Each series is rebased to the start of the window it is shown over.
+  // Without this a "3M" view still starts at whatever the whole-record index
+  // happened to be, and the reader compares two lines that begin apart for a
+  // reason that has nothing to do with the window they asked for.
+  const rebase = (arr) => {
+    const slice = (arr || []).slice(from);
+    const base = slice.find((v) => v != null);
+    return base ? slice.map((v) => (v == null ? null : (v / base) * 100)) : slice;
+  };
   const series = [
-    { label: "Model book", data: PERF.portfolio, color: tok("--usd"), order: 0, width: 2 },
-    { label: "S&P 500", data: PERF.spx, color: tok("--ctx-1"), width: 1.5 },
-    { label: "Nasdaq", data: PERF.comp, color: tok("--ctx-2"), width: 1.5 },
+    { label: "Model book", data: rebase(PERF.portfolio), color: tok("--usd"), order: 0, width: 2 },
+    { label: "S&P 500", data: rebase(PERF.spx), color: tok("--ctx-1"), width: 1.5 },
+    { label: "Nasdaq", data: rebase(PERF.comp), color: tok("--ctx-2"), width: 1.5 },
   ];
   buildLegend("perf-legend", series.map((x) => ({ label: x.label, color: x.color, shape: "line" })));
   // No liveMarker: every point on this chart IS live, so there is no boundary
   // to draw. It was marking a hypothetical region that no longer exists.
-  draw("perf-chart", lineConfig({ labels, series, yFmt: (v) => v.toFixed(0) }));
+  const chart = draw("perf-chart", lineConfig({ labels, series, yFmt: (v) => v.toFixed(0) }));
+  crosshair(document.getElementById("perf-chart"), chart, (v) => v.toFixed(1));
+
+  const model = series[0].data;
+  const move = model.length > 1 && model[0] ? model[model.length - 1] / model[0] - 1 : null;
+  ticker(document.getElementById("perf-ticker"), {
+    symbol: "MODEL BOOK",
+    name: `growth of 100 · ${labels[0]} → ${labels[labels.length - 1]}`,
+    value: model[model.length - 1],
+    valueFmt: (v) => fmtNum(v, 1),
+    change: move,
+    meta: [
+      ["Window", perfWindow],
+      ["Sessions", String(labels.length)],
+      ["Live from", PERF.live_start],
+    ],
+  });
+
   describeCanvas("perf-chart",
-    `Growth of 100 over the live record, ${labels[0]} to ${labels[labels.length - 1]}, ` +
+    `Growth of 100 over the ${perfWindow === "ALL" ? "live record" : "last " + perfWindow}, ` +
+    `${labels[0]} to ${labels[labels.length - 1]}, ` +
     `against the S&P 500 and Nasdaq rebased to the same day.`);
   const d = PERF.disclosure || {};
   document.getElementById("perf-note").textContent =
-    `All three series start at 100 on ${PERF.live_start}, the first recorded rebalance. ` +
+    `Each series is rebased to 100 at the start of the window shown. ` +
+    `The live record begins ${PERF.live_start}, the first recorded rebalance. ` +
     (d.no_backtest || "");
 }
 

@@ -9,6 +9,7 @@
    in six places, which is how the CAD book ended up with a "Model target"
    toggle that loaded the USD model's numbers. */
 
+import { ticker, crosshair, sparkline } from "../terminal.js";
 import {
   loadJSON, showError, fmtPct, fmtNum, fmtSigned, fmtDate, signClass,
   tok, alpha, slotColor, breakdownColors, el, renderStats, buildLegend, renderTable,
@@ -83,11 +84,28 @@ export async function overview(spec) {
       return;
     }
     const labels = pts.map((p) => p.date);
-    const series = [{ label: B.label, data: pts.map((p) => p.value_index), color: tok(`--${spec.key}`) }];
+    const idx = pts.map((p) => p.value_index);
+    const series = [{ label: B.label, data: idx, color: tok(`--${spec.key}`) }];
     buildLegend("value-legend", series.map((x) => ({ label: x.label, color: x.color, shape: "line" })));
-    draw("value-chart", lineConfig({ labels, series, yFmt: (x) => x.toFixed(1) }));
+    const chart = draw("value-chart", lineConfig({ labels, series, yFmt: (x) => x.toFixed(1) }));
+    crosshair(document.getElementById("value-chart"), chart, (v) => v.toFixed(2));
     describeCanvas("value-chart", `${B.label} value index, ${pts.length} daily points since ${pts[0].date}.`);
     const last = pts[pts.length - 1];
+    //: The quote header. A book is read the way a symbol is read: what it is,
+    //: where it stands, how far it has moved — before any of the panels below.
+    ticker(document.getElementById("book-ticker"), {
+      symbol: spec.key.toUpperCase(),
+      name: B.label,
+      value: last.value_index,
+      valueFmt: (v) => fmtNum(v, 2),
+      change: last.value_index / 100 - 1,
+      meta: [
+        ["Since", fmtDate(pts[0].date)],
+        ["Points", String(pts.length)],
+        ["Benchmark", (MET && MET.benchmark) || "—"],
+        ["Names", String(Object.keys(B.target || {}).length)],
+      ],
+    });
     meta.textContent = `${fmtSigned(last.value_index / 100 - 1)} since ${fmtDate(pts[0].date)}`;
     note.textContent = "Equity in the book's own currency, indexed to 100 at the split. Contributions move " +
       "it too; a time-weighted line follows once the activity log fills in.";

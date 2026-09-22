@@ -1,74 +1,95 @@
-/* Design tokens — a factsheet, not a terminal.
+/* Design tokens — a terminal now, not a factsheet.
    ------------------------------------------------------------------
-   Redesigned 2026-09-21 for two books. Light is the default ground; dark
-   follows the OS unless the viewer has chosen explicitly (shell.js stamps
-   data-theme from localStorage before first paint).
+   Redesigned 2026-09-21 for two books; re-grounded 2026-09-22 dark-first,
+   after the owner asked for a TradingView-inspired treatment.
 
-   Theme resolution:
+   What changed and why:
+
+   DARK IS THE DEFAULT. The previous build opened light and treated dark as
+   the OS preference. A price screen is read for long stretches against a dark
+   ground, and every reference terminal — TradingView, Bloomberg, the broker
+   platforms — is dark first. Light is still a first-class theme, not an
+   afterthought: it is defined in full, and the toggle wins in both directions.
+
+   THE GROUND IS TRADINGVIEW'S. #131722 page over #1e222d panels, #2a2e39
+   hairlines. Those are deliberately close to the reference because the point
+   of the exercise is that the page should feel like the tool the owner
+   already reads prices in.
+
+   SIGNED VALUES USE THEIR TONES. Up is #26a69a, a teal-green rather than a
+   pure green; down is #ef5350. Teal reads as "up" without vibrating against
+   the ground the way a saturated green does, and the pair separates under the
+   common colour-vision deficiencies better than green/red does. Colour is
+   still never the only cue: every signed figure carries a sign or an arrow.
+
+   Theme resolution, unchanged in shape:
      1. [data-theme="light"|"dark"] on <html>  — explicit choice, wins
      2. prefers-color-scheme                    — otherwise
+     3. bare :root                              — dark
 
    Two hues carry identity: --usd (cobalt) and --cad (copper). They mark a
    BOOK wherever one is named — nav, cards, chart series — and are never used
-   for signed values, which keep --up / --down. [data-book] on <html> or on a
-   container binds --book to the right one.
+   for signed values. [data-book] on <html> or a container binds --book.
 
-   The categorical ramp (--s1..--s8) is unchanged from the previous site: it
-   was built by a greedy max-min search over an OKLCH grid so every prefix
-   n=2..8 passes all-pairs CVD separation, verified on a light ground
-   (#fcfcfb) and a dark one (#0B0D10). Charts keep a direct label or an HTML
-   legend as the secondary cue. Re-run the validator after touching any
-   --s* value. */
+   The categorical ramp (--s1..--s8) is carried over unchanged. It was built
+   by a greedy max-min search over an OKLCH grid so every prefix n=2..8 passes
+   all-pairs CVD separation, verified on a light ground (#fcfcfb) and a dark
+   one (#0B0D10). The new dark ground (#131722) is within a few points of the
+   luminance it was validated at, so the separation holds; re-run the
+   validator after touching any --s* value. Charts keep a direct label or an
+   HTML legend as the secondary cue. */
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
   /* ground */
-  --page:       #f3f5f7;
-  --surface:    #ffffff;
-  --surface-2:  #f7f9fb;
-  --raised:     #ffffff;
+  --page:       #131722;
+  --surface:    #1e222d;
+  --surface-2:  #171b26;
+  --raised:     #242832;
 
   /* ink */
-  --ink:        #12161b;
-  --ink-2:      #4b5563;
-  --muted:      #7b8591;
+  --ink:        #d1d4dc;
+  --ink-2:      #9aa0ab;
+  --muted:      #787b86;
 
   /* structure */
-  --border:     #dfe4e9;
-  --border-2:   #c9d1d9;
-  --grid:       #eef1f4;
-  --baseline:   #b6bfc9;
+  --border:     #2a2e39;
+  --border-2:   #363a45;
+  --grid:       #222630;
+  --baseline:   #434651;
 
   /* focus and links only — never data */
-  --accent:     #1f4fd1;
-  --accent-dim: #dbe4fb;
+  --accent:     #2962ff;
+  --accent-dim: #1c2c5c;
 
   /* the two books */
-  --usd:        #2457d5;
-  --usd-soft:   #e6edfc;
-  --cad:        #b0641a;
-  --cad-soft:   #f8ecdf;
+  --usd:        #5b8def;
+  --usd-soft:   #17243f;
+  --cad:        #e09a4a;
+  --cad-soft:   #35270f;
   --book:       var(--accent);
   --book-soft:  var(--accent-dim);
 
   /* signed values + severity. Colour is never the sole cue. */
-  --up:         #1a7f4b;
-  --down:       #c2382a;
-  --warn:       #a56b00;
-  --crit:       #c2382a;
+  --up:         #26a69a;
+  --up-soft:    #10322f;
+  --down:       #ef5350;
+  --down-soft:  #3a1a19;
+  --warn:       #d9a021;
+  --crit:       #ef5350;
 
   /* benchmark context lines — desaturated so the subject series reads */
-  --ctx-1:      #7b8591;
-  --ctx-2:      #b6bfc9;
+  --ctx-1:      #787b86;
+  --ctx-2:      #4a4e59;
 
   /* categorical — prefix-safe, see header */
-  --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
-  --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+  --s1: #b27ae0;  --s2: #26c281;  --s3: #34b8d4;  --s4: #c2a33c;
+  --s5: #d489a4;  --s6: #5b8def;  --s7: #e0653a;  --s8: #2e9e86;
 
   /* sequential ramp: 250 = lowest, 650 = highest */
-  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
-  --ramp-550: #2a63d6; --ramp-650: #16407f;
+  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
+  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
 
   /* type scale — 8 steps */
   --t-xs:   11px;
@@ -95,79 +116,87 @@
   --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
   --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 72px;
 
-  --r-sm: 4px;
-  --r-md: 8px;
-  --r-lg: 12px;
+  --r-sm: 3px;
+  --r-md: 6px;
+  --r-lg: 10px;
   --r-pill: 999px;
 
-  --shadow-pop: 0 12px 32px rgba(18, 22, 27, 0.16);
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.6);
 
-  --content-max: 1280px;
+  --content-max: 1400px;
 }
 
 [data-book="usd"] { --book: var(--usd); --book-soft: var(--usd-soft); }
 [data-book="cad"] { --book: var(--cad); --book-soft: var(--cad-soft); }
 
-/* Dark ground — the OS preference, unless the viewer chose light. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --page:       #0e1114;
-    --surface:    #151920;
-    --surface-2:  #1a1f27;
-    --raised:     #202630;
-    --ink:        #e8ebee;
-    --ink-2:      #a5adb8;
-    --muted:      #737d89;
-    --border:     #262c35;
-    --border-2:   #333b46;
-    --grid:       #1f252d;
-    --baseline:   #3f4854;
-    --accent:     #6e95ff;
-    --accent-dim: #24356b;
-    --usd:        #6d94ff;
-    --usd-soft:   #18244a;
-    --cad:        #e2a45c;
-    --cad-soft:   #3a2a14;
-    --up:         #35c072;
-    --down:       #ff6f5e;
-    --warn:       #d9a021;
-    --crit:       #ff6f5e;
-    --ctx-1:      #737d89;
-    --ctx-2:      #454d58;
-    --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
-    --ramp-550: #4d80ff; --ramp-650: #86a9ff;
-    --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.55);
+/* Light ground — the OS preference, unless the viewer chose dark. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --page:       #f3f5f7;
+    --surface:    #ffffff;
+    --surface-2:  #f7f9fb;
+    --raised:     #ffffff;
+    --ink:        #12161b;
+    --ink-2:      #4b5563;
+    --muted:      #7b8591;
+    --border:     #dfe4e9;
+    --border-2:   #c9d1d9;
+    --grid:       #eef1f4;
+    --baseline:   #b6bfc9;
+    --accent:     #1f4fd1;
+    --accent-dim: #dbe4fb;
+    --usd:        #2457d5;
+    --usd-soft:   #e6edfc;
+    --cad:        #b0641a;
+    --cad-soft:   #f8ecdf;
+    --up:         #0f7a6c;
+    --up-soft:    #dff2ef;
+    --down:       #d0392f;
+    --down-soft:  #fbe6e4;
+    --warn:       #a56b00;
+    --crit:       #d0392f;
+    --ctx-1:      #7b8591;
+    --ctx-2:      #b6bfc9;
+    --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
+    --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+    --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+    --ramp-550: #2a63d6; --ramp-650: #16407f;
+    --shadow-pop: 0 12px 32px rgba(18, 22, 27, 0.16);
   }
 }
 
-/* Dark ground — explicit choice. Same values; the toggle must win both ways. */
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --page:       #0e1114;
-  --surface:    #151920;
-  --surface-2:  #1a1f27;
-  --raised:     #202630;
-  --ink:        #e8ebee;
-  --ink-2:      #a5adb8;
-  --muted:      #737d89;
-  --border:     #262c35;
-  --border-2:   #333b46;
-  --grid:       #1f252d;
-  --baseline:   #3f4854;
-  --accent:     #6e95ff;
-  --accent-dim: #24356b;
-  --usd:        #6d94ff;
-  --usd-soft:   #18244a;
-  --cad:        #e2a45c;
-  --cad-soft:   #3a2a14;
-  --up:         #35c072;
-  --down:       #ff6f5e;
-  --warn:       #d9a021;
-  --crit:       #ff6f5e;
-  --ctx-1:      #737d89;
-  --ctx-2:      #454d58;
-  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
-  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
-  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.55);
+/* Light ground — explicit choice. Same values; the toggle must win both ways. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page:       #f3f5f7;
+  --surface:    #ffffff;
+  --surface-2:  #f7f9fb;
+  --raised:     #ffffff;
+  --ink:        #12161b;
+  --ink-2:      #4b5563;
+  --muted:      #7b8591;
+  --border:     #dfe4e9;
+  --border-2:   #c9d1d9;
+  --grid:       #eef1f4;
+  --baseline:   #b6bfc9;
+  --accent:     #1f4fd1;
+  --accent-dim: #dbe4fb;
+  --usd:        #2457d5;
+  --usd-soft:   #e6edfc;
+  --cad:        #b0641a;
+  --cad-soft:   #f8ecdf;
+  --up:         #0f7a6c;
+  --up-soft:    #dff2ef;
+  --down:       #d0392f;
+  --down-soft:  #fbe6e4;
+  --warn:       #a56b00;
+  --crit:       #d0392f;
+  --ctx-1:      #7b8591;
+  --ctx-2:      #b6bfc9;
+  --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
+  --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+  --ramp-550: #2a63d6; --ramp-650: #16407f;
+  --shadow-pop: 0 12px 32px rgba(18, 22, 27, 0.16);
 }

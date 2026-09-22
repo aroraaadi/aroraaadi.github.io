@@ -2,5 +2,76 @@
  "as_of": "2026-09-21",
  "book": "cad",
  "note": "Questrade activity. Sizes are percent of the book's equity at the time of the sync, not of the trade; no dollar figures are published.",
- "rows": []
+ "rows": [
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "BNS.TO",
+   "description": "BANK OF NOVA SCOTIA TFSA TRANSFER BOOK VALUE 781.62 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "ENB.TO",
+   "description": "ENBRIDGE INC TFSA TRANSFER BOOK VALUE 744.92 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": null,
+   "description": "146.16 TRANSFER FROM 5350105416",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.1915
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "EQB.TO",
+   "description": "EQB INC COM TFSA TRANSFER BOOK VALUE 769.98 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SHOP.TO",
+   "description": "SHOPIFY INC CL A TFSA TRANSFER BOOK VALUE 733.84 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "BN.TO",
+   "description": "BROOKFIELD CORP VTG SHS CL A TFSA TRANSFER BOOK VALUE 784.05 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "RY.TO",
+   "description": "ROYAL BANK OF CANADA TFSA TRANSFER BOOK VALUE 568.66 FROM",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  }
+ ]
 }

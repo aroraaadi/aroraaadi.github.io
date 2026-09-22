@@ -2,5 +2,1216 @@
  "as_of": "2026-09-21",
  "book": "usd",
  "note": "Questrade activity. Sizes are percent of the book's equity at the time of the sync, not of the trade; no dollar figures are published.",
- "rows": []
+ "rows": [
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": null,
+   "description": "146.16 TRANSFER TO 5371143917",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0835
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "EQB.TO",
+   "description": "EQB INC COM TFSA TRANSFER BOOK VALUE 769.98 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "SHOP.TO",
+   "description": "SHOPIFY INC CL A TFSA TRANSFER BOOK VALUE 733.84 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "BN.TO",
+   "description": "BROOKFIELD CORP VTG SHS CL A TFSA TRANSFER BOOK VALUE 784.05 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "RY.TO",
+   "description": "ROYAL BANK OF CANADA TFSA TRANSFER BOOK VALUE 568.66 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "BNS.TO",
+   "description": "BANK OF NOVA SCOTIA TFSA TRANSFER BOOK VALUE 781.62 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-18",
+   "kind": "transfer",
+   "action": "tfo",
+   "symbol": "ENB.TO",
+   "description": "ENBRIDGE INC TFSA TRANSFER BOOK VALUE 744.92 TO",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-17",
+   "kind": "dividend",
+   "action": "div",
+   "symbol": "SPGI.TO",
+   "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S CASH DIV ON REC 08/26/26 PAY 09/17/26 NON-RES TAX WITHHELD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0001
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "AMZN",
+   "description": "AMAZON.COM INC",
+   "currency": "USD",
+   "price": 246.6053,
+   "size_pct": 0.0469
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "GOOG.TO",
+   "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+   "currency": "CAD",
+   "price": 54.5,
+   "size_pct": 0.1201
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "IALT",
+   "description": "BLACKROCK ETF TR ISHARES SYSTEMATIC ALTERNATIVES ACTIVE ETF",
+   "currency": "USD",
+   "price": 29.57,
+   "size_pct": 0.0327
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "GE",
+   "description": "GE AEROSPACE COMMON STOCK",
+   "currency": "USD",
+   "price": 315.1197,
+   "size_pct": 0.117
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "JPM.TO",
+   "description": "JPMORGAN CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+   "currency": "CAD",
+   "price": 44.64,
+   "size_pct": 0.0492
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "MSFT",
+   "description": "MICROSOFT CORP",
+   "currency": "USD",
+   "price": 492.61,
+   "size_pct": 0.0544
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "RRX",
+   "description": "REGAL REXNORD CORPORATION",
+   "currency": "USD",
+   "price": 150.36,
+   "size_pct": 0.0561
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "SHOP.TO",
+   "description": "SHOPIFY INC CL A",
+   "currency": "CAD",
+   "price": 183.46,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "GOOG",
+   "description": "ALPHABET INC CLASS C CAPITAL STOCK",
+   "currency": "USD",
+   "price": 340.7272,
+   "size_pct": 0.0452
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "BNS.TO",
+   "description": "BANK OF NOVA SCOTIA",
+   "currency": "CAD",
+   "price": 130.27,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "EQB.TO",
+   "description": "EQB INC COM",
+   "currency": "CAD",
+   "price": 128.33,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "GE.TO",
+   "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S",
+   "currency": "CAD",
+   "price": 41.1,
+   "size_pct": 0.0767
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "META.TO",
+   "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+   "currency": "CAD",
+   "price": 36.15,
+   "size_pct": 0.0598
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "NVDA",
+   "description": "NVIDIA CORP",
+   "currency": "USD",
+   "price": 214.2727,
+   "size_pct": 0.045
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "RY.TO",
+   "description": "ROYAL BANK OF CANADA",
+   "currency": "CAD",
+   "price": 284.33,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SPGI.TO",
+   "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
+   "currency": "CAD",
+   "price": 19.34,
+   "size_pct": 0.035
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "AMZN.TO",
+   "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+   "currency": "CAD",
+   "price": 28.25,
+   "size_pct": 0.0979
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "BN.TO",
+   "description": "BROOKFIELD CORP VTG SHS CL A",
+   "currency": "CAD",
+   "price": 52.27,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "ENB.TO",
+   "description": "ENBRIDGE INC",
+   "currency": "CAD",
+   "price": 67.72,
+   "size_pct": 0.063
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "JPM",
+   "description": "JPMORGAN CHASE & CO",
+   "currency": "USD",
+   "price": 349.4682,
+   "size_pct": 0.0579
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "MDA",
+   "description": "MDA SPACE LTD COM",
+   "currency": "USD",
+   "price": 29.175,
+   "size_pct": 0.0387
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "NRG",
+   "description": "NRG ENERGY INC",
+   "currency": "USD",
+   "price": 108.018,
+   "size_pct": 0.0711
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SCHG",
+   "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
+   "currency": "USD",
+   "price": 35.2002,
+   "size_pct": 0.1828
+  },
+  {
+   "date": "2026-09-16",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "UBER",
+   "description": "UBER TECHNOLOGIES INC COMMON STOCK",
+   "currency": "USD",
+   "price": 71.883,
+   "size_pct": 0.0937
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "DLR.U.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
+   "currency": "USD",
+   "price": 10.15,
+   "size_pct": 0.2243
+  },
+  {
+   "date": "2026-09-15",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "DLR.U.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
+   "currency": "USD",
+   "price": 10.15,
+   "size_pct": 0.0011
+  },
+  {
+   "date": "2026-09-14",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "DLR.U.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3872",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-14",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "DLR.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-10",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "DLR.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
+   "currency": "CAD",
+   "price": 14.025,
+   "size_pct": 0.2208
+  },
+  {
+   "date": "2026-09-10",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "XSP.TO",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED",
+   "currency": "CAD",
+   "price": 76.2,
+   "size_pct": 0.144
+  },
+  {
+   "date": "2026-09-10",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "DLR.TO",
+   "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
+   "currency": "CAD",
+   "price": 14.03,
+   "size_pct": 0.0011
+  },
+  {
+   "date": "2026-09-10",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "XIU.TO",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF",
+   "currency": "CAD",
+   "price": 52.59,
+   "size_pct": 0.0869
+  },
+  {
+   "date": "2026-09-10",
+   "kind": "dividend",
+   "action": "div",
+   "symbol": "MSFT",
+   "description": "MICROSOFT CORP CASH DIV ON REC 08/20/26 PAY 09/10/26 NON-RES TAX WITHHELD",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0001
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": null,
+   "description": "CIBC WORLD MARKETS INC. TFSA TRANSFER",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0011
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": null,
+   "description": "CIBC WORLD MARKETS INC. TFSA TRANSFER",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0013
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XIU.TO",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF JOURNAL POSITION FROM USD BOOK VALUE: CNV@ 1.3784",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "ISSXF",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED JOURNAL POSITION TO CAD",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XSP.TO",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED JOURNAL POSITION FROM USD BOOK VALUE: CNV@ 1.3784",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-09",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "IUTSF",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF JOURNAL POSITION TO CAD",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-08",
+   "kind": "other",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending int payment as of August Symbol",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-08",
+   "kind": "fee",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending reb payment as of August Symbol-XNDU",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-08",
+   "kind": "fee",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending reb payment as of August Symbol-XNDU",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0001
+  },
+  {
+   "date": "2026-09-08",
+   "kind": "fee",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending reb payment as of August Symbol",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-04",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "ISSXF",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3794",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-04",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XSP.TO",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "IUTSF",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3845",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "SHOP.TO",
+   "description": "SHOPIFY INC CL A JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XNDU",
+   "description": "XANADU QUANTUM TECHNOLOGIES LTD COM JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3845",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XIU.TO",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "MDA",
+   "description": "MDA SPACE LTD COM JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3845",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "XNDU.TO",
+   "description": "XANADU QUANTUM TECHNOLOGIES LTD COM JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "MDA.TO",
+   "description": "MDA SPACE LTD COM JOURNAL POSITION TO USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-03",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "SHOP",
+   "description": "SHOPIFY INC CL A JOURNAL POSITION FROM CAD BOOK VALUE: CNV@ 1.3845",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-09-02",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "XSP.TO",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED",
+   "currency": "CAD",
+   "price": 76.98,
+   "size_pct": 0.0909
+  },
+  {
+   "date": "2026-08-31",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "NVDA.TO",
+   "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
+   "currency": "CAD",
+   "price": 48.88,
+   "size_pct": 0.0731
+  },
+  {
+   "date": "2026-08-31",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SPCX.TO",
+   "description": "SPACE EXP TECH CORP(SPACEX) CIBC CDR (CAD HEDGED) REG S",
+   "currency": "CAD",
+   "price": 23.83,
+   "size_pct": 0.015
+  },
+  {
+   "date": "2026-08-31",
+   "kind": "dividend",
+   "action": "dividend",
+   "symbol": "XIU.TO",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF DIST ON REC 08/26/26 PAY 08/31/26",
+   "currency": "CAD",
+   "price": 0.28,
+   "size_pct": 0.0005
+  },
+  {
+   "date": "2026-08-25",
+   "kind": "fee",
+   "action": "fch",
+   "symbol": null,
+   "description": "TRANSFER FEE",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0118
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "IALT",
+   "description": "BLACKROCK ETF TR ISHARES SYSTEMATIC ALTERNATIVES ACTIVE ETF",
+   "currency": "USD",
+   "price": 28.965,
+   "size_pct": 0.032
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "WULF",
+   "description": "TERAWULF INC COMMON STOCK",
+   "currency": "USD",
+   "price": 17.12,
+   "size_pct": 0.0038
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SOXL.TO",
+   "description": "BETAPRO 3X SEMICONDUCTOR DAILY LEVERAGED BULL ALTERNATIVE ETF ETF SHS",
+   "currency": "CAD",
+   "price": 33.35,
+   "size_pct": 0.0131
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SHAZ",
+   "description": "SHARONAI HOLDINGS INC CLASS A COMMON STOCK",
+   "currency": "USD",
+   "price": 74.27,
+   "size_pct": 0.0082
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "GE.TO",
+   "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S",
+   "currency": "CAD",
+   "price": 48.42,
+   "size_pct": 0.0142
+  },
+  {
+   "date": "2026-08-18",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "UBER",
+   "description": "UBER TECHNOLOGIES INC COMMON STOCK",
+   "currency": "USD",
+   "price": 76.3298,
+   "size_pct": 0.0253
+  },
+  {
+   "date": "2026-08-11",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "ACHR18Sep26C6.00",
+   "description": "CALL ACHR 09/18/26 6 ARCHER AVIATION INC CLASS A",
+   "currency": "USD",
+   "price": 1.29,
+   "size_pct": 0.0143
+  },
+  {
+   "date": "2026-08-10",
+   "kind": "fee",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending reb payment as of July Symbol-XNDU",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0001
+  },
+  {
+   "date": "2026-08-10",
+   "kind": "fee",
+   "action": "lfj",
+   "symbol": null,
+   "description": "Securities lending reb payment as of July Symbol-XNDU",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "XNDU.TO",
+   "description": "XANADU QUANTUM TECHNOLOGIES LTD COM",
+   "currency": "CAD",
+   "price": 15.7,
+   "size_pct": 0.0136
+  },
+  {
+   "date": "2026-07-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "XNDU",
+   "description": "XANADU QUANTUM TECHNOLOGIES LTD COM",
+   "currency": "USD",
+   "price": 11.1,
+   "size_pct": 0.0245
+  },
+  {
+   "date": "2026-07-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "ACHR18Sep26C6.00",
+   "description": "CALL ACHR 09/18/26 6 ARCHER AVIATION INC CLASS A",
+   "currency": "USD",
+   "price": 0.48,
+   "size_pct": 0.0054
+  },
+  {
+   "date": "2026-07-21",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "WULF28Aug26C19.50",
+   "description": "CALL WULF 08/28/26 19.50 TERAWULF INC",
+   "currency": "USD",
+   "price": 3.35,
+   "size_pct": 0.0369
+  },
+  {
+   "date": "2026-07-21",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "MRVL",
+   "description": "MARVELL TECHNOLOGY INC COMMON STOCK",
+   "currency": "USD",
+   "price": 209.0354,
+   "size_pct": 0.0231
+  },
+  {
+   "date": "2026-07-17",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": null,
+   "description": "CIBC WORLD MARKETS INC. TFSA TRANSFER",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0011
+  },
+  {
+   "date": "2026-07-17",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": null,
+   "description": "CIBC WORLD MARKETS INC. TFSA TRANSFER",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0153
+  },
+  {
+   "date": "2026-07-17",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "WULF28Aug26C19.50",
+   "description": "CALL WULF 08/28/26 19.50 TERAWULF INC",
+   "currency": "USD",
+   "price": 1.66,
+   "size_pct": 0.0184
+  },
+  {
+   "date": "2026-07-17",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "BE",
+   "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK CARS: TO ACCT 535-01054-16",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-17",
+   "kind": "other",
+   "action": "brw",
+   "symbol": "BE",
+   "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK CARS: FROM ACCT 535-01054-16 604.87 U$ CNV@ 1.40380000",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "AMZN.TO",
+   "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 1198.45",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "BE",
+   "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 849.12",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "META",
+   "description": "META PLATFORMS INC CLASS A COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 600.47",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "XSP.TO",
+   "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 507.50",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "META.TO",
+   "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 754.57",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "NVDA.TO",
+   "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 822.70",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SPGI.TO",
+   "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 488.98",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "WULF",
+   "description": "TERAWULF INC COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 40.34",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "GOOG.TO",
+   "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 1495.00",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "BE",
+   "description": "BLOOM ENERGY CORPORATION CLASS A COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 309.49",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "GE.TO",
+   "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 777.80",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "JPM.TO",
+   "description": "JPMORGAN CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 527.24",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "MDA.TO",
+   "description": "MDA SPACE LTD COM CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 502.02",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SCHG",
+   "description": "SCHWAB STRATEGIC TR US LCAP GR ETF CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 1247.32",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SHAZ",
+   "description": "SHARONAI HOLDINGS INC CLASS A COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 78.76",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "XNDU.TO",
+   "description": "XANADU QUANTUM TECHNOLOGIES LTD COM CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 629.98",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "AVGO",
+   "description": "BROADCOM INC COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 727.10",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SOXL.TO",
+   "description": "BETAPRO 3X SEMICONDUCTOR DAILY LEVERAGED BULL ALTERNATIVE ETF ETF SHS CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 269.50",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "XIU.TO",
+   "description": "ISHARES S&P/TSX 60 INDEX ETF CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 1022.07",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "MRVL",
+   "description": "MARVELL TECHNOLOGY INC COMMON STOCK CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 299.55",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "MSFT",
+   "description": "MICROSOFT CORP CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 378.90",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SHOP.TO",
+   "description": "SHOPIFY INC CL A CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 1110.41",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-16",
+   "kind": "transfer",
+   "action": "tf6",
+   "symbol": "SPCX.TO",
+   "description": "SPACE EXP TECH CORP(SPACEX) CIBC CDR (CAD HEDGED) REG S CIBC WORLD MARKETS INC. TFSA TRANSFER BOOK VALUE 230.40",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-07-07",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "NVDU",
+   "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF",
+   "currency": "USD",
+   "price": 114.7998,
+   "size_pct": 0.0111
+  },
+  {
+   "date": "2026-06-30",
+   "kind": "dividend",
+   "action": "dividend",
+   "symbol": "NVDU",
+   "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF DIST ON 0. REC 06/23/26 PAY 06/30/26",
+   "currency": "USD",
+   "price": 0.69,
+   "size_pct": 0.0001
+  },
+  {
+   "date": "2026-06-30",
+   "kind": "dividend",
+   "action": "dividend",
+   "symbol": "NVDU",
+   "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF NON-RES TAX WITHHELD REC 06/23/26 PAY 06/30/26",
+   "currency": "USD",
+   "price": 15.0,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-06-25",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "UBER26Jun26C74.00",
+   "description": "CALL UBER 06/26/26 74 UBER TECHNOLOGIES INC",
+   "currency": "USD",
+   "price": 0.27,
+   "size_pct": 0.0057
+  },
+  {
+   "date": "2026-06-25",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "UBER26Jun26C74.00",
+   "description": "CALL UBER 06/26/26 74 UBER TECHNOLOGIES INC",
+   "currency": "USD",
+   "price": 0.25,
+   "size_pct": 0.0057
+  },
+  {
+   "date": "2026-06-18",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "SMR2Jul26C11.50",
+   "description": "CALL SMR 07/02/26 11.50 NUSCALE POWER CORPORATION CL A",
+   "currency": "USD",
+   "price": 0.9,
+   "size_pct": 0.0098
+  },
+  {
+   "date": "2026-06-05",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "SMR2Jul26C11.50",
+   "description": "CALL SMR 07/02/26 11.50 NUSCALE POWER CORPORATION CL A",
+   "currency": "USD",
+   "price": 0.8,
+   "size_pct": 0.0089
+  },
+  {
+   "date": "2026-06-05",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "NVDU",
+   "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF",
+   "currency": "USD",
+   "price": 128.9318,
+   "size_pct": 0.0125
+  },
+  {
+   "date": "2026-06-05",
+   "kind": "fx",
+   "action": "fxt",
+   "symbol": null,
+   "description": "CONVERSION - CAD/USD",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0003
+  },
+  {
+   "date": "2026-06-05",
+   "kind": "fx",
+   "action": "fxt",
+   "symbol": null,
+   "description": "CONVERSION - CAD/USD",
+   "currency": "CAD",
+   "price": null,
+   "size_pct": 0.0003
+  },
+  {
+   "date": "2026-06-04",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "NEBX",
+   "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG NBIS DAILY ETF",
+   "currency": "USD",
+   "price": 56.0181,
+   "size_pct": 0.0207
+  },
+  {
+   "date": "2026-06-04",
+   "kind": "dividend",
+   "action": "dis",
+   "symbol": "NEBX",
+   "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG NBIS DAILY ETF STK SPLIT ON 1. REC 06/03/26 PAY 06/04/26",
+   "currency": "USD",
+   "price": null,
+   "size_pct": 0.0
+  },
+  {
+   "date": "2026-05-28",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "NEBX",
+   "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG NBIS DAILY ETF",
+   "currency": "USD",
+   "price": 134.2506,
+   "size_pct": 0.0166
+  }
+ ]
 }

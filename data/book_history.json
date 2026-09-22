@@ -35,7 +35,7 @@
   },
   {
    "date": "2026-09-21",
-   "value_index": 106.92
+   "value_index": 107.9
   }
  ],
  "books": {
@@ -43,14 +43,14 @@
    {
     "date": "2026-09-21",
     "value_index": 100.0,
-    "cash_weight": 0.0027
+    "cash_weight": 0.0102
    }
   ],
   "cad": [
    {
     "date": "2026-09-21",
     "value_index": 100.0,
-    "cash_weight": 0.011
+    "cash_weight": 0.0108
    }
   ]
  }

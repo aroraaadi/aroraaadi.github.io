@@ -32,6 +32,8 @@ const SECTIONS = [
       ["Optimizer", "research/mvo.html"],
       ["Regime", "research/regime.html"],
       ["Options", "research/options.html"],
+      ["Vol surface", "research/volsurface.html"],
+      ["SPY vol", "research/voltrade.html"],
       ["Revisions", "research/revisions.html"],
       ["Small caps", "research/smallcap.html"],
     ],

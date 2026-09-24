@@ -799,3 +799,12 @@ table.dense tbody tr + tr { border-top: 1px solid var(--grid); }
   display: flex; align-items: center; justify-content: space-between;
   gap: var(--sp-3); flex-wrap: wrap; margin-bottom: var(--sp-2);
 }
+
+/* Vol surface pricer: a row of labelled inputs in the site's own tokens. */
+.pricer { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); align-items: flex-end; }
+.field { display: inline-flex; flex-direction: column; gap: 4px; font-size: var(--t-xs); color: var(--muted); letter-spacing: .02em; text-transform: uppercase; }
+.field input, .field select {
+  font: inherit; font-family: var(--font-num); font-size: var(--t-sm); text-transform: none; letter-spacing: 0;
+  color: var(--ink); background: var(--surface-2); border: 1px solid var(--baseline); border-radius: 6px; padding: 6px 8px; min-width: 110px;
+}
+.field input:focus-visible, .field select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

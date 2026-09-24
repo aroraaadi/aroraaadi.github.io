@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPY vol strategy — Two Books</title>
+<meta name="description" content="A SPY premium-selling strategy on the options sleeve, with every rule tested before it trades.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="SPY vol strategy — Two Books">
+<meta property="og:description" content="A SPY premium-selling strategy on the options sleeve, with every rule tested before it trades.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>SPY vol strategy</h1>
+  <p class="sub">A standalone book on the options sleeve that sells SPY premium when implied vol exceeds the vol the market
+     tends to realise, and stays out when the regime, the curve or the calendar says not to. The rules come from the
+     Nelson notes on IV rank, the Greeks and roll windows; each one was tested in a synthetic backtest before it was
+     allowed to trade, and the ones that failed are still shown. Suggest-only; the sleeve is not funded.</p>
+  <p class="meta" id="vt-meta"></p>
+  <div id="error"></div>
+  <div id="vt-strip" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Proposal</h2><span class="spacer"></span><span class="note">at the snapshot's mids · sized per $100k of sleeve</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-legs"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b" id="vt-detail"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Payoff at expiry</h2><span class="spacer"></span><span class="note" id="vt-payoff-note"></span></div>
+      <div class="panel-b"><div class="chart" style="height:260px"><canvas id="vt-payoff"></canvas></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Why, and why not</h2><span class="spacer"></span><span class="note">every gate, its value now and its role</span></div>
+      <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-checks"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note" id="vt-reasons"></p></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Rules and their verdicts</h2><span class="spacer"></span><span class="note">t ≥ 3 in the claimed direction is established; t ≤ −3 is established against</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-verdicts"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Synthetic backtest</h2><span class="spacer"></span><span class="note" id="vt-bt-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-modes"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><div class="legend" id="vt-nav-legend"></div><div class="chart" style="height:280px"><canvas id="vt-nav"></canvas></div>
+      <p class="note">Sleeve value, thousands, weekly; each mode starts at 100.</p></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-structs"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vt-episodes"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:360px"><table id="vt-years"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:360px"><table id="vt-trades"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Does commodity vol lead equity vol premium?</h2><span class="spacer"></span><span class="note">Nelson (SSRN 5269587), tested on FRED's OVX and VIX</span></div>
+    <div class="panel-b" id="vt-ovx"></div>
+    <div class="panel-b"><p class="note" id="vt-ovx-note"></p></div>
+  </div>
+  <p class="note" id="vt-caveat"></p>
+</main>
+
+<footer>Personal research project, not investment advice. Suggest-only; the sleeve is not funded and nothing here is executed.</footer>
+
+<script type="module" src="../js/voltrade.js"></script>
+</body>
+</html>

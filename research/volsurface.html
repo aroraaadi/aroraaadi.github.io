@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vol surface — Two Books</title>
+<meta name="description" content="The live SPY implied-volatility surface: smiles, term structure, a pricer and a model comparison.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Vol surface — Two Books">
+<meta property="og:description" content="The live SPY implied-volatility surface: smiles, term structure, a pricer and a model comparison.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Vol surface</h1>
+  <p class="sub">The SPY implied-volatility surface as the market quotes it: every usable strike and expiry,
+     Black-Scholes implied from the bid-ask mid with a dividend yield, drawn as a surface, as smiles and as a
+     term structure, and priced three ways. A browser left open on the machine that runs
+     <code>python3 -m options.live --watch 5</code> follows the market; the published page shows the last
+     snapshot pushed.</p>
+  <p class="meta" id="vs-meta"></p>
+  <div id="error"></div>
+  <div id="vs-strip" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Surface</h2><span class="spacer"></span><span class="note">strike/spot × days to expiry × implied vol · drag to rotate</span></div>
+    <div class="panel-b"><canvas id="vs-3d" style="width:100%;height:420px;cursor:grab;touch-action:none"></canvas></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Smile by expiry</h2><span class="spacer"></span><span class="note">OTM puts below spot, OTM calls above</span></div>
+      <div class="panel-b"><div class="legend" id="vs-smile-legend"></div><div class="chart" style="height:260px"><canvas id="vs-smile"></canvas></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Term structure</h2><span class="spacer"></span><span class="note">ATM and the 25-delta wings, by expiry</span></div>
+      <div class="panel-b"><div class="legend" id="vs-term-legend"></div><div class="chart" style="height:260px"><canvas id="vs-term"></canvas></div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Pricer</h2><span class="spacer"></span><span class="note">Black-Scholes-Merton in the browser; vega per vol point, theta per calendar day, rho per 1%</span></div>
+    <div class="panel-b"><div class="pricer" id="vs-pricer"></div></div>
+    <div class="panel-b" id="vs-pricer-out"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Which model fits the smile</h2><span class="spacer"></span><span class="note" id="vs-models-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="vs-models"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note">Goh, Korovedzai, Chen and Bhattacharyya (SSRN 7192821) ask which pricing model fits S&amp;P options
+       best and answer on one date with placeholder parameters. This is the same question asked of today's chain the other way
+       round: each model is calibrated to the even strikes and scored on the odd ones, in vol points, so the number is a
+       held-out fit, not a fit to the data it was shown. Black-Scholes at each quote's own implied vol is the data, not a
+       model, and is not scored. A better fit today says nothing about tomorrow's prices.</p></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Chain</h2><span class="spacer"></span><span class="note" id="vs-chain-note"></span></div>
+    <div class="panel-b"><div class="controls"><label class="field"><span>Expiry</span><select id="vs-exp"></select></label></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:520px"><table id="vs-chain"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+  <p class="note" id="vs-note"></p>
+</main>
+
+<footer>Personal research project, not investment advice. Market data delayed or point-in-time as stated on the page.</footer>
+
+<script type="module" src="../js/volsurface.js"></script>
+</body>
+</html>

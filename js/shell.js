@@ -36,11 +36,17 @@ const SECTIONS = [
       ["Small caps", "research/smallcap.html"],
     ],
   },
+  {
+    id: "venture", label: "Venture", root: "venture/index.html", book: "venture",
+    nav: [
+      ["Screen", "venture/index.html"],
+    ],
+  },
   { id: "methodology", label: "Methodology", root: "methodology.html", nav: [] },
   { id: "blog", label: "Notes", root: "blog.html", nav: [] },
 ];
 
-const DIRS = new Set(["usd", "cad", "research"]);
+const DIRS = new Set(["usd", "cad", "research", "venture"]);
 
 /* Pages live at two depths; window.ASSET_BASE ("" or "../") is already the
    convention for data paths, so links reuse it rather than hard-coding "../". */

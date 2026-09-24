@@ -7,9 +7,51 @@ import {
 import { renderShell, setAsOf } from "./shell.js";
 
 const BOOK_ORDER = ["usd", "cad"];
-let PF = null, MET = {}, HIST = null, TX = {}, REGIME = null, DECISION = null, MODEL = null;
+let PF = null, MET = {}, HIST = null, TX = {}, REGIME = null, DECISION = null, MODEL = null, VENTURE = null;
 
-const run = (b) => (b.managed_by === "model" ? "run by the engine" : "run by hand");
+const run = (b) => (b.managed_by === "model" ? "run by the engine"
+  : b.managed_by === "screen" ? "run by the screen" : "run by hand");
+
+/* The venture book has no account behind it, so it is not in
+   current_portfolio.json. Its card is built from venture.json: the screen's
+   equal-weight target and the book's own mandate. Nothing on it is a value. */
+function ventureCard(v) {
+  const b = v.book || { label: "Venture book", currency: "USD", managed_by: "screen", mandate: "" };
+  const rows = v.portfolio.map((p) => {
+    const r = v.rows.find((x) => x.symbol === p.symbol) || {};
+    return { symbol: p.symbol, weight: p.weight, name: r.name, score: p.score };
+  });
+  const colors = breakdownColors(rows.length);
+  const stats = el("div", { class: "strip" });
+  renderStats(stats, [
+    { label: "Target names", value: String(rows.length), delta: "equal weight, unfunded" },
+    { label: "Screened", value: String(v.rows.length), delta: `${v.universe.names} names from ${v.universe.etfs} ETFs` },
+    { label: "Established signals", value: "0", delta: "at |t| ≥ 3 in the panel", tone: "down" },
+    { label: "Pre-run profile", value: "shown", delta: "worth zero by design" },
+    { label: "Last screen", value: v.as_of, delta: "FMP cache + point-in-time panel" },
+  ]);
+  const bar = el("div", { class: "stack-bar", role: "img",
+    "aria-label": `Target: ${rows.map((p) => `${p.symbol} ${fmtPct(p.weight, 1)}`).join(", ")}` },
+    rows.map((p, i) => el("i", { style: `flex:${p.weight};background:${colors[i]}`, title: `${p.symbol} ${fmtPct(p.weight, 1)}` })));
+  const top = rows.slice(0, 6);
+  const list = el("div", { class: "toplist" }, top.map((p, i) => el("div", { class: "row" }, [
+    el("span", { class: "dot", style: `background:${colors[i]}` }),
+    el("span", { class: "sym", text: p.symbol }),
+    el("span", { class: "name", text: p.name || "" }),
+    el("span", { class: "num", text: `score ${fmtNum(p.score, 1)}` }),
+  ])));
+  if (rows.length > top.length) list.appendChild(el("div", { class: "more", text: `${rows.length - top.length} more names at equal weight` }));
+  return el("article", { class: "book-card", "data-book": "venture" }, [
+    el("div", { class: "book-card-h" }, [
+      el("span", { class: "book-tag", text: b.currency }),
+      el("h2", { class: "book-name", text: b.label }),
+      el("span", { class: "book-run", text: run(b) }),
+    ]),
+    el("p", { class: "mandate", text: b.mandate }),
+    stats, bar, list,
+    el("a", { class: "book-link", href: "venture/index.html", text: `Open the ${b.label} →` }),
+  ]);
+}
 
 function bookCard(key, b) {
   const m = MET[key];
@@ -67,6 +109,7 @@ function bookCard(key, b) {
 function renderBooks() {
   const host = document.getElementById("books"); host.innerHTML = "";
   for (const key of BOOK_ORDER) if (PF.books[key]) host.appendChild(bookCard(key, PF.books[key]));
+  if (VENTURE && VENTURE.portfolio?.length) host.appendChild(ventureCard(VENTURE));
 }
 
 function renderCombined() {
@@ -151,12 +194,13 @@ function renderEngine() {
     loadJSON("data/book_history.json"),
     loadJSON("data/transactions_usd.json"), loadJSON("data/transactions_cad.json"),
     loadJSON("data/regime.json"), loadJSON("data/decision.json"), loadJSON("data/portfolio.json"),
+    loadJSON("data/venture.json"),
   ]);
   const v = (i) => (settled[i].status === "fulfilled" ? settled[i].value : null);
   MET = { usd: v(0), cad: v(1) }; HIST = v(2); TX = { usd: v(3), cad: v(4) };
-  REGIME = v(5); DECISION = v(6); MODEL = v(7);
+  REGIME = v(5); DECISION = v(6); MODEL = v(7); VENTURE = v(8);
   setAsOf(PF.as_of);
   document.getElementById("home-meta").textContent =
-    `Synced ${PF.as_of} · ${Object.keys(PF.books).length} accounts · weights within each book`;
+    `Synced ${PF.as_of} · ${Object.keys(PF.books).length} accounts + 1 screen-run fund · weights within each book`;
   renderBooks(); renderCombined(); renderActivity(); renderEngine();
 })();

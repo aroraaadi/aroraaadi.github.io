@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venture screen — Two Books</title>
+<meta name="description" content="Small caps from the top holdings of twenty small-cap ETFs, ranked by evidence and shown beside the base rates of names like them.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Venture screen — Two Books">
+<meta property="og:description" content="Small caps from the top holdings of twenty small-cap ETFs, ranked by evidence and shown beside the base rates of names like them.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main" data-book="venture">
+  <p class="eyebrow" id="book-eyebrow">Venture book</p>
+  <h1>Venture screen</h1>
+  <p class="sub">Small caps from the top holdings of twenty small-cap ETFs, ranked by the signals with evidence
+     behind them and shown beside the base rates of names like them. Momentum, volume and attention are
+     computed and displayed as context — the panel says the pre-run profile is the one that did worst.</p>
+  <div id="error"></div>
+  <div id="content">
+  <div id="headline" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>The backdrop</h2><span class="spacer"></span><span class="note">macro lens · emerging industries</span></div>
+    <div class="panel-b prose" id="macro"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>The portfolio</h2><span class="spacer"></span><span class="note">top ten by score · equal weight · unfunded</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="pf-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b" id="portfolio"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Pitches</h2><span class="spacer"></span><span class="note">researched theses in the NYT pitch template · PDF</span></div>
+    <div class="panel-b" id="pitches"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h">
+      <h2>Every candidate</h2>
+      <div class="seg" id="sortby" role="group" aria-label="Sort by">
+        <button data-sort="rank" class="active">Rank</button>
+        <button data-sort="score">Score</button>
+        <button data-sort="pth">÷52w high</button>
+        <button data-sort="mom_12_1">Momentum</button>
+        <button data-sort="vol_surge">Volume</button>
+        <button data-sort="sue">SUE</button>
+        <button data-sort="gp_a">GP/A</button>
+        <button data-sort="insider_buys_90d">Insiders</button>
+        <button data-sort="target_upside">Street</button>
+        <button data-sort="spike_z">Attention</button>
+        <button data-sort="base_p_double">P(2×)</button>
+      </div>
+      <span class="spacer"></span><span class="note" id="count"></span>
+    </div>
+    <div class="panel-h"><div class="seg" id="flagfilter" role="group" aria-label="Filter by flag"></div></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:70vh"><table id="sc-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div id="detail"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>What the flags mean, and what they are worth</h2><span class="spacer"></span><span class="note">weight · evidence · sources</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="ev-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Base rates by profile</h2><span class="spacer"></span><span class="note">point-in-time panel, 4,606 small caps since 2013 · forward returns · Newey-West t on the monthly excess</span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="br-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Emerging industries</h2><span class="spacer"></span><span class="note">keyword tags · context, not score</span></div>
+    <div class="panel-b" id="themes"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>What this screen cannot do</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p id="disclosure"></p>
+      <p>Two inputs the brief asked for are not here, and the reason is stated rather than filled with a
+         stand-in:</p>
+      <ul id="unavailable"></ul>
+      <p>The one thing the screen refuses to do is sort by the pre-run profile. That profile is computed and
+         flagged for every name — it is what was asked for — but in 266,460 company-months of point-in-time
+         small-cap history it underperformed the universe by 3.4 points a year and doubled least often of any
+         bucket, and the repo's own Fama-MacBeth test puts small-cap price momentum at t = −4. A screen that
+         ranked on it would be a machine for finding the names that did worst.</p>
+    </div></div>
+  </div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. A base rate is what happened to names like this one, not what will happen to it; no signal here is established at |t| ≥ 3.</footer>
+
+<script type="module" src="../js/venture.js"></script>
+</body>
+</html>

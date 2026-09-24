@@ -1,0 +1,29 @@
+{
+ "as_of": "2026-09-24",
+ "pitches": [
+  {
+   "symbol": "INDV",
+   "path": "research/pitches/INDV_pitch_2026-09-24.pdf",
+   "call": "BUY as an event, not as a growth story"
+  },
+  {
+   "symbol": "DAR",
+   "path": "research/pitches/DAR_pitch_2026-09-24.pdf",
+   "call": "BUY on the cash flow, with the policy exposure priced as the risk it is"
+  },
+  {
+   "symbol": "AAMI",
+   "path": "research/pitches/AAMI_pitch_2026-09-24.pdf",
+   "call": "BUY, with the market-beta caveat stated"
+  }
+ ],
+ "without_thesis": [
+  "MTCH",
+  "RNG",
+  "FORM",
+  "ANF",
+  "JXN",
+  "M",
+  "PBF"
+ ]
+}

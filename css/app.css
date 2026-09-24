@@ -100,6 +100,7 @@ a:hover { text-decoration: underline; }
 .shell-sections a .bk { width: 8px; height: 8px; border-radius: 2px; background: var(--muted); }
 .shell-sections a[data-book="usd"] .bk { background: var(--usd); }
 .shell-sections a[data-book="cad"] .bk { background: var(--cad); }
+.shell-sections a[data-book="venture"] .bk { background: var(--venture); }
 
 .shell-right { margin-left: auto; display: flex; align-items: center; gap: var(--sp-2); }
 

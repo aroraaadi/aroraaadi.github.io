@@ -1,8 +1,118 @@
 {
- "as_of": "2026-09-22",
+ "as_of": "2026-09-23",
  "book": "usd",
  "note": "Questrade activity. Sizes are percent of the book's equity at the time of the sync, not of the trade; no dollar figures are published.",
  "rows": [
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "GE",
+   "description": "GE AEROSPACE COMMON STOCK",
+   "currency": "USD",
+   "price": 318.4193,
+   "size_pct": 0.0338
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "NVDA",
+   "description": "NVIDIA CORP",
+   "currency": "USD",
+   "price": 227.4543,
+   "size_pct": 0.0257
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "TKO",
+   "description": "TKO GROUP HOLDINGS INC CLASS A COMMON STOCK",
+   "currency": "USD",
+   "price": 189.6564,
+   "size_pct": 0.0395
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "GOOG",
+   "description": "ALPHABET INC CLASS C CAPITAL STOCK",
+   "currency": "USD",
+   "price": 356.05,
+   "size_pct": 0.0226
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "HWM",
+   "description": "HOWMET AEROSPACE INC COMMON STOCK",
+   "currency": "USD",
+   "price": 226.58,
+   "size_pct": 0.0338
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "RDDT",
+   "description": "REDDIT INC CLASS A COMMON STOCK",
+   "currency": "USD",
+   "price": 159.5714,
+   "size_pct": 0.0056
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "TKO",
+   "description": "TKO GROUP HOLDINGS INC CLASS A COMMON STOCK",
+   "currency": "USD",
+   "price": 188.8901,
+   "size_pct": 0.0213
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "buy",
+   "symbol": "EQT",
+   "description": "EQT CORPORATION",
+   "currency": "USD",
+   "price": 50.2127,
+   "size_pct": 0.0338
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "JPM",
+   "description": "JPMORGAN CHASE & CO",
+   "currency": "USD",
+   "price": 344.8506,
+   "size_pct": 0.0584
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "RDDT",
+   "description": "REDDIT INC CLASS A COMMON STOCK",
+   "currency": "USD",
+   "price": 158.7213,
+   "size_pct": 0.0056
+  },
+  {
+   "date": "2026-09-22",
+   "kind": "trade",
+   "action": "sell",
+   "symbol": "UBER",
+   "description": "UBER TECHNOLOGIES INC COMMON STOCK",
+   "currency": "USD",
+   "price": 70.324,
+   "size_pct": 0.0338
+  },
   {
    "date": "2026-09-21",
    "kind": "trade",
@@ -11,7 +121,7 @@
    "description": "COSTCO WHOLESALE CORP-NEW",
    "currency": "USD",
    "price": 893.349,
-   "size_pct": 0.0993
+   "size_pct": 0.1008
   },
   {
    "date": "2026-09-21",
@@ -21,7 +131,7 @@
    "description": "NRG ENERGY INC",
    "currency": "USD",
    "price": 102.6403,
-   "size_pct": 0.068
+   "size_pct": 0.069
   },
   {
    "date": "2026-09-21",
@@ -31,7 +141,7 @@
    "description": "SHOPIFY INC CL A",
    "currency": "USD",
    "price": 129.9765,
-   "size_pct": 0.0289
+   "size_pct": 0.0293
   },
   {
    "date": "2026-09-21",
@@ -61,7 +171,7 @@
    "description": "SHOPIFY INC CL A",
    "currency": "CAD",
    "price": 179.49,
-   "size_pct": 0.0051
+   "size_pct": 0.0052
   },
   {
    "date": "2026-09-21",
@@ -91,7 +201,7 @@
    "description": "ROYAL BANK OF CANADA",
    "currency": "CAD",
    "price": 286.77,
-   "size_pct": 0.0184
+   "size_pct": 0.0187
   },
   {
    "date": "2026-09-21",
@@ -101,7 +211,7 @@
    "description": "TKO GROUP HOLDINGS INC CLASS A COMMON STOCK",
    "currency": "USD",
    "price": 191.12,
-   "size_pct": 0.0212
+   "size_pct": 0.0216
   },
   {
    "date": "2026-09-21",
@@ -111,7 +221,7 @@
    "description": "CONVERSION - CAD/USD",
    "currency": "CAD",
    "price": null,
-   "size_pct": 0.0292
+   "size_pct": 0.0296
   },
   {
    "date": "2026-09-21",
@@ -121,7 +231,7 @@
    "description": "CONVERSION - CAD/USD",
    "currency": "USD",
    "price": null,
-   "size_pct": 0.0289
+   "size_pct": 0.0293
   },
   {
    "date": "2026-09-21",
@@ -141,7 +251,7 @@
    "description": "146.16 TRANSFER TO 5371143917",
    "currency": "CAD",
    "price": null,
-   "size_pct": 0.0837
+   "size_pct": 0.0847
   },
   {
    "date": "2026-09-18",
@@ -221,7 +331,7 @@
    "description": "AMAZON.COM INC",
    "currency": "USD",
    "price": 246.6053,
-   "size_pct": 0.0471
+   "size_pct": 0.0479
   },
   {
    "date": "2026-09-16",
@@ -231,7 +341,7 @@
    "description": "ALPHABET INC CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
    "currency": "CAD",
    "price": 54.5,
-   "size_pct": 0.1205
+   "size_pct": 0.122
   },
   {
    "date": "2026-09-16",
@@ -241,7 +351,7 @@
    "description": "BLACKROCK ETF TR ISHARES SYSTEMATIC ALTERNATIVES ACTIVE ETF",
    "currency": "USD",
    "price": 29.57,
-   "size_pct": 0.0329
+   "size_pct": 0.0334
   },
   {
    "date": "2026-09-16",
@@ -251,7 +361,7 @@
    "description": "GE AEROSPACE COMMON STOCK",
    "currency": "USD",
    "price": 315.1197,
-   "size_pct": 0.1177
+   "size_pct": 0.1195
   },
   {
    "date": "2026-09-16",
@@ -261,7 +371,7 @@
    "description": "JPMORGAN CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
    "currency": "CAD",
    "price": 44.64,
-   "size_pct": 0.0493
+   "size_pct": 0.05
   },
   {
    "date": "2026-09-16",
@@ -271,7 +381,7 @@
    "description": "MICROSOFT CORP",
    "currency": "USD",
    "price": 492.61,
-   "size_pct": 0.0547
+   "size_pct": 0.0556
   },
   {
    "date": "2026-09-16",
@@ -281,7 +391,7 @@
    "description": "REGAL REXNORD CORPORATION",
    "currency": "USD",
    "price": 150.36,
-   "size_pct": 0.0565
+   "size_pct": 0.0573
   },
   {
    "date": "2026-09-16",
@@ -291,7 +401,7 @@
    "description": "SHOPIFY INC CL A",
    "currency": "CAD",
    "price": 183.46,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -301,7 +411,7 @@
    "description": "ALPHABET INC CLASS C CAPITAL STOCK",
    "currency": "USD",
    "price": 340.7272,
-   "size_pct": 0.0454
+   "size_pct": 0.0461
   },
   {
    "date": "2026-09-16",
@@ -311,7 +421,7 @@
    "description": "BANK OF NOVA SCOTIA",
    "currency": "CAD",
    "price": 130.27,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -321,7 +431,7 @@
    "description": "EQB INC COM",
    "currency": "CAD",
    "price": 128.33,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -331,7 +441,7 @@
    "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S",
    "currency": "CAD",
    "price": 41.1,
-   "size_pct": 0.077
+   "size_pct": 0.0779
   },
   {
    "date": "2026-09-16",
@@ -341,7 +451,7 @@
    "description": "META CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
    "currency": "CAD",
    "price": 36.15,
-   "size_pct": 0.0599
+   "size_pct": 0.0607
   },
   {
    "date": "2026-09-16",
@@ -351,7 +461,7 @@
    "description": "NVIDIA CORP",
    "currency": "USD",
    "price": 214.2727,
-   "size_pct": 0.0452
+   "size_pct": 0.0459
   },
   {
    "date": "2026-09-16",
@@ -361,7 +471,7 @@
    "description": "ROYAL BANK OF CANADA",
    "currency": "CAD",
    "price": 284.33,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -371,7 +481,7 @@
    "description": "S&P GLOBAL INC CIBC CDN DEPOSITARY RCPTS (CAD HEDGED) REG S",
    "currency": "CAD",
    "price": 19.34,
-   "size_pct": 0.0351
+   "size_pct": 0.0356
   },
   {
    "date": "2026-09-16",
@@ -381,7 +491,7 @@
    "description": "AMAZON.COM CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
    "currency": "CAD",
    "price": 28.25,
-   "size_pct": 0.0981
+   "size_pct": 0.0994
   },
   {
    "date": "2026-09-16",
@@ -391,7 +501,7 @@
    "description": "BROOKFIELD CORP VTG SHS CL A",
    "currency": "CAD",
    "price": 52.27,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -401,7 +511,7 @@
    "description": "ENBRIDGE INC",
    "currency": "CAD",
    "price": 67.72,
-   "size_pct": 0.0632
+   "size_pct": 0.064
   },
   {
    "date": "2026-09-16",
@@ -411,7 +521,7 @@
    "description": "JPMORGAN CHASE & CO",
    "currency": "USD",
    "price": 349.4682,
-   "size_pct": 0.0583
+   "size_pct": 0.0591
   },
   {
    "date": "2026-09-16",
@@ -421,7 +531,7 @@
    "description": "MDA SPACE LTD COM",
    "currency": "USD",
    "price": 29.175,
-   "size_pct": 0.0389
+   "size_pct": 0.0395
   },
   {
    "date": "2026-09-16",
@@ -431,7 +541,7 @@
    "description": "NRG ENERGY INC",
    "currency": "USD",
    "price": 108.018,
-   "size_pct": 0.0715
+   "size_pct": 0.0726
   },
   {
    "date": "2026-09-16",
@@ -441,7 +551,7 @@
    "description": "SCHWAB STRATEGIC TR US LCAP GR ETF",
    "currency": "USD",
    "price": 35.2002,
-   "size_pct": 0.1839
+   "size_pct": 0.1867
   },
   {
    "date": "2026-09-16",
@@ -451,7 +561,7 @@
    "description": "UBER TECHNOLOGIES INC COMMON STOCK",
    "currency": "USD",
    "price": 71.883,
-   "size_pct": 0.0943
+   "size_pct": 0.0957
   },
   {
    "date": "2026-09-15",
@@ -461,7 +571,7 @@
    "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
    "currency": "USD",
    "price": 10.15,
-   "size_pct": 0.2256
+   "size_pct": 0.229
   },
   {
    "date": "2026-09-15",
@@ -501,7 +611,7 @@
    "description": "GLOBAL X US DLR CURRENCY ETF UNIT CL A",
    "currency": "CAD",
    "price": 14.025,
-   "size_pct": 0.2215
+   "size_pct": 0.2243
   },
   {
    "date": "2026-09-10",
@@ -511,7 +621,7 @@
    "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED",
    "currency": "CAD",
    "price": 76.2,
-   "size_pct": 0.1444
+   "size_pct": 0.1462
   },
   {
    "date": "2026-09-10",
@@ -531,7 +641,7 @@
    "description": "ISHARES S&P/TSX 60 INDEX ETF",
    "currency": "CAD",
    "price": 52.59,
-   "size_pct": 0.0872
+   "size_pct": 0.0883
   },
   {
    "date": "2026-09-10",
@@ -751,7 +861,7 @@
    "description": "ISHARES CORE S&P 500 INDEX ETF CAD HEDGED",
    "currency": "CAD",
    "price": 76.98,
-   "size_pct": 0.0912
+   "size_pct": 0.0923
   },
   {
    "date": "2026-08-31",
@@ -761,7 +871,7 @@
    "description": "NVIDIA CORP CDR CAD HEDGED CIBC DEPOSITARY RECEIPTS REG S",
    "currency": "CAD",
    "price": 48.88,
-   "size_pct": 0.0733
+   "size_pct": 0.0743
   },
   {
    "date": "2026-08-31",
@@ -771,7 +881,7 @@
    "description": "SPACE EXP TECH CORP(SPACEX) CIBC CDR (CAD HEDGED) REG S",
    "currency": "CAD",
    "price": 23.83,
-   "size_pct": 0.0151
+   "size_pct": 0.0152
   },
   {
    "date": "2026-08-31",
@@ -791,7 +901,7 @@
    "description": "TRANSFER FEE",
    "currency": "CAD",
    "price": null,
-   "size_pct": 0.0118
+   "size_pct": 0.012
   },
   {
    "date": "2026-08-18",
@@ -801,7 +911,7 @@
    "description": "BLACKROCK ETF TR ISHARES SYSTEMATIC ALTERNATIVES ACTIVE ETF",
    "currency": "USD",
    "price": 28.965,
-   "size_pct": 0.0322
+   "size_pct": 0.0327
   },
   {
    "date": "2026-08-18",
@@ -811,7 +921,7 @@
    "description": "TERAWULF INC COMMON STOCK",
    "currency": "USD",
    "price": 17.12,
-   "size_pct": 0.0038
+   "size_pct": 0.0039
   },
   {
    "date": "2026-08-18",
@@ -821,7 +931,7 @@
    "description": "BETAPRO 3X SEMICONDUCTOR DAILY LEVERAGED BULL ALTERNATIVE ETF ETF SHS",
    "currency": "CAD",
    "price": 33.35,
-   "size_pct": 0.0132
+   "size_pct": 0.0133
   },
   {
    "date": "2026-08-18",
@@ -831,7 +941,7 @@
    "description": "SHARONAI HOLDINGS INC CLASS A COMMON STOCK",
    "currency": "USD",
    "price": 74.27,
-   "size_pct": 0.0083
+   "size_pct": 0.0084
   },
   {
    "date": "2026-08-18",
@@ -841,7 +951,7 @@
    "description": "GE AEROSPACE CIBC CDN DEPOSITARY RCPTS CAD HEDGE REG S",
    "currency": "CAD",
    "price": 48.42,
-   "size_pct": 0.0142
+   "size_pct": 0.0144
   },
   {
    "date": "2026-08-18",
@@ -851,7 +961,7 @@
    "description": "UBER TECHNOLOGIES INC COMMON STOCK",
    "currency": "USD",
    "price": 76.3298,
-   "size_pct": 0.0254
+   "size_pct": 0.0258
   },
   {
    "date": "2026-08-11",
@@ -861,7 +971,7 @@
    "description": "CALL ACHR 09/18/26 6 ARCHER AVIATION INC CLASS A",
    "currency": "USD",
    "price": 1.29,
-   "size_pct": 0.0143
+   "size_pct": 0.0146
   },
   {
    "date": "2026-08-10",
@@ -891,7 +1001,7 @@
    "description": "XANADU QUANTUM TECHNOLOGIES LTD COM",
    "currency": "CAD",
    "price": 15.7,
-   "size_pct": 0.0136
+   "size_pct": 0.0138
   },
   {
    "date": "2026-07-22",
@@ -901,7 +1011,7 @@
    "description": "XANADU QUANTUM TECHNOLOGIES LTD COM",
    "currency": "USD",
    "price": 11.1,
-   "size_pct": 0.0247
+   "size_pct": 0.025
   },
   {
    "date": "2026-07-22",
@@ -911,7 +1021,7 @@
    "description": "CALL ACHR 09/18/26 6 ARCHER AVIATION INC CLASS A",
    "currency": "USD",
    "price": 0.48,
-   "size_pct": 0.0054
+   "size_pct": 0.0055
   },
   {
    "date": "2026-07-21",
@@ -921,7 +1031,7 @@
    "description": "CALL WULF 08/28/26 19.50 TERAWULF INC",
    "currency": "USD",
    "price": 3.35,
-   "size_pct": 0.0371
+   "size_pct": 0.0377
   },
   {
    "date": "2026-07-21",
@@ -931,7 +1041,7 @@
    "description": "MARVELL TECHNOLOGY INC COMMON STOCK",
    "currency": "USD",
    "price": 209.0354,
-   "size_pct": 0.0232
+   "size_pct": 0.0236
   },
   {
    "date": "2026-07-17",
@@ -951,7 +1061,7 @@
    "description": "CIBC WORLD MARKETS INC. TFSA TRANSFER",
    "currency": "CAD",
    "price": null,
-   "size_pct": 0.0154
+   "size_pct": 0.0156
   },
   {
    "date": "2026-07-17",
@@ -961,7 +1071,7 @@
    "description": "CALL WULF 08/28/26 19.50 TERAWULF INC",
    "currency": "USD",
    "price": 1.66,
-   "size_pct": 0.0186
+   "size_pct": 0.0188
   },
   {
    "date": "2026-07-17",
@@ -1221,7 +1331,7 @@
    "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF",
    "currency": "USD",
    "price": 114.7998,
-   "size_pct": 0.0112
+   "size_pct": 0.0114
   },
   {
    "date": "2026-06-30",
@@ -1251,7 +1361,7 @@
    "description": "CALL UBER 06/26/26 74 UBER TECHNOLOGIES INC",
    "currency": "USD",
    "price": 0.27,
-   "size_pct": 0.0058
+   "size_pct": 0.0059
   },
   {
    "date": "2026-06-25",
@@ -1261,7 +1371,7 @@
    "description": "CALL UBER 06/26/26 74 UBER TECHNOLOGIES INC",
    "currency": "USD",
    "price": 0.25,
-   "size_pct": 0.0058
+   "size_pct": 0.0059
   },
   {
    "date": "2026-06-18",
@@ -1271,7 +1381,7 @@
    "description": "CALL SMR 07/02/26 11.50 NUSCALE POWER CORPORATION CL A",
    "currency": "USD",
    "price": 0.9,
-   "size_pct": 0.0099
+   "size_pct": 0.01
   },
   {
    "date": "2026-06-05",
@@ -1281,7 +1391,7 @@
    "description": "CALL SMR 07/02/26 11.50 NUSCALE POWER CORPORATION CL A",
    "currency": "USD",
    "price": 0.8,
-   "size_pct": 0.009
+   "size_pct": 0.0091
   },
   {
    "date": "2026-06-05",
@@ -1291,7 +1401,7 @@
    "description": "DIREXION SHS ETF TRUST DIREXION DAILY NVDA BULL 2X ETF",
    "currency": "USD",
    "price": 128.9318,
-   "size_pct": 0.0126
+   "size_pct": 0.0127
   },
   {
    "date": "2026-06-05",
@@ -1321,7 +1431,7 @@
    "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG NBIS DAILY ETF",
    "currency": "USD",
    "price": 56.0181,
-   "size_pct": 0.0209
+   "size_pct": 0.0212
   },
   {
    "date": "2026-06-04",
@@ -1341,7 +1451,7 @@
    "description": "INVESTMENT MANAGERS SER TR II TRADR 2X LONG NBIS DAILY ETF",
    "currency": "USD",
    "price": 134.2506,
-   "size_pct": 0.0167
+   "size_pct": 0.0169
   }
  ]
 }

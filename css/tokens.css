@@ -68,6 +68,8 @@
   --usd-soft:   #17243f;
   --cad:        #e09a4a;
   --cad-soft:   #35270f;
+  --venture:    #4fb286;
+  --venture-soft: #123024;
   --book:       var(--accent);
   --book-soft:  var(--accent-dim);
 
@@ -128,6 +130,7 @@
 
 [data-book="usd"] { --book: var(--usd); --book-soft: var(--usd-soft); }
 [data-book="cad"] { --book: var(--cad); --book-soft: var(--cad-soft); }
+[data-book="venture"] { --book: var(--venture); --book-soft: var(--venture-soft); }
 
 /* Light ground — the OS preference, unless the viewer chose dark. */
 @media (prefers-color-scheme: light) {
@@ -150,6 +153,8 @@
     --usd-soft:   #e6edfc;
     --cad:        #b0641a;
     --cad-soft:   #f8ecdf;
+    --venture:    #1f8a5b;
+    --venture-soft: #e3f4eb;
     --up:         #0f7a6c;
     --up-soft:    #dff2ef;
     --down:       #d0392f;
@@ -186,6 +191,8 @@
   --usd-soft:   #e6edfc;
   --cad:        #b0641a;
   --cad-soft:   #f8ecdf;
+  --venture:    #1f8a5b;
+  --venture-soft: #e3f4eb;
   --up:         #0f7a6c;
   --up-soft:    #dff2ef;
   --down:       #d0392f;

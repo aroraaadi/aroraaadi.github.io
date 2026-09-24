@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "source": "brokerage accounts \u2014 allocation only (relative)",
   "note": "Two books, one per account. Weights are within each book, of invested market value, in the book's own currency; cash_weight is cash over total equity. share_of_total is the book's share of both accounts combined. No dollar figures are published.",
   "books": {
@@ -13,9 +13,9 @@
       "outside": [
         "XNDU"
       ],
-      "n_positions": 15,
-      "cash_weight": 0.002,
-      "share_of_total": 0.6937,
+      "n_positions": 16,
+      "cash_weight": 0.011,
+      "share_of_total": 0.6942,
       "target": {
         "GE": 0.125,
         "UBER": 0.125,
@@ -34,41 +34,19 @@
         "SPGI": 0.037
       },
       "target_as_of": "2026-09-21",
-      "drift_one_way": 0.2663,
-      "drift_note": "One-way distance to the engine's target: 26.6%. The engine suggests and the owner trades, on a quarterly cadence with a 30% partial adjustment, so a gap between rebalances is expected rather than a defect. Names marked \u201coutside the model\u201d are held for reasons the model does not price.",
+      "drift_one_way": 0.2671,
+      "drift_note": "One-way distance to the engine's target: 26.7%. The engine suggests and the owner trades, on a quarterly cadence with a 30% partial adjustment, so a gap between rebalances is expected rather than a defect. Names marked \u201coutside the model\u201d are held for reasons the model does not price.",
       "positions": [
-        {
-          "symbol": "COST",
-          "name": "COSTCO WHOLESALE CORP",
-          "usd_symbol": "COST",
-          "kind": "stock",
-          "currency": "USD",
-          "weight": 0.1003,
-          "stale_price": false,
-          "in_model": true,
-          "return_pct": 0.008
-        },
-        {
-          "symbol": "BE",
-          "name": "BLOOM ENERGY CORPORATION",
-          "usd_symbol": "BE",
-          "kind": "stock",
-          "currency": "USD",
-          "weight": 0.0924,
-          "stale_price": false,
-          "in_model": true,
-          "return_pct": 0.3386
-        },
         {
           "symbol": "GE",
           "name": "GE AEROSPACE",
           "usd_symbol": "GE",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0856,
+          "weight": 0.0881,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.0095
+          "return_pct": 0.0139
         },
         {
           "symbol": "META",
@@ -76,10 +54,10 @@
           "usd_symbol": "META",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0835,
+          "weight": 0.0844,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.1286
+          "return_pct": 0.1139
         },
         {
           "symbol": "UBER",
@@ -87,21 +65,10 @@
           "usd_symbol": "UBER",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0825,
+          "weight": 0.0835,
           "stale_price": false,
           "in_model": true,
-          "return_pct": -0.0334
-        },
-        {
-          "symbol": "SHOP",
-          "name": "SHOPIFY INC",
-          "usd_symbol": "SHOP",
-          "kind": "stock",
-          "currency": "USD",
-          "weight": 0.082,
-          "stale_price": false,
-          "in_model": true,
-          "return_pct": 0.0101
+          "return_pct": -0.0455
         },
         {
           "symbol": "AVGO",
@@ -112,7 +79,18 @@
           "weight": 0.0809,
           "stale_price": false,
           "in_model": true,
-          "return_pct": -0.0299
+          "return_pct": -0.0526
+        },
+        {
+          "symbol": "SHOP",
+          "name": "SHOPIFY INC",
+          "usd_symbol": "SHOP",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0808,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": -0.0288
         },
         {
           "symbol": "NVDA",
@@ -120,10 +98,21 @@
           "usd_symbol": "NVDA",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0739,
+          "weight": 0.0744,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.0451
+          "return_pct": 0.028
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML HOLDING NV EUR0.09 NY REGISTRY SHS 2012",
+          "usd_symbol": "ASML",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0693,
+          "stale_price": false,
+          "in_model": false,
+          "return_pct": 0.0119
         },
         {
           "symbol": "GOOG",
@@ -131,10 +120,21 @@
           "usd_symbol": "GOOG",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0686,
+          "weight": 0.0675,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.0117
+          "return_pct": -0.0278
+        },
+        {
+          "symbol": "BE",
+          "name": "BLOOM ENERGY CORPORATION",
+          "usd_symbol": "BE",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0624,
+          "stale_price": false,
+          "in_model": true,
+          "return_pct": 0.3231
         },
         {
           "symbol": "RRX",
@@ -142,10 +142,21 @@
           "usd_symbol": "RRX",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0573,
+          "weight": 0.0588,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.0127
+          "return_pct": 0.0137
+        },
+        {
+          "symbol": "TKO",
+          "name": "TKO GROUP HLDGS INC",
+          "usd_symbol": "TKO",
+          "kind": "stock",
+          "currency": "USD",
+          "weight": 0.0512,
+          "stale_price": false,
+          "in_model": false,
+          "return_pct": -0.0017
         },
         {
           "symbol": "AMZN",
@@ -156,18 +167,18 @@
           "weight": 0.0488,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.034
+          "return_pct": 0.0075
         },
         {
-          "symbol": "TKO",
-          "name": "TKO GROUP HLDGS INC",
-          "usd_symbol": "TKO",
+          "symbol": "COST",
+          "name": "COSTCO WHOLESALE CORP",
+          "usd_symbol": "COST",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0389,
+          "weight": 0.0457,
           "stale_price": false,
-          "in_model": false,
-          "return_pct": -0.001
+          "in_model": true,
+          "return_pct": 0.0139
         },
         {
           "symbol": "XNDU",
@@ -175,10 +186,10 @@
           "usd_symbol": "XNDU",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.038,
+          "weight": 0.0349,
           "stale_price": false,
           "in_model": false,
-          "return_pct": -0.4249
+          "return_pct": -0.4836
         },
         {
           "symbol": "EQT",
@@ -186,10 +197,10 @@
           "usd_symbol": "EQT",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0338,
+          "weight": 0.0348,
           "stale_price": false,
           "in_model": true,
-          "return_pct": 0.0109
+          "return_pct": 0.0159
         },
         {
           "symbol": "HWM",
@@ -197,10 +208,10 @@
           "usd_symbol": "HWM",
           "kind": "stock",
           "currency": "USD",
-          "weight": 0.0334,
+          "weight": 0.0344,
           "stale_price": false,
           "in_model": false,
-          "return_pct": -0.0012
+          "return_pct": 0.0065
         }
       ]
     },
@@ -213,8 +224,8 @@
       "mandate": "Canadian quality and income, run by hand: the big banks, an alternative lender, a pipeline, an asset manager and an equipment dealer, held at equal weight. No model has a view on it; the engine only measures it.",
       "outside": [],
       "n_positions": 7,
-      "cash_weight": 0.0107,
-      "share_of_total": 0.3063,
+      "cash_weight": 0.0109,
+      "share_of_total": 0.3058,
       "target": {
         "BN.TO": 0.1429,
         "EQB.TO": 0.1429,
@@ -225,8 +236,8 @@
         "TIH.TO": 0.1429
       },
       "target_as_of": null,
-      "drift_one_way": 0.077,
-      "drift_note": "One-way distance from equal weight: 7.7%, inside the 12% band. The book is rebalanced by hand; drift between top-ups is price movement, not a decision. No model has a view on these names \u2014 the engine only measures them.",
+      "drift_one_way": 0.0731,
+      "drift_note": "One-way distance from equal weight: 7.3%, inside the 12% band. The book is rebalanced by hand; drift between top-ups is price movement, not a decision. No model has a view on these names \u2014 the engine only measures them.",
       "positions": [
         {
           "symbol": "BN.TO",
@@ -234,10 +245,10 @@
           "usd_symbol": "BN.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1811,
+          "weight": 0.18,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.0147
+          "return_pct": -0.0068
         },
         {
           "symbol": "EQB.TO",
@@ -245,10 +256,10 @@
           "usd_symbol": "EQB.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1733,
+          "weight": 0.1742,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.0145
+          "return_pct": 0.0043
         },
         {
           "symbol": "SHOP.TO",
@@ -256,10 +267,10 @@
           "usd_symbol": "SHOP",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1499,
+          "weight": 0.1471,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.1562
+          "return_pct": 0.1178
         },
         {
           "symbol": "BNS.TO",
@@ -267,10 +278,10 @@
           "usd_symbol": "BNS.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1441,
+          "weight": 0.1432,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.01
+          "return_pct": -0.0118
         },
         {
           "symbol": "RY.TO",
@@ -278,10 +289,10 @@
           "usd_symbol": "RY.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1393,
+          "weight": 0.1391,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.0024
+          "return_pct": -0.0141
         },
         {
           "symbol": "ENB.TO",
@@ -289,10 +300,10 @@
           "usd_symbol": "ENB.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.1351,
+          "weight": 0.1362,
           "stale_price": false,
           "in_model": null,
-          "return_pct": -0.0028
+          "return_pct": -0.0098
         },
         {
           "symbol": "TIH.TO",
@@ -300,49 +311,25 @@
           "usd_symbol": "TIH.TO",
           "kind": "stock",
           "currency": "CAD",
-          "weight": 0.0772,
+          "weight": 0.0801,
           "stale_price": false,
           "in_model": null,
-          "return_pct": 0.0681
+          "return_pct": 0.092
         }
       ]
     }
   },
   "positions": [
     {
-      "symbol": "COST",
-      "name": "COSTCO WHOLESALE CORP",
-      "usd_symbol": "COST",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.1003,
-      "stale_price": false,
-      "in_model": true,
-      "return_pct": 0.008,
-      "book": "usd"
-    },
-    {
-      "symbol": "BE",
-      "name": "BLOOM ENERGY CORPORATION",
-      "usd_symbol": "BE",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0924,
-      "stale_price": false,
-      "in_model": true,
-      "return_pct": 0.3386,
-      "book": "usd"
-    },
-    {
       "symbol": "GE",
       "name": "GE AEROSPACE",
       "usd_symbol": "GE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0856,
+      "weight": 0.0881,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.0095,
+      "return_pct": 0.0139,
       "book": "usd"
     },
     {
@@ -351,10 +338,10 @@
       "usd_symbol": "META",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0835,
+      "weight": 0.0844,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.1286,
+      "return_pct": 0.1139,
       "book": "usd"
     },
     {
@@ -363,22 +350,10 @@
       "usd_symbol": "UBER",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0825,
+      "weight": 0.0835,
       "stale_price": false,
       "in_model": true,
-      "return_pct": -0.0334,
-      "book": "usd"
-    },
-    {
-      "symbol": "SHOP",
-      "name": "SHOPIFY INC",
-      "usd_symbol": "SHOP",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.082,
-      "stale_price": false,
-      "in_model": true,
-      "return_pct": 0.0101,
+      "return_pct": -0.0455,
       "book": "usd"
     },
     {
@@ -390,7 +365,19 @@
       "weight": 0.0809,
       "stale_price": false,
       "in_model": true,
-      "return_pct": -0.0299,
+      "return_pct": -0.0526,
+      "book": "usd"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "SHOPIFY INC",
+      "usd_symbol": "SHOP",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0808,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": -0.0288,
       "book": "usd"
     },
     {
@@ -399,10 +386,22 @@
       "usd_symbol": "NVDA",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0739,
+      "weight": 0.0744,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.0451,
+      "return_pct": 0.028,
+      "book": "usd"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML HOLDING NV EUR0.09 NY REGISTRY SHS 2012",
+      "usd_symbol": "ASML",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0693,
+      "stale_price": false,
+      "in_model": false,
+      "return_pct": 0.0119,
       "book": "usd"
     },
     {
@@ -411,10 +410,22 @@
       "usd_symbol": "GOOG",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0686,
+      "weight": 0.0675,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.0117,
+      "return_pct": -0.0278,
+      "book": "usd"
+    },
+    {
+      "symbol": "BE",
+      "name": "BLOOM ENERGY CORPORATION",
+      "usd_symbol": "BE",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0624,
+      "stale_price": false,
+      "in_model": true,
+      "return_pct": 0.3231,
       "book": "usd"
     },
     {
@@ -423,10 +434,22 @@
       "usd_symbol": "RRX",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0573,
+      "weight": 0.0588,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.0127,
+      "return_pct": 0.0137,
+      "book": "usd"
+    },
+    {
+      "symbol": "TKO",
+      "name": "TKO GROUP HLDGS INC",
+      "usd_symbol": "TKO",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0512,
+      "stale_price": false,
+      "in_model": false,
+      "return_pct": -0.0017,
       "book": "usd"
     },
     {
@@ -438,19 +461,19 @@
       "weight": 0.0488,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.034,
+      "return_pct": 0.0075,
       "book": "usd"
     },
     {
-      "symbol": "TKO",
-      "name": "TKO GROUP HLDGS INC",
-      "usd_symbol": "TKO",
+      "symbol": "COST",
+      "name": "COSTCO WHOLESALE CORP",
+      "usd_symbol": "COST",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0389,
+      "weight": 0.0457,
       "stale_price": false,
-      "in_model": false,
-      "return_pct": -0.001,
+      "in_model": true,
+      "return_pct": 0.0139,
       "book": "usd"
     },
     {
@@ -459,10 +482,10 @@
       "usd_symbol": "XNDU",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.038,
+      "weight": 0.0349,
       "stale_price": false,
       "in_model": false,
-      "return_pct": -0.4249,
+      "return_pct": -0.4836,
       "book": "usd"
     },
     {
@@ -471,10 +494,10 @@
       "usd_symbol": "EQT",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0338,
+      "weight": 0.0348,
       "stale_price": false,
       "in_model": true,
-      "return_pct": 0.0109,
+      "return_pct": 0.0159,
       "book": "usd"
     },
     {
@@ -483,10 +506,10 @@
       "usd_symbol": "HWM",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0334,
+      "weight": 0.0344,
       "stale_price": false,
       "in_model": false,
-      "return_pct": -0.0012,
+      "return_pct": 0.0065,
       "book": "usd"
     },
     {
@@ -495,10 +518,10 @@
       "usd_symbol": "BN.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1811,
+      "weight": 0.18,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.0147,
+      "return_pct": -0.0068,
       "book": "cad"
     },
     {
@@ -507,10 +530,10 @@
       "usd_symbol": "EQB.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1733,
+      "weight": 0.1742,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.0145,
+      "return_pct": 0.0043,
       "book": "cad"
     },
     {
@@ -519,10 +542,10 @@
       "usd_symbol": "SHOP",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1499,
+      "weight": 0.1471,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.1562,
+      "return_pct": 0.1178,
       "book": "cad"
     },
     {
@@ -531,10 +554,10 @@
       "usd_symbol": "BNS.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1441,
+      "weight": 0.1432,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.01,
+      "return_pct": -0.0118,
       "book": "cad"
     },
     {
@@ -543,10 +566,10 @@
       "usd_symbol": "RY.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1393,
+      "weight": 0.1391,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.0024,
+      "return_pct": -0.0141,
       "book": "cad"
     },
     {
@@ -555,10 +578,10 @@
       "usd_symbol": "ENB.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.1351,
+      "weight": 0.1362,
       "stale_price": false,
       "in_model": null,
-      "return_pct": -0.0028,
+      "return_pct": -0.0098,
       "book": "cad"
     },
     {
@@ -567,43 +590,19 @@
       "usd_symbol": "TIH.TO",
       "kind": "stock",
       "currency": "CAD",
-      "weight": 0.0772,
+      "weight": 0.0801,
       "stale_price": false,
       "in_model": null,
-      "return_pct": 0.0681,
+      "return_pct": 0.092,
       "book": "cad"
     }
   ],
   "usd_positions": [
     {
-      "symbol": "COST",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.1003,
-      "held_as": [
-        "COST"
-      ],
-      "merged": false,
-      "stale_price": false,
-      "in_model": true
-    },
-    {
-      "symbol": "BE",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.0924,
-      "held_as": [
-        "BE"
-      ],
-      "merged": false,
-      "stale_price": false,
-      "in_model": true
-    },
-    {
       "symbol": "GE",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0856,
+      "weight": 0.0881,
       "held_as": [
         "GE"
       ],
@@ -615,7 +614,7 @@
       "symbol": "META",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0835,
+      "weight": 0.0844,
       "held_as": [
         "META"
       ],
@@ -627,21 +626,9 @@
       "symbol": "UBER",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0825,
+      "weight": 0.0835,
       "held_as": [
         "UBER"
-      ],
-      "merged": false,
-      "stale_price": false,
-      "in_model": true
-    },
-    {
-      "symbol": "SHOP",
-      "kind": "stock",
-      "currency": "USD",
-      "weight": 0.082,
-      "held_as": [
-        "SHOP"
       ],
       "merged": false,
       "stale_price": false,
@@ -660,10 +647,22 @@
       "in_model": true
     },
     {
+      "symbol": "SHOP",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0808,
+      "held_as": [
+        "SHOP"
+      ],
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
+    },
+    {
       "symbol": "NVDA",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0739,
+      "weight": 0.0744,
       "held_as": [
         "NVDA"
       ],
@@ -672,12 +671,36 @@
       "in_model": true
     },
     {
+      "symbol": "ASML",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0693,
+      "held_as": [
+        "ASML"
+      ],
+      "merged": false,
+      "stale_price": false,
+      "in_model": false
+    },
+    {
       "symbol": "GOOG",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0686,
+      "weight": 0.0675,
       "held_as": [
         "GOOG"
+      ],
+      "merged": false,
+      "stale_price": false,
+      "in_model": true
+    },
+    {
+      "symbol": "BE",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0624,
+      "held_as": [
+        "BE"
       ],
       "merged": false,
       "stale_price": false,
@@ -687,13 +710,25 @@
       "symbol": "RRX",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0573,
+      "weight": 0.0588,
       "held_as": [
         "RRX"
       ],
       "merged": false,
       "stale_price": false,
       "in_model": true
+    },
+    {
+      "symbol": "TKO",
+      "kind": "stock",
+      "currency": "USD",
+      "weight": 0.0512,
+      "held_as": [
+        "TKO"
+      ],
+      "merged": false,
+      "stale_price": false,
+      "in_model": false
     },
     {
       "symbol": "AMZN",
@@ -708,22 +743,22 @@
       "in_model": true
     },
     {
-      "symbol": "TKO",
+      "symbol": "COST",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0389,
+      "weight": 0.0457,
       "held_as": [
-        "TKO"
+        "COST"
       ],
       "merged": false,
       "stale_price": false,
-      "in_model": false
+      "in_model": true
     },
     {
       "symbol": "XNDU",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.038,
+      "weight": 0.0349,
       "held_as": [
         "XNDU"
       ],
@@ -735,7 +770,7 @@
       "symbol": "EQT",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0338,
+      "weight": 0.0348,
       "held_as": [
         "EQT"
       ],
@@ -747,7 +782,7 @@
       "symbol": "HWM",
       "kind": "stock",
       "currency": "USD",
-      "weight": 0.0334,
+      "weight": 0.0344,
       "held_as": [
         "HWM"
       ],

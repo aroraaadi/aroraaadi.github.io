@@ -6,7 +6,7 @@
  "q": 0.012,
  "source": "questrade",
  "delayed_min": 0,
- "snapshot_age_min": 21.1,
+ "snapshot_age_min": 39.0,
  "n_quotes": 6138,
  "n_ok": 2623,
  "flags": {

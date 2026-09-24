@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vol engine — Two Books</title>
+<meta name="description" content="Realised, forecast and implied volatility of SPY: a forecast race, SVI smiles with arbitrage checks, model-free implied variance, roughness.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Vol engine — Two Books">
+<meta property="og:description" content="Realised, forecast and implied volatility of SPY: a forecast race, SVI smiles with arbitrage checks, model-free implied variance, roughness.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1114" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <h1>Vol engine</h1>
+  <p class="sub">Realised, forecast and implied volatility of SPY, measured the way a vol desk measures them: five
+     range-based estimators; seven forecasters raced out of sample since 2010 on the losses that survive a noisy
+     target, with Diebold-Mariano tests between them; SVI smiles fitted per expiry and checked for butterfly and
+     calendar arbitrage, with the risk-neutral density each one implies; model-free implied variance the VIX way;
+     and how rough and how mean-reverting vol is. The forecaster that wins the race is the one the SPY vol strategy
+     compares implied against.</p>
+  <p class="meta" id="ve-meta"></p>
+  <div id="error"></div>
+  <div id="ve-strip" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Forecast race</h2><span class="spacer"></span><span class="note" id="ve-race-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="ve-race"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><div class="legend" id="ve-fc-legend"></div><div class="chart" style="height:280px"><canvas id="ve-fc"></canvas></div>
+      <p class="note">21-day forecasts against the vol then realised, last three years. Every forecast at a date uses data to that date only.</p></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:320px"><table id="ve-years"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="ve-race-method"></p></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Realised</h2><span class="spacer"></span><span class="note">annualised, 252 days</span></div>
+      <div class="panel-b flush"><div class="tbl-wrap"><table id="ve-est"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b flush"><div class="tbl-wrap"><table id="ve-cone"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note">Range estimators (Parkinson, Garman-Klass, Rogers-Satchell) use the day's high and low and
+         exclude the overnight gap, where much of an ETF's variance sits; Yang-Zhang adds the gap back and is the one to quote.</p></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Realised vs implied, three years</h2><span class="spacer"></span><span class="note">21-day windows</span></div>
+      <div class="panel-b"><div class="legend" id="ve-hist-legend"></div><div class="chart" style="height:240px"><canvas id="ve-hist"></canvas></div></div>
+      <div class="panel-b" id="ve-vrp"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Smile fit, SVI</h2><span class="spacer"></span><span class="note" id="ve-svi-note"></span></div>
+    <div class="panel-b"><div class="controls"><label class="field"><span>Expiry</span><select id="ve-exp"></select></label></div></div>
+    <div class="grid-2" style="padding:0 var(--sp-4)">
+      <div><div class="legend" id="ve-smile-legend"></div><div class="chart" style="height:260px"><canvas id="ve-smile"></canvas></div></div>
+      <div><div class="chart" style="height:260px"><canvas id="ve-dens"></canvas></div><p class="note" id="ve-dens-note"></p></div>
+    </div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:420px"><table id="ve-svi"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note">Raw SVI (Gatheral 2004) in log-forward-moneyness, fitted per expiry. Butterfly: the Gatheral-Jacquier
+       g-function must stay non-negative. Calendar: total variance must not fall with maturity. The density is Breeden-Litzenberger's
+       second derivative of the fitted call price; its skew and kurtosis are what the market prices, model-free of the underlying.</p></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-h"><h2>Model-free implied variance</h2><span class="spacer"></span><span class="note">the VIX formula, per expiry</span></div>
+      <div class="panel-b" id="ve-mfiv"></div>
+      <div class="panel-b flush"><div class="tbl-wrap" style="max-height:320px"><table id="ve-mfiv-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+      <div class="panel-b"><p class="note" id="ve-mfiv-note"></p></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h2>Roughness and mean reversion</h2><span class="spacer"></span><span class="note">Gatheral-Jaisson-Rosenbaum; Ornstein-Uhlenbeck on log VIX</span></div>
+      <div class="panel-b" id="ve-rough"></div>
+      <div class="panel-b"><div class="chart" style="height:200px"><canvas id="ve-decay"></canvas></div><p class="note" id="ve-decay-note"></p></div>
+      <div class="panel-b"><p class="note" id="ve-rough-note"></p></div>
+    </div>
+  </div>
+  <p class="note" id="ve-caveat"></p>
+</main>
+
+<footer>Personal research project, not investment advice. Daily bars, FRED and point-in-time option snapshots; nothing here is executed.</footer>
+
+<script type="module" src="../js/volengine.js"></script>
+</body>
+</html>

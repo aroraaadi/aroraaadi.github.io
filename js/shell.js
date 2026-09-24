@@ -34,6 +34,7 @@ const SECTIONS = [
       ["Options", "research/options.html"],
       ["Vol surface", "research/volsurface.html"],
       ["SPY vol", "research/voltrade.html"],
+      ["Vol engine", "research/volengine.html"],
       ["Revisions", "research/revisions.html"],
       ["Small caps", "research/smallcap.html"],
     ],

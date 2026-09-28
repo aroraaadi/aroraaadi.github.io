@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathematics — Two Books</title>
+<meta name="description" content="Every equation the engine evaluates to turn a stock into a weight, with the parameter values in force.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Mathematics — Two Books">
+<meta property="og:description" content="Every equation the engine evaluates to turn a stock into a weight, with the parameter values in force.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f14" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<script>
+  window.ASSET_BASE = "";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <header class="masthead">
+    <p class="eyebrow" style="--book:var(--ink-2)">How a stock becomes a weight</p>
+    <h1>The mathematics</h1>
+    <p class="lede">Every equation the engine actually evaluates, in the order it evaluates them, with the
+       parameter it uses today read from the last published run. The <a href="methodology.html">methodology</a>
+       page argues for each step; this page states it. Where the code and its own comments disagree, the
+       code is what is written here.</p>
+    <p class="meta" id="math-meta"></p>
+  </header>
+  <div id="error"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Parameters in force</h2><span class="spacer"></span><span class="note">live, from the last run</span></div>
+    <div class="panel-b flush"><div id="math-live" class="strip" style="margin:0;border:0;border-radius:0"></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>0 · Notation</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>\(N\) names, indexed \(i\); \(T\) daily observations, indexed \(t\). \(r_{i,t}\) is a simple daily return.
+         \(\Sigma\) is the annualised covariance of the names and \(\sigma_i = \sqrt{\Sigma_{ii}}\). \(\mu\), \(\pi\) and
+         \(Q\) are annualised <em>excess</em> returns over the risk-free rate \(r_f\); mixing an excess prior with a total-return
+         view would bias every high-beta name, so the units are enforced at the seam. \(w\) is a weight vector that sums to one.
+         \(\Phi^{-1}\) is the standard normal quantile. A bold-face live value beside an equation is the number the last run used.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>1 · Signals</h2><span class="spacer"></span>
+      <span class="note" id="sig-status"></span></div>
+    <div class="panel-b"><div class="prose">
+      <p>Four cross-sectional scores are computed for every name at every run. <strong>They are published as
+         diagnostics and do not currently reach the weights</strong>: the view source is
+         <b id="m-view-source">—</b>, so the Black-Litterman views in §4 come from the valuation model. This section
+         is stated in full because the machinery is live, its information coefficients are being measured, and
+         it is the path momentum takes if it earns one.</p>
+      <h3>Sector neutralisation, then a Gaussian rank</h3>
+      <p>Each raw metric \(x_i\) is partially demeaned within its sector \(s\) of \(n_s\) covered names, shrunk so a
+         one-name sector keeps its value:</p>
+      \[ \tilde{x}_i \;=\; x_i \;-\; \frac{n_s - 1}{n_s}\,\bar{x}_s \]
+      <p>then ranked across the whole universe and mapped to a normal score rather than z-scored, because with
+         thirty names a raw z-score is owned by its outliers:</p>
+      \[ s_i \;=\; \Phi^{-1}\!\left(\frac{\operatorname{rank}(\tilde{x}_i) - \tfrac12}{N_{\text{valid}}}\right) \]
+      <p>A missing metric scores \(0\), neutral, rather than an invented extreme. Fewer than three valid names and
+         the whole score is undefined.</p>
+      <h3>The four scores</h3>
+      \[
+      \begin{aligned}
+      \text{value}_i &= \operatorname{mean}\big\{\, s(1/\text{PE}),\; s(1/\text{EV/EBITDA}),\; s(\text{FCF}/\text{cap}) \,\big\} \\
+      \text{quality}_i &= \operatorname{mean}\big\{\, s(\bar{\rho}/(\sigma_\rho + 0.01)),\; s(\text{op.\,margin}),\; s(\text{ROE}),\; s(-\text{D/E}) \,\big\} \\
+      \text{momentum}_i &= s\!\left(\textstyle\prod_{t=T-252}^{T-22}(1 + r_{i,t}) - 1\right) \\
+      \text{short}_i &= -\,s(\text{short \% of float})
+      \end{aligned}
+      \]
+      <p>where \(\rho\) is quarterly return on invested capital over at least three quarters, and the momentum window
+         is the prior twelve months skipping the most recent one (§2 is about that choice). The mean over sub-metrics
+         skips the ones a name lacks: a bank with no EV/EBITDA, no free cash flow and no leverage figure is scored on
+         earnings yield alone, and the run says so.</p>
+      <h3>The composite and its weights</h3>
+      \[ c_i \;=\; \sum_{k} w_k\, s_{i,k}, \qquad w = \big(\text{value } \mathbf{\text{⟪m-w-value|—⟫}},\; \text{quality } \mathbf{\text{⟪m-w-quality|—⟫}},\; \text{momentum } \mathbf{\text{⟪m-w-mom|—⟫}},\; \text{short } \mathbf{\text{⟪m-w-short|—⟫}}\big) \]
+      <p>Those weights are static until every signal has <b id="m-min-snaps">6</b> point-in-time snapshots behind it,
+         after which they switch to the measured information coefficients:</p>
+      \[ w_k \;=\; \frac{\max(\mathrm{IC}_k, 0)}{\sum_j \max(\mathrm{IC}_j, 0)}, \qquad
+         \mathrm{IC}_k \;=\; \frac{1}{M}\sum_{m=1}^{M} \rho_{\text{Spearman}}\!\big(s_{\cdot,k}(t_m),\; r_{\cdot}(t_m \to t_m + 21)\big) \]
+      <p>Live: <b id="m-weighting">—</b>. Measured so far — momentum <b id="m-ic-mom">—</b>, value <b id="m-ic-value">—</b>,
+         quality <b id="m-ic-quality">—</b>, short interest <b id="m-ic-short">—</b>, on <b id="m-ic-n">—</b> snapshots.
+         With thirty names and \(M\) periods the standard error of a null IC is about \(1/\sqrt{29M}\), which is the
+         reason the momentum question is settled on a wider panel in §2 rather than here.</p>
+      <h3>Grinold's rule, if a signal were a view</h3>
+      <p>The composite is re-standardised to \(z_i\) across the tradeable names and scaled by an assumed
+         coefficient and the name's forecast volatility:</p>
+      \[ \alpha_i \;=\; \mathrm{IC}\cdot \hat{\sigma}_i \cdot z_i, \qquad \mathrm{IC} = \mathbf{\text{⟪m-ic-assumed|0.05⟫}} \]
+      <p>and the signal view would be \(Q^{\text{sig}}_i = \pi_i + \alpha_i\). The coefficient is an assumption until the
+         table above can replace it. Nothing in the live book uses this today.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>2 · Momentum, tested</h2><span class="spacer"></span><span class="note" id="mom-scope"></span></div>
+    <div class="panel-b"><div class="prose">
+      <p>Momentum is one word for several distinct claims about where the information in past returns lives.
+         Each is written below as the literature specifies it; the table then reports how each performed on
+         a point-in-time panel wide enough to say, graded at the bar every other claim in this system has to
+         clear: \(|t| \ge 3\).</p>
+      <h3>Definitions</h3>
+      <p>With \(R_i(a, b) = \prod_{t=T-a}^{T-b-1}(1 + r_{i,t}) - 1\) the return over the window ending \(b\) days
+         before now:</p>
+      \[
+      \begin{aligned}
+      \text{12-1 (Jegadeesh–Titman; Carhart)} &:\quad R_i(252, 21) \\
+      \text{12-7 intermediate (Novy-Marx)} &:\quad R_i(252, 126) \\
+      \text{6-1 recent} &:\quad R_i(126, 21) \\
+      \text{volatility-scaled (Barroso–Santa-Clara)} &:\quad R_i(252, 21)\,\big/\,\hat{\sigma}_{i,126} \\
+      \text{residual (Blitz–Huij–Martens)} &:\quad \frac{\sum_{t \in \text{12-1}} \varepsilon_{i,t}}{\operatorname{sd}(\varepsilon_{i,\cdot})},
+        \quad \varepsilon = r_i - \hat{a} - \hat{\beta}^{\!\top} F \text{ over 36 months} \\
+      \text{52-week high (George–Hwang)} &:\quad P_{i,T} \,\big/\, \max_{t \in [T-252,\,T]} P_{i,t} \\
+      \text{information discreteness (Da–Gurun–Warachka)} &:\quad \operatorname{sign}(R_i)\,\big(\%\text{down} - \%\text{up}\big) \\
+      \text{one-month reversal (Jegadeesh 1990), a control} &:\quad -R_i(21, 0)
+      \end{aligned}
+      \]
+      <p>\(F\) is the Fama–French market, size and value factors; \(\hat{\sigma}_{i,126}\) is the name's own
+         six-month realised volatility. The reversal row is not a momentum signal — it is the reason every other row
+         skips a month, and it is tested so the skip can be seen to be earned. Three precisions from the primary
+         texts: Jegadeesh and Titman's original skip was a <em>week</em>; the one-month skip is Carhart's and
+         Fama–French's convention. The residual here is taken after the intercept, so a name's steady three-year
+         alpha does not count as momentum; the older residual signal in the point-in-time panel keeps the intercept
+         in, and the two are reported side by side. And Daniel and Moskowitz show momentum's crashes are a
+         short-side phenomenon — the losers that rally — which a long-only book is spared, at the cost of holding
+         low-beta winners into the rebound.</p>
+      <h3>Evidence</h3>
+    </div></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="mom-table"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><div class="prose">
+      <p id="mom-verdict" class="note">Not yet measured.</p>
+      <p id="mom-split" class="note"></p>
+      <h3>What reaches the book</h3>
+      <p id="mom-integration">Pending the test above.</p>
+      <p class="note" id="mom-caveat"></p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>3 · The prior</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Market weights are capitalisation weights within the tradeable universe, a missing cap replaced by the
+         median. The risk aversion is not estimated from realised means — the textbook estimator inverted the
+         cross-section on this window — but pinned by the identity that the market portfolio must earn the equity
+         risk premium:</p>
+      \[ \lambda \;=\; \operatorname{clip}\!\left(\frac{\beta_u\,\mathrm{ERP}}{w_{\text{mkt}}^{\!\top}\Sigma\, w_{\text{mkt}}},\; 0.3,\; 10\right), \qquad
+         \beta_u = \frac{\operatorname{cov}(r_u, r_m)}{\operatorname{var}(r_m)}, \quad r_u = w_{\text{mkt}}^{\!\top} r \]
+      \[ \pi \;=\; \lambda\,\Sigma\,w_{\text{mkt}} \qquad\Longrightarrow\qquad w_{\text{mkt}}^{\!\top}\pi = \beta_u\,\mathrm{ERP} \]
+      <p>Live: \(\lambda\) = <b id="m-lambda">—</b>, \(\beta_u\) = <b id="m-beta-u">—</b>, ERP = <b id="m-erp">—</b>,
+         the one expected-return number in the system that is asserted rather than estimated.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>4 · Views and their uncertainty</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>A view is the valuation model's implied return — the discount rate at which a ten-year cash-flow model
+         equals today's price — converted to excess units, with an uncertainty read from the model's own bear-to-bull
+         spread and floored:</p>
+      \[ Q_i \;=\; \text{implied}_i - r_f, \qquad
+         \text{spread}_i = \tfrac12\,\big|\text{implied}^{\text{bull}}_i - \text{implied}^{\text{bear}}_i\big|, \qquad
+         \omega^{\text{raw}}_i = \max(\text{spread}_i,\; \mathbf{\text{⟪m-floor|0.03⟫}})^2 \]
+      <p>The raw uncertainties are then rescaled so the views and the prior get the say a stated confidence \(c\) implies.
+         Before this rescaling the posterior correlated 0.93 with the views and 0.36 with the prior — the prior was decorative.</p>
+      \[ \Omega_{ii} \;=\; \tau\,\Sigma_{ii}\cdot\frac{1-c}{c}\cdot\frac{\omega^{\text{raw}}_i}{\operatorname{mean}_j\,\omega^{\text{raw}}_j},
+         \qquad c = \mathbf{\text{⟪m-conf|0.50⟫}}, \quad \tau = \mathbf{\text{⟪m-tau|0.05⟫}} \]
+      <p>At \(c = \tfrac12\) the middle factor is one and each view's variance is \(\tau\Sigma_{ii}\) scaled by its
+         relative spread. The Idzorek reading — that the posterior lands \(c\) of the way from prior to view — is
+         exact for one view with unit relative spread and approximate otherwise. Live: <b id="m-n-views">—</b> views;
+         prior–posterior correlation <b id="m-corr">—</b>. If the view source were <code>blend</code>, the view would be
+         \(0.7\,Q^{\text{dcf}} + 0.3\,Q^{\text{sig}}\).</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>5 · Black–Litterman</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>With \(P\) the selection matrix that picks out the names carrying a view (absolute views, one row each; a name
+         without a view stays at its prior), the posterior expected excess return is</p>
+      \[ \mu \;=\; \Big[(\tau\Sigma)^{-1} + P^{\!\top}\Omega^{-1}P\Big]^{-1}\Big[(\tau\Sigma)^{-1}\pi + P^{\!\top}\Omega^{-1}Q\Big] \]
+      <p>solved directly when the system is well conditioned and by pseudo-inverse otherwise. This \(\mu\) is the
+         optimizer's input. The optimizer treats it as certain; the robustness layer that would stop that is the largest
+         piece not built.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>6 · Covariance</h2></div>
+    <div class="panel-b"><div class="prose">
+      <h3>A statistical factor model, checked against shrinkage</h3>
+      <p>On the trailing <b id="m-lookback">252</b> days of demeaned daily returns \(X\), the sample covariance
+         \(S = X^{\!\top}X/(T-1)\) is decomposed and the top \(k =\) <b id="m-k">3</b> eigencomponents kept:</p>
+      \[ \Sigma_{\text{daily}} \;=\; B\,F\,B^{\!\top} + D, \qquad D = \operatorname{diag}\!\big(\max(\operatorname{diag}(S - BFB^{\!\top}),\; 10^{-8})\big), \qquad \Sigma = 252\,\Sigma_{\text{daily}} \]
+      <p>Alongside it, every run, a Ledoit–Wolf estimate toward the constant-correlation target
+         \(F_{ij} = \bar{r}\sqrt{s_{ii}s_{jj}}\):</p>
+      \[ \Sigma_{\text{LW}} \;=\; 252\,\big[\delta F + (1-\delta) S\big], \qquad
+         \delta = \operatorname{clip}\!\left(\frac{\hat{\pi} - \hat{\rho}}{\hat{\gamma}\,T},\; 0,\; 1\right) \]
+      <p>with \(\hat\pi, \hat\rho, \hat\gamma\) the Ledoit–Wolf estimators of the shrinkage constant. It is a cross-check: if
+         the two disagree on equal-weight volatility by more than 20% the run says so. Live shrinkage intensity
+         <b id="m-delta">—</b>; equal-weight vol <b id="m-eqw-pca">—</b> (factor) against <b id="m-eqw-lw">—</b> (shrunk).</p>
+      <h3>Correlations long, volatility short</h3>
+      <p>The diagonal is then replaced by a forecast while the correlation structure is kept, because the two move at
+         different speeds:</p>
+      \[ C \;=\; \operatorname{diag}(\sigma)^{-1}\,\Sigma\,\operatorname{diag}(\sigma)^{-1}, \qquad
+         \Sigma' \;=\; \operatorname{diag}(\hat{\sigma})\; C \;\operatorname{diag}(\hat{\sigma}), \qquad \Sigma' \leftarrow \tfrac12(\Sigma' + \Sigma'^{\top}) \]
+      <p>A name without a forecast keeps its model volatility. Trailing one-year realised volatility is published beside
+         \(\hat\sigma\) but never used in its place.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>7 · The volatility forecast</h2><span class="spacer"></span><span class="note" id="m-vol-method"></span></div>
+    <div class="panel-b"><div class="prose">
+      <p>Each name's return history is demeaned and an exponentially weighted variance taken with the most recent bar
+         at \(k = 0\), weights renormalised over the finite window:</p>
+      \[ \hat{\sigma}^2_{\text{daily}} \;=\; \frac{\sum_{k \ge 0} (1-\lambda)\lambda^{k}\, r_{T-k}^{2}}{\sum_{k \ge 0} (1-\lambda)\lambda^{k}}, \qquad
+         \hat{\sigma} = \sqrt{252\,\hat{\sigma}^2_{\text{daily}}}, \qquad \lambda = \mathbf{\text{⟪m-ewma-lambda|0.94⟫}} \]
+      <p>The half-life at that decay is about eleven days and 99% of the weight sits in the last 75 bars, so more than
+         a year of history is already more than the estimator can use. Below 60 observations the forecast is undefined.</p>
+      <p>A GARCH(1,1) alternative is fitted by Gaussian likelihood on standardised returns,
+         \(\sigma^2_t = \omega + \alpha r^2_{t-1} + \beta\sigma^2_{t-1}\) with \(\omega &gt; 0,\ \alpha, \beta \ge 0,\ \alpha + \beta &lt; 1\),
+         and forecast one step ahead. It is built and inactive. So is a blend with implied volatility,
+         \(0.6\,\hat\sigma + 0.4\max(\mathrm{IV}_{30} - 0.02,\, 10^{-6})\), waiting on an option-surface history long
+         enough to trust.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>8 · The optimizer</h2></div>
+    <div class="panel-b"><div class="prose">
+      \[ \max_{w}\;\; \mu^{\!\top}w \;-\; \lambda_{\text{opt}}\, w^{\!\top}\Sigma' w \;-\; \gamma\,\lVert w - w_0 \rVert_1 \]
+      \[
+      \begin{aligned}
+      \text{subject to}\quad & \textstyle\sum_i w_i = 1, \qquad w \ge 0 \\
+      & w_i \le \min(\text{cap}_i,\; \text{fixed}_i), \qquad \text{cap}_i = \mathbf{\text{⟪m-name-cap|12.5%⟫}} \text{ unless overridden} \\
+      & w_i \ge \text{floor}_i \quad\text{for every fixed or floored name} \\
+      & \textstyle\sum_{i \in \text{cluster}} w_i \le \text{cap}_{\text{cluster}}, \qquad \textstyle\sum_{i \in \text{theme}} w_i \le 0.35, \qquad \textstyle\sum_{i \in \text{sector}} w_i \le \text{cap}_{\text{sector}} \\
+      & \operatorname{sum\_largest}(w,\; \mathbf{\text{⟪m-min-pos|8⟫}} - 1) \le 1 - 0.02 \qquad \text{(at least eight names, convexly)}
+      \end{aligned}
+      \]
+      <p>\(w_0\) is the last recorded book drifted to today; \(\gamma\) = <b id="m-gamma">0.0002</b> is a
+         one-way transaction-cost coefficient amortised over a five-year horizon. A fixed weight is a floor and a cap at the
+         same number. Cluster caps in force: ⟪m-cluster-caps|—⟫.</p>
+      <h3>The multiplier is not chosen</h3>
+      <p>\(\lambda_{\text{opt}}\) is bisected on \(10^{m},\ m \in [-2, 5]\), until the solution's volatility
+         \(\sqrt{w^{\!\top}\Sigma' w}\) lands inside the band, stopping at the first inside value. The band is the actual risk
+         statement; the multiplier is its Lagrange multiplier. If even the minimum-variance portfolio sits above the
+         ceiling the band is infeasible and the target becomes \(1.02\times\) that minimum. Live: model vol
+         <b id="m-model-vol">—</b> in a band of <b id="m-band">—</b>.</p>
+      <h3>Two passes</h3>
+      <p>Pass one solves relaxed over every name. The support is \(\{i : w_i \ge 0.02\}\) plus every protected name; pass
+         two re-solves on that support with \(w_i \ge\) <b id="m-prune">2%</b> as a lower bound, so dust cannot exist
+         rather than being cleaned up afterwards. If a non-protected name lands exactly on the floor, the lowest-\(\mu\)
+         such name is dropped and the pass repeats, never below eight names. Weights under \(10^{-4}\) are zeroed and the
+         result renormalised.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>9 · When it trades</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>Solving and trading are separate decisions. With \(t\) the target and \(c\) the held book:</p>
+      <h3>Hard triggers, any time</h3>
+      <p>A held weight over its cap by more than 3pp; an excluded name held above 2%; fewer than eight positions above 2%;
+         or volatility above the ceiling <b id="m-vol-max">22%</b>.</p>
+      <h3>Soft triggers, after <b id="m-cadence">80</b> days</h3>
+      \[ \text{band breach}_i \;:\; |t_i - c_i| \ge \mathbf{\text{⟪m-band-abs|0.02⟫}} \;\;\text{and}\;\; \frac{|t_i - c_i|}{t_i} \ge \mathbf{\text{⟪m-band-rel|0.25⟫}} \]
+      \[ \mathrm{CE}(w) = \mu^{\!\top}w - \lambda\, w^{\!\top}\Sigma' w, \qquad
+         \text{fire if}\;\; 10^4\big[\mathrm{CE}(t) - \mathrm{CE}(c)\big] \;&gt;\; 2\,\text{cost}_{\text{bp}} \;\;\text{and}\;\; \ge \mathbf{\text{⟪m-ce-floor|25⟫}}\,\text{bp} \]
+      \[ \text{cost}_{\text{bp}} \;=\; \tfrac12 \textstyle\sum_i |t_i - c_i| \times \mathbf{\text{⟪m-spread-bp|8⟫}} \]
+      <p>The certainty-equivalent test uses the <em>investor's</em> \(\lambda\) from §3, not the optimizer's bisected
+         multiplier — using the latter once reported a 1,594bp loss for a trade whose entire content was the vol band
+         doing its job. A confirmed change in the narrative regime is the third soft trigger.</p>
+      <h3>The move</h3>
+      \[ w_i \;=\; c_i + \mathbf{\text{⟪m-adjust|0.30⟫}}\,(t_i - c_i) \quad\text{for names outside their band; others untouched} \]
+      <p>then floored at zero, excluded names zeroed, renormalised, and any name over its cap pushed inside it. One
+         thing to know about that equation: it is what the report <em>shows</em>. The holdings history records the full
+         target \(t\), not the staged \(w\), so the partial move is a recommendation to the owner rather than a fact
+         about the recorded book.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>10 · The regime switch</h2></div>
+    <div class="panel-b"><div class="prose">
+      <p>A two-state Markov-switching model with switching variance is fitted to twenty years of weekly index returns,
+         and the <em>filtered</em> probability of the high-variance state at the last week, \(p\), sets the band:</p>
+      \[ \text{band} \;=\; \begin{cases} \mathbf{\text{⟪m-band-stress|12–15%⟫}} & p \ge 0.5 \\ \mathbf{\text{⟪m-band-calm|19–22%⟫}} & \text{otherwise} \end{cases} \]
+      <p>It is a threshold, not a continuous scaling, and it only ever scales exposure down. Live \(p\) =
+         <b id="m-p-stress">—</b>, so the <b id="m-band-used">—</b> band is in force.</p>
+    </div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>11 · Where the equations and the code part company</h2><span class="spacer"></span>
+      <span class="note">found while writing this page</span></div>
+    <div class="panel-b"><div class="prose">
+      <p>Four places where a comment, a docstring or the methodology page says one thing and the running code does another.
+         Each is stated here rather than quietly reconciled, because the point of this page is that it can be checked.</p>
+      <ul>
+        <li>The partial adjustment in §9 is display-only; the recorded book is the full target.</li>
+        <li>The rebalance test prices a trade at 8bp of one-way turnover; the 10bp figure quoted elsewhere is what the live
+            track record is charged, and applies to nothing else.</li>
+        <li>The minimum-variance feasibility check in §8 ignores the cluster caps, so a band it calls feasible can be
+            infeasible once they bind.</li>
+        <li>A "view shift" trigger exists in the rebalance code and is never given a value, so it never fires.</li>
+      </ul>
+    </div></div>
+  </div>
+
+</main>
+
+<footer>Personal research project, not investment advice. Weights and indices are relative; absolute dollar values are private.</footer>
+
+<script type="module" src="js/mathematics.js"></script>
+</body>
+</html>

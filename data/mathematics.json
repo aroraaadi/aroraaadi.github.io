@@ -1,0 +1,90 @@
+{
+ "as_of": "2026-09-27",
+ "view_source": "dcf",
+ "dcf_view_weight": 0.7,
+ "signal_weights": {
+  "value": 0.3,
+  "quality": 0.3,
+  "momentum": 0.25,
+  "short_interest": 0.15
+ },
+ "signal_ic": 0.05,
+ "min_ic_snapshots": 6,
+ "ic_fwd_days": 21,
+ "momentum_lookback": 252,
+ "momentum_skip": 21,
+ "sector_neutral": true,
+ "min_history_days": 252,
+ "bl_tau": 0.05,
+ "bl_view_confidence": 0.5,
+ "view_uncertainty_floor": 0.03,
+ "erp_forward": 0.045,
+ "risk_free": 0.0483,
+ "risk_aversion_clamp": [
+  0.3,
+  10.0
+ ],
+ "risk_model": "pca",
+ "risk_lookback": 252,
+ "n_factors": 3,
+ "vol_forecast_method": "ewma",
+ "ewma_lambda": 0.94,
+ "vol_min_obs": 60,
+ "use_forecast_vol_in_cov": true,
+ "name_cap": 0.125,
+ "name_caps": {
+  "NEE": 0.1,
+  "ALNT": 0.03,
+  "2049.TW": 0.0
+ },
+ "min_positions": 8,
+ "prune_threshold": 0.02,
+ "cluster_caps": {
+  "ai_complex": 0.45,
+  "power_energy": 0.4,
+  "real_economy": 0.4,
+  "financials": 0.2
+ },
+ "theme_cap": 0.35,
+ "sector_caps": {
+  "Financial Services": 0.1
+ },
+ "fixed": {
+  "GE": 0.125,
+  "RRX": 0.06,
+  "AVGO": 0.0831
+ },
+ "floors": {
+  "AMZN": 0.05,
+  "META": 0.05,
+  "GOOG": 0.05
+ },
+ "exclude": [
+  "ETR",
+  "CHWY",
+  "MDA",
+  "TLN"
+ ],
+ "tc_gamma": 0.002,
+ "investment_horizon_years": 5.0,
+ "tc_gamma_effective": 0.0002,
+ "vol_band": [
+  0.19,
+  0.22
+ ],
+ "vol_band_stressed": [
+  0.12,
+  0.15
+ ],
+ "vol_max": 0.22,
+ "stress_prob_trigger": 0.5,
+ "rebalance_min_days": 80,
+ "band_absolute": 0.02,
+ "band_relative": 0.25,
+ "ce_trigger_floor_bp": 25.0,
+ "spread_bps": 8.0,
+ "adjust_fraction": 0.3,
+ "cap_drift_tolerance": 0.03,
+ "rebalance_cost_bps_backtest": 10,
+ "max_active_weight": 0.125
+}

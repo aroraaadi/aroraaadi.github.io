@@ -46,6 +46,7 @@ const SECTIONS = [
     ],
   },
   { id: "methodology", label: "Methodology", root: "methodology.html", nav: [] },
+  { id: "mathematics", label: "Mathematics", root: "mathematics.html", nav: [] },
   { id: "blog", label: "Notes", root: "blog.html", nav: [] },
 ];
 

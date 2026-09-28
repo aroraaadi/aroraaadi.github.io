@@ -200,7 +200,7 @@ export function renderShell({ asOf = null, asOfLabel = "AS OF" } = {}) {
   const mark = el("span", { class: "brand-mark", "aria-hidden": "true" },
     [el("i"), el("i"), el("i"), el("i")]);
   const r1 = el("div", { class: "shell-r1" }, [
-    el("a", { class: "brand", href: href("index.html") }, [mark, el("span", { text: "Two Books" })]),
+    el("a", { class: "brand", href: href("index.html") }, [mark, el("span", { class: "brand-word", text: "Two Books" })]),
     el("nav", { class: "shell-sections", "aria-label": "Sections" },
       SECTIONS.map((s) =>
         el("a", { href: href(s.root), "data-book": s.book || null,

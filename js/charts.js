@@ -2,7 +2,7 @@
    6 bar-tip-label plugins, 4 draw() destroy-then-recreate wrappers, 7 nearly
    identical horizontal-bar configs, and 4 copies of the date-tick callback. */
 
-import { tok, alpha, clearTokCache, fmtMonth, fmtDay } from "./common.js";
+import { tok, alpha, clearTokCache, fmtMonth, fmtDay, parseDate } from "./common.js";
 
 const registry = new Map();
 
@@ -126,9 +126,14 @@ export function liveMarker(dates, liveStart) {
 const dateTicks = (labels) => {
   const span = labels.length;
   const byDay = span > 1 && span <= 90;
+  // Not every line chart has dates on its x-axis: the volatility signature
+  // plot is labelled in minutes and the spike-decay chart in day counts.
+  // Formatting those as dates printed "Invalid Date" across the axis.
+  const isDate = (d) => typeof d === "string" && /^\d{4}-\d{2}-\d{2}/.test(d) && !isNaN(parseDate(d));
   return {
     callback(v) {
       const d = labels[v] ?? "";
+      if (!isDate(d)) return String(d);
       return byDay ? fmtDay(d) : fmtMonth(d);
     },
     maxRotation: 0,

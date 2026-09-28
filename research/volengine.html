@@ -66,6 +66,22 @@
     </div>
   </div>
 
+  <div class="panel" id="ve-intraday-wrap" hidden>
+    <div class="panel-h"><h2>From five-minute bars</h2><span class="spacer"></span>
+      <span class="note">realised variance, jumps and the overnight gap</span></div>
+    <div class="panel-b" id="ve-intraday"></div>
+    <div class="grid-2" style="padding:0 var(--sp-4)">
+      <div><div class="chart" style="height:220px"><canvas id="ve-signature"></canvas></div>
+           <p class="note" id="ve-signature-note"></p></div>
+      <div><p class="note">Summing squared five-minute returns estimates a day's variance directly, rather than
+         inferring it from four daily prices. That is what makes the jump split possible: bipower variation stays
+         close to the continuous part of variance when the path jumps, so the gap between it and realised variance
+         is the jump. The overnight return is added back as a separate squared term, because a forecast compared
+         against implied vol has to be on implied vol's 24-hour clock.</p></div>
+    </div>
+    <div class="panel-b"><p class="note" id="ve-intraday-note"></p></div>
+  </div>
+
   <div class="panel">
     <div class="panel-h"><h2>Smile fit, SVI</h2><span class="spacer"></span><span class="note" id="ve-svi-note"></span></div>
     <div class="panel-b"><div class="controls"><label class="field"><span>Expiry</span><select id="ve-exp"></select></label></div></div>

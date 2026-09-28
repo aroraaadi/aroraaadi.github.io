@@ -1,13 +1,30 @@
 {
  "trade": false,
- "reasons": [],
- "blocked_by": [],
- "bands_breached": {},
- "days_since": 5,
- "ce_gain_bp": -40.0,
+ "reasons": [
+  "2 name(s) outside the band"
+ ],
+ "blocked_by": [
+  "only 10 days since the last rebalance (floor 80); drift this size costs a few bp a quarter while noise moves the target 20%"
+ ],
+ "bands_breached": {
+  "AMD": {
+   "current": 0.0,
+   "target": 0.04286196712578835,
+   "gap": 0.04286196712578835,
+   "relative": 1.0
+  },
+  "NVDA": {
+   "current": 0.05057910817403689,
+   "target": 0.0,
+   "gap": -0.05057910817403689,
+   "relative": null
+  }
+ },
+ "days_since": 10,
+ "ce_gain_bp": -72.0,
  "ce_note": null,
- "cost_bp": 0.24,
- "turnover": 0.0294,
+ "cost_bp": 0.69,
+ "turnover": 0.0867,
  "adjust_fraction": 0.3,
  "regime_note": "regime unchanged (inflation_energy_shock)"
 }

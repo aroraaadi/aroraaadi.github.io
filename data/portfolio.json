@@ -1,8 +1,8 @@
 {
  "cluster_exposure": {
   "ai_complex": 0.45,
-  "real_economy": 0.229,
-  "power_energy": 0.221,
+  "real_economy": 0.2347,
+  "power_energy": 0.2153,
   "financials": 0.1
  },
  "cluster_caps": {
@@ -11,29 +11,31 @@
   "real_economy": 0.4,
   "financials": 0.2
  },
- "active_share": 0.6621,
- "max_active_weight": 0.1673,
+ "active_share": 0.6738,
+ "max_active_weight": 0.2171,
+ "active_weight_cap": 0.125,
+ "active_weight_breached": true,
  "largest_active": {
-  "NVDA": -0.1673,
-  "MSFT": -0.1469,
-  "GOOG": -0.1229,
-  "UBER": 0.1192,
-  "GE": 0.1117,
-  "EQT": 0.0861
+  "NVDA": -0.2171,
+  "MSFT": -0.1531,
+  "UBER": 0.1193,
+  "GOOG": -0.1166,
+  "GE": 0.1114,
+  "EQT": 0.0824
  },
  "vol_band_used": [
   0.19,
   0.22
  ],
- "p_stressed": 0.0186,
- "as_of": "2026-09-21",
+ "p_stressed": 0.0174,
+ "as_of": "2026-09-26",
  "vol_target_band": [
   0.19,
   0.22
  ],
- "model_vol": 0.1993,
+ "model_vol": 0.1978,
  "vol_band_met": true,
- "min_var_vol": 0.0935,
+ "min_var_vol": 0.0928,
  "n_positions": 15,
  "max_weight": 0.125,
  "sector_neutral": true,
@@ -53,15 +55,15 @@
    "UBER"
   ],
   "sector_weights": {
-   "Communication Services": 0.1413,
+   "Communication Services": 0.149,
    "Consumer Cyclical": 0.05,
-   "Energy": 0.0873,
+   "Energy": 0.0837,
    "Financial Services": 0.1,
-   "Industrials": 0.2982,
-   "Technology": 0.2587,
-   "Utilities": 0.0644
+   "Industrials": 0.3023,
+   "Technology": 0.251,
+   "Utilities": 0.064
   },
-  "turnover_one_way": 0.0294,
+  "turnover_one_way": 0.0867,
   "name_floors": {},
   "horizon_years": 5.0,
   "theme_caps": {
@@ -82,526 +84,526 @@
    "cannabis_consumer": 0.35
   },
   "theme_weights": {
-   "ai": 0.303,
-   "robotics": 0.2837,
-   "space": 0.2757,
-   "semiconductors": 0.1337,
-   "fintech": 0.1506,
-   "electric_vehicles": 0.1199,
-   "quantum": 0.1837,
+   "ai": 0.2936,
+   "robotics": 0.2759,
+   "space": 0.2678,
+   "semiconductors": 0.126,
+   "fintech": 0.1429,
+   "electric_vehicles": 0.0676,
+   "quantum": 0.176,
    "cybersecurity": 0.0831,
    "cloud_software": 0.05,
-   "clean_energy": 0.0692,
+   "clean_energy": 0.0676,
    "financials": 0.1
   }
  },
  "expected_returns": {
   "model": "black_litterman",
-  "risk_aversion": 1.637,
+  "risk_aversion": 1.667,
   "erp_forward": 0.045,
-  "universe_beta": 1.548,
-  "universe_vol": 0.2063,
+  "universe_beta": 1.546,
+  "universe_vol": 0.2043,
   "tau": 0.05,
   "ic_assumed": 0.05,
   "n_views": 27,
   "prior_posterior_corr": 0.887,
-  "max_abs_shift": 0.1007,
+  "max_abs_shift": 0.0901,
   "most_shifted": "BE",
   "per_name": {
    "AMZN": {
-    "prior": 0.059,
+    "prior": 0.0544,
     "view": 0.0323,
-    "mu": 0.0348,
-    "mkt_weight": 0.1107
+    "mu": 0.0334,
+    "mkt_weight": 0.1076
    },
    "NVDA": {
-    "prior": 0.1032,
+    "prior": 0.0898,
     "view": 0.0192,
-    "mu": 0.0529,
-    "mkt_weight": 0.2179
+    "mu": 0.0466,
+    "mkt_weight": 0.2171
    },
    "GOOG": {
-    "prior": 0.0489,
+    "prior": 0.0527,
     "view": 0.0277,
-    "mu": 0.03,
-    "mkt_weight": 0.1729
+    "mu": 0.0309,
+    "mkt_weight": 0.1666
    },
    "META": {
-    "prior": 0.0594,
+    "prior": 0.0998,
     "view": 0.0378,
-    "mu": 0.0385,
-    "mkt_weight": 0.0735
+    "mu": 0.0498,
+    "mkt_weight": 0.0765
    },
    "AMD": {
-    "prior": 0.1266,
+    "prior": 0.1333,
     "view": 0.0118,
-    "mu": 0.0604,
-    "mkt_weight": 0.04
+    "mu": 0.0662,
+    "mkt_weight": 0.0411
    },
    "MU": {
-    "prior": 0.1477,
+    "prior": 0.1327,
     "view": 0.005,
-    "mu": 0.0687,
-    "mkt_weight": 0.0471
+    "mu": 0.0637,
+    "mkt_weight": 0.0488
    },
    "COST": {
-    "prior": -0.0136,
+    "prior": -0.0142,
     "view": 0.0059,
-    "mu": 0.0019,
-    "mkt_weight": 0.0159
+    "mu": 0.0017,
+    "mkt_weight": 0.0163
    },
    "MSFT": {
-    "prior": 0.0476,
+    "prior": 0.0494,
     "view": 0.0297,
-    "mu": 0.0318,
-    "mkt_weight": 0.1469
+    "mu": 0.032,
+    "mkt_weight": 0.1531
    },
    "AVGO": {
-    "prior": 0.0803,
+    "prior": 0.0734,
     "view": 0.0269,
-    "mu": 0.0417,
-    "mkt_weight": 0.0687
+    "mu": 0.0389,
+    "mkt_weight": 0.0673
    },
    "BE": {
-    "prior": 0.17,
+    "prior": 0.154,
     "view": 0.0029,
-    "mu": 0.0693,
-    "mkt_weight": 0.0033
+    "mu": 0.0639,
+    "mkt_weight": 0.0034
    },
    "JPM": {
-    "prior": 0.015,
+    "prior": 0.0188,
     "view": 0.0311,
-    "mu": 0.0236,
-    "mkt_weight": 0.0374
+    "mu": 0.0243,
+    "mkt_weight": 0.0364
    },
    "SHOP": {
-    "prior": 0.0777,
+    "prior": 0.0931,
     "view": 0.0207,
-    "mu": 0.0354,
-    "mkt_weight": 0.0068
+    "mu": 0.0392,
+    "mkt_weight": 0.0074
    },
    "SPGI": {
-    "prior": 0.0022,
+    "prior": 0.0033,
     "view": 0.0282,
-    "mu": 0.0196,
-    "mkt_weight": 0.0048
+    "mu": 0.0194,
+    "mkt_weight": 0.0047
    },
    "GE": {
-    "prior": 0.0397,
+    "prior": 0.0366,
     "view": 0.0151,
-    "mu": 0.0173,
-    "mkt_weight": 0.0133
+    "mu": 0.0168,
+    "mkt_weight": 0.0136
    },
    "APH": {
-    "prior": 0.0737,
+    "prior": 0.0711,
     "view": 0.0181,
-    "mu": 0.0261,
-    "mkt_weight": 0.008
+    "mu": 0.026,
+    "mkt_weight": 0.0083
    },
    "NEE": {
-    "prior": 0.0013,
+    "prior": 0.0012,
     "view": 0.0076,
     "mu": 0.0041,
-    "mkt_weight": 0.0067
+    "mkt_weight": 0.0063
    },
    "UBER": {
-    "prior": 0.035,
+    "prior": 0.032,
     "view": 0.0836,
-    "mu": 0.0605,
-    "mkt_weight": 0.0058
+    "mu": 0.0597,
+    "mkt_weight": 0.0057
    },
    "VST": {
-    "prior": 0.0648,
+    "prior": 0.0551,
     "view": 0.0358,
-    "mu": 0.0339,
+    "mu": 0.0323,
     "mkt_weight": 0.0019
    },
    "CEG": {
-    "prior": 0.0635,
+    "prior": 0.0561,
     "view": 0.0079,
-    "mu": 0.019,
+    "mu": 0.0179,
     "mkt_weight": 0.0037
    },
    "TRGP": {
-    "prior": -0.0159,
+    "prior": -0.0169,
     "view": 0.0102,
-    "mu": 0.0028,
-    "mkt_weight": 0.0025
+    "mu": 0.0027,
+    "mkt_weight": 0.0024
    },
    "WMB": {
-    "prior": -0.002,
+    "prior": -0.0026,
     "view": 0.0041,
     "mu": 0.0019,
-    "mkt_weight": 0.0035
+    "mkt_weight": 0.0034
    },
    "VLO": {
-    "prior": -0.0094,
+    "prior": -0.0133,
     "view": -0.0043,
-    "mu": -0.0049,
-    "mkt_weight": 0.0047
+    "mu": -0.0056,
+    "mkt_weight": 0.0045
    },
    "RDDT": {
-    "prior": 0.1166,
+    "prior": 0.1125,
     "view": 0.0469,
-    "mu": 0.062,
+    "mu": 0.0584,
     "mkt_weight": 0.0012
    },
    "TKR": {
-    "prior": 0.0451,
+    "prior": 0.0397,
     "view": 0.0337,
-    "mu": 0.0291,
+    "mu": 0.0283,
     "mkt_weight": 0.0003
    },
    "RRX": {
-    "prior": 0.0689,
+    "prior": 0.0621,
     "view": 0.0511,
-    "mu": 0.0436,
+    "mu": 0.0428,
     "mkt_weight": 0.0004
    },
    "NRG": {
-    "prior": 0.0779,
+    "prior": 0.0691,
     "view": 0.0506,
-    "mu": 0.0408,
-    "mkt_weight": 0.0009
+    "mu": 0.0388,
+    "mkt_weight": 0.0008
    },
    "EQT": {
-    "prior": -0.0022,
+    "prior": -0.0013,
     "view": 0.0273,
-    "mu": 0.0184,
-    "mkt_weight": 0.0012
+    "mu": 0.0186,
+    "mkt_weight": 0.0013
    }
   }
  },
  "pending": [],
  "holdings": [
   {
-   "ticker": "GE",
-   "sector": "Industrials",
-   "weight": 0.125,
-   "alpha_score": 0.2414,
-   "signals": {
-    "value": -0.1719,
-    "quality": 0.6278,
-    "momentum": -0.2967,
-    "short_interest": 1.1918
-   },
-   "raw": {
-    "pe": 37.6,
-    "ev_ebitda_yield": 0.0341,
-    "fcf_yield": 0.0199,
-    "roic_mean": 0.0887,
-    "operating_margin": 0.2057,
-    "roe": 0.4823,
-    "momentum_12_1": 0.2305,
-    "short_pct": 0.0154
-   }
-  },
-  {
    "ticker": "UBER",
    "sector": "Technology",
    "weight": 0.125,
-   "alpha_score": -0.6635,
+   "alpha_score": -0.6549,
    "signals": {
-    "value": 0.6385,
+    "value": 0.6674,
     "quality": -1.014,
     "momentum": -2.128,
     "short_interest": -0.1257
    },
    "raw": {
-    "pe": 15.5,
-    "ev_ebitda_yield": 0.0484,
-    "fcf_yield": 0.0502,
+    "pe": 15.3,
+    "ev_ebitda_yield": 0.049,
+    "fcf_yield": 0.0509,
     "roic_mean": 0.0454,
     "operating_margin": 0.1332,
     "roe": 0.3716,
-    "momentum_12_1": -0.1604,
-    "short_pct": 0.0229
+    "momentum_12_1": -0.1973,
+    "short_pct": 0.0232
+   }
+  },
+  {
+   "ticker": "GE",
+   "sector": "Industrials",
+   "weight": 0.125,
+   "alpha_score": 0.1923,
+   "signals": {
+    "value": -0.2009,
+    "quality": 0.6278,
+    "momentum": -0.573,
+    "short_interest": 1.383
+   },
+   "raw": {
+    "pe": 38.6,
+    "ev_ebitda_yield": 0.0328,
+    "fcf_yield": 0.0194,
+    "roic_mean": 0.0887,
+    "operating_margin": 0.2057,
+    "roe": 0.4823,
+    "momentum_12_1": 0.1801,
+    "short_pct": 0.0152
    }
   },
   {
    "ticker": "EQT",
    "sector": "Energy",
-   "weight": 0.0873,
-   "alpha_score": 0.2429,
+   "weight": 0.0837,
+   "alpha_score": 0.2284,
    "signals": {
     "value": 1.6206,
     "quality": -0.0105,
-    "momentum": -0.6745,
-    "short_interest": -0.477
+    "momentum": -0.477,
+    "short_interest": -0.9027
    },
    "raw": {
-    "pe": 11.4,
-    "ev_ebitda_yield": 0.173,
-    "fcf_yield": 0.0798,
+    "pe": 11.8,
+    "ev_ebitda_yield": 0.1709,
+    "fcf_yield": 0.0774,
     "roic_mean": 0.0276,
     "operating_margin": 0.2337,
     "roe": 0.1108,
-    "momentum_12_1": 0.073,
-    "short_pct": 0.0373
+    "momentum_12_1": 0.0322,
+    "short_pct": 0.0409
    }
   },
   {
    "ticker": "AVGO",
    "sector": "Technology",
    "weight": 0.0831,
-   "alpha_score": -0.3275,
+   "alpha_score": -0.3009,
    "signals": {
-    "value": -0.3774,
+    "value": -0.3484,
     "quality": -0.1129,
     "momentum": -1.1918,
-    "short_interest": 0.7835
+    "short_interest": 0.9027
    },
    "raw": {
-    "pe": 45.8,
-    "ev_ebitda_yield": 0.03,
-    "fcf_yield": 0.0179,
+    "pe": 45.6,
+    "ev_ebitda_yield": 0.0304,
+    "fcf_yield": 0.0182,
     "roic_mean": 0.0669,
     "operating_margin": 0.5431,
     "roe": 0.4425,
-    "momentum_12_1": 0.0471,
-    "short_pct": 0.0108
+    "momentum_12_1": 0.048,
+    "short_pct": 0.0111
    }
   },
   {
    "ticker": "BE",
    "sector": "Industrials",
-   "weight": 0.0692,
-   "alpha_score": -0.4537,
+   "weight": 0.0676,
+   "alpha_score": -0.3489,
    "signals": {
     "value": -1.3817,
     "quality": -0.4606,
-    "momentum": 1.383,
-    "short_interest": -1.6449
+    "momentum": 1.6449,
+    "short_interest": -1.383
    },
    "raw": {
-    "pe": 361.3,
-    "ev_ebitda_yield": 0.0053,
-    "fcf_yield": 0.0065,
+    "pe": 384.9,
+    "ev_ebitda_yield": 0.0049,
+    "fcf_yield": 0.0063,
     "roic_mean": 0.0324,
     "operating_margin": 0.1711,
     "roe": 0.2221,
-    "momentum_12_1": 1.5936,
-    "short_pct": 0.0743
+    "momentum_12_1": 2.1542,
+    "short_pct": 0.0734
    }
   },
   {
    "ticker": "NRG",
    "sector": "Utilities",
-   "weight": 0.0644,
-   "alpha_score": -0.0766,
+   "weight": 0.064,
+   "alpha_score": -0.0762,
    "signals": {
-    "value": 0.2329,
+    "value": 0.2632,
     "quality": -0.3628,
-    "momentum": -0.1257,
-    "short_interest": -0.0418
+    "momentum": -0.2104,
+    "short_interest": 0.0418
    },
    "raw": {
-    "pe": 26.8,
-    "ev_ebitda_yield": 0.0711,
-    "fcf_yield": 0.0357,
+    "pe": 26.1,
+    "ev_ebitda_yield": 0.0722,
+    "fcf_yield": 0.0366,
     "roic_mean": 0.0165,
     "operating_margin": 0.1277,
     "roe": 0.2377,
-    "momentum_12_1": -0.2673,
-    "short_pct": 0.0381
+    "momentum_12_1": -0.2986,
+    "short_pct": 0.0371
    }
   },
   {
    "ticker": "JPM",
    "sector": "Financial Services",
-   "weight": 0.063,
-   "alpha_score": 0.8003,
+   "weight": 0.0608,
+   "alpha_score": 0.7907,
    "signals": {
     "value": 1.1918,
     "quality": 0.93,
-    "momentum": 0.477,
-    "short_interest": 0.2967
+    "momentum": 0.3853,
+    "short_interest": 0.3853
    },
    "raw": {
-    "pe": 15.0,
+    "pe": 14.7,
     "ev_ebitda_yield": null,
     "fcf_yield": null,
     "roic_mean": null,
     "operating_margin": 0.5039,
     "roe": 0.1779,
-    "momentum_12_1": 0.146,
-    "short_pct": 0.01
+    "momentum_12_1": 0.1375,
+    "short_pct": 0.0091
    }
   },
   {
    "ticker": "RRX",
    "sector": "Industrials",
    "weight": 0.06,
-   "alpha_score": -0.1936,
+   "alpha_score": -0.2191,
    "signals": {
-    "value": 0.8023,
+    "value": 0.7422,
     "quality": -0.5186,
-    "momentum": -0.573,
-    "short_interest": -0.9027
+    "momentum": -0.6745,
+    "short_interest": -0.7835
    },
    "raw": {
-    "pe": 31.0,
-    "ev_ebitda_yield": 0.0858,
-    "fcf_yield": 0.0454,
+    "pe": 32.1,
+    "ev_ebitda_yield": 0.0826,
+    "fcf_yield": 0.0438,
     "roic_mean": 0.0131,
     "operating_margin": 0.1235,
     "roe": 0.0477,
-    "momentum_12_1": 0.2078,
-    "short_pct": 0.0539
-   }
-  },
-  {
-   "ticker": "NVDA",
-   "sector": "Technology",
-   "weight": 0.0506,
-   "alpha_score": 0.2184,
-   "signals": {
-    "value": -0.2782,
-    "quality": 1.5835,
-    "momentum": -1.0364,
-    "short_interest": 0.573
-   },
-   "raw": {
-    "pe": 28.4,
-    "ev_ebitda_yield": 0.0377,
-    "fcf_yield": 0.0077,
-    "roic_mean": 0.2711,
-    "operating_margin": 0.6624,
-    "roe": 1.1721,
-    "momentum_12_1": 0.2776,
-    "short_pct": 0.0129
-   }
-  },
-  {
-   "ticker": "AMZN",
-   "sector": "Consumer Cyclical",
-   "weight": 0.05,
-   "alpha_score": 0.5363,
-   "signals": {
-    "value": 0.9743,
-    "quality": 0.5976,
-    "momentum": 0.3853,
-    "short_interest": -0.2104
-   },
-   "raw": {
-    "pe": 20.6,
-    "ev_ebitda_yield": 0.059,
-    "fcf_yield": 0.0012,
-    "roic_mean": 0.0489,
-    "operating_margin": 0.1369,
-    "roe": 0.3056,
-    "momentum_12_1": 0.1477,
-    "short_pct": 0.0094
-   }
-  },
-  {
-   "ticker": "GOOG",
-   "sector": "Communication Services",
-   "weight": 0.05,
-   "alpha_score": 0.7542,
-   "signals": {
-    "value": 0.1851,
-    "quality": 0.401,
-    "momentum": 1.0364,
-    "short_interest": 2.128
-   },
-   "raw": {
-    "pe": 17.7,
-    "ev_ebitda_yield": 0.0421,
-    "fcf_yield": 0.0053,
-    "roic_mean": 0.115,
-    "operating_margin": 0.3403,
-    "roe": 0.4868,
-    "momentum_12_1": 0.3676,
-    "short_pct": 0.0039
+    "momentum_12_1": 0.1559,
+    "short_pct": 0.0564
    }
   },
   {
    "ticker": "META",
    "sector": "Communication Services",
    "weight": 0.05,
-   "alpha_score": 0.3067,
+   "alpha_score": 0.2637,
    "signals": {
-    "value": 0.2578,
+    "value": 0.1396,
     "quality": 0.2483,
-    "momentum": -0.2104,
-    "short_interest": 1.383
+    "momentum": -0.1257,
+    "short_interest": 1.1918
    },
    "raw": {
-    "pe": 27.1,
-    "ev_ebitda_yield": 0.0638,
-    "fcf_yield": 0.0118,
+    "pe": 28.3,
+    "ev_ebitda_yield": 0.0566,
+    "fcf_yield": 0.0113,
     "roic_mean": 0.0693,
     "operating_margin": 0.3483,
     "roe": 0.2985,
-    "momentum_12_1": -0.2961,
-    "short_pct": 0.0131
+    "momentum_12_1": -0.2426,
+    "short_pct": 0.0141
+   }
+  },
+  {
+   "ticker": "AMZN",
+   "sector": "Consumer Cyclical",
+   "weight": 0.05,
+   "alpha_score": 0.6085,
+   "signals": {
+    "value": 0.9743,
+    "quality": 0.5976,
+    "momentum": 0.573,
+    "short_interest": -0.0418
+   },
+   "raw": {
+    "pe": 20.1,
+    "ev_ebitda_yield": 0.0599,
+    "fcf_yield": 0.0012,
+    "roic_mean": 0.0489,
+    "operating_margin": 0.1369,
+    "roe": 0.3056,
+    "momentum_12_1": 0.182,
+    "short_pct": 0.0083
+   }
+  },
+  {
+   "ticker": "GOOG",
+   "sector": "Communication Services",
+   "weight": 0.05,
+   "alpha_score": 0.7629,
+   "signals": {
+    "value": 0.2142,
+    "quality": 0.401,
+    "momentum": 1.0364,
+    "short_interest": 2.128
+   },
+   "raw": {
+    "pe": 17.1,
+    "ev_ebitda_yield": 0.0426,
+    "fcf_yield": 0.0054,
+    "roic_mean": 0.115,
+    "operating_margin": 0.3403,
+    "roe": 0.4868,
+    "momentum_12_1": 0.3683,
+    "short_pct": 0.0042
    }
   },
   {
    "ticker": "TKR",
    "sector": "Industrials",
-   "weight": 0.044,
-   "alpha_score": 0.067,
+   "weight": 0.0497,
+   "alpha_score": 0.0431,
    "signals": {
     "value": 0.6825,
     "quality": -0.3406,
-    "momentum": 0.573,
+    "momentum": 0.477,
     "short_interest": -1.1918
    },
    "raw": {
-    "pe": 31.4,
-    "ev_ebitda_yield": 0.0824,
-    "fcf_yield": 0.0435,
+    "pe": 31.8,
+    "ev_ebitda_yield": 0.0822,
+    "fcf_yield": 0.0429,
     "roic_mean": 0.0189,
     "operating_margin": 0.1301,
     "roe": 0.0854,
-    "momentum_12_1": 0.6297,
-    "short_pct": 0.0619
+    "momentum_12_1": 0.6671,
+    "short_pct": 0.0636
    }
   },
   {
    "ticker": "RDDT",
    "sector": "Communication Services",
-   "weight": 0.0413,
-   "alpha_score": -0.4578,
+   "weight": 0.049,
+   "alpha_score": -0.3583,
    "signals": {
     "value": -0.0701,
     "quality": 0.2611,
-    "momentum": -0.7835,
+    "momentum": -0.3853,
     "short_interest": -2.128
    },
    "raw": {
-    "pe": 36.5,
-    "ev_ebitda_yield": 0.0305,
-    "fcf_yield": 0.0224,
+    "pe": 34.8,
+    "ev_ebitda_yield": 0.0308,
+    "fcf_yield": 0.0235,
     "roic_mean": 0.092,
     "operating_margin": 0.2879,
     "roe": 0.3071,
-    "momentum_12_1": -0.4307,
-    "short_pct": 0.1396
+    "momentum_12_1": -0.3408,
+    "short_pct": 0.1369
+   }
+  },
+  {
+   "ticker": "AMD",
+   "sector": "Technology",
+   "weight": 0.0429,
+   "alpha_score": -0.484,
+   "signals": {
+    "value": -1.2818,
+    "quality": -1.3357,
+    "momentum": 1.383,
+    "short_interest": -0.2967
+   },
+   "raw": {
+    "pe": 161.3,
+    "ev_ebitda_yield": 0.0094,
+    "fcf_yield": 0.0086,
+    "roic_mean": 0.0208,
+    "operating_margin": 0.1725,
+    "roe": 0.102,
+    "momentum_12_1": 1.9894,
+    "short_pct": 0.0246
    }
   },
   {
    "ticker": "SPGI",
    "sector": "Financial Services",
-   "weight": 0.037,
-   "alpha_score": 0.338,
+   "weight": 0.0392,
+   "alpha_score": 0.356,
    "signals": {
-    "value": 0.9799,
+    "value": 0.9511,
     "quality": 0.4681,
-    "momentum": -0.0418,
-    "short_interest": -0.573
+    "momentum": 0.1257,
+    "short_interest": -0.6745
    },
    "raw": {
-    "pe": 24.8,
-    "ev_ebitda_yield": 0.0598,
-    "fcf_yield": 0.0455,
+    "pe": 24.6,
+    "ev_ebitda_yield": 0.06,
+    "fcf_yield": 0.0458,
     "roic_mean": 0.0314,
     "operating_margin": 0.4479,
     "roe": 0.1426,
-    "momentum_12_1": -0.2158,
-    "short_pct": 0.0238
+    "momentum_12_1": -0.1105,
+    "short_pct": 0.0223
    }
   }
  ]

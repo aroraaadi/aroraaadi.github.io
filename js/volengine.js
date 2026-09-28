@@ -19,15 +19,25 @@ function header() {
     { label: "VIX", value: pct(f.vix_now), delta: `implied − forecast ${signed((f.vix_now - f.now_chosen) * 100, 1)} pts`, tone: f.vix_now > f.now_chosen ? "up" : "down" },
     { label: "Model-free 30d", value: s ? pct(s.mfiv.d30?.sigma) : "—", delta: s ? `vs VIX ${num(s.mfiv.vix_close)} on ${s.mfiv.vix_date}` : "no snapshot" },
     { label: "Variance premium, mean", value: `${signed(D.vrp.mean_vol_pts, 2)} pts`, delta: `positive ${pct(D.vrp.p_positive, 0)} of months since ${D.vrp.since.slice(0, 4)}` },
-    { label: "Roughness H", value: `${num(D.rough.gk_daily?.H, 2)} – ${num(D.rough.vix?.H, 2)}`, delta: "range vs VIX bounds · diffusion = 0.50" },
+    // The measured value when there are intraday bars behind it, the old bracket when
+    // there are not — an older vol_engine.json stays on the deployed site until the
+    // next data push, so every new key has to be optional.
+    D.rough?.rv5m
+      ? { label: "Roughness H", value: num(D.rough.rv5m.H, 2), delta: "5-minute realised vol · diffusion = 0.50" }
+      : { label: "Roughness H", value: `${num(D.rough?.gk_daily?.H, 2)} – ${num(D.rough?.vix?.H, 2)}`, delta: "range vs VIX bounds · diffusion = 0.50" },
     { label: "VIX half-life", value: `${num(D.ou?.half_life_days, 0)} d`, delta: `κ ${num(D.ou?.kappa_per_year, 1)}/yr · long-run ${pct(D.ou?.theta_level, 0)}` },
   ]);
 }
 
 function race() {
   const e = D.forecast.evaluation, L = D.forecast.labels;
-  document.getElementById("ve-race-note").textContent = `winner by QLIKE: ${L[e.winner]} · benchmark ${L[e.benchmark]}`;
-  const rows = Object.entries(e.models).map(([m, r]) => ({ m, model: L[m], q: r.qlike, mse: r.mse, mae: r.mae_vol, bias: r.bias_vol, b: r.mz_beta, r2: r.mz_r2,
+  document.getElementById("ve-race-note").textContent =
+    `winner by QLIKE: ${L[e.winner]} · benchmark ${L[e.benchmark]}` +
+    (e.ranked_on ? ` · ranked on ${e.ranked_on}` : "") +
+    (e.excluded?.length ? ` · no data for ${e.excluded.map((m) => L[m] || m).join(", ")}` : "");
+  // A model with no coverage in this run carries qlike null; it is not ranked and
+  // must not be drawn as a zero.
+  const rows = Object.entries(e.models).filter(([, r]) => r.qlike != null).map(([m, r]) => ({ m, model: L[m], q: r.qlike, mse: r.mse, mae: r.mae_vol, bias: r.bias_vol, b: r.mz_beta, r2: r.mz_r2,
     dmb: r.dm_vs_benchmark, dmw: r.dm_vs_winner, calm: r.qlike_calm, stress: r.qlike_stress, win: m === e.winner, live: m === D.forecast.model }));
   renderTable(document.getElementById("ve-race"), rows, [
     { key: "model", label: "Forecaster", fmt: (v, r) => el("span", {}, [el("span", { class: r.win ? "sym" : "", text: v }), r.live ? el("span", { class: "pill on", style: "margin-left:8px", text: "strategy" }) : null]) },
@@ -79,6 +89,15 @@ function svi() {
   const s = D.implied; const sel = document.getElementById("ve-exp");
   if (!s) { document.getElementById("ve-svi-note").textContent = "no option snapshot within three days"; return; }
   const fit = s.svi;
+  // An empty slice list is a real state, not a broken one: a snapshot taken when
+  // the market is shut has no two-sided quotes to fit, and so does a chain the
+  // feed only half filled. Say so and stop, rather than reducing over nothing.
+  if (!fit || !fit.slices || !fit.slices.length) {
+    document.getElementById("ve-svi-note").textContent =
+      `no fitted surface in the latest snapshot (${s.as_of ? s.as_of.replace("T", " ").slice(0, 16) : "no timestamp"})`
+      + " — the chain had no two-sided quotes to fit, which is normal outside market hours";
+    return;
+  }
   document.getElementById("ve-svi-note").textContent = `${fit.slices.length} expiries · butterfly ${fit.butterfly_ok ? "free" : "VIOLATED"} · calendar ${fit.calendar_ok ? "free" : `violated between ${fit.calendar.filter((c) => !c.ok).map((c) => c.pair[1]).join(", ")}`}`;
   if (!sel.querySelectorAll("option").length) {
     for (const x of fit.slices) sel.appendChild(el("option", { value: x.expiry, text: `${x.expiry} · ${x.dte}d · ${x.n} quotes` }));
@@ -131,11 +150,42 @@ function mfiv() {
   document.getElementById("ve-mfiv-note").textContent = m.note;
 }
 
+function intraday() {
+  // Absent until the bar store exists on the machine that published the data.
+  const i = D.intraday, wrap = document.getElementById("ve-intraday-wrap");
+  if (!i) { if (wrap) wrap.hidden = true; return; }
+  if (wrap) wrap.hidden = false;
+  renderStats("ve-intraday", [
+    { label: "Realised 21d, total", value: pct(i.rv21), delta: `regular hours alone ${pct(i.rv21_rth)}`, tone: "book" },
+    { label: "Overnight share of variance", value: pct(i.overnight_share, 1), delta: "the part a 09:30–16:00 measure would miss" },
+    { label: "Days with a jump", value: pct(i.jump_days, 1), delta: "Barndorff-Nielsen–Shephard test at 99.9%" },
+    { label: "Jump share of variance", value: pct(i.jump_share, 1), delta: "discontinuities, overnight gap included" },
+    { label: "Sessions", value: i.sessions.toLocaleString(), delta: `${i.bar_minutes}-minute bars since ${i.since} · median ${i.median_bars}/session` },
+  ]);
+  const sig = i.signature || {};
+  const mins = Object.keys(sig).map(Number).sort((a, b) => a - b);
+  if (mins.length) {
+    draw("ve-signature", lineConfig({
+      labels: mins.map((m) => `${m}m`),
+      series: [{ label: "realised vol", color: slotColors(1)[0], data: mins.map((m) => sig[String(m)]) }],
+      yFmt: (v) => pct(v, 1),
+    }));
+    document.getElementById("ve-signature-note").textContent =
+      "Volatility signature plot: the same variance estimated at coarser sampling. Microstructure noise inflates the " +
+      "estimate at the finest grid, so the frequency to sample at is where the line flattens — which is why five minutes, " +
+      "not one.";
+  }
+  document.getElementById("ve-intraday-note").textContent = i.note;
+}
+
 function roughness() {
   const r = D.rough, o = D.ou, d = D.spike_decay;
   renderStats("ve-rough", [
-    { label: "H, one-day range vol", value: num(r.gk_daily?.H, 3), delta: "lower bound: measurement noise reads rough" },
-    { label: "H, log VIX", value: num(r.vix?.H, 3), delta: `upper bound: smoothed · R² ${num(r.vix?.r2, 3)}` },
+    r?.rv5m
+      ? { label: "H, 5-min realised vol", value: num(r.rv5m.H, 3), delta: `measured · R² ${num(r.rv5m.r2, 3)}`, tone: "book" }
+      : { label: "H, 5-min realised vol", value: "—", delta: "no intraday bars on this machine" },
+    { label: "H, one-day range vol", value: num(r?.gk_daily?.H, 3), delta: "corroboration: measurement noise reads rough" },
+    { label: "H, log VIX", value: num(r?.vix?.H, 3), delta: `corroboration: smoothed · R² ${num(r?.vix?.r2, 3)}` },
     { label: "Literature, 5-min RV", value: "≈ 0.10", delta: "Gatheral, Jaisson & Rosenbaum 2018" },
     { label: "κ, log VIX", value: `${num(o?.kappa_per_year, 2)}/yr`, delta: `half-life ${num(o?.half_life_days, 0)} days` },
     { label: "Long-run VIX", value: pct(o?.theta_level, 1), delta: `vol of log VIX ${num(o?.sigma_annual, 2)}/yr` },
@@ -155,9 +205,9 @@ async function init() {
   try {
     D = await loadJSON("data/vol_engine.json");
     setAsOf(D.as_of);
-    header(); race(); realised(); svi(); mfiv(); roughness();
+    header(); race(); realised(); intraday(); svi(); mfiv(); roughness();
     document.getElementById("ve-caveat").textContent = D.caveat;
-    window.addEventListener("themechange", () => { applyChartDefaults(); race(); realised(); svi(); roughness(); });
+    window.addEventListener("themechange", () => { applyChartDefaults(); race(); realised(); intraday(); svi(); roughness(); });
   } catch (err) { showError(document.getElementById("error"), err); throw err; }
 }
 init();

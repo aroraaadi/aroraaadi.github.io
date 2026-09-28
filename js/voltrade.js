@@ -32,6 +32,12 @@ function header() {
 function checks() {
   const ch = D.signal.checks, th = D.thresholds;
   const rows = [
+    // The forecaster the rules were graded on. If it could not run, the graded rule
+    // cannot run either: an ungraded substitute wearing a graded rule's name is the
+    // one failure this page must not hide.
+    { chk: "Graded forecaster available", val: ch.forecast_model || (ch.forecast_ok === false ? "degraded" : "yes"),
+      thr: "the race winner", ok: ch.forecast_ok !== false,
+      role: ch.forecast_ok === false ? "selling is gated off until the vol engine runs" : "required to sell" },
     { chk: "Implied above forecast realised", val: pts(ch.expected_vrp), thr: `≥ ${pts(th.vrp_min_sell, 0)}`, ok: ch.paid, role: "required to sell" },
     { chk: "Regime calm", val: pct(ch.p_stressed, 0), thr: "P(stressed) < 50%", ok: !ch.stressed, role: "required to sell" },
     { chk: "Curve not inverted", val: fmtNum(ch.term_ratio, 2), thr: `VIX/VIX3M < ${th.term_inverted.toFixed(2)}`, ok: !ch.inverted, role: "required to sell" },

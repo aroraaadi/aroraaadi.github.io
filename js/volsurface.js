@@ -14,7 +14,12 @@ const pts = (x, dp = 1) => (x == null ? "—" : `${signed(x * 100, dp)} pts`);
 /* ---------------- header + strip ---------------- */
 function header() {
   const age = D.snapshot_age_min, when = D.as_of.replace("T", " ").slice(0, 16);
-  const src = D.source === "questrade" ? (D.delayed_min ? `Questrade, ${D.delayed_min} min delayed` : "Questrade, real-time") : `yfinance, ${D.delayed_min} min delayed`;
+  // Label the source by name rather than by "is it Questrade". An unknown source
+  // used to fall into the yfinance branch and render real-time IBKR data as
+  // "yfinance, 0 min delayed" — a false claim about provenance on a public page.
+  const SOURCE_LABEL = { questrade: "Questrade", yfinance: "yfinance", ibkr: "IBKR, OPRA" };
+  const name = SOURCE_LABEL[D.source] ?? D.source;
+  const src = D.delayed_min ? `${name}, ${D.delayed_min} min delayed` : `${name}, real-time`;
   document.getElementById("vs-meta").textContent =
     `${D.underlying} ${fmtNum(D.spot, 2)} · snapshot ${when} (${src}) · ${D.n_ok.toLocaleString()} of ${D.n_quotes.toLocaleString()} quotes usable across ${D.expiries.length} expiries · r ${pct(D.r, 2)} q ${pct(D.q, 1)}`;
   const s = D.summary, c = D.cone || {};

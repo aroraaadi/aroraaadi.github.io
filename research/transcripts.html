@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earnings calls — Two Books</title>
+<meta name="description" content="Earnings releases, prepared remarks and call transcripts for the traded names, from SEC EDGAR.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Earnings calls — Two Books">
+<meta property="og:description" content="Earnings releases, prepared remarks and call transcripts for the traded names, from SEC EDGAR.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f14" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <p class="eyebrow">Engine · what management says</p>
+  <h1>Earnings calls</h1>
+  <p class="sub">Every quarter's results documents for the names the engine trades, read from SEC EDGAR —
+     the earnings release, and wherever the company files them, its prepared remarks, shareholder letter or
+     the full call transcript — with each document labelled for what it is. Call transcripts from FMP join
+     the same reader, prepared remarks and Q&amp;A, when the data plan includes them.</p>
+  <p class="meta" id="tx-meta"></p>
+  <div id="error"></div>
+  <div id="tx-strip" class="strip"></div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>Coverage</h2><span class="spacer"></span><span class="note" id="tx-cov-note"></span></div>
+    <div class="panel-b flush"><div class="tbl-wrap" style="max-height:440px"><table id="tx-cov"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="tx-note"></p></div>
+  </div>
+
+  <div class="panel" id="tx-reader">
+    <div class="panel-h"><h2>Reader</h2><span class="spacer"></span><span class="note" id="tx-doc-meta"></span></div>
+    <div class="panel-b"><div class="controls">
+      <label class="field"><span>Company</span><select id="tx-sym"></select></label>
+      <label class="field"><span>Document</span><select id="tx-doc"></select></label>
+      <label class="field"><span>Find</span><input id="tx-find" type="search" placeholder="guidance, margin, backlog…" autocomplete="off"></label>
+      <span class="note" id="tx-hits"></span>
+    </div></div>
+    <div class="panel-b"><div id="tx-body" class="prose tx-body"></div></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Documents are the companies' own filings with the SEC, reproduced as filed; labels are inferred from each document.</footer>
+
+<script type="module" src="../js/transcripts.js"></script>
+</body>
+</html>

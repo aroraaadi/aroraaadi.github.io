@@ -1,7 +1,7 @@
 {
- "as_of": "2026-09-26",
+ "as_of": "2026-10-01",
  "underlying": "SPY",
- "spot": 771.35,
+ "spot": 764.22,
  "strategy": "spy_vol_premium",
  "rules": {
   "enabled": [
@@ -11,43 +11,34 @@
   "source": "policy.VOL_RULES, set from the backtest verdicts"
  },
  "signal": {
-  "structure": "short_condor",
+  "structure": null,
   "reasons": [
-   "iv_rank_not_required",
-   "iv_above_forecast_rv",
-   "not_stressed"
+   "forecast_unavailable",
+   "long_vol_rule_disabled"
   ],
   "checks": {
-   "forecast_ok": true,
-   "iv_rank": 0.0796359434333948,
-   "iv30": 0.14869999885559082,
-   "rv_forecast": 0.12196132235936875,
-   "expected_vrp": 0.026738676496222066,
-   "term_ratio": 0.8069278818852925,
-   "p_stressed": 0.01741218719478603,
-   "days_to_fomc": 32,
-   "ovx_weekly_change": -9.839999999999996,
+   "forecast_ok": false,
+   "iv_rank": 0.1660978037342683,
+   "iv30": 0.16389999389648438,
+   "rv_forecast": 0.10032775340199232,
+   "expected_vrp": 0.06357224049449206,
+   "term_ratio": 0.889493739793141,
+   "p_stressed": 0.023047850430962996,
+   "days_to_fomc": 27,
+   "ovx_weekly_change": -1.0,
    "ovx_spike": false,
    "ovx_rule_established": false,
    "rich": false,
    "cheap": true,
-   "paid": true,
+   "paid": false,
    "inverted": false,
    "stressed": false,
    "fomc_blackout": false,
-   "fomc_in_window": false,
-   "forecast_model": "combo_i",
+   "fomc_in_window": true,
+   "forecast_model": "ewma (degraded)",
    "forecasts": {
-    "ewma": 0.1083,
-    "garch": 0.143,
-    "gjr": 0.1323,
-    "har": 0.1304,
-    "har_rv": 0.1343,
-    "har_cj": 0.1352,
-    "vix": 0.1421,
-    "vix_adj": 0.0992,
-    "combo": 0.1206,
-    "combo_i": 0.122
+    "ewma": 0.1003,
+    "note": "vol engine unavailable: the chosen forecaster (combo_i) produced no value today"
    }
   },
   "rules": {
@@ -62,22 +53,21 @@
   "projections": false
  },
  "calendar_covers": true,
- "skew_25d_30": null,
- "atm_iv_30_snapshot": null,
+ "skew_25d_30": 0.03587448695681744,
+ "atm_iv_30_snapshot": 0.13966939115704755,
  "proposal": {
   "kind": "NONE",
-  "structure": "short_condor",
-  "note": "no expiry in the condor window",
+  "structure": null,
+  "note": "no structure: forecast_unavailable, long_vol_rule_disabled",
   "triggers": [
-   "iv_rank_not_required",
-   "iv_above_forecast_rv",
-   "not_stressed"
+   "forecast_unavailable",
+   "long_vol_rule_disabled"
   ],
   "legs": [],
   "net_per_share": 0.0,
   "delta_per_share": 0,
   "detail": {},
-  "reason": "no expiry in the condor window",
+  "reason": null,
   "contracts_per_100k": null,
   "max_loss_per_contract": null,
   "risk_share": null,

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-26",
+ "as_of": "2026-10-01",
  "combined": [
   {
    "date": "2026-07-17",
@@ -56,6 +56,18 @@
   {
    "date": "2026-09-26",
    "value_index": 107.3
+  },
+  {
+   "date": "2026-09-28",
+   "value_index": 106.36
+  },
+  {
+   "date": "2026-09-30",
+   "value_index": 107.55
+  },
+  {
+   "date": "2026-10-01",
+   "value_index": 106.89
   }
  ],
  "books": {
@@ -89,6 +101,21 @@
     "date": "2026-09-26",
     "value_index": 98.48,
     "cash_weight": 0.0555
+   },
+   {
+    "date": "2026-09-28",
+    "value_index": 97.0,
+    "cash_weight": 0.0109
+   },
+   {
+    "date": "2026-09-30",
+    "value_index": 98.07,
+    "cash_weight": 0.0109
+   },
+   {
+    "date": "2026-10-01",
+    "value_index": 97.54,
+    "cash_weight": 0.011
    }
   ],
   "cad": [
@@ -120,6 +147,21 @@
    {
     "date": "2026-09-26",
     "value_index": 99.91,
+    "cash_weight": 0.0109
+   },
+   {
+    "date": "2026-09-28",
+    "value_index": 99.91,
+    "cash_weight": 0.0109
+   },
+   {
+    "date": "2026-09-30",
+    "value_index": 99.99,
+    "cash_weight": 0.0108
+   },
+   {
+    "date": "2026-10-01",
+    "value_index": 99.55,
     "cash_weight": 0.0109
    }
   ]

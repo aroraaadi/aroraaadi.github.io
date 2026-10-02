@@ -36,6 +36,7 @@ const SECTIONS = [
       ["SPY vol", "research/voltrade.html"],
       ["Vol engine", "research/volengine.html"],
       ["Revisions", "research/revisions.html"],
+      ["Earnings calls", "research/transcripts.html"],
       ["Small caps", "research/smallcap.html"],
     ],
   },

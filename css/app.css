@@ -885,3 +885,16 @@ table.dense tbody tr + tr { border-top: 1px solid var(--grid); }
   .cons-row .pill { grid-column: 2 / -1; justify-self: start; margin-top: 2px; }
   .book-card .strip { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ---------- earnings-call reader ---------- */
+.tx-body { max-width: 78ch; max-height: 75vh; overflow-y: auto; font-size: var(--t-base); }
+.tx-body p { margin: 0 0 var(--sp-3); white-space: pre-wrap; }
+.tx-turn { padding: var(--sp-3) 0; border-bottom: 1px solid var(--grid); }
+.tx-turn:last-child { border-bottom: 0; }
+.tx-who { font-weight: var(--fw-bold); color: var(--ink); font-size: var(--t-sm); letter-spacing: .01em; }
+.tx-who .tx-role { font-weight: var(--fw-normal); color: var(--muted); margin-left: 6px; }
+.tx-turn.op .tx-who { color: var(--muted); }
+.tx-turn.analyst { padding-left: var(--sp-3); border-left: 2px solid var(--border-2); }
+.tx-turn p { margin: 6px 0 0; white-space: pre-wrap; }
+.tx-body mark { background: var(--warn-soft); color: var(--ink); border-radius: 2px; padding: 0 1px; }
+.tx-empty { color: var(--muted); }

@@ -1,0 +1,294 @@
+{
+ "as_of": "2026-10-02T16:52:07+00:00",
+ "pulled": false,
+ "reason": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)",
+ "source": "SEC EDGAR complete submissions: 8-K Item 2.02 and results 6-Ks, EX-99 exhibits",
+ "limit": 0,
+ "labels": {
+  "transcript": "Call transcript",
+  "prepared_remarks": "Prepared remarks / commentary",
+  "shareholder_letter": "Shareholder letter",
+  "press_release": "Earnings release",
+  "presentation": "Presentation",
+  "other": "Other exhibit"
+ },
+ "names": [
+  {
+   "symbol": "AMZN",
+   "name": "AMZN",
+   "cik": 1018724,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "NVDA",
+   "name": "NVDA",
+   "cik": 1045810,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "GOOG",
+   "name": "GOOG",
+   "cik": 1652044,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "META",
+   "name": "META",
+   "cik": 1326801,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "AMD",
+   "name": "AMD",
+   "cik": 2488,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "MU",
+   "name": "MU",
+   "cik": 723125,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "COST",
+   "name": "COST",
+   "cik": 909832,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "MSFT",
+   "name": "MSFT",
+   "cik": 789019,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "AVGO",
+   "name": "AVGO",
+   "cik": 1730168,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "BE",
+   "name": "BE",
+   "cik": 1664703,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "JPM",
+   "name": "JPM",
+   "cik": 19617,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "SHOP",
+   "name": "SHOP",
+   "cik": 1594805,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "SPGI",
+   "name": "SPGI",
+   "cik": 64040,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "GE",
+   "name": "GE",
+   "cik": 40545,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "APH",
+   "name": "APH",
+   "cik": 820313,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "NEE",
+   "name": "NEE",
+   "cik": 753308,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "UBER",
+   "name": "UBER",
+   "cik": 1543151,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "VST",
+   "name": "VST",
+   "cik": 1692819,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "CEG",
+   "name": "CEG",
+   "cik": 1868275,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "TRGP",
+   "name": "TRGP",
+   "cik": 1389170,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "WMB",
+   "name": "WMB",
+   "cik": 107263,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "VLO",
+   "name": "VLO",
+   "cik": 1035002,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "ETR",
+   "name": "ETR",
+   "cik": 65984,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "MDA",
+   "name": "MDA",
+   "cik": null,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "no SEC filer"
+  },
+  {
+   "symbol": "RDDT",
+   "name": "RDDT",
+   "cik": 1713445,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "TKR",
+   "name": "TKR",
+   "cik": 98362,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "RRX",
+   "name": "RRX",
+   "cik": 82811,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "NRG",
+   "name": "NRG",
+   "cik": 1013871,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "TLN",
+   "name": "TLN",
+   "cik": 1622536,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  },
+  {
+   "symbol": "EQT",
+   "name": "EQT",
+   "cik": 33213,
+   "filings": 0,
+   "counts": {},
+   "latest": null,
+   "status": "awaiting an SEC contact (.sec_contact or SEC_CONTACT)"
+  }
+ ],
+ "with_transcripts": [],
+ "with_call_content": [],
+ "fmp_transcripts": {
+  "available": false,
+  "reason": "the FMP plan does not include earnings-call transcripts (HTTP 402)"
+ },
+ "note": "Nothing has been fetched yet. SEC requires every request to name a real person and address; add one to .sec_contact at the repo root and run python3 run_transcripts.py. Names marked 'no SEC filer' list outside the US and file nothing with the SEC."
+}

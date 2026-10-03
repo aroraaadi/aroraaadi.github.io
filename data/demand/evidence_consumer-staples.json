@@ -1,0 +1,3733 @@
+{
+ "sector": "Consumer Staples",
+ "periods": {
+  "2022": {
+   "raw_materials": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.95,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the second half of 2021, we expect price volatility and a higher aggregate cost environment to continue in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-26",
+     "p": 0.95,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the first six months of 2022, we expect price volatility and a higher aggregate cost environment to continue in the remainder of 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000012/mdlz-20220630.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-24",
+     "p": 0.99,
+     "text": "experience additional global supply chain challenges, including, freight inefficiencies, shortages of shipping containers, port of entry congestion, and delays in the receipt of certain ingredients, some of which are likely to be transitory.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922026611/tm227563d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.95,
+     "text": "In particular, we have experienced shortages in our aluminum can requirements, freight inefficiencies, shortages of shipping containers, port of entry congestion, and delays in the receipt and/or availability of certain ingredients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922028182/mnst-20211231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.98,
+     "text": "These labor shortages and supply failures and delays have led to certain increases in raw material (for example, resins used in our packaging), ingredient and component part prices and may lead to supply chain disruptions; however, to date, the impact on our operating companies and investees has been immaterial.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.98,
+     "text": "A number of external factors, including the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-12",
+     "p": 0.97,
+     "text": "A number of external factors, including the deadly conflict in Ukraine, the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000052/pep-20220903.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-01-19",
+     "p": 0.63,
+     "text": "Inventory increased, consuming $840 million of cash primarily due to increased safety stock levels in anticipation of the supply chain challenges, increased commodity costs and business growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000016/pg-20211231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.91,
+     "text": "For example, we source certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000072/pm-20220630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.51,
+     "text": "Additional can manufacturing capacity in the United States has been secured for 2022, although the Company will continue to import aluminum cans to supplement its domestic can supply.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922028182/mnst-20211231x10k.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.43,
+     "text": "Can capacity in EMEA remains challenging and the Company expects to continue to import aluminum cans into EMEA for at least 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922028182/mnst-20211231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.39,
+     "text": "Purchase Obligations - Altria has entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.34,
+     "text": "•Positive Agriculture: We are working to spread regenerative practices to restore the Earth across land equal to the company's entire agricultural footprint (approximately 7 million acres), sustainably source key crops and ingredients, and improve the livelihoods of more people in our agricultural supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.28,
+     "text": "SodaStream, already sold in more than 40 countries, and its new SodaStream Professional platform is expected to expand into functional beverages and reach additional markets by the end of 2022, part of the brand's effort to help consumers avoid plastic bottles.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "COST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2022-10-05",
+     "p": 0.91,
+     "text": "COVID-related and other supply and logistics constraints have continued to adversely affect some merchandise categories and are expected to do so for the foreseeable future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983222000021/cost-20220828.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.97,
+     "text": "We anticipate some of the supply, transportation and labor constraints and higher cost trends we experienced in 2021 will continue in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.95,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the second half of 2021, we expect price volatility and a higher aggregate cost environment to continue in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-24",
+     "p": 0.99,
+     "text": "experience additional global supply chain challenges, including, freight inefficiencies, shortages of shipping containers, port of entry congestion, and delays in the receipt of certain ingredients, some of which are likely to be transitory.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922026611/tm227563d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.95,
+     "text": "In particular, we have experienced shortages in our aluminum can requirements, freight inefficiencies, shortages of shipping containers, port of entry congestion, and delays in the receipt and/or availability of certain ingredients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922028182/mnst-20211231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.96,
+     "text": "In addition, (i) current labor market dynamics indicate labor shortages, with employers in a number of industries having difficulty employing workers and (ii) supply chain dynamics reflect failures and delays resulting from various issues including labor shortages, logistical problems and weather-related incidents.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.98,
+     "text": "A number of external factors, including the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-12",
+     "p": 0.97,
+     "text": "A number of external factors, including the deadly conflict in Ukraine, the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000052/pep-20220903.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.97,
+     "text": "While we have been able to broadly maintain our operations, we experienced some disruption in our supply chain in certain markets due primarily to the restriction of employee movements, key material and labor shortages and transportation constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints and freight container and truck shortages have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000102/pg-20220930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-10",
+     "p": 0.9,
+     "text": "While we continue to manage device supply constraints, the unprecedented growth in Japan also means we have had to accelerate both the supply of TEREA consumables using air freight, and the conversion of our production lines to support new market launches.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000007/earningscallscriptpm-ex992.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-21",
+     "p": 0.74,
+     "text": "In addition, adjusted operating margin was impacted by: higher device sales for increasing IQOS user acquisition; the growth of IQOS ILUMA (with its higher initial unit cost for devices and consumables); channel replenishment of IQOS device inventories (noted above for net revenues); and inflation in certain elements…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000031/earningsreleasepm-ex991xq1.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-18",
+     "p": 0.92,
+     "text": "This year's gross margin rate reflected higher markdown rates, driven largely by inventory impairments and actions taken to address lower-than-expected sales in discretionary categories, as well as costs related to freight, supply chain disruptions, and increased compensation and headcount in our distribution centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000011/a2022q1ex-99.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-23",
+     "p": 0.89,
+     "text": "During the third quarter of 2022, port congestion, shipping container availability, and other supply chain pressures have improved.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000037/tgt-20221029.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2022-10-05",
+     "p": 0.41,
+     "text": "Total square feet associated with distribution and logistics facilities were approximately 31.0 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983222000021/cost-20220828.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-22",
+     "p": 0.92,
+     "text": "As of the date of this filing, while we have experienced some temporary supply chain disruptions, there has been no material impact, and we do not foresee a material impact, on our and our bottling partners’ ability to manufacture or distribute our products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000009/ko-20211231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-25",
+     "p": 0.88,
+     "text": "Accelerated cost pressures and ongoing supply challenges continue across markets, and the company is leveraging RGM to provide compelling customer and consumer solutions by segmenting markets based on occasion, brand, price, package and channel.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000013/a2022q1earningsreleaseex-9.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.96,
+     "text": "Unfavorable volume/mix was driven by a decline in biscuits, chocolate and gum, which primarily reflected the impact of supply chain constraints on volume, partially offset by gains in candy.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000018/mdlz-20220930.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-26",
+     "p": 0.96,
+     "text": "Unfavorable volume/mix was driven by a decline in biscuits which primarily reflected the impact of supply chain constraints on volume, partially offset by gains in candy, gum and chocolate.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000012/mdlz-20220630.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.99,
+     "text": "We continue to address the controllable challenges in our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922114849/mnst-20220930x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-08-04",
+     "p": 0.98,
+     "text": "This strategic direction has remained in place throughout the global supply chain challenges and disruptions, despite adversely impacting the Company’s profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922086151/tm2222570d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-12",
+     "p": 0.69,
+     "text": "The COVID-19 pandemic, including these measures, may continue to result in changes in demand for our products, increases in employee and other operating costs or supply chain disruptions, any of which can impact our ability to operate our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000052/pep-20220903.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-19",
+     "p": 0.96,
+     "text": "The volume decrease was driven by declines in Europe (due to portfolio reduction in Russia), North America (due to supply constraints) and IMEA (due to increased pricing in certain markets), partially offset by growth in Latin America.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000102/pg-20220930.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-01-19",
+     "p": 0.92,
+     "text": "Volume increased low single digits in North America (due to market growth in shampoos and conditioners, partially offset by external supply constraints in stylers) and Europe (due to market recovery versus pandemic-related consumption declines in the base period).",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000016/pg-20211231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.9,
+     "text": "These disruptions, to the extent we are unable to find alternative sources or otherwise address these supply constraints, may impact the availability and cost of our products in other markets, which would adversely impact our business, results of operations, cash flows and financial position, and may result in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-21",
+     "p": 0.89,
+     "text": "The margin decline primarily reflected the impact of significantly higher device sales; the growth of IQOS ILUMA (with its higher initial unit cost for devices and consumables); the temporary adverse timing impact related to heated tobacco unit shipments to Japan; and inflation in certain elements of the company's…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000070/earningsreleasepm-ex991xq2.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-09",
+     "p": 0.97,
+     "text": "Some of these supply chain disruptions and resulting actions have resulted in increased costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000007/tgt-20220129.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-09",
+     "p": 0.95,
+     "text": "In recent months, we have seen increasing supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000007/tgt-20220129.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-08-16",
+     "p": 0.72,
+     "text": "We made good progress throughout the quarter operationally to improve costs in our supply chain, and that work is ongoing.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000065/earningsreleasefy23q2.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-18",
+     "p": 0.69,
+     "text": "As such, we continue to allocate more capital to supply chain, omni-channel initiatives, technology and store remodels and less to new store and club openings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000012/wmt-20220131.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-11-03",
+     "p": 0.98,
+     "text": "We are also pleased to report increased gross margins on a sequential quarterly basis, as a result of our pricing actions and our supply challenges moderating.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922114430/tm2223883d2_ex99-1.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.98,
+     "text": "We are encouraged by on!’s retail momentum and significant share growth since achieving unconstrained capacity last summer.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000090/exhibit991erq22022.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-28",
+     "p": 0.26,
+     "text": "Purchases of property, plant and equipment during the three months ended April 1, 2022 and April 2, 2021 were $217 million and $216 million, respectively.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000016/ko-20220401.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.3,
+     "text": "As further discussed below, in January 2022, we acquired Chipita S.A. to expand our snacks portfolio.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-26",
+     "p": 0.26,
+     "text": "In late June, we decided to partially reopen the Vyshhorod plant and restart limited potato chip production.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000012/mdlz-20220630.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.42,
+     "text": "During the three-months ended June 30, 2022, we continued to expand our existing energy drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922086741/mnst-20220630x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.35,
+     "text": "During the three-months ended September 30, 2022, we continued to expand our existing energy drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922114849/mnst-20220930x10q.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.37,
+     "text": "We also continued to make progress toward our Vision through the investments we laid out in January, which included supporting the expansion of on!.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000090/exhibit991erq22022.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.31,
+     "text": "PM USA and certain other U.S. tobacco product manufacturers had previously entered into agreements to settle similar claims brought by Mississippi, Florida, Texas and Minnesota (together with the MSA, the “State Settlement Agreements”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.34,
+     "text": "Property, plant and equipment is recorded at historical cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.43,
+     "text": "Commitments made under take-or-pay obligations represent minimum commitments with suppliers and are in line with expected usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.68,
+     "text": "We aim to expand our brand portfolio and market positions with additional RRPs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-10",
+     "p": 0.45,
+     "text": "With this potential in mind, we continue to drive the geographic expansion of our smoke-free products as we aim to be in 100 markets by 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000007/earningscallscriptpm-ex992.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-09",
+     "p": 0.93,
+     "text": "We expect capital expenditures in 2022 of approximately $4.0 billion to $5.0 billion to support remodels, new stores, and supply chain projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000007/tgt-20220129.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-09",
+     "p": 0.61,
+     "text": "Supply chain projects will add replenishment capacity and modernize our network, including the use of sortation centers to enhance our last-mile delivery capabilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000007/tgt-20220129.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-18",
+     "p": 0.39,
+     "text": "Purchase obligations include legally binding contracts, such as firm commitments for inventory and utility purchases, as well as commitments to make capital expenditures, software acquisition and license commitments and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000012/wmt-20220131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-12-01",
+     "p": 0.28,
+     "text": "The decline in free cash flow is due to the reduction in operating cash flows described above, as well as an increase of $3.5 billion in capital expenditures to support our investment strategy.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000083/wmt-20221031.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-10",
+     "p": 0.9,
+     "text": "While we continue to manage device supply constraints, the unprecedented growth in Japan also means we have had to accelerate both the supply of TEREA consumables using air freight, and the conversion of our production lines to support new market launches.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000007/earningscallscriptpm-ex992.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.98,
+     "text": "In 2021, Helix achieved unconstrained on! manufacturing capacity for the current estimated size of the U.S. oral nicotine pouch category.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-26",
+     "p": 0.52,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities and support new product and productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000007/mdlz-20220331.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.36,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities, support new product and productivity initiatives and fund strategic priorities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000018/mdlz-20220930.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.51,
+     "text": "Additional can manufacturing capacity in the United States has been secured for 2022, although the Company will continue to import aluminum cans to supplement its domestic can supply.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922028182/mnst-20211231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.39,
+     "text": "Purchase Obligations - Altria has entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.84,
+     "text": "Capital expenditures, primarily to support capacity expansion, innovation and cost efficiencies, were $3.2 billion in 2022 and $2.8 billion in 2021.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.69,
+     "text": "We have integrated the production of our heated tobacco units into a number of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other RRP platforms and continue to optimize our manufacturing infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-27",
+     "p": 0.71,
+     "text": "While uncertainties caused by the COVID-19 pandemic remain, and factors such as the state of the supply chain, labor shortages and the inflationary environment are likely to impact the pace of the economic recovery, we expect to continue to see improvements in our business as we continue to learn and adapt to the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000034/ko-20220701.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-26",
+     "p": 0.67,
+     "text": "While uncertainties caused by the COVID-19 pandemic remain, and factors such as the state of the supply chain, labor shortages and the inflationary environment are likely to impact the pace of the economic recovery, we are focused on executing for growth with a goal of operating at a higher level through these…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134422000042/ko-20220930.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.97,
+     "text": "Unfavorable volume mix reflected volume declines as the region lapped prior-year strong volume growth driven by significantly increased food purchases for in-home consumption due to the pandemic as well as impacts from labor disruptions and supply chain constraints in the second half of 2021.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.97,
+     "text": "We anticipate some of the supply, transportation and labor constraints and higher cost trends we experienced in 2021 will continue in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398222000003/mdlz-20211231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.98,
+     "text": "These labor shortages and supply failures and delays have led to certain increases in raw material (for example, resins used in our packaging), ingredient and component part prices and may lead to supply chain disruptions; however, to date, the impact on our operating companies and investees has been immaterial.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.96,
+     "text": "In addition, (i) current labor market dynamics indicate labor shortages, with employers in a number of industries having difficulty employing workers and (ii) supply chain dynamics reflect failures and delays resulting from various issues including labor shortages, logistical problems and weather-related incidents.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.98,
+     "text": "A number of external factors, including the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-12",
+     "p": 0.97,
+     "text": "A number of external factors, including the deadly conflict in Ukraine, the COVID-19 pandemic, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation and commodity costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000052/pep-20220903.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.97,
+     "text": "While we have been able to broadly maintain our operations, we experienced some disruption in our supply chain in certain markets due primarily to the restriction of employee movements, key material and labor shortages and transportation constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints and freight container and truck shortages have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000102/pg-20220930.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.26,
+     "text": "These are 1) leveraging environmental sustainability as an additional driver of superior performing products and packaging innovations, 2) increasing digital acumen to drive consumer and customer preference, reduce cost and enable rapid and efficient decision making, 3) developing next-level supply chain capabilities…",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.98,
+     "text": "These labor shortages and supply failures and delays have led to certain increases in raw material (for example, resins used in our packaging), ingredient and component part prices and may lead to supply chain disruptions; however, to date, the impact on our operating companies and investees has been immaterial.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000019/mo-20211231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.82,
+     "text": "We will continue to monitor for impacts on JUUL’s business, including near-term supply chain constraints, component part shortages and inflation, in our quarterly quantitative valuations of JUUL.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418022000042/exhibit991erq12022.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.91,
+     "text": "For example, we source certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000072/pm-20220630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-10",
+     "p": 0.33,
+     "text": "We also expect full-year capital expenditures of around $1 billion, reflecting increased capacity investments behind our smoke-free platforms, including ILUMA, and enhancing our digital commercial engine; in addition to certain projects which were delayed due to the pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000007/earningscallscriptpm-ex992.htm"
+    }
+   ],
+   "energy_fuel": [
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-26",
+     "p": 0.89,
+     "text": "The conflict has resulted and could continue to result in volatile commodity markets, supply chain disruptions, increased risk of cyber incidents or other disruptions to our information systems, reputational risks, heightened risks to employee safety, significant volatility of the Russian ruble, limitations on access…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000020/pep-20220319.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints and freight container and truck shortages have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000102/pg-20220930.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.95,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including energy shortages, port congestions, labor constraints and freight container and truck shortages have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-18",
+     "p": 0.64,
+     "text": "For fiscal 2022, the decrease in gross profit rate was primarily due to increased fuel sales which have lower margins, cost inflation, and higher supply chain costs, partially offset by favorable sales mix, including reduced tobacco sales.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000012/wmt-20220131.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.95,
+     "text": "Volume decreased low teens in Greater China (due to slowdown of the power brush market and pandemic-related lockdowns) and mid-single digits in Europe (as a result of supply constraints primarily due to the global chip shortage).",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-20",
+     "p": 0.95,
+     "text": "This volume increase was fully offset by a double digit decrease in Greater China (due to slowdown of the power brush market and pandemic-related lockdowns) and a mid-single digit decline in Europe (due primarily to supply constraints as a result of the global chip shortage).",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000035/pg-20220331.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.93,
+     "text": "The current global semiconductor shortage has resulted in a tightness in IQOS device supply in the second half of 2021.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000011/pm-20211231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.91,
+     "text": "In addition, we are also exposed to a world-wide shortage of semiconductors, which continues to put constraints on our device supplies for RRPs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332922000114/pm-20220930.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "COST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2022-10-05",
+     "p": 0.91,
+     "text": "COVID-related and other supply and logistics constraints have continued to adversely affect some merchandise categories and are expected to do so for the foreseeable future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983222000021/cost-20220828.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-06",
+     "p": 0.91,
+     "text": "We continue to address the controllable challenges in our supply chain and are focused on increasing our finished product inventory levels in proximity to our customers, where possible, to reduce the excessive cost of freight to satisfy consumer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465922057028/mnst-20220331x10q.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-09",
+     "p": 0.91,
+     "text": "The increase in inventory levels reflect our efforts to align inventory with sales trends, and elevated in-transit inventory related to import supply chain delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000007/tgt-20220129.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-26",
+     "p": 0.83,
+     "text": "Additionally, in response to continued disruption in our supply chain, we have ordered and are receiving merchandise earlier, and added incremental holding capacity near U.S. ports to add flexibility in the portions of the supply chain most affected by external volatility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741922000027/tgt-20220730.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-12-01",
+     "p": 0.94,
+     "text": "However, like other retail companies, we have seen continued supply chain disruptions contributing to higher than normal inventory levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416922000083/wmt-20221031.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-12-29",
+     "p": 0.32,
+     "text": "Our primary requirements for capital are acquiring land, buildings, and equipment for new and remodeled warehouses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983222000035/cost-20221120.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-10",
+     "p": 0.34,
+     "text": "•Positive Agriculture: We are working to spread regenerative practices to restore the Earth across land equal to the company's entire agricultural footprint (approximately 7 million acres), sustainably source key crops and ingredients, and improve the livelihoods of more people in our agricultural supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747622000010/pep-20211225.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.55,
+     "text": "Our Russia business includes two manufacturing sites with a net book value of approximately $350 million as of June 30, 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000064/pg-20220630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-20",
+     "p": 0.49,
+     "text": "Our Russia business includes two manufacturing sites with a net book value of approximately $250 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042422000035/pg-20220331.htm"
+    }
+   ]
+  },
+  "2023": {
+   "unspecified": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-21",
+     "p": 0.99,
+     "text": "We have experienced, and could continue to experience, disruptions in our manufacturing operations and supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000011/ko-20221231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.95,
+     "text": "Favorable volume/mix was driven by gains in candy, chocolate and gum, partially offset by a decline in biscuits & baked snacks which primarily reflected the impact of supply chain constraints on volume during the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.82,
+     "text": "We continue to observe significant market uncertainty, increasing inflationary pressures, supply constraints, exchange rate volatility as well as ongoing effects from the COVID-19 pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000018/mdlz-20230331.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-01",
+     "p": 0.99,
+     "text": "We continue to address the controllable challenges in our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923027245/mnst-20221231x10k.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-01",
+     "p": 0.98,
+     "text": "This strategic direction has remained in place throughout the global supply chain challenges and disruptions, despite adversely impacting our profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923027245/mnst-20221231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-27",
+     "p": 0.85,
+     "text": "Our suppliers and supply chain service providers also rely extensively on information systems.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000020/mo-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.66,
+     "text": "In addition to our restructuring programs, we have additional ongoing savings efforts in our supply chain, marketing and overhead areas that yield additional benefits to our operating margins.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000073/pg-20230630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-01-19",
+     "p": 0.64,
+     "text": "This was partially offset by the impact of extended payment terms with suppliers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000014/pg-20221231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.91,
+     "text": "In a number of jurisdictions, including Argentina, Egypt and Russia, we are impacted by various capital controls and/or foreign currency exchange constraints that affect the ability of our subsidiaries in these jurisdictions to settle foreign currency denominated imports of goods and services and/or to pay dividends.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.9,
+     "text": "These disruptions, to the extent we are unable to find alternative sources or otherwise address these supply constraints, may impact the availability and cost of our products in other markets, which would adversely impact our business, results of operations, cash flows and financial position, and may result in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-08",
+     "p": 0.96,
+     "text": "Some of these supply chain disruptions and resulting actions resulted in increased costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-08",
+     "p": 0.88,
+     "text": "Following the onset of the COVID-19 pandemic in 2020, we experienced strong comparable sales growth and significant volatility in our category and channel mix, which continued through 2021, along with increasing supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-17",
+     "p": 0.69,
+     "text": "As such, we continue to allocate more capital to supply chain, omni-channel initiatives, technology and store remodels and less to new store and club openings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-09-01",
+     "p": 0.67,
+     "text": "The increases were primarily due to the lapping of higher markdowns and supply chain costs incurred in the previous year and managing prices to reflect elevated cost inflation, partially offset by product mix shifts into lower margin categories globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000097/wmt-20230731.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-28",
+     "p": 0.99,
+     "text": "Gross profit margin percentages increased on a sequential quarterly basis as a result of our pricing actions, as well as certain of our supply chain challenges moderating.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923026733/tm237882d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-19",
+     "p": 0.98,
+     "text": "Adjusted operating income increased by 11.3% on an organic basis, reflecting a sequential acceleration as supply chain disruptions and ILUMA-related factors continued to dissipate, coupled with the favorable underlying dynamics of the company's shift to smoke-free products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000196/earningsreleasepm-ex991xq3.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-17",
+     "p": 0.41,
+     "text": "We’re in good shape with inventory, and we like our position for the back half of the year.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000088/earningsreleasefy24q2.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-10-11",
+     "p": 0.28,
+     "text": "Insufficient IT capacity could also impact our capacity for timely, complete and accurate financial and non-financial reporting required by law.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983223000042/cost-20230903.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-24",
+     "p": 0.97,
+     "text": "These items were partially offset by an unfavorable impact due to foreign currency exchange rate fluctuations, higher tax payments, payments resulting from the buildup of inventory in the prior year to manage potential supply chain disruptions and $167 million of the $275 million milestone payment for fairlife.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000060/ko-20230929.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-21",
+     "p": 0.75,
+     "text": "This decrease was primarily driven by higher marketing payments resulting from 2021 year-end accruals, an unfavorable impact due to foreign currency exchange rate fluctuations, the buildup of inventory to manage potential supply chain disruptions, and higher annual incentive and tax payments in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000011/ko-20221231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.41,
+     "text": "During the three-months ended June 30, 2023, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923087927/mnst-20230630x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-06",
+     "p": 0.35,
+     "text": "During the three-months ended September 30, 2023, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923114789/mnst-20230930x10q.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.31,
+     "text": "PM USA and certain other U.S. tobacco product manufacturers had previously entered into agreements to settle similar claims brought by Mississippi, Florida, Texas and Minnesota (together with the MSA, the “State Settlement Agreements”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000020/mo-20221231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.29,
+     "text": "Altria and PMI Purchase Agreement - In 2022, we entered into an agreement with PMI to, among other things, transition and ultimately conclude our relationship with respect to the IQOS System in the United States.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000060/mo-20230331.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.34,
+     "text": "Property, plant and equipment is recorded at historical cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.43,
+     "text": "Commitments made under take-or-pay obligations represent minimum commitments with suppliers and are in line with expected usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000073/pg-20230630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.68,
+     "text": "We aim to expand our brand portfolio and market positions with additional RRPs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-26",
+     "p": 0.39,
+     "text": "This agreement provides a clear path to expanding Platform 1's international success in a market where approximately 31 million adults continue to smoke.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000117/pm-20230331.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-08",
+     "p": 0.61,
+     "text": "Supply chain projects will add replenishment capacity and modernize our network, including the use of sortation centers to enhance our last-mile delivery capabilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-08",
+     "p": 0.29,
+     "text": "Conversely, overestimating replenishment capacity needs could result in inefficient deployment of capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-17",
+     "p": 0.5,
+     "text": "Our financial services offerings continue to expand with our digital transaction platform anchored in payments at PhonePe in India.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-17",
+     "p": 0.39,
+     "text": "Purchase obligations include legally binding contracts, such as firm commitments for inventory and utility purchases, as well as commitments to make capital expenditures, software acquisition and license commitments and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.97,
+     "text": "Unfavorable volume mix reflected volume declines as the region lapped prior-year strong volume growth driven by significantly increased food purchases for in-home consumption due to the pandemic as well as impacts from labor disruptions and supply chain constraints in the second half of 2021.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.97,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the first six months of 2023, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000043/mdlz-20230630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.99,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market, which has experienced and may continue to experience wage inflation, labor shortages, increased employee turnover, changes in availability of our workforce and a shift toward remote work.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.98,
+     "text": "(including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-01-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000014/pg-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-21",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000046/pg-20230331.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-08",
+     "p": 0.81,
+     "text": "For example, there have been periodic closings and ship diversions, labor disputes, and congestion disrupting U.S. ports, including in California where we receive a significant portion of the products we source from outside the U.S. We have from time to time made alternative arrangements to continue the flow of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-03",
+     "p": 0.97,
+     "text": "Commodity costs have primarily increased due to recent supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.97,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the first six months of 2023, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000043/mdlz-20230630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.98,
+     "text": "(including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-10",
+     "p": 0.97,
+     "text": "A number of external factors, including the deadly conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000058/pep-20230909.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.8,
+     "text": "The reduction in trade payables was due to lower supply chain payables from a decrease in commodity and transportation costs, partially offset by the impact of extended payment terms with suppliers (see Extended Payment Terms and Supply Chain Financing below).",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000073/pg-20230630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-04",
+     "p": 0.57,
+     "text": "profit margin percentages continued to increase on a sequential quarterly basis, primarily as a result of pricing actions, decreased freight-in costs and decreased aluminum can costs, as well as the moderation of certain other challenges in our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923056023/tm2314653d1_ex99-1.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-24",
+     "p": 0.6,
+     "text": "During the quarter, Coca-Cola HBC AG unveiled a new, state-of-the-art line for refillable glass bottles in Austria, boosting refillable packaging capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134423000057/a2023q3earningsreleaseex-9.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-01",
+     "p": 0.44,
+     "text": "We have entered into purchase agreements with key packaging and ingredient suppliers to maintain an adequate supply of such packaging and ingredients for the next one to four years based on current anticipated volume needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923027245/mnst-20221231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.38,
+     "text": "Purchase Obligations - we have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000020/mo-20221231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.27,
+     "text": "In 2022, we elevated a number of external strategic partnerships and key engagements with this focus, including a partnership with Archer Daniels Midland Company (ADM) to scale regenerative agriculture across our shared supply chains, up to 2 million acres; a research agreement with MIT to develop a more precise…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.46,
+     "text": "In addition, our cash flow from operations was impacted by the net working capital investment related to the procurement of tobacco leaf inventory and higher cost of direct materials, which is expected to continue in 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.97,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs in the first six months of 2023, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000043/mdlz-20230630.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.97,
+     "text": "As a result of international supply chain, transportation and labor market disruptions and generally higher commodity, transportation and labor costs, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.98,
+     "text": "(including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000007/pep-20221231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-10",
+     "p": 0.97,
+     "text": "A number of external factors, including the deadly conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747623000058/pep-20230909.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-01-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000014/pg-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-21",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000046/pg-20230331.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-09",
+     "p": 0.91,
+     "text": "Adjusted operating income margin declined by 0.6 points on an organic basis, primarily reflecting lower gross margins due mainly to: (i) inflationary pressures on cost of sales, (ii) the adverse profitability impact of accelerated switching to ILUMA devices, (iii) the higher initial cost of ILUMA devices and related…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000020/earningsreleasepm-ex991xfy.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-22",
+     "p": 0.91,
+     "text": "Along with supply chain improvements, we have experienced a significant decrease in freight costs due to a decline in freight rates compared to 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000052/tgt-20231028.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-08",
+     "p": 0.9,
+     "text": "In response to the rising guest demand and supply chain constraints, we took various actions, including ordering merchandise earlier, securing ocean freight routes, adding incremental holding capacity near U.S. ports, and increasing use of air transport for certain merchandise.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-17",
+     "p": 0.97,
+     "text": "These factors may result in higher demand for certain products and less demand for others, as well as out-of-stock positions in certain products, along with delays in delivering those products (due to supply chain and transportation issues) and could impact inventory levels in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-04",
+     "p": 0.57,
+     "text": "profit margin percentages continued to increase on a sequential quarterly basis, primarily as a result of pricing actions, decreased freight-in costs and decreased aluminum can costs, as well as the moderation of certain other challenges in our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923056023/tm2314653d1_ex99-1.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2023-10-11",
+     "p": 0.41,
+     "text": "Total square feet associated with distribution and logistics facilities were approximately 33.1 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983223000042/cost-20230903.htm"
+    }
+   ],
+   "energy_fuel": [
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-01-19",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, including due to COVID-19 related lockdowns, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000014/pg-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-21",
+     "p": 0.97,
+     "text": "Disruptions in our manufacturing, supply and distribution operations, energy shortages, port congestions, labor constraints, freight container and truck shortages and inflation have impacted our costs and could do so in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000046/pg-20230331.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-17",
+     "p": 0.72,
+     "text": "For fiscal 2022, gross profit rate decreased primarily due to increased fuel sales which have lower margins, cost inflation, and higher supply chain costs, partially offset by favorable sales mix, including reduced tobacco sales.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "EASING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-26",
+     "p": 0.98,
+     "text": "In the first quarter, PMI was able to decrease the level of blade HTU inventories in several markets to reduce the risk of obsolete stock (given the rapid transition to ILUMA), and also adjust safety stock levels as the risk of energy shortages receded.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000117/pm-20230331.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-28",
+     "p": 0.97,
+     "text": "pandemic and the subsequent global supply chain challenges and disruptions, the Company has prioritized product availability for its consumers and customers, despite adversely impacting gross margins and operating income.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923026733/tm237882d1_ex99-1.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-08",
+     "p": 0.9,
+     "text": "In response to the rising guest demand and supply chain constraints, we took various actions, including ordering merchandise earlier, securing ocean freight routes, adding incremental holding capacity near U.S. ports, and increasing use of air transport for certain merchandise.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000015/tgt-20230128.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-22",
+     "p": 0.72,
+     "text": "The decrease from the balance as of October 29, 2022, primarily reflects actions taken to align inventory levels with sales trends and improvements in the supply chain, including reduced in-transit inventory, as well as cost decreases, primarily due to lower freight rates in 2023 compared to 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741923000052/tgt-20231028.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-17",
+     "p": 0.97,
+     "text": "These factors may result in higher demand for certain products and less demand for others, as well as out-of-stock positions in certain products, along with delays in delivering those products (due to supply chain and transportation issues) and could impact inventory levels in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-17",
+     "p": 0.92,
+     "text": "However, like other retail companies, we have seen supply chain disruptions contributing to higher than normal inventory levels throughout the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000020/wmt-20230131.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-26",
+     "p": 0.66,
+     "text": "The impact of this lower predictability on our projected results for a specific period may be significant, particularly during the early stages of this new product category, during the COVID-19 pandemic as a result of unpredictability due to shortage of key components in our supply chain, or due to geopolitical or…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000117/pm-20230331.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-01",
+     "p": 0.74,
+     "text": "For example, in 2022, sales of many of our product lines continued to be adversely impacted by production capacity constraints as a result of above forecast demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465923027245/mnst-20221231x10k.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-01",
+     "p": 0.57,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities, implement new product manufacturing and support productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000075/mdlz-20230930.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.52,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities and support new product and productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398223000006/mdlz-20221231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.38,
+     "text": "Purchase Obligations - we have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000020/mo-20221231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.37,
+     "text": "Capital expenditures were higher due primarily to increased investing in on! manufacturing capacity, partially offset by the sale of the wine business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418023000020/mo-20221231.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.95,
+     "text": "Capital expenditures, primarily to support capacity expansion, innovation and cost efficiencies, were $3.1 billion in 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042423000073/pg-20230630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-26",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other RRP platforms, continue to optimize our manufacturing infrastructure and expand our commercialization activities for new…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000117/pm-20230331.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other RRP platforms, and continue to optimize our manufacturing infrastructure and expand our commercialization activities for new…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332923000201/pm-20230930.htm"
+    }
+   ]
+  },
+  "2024": {
+   "unspecified": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-20",
+     "p": 0.99,
+     "text": "At times, we have experienced, and could continue to experience, disruptions in our manufacturing operations and supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-20",
+     "p": 0.69,
+     "text": "Increases in energy demand have in the past resulted, and could in the future result, in higher energy prices, impacting us and our independent bottlers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-02",
+     "p": 0.95,
+     "text": "Favorable volume/mix was driven by gains in candy and chocolate, partially offset by a decline in biscuits & baked snacks which primarily reflected the impact of supply chain constraints on volume during the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-02",
+     "p": 0.81,
+     "text": "For example, the ongoing developments in the Middle East could impact demand for our products or result in increased supply chain costs or other cost impacts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-29",
+     "p": 0.99,
+     "text": "We continue to address the controllable challenges in our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924029425/mnst-20231231x10k.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-29",
+     "p": 0.98,
+     "text": "This strategic direction remained in place throughout the global supply chain challenges and disruptions, despite adversely impacting our profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924029425/mnst-20231231x10k.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.66,
+     "text": "As a global company with deep local ties, we faced many of the same challenges in 2023 as our consumers, customers, and competitors across the world, including supply chain disruptions; inflationary pressures; shifting consumer preferences and behaviors; ongoing climate issues; a highly competitive operating…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-08-05",
+     "p": 0.66,
+     "text": "In addition to our restructuring programs, we have additional ongoing savings efforts in our supply chain, marketing and overhead areas that yield additional benefits to our operating margins.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042424000083/pg-20240630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-23",
+     "p": 0.91,
+     "text": "ZYN, despite supply constraints, performed in-line with the U.S. nicotine pouch category in terms of consumer offtake.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000140/earningsreleasepm-ex991xq2.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.91,
+     "text": "In a number of jurisdictions, including Argentina and Russia, we are impacted by various capital controls and/or foreign currency exchange constraints that affect the ability of our subsidiaries in these jurisdictions to settle foreign currency denominated imports of goods and services and/or to pay dividends.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-03-13",
+     "p": 0.76,
+     "text": "We also expect to continue to invest in new store and supply chain leases.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-03-15",
+     "p": 0.81,
+     "text": "For fiscal 2024, the increase was primarily driven by supply chain efficiencies partially offset by ongoing format and channel shifts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-15",
+     "p": 0.8,
+     "text": "We expect that our information systems and those of our third-party service providers, vendors and suppliers will continue to experience such attempted attacks in the future, which could include disruptions to our supply chain system.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-08",
+     "p": 0.99,
+     "text": "Adjusted operating income increased by 3.7% on an organic basis with a substantial acceleration in the second half of the year, as supply chain disruptions and ILUMA-related factors continued to dissipate, coupled with an accelerating contribution from smoke-free products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000012/earningsreleasepm-ex991xfy.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-22",
+     "p": 0.98,
+     "text": "•Oral SFP2: Shipment volume increased by 24.7% in cans (22.2% in pouches or pouch equivalents), fueled by ZYN nicotine pouch growth in the U.S., where shipments reached 149.1 million cans, representing growth of 41.4% versus prior year as supply constraints start to ease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000167/earningsreleasepm-ex991xq3.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-10-09",
+     "p": 0.35,
+     "text": "To ensure sufficient product supply for future growth, we pursue diversification in our supply-chain management and seek to expand in-country production.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-20",
+     "p": 0.92,
+     "text": "These items were partially offset by an unfavorable impact due to foreign currency exchange rate fluctuations, higher interest and tax payments in the current year, the unfavorable impact from the extension of certain vendor payment terms in the prior year, payments resulting from the buildup of inventory in the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-20",
+     "p": 0.43,
+     "text": "As such, we are resolute in continuing to innovate and are committed to partnering with suppliers to invest in research and development of new noncaloric sweeteners and flavors that help us create the best tasting beverages, including options with low or no calories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.41,
+     "text": "During the three-months ended June 30, 2024, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000141057824001239/mnst-20240630x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-08-07",
+     "p": 0.38,
+     "text": "We continue to expand our sales in non-Nielsen measured channels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924086781/tm2421078d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-27",
+     "p": 0.31,
+     "text": "PM USA and certain other U.S. tobacco product manufacturers had previously entered into agreements to settle similar claims brought by Mississippi, Florida, Texas and Minnesota (together with the MSA, “State Settlement Agreements”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418024000018/mo-20231231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-27",
+     "p": 0.29,
+     "text": "IQOS Purchase Agreement - In 2022, we entered into an agreement with PMI to, among other things, transition and ultimately conclude our relationship with respect to the IQOS System in the United States.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418024000018/mo-20231231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.34,
+     "text": "Property, plant and equipment is recorded at historical cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-08-05",
+     "p": 0.43,
+     "text": "Commitments made under take-or-pay obligations represent minimum commitments with suppliers and are in line with expected usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042424000083/pg-20240630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.68,
+     "text": "We aim to expand our brand portfolio and market positions with additional SFPs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-08",
+     "p": 0.68,
+     "text": "We aim to expand our brand portfolio and market positions with additional RRPs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000013/pm-20231231.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-03-13",
+     "p": 0.92,
+     "text": "We expect capital expenditures in 2024 of approximately $3.0 billion to $4.0 billion to support new stores, remodels and other existing store investments, and supply chain projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-03-13",
+     "p": 0.52,
+     "text": "•Transforming our supply chain for increased efficiency, speed, capacity, and reliability across our network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-03-15",
+     "p": 0.42,
+     "text": "We continue to expand our marketplace offerings, which also unlock fulfillment and advertising services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-03-15",
+     "p": 0.39,
+     "text": "Purchase obligations include legally binding contracts, such as firm commitments for inventory and utility purchases, as well as commitments to make capital expenditures, software acquisition and license commitments and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "COST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-10-09",
+     "p": 0.63,
+     "text": "A pandemic could affect certain business operations, demand for our products and services, in-stock positions, costs of doing business, availability of labor, access to inventory, supply chain operations, our ability to predict future performance, exposure to litigation, and our financial performance, among other…",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-20",
+     "p": 0.95,
+     "text": "These conflicts have resulted, and could continue to result, in volatile commodity markets; logistical, transportation and supply chain disruptions; increased risk of cyber incidents or other disruptions to our information systems; reputational risk; heightened risks to employee safety; business disruptions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-20",
+     "p": 0.9,
+     "text": "In addition, the broader labor market is experiencing a shortage of qualified workers, which has further increased competition for qualified employees that we want and may require for our future business needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-02",
+     "p": 0.96,
+     "text": "As a result of international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.9,
+     "text": "During the first six months of 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000092/mdlz-20240630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-09",
+     "p": 0.99,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market, which has experienced and may continue to experience wage inflation, labor shortages, increased employee turnover, changes in availability of our workforce and changing worker expectations regarding flexible work models.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-09",
+     "p": 0.98,
+     "text": "During 2023, we continued to experience increased commodity, packaging and other input costs and, in some instances, supply constraints related to the deadly conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions and labor shortages, which may continue into fiscal…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-04-19",
+     "p": 0.77,
+     "text": "Disruptions in our manufacturing, supply and distribution operations due to energy shortages, natural disasters, labor or freight constraints could also lead to increased costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042424000051/pg-20240331.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.7,
+     "text": "For example, there have been periodic closings and ship diversions, conflicts, labor disputes, and congestion disrupting railways, trucking, waterways, and ports around the world, including at California ports where we receive a significant portion of the products we source from outside the U.S. We have from time to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-20",
+     "p": 0.95,
+     "text": "These conflicts have resulted, and could continue to result, in volatile commodity markets; logistical, transportation and supply chain disruptions; increased risk of cyber incidents or other disruptions to our information systems; reputational risk; heightened risks to employee safety; business disruptions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-02",
+     "p": 0.96,
+     "text": "As a result of international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.9,
+     "text": "During the first six months of 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000092/mdlz-20240630.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-29",
+     "p": 0.89,
+     "text": "Moreover, industry-wide shortages of certain flavor ingredients, flavors, fruits and fruit juices, coffee, tea, cocoa, dairy-based products, packaging materials (including aluminum cans), supplement ingredients and sweeteners have been, and could from time to time in the future be, encountered, resulting in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924029425/mnst-20231231x10k.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-09",
+     "p": 0.98,
+     "text": "During 2023, we continued to experience increased commodity, packaging and other input costs and, in some instances, supply constraints related to the deadly conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions and labor shortages, which may continue into fiscal…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.97,
+     "text": "A number of external factors, including the ongoing conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-27",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418024000018/mo-20231231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.36,
+     "text": "Positive Agriculture: We are working to expand and share regenerative practices across seven million acres (approximately equal to the company’s agricultural footprint, sustainably source key crops and ingredients, and improve the livelihoods of more people in our agricultural supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-08",
+     "p": 0.31,
+     "text": "In addition, our cash flow from operations was impacted by the net working capital investment related to the procurement of tobacco leaf inventory and higher cost of direct materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000013/pm-20231231.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-20",
+     "p": 0.95,
+     "text": "These conflicts have resulted, and could continue to result, in volatile commodity markets; logistical, transportation and supply chain disruptions; increased risk of cyber incidents or other disruptions to our information systems; reputational risk; heightened risks to employee safety; business disruptions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-02",
+     "p": 0.96,
+     "text": "As a result of international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs, we expect price volatility and a higher aggregate cost environment to continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.9,
+     "text": "During the first six months of 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000092/mdlz-20240630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.97,
+     "text": "A number of external factors, including the ongoing conflict in Ukraine, the inflationary cost environment, adverse weather conditions, supply chain disruptions (including raw material shortages) and labor shortages, have impacted and may continue to impact transportation, labor and commodity availability and costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.95,
+     "text": "The conflict has resulted and could continue to result in volatile commodity markets, supply chain disruptions, increased risk of cyber incidents or other disruptions to our information systems, reputational risks, heightened risks to employee safety, business disruptions (including labor shortages), significant…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-04-19",
+     "p": 0.77,
+     "text": "Disruptions in our manufacturing, supply and distribution operations due to energy shortages, natural disasters, labor or freight constraints could also lead to increased costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042424000051/pg-20240331.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.7,
+     "text": "For example, there have been periodic closings and ship diversions, conflicts, labor disputes, and congestion disrupting railways, trucking, waterways, and ports around the world, including at California ports where we receive a significant portion of the products we source from outside the U.S. We have from time to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2024-10-09",
+     "p": 0.41,
+     "text": "Total square feet associated with distribution and logistics facilities were approximately 31.9 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "COST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-10-09",
+     "p": 0.63,
+     "text": "A pandemic could affect certain business operations, demand for our products and services, in-stock positions, costs of doing business, availability of labor, access to inventory, supply chain operations, our ability to predict future performance, exposure to litigation, and our financial performance, among other…",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-03-13",
+     "p": 0.86,
+     "text": "These actions, as well as improvements in the supply chain, have resulted in decreased inventory in 2023 compared with 2022, as well as a reduction in costs related to managing elevated inventory levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000032/tgt-20240203.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-11-20",
+     "p": 0.63,
+     "text": "Third quarter gross margin rate was 27.2 percent, compared with 27.4 percent in 2023, reflecting higher digital fulfillment and supply chain costs due to the cost of managing higher inventory levels, increased digital sales volume, and new supply chain facilities coming online, partially offset by lower book to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741924000177/a2024q3ex-99.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-29",
+     "p": 0.74,
+     "text": "For example, in 2022, sales of many of our product lines continued to be adversely impacted by production capacity constraints as a result of above forecast consumer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924029425/mnst-20231231x10k.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-29",
+     "p": 0.57,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities, implement new product manufacturing and support productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000104/mdlz-20240930.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-02",
+     "p": 0.52,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities and support new product and productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398224000019/mdlz-20231231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-27",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418024000018/mo-20231231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.43,
+     "text": "We are also embedding pep+ into our new facilities, including our $320 million manufacturing facility in Poland.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000008/pep-20231230.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other SFP platforms, and continue to optimize our manufacturing infrastructure and expand our commercialization activities for new…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000172/pm-20240930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-08",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other RRP platforms, and continue to optimize our manufacturing infrastructure and expand our commercialization activities for new…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000013/pm-20231231.htm"
+    }
+   ]
+  },
+  "2025": {
+   "unspecified": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-05",
+     "p": 0.78,
+     "text": "For example, the ongoing conflicts in the Middle East could impact demand for our products or result in increased supply chain costs or other cost impacts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.73,
+     "text": "We continue to take steps to mitigate impacts to our supply chain, operations, technology and assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-09",
+     "p": 0.98,
+     "text": "In addition, any supply chain constraints, inflationary impacts or reduced consumer demand for our products as a result of such tariffs or ongoing macroeconomic uncertainty have impacted and could continue to impact our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000053/pep-20250906.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-24",
+     "p": 0.94,
+     "text": "In addition, any supply chain constraints, inflationary impacts or reduced consumer demand for our products as a result of such tariffs or ongoing macroeconomic uncertainty could impact our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000019/pep-20250322.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-08-04",
+     "p": 0.69,
+     "text": "facilitate collection, payment and supply chain finance programs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/pg-20250630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-08-04",
+     "p": 0.66,
+     "text": "In addition to our restructuring programs, we have additional ongoing savings efforts in our supply chain, marketing and overhead areas that yield additional benefits to our operating margins.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/pg-20250630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.91,
+     "text": "In a number of jurisdictions, including Argentina and Russia, we are impacted by various capital controls and/or foreign currency exchange constraints that affect the ability of our subsidiaries in these jurisdictions to settle foreign currency denominated imports of goods and services and/or to pay dividends.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.9,
+     "text": "These disruptions, to the extent we are unable to find alternative sources or otherwise address these supply constraints, may impact the availability and cost of our products in other markets, which would adversely impact our business, results of operations, cash flows and financial position, and may result in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-26",
+     "p": 0.81,
+     "text": "•lower supply chain and digital fulfillment costs, reflecting the comparison over costs in 2024 related to timing of receipts and elevated inventory, combined with the benefit of productivity improvements at supply chain facilities and in digital fulfillment, partially offset by the deleveraging impact of lower sales.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000126/tgt-20251101.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-03-12",
+     "p": 0.69,
+     "text": "•higher supply chain & digital fulfillment costs due to new supply chain facilities coming online and an increase in digital volume.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000018/tgt-20250201.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-03-14",
+     "p": 0.8,
+     "text": "For fiscal 2024, the increase was primarily driven by supply chain efficiencies partially offset by ongoing channel and format mix shifts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-14",
+     "p": 0.8,
+     "text": "We expect that our information systems and those of our third-party service providers, vendors and suppliers will continue to experience such attacks in the future, which could include disruptions to our supply chain system.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-10-08",
+     "p": 0.32,
+     "text": "For future product supply need, we pursue diversification in our supply-chain and seek to expand in-country production.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-20",
+     "p": 0.56,
+     "text": "These items were partially offset by strong cash operating results, the transfer of surplus international plan assets from pension trusts to general assets of the Company, payments in the prior year resulting from the buildup of inventory to manage potential supply chain disruptions, increased dividend payments from…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-20",
+     "p": 0.43,
+     "text": "As such, we are resolute in continuing to innovate and are committed to partnering with suppliers to invest in research and development of new noncaloric sweeteners and flavors that help us create the best tasting beverages, including options with low or no calories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-05",
+     "p": 0.47,
+     "text": "We continue to expand our portfolio of cakes and pastries in new markets and with updated formats including Milka brownies and Oreo cakes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-04",
+     "p": 0.34,
+     "text": "The acquisition will continue to expand the company's growth in the cakes and pastries categories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000024/mdlzearningsreleasecontent.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-08",
+     "p": 0.41,
+     "text": "During the three-months ended June 30, 2025, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000141057825001620/mnst-20250630x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-07",
+     "p": 0.35,
+     "text": "During the three-months ended September 30, 2025, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465925107944/mnst-20250930x10q.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-26",
+     "p": 0.58,
+     "text": "On April 30, 2024, we assigned the exclusive U.S. commercialization rights to the IQOS Tobacco Heating System (“IQOS System”) to Philip Morris International Inc. (“PMI”) pursuant to the terms of a purchase agreement entered into with PMI in October 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418025000019/mo-20241231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-26",
+     "p": 0.31,
+     "text": "PM USA and certain other U.S. tobacco product manufacturers had previously entered into agreements to settle similar claims brought by Mississippi, Florida, Texas and Minnesota (together with the MSA, “State Settlement Agreements”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418025000019/mo-20241231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-04",
+     "p": 0.34,
+     "text": "Property, plant and equipment is recorded at historical cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-08-04",
+     "p": 0.43,
+     "text": "Commitments made under take-or-pay obligations represent minimum commitments with suppliers and are in line with expected usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042425000076/pg-20250630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.31,
+     "text": "One element of our growth strategy is to expand our brand portfolio and market positions through selective acquisitions and the development of strategic business relationships.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-22",
+     "p": 0.28,
+     "text": "This was fueled by the continued roll-out of ILUMA i and expansion of the consumables portfolio, including the further roll-out of DELIA and new variants of tobacco-free LEVIA.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332925000145/earningsreleasepm-ex991xq2.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-03-12",
+     "p": 0.57,
+     "text": "We expect capital expenditures in 2025 of approximately $4 billion to $5 billion, with the majority focused on store assets, including both new stores and remodels, as well as continued investment in supply chain and technology projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000018/tgt-20250201.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-03-14",
+     "p": 0.44,
+     "text": "We continue to expand our marketplace offerings, which also further unlocks fulfillment and advertising services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-03-14",
+     "p": 0.39,
+     "text": "Purchase obligations include legally binding contracts, such as firm commitments for inventory and utility purchases, as well as commitments to make capital expenditures, software acquisition and license commitments and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-20",
+     "p": 0.92,
+     "text": "In addition, the broader labor market is experiencing a shortage of qualified talent, which has further increased competition for specialized talent that we want and may require for our future business needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-20",
+     "p": 0.88,
+     "text": "Geopolitical instability has in the past led, and may in the future lead, to logistical, transportation and supply chain disruptions; business disruptions (including labor shortages); increased risk of cybersecurity incidents or other disruptions to our information systems; reduced availability and increased costs of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.92,
+     "text": "During 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-29",
+     "p": 0.9,
+     "text": "During the first six months of 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000188/mdlz-20250630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-04",
+     "p": 0.89,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, adverse weather conditions, supply chain disruptions and labor shortages, have impacted and may continue to impact transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000053/pep-20250906.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-12",
+     "p": 0.64,
+     "text": "For example, there have been periodic closings and ship diversions, armed conflicts, unrest, labor disputes, and congestion disrupting railways, trucking, waterways, and ports around the world, including at major U.S. ports where we receive a significant portion of the products we source from outside the U.S. We have…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000018/tgt-20250201.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-20",
+     "p": 0.88,
+     "text": "Geopolitical instability has in the past led, and may in the future lead, to logistical, transportation and supply chain disruptions; business disruptions (including labor shortages); increased risk of cybersecurity incidents or other disruptions to our information systems; reduced availability and increased costs of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.92,
+     "text": "During 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-29",
+     "p": 0.9,
+     "text": "During the first six months of 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000188/mdlz-20250630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000053/pep-20250906.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-04",
+     "p": 0.7,
+     "text": "Even as certain inflationary pressures moderated, we continued to experience volatility in our commodity, packaging and transportation costs during 2024, which may continue.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-12",
+     "p": 0.69,
+     "text": "These types of events have impacted us, and could impact us in the future, including by disrupting our supply of merchandise, increasing the price and limiting the availability of raw materials, increasing our costs, and adversely affecting our results of operations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000018/tgt-20250201.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-26",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418025000019/mo-20241231.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-20",
+     "p": 0.88,
+     "text": "Geopolitical instability has in the past led, and may in the future lead, to logistical, transportation and supply chain disruptions; business disruptions (including labor shortages); increased risk of cybersecurity incidents or other disruptions to our information systems; reduced availability and increased costs of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.92,
+     "text": "During 2024, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-29",
+     "p": 0.9,
+     "text": "During the first six months of 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000188/mdlz-20250630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-04",
+     "p": 0.89,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, adverse weather conditions, supply chain disruptions and labor shortages, have impacted and may continue to impact transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000053/pep-20250906.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-12",
+     "p": 0.64,
+     "text": "For example, there have been periodic closings and ship diversions, armed conflicts, unrest, labor disputes, and congestion disrupting railways, trucking, waterways, and ports around the world, including at major U.S. ports where we receive a significant portion of the products we source from outside the U.S. We have…",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000018/tgt-20250201.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2025-10-08",
+     "p": 0.41,
+     "text": "Total square feet associated with distribution and logistics facilities were approximately 32.2 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.57,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities, implement new product manufacturing and support productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828025046773/mdlz-20250930.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.52,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities and support new product and productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000110398225000030/mdlz-20241231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-26",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418025000019/mo-20241231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other SFPs and continue to optimize our manufacturing infrastructure and expand our commercialization activities for new products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.56,
+     "text": "The 2025 capital expenditures were primarily related to our ongoing investments in smoke-free product manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    }
+   ]
+  },
+  "latest": {
+   "unspecified": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.73,
+     "text": "We continue to take steps to mitigate impacts to our supply chain, operations, technology and assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-09",
+     "p": 0.98,
+     "text": "In addition, any supply chain constraints, inflationary impacts or reduced consumer demand for our products as a result of such tariffs or ongoing macroeconomic uncertainty have impacted and could continue to impact our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-08-04",
+     "p": 0.74,
+     "text": "The conflict in the Middle East could also adversely impact our financial results and operations due to, for example, volatility in global energy markets, supply chain disruptions, inflationary pressures or trade restrictions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-08-04",
+     "p": 0.66,
+     "text": "In addition to our restructuring programs, we have additional ongoing savings efforts in our supply chain, marketing and overhead areas that yield additional benefits to our operating margins.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-06",
+     "p": 0.91,
+     "text": "In a number of jurisdictions, including Argentina and Russia, we are impacted by various capital controls and/or foreign currency exchange constraints that affect the ability of our subsidiaries in these jurisdictions to settle foreign currency denominated imports of goods and services and/or to pay dividends.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026005939/pm-20251231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.9,
+     "text": "These disruptions, to the extent we are unable to find alternative sources or otherwise address these supply constraints, may impact the availability and cost of our products in other markets, which would adversely impact our business, results of operations, cash flows and financial position, and may result in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-28",
+     "p": 0.83,
+     "text": "•supply chain and digital fulfillment, including productivity improvements in supply chain facilities, and the leveraging impact of higher sales.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000042/tgt-20260801.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-26",
+     "p": 0.81,
+     "text": "•lower supply chain and digital fulfillment costs, reflecting the comparison over costs in 2024 related to timing of receipts and elevated inventory, combined with the benefit of productivity improvements at supply chain facilities and in digital fulfillment, partially offset by the deleveraging impact of lower sales.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741925000126/tgt-20251101.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-06-03",
+     "p": 0.36,
+     "text": "The latter was a result of faster inventory turns and improved payment terms with suppliers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-10-08",
+     "p": 0.32,
+     "text": "For future product supply need, we pursue diversification in our supply-chain and seek to expand in-country production.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-04",
+     "p": 0.59,
+     "text": "Additionally, we continue to expand our portfolio of cakes and pastries in new markets and with updated formats including Oreo cakester line extensions and Milka and Lacta croissants in Europe and Brazil, respectively.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-07",
+     "p": 0.36,
+     "text": "During the three-months ended June 30, 2026, we continued to expand our existing drink portfolio by adding products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926092193/mnst-20260630x10q.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-07",
+     "p": 0.35,
+     "text": "During the three-months ended September 30, 2025, we continued to expand our existing drink portfolio by adding additional products to our portfolio in a number of countries and further developed our distribution markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465925107944/mnst-20250930x10q.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.31,
+     "text": "PM USA and certain other U.S. tobacco product manufacturers had previously entered into agreements to settle similar claims brought by Mississippi, Florida, Texas and Minnesota (together with the MSA, “State Settlement Agreements”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000017/mo-20251231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.31,
+     "text": "•Yesterday, our Board of Directors (Board) authorized the expansion of our existing share repurchase program from $1 billion to $2 billion, which now expires on December 31, 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418025000128/exhibit991erq32025.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.67,
+     "text": "We continued to expand our away-from-home business into new occasions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.34,
+     "text": "Property, plant and equipment is recorded at historical cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm"
+    },
+    {
+     "symbol": "PG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-08-04",
+     "p": 0.43,
+     "text": "Commitments made under take-or-pay obligations represent minimum commitments with suppliers and are in line with expected usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-24",
+     "p": 0.32,
+     "text": "The Altria Agreement provides a clear path to expanding IQOS’s international success in a market where approximately 25 million adults continue to smoke cigarettes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026049493/pm-20260630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.31,
+     "text": "One element of our growth strategy is to expand our brand portfolio and market positions through selective acquisitions and the development of strategic business relationships.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "TGT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-03-11",
+     "p": 0.77,
+     "text": "We expect capital expenditures in 2026 of approximately $5 billion to support our store experience and remodel program, continued investment in supply chain and technology projects, and investment in new stores.",
+     "url": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000016/tgt-20260131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-13",
+     "p": 0.4,
+     "text": "We continue to expand our marketplace offerings, which further enhances our fulfillment and advertising services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm"
+    },
+    {
+     "symbol": "WMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-03-13",
+     "p": 0.39,
+     "text": "Purchase obligations include legally binding contracts, such as firm commitments for inventory and utility purchases, as well as commitments to make capital expenditures, software acquisition and license commitments and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.93,
+     "text": "Shipping disruptions in the Middle East and surrounding waterways have created, and may continue to create, logistical pressures, including reduced availability of certain shipping routes and increased shipping costs and transit times.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-04",
+     "p": 0.92,
+     "text": "During 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "COST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "unsplit",
+     "filed": "2025-10-08",
+     "p": 0.41,
+     "text": "Total square feet associated with distribution and logistics facilities were approximately 32.2 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.47,
+     "text": "This includes increasing investments to strengthen our brands, from transforming our portfolio through innovation and acquisitions, to foundational investments in technology and artificial intelligence to position ourselves to be fit for the future, building a set of high impact commercial, operational, and digital…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "KO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.92,
+     "text": "In addition, the broader labor market is experiencing a shortage of qualified talent, which has further increased competition for specialized talent that we want and may require for our future business needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-04",
+     "p": 0.92,
+     "text": "During 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.9,
+     "text": "During the first six months of 2026, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-25",
+     "p": 0.82,
+     "text": "We manage human capital risks across our global supply chain through a risk‑based due diligence approach focused on identifying and addressing potential labor‑related issues.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000017/mo-20251231.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-28",
+     "p": 0.46,
+     "text": "Following the military strikes, we briefly stopped production within our manufacturing facility in Bahrain and that facility is now operating with reduced capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026027937/mdlz-20260331.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-04",
+     "p": 0.92,
+     "text": "During 2025, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.9,
+     "text": "During the first six months of 2026, price volatility and the higher aggregate cost environment increased due to international supply chain and labor market disruptions and generally higher commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-27",
+     "p": 0.86,
+     "text": "However, industry-wide shortages of certain ingredients, including flavors, fruits and fruit juices, coffee, tea, dairy-based products, carbon dioxide, supplement ingredients and sweeteners have been, and could from time to time in the future be, encountered, which could interfere with and/or delay production of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-27",
+     "p": 0.76,
+     "text": "Moreover, geopolitical tensions have created, and may continue to create, supply chain and financial risk due to our reliance on aluminum for packaging and the potential for increased costs due to tariffs or shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-09",
+     "p": 0.82,
+     "text": "A number of external factors, including volatile geopolitical conditions, the inflationary cost environment, import/export restrictions and tariffs, adverse weather conditions and supply chain disruptions, have impacted and may continue to impact commodity, transportation and labor costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+     "symbol": "PEP",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-09",
+     "p": 0.68,
+     "text": "The imposition of tariffs (including U.S. tariffs imposed or threatened to be imposed on China, the European Union, Canada and Mexico and other countries and any tariffs imposed by such countries) have impacted and could continue to impact our supply chain resulting in increased input costs, including the cost of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.9,
+     "text": "For example, historically we sourced certain finished goods, production materials and components from both Russia and Ukraine, including printed materials and filters, and the invasion has, and may continue to, disrupt the availability of and impact our supply chain for these materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-24",
+     "p": 0.64,
+     "text": "In recent periods, increased inflation has and may continue to lead to growing pressures on the cost of certain direct materials, wages, energy, transportation, and logistics as well as an increased cost of capital due to interest rate increases driven by the response to increased inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828025046179/pm-20250930.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-27",
+     "p": 0.38,
+     "text": "We have entered into purchase agreements with key packaging and ingredient suppliers to maintain an adequate supply of such packaging and ingredients for the next one to three years based on current anticipated volume needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000017/mo-20251231.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.57,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities, implement new product manufacturing and support productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+     "symbol": "MDLZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-04",
+     "p": 0.52,
+     "text": "We continue to make capital expenditures primarily to modernize manufacturing facilities and support new product and productivity initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026005345/mdlz-20251231.htm"
+    },
+    {
+     "symbol": "MNST",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-27",
+     "p": 0.26,
+     "text": "Additionally, in early 2025, we temporarily closed our AFF manufacturing facility in Southern California due to the air pollution caused by the Los Angeles wildfires.",
+     "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.6,
+     "text": "Capital expenditures for 2025 increased 52.1% to $216 million, primarily due to investments in our manufacturing capabilities and innovative products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000017/mo-20251231.htm"
+    },
+    {
+     "symbol": "MO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.38,
+     "text": "Purchase Obligations - We have entered into purchase obligations for inventory and production costs (such as raw materials, indirect materials and services, contract manufacturing, packaging, storage and distribution) and other commitments for projected needs to be used in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000017/mo-20251231.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-24",
+     "p": 0.75,
+     "text": "We have integrated the production of our heated tobacco units into several of our existing manufacturing facilities, are progressing with our plans to build manufacturing capacity for our other SFPs, and continue to optimize our manufacturing infrastructure and expand our commercialization activities for new products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026049493/pm-20260630.htm"
+    },
+    {
+     "symbol": "PM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-24",
+     "p": 0.56,
+     "text": "The 2026 capital expenditures were primarily related to our ongoing investments in smoke-free product manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026049493/pm-20260630.htm"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1511 @@
+{
+ "sector": "Financials",
+ "periods": {
+  "2022": {
+   "labor": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.99,
+     "text": "Site-built home unit sales were constrained by longer construction periods arising from supply chain constraints and labor shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.99,
+     "text": "Operating results in 2022 were negatively affected by a combination of higher materials and energy costs, manufacturing inefficiencies attributable to supply chain disruptions and labor shortages and asset impairment charges, which largely offset the impacts of increased average selling prices and increased demand…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017022022287/brka-20220930.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.9,
+     "text": "Volatility increased toward the end of the year as a result of the spike in infections, while accelerating inflation, driven by supply chain disruptions and labor shortages, and more moderated growth expectations, were key macroeconomic considerations heading into 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522052682/d192225d10k.htm"
+    },
+    {
+     "symbol": "WFC",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2022-10-31",
+     "p": 0.33,
+     "text": "On September 12, 2022, the Company announced it had entered into an agreement with the Department of Labor whereby the Company agreed to pay approximately $13.2 million to the Department of Labor and approximately $131.8 million to eligible current and former Company 401(k) plan participants in order to resolve the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297122000205/wfc-20220930.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.84,
+     "text": "However, many real estate markets, while improving, are still experiencing some disruptions in demand, supply chain challenges and tenant difficulties.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085822000112/bac-20220630.htm"
+    },
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-22",
+     "p": 0.79,
+     "text": "Moreover, many real estate markets, while improving, are still experiencing some disruptions in demand, supply chain challenges and tenant difficulties.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085822000062/bac-20211231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.99,
+     "text": "Site-built home unit sales were constrained by longer construction periods arising from supply chain constraints and labor shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.99,
+     "text": "Unit sales continue to be constrained by low new vehicle production by OEMs, attributable to the ongoing global computer chip shortages and other supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017022022287/brka-20220930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-08",
+     "p": 0.98,
+     "text": "Unit sales continue to be constrained by low new vehicle production by original equipment manufacturers, attributable to the ongoing global computer chip shortages and other supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022028282/brka-10q_20220630.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.99,
+     "text": "Unit sales continue to be constrained by low new vehicle production by OEMs, attributable to the ongoing global computer chip shortages and other supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017022022287/brka-20220930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-08",
+     "p": 0.98,
+     "text": "Unit sales continue to be constrained by low new vehicle production by original equipment manufacturers, attributable to the ongoing global computer chip shortages and other supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022028282/brka-10q_20220630.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-08",
+     "p": 0.5,
+     "text": "As of June 30, 2022, the largest categories of our long-term contractual obligations primarily related to fuel, capacity, transmission and maintenance contracts and capital expenditure commitments of BHE and BNSF and aircraft purchase commitments of NetJets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022028282/brka-10q_20220630.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.99,
+     "text": "Operating results in 2022 were negatively affected by a combination of higher materials and energy costs, manufacturing inefficiencies attributable to supply chain disruptions and labor shortages and asset impairment charges, which largely offset the impacts of increased average selling prices and increased demand…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017022022287/brka-20220930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.98,
+     "text": "We also experienced various forms of supply chain disruptions, which affected the general economy, and contributed to considerable raw material and logistics cost inflation and supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.65,
+     "text": "While the uncertainty around the pandemic has largely dissipated, uncertainty remains regarding broader economic impacts as a result of the current geopolitical situation, supply chain disruptions and inflationary pressures and could lead to adverse impacts to credit quality metrics in future periods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085822000112/bac-20220630.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.98,
+     "text": "However, supply chain disruptions had a negative effect on obtaining product at certain times, which negatively affected sales levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-08",
+     "p": 0.96,
+     "text": "The volume decreases were primarily due to lower international intermodal shipments resulting from supply chain disruptions, partially offset by modest increases in domestic intermodal and automotive volumes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022028282/brka-10q_20220630.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.78,
+     "text": "Disruptions in global supply chains have continued and the COVID-19 pandemic continues to evolve.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100122000146/c-20220930.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.71,
+     "text": "In the second half of the year, the growth in economic activity and demand for goods and services, alongside supply chain complications, contributed to inflationary pressures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312522052682/d192225d10k.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-21",
+     "p": 0.27,
+     "text": "On August 24, 2022, the Reserve Bank of India lifted the restrictions it imposed on American Express Banking Corp.'s ability to onboard new customers as a result of local investments in technology, infrastructure and resources to comply with a regulation requiring storage of payment transaction data exclusively in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496222000054/axp-20220930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.74,
+     "text": "Our consolidated capital expenditures for property, plant and equipment and equipment held for lease were $13.3 billion in 2021, which included capital expenditures by our railroad, utilities and energy businesses (BNSF and BHE) of $9.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.31,
+     "text": "BNSF and BHE maintain very large investments in capital assets (property, plant and equipment) and will regularly make significant capital expenditures in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017022022287/brka-20220930.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.42,
+     "text": "•Citi continued to invest in its transformation, including infrastructure supporting its risk and control environment, and make business-led investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100122000036/c-20211231.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.27,
+     "text": "We also perform credit analyses, which incorporate initial and ongoing evaluations of the capacity and willingness of a counterparty to meet its financial obligations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698222000002/gs-20220930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2022-08-03",
+     "p": 0.48,
+     "text": "As of June 30, 2022 approximately 86% of the noninvestment-grade Leisure portfolio is secured.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961722000422/jpm-20220630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-01-14",
+     "p": 0.31,
+     "text": "We also accelerated investments to expand our product distribution capabilities, both domestically and internationally, enhance our products and services and modernize our technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961722000079/a4q21erfexhibit991narrative.htm"
+    },
+    {
+     "symbol": "MA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.36,
+     "text": "This complements the continued growth of acceptance and the expansion of our services capabilities through our acquisition of Dynamic Yield.\"",
+     "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139122000086/ma03312022-exx991xearnings.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-28",
+     "p": 0.98,
+     "text": "We also experienced various forms of supply chain disruptions, which affected the general economy, and contributed to considerable raw material and logistics cost inflation and supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022007322/brka-10k_20211231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-02",
+     "p": 0.98,
+     "text": "We continue to be negatively affected by persistent supply chain disruptions, which limited our sales and contributed to production delays in some areas and contributed to significant cost increases for many raw materials and other inputs, including energy, freight and labor.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022016907/brka-10q_20220331.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-02",
+     "p": 0.98,
+     "text": "McLane’s grocery and food service operating results continue to be adversely affected by upstream supply chain constraints, including the effects of labor and truck driver shortages, higher inventory costs and disruptions in inventory availability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022016907/brka-10q_20220331.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-02",
+     "p": 0.81,
+     "text": "These decreases reflected lower sales volumes, partly attributable to reduced inventory availability arising from production slowdowns in Asia, inbound freight delays and shortages of certain raw materials, partly offset by higher average selling prices.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000156459022016907/brka-10q_20220331.htm"
+    }
+   ]
+  },
+  "2023": {
+   "labor": [
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.76,
+     "text": "Slowing growth, recessionary conditions, market volatility and/or political or civil unrest, global supply chain disruptions, labor shortages, wage pressures and elevated inflation in many countries pose additional challenges, including in the form of volatility in financial markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085823000092/bac-20221231.htm"
+    },
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.64,
+     "text": "The COVID-19 pandemic has directly and indirectly negatively impacted the global economy, disrupted global supply chains, adversely affected equity market valuations, created significant volatility and disruption in financial and capital markets, resulted in challenging labor market conditions, and adversely impacted…",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085823000092/bac-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.99,
+     "text": "Site-built home unit sales were constrained by longer construction periods arising from supply chain constraints and labor shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-07",
+     "p": 0.99,
+     "text": "Operating results in 2022 were negatively affected by a combination of higher materials and energy costs, manufacturing inefficiencies attributable to supply chain disruptions and labor shortages and asset impairment charges, which largely offset the impacts of increased average selling prices and increased demand…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023038705/brka-20230630.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.63,
+     "text": "Pilot also signed a letter of intent with Volvo during 2022 in a partnership to develop a nationwide public charging network to support the expansion of battery-powered electric trucks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.39,
+     "text": "Pilot currently supplies approximately 1.5 billion gallons per year of low-carbon fuels (renewable diesel, biodiesel and ethanol) and approximately 320 million gallons per year of diesel exhaust fluid.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.99,
+     "text": "Site-built home unit sales were constrained by longer construction periods arising from supply chain constraints and labor shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-06",
+     "p": 0.81,
+     "text": "The decline in the third quarter was due to lower revenue per car/unit, partially offset by 0.7% volume growth, primarily due to increased demand for construction products from infrastructure demand, partially offset by lower demand for plastics, chemicals and sand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023058993/brka-20230930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.36,
+     "text": "These constraints began to lessen in the latter half of 2022 due to improved availability and pricing of key inputs, increased order cancellations and lower overall demand for new home construction.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.99,
+     "text": "We also experienced various forms of supply chain disruptions that contributed to considerable raw material and logistics cost inflation and supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-07",
+     "p": 0.99,
+     "text": "Operating results in 2022 were negatively affected by a combination of higher materials and energy costs, manufacturing inefficiencies attributable to supply chain disruptions and labor shortages and asset impairment charges, which largely offset the impacts of increased average selling prices and increased demand…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023038705/brka-20230630.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.49,
+     "text": "Benjamin Moore continually evaluates processes, including evaluating raw material substitutions and sourcing from alternative vendors, to optimize production capacity to meet future demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-07",
+     "p": 0.46,
+     "text": "As of June 30, 2023, the largest categories of our long-term contractual obligations primarily related to fuel, capacity, transmission and maintenance contracts and capital expenditure commitments of BHE and BNSF, aircraft purchase commitments of NetJets and certain raw materials purchase commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023038705/brka-20230630.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.41,
+     "text": "(1)Excludes physical commodities inventories with a carrying value of approximately $8 billion as of June 30, 2023, which includes cumulative basis adjustments of approximately $540 million for active hedges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100123000097/c-20230630.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.99,
+     "text": "We also experienced various forms of supply chain disruptions that contributed to considerable raw material and logistics cost inflation and supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.96,
+     "text": "McLane’s grocery and food service operations were significantly affected in 2021 by upstream supply chain constraints, including the effects of labor and truck driver shortages, which contributed to higher inventory costs, and disruptions in inventory availability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.63,
+     "text": "Pilot also signed a letter of intent with Volvo during 2022 in a partnership to develop a nationwide public charging network to support the expansion of battery-powered electric trucks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.96,
+     "text": "McLane’s grocery and food service operations were significantly affected in 2021 by upstream supply chain constraints, including the effects of labor and truck driver shortages, which contributed to higher inventory costs, and disruptions in inventory availability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-05-08",
+     "p": 0.84,
+     "text": "However, beginning in the third quarter of 2022, new orders slowed in certain regions and markets, in part attributable to elevated inventory levels within the supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023018438/brka-20230331.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.98,
+     "text": "These constraints began to ease in the second half of 2022, allowing for the return to normal production scheduling, replenishment of overall finished goods inventory levels and the reduction of customer order cancellations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "energy_fuel": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.95,
+     "text": "McLane’s grocery and food service operating results continue to be adversely affected by supply chain constraints, including the effects of labor and truck driver shortages, high fuel costs and high inventory costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.63,
+     "text": "BHE’s domestic regulated energy interests are comprised of four regulated U.S. utility companies (collectively, “U.S. utilities”) serving approximately 5.2 million retail customers and five U.S. interstate natural gas pipeline companies with approximately 21,200 miles of operated pipeline having a design capacity of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-07",
+     "p": 0.46,
+     "text": "As of June 30, 2023, the largest categories of our long-term contractual obligations primarily related to fuel, capacity, transmission and maintenance contracts and capital expenditure commitments of BHE and BNSF, aircraft purchase commitments of NetJets and certain raw materials purchase commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023038705/brka-20230630.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.94,
+     "text": "However, new vehicle unit sales in the second half of 2021 declined 18% compared to the second half of 2020, reflecting significant new vehicle supply shortages at manufacturers attributable to the global computer chip shortages and other supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.88,
+     "text": "New vehicle unit sales continue to be constrained by relatively low new vehicle production, although production gradually trended higher during 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.82,
+     "text": "BHA’s comparative vehicle gross profit margin rates began to accelerate during the second half of 2021, attributable to low available inventory.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.8,
+     "text": "High inflation, elevated interest rate levels, supply chain disruptions, and the Russia/Ukraine conflict, including the related energy impact in Europe, have adversely impacted and may continue to adversely impact financial markets and macroeconomic conditions and could result in additional market volatility and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085823000092/bac-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.9,
+     "text": "However, our consumer products businesses, particularly the apparel and footwear businesses, also experienced significant cost increases and supply chain disruptions, causing pre-tax margins in the second half of 2021 to be 1.1 percentage points lower than in the first half of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.89,
+     "text": "Revenue changes in 2021 were driven by continued improvements from the 2020 effects of the COVID-19 pandemic, partially offset by disruptions in the global supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-10",
+     "p": 0.28,
+     "text": "Third, we are focused on strengthening our global, integrated network by continuing to increase merchant acceptance, providing merchants with fraud protection services, marketing insights and connections to higher-spending Card Members and working with our network partners to offer expanded products and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496223000006/axp-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-06",
+     "p": 0.34,
+     "text": "BNSF and BHE maintain very large investments in capital assets (property, plant and equipment) and regularly make significant capital expenditures in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023058993/brka-20230930.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-05-08",
+     "p": 0.31,
+     "text": "We are continuing to strive to improve manufacturing efficiencies, maintain safety and prepare for increasing demand for PCC’s products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023018438/brka-20230331.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.3,
+     "text": "Citi also recorded a pretax charge of approximately $4 million (approximately $17 million program-to-date) as Other operating expenses composed of vendor termination and other costs, reported in Legacy Franchises.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100123000097/c-20230630.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-03",
+     "p": 0.27,
+     "text": "We also perform credit analyses, which incorporate initial and ongoing evaluations of the capacity and willingness of a counterparty to meet its financial obligations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698223000011/gs-20230930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2023-08-03",
+     "p": 0.48,
+     "text": "As of June 30, 2023 approximately 88% of the noninvestment-grade Leisure portfolio is secured.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000432/jpm-20230630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-21",
+     "p": 0.3,
+     "text": "Quantitative and qualitative risks are assessed to monitor and measure the Firm’s capacity to take risk consistent with its stated risk appetite.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000231/jpm-20221231.htm"
+    },
+    {
+     "symbol": "MA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-14",
+     "p": 0.33,
+     "text": "We continue to innovate and expand our offerings to help businesses evolve and expand their growth enterprise-wide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139123000020/ma-20221231.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-11-15",
+     "p": 0.34,
+     "text": "Visa’s four data centers are a critical part of our global processing environment and have a high redundancy of network connectivity, power and cooling designed to provide continuous availability of systems.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316123000099/v-20230930.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-11-15",
+     "p": 0.32,
+     "text": "We are also expanding our network with B2B payments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316123000099/v-20230930.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.83,
+     "text": "Customer demand accelerated throughout 2021, as customers attempted to maintain adequate inventories in response to high demand for components in end products and effects of supply chain disruptions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-27",
+     "p": 0.68,
+     "text": "The slowing of electronic components demand is in part attributable to elevated inventory levels within the supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "BAC",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.64,
+     "text": "The COVID-19 pandemic has directly and indirectly negatively impacted the global economy, disrupted global supply chains, adversely affected equity market valuations, created significant volatility and disruption in financial and capital markets, resulted in challenging labor market conditions, and adversely impacted…",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085823000092/bac-20221231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.32,
+     "text": "Our funding plan for the full year 2023 includes, among other sources, approximately $6.0 billion to $10.0 billion of unsecured term debt issuance and approximately $5.0 billion to $9.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496223000006/axp-20221231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-25",
+     "p": 0.29,
+     "text": "Our current funding plan for the full year 2023 includes, among other sources, approximately $6.0 billion to $10.0 billion of unsecured term debt issuance and approximately $3.0 billion to $7.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496223000028/axp-20230630.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.27,
+     "text": "(4) Autos total credit exposure includes securitization financing facilities secured by auto loans and leases, extended mainly to the finance company subsidiaries of global auto manufacturers, bank subsidiaries and independent auto finance companies, of approximately $16.9 billion ($8.7 billion in funded, with 100%…",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100123000097/c-20230630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2023-11-01",
+     "p": 0.34,
+     "text": "Management believes that the Firm’s unsecured and secured funding capacity is sufficient to meet its on- and off-balance sheet obligations, which includes both short- and long-term cash requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000524/jpm-20230930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2023-08-03",
+     "p": 0.31,
+     "text": "•As of June 30, 2023, the Firm had eligible end-of-period High Quality Liquid Assets (“HQLA”) of approximately $792 billion and unencumbered marketable securities with a fair value of approximately $620 billion, resulting in approximately $1.4 trillion of liquidity sources.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961723000432/jpm-20230630.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-07",
+     "p": 0.46,
+     "text": "As of June 30, 2023, the largest categories of our long-term contractual obligations primarily related to fuel, capacity, transmission and maintenance contracts and capital expenditure commitments of BHE and BNSF, aircraft purchase commitments of NetJets and certain raw materials purchase commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023038705/brka-20230630.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.4,
+     "text": "BHE and its subsidiaries, also own interests in independent power projects having approximately 6,000 net megawatts of generation capacity that are in service in California, Texas, Illinois, Nebraska, Montana, Australia, New York, Arizona, Canada, Minnesota, Kansas, Iowa and Hawaii.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017023004451/brka-20221231.htm"
+    }
+   ]
+  },
+  "2024": {
+   "labor": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.93,
+     "text": "McLane’s grocery and foodservice operating results were adversely affected by supply chain constraints, including the effects of labor and truck driver shortages, high fuel costs and high inventory costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.9,
+     "text": "PCC’s results in 2022 were negatively affected by increased costs for labor and training, materials and utilities and supply chain disruptions, as well as a $59 million reduction in pension plan income.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-04",
+     "p": 0.36,
+     "text": "Pilot subsequently repaid approximately $600 million of these borrowings through September 30, 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024120241/brka-20240930.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.92,
+     "text": "Sales volumes throughout 2022 were restricted by effects of supply constraints for certain raw materials and the effects of unplanned plant maintenance activities, both of which limited Lubrizol’s production capabilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-26",
+     "p": 0.78,
+     "text": "Raw material supply constraints, stemming from the COVID-19 pandemic began to ease in the second half of 2022, and have been alleviated in 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.79,
+     "text": "The volume decrease was primarily due to lower intermodal shipments, resulting from supply chain disruptions and lower West Coast imports during the second half of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.79,
+     "text": "The reductions in sales volumes and supply chain issues in 2021 and 2022 also elevated inventories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.79,
+     "text": "Our consolidated capital expenditures for property, plant and equipment and equipment held for lease were $19.4 billion in 2023, which included capital expenditures by BNSF and BHE of $13.1 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-04",
+     "p": 0.34,
+     "text": "BNSF and BHE maintain very large investments in capital assets (property, plant and equipment) and regularly make significant capital expenditures in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024120241/brka-20240930.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-02",
+     "p": 0.42,
+     "text": "Citi has built an organization and infrastructure to manage, guide and support its transformation, which spans all businesses and functions to ensure consistency.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100124000100/c-20240630.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-23",
+     "p": 0.28,
+     "text": "Our consumer offerings present us with different risks, and we have needed and continue to need to expand and adapt our risk monitoring and mitigation activities to account for these business activities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698224000006/gs-20231231.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-04",
+     "p": 0.27,
+     "text": "We also perform credit analyses, which incorporate initial and ongoing evaluations of the capacity and willingness of a counterparty to meet its financial obligations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698224000025/gs-20240930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2024-08-02",
+     "p": 0.48,
+     "text": "As of June 30, 2024, approximately 92% of the noninvestment-grade Leisure portfolio is secured.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000453/jpm-20240630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.3,
+     "text": "Quantitative and qualitative risks are assessed to monitor and measure the Firm’s capacity to take risk consistent with its stated risk appetite.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000225/jpm-20231231.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-13",
+     "p": 0.54,
+     "text": "As we continue to expand our capabilities and offerings in furtherance of our network of networks strategy, we will need to obtain new types of licenses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316124000058/v-20240930.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-13",
+     "p": 0.37,
+     "text": "Further, as we develop integrated and personalized products and services and acquire new companies to meet the needs of a changing marketplace, we may expand our data profile through additional data types and sources, across multiple channels, and involving new partners.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316124000058/v-20240930.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.73,
+     "text": "Although new vehicle inventory levels remain well below historical levels, vehicle supply continues to gradually rise.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.66,
+     "text": "However, in the third quarter of 2022, new orders began to slow, attributable in part to elevated inventory levels within the supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017024019719/brka-20231231.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.32,
+     "text": "Our funding plan for the full year 2024 includes, among other sources, approximately $4.0 billion to $8.0 billion of unsecured term debt issuance and approximately $2.0 billion to $6.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496224000013/axp-20231231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-19",
+     "p": 0.29,
+     "text": "Our current funding plan for the full year 2024 includes, among other sources, approximately $7.0 billion to $11.0 billion of unsecured term debt issuance and approximately $2.0 billion to $6.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496224000052/axp-20240630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2024-10-30",
+     "p": 0.34,
+     "text": "Management believes that the Firm’s unsecured and secured funding capacity is sufficient to meet its on- and off-balance sheet obligations, which includes both short- and long-term cash requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000611/jpm-20240930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2024-08-02",
+     "p": 0.31,
+     "text": "•As of June 30, 2024, the Firm had eligible end-of-period High Quality Liquid Assets (“HQLA”) of approximately $841 billion and unencumbered marketable securities with a fair value of approximately $623 billion, resulting in approximately $1.5 trillion of liquidity sources.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961724000453/jpm-20240630.htm"
+    }
+   ]
+  },
+  "2025": {
+   "unspecified": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-03",
+     "p": 0.75,
+     "text": "We are currently unable to reliably predict the ultimate impact on our businesses, whether through changes in the availability of products, supply chain costs and efficiency, and customer demand for our products and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312525261548/brka-20250930.htm"
+    },
+    {
+     "symbol": "MA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-12",
+     "p": 0.79,
+     "text": "These requirements have resulted in, and are likely to continue to result in, increased compliance costs for our business and supply chain, which may increase our operating costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139125000011/ma-20241231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-18",
+     "p": 0.31,
+     "text": "With our differentiated Membership model and proven product refresh strategy, combined with the expansion of the premium category, we see a long runway for growth.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000082/q225exhibit991.htm"
+    },
+    {
+     "symbol": "BAC",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.28,
+     "text": "Our overall capacity to take risk is limited.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085825000139/bac-20241231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-24",
+     "p": 0.79,
+     "text": "Our consolidated capital expenditures for property, plant and equipment and equipment held for lease were $19.0 billion in 2024, which included capital expenditures by BNSF and BHE of $12.7 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000095017025025210/brka-20241231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-03",
+     "p": 0.34,
+     "text": "BNSF and BHE maintain very large investments in capital assets (property, plant and equipment) and regularly make significant capital expenditures in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312525261548/brka-20250930.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-21",
+     "p": 0.42,
+     "text": "Citi has built an organization and infrastructure to manage, guide and support its transformation, which spans all businesses and functions to ensure consistency.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100125000067/c-20241231.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-21",
+     "p": 0.26,
+     "text": "These net obligations under master netting agreements are often secured by collateral posted under an industry standard credit support annex to the master netting agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100125000067/c-20241231.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.28,
+     "text": "We expect that the new operating model will drive efficiencies and create capacity for future growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698225001411/gs-20250930.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.27,
+     "text": "We also perform credit analyses, which incorporate initial and ongoing evaluations of the capacity and willingness of a counterparty to meet its financial obligations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698225001411/gs-20250930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2025-08-05",
+     "p": 0.48,
+     "text": "As of June 30, 2025, approximately 86% of the noninvestment-grade Leisure portfolio is secured.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000615/jpm-20250630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-14",
+     "p": 0.32,
+     "text": "The Firm also remains subject to consent orders entered into in March 2024 with the OCC and the Board of Governors of the Federal Reserve System, and a resolution entered into in May 2024 with the CFTC, which relate to the Firm’s processes to inventory trading venues and confirm the completeness of certain data fed…",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000270/jpm-20241231.htm"
+    },
+    {
+     "symbol": "MA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-12",
+     "p": 0.3,
+     "text": "Further, as we acquire new companies and develop integrated and personalized products and services to meet the needs of a changing marketplace, we have expanded and may further expand our data profile through additional data types and sources, across multiple channels, and involving new partners.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139125000011/ma-20241231.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-11-06",
+     "p": 0.59,
+     "text": "We continue to expand our stablecoin settlement activities, enabling support for four stablecoins and four blockchains.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-06",
+     "p": 0.46,
+     "text": "As we continue to expand our capabilities and offerings in furtherance of our multi-year growth strategy, we will need to obtain new types of licenses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+    },
+    {
+     "symbol": "WFC",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2025-08-05",
+     "p": 0.36,
+     "text": "As of June 30, 2025, we had approximately $592.5 billion of borrowing capacity at the Federal Reserve Discount Window and Federal Home Loan Banks (FHLB).",
+     "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297125000201/wfc-20250630.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-07",
+     "p": 0.32,
+     "text": "Our funding plan for the full year 2025 includes, among other sources, approximately $9.0 billion to $13.0 billion of unsecured term debt issuance and approximately $6.0 billion to $10.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000016/axp-20241231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-18",
+     "p": 0.29,
+     "text": "Our current funding plan for the full year 2025 includes, among other sources, approximately $12.0 billion to $16.0 billion of unsecured term debt issuance and approximately $6.0 billion to $10.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000083/axp-20250630.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-06",
+     "p": 0.27,
+     "text": "As of June 30, 2025, Citigroup had approximately $1.0 trillion of available liquidity resources to support client and business needs, including end-of-period HQLA ($589 billion); additional unencumbered HQLA, including excess liquidity held at bank entities that is non-transferable to other entities within Citigroup…",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100125000131/c-20250630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2025-11-04",
+     "p": 0.34,
+     "text": "Management believes that the Firm’s unsecured and secured funding capacity is sufficient to meet its on- and off-balance sheet obligations, which includes both short- and long-term cash requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828025048859/jpm-20250930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2025-08-05",
+     "p": 0.31,
+     "text": "•As of June 30, 2025, the Firm had eligible end-of-period High Quality Liquid Assets (“HQLA”) of approximately $970 billion and unencumbered marketable securities with a fair value of approximately $573 billion, resulting in approximately $1.5 trillion of liquidity sources.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000615/jpm-20250630.htm"
+    }
+   ]
+  },
+  "latest": {
+   "unspecified": [
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-02",
+     "p": 0.86,
+     "text": "While supplies, including alternative sources, are currently adequate, significant disruptions or constraints in production processing facilities, or other global supply chain restrictions, could cause reduced availability and increased prices.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.81,
+     "text": "Inventory cost and supply chain uncertainties could negatively impact TTI’s gross margins in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526341032/brka-20260630.htm"
+    },
+    {
+     "symbol": "WFC",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-14",
+     "p": 0.98,
+     "text": "“We have built a strong foundation and have made great progress in improving growth and returns though we have operated with significant constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000009/wfc4qer01-14x26ex991xrelea.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-06",
+     "p": 0.53,
+     "text": "The continued global expansion of our merchant network contributed to our growth, as we added millions of new merchant locations globally in 2025 and continued to increase coverage across our top international countries.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000080/axp-20251231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-23",
+     "p": 0.43,
+     "text": "We also shared plans for the largest one-year expansion of our commercial product suite in our history, starting with the launch of our new Graphite Business Cash Unlimited Card.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000188/q126exhibit991.htm"
+    },
+    {
+     "symbol": "BAC",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.28,
+     "text": "Our overall capacity to take risk is limited.",
+     "url": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000157/bac-20251231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-03-02",
+     "p": 0.73,
+     "text": "Our consolidated capital expenditures for property, plant and equipment and equipment held for lease were $20.9 billion in 2025, which included capital expenditures of $14.4 billion by BNSF and BHE.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526083899/brka-20251231.htm"
+    },
+    {
+     "symbol": "BRK.B",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.34,
+     "text": "BNSF and BHE maintain very large investments in capital assets (property, plant and equipment) and regularly make significant capital expenditures in the normal course of business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526341032/brka-20260630.htm"
+    },
+    {
+     "symbol": "C",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.42,
+     "text": "Citi has built an organization and infrastructure to manage, guide and support its transformation, which spans all businesses and functions to ensure consistency.",
+     "url": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000011/c-20251231.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-25",
+     "p": 0.52,
+     "text": "In January 2026, we acquired Industry Ventures, through which we intend to expand our offering of venture capital solutions, and in December 2025, we announced an agreement to acquire Innovator Capital Management, through which we intend to expand our ETF offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000091/gs-20251231.htm"
+    },
+    {
+     "symbol": "GS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.28,
+     "text": "We expect that the new operating model will drive efficiencies and create capacity for future growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698225001411/gs-20250930.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2026-08-06",
+     "p": 0.48,
+     "text": "As of June 30, 2026, approximately 91% of the noninvestment-grade Leisure portfolio is secured.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.34,
+     "text": "The Firm entered into a forward purchase commitment on December 30, 2025 to acquire the Apple credit card portfolio, with an expected closing in approximately 24 months (the “Apple Card transaction”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm"
+    },
+    {
+     "symbol": "MA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-11",
+     "p": 0.33,
+     "text": "We continue to expand our capabilities to support emerging blockchain‑based payment models through a controlled and risk‑managed framework, applying robust due‑diligence and monitoring standards for partners operating in the digital asset ecosystem.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-11-06",
+     "p": 0.59,
+     "text": "We continue to expand our stablecoin settlement activities, enabling support for four stablecoins and four blockchains.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+    },
+    {
+     "symbol": "V",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-06",
+     "p": 0.46,
+     "text": "As we continue to expand our capabilities and offerings in furtherance of our multi-year growth strategy, we will need to obtain new types of licenses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+    },
+    {
+     "symbol": "WFC",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2026-07-28",
+     "p": 0.36,
+     "text": "As of June 30, 2026, we had approximately $713.4 billion of borrowing capacity at the Federal Reserve Discount Window and Federal Home Loan Banks (FHLB).",
+     "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000302/wfc-20260630.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-06",
+     "p": 0.32,
+     "text": "Our funding plan for the full year 2026 includes, among other sources, approximately $4.0 billion to $8.0 billion of unsecured term debt issuance and approximately $2.0 billion to $6.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000080/axp-20251231.htm"
+    },
+    {
+     "symbol": "AXP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-24",
+     "p": 0.29,
+     "text": "Our current funding plan for the full year 2026 includes, among other sources, approximately $4.0 billion to $8.0 billion of unsecured term debt issuance and approximately $1.0 billion to $3.0 billion of secured term debt issuance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000322/axp-20260630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "unsplit",
+     "filed": "2026-08-06",
+     "p": 0.34,
+     "text": "Management believes that the Firm’s unsecured and secured funding capacity is sufficient to meet its on- and off-balance sheet obligations, which includes both short- and long-term cash requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm"
+    },
+    {
+     "symbol": "JPM",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-14",
+     "p": 0.31,
+     "text": "We have ample amounts of capital and liquidity, with $291 billion in CET1 capital, $572 billion in total loss-absorbing capacity and $1.5 trillion in cash and marketable securities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026024990/a1q26erfexhibit991narrative.htm"
+    }
+   ]
+  }
+ }
+}

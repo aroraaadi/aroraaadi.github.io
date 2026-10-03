@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demand tree — Two Books</title>
+<meta name="description" content="What the ten largest firms in each sector say they are short of, read from their SEC filings, and the industries that supply it.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Books">
+<meta property="og:title" content="Demand tree — Two Books">
+<meta property="og:description" content="What the ten largest firms in each sector say they are short of, read from their SEC filings, and the industries that supply it.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f14" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/app.css">
+<script>
+  window.ASSET_BASE = "../";
+  // Stamp an explicit theme choice before first paint; the OS preference is CSS.
+  try { var t = localStorage.getItem("qp-theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+
+
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<div id="shell"></div>
+
+<main id="main">
+  <p class="eyebrow">Engine · what the largest firms are short of</p>
+  <h1>Demand tree</h1>
+  <p class="sub">The ten largest companies in each sector move most of its money. This reads what they tell the SEC —
+     earnings releases and remarks, MD&amp;A, risk factors — finds the sentences where a firm says it cannot get
+     enough of something or is buying more of it, and follows each need to the industries that supply it.</p>
+  <p class="meta" id="dm-meta"></p>
+  <div id="error"></div>
+  <div id="dm-strip" class="strip"></div>
+
+  <div class="panel" id="dm-main">
+    <div class="panel-h"><h2 id="dm-tree-title">What each sector is short of</h2><span class="spacer"></span><span class="note" id="dm-tree-note"></span></div>
+    <div class="panel-b"><div class="controls">
+      <div class="seg" id="dm-lens" role="group" aria-label="Lens"></div>
+      <div class="seg" id="dm-period" role="group" aria-label="Period"></div>
+    </div>
+    <div class="dm-pills" id="dm-sectors" role="group" aria-label="Sectors shown"></div></div>
+    <div class="panel-b"><div class="dm-key" id="dm-key"></div><div id="dm-tree" class="dm-tree"></div></div>
+  </div>
+
+  <div class="panel" id="dm-evidence-panel">
+    <div class="panel-h"><h2 id="dm-ev-title">Evidence</h2><span class="spacer"></span><span class="note" id="dm-ev-note"></span></div>
+    <div class="panel-b"><div id="dm-evidence" class="dm-evidence"></div></div>
+  </div>
+
+  <div class="panel" id="dm-matrix-panel">
+    <div class="panel-h"><h2>Which sectors lean on which</h2><span class="spacer"></span><span class="note" id="dm-matrix-note"></span></div>
+    <div class="panel-b"><div class="dm-scroll"><div id="dm-matrix" class="heatmap dm-matrix"></div></div></div>
+  </div>
+
+  <div class="panel" id="dm-model-panel">
+    <div class="panel-h"><h2>How a sentence is judged</h2></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="dm-model"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="dm-model-note"></p></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-h"><h2>What was read</h2></div>
+    <div class="panel-b flush"><div class="tbl-wrap"><table id="dm-cov"><thead><tr></tr></thead><tbody></tbody></table></div></div>
+    <div class="panel-b"><p class="note" id="dm-disclosure"></p></div>
+  </div>
+</main>
+
+<footer>Personal research project, not investment advice. Quotes are from public SEC filings; supplier leaves are industries, not recommendations.</footer>
+
+<script type="module" src="../js/demand.js"></script>
+</body>
+</html>

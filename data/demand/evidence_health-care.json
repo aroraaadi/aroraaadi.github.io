@@ -1,0 +1,3751 @@
+{
+ "sector": "Health Care",
+ "periods": {
+  "2022": {
+   "unspecified": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-19",
+     "p": 0.96,
+     "text": "International FreeStyle Libre sales were negatively impacted by supply constraints of Abbott's first-generation FreeStyle Libre system in certain emerging markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828022026588/abt-20221019xexhibitx991.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-19",
+     "p": 0.96,
+     "text": "Internationally, sales growth was negatively impacted by intermittent COVID-19 lockdown restrictions in China as well as supply constraints in certain areas, most notably Electrophysiology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828022026588/abt-20221019xexhibitx991.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.99,
+     "text": "This was partially offset by U.S. supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000086/jnj-20221002.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.98,
+     "text": "The growth was mostly offset by supply constraints primarily in the U.S.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000071/jnj-20220703.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.96,
+     "text": "Outside the U.S., we have implemented certain actions to minimize the impact to existing patients, but we expect to experience intermittent disruptions in our supply of Trulicity in international markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.95,
+     "text": "Accelerated demand for Trulicity in many international markets, due to market growth and the limited availability of competitor GLP-1s in select markets, may continue to challenge our ability to meet Trulicity demand in some markets at times.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000196/lly-20220630.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-08",
+     "p": 0.94,
+     "text": "▪Premarin in the U.S., down 31%, primarily driven by unfavorable changes in formulary coverage and temporary supply shortages of certain formulations of Premarin.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000003/pfe-12312021xex99.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-29",
+     "p": 0.44,
+     "text": "•AbbVie announced that it submitted a supplemental NDA to the FDA for Qulipta (atogepant) to support label expansion for the preventive treatment of migraine in adult patients with chronic migraine.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115222000026/abbv-20220630xexhibit991.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.29,
+     "text": "In addition, Abbott enters into purchase commitments in the normal course of business to meet operational and capital expenditure requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465922025141/abt-20211231x10k.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.29,
+     "text": "Abbott is also working to bring infant powder formula to the U.S. from its FDA-regulated facility in Europe and to increase production at other U.S. manufacturing plants.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465922055285/abt-20220331x10q.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.47,
+     "text": "Through its unique mechanism of action, rocatinlimab inhibits and prevents the expansion of activated pathogenic T-cells, and reduces their number.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815422000019/amgenq12022earningsrelease.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.32,
+     "text": "In addition to the purchase obligations noted above, we are contractually obligated to pay additional amounts that in the aggregate are significant, upon the achievement of various development, regulatory and commercial milestones for agreements we have entered into with third parties, including contingent…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815422000010/amgn-20211231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.65,
+     "text": "We continued to expand and strengthen both our commercial portfolio and clinical pipeline across therapeutic focus areas to drive future growth potential.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000007/gild-20211231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.34,
+     "text": "In 2022, we will continue to focus on executing our strategy to expand and diversify our commercial portfolio and clinical pipelines across our three therapeutic focus areas: virology, oncology and inflammation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000007/gild-20211231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.4,
+     "text": "In general, we expect continued high utilization of supply resources to meet international demand for Trulicity until newly announced capacities, and perhaps further capital investments, are fully operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000196/lly-20220630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.9,
+     "text": "Merck has entered into advance purchase and supply agreements for Lagevrio in nearly 40 markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000030/mrk-20220630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.77,
+     "text": "Merck has entered into advance purchase and supply agreements for molnupiravir in more than 30 markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-11",
+     "p": 0.67,
+     "text": "◦Pfizer has capacity to manufacture up to 120 million treatment courses by the end of 2022 (and is on track to produce 30 million courses in the first half of 2022 with the ability to produce the remaining 90 million courses in the second half of 2022), depending on the global need, which will be driven by purchase…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000071/pfe-20220403.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-11",
+     "p": 0.63,
+     "text": "MPP has entered into sublicense agreements with 36 generic manufacturers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000071/pfe-20220403.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-06",
+     "p": 0.73,
+     "text": "The company’s investing activities also included the purchase of $640 million of property, plant and equipment for capacity and capability investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000027/tmo-20220402.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-02",
+     "p": 0.72,
+     "text": "•Accelerated investments in capacity and capabilities, investing $2.5 billion in 2021 to meet short- and long-term customer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000003/q421earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-04",
+     "p": 0.33,
+     "text": "We continually evaluate opportunities to expand our operations, including through internal development of new products, programs and technology applications and acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176622000019/unh-20220331.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-01-19",
+     "p": 0.29,
+     "text": "•Optum Rx continued to advance the scope of its pharmacy care services offerings during 2021, with further expansion in community-based behavioral pharmacies and across e-commerce, infusion and specialty pharmacy services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176622000004/a2021q4exhibit991.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.55,
+     "text": "In 2020, we met or exceeded our environmental sustainability targets set out in 2013 that called for reducing fleet carbon output by up to 20%, facility carbon output by 10%, water consumption by 10% and waste disposal by 35%.2 We achieved our 2020 targets while growing revenues, increasing production capacity and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815422000010/amgn-20211231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.49,
+     "text": "A majority of the increase in expenditures relates to expansion of manufacturing capacity to enable supply of products and product candidates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815422000010/amgn-20211231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.78,
+     "text": "•In April 2021, we announced that we will (i) provide assistance and support for expansion of local manufacturing capacity of remdesivir in India and will donate the active pharmaceutical ingredient and (ii) donate a minimum of 450,000 vials of Veklury (remdesivir) to the government of India.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000007/gild-20211231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-02",
+     "p": 0.48,
+     "text": "We also operate a new retroviral vector manufacturing facility in Oceanside, California, which received FDA approval for commercial production in October 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000027/gild-20220930.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-18",
+     "p": 0.52,
+     "text": "COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's modification of its COVID-19 vaccine research program and manufacturing capacity to levels that meet all customer…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000081/a2022q3exhibit992.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-03",
+     "p": 0.68,
+     "text": "•Lilly announced new investments to increase the company's manufacturing capacity for current and future medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000016/q421lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.41,
+     "text": "We anticipate that additional internal and contracted manufacturing capacity will become fully operational around the world in the next several years, with significant expansion in 2023, as part of our ongoing efforts to meet the significant demand for our incretin medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.98,
+     "text": "In March 2021, Merck announced it had entered into multiple agreements to support efforts to expand manufacturing capacity and supply of SARS-CoV-2/COVID-19 medicines and vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000034/mrk-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.53,
+     "text": "During the COVID-19 pandemic Merck has remained focused on protecting the safety of its employees, ensuring that its supply of medicines and vaccines reaches its patients, contributing its scientific expertise to the development of an antiviral therapy, supporting efforts to expand manufacturing capacity and supply…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-09",
+     "p": 0.48,
+     "text": "Additionally, we are not initiating new clinical trials in Russia, have stopped recruiting new patients in our ongoing clinical trials in the country, and halted all new investments with local suppliers intended to build manufacturing capacity in Russia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000101/pfe-20221002.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-03",
+     "p": 0.36,
+     "text": "Additionally, Pfizer will no longer initiate new clinical trials in Russia, will stop recruiting new patients in its ongoing clinical trials in the country, and will cease all future investments with local suppliers intended to build manufacturing capacity in Russia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000068/pfe-04032022xex99.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.92,
+     "text": "•Continued to strengthen our unique customer value proposition with two new facilities to expand our capacity and capabilities: in Chelmsford, Massachusetts, we expanded our capacity for purification resins used in the production of biologics for a number of diseases; and in Plainville, Massachusetts, we expanded our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000053/q32022earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-02",
+     "p": 0.62,
+     "text": "Our exceptional performance has enabled us to further strengthen our long-term competitive position by significantly accelerating our growth strategy through enhanced customer relationships and significant investments in commercial capabilities, innovation, capacity expansion and acquisitions, to ensure an even…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000003/q421earnings8kex99_1.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.68,
+     "text": "The Company continues to evaluate the global demand for the COVID-19 vaccine and its related supply.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000086/jnj-20221002.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.96,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain resources and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.76,
+     "text": "The focus of resources on COVID-19, widespread protective measures implemented to control the spread of COVID-19, and the resulting strain on global transportation, manufacturing, and labor markets have negatively impacted development, manufacturing, supply, distribution, and sales of our medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.98,
+     "text": "Sales of companion animal products also reflect higher demand for the BRAVECTO (fluralaner) parasiticide line of products, partially offset by supply constraints for certain vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465922111729/tm2227726d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.95,
+     "text": "Excluding the unfavorable effect of foreign exchange in both periods, sales performance primarily reflects higher pricing and demand in the companion animal portfolio, led by the Bravecto (fluralaner) line of products, partially offset by lower sales of vaccines due to supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000034/mrk-20220930.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.76,
+     "text": "Over the next several years, Abbott plans to expand its product portfolio in key therapeutic areas with the aim of being among the first to launch new off-patent and differentiated medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465922025141/abt-20211231x10k.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-07",
+     "p": 0.39,
+     "text": "Members of Amgen’s senior leadership team will discuss plans to grow the many innovative medicines and biosimilars in the Company’s currently marketed portfolio; to advance numerous potential new medicines through its pipeline; and to capitalize on advances in science and technology to build a set of differentiated…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815422000005/amgenq42021earningsrelease.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.97,
+     "text": "These arrangements provide the Company with future supplemental commercial capacity for vaccine production and potentially transferable rights to such production if capacity is not required.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000086/jnj-20221002.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-18",
+     "p": 0.52,
+     "text": "COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's modification of its COVID-19 vaccine research program and manufacturing capacity to levels that meet all customer…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040622000081/a2022q3exhibit992.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-03",
+     "p": 0.68,
+     "text": "•Lilly announced new investments to increase the company's manufacturing capacity for current and future medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000016/q421lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.41,
+     "text": "We anticipate that additional internal and contracted manufacturing capacity will become fully operational around the world in the next several years, with significant expansion in 2023, as part of our ongoing efforts to meet the significant demand for our incretin medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.98,
+     "text": "In March 2021, Merck announced it had entered into multiple agreements to support efforts to expand manufacturing capacity and supply of SARS-CoV-2/COVID-19 medicines and vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000034/mrk-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.86,
+     "text": "Merck has also entered into agreements to support the manufacturing and supply of Johnson & Johnson’s SARS-CoV-2/COVID-19 vaccine.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-09",
+     "p": 0.49,
+     "text": "◦The companies have entered into agreements to supply pre-specified doses of Comirnaty in 2022 with multiple developed and emerging countries around the world and are continuing to deliver doses of Comirnaty to governments under such agreements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000101/pfe-20221002.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.41,
+     "text": "▪In June 2022, Pfizer and BioNTech announced a new vaccine supply agreement with the U.S. government to provide an additional 105 million COVID-19 doses (30-µg, 10-µg and 3-µg) that may include adult Omicron-adapted COVID-19 vaccines, subject to authorization from the FDA.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000091/pfe-07032022xex99.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-24",
+     "p": 0.38,
+     "text": "The biosciences and bioproduction businesses also expanded their capacity to meet the needs of pharma and biotech customers as they rapidly expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000011/tmo-20211231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.35,
+     "text": "The biosciences and bioproduction businesses have expanded their capacity to meet the needs of pharma and biotech customers as they have expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000057/tmo-20221001.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.97,
+     "text": "•Purchased approximately 27 acres of additional land in Oceanside, California to potentially support further manufacturing operations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000010/exhibit991earningspressrel.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.35,
+     "text": "We anticipate our cash requirements related to capital expenditures will increase in 2022 as compared to the prior year as we work to expand our site infrastructure and capabilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000007/gild-20211231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-03",
+     "p": 0.82,
+     "text": "Lilly plans to invest more than 400 million euros in a new site in Limerick, Ireland to expand the company's manufacturing network for biologic active ingredients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000016/q421lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-08-04",
+     "p": 0.55,
+     "text": "•The company announced plans to invest $2.1 billion in two new Indiana manufacturing sites.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000194/q222lillysalesandearningsp.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.94,
+     "text": "To date, Abbott has been able to manage the various supply chain challenges without significant supply disruption or shortage for services, raw materials and supplies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465922025141/abt-20211231x10k.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.63,
+     "text": "These favorable impacts were partially offset by the impact of the voluntary product recall and Sturgis manufacturing stoppage in the Nutritional business as well as higher manufacturing and supply chain costs across Abbott's businesses, including inflation and higher commodity and distribution expenses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828022027550/abt-20220930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.97,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, widespread protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000196/lly-20220630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.94,
+     "text": "The strain on global transportation, logistics, and labor markets caused by the COVID-19 pandemic and an increase in overall demand in our industry for certain materials resulting in changed buying patterns and constrained supply have had, and may continue to have, a number of impacts on our business, including…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-05",
+     "p": 0.96,
+     "text": "The COVID-19 pandemic has caused some disruption and volatility in the Company’s global supply chain network, and the Company may in the future experience disruptions in availability and delays in shipments of raw materials and packaging, as well as related cost inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000011/mrk-20220331.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.96,
+     "text": "In addition, the COVID-19 pandemic has caused some disruption and volatility in the Company’s global supply chain network, and the Company may in the future experience disruptions in availability and delays in shipments of raw materials and packaging, as well as related cost inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.78,
+     "text": "•In April 2021, we announced that we will (i) provide assistance and support for expansion of local manufacturing capacity of remdesivir in India and will donate the active pharmaceutical ingredient and (ii) donate a minimum of 450,000 vials of Veklury (remdesivir) to the government of India.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000007/gild-20211231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.84,
+     "text": "We plan to invest more than 400 million euros over several years in a new facility in Limerick, Ireland to expand our manufacturing network for biologic active ingredients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000068/lly-20211231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.82,
+     "text": "We plan to invest more than 400 million euro over several years in a new facility in Limerick, Ireland to expand our manufacturing network for biologic active ingredients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.92,
+     "text": "•Continued to strengthen our unique customer value proposition with two new facilities to expand our capacity and capabilities: in Chelmsford, Massachusetts, we expanded our capacity for purification resins used in the production of biologics for a number of diseases; and in Plainville, Massachusetts, we expanded our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000053/q32022earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.75,
+     "text": "•Strengthened our unique customer value proposition with new capacity and capabilities to meet increasing global demand: in Grand Island, NY expanded cell culture media capacity to support research and drug production applications; and in Geel, Belgium expanded our European distribution center for our laboratory…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774522000044/q22022earnings8kex99_1.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.97,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, widespread protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000196/lly-20220630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.96,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain resources and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.53,
+     "text": "During the COVID-19 pandemic Merck has remained focused on protecting the safety of its employees, ensuring that its supply of medicines and vaccines reaches its patients, contributing its scientific expertise to the development of an antiviral therapy, supporting efforts to expand manufacturing capacity and supply…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.89,
+     "text": "The increase in 2021 from 2020 reflects the impact of sales volume increases for COVID-19 tests in Rapid Diagnostics and growth across virtually all of Abbott’s businesses due, in part, to recovery from the COVID-19 pandemic, partially offset by the impact of inflation and supply chain challenges on various…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000110465922025141/abt-20211231x10k.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.97,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, widespread protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000196/lly-20220630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.96,
+     "text": "Strain on global transportation, logistics, manufacturing, and labor markets, including as aggravated by the pandemic and global unrest, the focus of resources on COVID-19, protective measures implemented to control the spread of COVID-19, and an increase in overall demand in our industry for certain resources and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947822000250/lly-20220930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.47,
+     "text": "Merck has entered into advance purchase and supply agreements for molnupiravir in more than 30 markets and Merck began shipping molnupiravir in the fourth quarter of 2021 to countries where it is approved or authorized.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015822000003/mrk-20211231.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-02",
+     "p": 0.48,
+     "text": "We also operate a new retroviral vector manufacturing facility in Oceanside, California, which received FDA approval for commercial production in October 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000027/gild-20220930.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.44,
+     "text": "•Received FDA approval of viral vector manufacturing facility in Oceanside, California.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000022/exhibit991earningspressrel.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-11",
+     "p": 0.73,
+     "text": "In addition, in March 2022, Pfizer entered into an agreement with UNICEF to supply up to 4 million treatment courses of Paxlovid to 95 low- and middle-income countries, pending authorization or approval.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000071/pfe-20220403.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-11",
+     "p": 0.35,
+     "text": "In December 2021, a supplemental BLA was submitted to the FDA requesting to expand the approval of Comirnaty to include individuals ages 12 through 15 years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000071/pfe-20220403.htm"
+    }
+   ]
+  },
+  "2023": {
+   "raw_materials": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-17",
+     "p": 0.99,
+     "text": "The COVID-19 pandemic has contributed to global supply chain disruptions, which have adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-17",
+     "p": 0.98,
+     "text": "In addition, the COVID-19 pandemic has contributed to global supply chain disruptions, which have adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.84,
+     "text": "The rapid reallocation of resources for the treatment and prevention of COVID-19 (including the production of COVID-19 vaccines or related therapies, such as our agreement to contribute to the production of COVID-19 antibody therapies for Lilly) and/or disruptions and shortages in the global supply chain caused by…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.68,
+     "text": "The current inflationary environment related to increased aggregate demand, supply chain constraints and the effects from the armed conflict in Ukraine (including the effects of the sanctions that were implemented in response to the conflict and the resulting impacts on the commodity market and supply chains) have…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-16",
+     "p": 0.89,
+     "text": "We have experienced, and expect to continue to experience, other risks related to the broad economic consequences of the Russia-Ukraine War, including foreign currency volatility, decreased demand for our products in countries affected by the Russia-Ukraine War and challenges to our global supply chain related to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.79,
+     "text": "In addition, cost inflation, the strain on global transportation, logistics, and labor markets (including as exacerbated by the COVID-19 pandemic and the emergence or escalation of, and responses to, war or unrest, including the Russia-Ukraine war), global economic downturns or uncertainty, and an increase in overall…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000162/lly-20230331.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-23",
+     "p": 0.79,
+     "text": "Examples of such difficulties or delays include the inability to increase production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to supply certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our incretin products, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-22",
+     "p": 0.59,
+     "text": "In 2022, we committed to invest over several years more than $2 billion in two new facilities in Lebanon, Indiana to manufacture existing and future products, more than $1 billion in a new facility in Concord, North Carolina to manufacture parenteral (injectable) products and devices, and more than 400 million euro…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.98,
+     "text": "Volumes in international markets were affected by actions we have taken to manage strong demand amid tight supply, including measures to minimize impact to existing patients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-11-02",
+     "p": 0.98,
+     "text": "Volumes in international markets were affected by actions Lilly has taken to manage strong demand amid tight supply, including measures to minimize impact to existing patients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000282/q323lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-23",
+     "p": 0.79,
+     "text": "Examples of such difficulties or delays include the inability to increase production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to supply certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.49,
+     "text": "A majority of the increase in expenditures relates to expansion of manufacturing capacity to enable supply of products and product candidates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.45,
+     "text": "We achieved our targets for the 2013–2020 period while growing revenues, increasing production capacity and expanding to approximately 100 countries over the same period.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-08-04",
+     "p": 0.39,
+     "text": "We also operate a retroviral vector manufacturing facility in Oceanside, California, which received FDA approval for commercial production in October 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000025/gild-20230630.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-22",
+     "p": 0.33,
+     "text": "•In April 2022, FDA approved commercial production at our new CAR T-cell therapy manufacturing facility in Frederick, Maryland.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000007/gild-20221231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-01-24",
+     "p": 0.5,
+     "text": "COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's modification of its COVID-19 vaccine research program and manufacturing capacity to levels that meet all remaining…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000005/a2022q4exhibit992.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-16",
+     "p": 0.45,
+     "text": "COVID-19 vaccine research program and manufacturing capacity to levels that meet all remaining customer contractual requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our incretin products, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.5,
+     "text": "We anticipate tight supplies of our incretin products will persist while additional manufacturing capacity is operationalized.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.98,
+     "text": "In March 2021, Merck announced it had entered into multiple agreements to support efforts to expand manufacturing capacity and supply of SARS-CoV-2/COVID-19 medicines and vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828023005061/mrk-20221231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.92,
+     "text": "The Company plans to invest approximately $20 billion in capital projects from 2021-2025, approximately half of which relates to investments in the U.S., including expanding manufacturing capacity for oncology, vaccine and animal health products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828023005061/mrk-20221231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-01",
+     "p": 0.79,
+     "text": "▪In June 2023, Pfizer announced it entered into a manufacturing capacity reservation agreement with the European Health and Digital Executive Agency of the EC, which provides the EU access to doses of an mRNA-based vaccine should one be developed to protect against a future pandemic-causing disease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000085/pfe-07022023xex99.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-23",
+     "p": 0.48,
+     "text": "Additionally, we are not initiating new clinical trials in Russia, have stopped recruiting new patients in our ongoing clinical trials in the country, and halted all new investments with local suppliers intended to build manufacturing capacity in Russia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-23",
+     "p": 0.37,
+     "text": "rapidly expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000008/tmo-20221231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-03",
+     "p": 0.35,
+     "text": "The biosciences and bioproduction businesses have expanded their capacity to meet the needs of pharma and biotech customers as they have expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000069/tmo-20230930.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.84,
+     "text": "The rapid reallocation of resources for the treatment and prevention of COVID-19 (including the production of COVID-19 vaccines or related therapies, such as our agreement to contribute to the production of COVID-19 antibody therapies for Lilly) and/or disruptions and shortages in the global supply chain caused by…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.92,
+     "text": "•Cost inflation and strain on global transportation, manufacturing, and labor markets, which have negatively impacted development, manufacturing, supply, distribution, and sales of our medicines, including through increased costs to provide, and in some cases disruptions in supply or shortages of, our medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-08",
+     "p": 0.81,
+     "text": "We have experienced and continue to expect intermittent delays fulfilling orders of certain Mounjaro doses given significant demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000221/lly-20230630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-02",
+     "p": 0.97,
+     "text": "Sales of companion animal products were negatively impacted by a reduction in veterinary visits in the broader companion animal market following the more favorable trend during the pandemic, as well as supply constraints for certain vaccines, partially offset by higher pricing.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465923009552/tm235007d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-01",
+     "p": 0.96,
+     "text": "the BRAVECTO line of products, partially offset by supply challenges for certain companion animal vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465923086030/tm2322190d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-08",
+     "p": 0.5,
+     "text": "While manufacturing has resumed, the supply of medicines impacted by the tornado is expected to be affected through at least mid-2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000115/pfe-20231001.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-31",
+     "p": 0.45,
+     "text": "The supply of medicines impacted by the tornado is expected to be affected until at least mid-2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000111/pfe-10012023xex99.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.43,
+     "text": "Over the next several years, Abbott plans to expand its product portfolio in key therapeutic areas with the aim of addressing the health needs of more people in emerging markets and being among the first to launch new off-patent and differentiated medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-16",
+     "p": 0.95,
+     "text": "These arrangements provided the Company with supplemental commercial capacity for vaccine production and potentially transferable rights to such production if capacity is not required.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-01-24",
+     "p": 0.5,
+     "text": "COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's modification of its COVID-19 vaccine research program and manufacturing capacity to levels that meet all remaining…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000005/a2022q4exhibit992.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.38,
+     "text": "We expect additional internal and contracted manufacturing capacity will become fully operational around the world in the next several years, with significant expansion in 2023, as part of our ongoing efforts to meet the significant demand for our incretin medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000162/lly-20230331.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.26,
+     "text": "We expect additional internal and contracted manufacturing capacity will become fully operational around the world in the next several years as part of our ongoing efforts to meet the significant demand for our incretin medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.98,
+     "text": "In March 2021, Merck announced it had entered into multiple agreements to support efforts to expand manufacturing capacity and supply of SARS-CoV-2/COVID-19 medicines and vaccines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828023005061/mrk-20221231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.92,
+     "text": "The Company plans to invest approximately $20 billion in capital projects from 2021-2025, approximately half of which relates to investments in the U.S., including expanding manufacturing capacity for oncology, vaccine and animal health products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828023005061/mrk-20221231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-01",
+     "p": 0.79,
+     "text": "▪In June 2023, Pfizer announced it entered into a manufacturing capacity reservation agreement with the European Health and Digital Executive Agency of the EC, which provides the EU access to doses of an mRNA-based vaccine should one be developed to protect against a future pandemic-causing disease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000085/pfe-07022023xex99.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-23",
+     "p": 0.37,
+     "text": "rapidly expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000008/tmo-20221231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-03",
+     "p": 0.35,
+     "text": "The biosciences and bioproduction businesses have expanded their capacity to meet the needs of pharma and biotech customers as they have expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000069/tmo-20230930.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.98,
+     "text": "Due to disruptions to the global supply chain caused in part by the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages, Abbott has experienced availability issues with some materials and electronic components.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.86,
+     "text": "For example, in prior years we have experienced shortages in certain components necessary for the formulation, fill and finish of certain of our products in our Puerto Rico facility, and we have also experienced shortages related to single use systems and packaging which has caused disruptions to our manufacturing…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-09",
+     "p": 0.84,
+     "text": "The rapid reallocation of resources for the treatment and prevention of COVID-19 (including the production of COVID-19 vaccines or related therapies, such as our agreement to contribute to the production of COVID-19 antibody therapies for Lilly) and/or disruptions and shortages in the global supply chain caused by…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-23",
+     "p": 0.79,
+     "text": "Examples of such difficulties or delays include the inability to increase production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to supply certain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.98,
+     "text": "Due to disruptions to the global supply chain caused in part by the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages, Abbott has experienced availability issues with some materials and electronic components.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.95,
+     "text": "Further, global transportation and logistics challenges, cost inflation, and tight labor markets, have caused, and in the future may cause, delays in and/or increased costs related to distribution of our medicines, the construction or acquisition of manufacturing capacity, procurement activity, and supplier or…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.92,
+     "text": "Further, cost inflation and global transportation and logistics challenges, as well as tight labor markets, have caused, and in the future may cause, delays in, and/or increase costs related to, distribution of our medicines, the construction or other acquisition of manufacturing capacity, procurement activity, and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABBV",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.97,
+     "text": "Despite the disruption to the global supply chain caused by COVID-19, AbbVie has continued to supply patients with no material supply impact, except for the previously-disclosed supply issues impacting Lupron.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115223000011/abbv-20221231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-01-25",
+     "p": 0.95,
+     "text": "Internationally, sales growth was negatively impacted by intermittent COVID-19 lockdown restrictions in China as well as supply constraints in certain areas, including Electrophysiology and Diabetes Care.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023001516/abt-202212523xexhibitx99111.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.94,
+     "text": "The decrease in 2022 from 2021 reflects various factors, including the impacts of inflationary pressures and supply chain challenges related to various manufacturing inputs and processes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-28",
+     "p": 0.94,
+     "text": "This was partially offset by impacts of volume-based procurement in China and supply challenges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000056/jnj-20230402.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-31",
+     "p": 0.94,
+     "text": "This was partially offset by impacts from strategic portfolio decisions and supply challenges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000082/jnj-20230702.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.97,
+     "text": "Outside the U.S., we have implemented certain actions to minimize the impact on existing Trulicity patients, but we expect to continue to experience intermittent disruptions in our supply of Trulicity in international markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000162/lly-20230331.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.95,
+     "text": "We expect to continue to experience disruptions in our supply of Trulicity in international markets and for demand and supply considerations to influence the timing of tirzepatide launches in new markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000284/lly-20230930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-05-05",
+     "p": 0.77,
+     "text": "As a result of global macroeconomic conditions, the Company is experiencing some minor disruption and volatility in its global supply chain network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828023015990/mrk-20230331.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-23",
+     "p": 0.62,
+     "text": "Business—Patents and Other Intellectual Property Rights section in this Form 10-K. In China, we expect to continue to face intense competition by certain generic manufacturers, which have resulted, and may result in the future, in price cuts and volume loss of some of our products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.61,
+     "text": "AbbVie has entered into settlement and license agreements with several adalimumab biosimilar manufacturers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115223000011/abbv-20221231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.4,
+     "text": "2020 capital expenditures also included the building of capacity for the manufacture of COVID-19 diagnostics tests.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-20",
+     "p": 0.32,
+     "text": "•In June, Abbott announced its FreeStyle Libre® 2 system is the first and only continuous glucose monitoring (CGM) system to receive expanded national reimbursement in France to now include all people with diabetes who use insulin.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023025156/abt-2023q2xexhibitx991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-09",
+     "p": 0.32,
+     "text": "In addition to the purchase obligations noted above, we are contractually obligated to pay additional amounts that in the aggregate are significant, upon the achievement of various development, regulatory and commercial milestones for agreements we have entered into with third parties, including contingent…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-09",
+     "p": 0.28,
+     "text": "In January 2020, we acquired an equity stake in BeiGene for approximately $2.8 billion in cash as part of a collaboration to expand our oncology presence in China.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815423000017/amgn-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-02",
+     "p": 0.63,
+     "text": "•An initiative with Direct Relief to expand cold chain capacity in Africa, Latin America, the Caribbean and Southeast Asia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000025/q422lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.28,
+     "text": "From 2020 through 2022, we have made progress in these efforts, including nearly tripling our spending with Black-owned businesses, committing over $98 million in minority-led venture capital firms, serving over 30,000 volunteer hours to advance racial justice initiatives, and expanding our Skills First Program at…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-02",
+     "p": 0.55,
+     "text": "· Merck announced that it has expanded its relationship and entered into an exclusive license and collaboration agreement with Kelun-Biotech (a holding subsidiary of Sichuan Kelun Pharmaceutical Co., Ltd) to develop up to seven investigational preclinical antibody-drug conjugates (ADCs) for the treatment of cancer.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465923009552/tm235007d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-01-31",
+     "p": 0.69,
+     "text": "This agreement is in addition to the bilateral agreements Pfizer has previously signed with 17 EU Member States and will supply participating countries up to 3.4 million treatment courses upon orders being placed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000004/pfe-12312022xex99.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-08",
+     "p": 0.66,
+     "text": "In 2023, we are making additional investments in both R&D and SI&A to support Pfizer’s near- and longer-term growth plans, including to support anticipated new launches, commercial launch of COVID-19 products, potential pipeline programs and recently acquired assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000115/pfe-20231001.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-01",
+     "p": 0.66,
+     "text": "•Continued to strengthen our unique customer value proposition by adding capacity and capabilities globally for pharma services, bioproduction, and clinical research services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000003/q42022earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-23",
+     "p": 0.56,
+     "text": "The company’s investing activities were principally for the purchase of property, plant and equipment for capacity and capability investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774523000008/tmo-20221231.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-06",
+     "p": 0.27,
+     "text": "We continually evaluate opportunities to expand our operations, including through internal development of new products, programs and technology applications and business combinations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176623000064/unh-20230930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.95,
+     "text": "The decrease in 2022 from 2021 reflects the impact of the voluntary infant product recall and manufacturing stoppage in U.S. Pediatric Nutritionals and the impact of inflation and supply chain challenges on various manufacturing inputs and transportation costs across Abbott's businesses, partially offset by the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.89,
+     "text": "The increase in 2021 from 2020 reflects the impact of sales volume increases for COVID-19 tests in Rapid Diagnostics and growth across virtually all of Abbott’s businesses due, in part, to partial recovery from the COVID-19 pandemic, partially offset by the impact of inflation and supply chain challenges on various…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828023004026/abt-20221231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.95,
+     "text": "As we have seen with the COVID-19 pandemic, outbreaks can result in global supply chain and logistics disruptions and distribution constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000007/gild-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.95,
+     "text": "Further, global transportation and logistics challenges, cost inflation, and tight labor markets, have caused, and in the future may cause, delays in and/or increased costs related to distribution of our medicines, the construction or acquisition of manufacturing capacity, procurement activity, and supplier or…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-22",
+     "p": 0.92,
+     "text": "Further, cost inflation and global transportation and logistics challenges, as well as tight labor markets, have caused, and in the future may cause, delays in, and/or increase costs related to, distribution of our medicines, the construction or other acquisition of manufacturing capacity, procurement activity, and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947823000082/lly-20221231.htm"
+    }
+   ]
+  },
+  "2024": {
+   "manufacturing_capacity": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-21",
+     "p": 0.99,
+     "text": "Volumes in international markets continue to be affected by actions we have taken to manage demand amid tight supply, including measures to minimize impact to existing patients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-06",
+     "p": 0.99,
+     "text": "Volumes in international markets continue to be affected by actions Lilly has taken to manage demand amid tight supply, including measures to minimize impact to existing patients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000032/q423lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.76,
+     "text": "Examples of such difficulties or delays include the inability to increase or maintain production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-30",
+     "p": 0.36,
+     "text": "The company continues to expand manufacturing capacity, with the most significant production increases in 2024 expected in the second half of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000116/q124lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-14",
+     "p": 0.49,
+     "text": "A majority of the increase in expenditures relates to expansion of manufacturing capacity to enable supply of products and product candidates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000011/amgn-20231231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-14",
+     "p": 0.45,
+     "text": "We achieved our targets for the 2013–2020 period while growing revenues, increasing production capacity and expanding to approximately 100 countries over the same period.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000011/amgn-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.98,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our incretin medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000187/lly-20240630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000245/lly-20240930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.68,
+     "text": "The Company invested more than $19 billion in capital expenditures from 2018-2022, more than half of which related to expenditures in the U.S. The Company plans to invest approximately $18 billion in capital projects from 2023-2027, more than $10 billion of which relates to investments in the U.S., including…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828024006850/mrk-20231231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.35,
+     "text": "The biosciences and bioproduction businesses have expanded their capacity to meet the needs of pharma and biotech customers as they have expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000007/tmo-20231231.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.98,
+     "text": "For example, the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages contributed to global supply chain challenges over the last few years, which adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.98,
+     "text": "In addition, the COVID-19 pandemic contributed to global supply chain disruptions, which adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-14",
+     "p": 0.74,
+     "text": "The current inflationary environment related to increased aggregate demand, supply chain constraints and the effects from the armed conflict in Ukraine (including the effects of the sanctions that were implemented in response to the conflict and the resulting impacts on the commodity market and supply chains) and the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000011/amgn-20231231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.62,
+     "text": "Global tensions, conflict and/or war among any of the countries in which we conduct business or distribute our products may result in foreign currency volatility, decreased demand for our products in affected countries, and challenges to our global supply chain related to increased costs of materials and other inputs…",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000013/jnj-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-21",
+     "p": 0.88,
+     "text": "Further, cost and wage inflation, availability of adequate capacity in global transportation, supply chain complexities, including consolidation therein, labor market issues, international tension and conflicts, uneven economic growth or downturns, an increase in overall demand in our industry for certain products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.76,
+     "text": "Examples of such difficulties or delays include the inability to increase or maintain production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.98,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our incretin medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000187/lly-20240630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000245/lly-20240930.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.98,
+     "text": "For example, the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages contributed to global supply chain challenges over the last few years, which adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.97,
+     "text": "After several years of challenges to the global supply chain caused in part by the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages, Abbott's global supply chain has improved.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-21",
+     "p": 0.92,
+     "text": "Further, cost inflation and global transportation and logistics challenges, as well as tight labor markets, have caused, and in the future may cause, delays in, and/or increase costs related to, distribution of our medicines, the construction or other acquisition of additional manufacturing capacity, procurement…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-21",
+     "p": 0.88,
+     "text": "Further, cost and wage inflation, availability of adequate capacity in global transportation, supply chain complexities, including consolidation therein, labor market issues, international tension and conflicts, uneven economic growth or downturns, an increase in overall demand in our industry for certain products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.66,
+     "text": "We have in the past, and may in the future, have difficulty in attracting and retaining such talent.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000007/tmo-20231231.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-30",
+     "p": 0.95,
+     "text": "Exceptionally strong demand for the company's incretin medicines led to wholesaler backorders for these products at quarter end.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000116/q124lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-30",
+     "p": 0.92,
+     "text": "Strong demand for the company's incretin medicines outpaced supply increases.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000116/q124lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-08-08",
+     "p": 0.98,
+     "text": "The company fulfilled the majority of prior incretin wholesaler backorders during Q2 2024, improving both wholesaler stocking levels and overall product availability for patients in the U.S. Q2 2024 Mounjaro and Zepbound sales in the U.S. were positively impacted by channel stocking that the company estimates totaled…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000185/q224lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-04",
+     "p": 0.98,
+     "text": "Supply of medicines has recovered from the impact of the tornado.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000191/pfe-20240929.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-05",
+     "p": 0.36,
+     "text": "While manufacturing has resumed, the supply of medicines impacted by the tornado is expected to be affected through 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000166/pfe-20240630.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.4,
+     "text": "Over the next several years, Abbott plans to expand its product portfolio in key therapeutic areas and biosimilars with the aim of addressing the health needs of more people in emerging markets and being among the first to launch new off-patent and differentiated medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-15",
+     "p": 0.27,
+     "text": "1COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's completion of its COVID-19 vaccine contractual commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000088/a2024q3exhibit992.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.98,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our incretin medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000187/lly-20240630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000245/lly-20240930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-26",
+     "p": 0.68,
+     "text": "The Company invested more than $19 billion in capital expenditures from 2018-2022, more than half of which related to expenditures in the U.S. The Company plans to invest approximately $18 billion in capital projects from 2023-2027, more than $10 billion of which relates to investments in the U.S., including…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828024006850/mrk-20231231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-05",
+     "p": 0.27,
+     "text": "Merck estimates approximately 40% of Winrevair sales in the second quarter 2024 were attributable to doses administered to patients, with the remainder due to distributors building inventory in support of increasing demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828024034715/mrk-20240630.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.35,
+     "text": "The biosciences and bioproduction businesses have expanded their capacity to meet the needs of pharma and biotech customers as they have expanded their own production volumes to meet global vaccine manufacturing requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000007/tmo-20231231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.96,
+     "text": "A more detailed discussion on the global supply chain challenges and its resulting impact on Abbott’s business is contained in Item 1A.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.94,
+     "text": "The decrease in 2022 from 2021 reflects various factors, including the impacts of inflationary pressures and supply chain challenges related to various manufacturing inputs and processes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-25",
+     "p": 0.97,
+     "text": "The growth was partially offset by the impact of the Acclarent divestiture, prior year China recovery and supply constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000075/jnj-20240630.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.91,
+     "text": "This was partially offset by impacts of U.S. stocking dynamics, Russia sanctions, impacts from strategic portfolio decisions and supply challenges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000013/jnj-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-21",
+     "p": 0.94,
+     "text": "We expect to continue to experience disruptions in our supply of incretin products and for demand and supply considerations to influence the timing of tirzepatide launches in new markets, if approved.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.92,
+     "text": "Revenue of Trulicity decreased 36 percent and 33 percent in the U.S. during the three and six months ended June 30, 2024, respectively, driven by decreased volume primarily due to supply constraints and competitive dynamics.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000187/lly-20240630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-30",
+     "p": 0.68,
+     "text": "Growth primarily driven by higher pricing in both Livestock and Companion Animal product portfolios, as well as higher demand for Livestock products, partially offset by a decline in Companion Animal distributor inventory.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465924083722/tm2420272d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.85,
+     "text": "In China, we expect to continue to face intense competition by certain generic manufacturers, which has resulted, and may result in the future, in price cuts and volume loss of some of our products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-22",
+     "p": 0.66,
+     "text": "In China, for example, given the expansion of the QCE process and continuation of the VBP program, we expect to continue to face intensified competition by certain generic manufacturers in 2024 and beyond, which has and may continue to result in price cuts and volume loss of some of our products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.35,
+     "text": "In addition, Abbott recognized inventory related charges of approximately $23 million and fixed assets impairment charges of approximately $4 million related to these restructuring plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.29,
+     "text": "In addition, Abbott enters into purchase commitments in the normal course of business to meet operational and capital expenditure requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-14",
+     "p": 0.37,
+     "text": "In 2023, we completed our acquisition of Horizon, advanced our innovative pipeline and generated strong volume growth across our product portfolio and regions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000011/amgn-20231231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-05-02",
+     "p": 0.36,
+     "text": "•A Phase 1 combination with abiraterone or enzalutamide continues to enroll patients in the dose-escalation phase, with plans to initiate expansion cohorts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000018/amgn-20240331earningsrelea.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-23",
+     "p": 0.45,
+     "text": "•Expense of $1.25 billion to secure the global rights to the NM26 bispecific antibody (Yellow Jersey acquisition)",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000096/jnj-20240929.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-17",
+     "p": 0.29,
+     "text": "“With a robust pipeline, upcoming regulatory milestones for RYBREVANT and TREMFYA, the integration of Shockwave, and continued expansion of newly launched products, including ACUVUE OASYS MAX 1-Day contact lenses and our VARIPULSE platform, we have a strong foundation for near and long-term growth.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000071/a2024q2exhibit991.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.79,
+     "text": "Production increases will continue, and additional capacity is expected to be operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000245/lly-20240930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-08",
+     "p": 0.71,
+     "text": "Production increases will continue in 2024 and additional capacity is expected to be operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000187/lly-20240630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-31",
+     "p": 0.38,
+     "text": "Merck also announced the expansion of the global development and commercialization agreement with Daiichi Sankyo to include MK-6070, an investigational delta-like ligand 3 (DLL3) targeting T-cell engager.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465924112841/tm2426878d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-31",
+     "p": 0.28,
+     "text": "• Payment received from Daiichi Sankyo related to the expansion of the existing development and commercialization agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465924112841/tm2426878d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.5,
+     "text": "In addition, we continually seek to expand and broaden our product portfolio offerings through prioritized development of our pipeline and business development opportunities targeted at critical unmet patient needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.41,
+     "text": "As we expand our mRNA portfolio, patent-related disputes may increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.74,
+     "text": "In our clinical research business, we also announced the expansion of our global laboratory services network with a new bioanalytical lab in Gothenburg, Sweden, which will provide pharma and biotech customers with advanced laboratory services to support all phases of development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000043/q32024earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.42,
+     "text": "During 2022 the company’s investing activities were principally for the purchase of property, plant and equipment for capacity and capability investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000007/tmo-20231231.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-16",
+     "p": 0.45,
+     "text": "During the first quarter, UnitedHealthcare was selected to provide expanded care services in Texas and to continue providing services in Virginia and Michigan, with the additional support commencing in 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176624000146/a2024q1exhibit991.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-04",
+     "p": 0.27,
+     "text": "We continually evaluate opportunities to expand our operations, including through internal development of new products, programs and technology applications and business combinations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176624000323/unh-20240930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.94,
+     "text": "The decrease in 2022 from 2021 reflects the impact of the voluntary infant product recall and manufacturing stoppage in U.S. Pediatric Nutritionals and the impact of inflation and supply chain challenges on various manufacturing inputs and transportation costs across Abbott's businesses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.76,
+     "text": "While Abbott experienced inflationary pressures on various raw materials, packaging materials and transportation costs over the last three years, the impact of such cost increases was partially mitigated by price increases in certain businesses and the impact of continued gross margin improvement initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-21",
+     "p": 0.92,
+     "text": "Further, cost inflation and global transportation and logistics challenges, as well as tight labor markets, have caused, and in the future may cause, delays in, and/or increase costs related to, distribution of our medicines, the construction or other acquisition of additional manufacturing capacity, procurement…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-25",
+     "p": 0.3,
+     "text": "•Received approval from FDA to expand the indication for Vemlidy® (tenofovir alafenamide) to include treatment of chronic HBV in children six years and older who weigh at least 25 kg with compensated liver disease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000010/exhibit991earningspressrel.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-12",
+     "p": 0.28,
+     "text": "•Received approval from FDA to expand the indication for Vemlidy to include treatment of chronic hepatitis B virus (“HBV”) in children six years and older who weigh at least 25 kg with compensated liver disease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000028/gild-20240930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-21",
+     "p": 0.69,
+     "text": "Shifting or adding manufacturing capacity is a very lengthy process requiring significant capital expenditures, process modifications, and regulatory approvals.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-21",
+     "p": 0.37,
+     "text": "For example, in 2023 we began production at our Research Triangle Park site in North Carolina and expect to continue significant capacity expansion over time as we increase production at this site and others.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-21",
+     "p": 0.32,
+     "text": "Further investments to increase our manufacturing capacity include planned sites in Concord, North Carolina, Limerick, Ireland, Alzey, Rhineland-Palatinate, Germany, and two in Lebanon, Indiana.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.44,
+     "text": "In our pharma services business, we announced the expansion of our Cincinnati, Ohio, and Bend, Oregon, sites to further enhance our solid dose formulation capabilities for our pharma and biotech customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774524000043/q32024earnings8kex99_1.htm"
+    }
+   ]
+  },
+  "2025": {
+   "raw_materials": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-21",
+     "p": 0.98,
+     "text": "For example, the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages contributed to global supply chain challenges in the early part of the decade, which adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025007110/abt-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-19",
+     "p": 0.89,
+     "text": "Further, cost and wage inflation, availability of adequate capacity in global transportation, supply chain complexities, including consolidation therein, labor market issues, international tension and conflicts, uneven economic growth or downturns, an increase in overall demand in our industry for certain products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-27",
+     "p": 0.68,
+     "text": "Examples of such difficulties or delays include the inability to increase or maintain production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.7,
+     "text": "In September 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-14",
+     "p": 0.32,
+     "text": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000020/abbv-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.47,
+     "text": "Lilly plans to build a new $6.5 billion facility to manufacture active pharmaceutical ingredients in Texas (announcement)",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-21",
+     "p": 0.98,
+     "text": "For example, the COVID-19 pandemic and macroeconomic conditions such as inflationary pressures and labor shortages contributed to global supply chain challenges in the early part of the decade, which adversely impacted the cost and availability of certain raw materials, supplies, and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025007110/abt-20241231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-07",
+     "p": 0.75,
+     "text": "These investments are subject to numerous risks, including construction and commissioning delays, cost inflation, supply chain constraints, contractor performance, permitting and zoning challenges and the availability of skilled labor, and we may not complete our announced investments on a timely basis or at all.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-19",
+     "p": 0.89,
+     "text": "Further, cost and wage inflation, availability of adequate capacity in global transportation, supply chain complexities, including consolidation therein, labor market issues, international tension and conflicts, uneven economic growth or downturns, an increase in overall demand in our industry for certain products…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-19",
+     "p": 0.67,
+     "text": "To continue to commercialize our products, and advance the research, development, and commercialization of additional modalities, indications, and product candidates, we have expanded, and will likely need to further expand, our workforce, both in and outside the U.S. We continue to face intense competition for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-14",
+     "p": 0.32,
+     "text": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000020/abbv-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-06",
+     "p": 0.47,
+     "text": "\"We had major data readouts for tirzepatide in treating chronic disease associated with obesity, invested billions more in expanding our manufacturing capacity and launched Kisunla and Ebglyss — important drivers of our long-term balanced growth outlook.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000037/q424lillysalesandearningsp.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.63,
+     "text": "Global sales of ProQuad, a pediatric combination vaccine to help protect against measles, mumps, rubella and varicella, grew 6% in 2024 primarily due to higher pricing in the U.S. Worldwide sales of M-M-R II, a vaccine to help protect against measles, mumps and rubella, grew 8% in 2024 primarily due to higher demand…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828025007732/mrk-20241231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-27",
+     "p": 0.98,
+     "text": "Supply of medicines has recovered from the impact of the tornado.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-31",
+     "p": 0.37,
+     "text": "The company also announced the start of construction on a $70 million expansion at its AbbVie Bioresearch Center (ABC) in Worcester, Mass., which will increase biologics manufacturing for immunology and oncology medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000047/abbv-20250930xexhibit991.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-31",
+     "p": 0.33,
+     "text": "•AbbVie announced it broke ground on a $195 million state-of-the-art active pharmaceutical ingredient (API) facility that will manufacture immunology, oncology and neuroscience medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000047/abbv-20250930xexhibit991.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-21",
+     "p": 0.4,
+     "text": "Over the next several years, Abbott plans to expand its product portfolio in key therapeutic areas and biosimilars with the aim of addressing the health needs of more people in emerging markets and being among the first to launch new off-patent and differentiated medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025007110/abt-20241231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-14",
+     "p": 0.44,
+     "text": "This second facility will incorporate state-of-the-art technologies and sustainable practices, further enhancing our manufacturing network to support reliable and efficient supply of our medicines to patients worldwide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-22",
+     "p": 0.32,
+     "text": "1COVID-19 Vaccine related costs include remaining commitments and obligations, including external manufacturing network exit costs and required clinical trial expenses, associated with the Company's completion of its COVID-19 vaccine contractual commitments which was completed in Q4 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000003/a2024q4exhibit992.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-05-01",
+     "p": 0.35,
+     "text": "To support global demand for our newest medicines, we’re accelerating our manufacturing investments, as underscored by our recent announcement to build four new facilities.\"",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000129/q125lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.75,
+     "text": "The Company plans to invest approximately $20 billion in capital projects from 2024-2028, more than $11 billion of which relates to investments in the U.S., including expanding manufacturing capacity for oncology, vaccine and animal health products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828025007732/mrk-20241231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-29",
+     "p": 0.75,
+     "text": "In addition, the Company announced an $895 million expansion of its Animal Health manufacturing facility in De Soto, Kansas; the 200,000-square-foot facility will increase capacity for Animal Health vaccines and biologic products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925071380/tm2521736d1_ex99-1.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-19",
+     "p": 0.96,
+     "text": "Difficulties in predicting or variability in demand and supply for our products and those of our competitors and the very long lead times necessary for the expansion and regulatory qualification of pharmaceutical manufacturing capacity have resulted, and in the future may result, in difficulty meeting demand, or…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-19",
+     "p": 0.93,
+     "text": "Accordingly, developments such as unanticipated demand, unplanned plant shutdowns, manufacturing or quality assurance difficulties at one of our facilities or contracted facilities, failure or refusal of a supplier or contract manufacturer to supply contracted quantities in a timely manner or at all, increases in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-27",
+     "p": 0.68,
+     "text": "Examples of such difficulties or delays include the inability to increase or maintain production capacity commensurate with demand; challenges related to component materials to maintain supply and/or appropriate quality standards throughout our supply network and/or comply with applicable regulations; inability to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.53,
+     "text": "These projects are part of AbbVie's previously announced plan to increase capital investment in the U.S. to broadly support innovation and expand critical manufacturing capabilities and capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-14",
+     "p": 0.32,
+     "text": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000020/abbv-20241231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-17",
+     "p": 0.53,
+     "text": "•Abbott has initiated plans to develop a new cardiovascular device manufacturing facility in the state of Georgia to be completed by 2028.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025035135/abt-2025q2xexhibitx991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-14",
+     "p": 0.73,
+     "text": "We are expanding our manufacturing capacity and incorporating state-of-the-art technologies, allowing us to optimize our manufacturing network and mitigate risks while continuing to ensure adequate supply of our products to patients worldwide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-14",
+     "p": 0.57,
+     "text": "Upon FDA approval, this facility will increase our biologics manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-07",
+     "p": 0.84,
+     "text": "We are undertaking significant multi‑year capital investments to expand our U.S. manufacturing capabilities and accelerate R&D, including our initiative to invest $32 billion in the U.S. through 2030.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-13",
+     "p": 0.27,
+     "text": "Sales of CARVYKTI (ciltacabtagene autoleucel) were driven by continued share gains, capacity expansion and manufacturing efficiencies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000038/jnj-20241229.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-19",
+     "p": 0.79,
+     "text": "We continue to expand manufacturing capacity and progress efforts to bring tirzepatide to patients via different delivery presentations, such as single-use vials and multi-use pens.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.75,
+     "text": "The Company plans to invest approximately $20 billion in capital projects from 2024-2028, more than $11 billion of which relates to investments in the U.S., including expanding manufacturing capacity for oncology, vaccine and animal health products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828025007732/mrk-20241231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-29",
+     "p": 0.75,
+     "text": "In addition, the Company announced an $895 million expansion of its Animal Health manufacturing facility in De Soto, Kansas; the 200,000-square-foot facility will increase capacity for Animal Health vaccines and biologic products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925071380/tm2521736d1_ex99-1.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABT",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-17",
+     "p": 0.66,
+     "text": "Growth in the quarter was impacted by volume-based procurement programs in China.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025035135/abt-2025q2xexhibitx991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-08-05",
+     "p": 0.75,
+     "text": "In the quarter, MVASI benefited from competitor bevacizumab product shortages, and going forward, we expect to return to continued sales erosion driven by competition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000054/amgn-20250630earningsrelea.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.82,
+     "text": "The Company continues to supply products relied upon by patients for healthcare purposes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000178/jnj-20250629.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.7,
+     "text": "The growth was partially offset by the negative impact of China volume-based procurement and competitive pressures in Energy and Endocutters.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000178/jnj-20250629.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-19",
+     "p": 0.9,
+     "text": "Revenue of Trulicity decreased 32 percent in the U.S., driven by decreased volume primarily due to competitive dynamics and supply constraints during the first half of 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.81,
+     "text": "Tirzepatide supply currently exceeds demand in the U.S. Demand in launched markets remains dynamic, and increases or changes in demand, by dose or overall, as well as the complex supply chain, may result in periodic unavailability of certain presentations and dose levels at certain locations even when total…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-04",
+     "p": 0.97,
+     "text": "Decline primarily due to lower pricing in the U.S., as well as ongoing generic competition in many international markets and supply constraints in China.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925008863/tm255059d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-05",
+     "p": 0.9,
+     "text": "As a result, the Company anticipates that some international markets will experience supply constraints during 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015825000059/mrk-20250930.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-04",
+     "p": 0.96,
+     "text": "▪Oncology biosimilars globally, down 35% operationally, driven primarily by supply constraints in certain products, as well as both lower demand and lower net price in the U.S. and, to a lesser extent, in certain international markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000017/pfe-12312024xex99.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.27,
+     "text": "•In June 2025, AbbVie announced that the U.S. FDA approved a label expansion for Mavyret, an oral pangenotypic direct acting antiviral therapy.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-21",
+     "p": 0.29,
+     "text": "In addition, Abbott enters into purchase commitments in the normal course of business to meet operational and capital expenditure requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025007110/abt-20241231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-15",
+     "p": 0.28,
+     "text": "•In August, Abbott announced it received CE Mark for an expanded indication for the company's Navitor® transcatheter aortic valve implantation (TAVI) system to treat people with symptomatic, severe aortic stenosis who are at low or intermediate risk for open-heart surgery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025045049/abt-2025q3xexhibitx991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-14",
+     "p": 0.72,
+     "text": "In 2024, we advanced our innovative pipeline; generated strong sales growth across our product portfolio and regions; and expanded our world-class manufacturing network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-14",
+     "p": 0.59,
+     "text": "In addition to the purchase obligations noted above and upon the achievement of various development, regulatory and commercial milestones for agreements we have entered into with third parties, we are contractually obligated to pay additional amounts that, in the aggregate, are significant.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-28",
+     "p": 0.32,
+     "text": "•payments related to certain unconditional inventory purchase obligations and capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000006/gild-20241231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-13",
+     "p": 0.28,
+     "text": "In June 2024, the Company secured a new 364-day Credit Facility of $10 billion, which expires on June 25, 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000038/jnj-20241229.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-19",
+     "p": 0.79,
+     "text": "Production increases will continue, and additional capacity is expected to be operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.68,
+     "text": "Production increases and delivery presentation initiatives are ongoing, and additional capacity is expected to be operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.35,
+     "text": "Daiichi Sankyo related to the expansion of the existing development and commercialization agreement to include gocatamig (MK-6070).",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925103974/tm2529620d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-05",
+     "p": 0.32,
+     "text": "continue to optimize its manufacturing network, aligning the geography of its global manufacturing footprint to its customers and reflecting changes in the Company’s business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015825000014/mrk-20250630.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-27",
+     "p": 0.5,
+     "text": "In addition, we continually seek to expand and broaden our product portfolio offerings through prioritized development of our pipeline and business development opportunities targeted at critical unmet patient needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.29,
+     "text": "We are continuing to monitor and implement mitigation strategies to reduce any potential risk or impact including active supplier management, qualification of additional suppliers and advanced purchasing to the extent possible.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000150/pfe-20250928.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.43,
+     "text": "The company’s investing activities also included purchases of $1.06 billion for the purchase of property, plant and equipment for capacity and capability investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774525000159/tmo-20250927.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-23",
+     "p": 0.27,
+     "text": "We also expanded the DynaDrive™ single-use bioreactor portfolio for drug production to include a new first-of-its kind bench scale system, enabling meaningful workflow efficiencies and seamless scale-up from the bench to commercialization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774525000093/q22025earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.27,
+     "text": "We continually evaluate opportunities to expand our operations, including through internal development of new products, programs and technology applications and business combinations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000305/unh-20250930.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "GILD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-07",
+     "p": 0.75,
+     "text": "These investments are subject to numerous risks, including construction and commissioning delays, cost inflation, supply chain constraints, contractor performance, permitting and zoning challenges and the availability of skilled labor, and we may not complete our announced investments on a timely basis or at all.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-19",
+     "p": 0.8,
+     "text": "Manufacturing or quality assurance difficulties at our facilities or those of our contractors and suppliers, the failure or refusal of a supplier or contract manufacturer to supply contracted quantities in a timely manner or at all, or increases in demand on a supplier with constrained capacity have resulted and may…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.7,
+     "text": "In September 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-31",
+     "p": 0.37,
+     "text": "The company also announced the start of construction on a $70 million expansion at its AbbVie Bioresearch Center (ABC) in Worcester, Mass., which will increase biologics manufacturing for immunology and oncology medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000047/abbv-20250930xexhibit991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-02",
+     "p": 0.46,
+     "text": "Cash used in investing activities during the three months ended March 31, 2025 and 2024, was primarily due to capital expenditures of $411 million and $230 million, respectively, including construction costs for new plants in Ohio and North Carolina to expand our manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000020/amgn-20250331.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-06",
+     "p": 0.41,
+     "text": "Cash used in investing activities during the six months ended June 30, 2025 and 2024, was primarily due to capital expenditures of $780 million and $468 million, respectively, including construction costs for new plants and expansion of manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000056/amgn-20250630.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.73,
+     "text": "We continue to increase manufacturing capacity, announcing new facilities in Virginia and Texas and an expansion of our site in Puerto Rico.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.42,
+     "text": "•Manufacturing progress included announcements of two new facilities in Virginia and Texas, and the expansion of Lilly's existing Puerto Rico site.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-24",
+     "p": 0.51,
+     "text": "This includes the recently announced opening of a new, $1 billion, 225,000-square-foot facility dedicated to vaccine manufacturing at Merck’s Durham, North Carolina, site.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925038301/tm2512885d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.33,
+     "text": "to make long-term investments in its U.S. manufacturing and R&D capabilities and broke ground on a new $3 billion Center of Excellence for Pharmaceutical Manufacturing at its Elkton, Virginia site.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925103974/tm2529620d1_ex99-1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-23",
+     "p": 0.58,
+     "text": "•Reflecting our trusted partner status, shortly after the quarter ended, we expanded our strategic partnership with Sanofi to acquire its Ridgefield, New Jersey sterile fill-finish site, supporting Sanofi’s portfolio of therapies and expanding U.S. capacity to meet growing demand from pharma and biotech customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774525000093/q22025earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.51,
+     "text": "During the quarter, we advanced our strategic position by completing the acquisitions of our Filtration and Separation business from Solventum, an excellent complement to our bioproduction capabilities, and Sanofi’s Ridgefield, New Jersey, sterile fill-finish site, expanding our U.S. capacity for drug product…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774525000150/q32025earnings8kex99_1.htm"
+    }
+   ]
+  },
+  "latest": {
+   "finished_goods": [
+    {
+     "symbol": "PFE",
+     "status": "EASING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-26",
+     "p": 0.98,
+     "text": "Supply of medicines has recovered from the impact of the tornado.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-03",
+     "p": 0.35,
+     "text": "The campus will integrate advanced manufacturing and laboratory technologies with artificial intelligence to support the production of immunology, neuroscience and oncology medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000026/abbv-20260630.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-29",
+     "p": 0.33,
+     "text": "The state-of-the-art campus will integrate advanced manufacturing and laboratory technologies with artificial intelligence (AI) to support the production of AbbVie’s immunology, neuroscience and oncology medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000013/abbv-20260331xexhibit991.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.42,
+     "text": "Over the next several years, Abbott plans to expand its product portfolio in key therapeutic areas and biosimilars with the aim of addressing the health needs of more people in emerging markets and to be among the first to launch new off-patent and differentiated medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828026010185/abt-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-13",
+     "p": 0.66,
+     "text": "These expansion initiatives further enhance our manufacturing network to support reliable and efficient supply of our medicines to patients worldwide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-12",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-02-04",
+     "p": 0.64,
+     "text": "We expanded our manufacturing capacity, and through our U.S. government agreement, opened new access to obesity medicines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000008/q425lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-24",
+     "p": 0.36,
+     "text": "•Biologics and vaccines require long manufacturing lead times, sometimes requiring planning years in advance of demand, which could increase the risk of inventory write-downs if that demand does not materialize.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/mrk-20251231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.43,
+     "text": "Pfizer and BioNTech have already initiated manufacturing of the monovalent XFG-adapted COVID-19 vaccine at risk to ensure supply readiness in anticipation of the respiratory disease season, when the demand for COVID-19 vaccination is expected to increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000094/pfe-6282026xex99.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-13",
+     "p": 0.93,
+     "text": "Further quality issues that result in unexpected additional demand for certain components have resulted in shortages and, in the future, may lead to shortages of required raw materials or components.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2026-05-01",
+     "p": 0.78,
+     "text": "These developments have resulted in increased costs and, in some cases, disruptions and delays in shipping, airspace closures, and the need to reroute logistics, which may negatively affect sales of our medicines in that region as well as the availability and timely delivery of materials, components, services and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000057/amgn-20260331.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.72,
+     "text": "In 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.7,
+     "text": "In September 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.59,
+     "text": "In 2025, we increased the capacity of our commercial paper program from $2.5 billion to $4.0 billion, which allows us to issue up to $4.0 billion of unsecured commercial paper to fund working capital needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-12",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.47,
+     "text": "Lilly plans to build a new $6.5 billion facility to manufacture active pharmaceutical ingredients in Texas (announcement)",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-12",
+     "p": 0.95,
+     "text": "Difficulties in predicting or variability in demand and supply for our products and those of our competitors and the very long lead times necessary for the expansion and regulatory qualification of pharmaceutical manufacturing capacity have resulted, and in the future may result, in difficulty meeting demand, causing…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-12",
+     "p": 0.92,
+     "text": "Accordingly, developments such as unanticipated demand, unplanned plant shutdowns, manufacturing or quality assurance difficulties at one of our facilities or contracted facilities, failure or refusal of a supplier or contract manufacturer to supply contracted quantities in a timely manner or at all, increases in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-03",
+     "p": 0.63,
+     "text": "These projects are part of AbbVie's plan to invest in the U.S. to broadly support innovation and expand critical manufacturing capabilities and capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000026/abbv-20260630.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-05-08",
+     "p": 0.57,
+     "text": "Additionally, AbbVie announced investments to add two new manufacturing facilities in Illinois to support next generation neuroscience and obesity medications as well as an agreement to acquire a device manufacturing facility in Arizona.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000017/abbv-20260331.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-13",
+     "p": 0.79,
+     "text": "We are expanding our manufacturing capacity and incorporating state-of-the-art technologies to allow us to optimize our manufacturing network and mitigate risks while working to continue to ensure adequate supply of our products to patients worldwide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.52,
+     "text": "A majority of the increase in expenditures relates to construction costs for new plants and expansion of manufacturing capacity to enable supply of products and product candidates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-07",
+     "p": 0.84,
+     "text": "We are undertaking significant multi‑year capital investments to expand our U.S. manufacturing capabilities and accelerate R&D, including our initiative to invest $32 billion in the U.S. through 2030.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-12",
+     "p": 0.97,
+     "text": "As we expand our manufacturing capacity in order to meet existing and expected demand of our medicines, we have entered, and expect to continue to enter, into various agreements for contract manufacturing and for supply of materials.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.73,
+     "text": "We continue to increase manufacturing capacity, announcing new facilities in Virginia and Texas and an expansion of our site in Puerto Rico.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-24",
+     "p": 0.36,
+     "text": "•Biologics and vaccines require long manufacturing lead times, sometimes requiring planning years in advance of demand, which could increase the risk of inventory write-downs if that demand does not materialize.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/mrk-20251231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-29",
+     "p": 0.67,
+     "text": "This included $13 billion committed to M&A. We completed the acquisition of our Filtration and Separation business from Solventum, an excellent complement to our bioproduction capabilities, and Sanofi’s Ridgefield, New Jersey, sterile fill-finish site, expanding our U.S. capacity for drug product manufacturing…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000012/q42025earnings8kex99_1.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "JNJ",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-22",
+     "p": 0.64,
+     "text": "The growth was partially offset by competitive pressures in Energy and Endocutters and by the negative impact of China volume-based procurement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000209/jnj-20250928.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-12",
+     "p": 0.93,
+     "text": "Rapid growth in our international business and changes in the global supply chain for our products have impacted and may continue to impact our foreign currency exposure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-12",
+     "p": 0.91,
+     "text": "Supply chain difficulties, disruptions or shortages may arise from our or contracted supply chain activity as well as from external environmental factors.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-05",
+     "p": 0.9,
+     "text": "As a result, the Company anticipates that some international markets will experience supply constraints during 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015825000059/mrk-20250930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-05",
+     "p": 0.83,
+     "text": "Sales of companion animal products declined 2% in the third quarter of 2025 primarily due to lower demand, reflecting a reduction in veterinary visits and competitive pressure for parasiticides, partially offset by higher pricing, improved supply and new product launches.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015825000059/mrk-20250930.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-03",
+     "p": 0.27,
+     "text": "In 2026, AbbVie announced an investment to build a pharmaceutical manufacturing campus in North Carolina.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000026/abbv-20260630.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-29",
+     "p": 0.27,
+     "text": "These state-of-the-art facilities will integrate advanced manufacturing technologies with AI to support the production of AbbVie's next-generation neuroscience and obesity medications.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000013/abbv-20260331xexhibit991.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.29,
+     "text": "In addition, Abbott enters into purchase commitments in the normal course of business to meet operational and capital expenditure requirements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828026010185/abt-20251231.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-15",
+     "p": 0.28,
+     "text": "•In August, Abbott announced it received CE Mark for an expanded indication for the company's Navitor® transcatheter aortic valve implantation (TAVI) system to treat people with symptomatic, severe aortic stenosis who are at low or intermediate risk for open-heart surgery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025045049/abt-2025q3xexhibitx991.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.96,
+     "text": "In 2025, we generated strong sales growth across our product portfolio and regions; advanced our innovative pipeline; and continued to expand and enhance our world-class manufacturing network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.59,
+     "text": "In addition to the purchase obligations noted above and upon the achievement of various development, regulatory and commercial milestones for agreements we have entered into with third parties, we are contractually obligated to pay additional amounts that, in the aggregate, are significant.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-24",
+     "p": 0.35,
+     "text": "We have made investments in the La Verne facility to support the commercial manufacturing of sterile drug substances and other sterile drug products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm"
+    },
+    {
+     "symbol": "GILD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-24",
+     "p": 0.34,
+     "text": "(6) In October 2025, Gilead entered into settlement agreements to resolve patent litigations with Lupin Ltd., Cipla Ltd. and Laurus Labs Ltd., generic manufacturers that filed abbreviated new drug applications with FDA to market generic versions of Biktarvy.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm"
+    },
+    {
+     "symbol": "JNJ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-11",
+     "p": 0.28,
+     "text": "In June 2025, the Company secured a new 364-day Credit Facility of $10 billion, which expires on June 24, 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-05",
+     "p": 0.83,
+     "text": "Additional capacity is expected to become operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.68,
+     "text": "Production increases and delivery presentation initiatives are ongoing, and additional capacity is expected to be operational over the next several years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000254/lly-20250930.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.35,
+     "text": "Daiichi Sankyo related to the expansion of the existing development and commercialization agreement to include gocatamig (MK-6070).",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925103974/tm2529620d1_ex99-1.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.33,
+     "text": "regulatory milestones across the portfolio while continuing to advance its broad and diverse pipeline.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465926090045/tm2621496d1_ex99-1.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-26",
+     "p": 0.5,
+     "text": "In addition, we continually seek to expand and broaden our product portfolio offerings through prioritized development of our pipeline and business development opportunities targeted at critical unmet patient needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm"
+    },
+    {
+     "symbol": "PFE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-26",
+     "p": 0.29,
+     "text": "We are continuing to monitor and implement mitigation strategies to reduce any potential risk or impact including active supplier management, qualification of additional suppliers and advanced purchasing to the extent possible.",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-31",
+     "p": 0.54,
+     "text": "Purchases of property, plant and equipment for capacity and capability investments used cash of $0.83 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-05-01",
+     "p": 0.43,
+     "text": "The company’s investing activities also included purchases of $0.38 billion for the purchase of property, plant and equipment for capacity and capability investments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
+    },
+    {
+     "symbol": "UNH",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.27,
+     "text": "We continually evaluate opportunities to expand our operations, including through internal development of new products, programs and technology applications and business combinations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000197/unh-20260630.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-13",
+     "p": 0.93,
+     "text": "Further quality issues that result in unexpected additional demand for certain components have resulted in shortages and, in the future, may lead to shortages of required raw materials or components.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2026-05-01",
+     "p": 0.78,
+     "text": "These developments have resulted in increased costs and, in some cases, disruptions and delays in shipping, airspace closures, and the need to reroute logistics, which may negatively affect sales of our medicines in that region as well as the availability and timely delivery of materials, components, services and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000057/amgn-20260331.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.46,
+     "text": "In May 2026, Abbott announced it secured CE Mark for Libre® Duo, its dual glucose-ketone biowearable sensor.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828026050134/abt-20260630.htm"
+    },
+    {
+     "symbol": "ABT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-16",
+     "p": 0.45,
+     "text": "•In May, Abbott announced it secured CE Mark for Libre® Duo, the world's first dual glucose-ketone biowearable sensor.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828026048377/abt-2026q2xexhibitx991.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "GILD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-07",
+     "p": 0.75,
+     "text": "These investments are subject to numerous risks, including construction and commissioning delays, cost inflation, supply chain constraints, contractor performance, permitting and zoning challenges and the availability of skilled labor, and we may not complete our announced investments on a timely basis or at all.",
+     "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-20",
+     "p": 0.72,
+     "text": "In 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm"
+    },
+    {
+     "symbol": "ABBV",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-04",
+     "p": 0.7,
+     "text": "In September 2025, AbbVie announced the start of construction of a new active pharmaceutical ingredient facility in Illinois and an expansion of biologics manufacturing and research and development capacity in Massachusetts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.52,
+     "text": "A majority of the increase in expenditures relates to construction costs for new plants and expansion of manufacturing capacity to enable supply of products and product candidates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+    },
+    {
+     "symbol": "AMGN",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-05",
+     "p": 0.45,
+     "text": "Cash used in investing activities during the six months ended June 30, 2026 and 2025, was primarily due to capital expenditures of $1.2 billion and $780 million, respectively, including construction costs for new plants and expansion of manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000126/amgn-20260630.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.73,
+     "text": "We continue to increase manufacturing capacity, announcing new facilities in Virginia and Texas and an expansion of our site in Puerto Rico.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000251/q325lillysalesandearningsp.htm"
+    },
+    {
+     "symbol": "LLY",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-12",
+     "p": 0.45,
+     "text": "Investments to increase our manufacturing capacity include new sites in North Carolina, Wisconsin, Indiana, Virginia, Texas, Alabama, Pennsylvania, Ireland, Germany, and the Netherlands.",
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.33,
+     "text": "to make long-term investments in its U.S. manufacturing and R&D capabilities and broke ground on a new $3 billion Center of Excellence for Pharmaceutical Manufacturing at its Elkton, Virginia site.",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000110465925103974/tm2529620d1_ex99-1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-29",
+     "p": 0.67,
+     "text": "This included $13 billion committed to M&A. We completed the acquisition of our Filtration and Separation business from Solventum, an excellent complement to our bioproduction capabilities, and Sanofi’s Ridgefield, New Jersey, sterile fill-finish site, expanding our U.S. capacity for drug product manufacturing…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000012/q42025earnings8kex99_1.htm"
+    },
+    {
+     "symbol": "TMO",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.51,
+     "text": "During the quarter, we advanced our strategic position by completing the acquisitions of our Filtration and Separation business from Solventum, an excellent complement to our bioproduction capabilities, and Sanofi’s Ridgefield, New Jersey, sterile fill-finish site, expanding our U.S. capacity for drug product…",
+     "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774525000150/q32025earnings8kex99_1.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-07",
+     "p": 0.29,
+     "text": "In April 2026, Merck entered into a delayed draw term loan credit agreement (Credit Agreement) pursuant to which the lenders committed (subject to satisfaction of certain conditions set forth in the Credit Agreement) to provide Merck with financing under a 364-day term loan facility in an aggregate amount not to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000212/mrk-20260630.htm"
+    },
+    {
+     "symbol": "MRK",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-05-04",
+     "p": 0.28,
+     "text": "In April 2026, Merck entered into a delayed draw term loan credit agreement (Credit Agreement) pursuant to which the lenders have committed (subject to satisfaction of certain conditions set forth in the Credit Agreement) to provide Merck with financing under a 364-day term loan facility in an aggregate amount not to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828026029802/mrk-20260331.htm"
+    }
+   ]
+  }
+ }
+}

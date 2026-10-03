@@ -1,0 +1,3677 @@
+{
+ "sector": "Consumer Discretionary",
+ "periods": {
+  "2022": {
+   "unspecified": [
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-08-02",
+     "p": 0.82,
+     "text": "Lead times lengthened by 7% during the quarter compared to Q2 2019.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312522210001/d353427dex991.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-11-01",
+     "p": 0.73,
+     "text": "As such, for comparative purposes, references to supply and supply growth exclude listings in China from prior periods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312522274904/d408297dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-29",
+     "p": 0.99,
+     "text": "Q1 2022 sales were also impacted by fulfillment network inefficiencies and supply chain constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000013/amzn-20220331.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.95,
+     "text": "Macroeconomic factors, including increased inflation rates, the prolonged COVID-19 pandemic, global supply chain constraints, and global economic and geopolitical developments, have direct and indirect impacts on our results of operations that are difficult to isolate and quantify.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000019/amzn-20220630.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-18",
+     "p": 0.71,
+     "text": "Despite some increased uncertainty in the macro environment, we remain confident in the outlook for the home improvement market and our ability to deliver operating margin expansion in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000075/exhibit991-04292022.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-21",
+     "p": 0.66,
+     "text": "These benefits were partially offset by 35 basis points of deleverage due to product mix and 30 basis points of deleverage from supply chain costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000038/low-20220128.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.74,
+     "text": "Our ability to increase sales and profits depends on our System’s ability to meet expectations for safe food and on our ability to manage the potential impact on McDonald’s of food-borne illnesses and food or product safety issues that may arise in the future, including in the supply chain, restaurants or delivery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390822000052/exhibit992-93022.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.7,
+     "text": "Product and distribution costs as a percentage of total net revenues increased 240 basis points for the second quarter of fiscal 2022, primarily due to supply chain costs due to inflationary pressures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000030/sbux-20220403.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.68,
+     "text": "Product and distribution costs as a percentage of total net revenues increased 170 basis points for the first two quarters of fiscal 2022, primarily due to supply chain costs due to inflationary pressures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000030/sbux-20220403.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-29",
+     "p": 0.95,
+     "text": "There remains significant uncertainty in the current macro-economic environment, driven by inflationary pressures, as well as ongoing industry-wide supply chain issues.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919822000044/tjx-20221029.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-20",
+     "p": 0.99,
+     "text": "As demand remains substantially above capacity, growth has been limited by ongoing supply chain challenges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022014917/tsla-ex991_151.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-20",
+     "p": 0.96,
+     "text": "Challenges around supply chain have remained persistent, and our team has been navigating through them for over a year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022014917/tsla-ex991_151.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-03",
+     "p": 0.35,
+     "text": "On a quarterly basis, margin expansion will be heavily weighted to the first half of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312522138654/d711122dex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-20",
+     "p": 0.47,
+     "text": "Our own factories have been running below capacity for several quarters as supply chain became the main limiting factor, which is likely to continue through the rest of 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022014917/tsla-ex991_151.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.77,
+     "text": "Amazon secured up to 83 launches across the three contracts, providing heavy-lift capacity to launch the majority of Amazon’s 3,236-satellite constellation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.68,
+     "text": "Amazon has plans to expand this format to the Los Angeles area in the coming months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-03",
+     "p": 0.5,
+     "text": "Employee headcount of approximately 19,450 as of June 30, 2022 was about in line with June 30, 2021.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553122000032/bkng-20220630.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-23",
+     "p": 0.33,
+     "text": "At December 31, 2021, we had, in the aggregate, $154 million of non-cancellable purchase obligations individually greater than $10 million payable over the next five years, of which $41 million are payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553122000008/bkng-20211231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-23",
+     "p": 0.4,
+     "text": "Purchase obligations include all legally binding contracts such as firm commitments for inventory purchases, media and sponsorship spend, software acquisitions, license commitments, and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495022000070/hd-20220130.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-21",
+     "p": 0.35,
+     "text": "We will continue to expand our Lowes.com assortment to meet our customers’ design and lifestyle needs, while at the same time, enhancing the user experience with upgrades to the visualization and configuration tools we offer online.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000038/low-20220128.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-23",
+     "p": 0.34,
+     "text": "Our capital expenditures generally consist of investments in our strategic initiatives to enhance our ability to serve customers, improve existing stores, and support expansion plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000170/low-20221028.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-04",
+     "p": 0.39,
+     "text": "In April 2022, we repaid an additional $400 million of outstanding borrowings under the Credit Facility, resulting in a borrowing capacity of $4.1 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022012175/mar-20220331.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.57,
+     "text": "We also continue to expand and refine our delivery initiatives, including through growing awareness and trial.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390822000052/exhibit992-93022.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-07",
+     "p": 0.29,
+     "text": "The Company has a long history of generating significant cash from operations and has substantial credit capacity to fund operating and discretionary spending such as capital expenditures, debt repayments, dividends and share repurchases.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390822000055/mcd-20220930.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-11-18",
+     "p": 0.36,
+     "text": "Other than operating expenses, cash requirements for fiscal 2023 are expected to consist primarily of capital expenditures for investments in our new and existing stores, our supply chain and corporate facilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000058/sbux-20221002.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-20",
+     "p": 0.63,
+     "text": "We are in the process of ramping production at a dedicated Megapack factory to address the growing demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022014917/tsla-ex991_151.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-20",
+     "p": 0.57,
+     "text": "We are in the process of ramping production at our dedicated Megapack factory to address the growing demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-20",
+     "p": 0.99,
+     "text": "However, we saw a continuation of manufacturing challenges related to shutdowns, global supply chain disruptions, labor shortages and logistics and other complications, which limited our ability to consistently run our factories at full capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-20",
+     "p": 0.92,
+     "text": "V E H I C L E C A P A C I T Y In Q1, we saw a continuation of global supply chain, transportation, labor and other manufacturing challenges, limiting our ability to run our factories at full capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022014917/tsla-ex991_151.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-20",
+     "p": 0.97,
+     "text": "We are continuing to invest in capacity expansion of our factories to maximize production.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-07",
+     "p": 0.96,
+     "text": "We are simultaneously ramping new products in the new Model S and Model X, Megapack and Solar Roof, ramping manufacturing facilities on three continents and piloting the development and manufacture of new battery cell technologies, and the pace of our capital spend may vary depending on overall priority among…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.98,
+     "text": "The factors described above contributed to a deceleration in our net sales growth rate and increases in our operating costs during Q2 2022, particularly across our North America and International segments, primarily due to a return to more normal, seasonal demand volumes in relation to our fulfillment network fixed…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000019/amzn-20220630.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.98,
+     "text": "The increase in cost of sales in absolute dollars in 2021, compared to the prior year, is primarily due to increased product and shipping costs resulting from increased sales, costs from expanding our fulfillment network, as well as increased carrier rates, increased wage rates and incentives, and fulfillment network…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/amzn-20211231.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.97,
+     "text": "As lodging demand continues to recover from the lows seen in the early months of the pandemic, we have seen and continue to see industry-wide labor shortages causing challenges in hiring or re-hiring for certain positions, primarily in certain U.S. markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022028021/mar-20220930.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-04",
+     "p": 0.96,
+     "text": "As lodging demand recovers from the lows seen in the early months of the pandemic, we have seen and continue to see industry-wide labor shortages causing challenges in hiring or re-hiring for certain positions, primarily in certain U.S. markets where demand has come back quickly.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022012175/mar-20220331.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.9,
+     "text": "We and our franchisees have experienced and may continue to experience challenges in adequately staffing certain McDonald’s restaurants, which can negatively impact operations, including speed of service to customers, and customer satisfaction levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390822000052/exhibit992-93022.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.69,
+     "text": "Importantly, the global pandemic resulting from COVID-19 has disrupted global health, economic and market conditions, consumer behavior and McDonald’s global restaurant operations since early 2020, and has resulted in increased pressure on labor availability and supply chain management.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390822000052/exhibit992-93022.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-01",
+     "p": 0.95,
+     "text": "Although demand was strong, this pandemic has not been linear, and the macro environment remains dynamic as we experienced higher-than-expected inflationary pressures, increased costs due to Omicron and a tight labor market.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000010/sbux-122022xexhibit991.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2022-11-18",
+     "p": 0.93,
+     "text": "Furthermore, we have experienced, and could continue to experience, a shortage of labor for store positions, including due to market trends and conditions such as continued concerns around COVID-19, the availability of new telecommuting employment options and other factors, which could decrease the pool of available…",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000058/sbux-20221002.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-20",
+     "p": 0.99,
+     "text": "However, we saw a continuation of manufacturing challenges related to shutdowns, global supply chain disruptions, labor shortages and logistics and other complications, which limited our ability to consistently run our factories at full capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.97,
+     "text": "On the other hand, infection rates and regulations continue to fluctuate in various regions and there are ongoing global impacts resulting from the pandemic, including challenges and increases in costs for logistics and supply chains, such as increased port congestion, intermittent supplier delays, labor shortages…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-29",
+     "p": 0.98,
+     "text": "The factors described above contributed to a deceleration in our net sales growth rate and increases in our operating costs during Q2 2022, particularly across our North America and International segments, primarily due to a return to more normal, seasonal demand volumes in relation to our fulfillment network fixed…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000019/amzn-20220630.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.98,
+     "text": "The increase in cost of sales in absolute dollars in 2021, compared to the prior year, is primarily due to increased product and shipping costs resulting from increased sales, costs from expanding our fulfillment network, as well as increased carrier rates, increased wage rates and incentives, and fulfillment network…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/amzn-20211231.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2022-11-18",
+     "p": 0.91,
+     "text": "During fiscal 2021 and continuing into fiscal 2022, we experienced certain supply shortages and transportation delays largely attributable to impacts of the COVID-19 pandemic as well as changes in customer demand and behaviors.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000058/sbux-20221002.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-20",
+     "p": 0.99,
+     "text": "However, we saw a continuation of manufacturing challenges related to shutdowns, global supply chain disruptions, labor shortages and logistics and other complications, which limited our ability to consistently run our factories at full capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022026048/tsla-ex991_130.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.97,
+     "text": "In 2022, we have produced 929,910 vehicles and delivered 908,573 vehicles through the third quarter, despite ongoing supply chain and logistics challenges and factory shutdowns.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.29,
+     "text": "On top of this logistics support, Amazon has committed $2 million in donations of essential products to supporting partners.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000017/amzn-20220630xex991.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-23",
+     "p": 0.52,
+     "text": "Working capital was impacted by higher merchandise inventories resulting from our efforts to continue to meet the demand environment and from higher product and transportation costs, along with timing of vendor payments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495022000070/hd-20220130.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-23",
+     "p": 0.72,
+     "text": "The combination of incremental investments to expand distribution capacity and wage increases reduced pretax profit margin by an additional 1.6 percentage points.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000115752322000235/a52583695ex991.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-30",
+     "p": 0.52,
+     "text": "In addition, supply chain costs increased due to additional investments in distribution capacity and higher wages, which, along with freight costs, are expected to continue into the next fiscal year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919822000008/tjx-20220129.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-03",
+     "p": 0.51,
+     "text": "As our production volumes continue to grow, it is becoming increasingly challenging to secure vehicle transportation capacity and at a reasonable cost during these peak logistics weeks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459022033053/tsla-ex991_6.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.98,
+     "text": "Operating margin decreased 440 basis points to 43.3%, primarily due to a decline in our North American Coffee Partnership joint venture income due to supply chain constraints and inflationary pressures as well as a business mix shift.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000030/sbux-20220403.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-11-18",
+     "p": 0.97,
+     "text": "Operating margin decreased 520 basis points to 44.3%, primarily due to a decline in our North American Coffee Partnership joint venture income due to inflationary pressures and supply chain constraints as well as business mix shift.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922422000058/sbux-20221002.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-07",
+     "p": 0.71,
+     "text": "The average Model 3 and Model Y costs per unit have decreased significantly due to localized procurement and manufacturing in China despite rising raw material, commodity, logistics and expedite costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-25",
+     "p": 0.63,
+     "text": "The average Model 3 and Model Y costs per unit have decreased due to localized procurement and manufacturing in China despite rising raw material, commodity, logistics and expedite costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022006034/tsla-20220331.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.36,
+     "text": "Our Credit Facility provides for up to $4.5 billion of aggregate borrowings for general corporate needs, including working capital, capital expenditures, letters of credit, acquisitions, and to support our commercial paper program if and when we resume issuing commercial paper.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828022028021/mar-20220930.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-04",
+     "p": 0.97,
+     "text": "The increase in fulfillment costs in absolute dollars in 2021, compared to the prior year, is primarily due to variable costs corresponding with increased product and service sales volume and inventory levels, increased wage rates and incentives and fulfillment network inefficiencies resulting from a constrained…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/amzn-20211231.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-29",
+     "p": 0.97,
+     "text": "The increase in fulfillment costs in absolute dollars in Q1 2022, compared to the comparable prior year period, is primarily due to variable costs corresponding with increased product and service sales volume and inventory levels, increased wage rates and incentives and fulfillment network inefficiencies resulting…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000013/amzn-20220331.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-22",
+     "p": 0.96,
+     "text": "Our inventory position reflects the impact of inflation, along with strategic investments to promote higher in-stock levels and pull forward merchandise in response to ongoing global supply chain disruption, as well as continued investment in our new supply chain facilities and carry over of some spring seasonal…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495022000239/hd-20221030.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-23",
+     "p": 0.96,
+     "text": "The increase in inventory was primarily due to inflation, along with strategic investments to promote higher in-stock levels and to pull forward merchandise for events in the second half of fiscal 2022 in response to ongoing global supply chain disruption, as well as continued investment in our new supply chain…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495022000193/hd-20220731.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-26",
+     "p": 0.8,
+     "text": "In the current year, we have experienced a delay in the spring selling season due to unseasonably cool and wet weather which has resulted in elevated inventory levels in our seasonal categories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000079/low-20220429.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-21",
+     "p": 0.74,
+     "text": "As we head into spring, we have leveraged our expanded supply chain network to position our in-stock inventory for our heavy selling season.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000038/low-20220128.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-23",
+     "p": 0.78,
+     "text": "I also want to thank our global teams that met the supply chain challenges head-on to ensure a consistent flow of exciting merchandise for our customers this holiday season and throughout the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000115752322000235/a52583695ex991.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-23",
+     "p": 0.52,
+     "text": "Working capital was impacted by higher merchandise inventories resulting from our efforts to continue to meet the demand environment and from higher product and transportation costs, along with timing of vendor payments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495022000070/hd-20220130.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-30",
+     "p": 0.32,
+     "text": "The occupancy and merchandise margin improvements were offset by higher supply chain costs primarily due to additional investments to expand distribution capacity and higher wage costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919822000008/tjx-20220129.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.97,
+     "text": "In 2022, we have produced 929,910 vehicles and delivered 908,573 vehicles through the third quarter, despite ongoing supply chain and logistics challenges and factory shutdowns.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-25",
+     "p": 0.97,
+     "text": "In 2022, we have produced 305,407 vehicles and delivered 310,048 vehicles through the first quarter, despite ongoing supply chain challenges and factory shutdowns.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022006034/tsla-20220331.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.28,
+     "text": "The agreements comprise the largest commercial procurement of launch vehicles in history and will support thousands of suppliers and highly skilled jobs across the global space industry.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.28,
+     "text": "•In India, Amazon and Sun Mobility, a local provider of energy infrastructure and services for electric vehicles (EVs), announced an expanded deployment of EVs with battery-swapping technology, which eliminates the need for lengthy recharging.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.64,
+     "text": "We are currently focused on increasing vehicle production, capacity and delivery capabilities, improving and developing battery technologies, improving our FSD capabilities, increasing the affordability and efficiency of our vehicles, bringing new products to market and expanding our global infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-25",
+     "p": 0.59,
+     "text": "We are focused on growing our manufacturing capacity, which includes ramping all of our production vehicles to their installed production capacities as well as increasing capacity at our current factories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022012936/tsla-20220630.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.97,
+     "text": "On the other hand, infection rates and regulations continue to fluctuate in various regions and there are ongoing global impacts resulting from the pandemic, including challenges and increases in costs for logistics and supply chains, such as increased port congestion, intermittent supplier delays, labor shortages…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.95,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including the ramp of our Megafactory in Lathrop, California, but such production is also sensitive to global component constraints, particularly the industry-wide semiconductor shortage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-07",
+     "p": 0.96,
+     "text": "We are simultaneously ramping new products in the new Model S and Model X, Megapack and Solar Roof, ramping manufacturing facilities on three continents and piloting the development and manufacture of new battery cell technologies, and the pace of our capital spend may vary depending on overall priority among…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, including new iterations of our Megapack, ramping manufacturing facilities on three continents and piloting the development and manufacture of new battery cell technologies, and the pace of our capital spend may vary depending on overall priority among projects, the pace at…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-24",
+     "p": 0.95,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including the ramp of our Megafactory in Lathrop, California, but such production is also sensitive to global component constraints, particularly the industry-wide semiconductor shortage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022019867/tsla-20220930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-25",
+     "p": 0.94,
+     "text": "Our current production continues to be affected by the industry-wide semiconductor and other component shortages, requiring additional workaround manufacturing and production design solutions to be implemented which may be difficult to sustain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022012936/tsla-20220630.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-07",
+     "p": 0.92,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including beginning construction of our Megafactory in Lathrop, California, but such production is also sensitive to global component constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-25",
+     "p": 0.91,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including construction of our Megafactory in Lathrop, California, but such production is also sensitive to global component constraints.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022006034/tsla-20220331.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-07",
+     "p": 0.37,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities such as the Fremont Factory,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/tsla-20211231.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.66,
+     "text": "The new projects increase Amazon’s total capacity by nearly 30% and reinforce Amazon’s leadership position as the world’s largest corporate buyer of renewable energy, with 310 renewable energy projects across 19 countries and 15.7 gigawatts of clean energy capacity—enough electricity output to power 3.9 million U.S.…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-03",
+     "p": 0.61,
+     "text": "•Amazon announced 18 new utility-scale wind and solar energy projects in Finland, Germany, Italy, Spain, the UK, and the U.S., representing 2 gigawatts of new clean energy capacity and increasing Amazon’s renewable energy procurement by 40% in one year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000002/amzn-20211231xex991.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.66,
+     "text": "The new projects increase Amazon’s total capacity by nearly 30% and reinforce Amazon’s leadership position as the world’s largest corporate buyer of renewable energy, with 310 renewable energy projects across 19 countries and 15.7 gigawatts of clean energy capacity—enough electricity output to power 3.9 million U.S.…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000011/amzn-20220331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.34,
+     "text": "Since the launch of the Fund in 2021, Amazon has created or preserved over 8,000 affordable homes, increasing the affordable housing inventory in Bellevue, Washington, and Arlington, Virginia, by at least 20% in one year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000017/amzn-20220630xex991.htm"
+    }
+   ]
+  },
+  "2023": {
+   "labor": [
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-03",
+     "p": 0.94,
+     "text": "For example, productivity across our fulfillment network currently is being affected by regional labor market and global supply chain constraints, which increase payroll costs and make it difficult to hire, train, and deploy a sufficient number of people to operate our fulfillment network as efficiently as we would…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.69,
+     "text": "As a result of the competitive labor market and inflationary pressure on compensation, our personnel expenses to attract and retain key talent have increased, which has adversely affected our results of operations and may adversely affect our results of operations in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553123000061/bkng-20230930.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.99,
+     "text": "We and our suppliers have experienced, and may continue to experience, labor shortages at some of our distribution and fulfillment centers, and any such labor shortages, whether temporary or sustained, may adversely impact the flow or availability of products to our stores and customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.99,
+     "text": "Circumstances related to the COVID-19 pandemic significantly impacted the global supply chain, with restrictions and limitations on business activities and impacts of the COVID-19 pandemic causing cost increases, labor shortages, capacity constraints, disruptions and delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-14",
+     "p": 0.89,
+     "text": "Over the past several years, we faced a number of staffing challenges, including the continuing impact of the COVID-19 pandemic, evolving work environment, and competitive talent landscape.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-14",
+     "p": 0.88,
+     "text": "We have seen construction timelines for pipeline hotels lengthen due to various factors, including competition for skilled construction labor, challenges related to financing, and disruption in permitting and the supply chain for materials, and these circumstances could continue or worsen in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.9,
+     "text": "We and our franchisees have experienced and may continue to experience challenges in adequately staffing certain McDonald’s restaurants, which can negatively impact operations, including speed of service to customers, and customer satisfaction levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000098/exhibit992-9302023xexcelte.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-11-17",
+     "p": 0.99,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market, which has experienced and may continue to experience wage inflation, labor shortages, increased employee turnover, changes in availability of our workforce and a shift toward remote or hybrid work arrangements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000058/sbux-20231001.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-11-17",
+     "p": 0.95,
+     "text": "Furthermore, we have experienced, and could continue to experience, a shortage of labor for store positions, and the increased availability of alternative telecommuting employment options by other employers could decrease the pool of available qualified talent for key functions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000058/sbux-20231001.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-29",
+     "p": 0.72,
+     "text": "In addition, due to the COVID-19 pandemic and current economic conditions, we have faced and may continue to face additional challenges in recruiting or retaining sufficient talent due to shifts in the labor market, wage pressures and competition, and health and safety concerns, among other factors.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000004/tjx-20230128.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-01-31",
+     "p": 0.96,
+     "text": "In addition, labor shortages resulting from the pandemic, including worker absenteeism, has led to increased difficulty in hiring and retaining manufacturing and service workers, as well as increased labor costs and supplier delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-29",
+     "p": 0.26,
+     "text": "Our global workforce reflects a diversity of races, ethnicities, cultures, nationalities, and genders, and we are committed to continuing to build and support an inclusive and diverse workplace.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000004/tjx-20230128.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-19",
+     "p": 0.44,
+     "text": "V E H I C L E C A P A C I T Y Installed Annual Vehicle Capacity Current Status Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y 550,000 Production Shanghai Model 3 / Model Y >750,000 Production Berlin Model Y 375,000 Production Texas Model Y >250,000 Production Cybertruck…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023033544/tsla-ex99_1.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-18",
+     "p": 0.41,
+     "text": "V E H I C L E C A P A C I T Y Current Installed Annual Vehicle Capacity Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y 550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y 375,000 Production Texas Model Y >250,000 Production Cybertruck…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034588/exhibit991.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.99,
+     "text": "Circumstances related to the COVID-19 pandemic significantly impacted the global supply chain, with restrictions and limitations on business activities and impacts of the COVID-19 pandemic causing cost increases, labor shortages, capacity constraints, disruptions and delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.69,
+     "text": "In recent years, ports in the U.S. and elsewhere have been impacted by capacity constraints, port congestion and delays, periodic labor disputes, security issues, weather-related events, and natural disasters.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.66,
+     "text": "•DS Smith, a sustainable packaging provider, will leverage AWS’s global infrastructure, advanced analytics, IoT, AI, and ML to derive deeper business intelligence, deliver new digital customer experiences, and drive automation at scale across its supply chain, including real-time monitoring of manufacturing capacity…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000016/amzn-20230930xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-23",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and products, and the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034847/tsla-20230930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, ramping manufacturing facilities on three continents and piloting the development and manufacture of new battery cell technologies, and the pace of our capital spend may vary depending on overall priority among projects, the pace at which we meet milestones, production…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-11-01",
+     "p": 0.73,
+     "text": "As such, for comparative purposes, references to supply and supply growth exclude listings in China from prior periods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312523268164/d481318dex991.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-14",
+     "p": 0.71,
+     "text": "This growth was driven by our global network, where demand drives supply, as well as product innovations that continue to attract new Hosts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312523039008/d451233dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.91,
+     "text": "Macroeconomic factors, including inflation, increased interest rates, significant capital market volatility, the prolonged COVID-19 pandemic, global supply chain constraints, and global economic and geopolitical developments, have direct and indirect impacts on our results of operations that are difficult to isolate…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-27",
+     "p": 0.7,
+     "text": "Macroeconomic factors, including inflation, increased interest rates, significant capital market and supply chain volatility, and global economic and geopolitical developments, have direct and indirect impacts on our results of operations that are difficult to isolate and quantify.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000018/amzn-20230930.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.91,
+     "text": "These issues, which may continue or expand depending on the progression of the pandemic, have placed strain on the domestic and international supply chain, which has affected and may continue to negatively affect the flow or availability of certain products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.87,
+     "text": "We have faced and may continue to face additional challenges in recruiting and retaining associates due to wage pressure; flexible scheduling needs; disruption in the availability of childcare; challenges related to a remote or hybrid working environment for associates who work in our store support centers; and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-27",
+     "p": 0.89,
+     "text": "Circumstances surrounding and related to the COVID-19 pandemic created unprecedented impacts on the global supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-27",
+     "p": 0.75,
+     "text": "Disruptions in our supply chain and our fulfillment network for our products due to various factors including, but not limited to, the COVID-19 pandemic, trade policy changes, and additional tariffs, have affected and may continue to affect our results of operations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.83,
+     "text": "Supply chain interruptions and related price increases have in the past and may in the future adversely affect us as well as our suppliers and franchisees, whose performance may have a significant impact on our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000098/exhibit992-9302023xexcelte.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.74,
+     "text": "Our ability to increase sales and profits depends on our System’s ability to meet expectations for safe food and on our ability to manage the potential impact on McDonald’s of food-borne illnesses and food or product safety issues that may arise in the future, including in the supply chain, restaurants or delivery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000098/exhibit992-9302023xexcelte.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-17",
+     "p": 0.96,
+     "text": "As a reminder, total inventories in the first quarter of Fiscal 2023 were elevated primarily due to a larger in-transit balance as a result of supply chain delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000115752323000869/a53401711_ex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-23",
+     "p": 0.76,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including the announcement of a new Megafactory in Shanghai and the ongoing ramp at our Megafactory in Lathrop, California.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034847/tsla-20230930.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.44,
+     "text": "We plan to expand our global network and continue to partner with communities to update laws and regulations for short-term rentals to allow more Hosts to join our platform.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972023000003/abnb-20221231.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-09",
+     "p": 0.37,
+     "text": "We are excited to continue this expansion across other destinations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312523139392/d453262dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-03",
+     "p": 0.63,
+     "text": "•AWS continued to expand its infrastructure footprint to meet customer demand, launching AWS Local Zones in Auckland, New Zealand, and Manila, Philippines, and an Amazon CloudFront location in Nigeria.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000010/amzn-20230630xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.59,
+     "text": "•Continued to expand AWS’s infrastructure footprint to support customers by launching the AWS Israel (Tel Aviv) Region and a new AWS Local Zone in Phoenix, Arizona.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000016/amzn-20230930xex991.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-03",
+     "p": 0.56,
+     "text": "Additionally, at June 30, 2023, we had, in the aggregate, $328 million of non-cancellable purchase obligations individually greater than $10 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553123000047/bkng-20230630.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.5,
+     "text": "Additionally, at September 30, 2023, we had, in the aggregate, $324 million of non-cancellable purchase obligations individually greater than $10 million, of which $74 million is payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553123000061/bkng-20230930.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-15",
+     "p": 0.41,
+     "text": "Purchase obligations include all legally binding contracts such as firm commitments for inventory purchases, media and sponsorship spend, software and license commitments, and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-15",
+     "p": 0.4,
+     "text": "We are also continuing to expand our fulfillment network, investing in a significant number of new fulfillment facilities to drive speed and reliability of delivery for our customers and to help us ultimately meet our goal of reaching 90% of the U.S. population with same or next day delivery for extended home…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-27",
+     "p": 0.63,
+     "text": "We continue to transform and expand our supply chain network and existing omnichannel capabilities to meet changing customer needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-27",
+     "p": 0.61,
+     "text": "Our IDCs were expanded to create more capacity to hold import product at the coast, which improves our network’s agility to move inventory where and when it is needed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.51,
+     "text": "We also continue to expand and refine our delivery initiatives, including through integrating delivery and mobile ordering.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000098/exhibit992-9302023xexcelte.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-02",
+     "p": 0.29,
+     "text": "The Company has a long history of generating significant cash from operations and has substantial credit capacity to fund operating and discretionary spending such as capital expenditures, debt repayments, dividends and share repurchases.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000076/mcd-20230630.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-02",
+     "p": 0.36,
+     "text": "5.In January, the company announced the expansion of a partnership with DoorDash, Inc. providing a new delivery service in Northern California, Texas, Georgia, Florida and other select markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000015/sbux-112023xexhibit991.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-11-17",
+     "p": 0.34,
+     "text": "Other than normal operating expenses, cash requirements for fiscal 2024 are expected to consist primarily of capital expenditures for investments in our new and existing stores, our supply chain and corporate facilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000058/sbux-20231001.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-29",
+     "p": 0.39,
+     "text": "These requirements may increase with further growth, particularly if we expand into additional countries.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000004/tjx-20230128.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-18",
+     "p": 0.75,
+     "text": "Our team is focused on materially expanding Supercharging capacity and further improving capacity management in anticipation of other OEMs joining our network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034588/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-24",
+     "p": 0.54,
+     "text": "Our R&D expenses have increased proportionately with total revenues as we continue to expand our product roadmap and technologies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023033872/tsla-20230630.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.95,
+     "text": "Disruption within our logistics or supply chain network, such as the industry-wide supply chain challenges resulting from the COVID-19 pandemic, have in the past and may in the future adversely affect our ability to receive and deliver inventory in a timely manner, impair our ability to meet customer demand for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.69,
+     "text": "Similarly, increased demand for online purchases of products impacted our fulfillment operations, as well as those of our third-party carriers, resulting in delays in delivering products to customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-03-27",
+     "p": 0.69,
+     "text": "Gross margin was negatively impacted by 30 basis points from higher transportation costs and expansion of our supply chain network and 20 basis points from inventory shrink.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-29",
+     "p": 0.93,
+     "text": "In addition, market conditions and the impact of the pandemic on the global economy and global supply chain have impacted and may continue to impact the financial viability or business operations of some of our suppliers and transportation or logistics providers, which has interrupted and increased costs related to,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000004/tjx-20230128.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-29",
+     "p": 0.87,
+     "text": "Our ability to allocate, deliver, and maintain our preferred mix and level of inventory has been impacted in recent years by temporary store closures, inflationary pressures and global supply chain disruptions, including, for example, an increase in competition for limited shipping capacity and other operational and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000004/tjx-20230128.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.93,
+     "text": "In 2022, we produced 1,369,611 consumer vehicles and delivered 1,313,851 consumer vehicles, despite ongoing supply chain and logistics challenges and factory shutdowns.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-04-27",
+     "p": 0.4,
+     "text": "•Launched a new Fulfillment by Amazon (FBA) capacity management system to help sellers who use Amazon’s storage, packing, and shipping fulfillment service to manage their inventory and capacity more efficiently as they scale their businesses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000006/amzn-20230331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-04-27",
+     "p": 0.31,
+     "text": "•Activated the company’s global logistics network to support communities impacted by earthquakes in Türkiye and Syria.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000006/amzn-20230331xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.27,
+     "text": "Beginning the second half of 2022, due to continuing challenges caused by vehicle transportation capacity during peak delivery periods, we began transitioning to a more even regional mix of vehicle builds each week, which led to an increase in cars in transit at the end of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-15",
+     "p": 0.93,
+     "text": "A number of merchandise categories have been impacted by higher inflation than that which we have experienced in recent years due to, among other things, the continuing impacts of the COVID-19 pandemic, global supply chain disruptions, and the uncertain economic and geopolitical environment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-15",
+     "p": 0.93,
+     "text": "Our merchandising team leverages technology and works closely with our inventory and supply chain teams, as well as our supplier partners, to manage our assortments, drive innovation, and adjust inventory levels to respond to fluctuations in demand, which helped us navigate the challenges of continuing global supply…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000059/hd-20230129.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-27",
+     "p": 0.75,
+     "text": "This resulted in, and may continue to result in, higher out-of-stock inventory positions due to difficulties in timely obtaining products from the manufacturers and suppliers of our products, which occurred during the peak periods of the COVID-19 pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-16",
+     "p": 0.92,
+     "text": "Last year, the Company’s total inventories in the second quarter reflected the early arrival of merchandise and a larger in-transit balance as a result of supply chain delays.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000115752323001335/a53538436ex99_1.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-29",
+     "p": 0.66,
+     "text": "The decrease for the third quarter of fiscal 2024 was due to higher incentive compensation costs, higher administrative and supply chain costs, and incremental store wage, partially offset by higher merchandise margin which was due to lower freight costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919823000060/tjx-20231028.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.93,
+     "text": "In 2022, we produced 1,369,611 consumer vehicles and delivered 1,313,851 consumer vehicles, despite ongoing supply chain and logistics challenges and factory shutdowns.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.85,
+     "text": "For example, in the earlier part of 2022, the automotive industry in general experienced part shortages and supplier disruptions which impacted production leading to a general increase in vehicle pricing.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.64,
+     "text": "We are currently focused on increasing vehicle production, capacity and delivery capabilities, improving and developing battery technologies, improving our FSD capabilities, increasing the affordability and efficiency of our vehicles, bringing new products to market and expanding our global infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-24",
+     "p": 0.6,
+     "text": "We are currently focused on increasing vehicle production, capacity and delivery capabilities, reducing costs, improving and developing battery technologies, improving our FSD capabilities, increasing the affordability and efficiency of our vehicles, bringing new products to market and expanding our global…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023013890/tsla-20230331.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-23",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and products, and the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034847/tsla-20230930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-01-31",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, ramping manufacturing facilities on three continents and piloting the development and manufacture of new battery cell technologies, and the pace of our capital spend may vary depending on overall priority among projects, the pace at which we meet milestones, production…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-21",
+     "p": 0.63,
+     "text": "Comparable average ticket was primarily impacted by inflation across several product categories along with demand for new and innovative products, offset by U.S. commodity price deflation, which negatively impacted average ticket by approximately 180 basis points, driven primarily by lumber.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495023000240/hd-20231029.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-14",
+     "p": 0.88,
+     "text": "We have seen construction timelines for pipeline hotels lengthen due to various factors, including competition for skilled construction labor, challenges related to financing, and disruption in permitting and the supply chain for materials, and these circumstances could continue or worsen in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-02-02",
+     "p": 0.88,
+     "text": "Operating margin decreased 170 basis points to 14.3%, primarily due to sales deleverage related to COVID-19 pandemic related impacts in our China market (approximately 650 basis points) and higher commodity and supply chain costs due to inflationary pressures (approximately 70 basis points).",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000017/sbux-20230101.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-11-17",
+     "p": 0.77,
+     "text": "We expect the inflationary pressures on commodities and supply chain that impacted fiscal 2023 to moderate in fiscal 2024, relative to the impact on our business and financial metrics, including operating margin.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000058/sbux-20231001.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-08-01",
+     "p": 0.32,
+     "text": "5.In June, the company announced plans to expand their farm capability beyond coffee to include a new sustainability learning and innovation lab at Hacienda Alsacia in Costa Rica, the global agronomy headquarters for research and development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922423000042/sbux-722023xexhibit991.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-14",
+     "p": 0.88,
+     "text": "We have seen construction timelines for pipeline hotels lengthen due to various factors, including competition for skilled construction labor, challenges related to financing, and disruption in permitting and the supply chain for materials, and these circumstances could continue or worsen in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828023003485/mar-20221231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-23",
+     "p": 0.52,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities, the construction of future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828023034847/tsla-20230930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-24",
+     "p": 0.41,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities such as the Fremont Factory,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023033872/tsla-20230630.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-03-27",
+     "p": 0.55,
+     "text": "We are building an omnichannel supply chain that operates with greater network capacity, better flow management and optimization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-03-27",
+     "p": 0.28,
+     "text": "These investments are designed to promote greater network capacity and better flow management and optimization while leveraging a market delivery model and include adding XDTs and BDCs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066723000034/low-20230203.htm"
+    }
+   ]
+  },
+  "2024": {
+   "labor": [
+    {
+     "symbol": "BKNG",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.69,
+     "text": "As a result of the competitive labor market and inflationary pressure on compensation, our personnel expenses to attract and retain key talent have increased, which has adversely affected our results of operations and may adversely affect our results of operations in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553124000048/bkng-20240930.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.97,
+     "text": "We and our suppliers have experienced, and may continue to experience, labor shortages at some of our distribution and fulfillment centers both due to unexpected events such as the COVID-19 pandemic and to the competitive labor market.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.9,
+     "text": "Such labor shortages, whether temporary or sustained, may adversely impact the flow or availability of products to our stores and customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-13",
+     "p": 0.85,
+     "text": "Labor shortages have in the past resulted, and could in the future result, in higher wages and initial hiring costs, increasing our labor costs and labor costs at our hotels, which could reduce our revenues and profits.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-13",
+     "p": 0.7,
+     "text": "We have in the past experienced, and could in the future experience, challenges hiring for certain positions due to various factors, such as increasing wage expectations or competition for labor from other industries, and these circumstances could continue or worsen in the future to an extent and for durations that…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-29",
+     "p": 0.9,
+     "text": "We and our franchisees have experienced and may continue to experience challenges in adequately staffing certain McDonald’s restaurants, which can negatively impact operations, including speed of service to customers, and customer satisfaction levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000152/exhibit992-9302024.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-20",
+     "p": 0.99,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market (which has experienced, and may continue to experience, wage inflation and labor shortages), our position with respect to unions and the unionization of partners, increased employee turnover, changes in availability of our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000057/sbux-20240929.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-20",
+     "p": 0.94,
+     "text": "Furthermore, we have experienced, and could continue to experience, a shortage of labor for store positions, and the increased availability of alternative telecommuting employment options by other employers could decrease the pool of available qualified talent for other key functions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000057/sbux-20240929.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-04-03",
+     "p": 0.73,
+     "text": "In addition, we have faced and may continue to face additional challenges in recruiting or retaining sufficient talent due to shifts in the labor market, wage pressures and competition, flexible scheduling needs, and health and safety concerns, among other factors.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919824000014/tjx-20240203.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-01",
+     "p": 0.66,
+     "text": "The year-over-year increase in personnel expenses was impacted by an increase of approximately 5% in employee headcount from approximately 23,100 as of June 30, 2023 to 24,150 as of June 30, 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553124000041/bkng-20240630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.43,
+     "text": "V E H I C L E C A P A C I T Y Current Installed Annual Vehicle Capacity Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043432/exhibit.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-23",
+     "p": 0.4,
+     "text": "V E H I C L E C A P A C I T Y Current Installed Annual Vehicle Capacity Current Status Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017024046895/tsla-ex99_1.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.95,
+     "text": "Disruption within our logistics or supply chain network, such as the industry-wide supply chain challenges that resulted from the COVID-19 pandemic, have in the past and may in the future adversely affect our ability to receive and deliver inventory in a timely manner, impair our ability to meet customer demand for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.79,
+     "text": "Increased demand for online purchases of products, which we experienced during the COVID-19 pandemic, can impact our fulfillment operations, as well as those of our third-party carriers, resulting in delays in delivering products to customers and increases in our out-of-stock levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-27",
+     "p": 0.65,
+     "text": "For the first nine months of 2024, gross margin as a percentage of sales contracted 22 basis points, primarily due to ongoing investments in our supply chain and a decline in credit revenue, partially offset by lower transportation costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000169/low-20241101.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-29",
+     "p": 0.63,
+     "text": "The gross margin contraction for the quarter is driven by higher costs associated with investments in our supply chain, partially offset by lower transportation costs and ongoing PPI initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000140/low-20240802.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-31",
+     "p": 0.28,
+     "text": "In the U.S., Amazon leveraged its Disaster Relief Hub in Atlanta to support communities impacted by Hurricanes Helene and Milton with donated goods, logistics support, and technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000158/amzn-20240930xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.3,
+     "text": "In order to continue accelerating the world’s transition to sustainable energy, we need to make EVs affordable for everyone, including making total cost of ownership per mile competitive with all forms of transportation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043432/exhibit.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-02",
+     "p": 0.7,
+     "text": "Macroeconomic factors, including inflation, increased interest rates, significant capital market and supply chain volatility, and global economic and geopolitical developments, have direct and indirect impacts on our results of operations that are difficult to isolate and quantify.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/amzn-20240630.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.9,
+     "text": "As we saw during the heights of the COVID-19 pandemic, these types of disruptions place strain on the domestic and international supply chain, which affected and may in the future negatively affect the flow or availability of certain products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-03-13",
+     "p": 0.65,
+     "text": "Our supply chain investments have helped us to operate effectively and meet our customers’ needs, even with the challenging environment over the past few years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-25",
+     "p": 0.71,
+     "text": "For example, impacts related to the COVID-19 pandemic placed strains on the domestic and international supply chain, which negatively affected the flow and availability of our products in the past due to difficulties in timely obtaining products from the manufacturers and suppliers of our products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000033/low-20240202.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-29",
+     "p": 0.83,
+     "text": "Supply chain interruptions and related price increases have in the past and may in the future adversely affect us as well as our suppliers and franchisees, whose performance may have a significant impact on our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000152/exhibit992-9302024.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-29",
+     "p": 0.74,
+     "text": "Our ability to increase sales and profits depends on our System’s ability to meet expectations for safe food and on our ability to manage the potential impact on McDonald’s of food-borne illnesses and food or product safety issues that may arise in the future, including in the supply chain, restaurants or delivery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000152/exhibit992-9302024.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.8,
+     "text": "Further, our efficiency focus extended beyond our stores, and we realized meaningful out-of-store efficiencies during the quarter, largely within our supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000042/sbux-20240630.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.73,
+     "text": "Product and distribution costs as a percentage of total net revenues decreased 110 basis points for the third quarter of fiscal 2024, primarily due to a reduction in supply chain costs (approximately 80 basis points).",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000042/sbux-20240630.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-04-03",
+     "p": 0.92,
+     "text": "For example, our ability to allocate, deliver, and maintain our preferred mix and level of inventory has been impacted in recent years by temporary store closures, inflationary pressures, global supply chain disruptions, and other challenges, as a result of events, including the global COVID-19 pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919824000014/tjx-20240203.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-12-04",
+     "p": 0.76,
+     "text": "These were partially offset by favorable supply chain costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919824000059/tjx-20241102.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.5,
+     "text": "We plan to continue to expand our global network and partner with communities to update laws and regulations for short-term rentals to allow more Hosts to join our platform.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972024000006/abnb-20231231.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.38,
+     "text": "Further, our ability to expand our payments activities into additional countries is dependent upon providers we use to support these activities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972024000006/abnb-20231231.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-01",
+     "p": 0.62,
+     "text": "•Launched Sequoia, a new robotics system that allows Amazon to identify and store inventory up to 75% faster and, when integrated with other technologies, will reduce order process time by up to 25%.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000006/amzn-20231231xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-31",
+     "p": 0.6,
+     "text": "•Announced plans to expand Amazon Pharmacy Same-Day Delivery of medications to nearly half the U.S. in 2025 by accelerating the roll out of new pharmacies in 20 more U.S. cities by the end of next year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000158/amzn-20240930xex991.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-01",
+     "p": 0.58,
+     "text": "Additionally, at June 30, 2024, we had, in the aggregate, $240 million of non-cancellable purchase obligations individually greater than $10 million, of which $115 million is payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553124000041/bkng-20240630.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.45,
+     "text": "Additionally, at December 31, 2023, we had, in the aggregate, $361 million of non-cancellable purchase obligations individually greater than $10 million, of which $188 million is payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553124000014/bkng-20231231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-03-13",
+     "p": 0.85,
+     "text": "including expansion of our last mile delivery capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-03-13",
+     "p": 0.44,
+     "text": "We will continue to invest in our supply chain network as needed to support our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-27",
+     "p": 0.35,
+     "text": "Our capital expenditures generally consist of investments in our strategic initiatives and technology to enhance our ability to serve customers, improve existing stores, and support expansion plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000169/low-20241101.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-29",
+     "p": 0.34,
+     "text": "Our capital expenditures generally consist of investments in our strategic initiatives to enhance our ability to serve customers, improve existing stores, and support expansion plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066724000140/low-20240802.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-13",
+     "p": 0.57,
+     "text": "In 2023, we also entered the Midscale segment through the City Express brand acquisition discussed above, and announced our plans for further Midscale expansion with the launch of two new brands, Four Points Express by Sheraton and StudioRes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-31",
+     "p": 0.35,
+     "text": "We continue to expand our industry leading global portfolio, and our expectation for net rooms growth remains at 5.5 to 6 percent for full year 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024033622/mar-2024q2xearningsrelease.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-29",
+     "p": 0.51,
+     "text": "We also continue to expand and refine our delivery initiatives, including through integrating delivery and mobile ordering.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000152/exhibit992-9302024.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-07",
+     "p": 0.37,
+     "text": "Further, the Company is focused on continuing to gain share in the rapidly growing chicken category, as we continue to aggressively expand our chicken brands.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000156/mcd-20240930.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-20",
+     "p": 0.68,
+     "text": "We also continue to expand and refine our mobile ordering process.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000057/sbux-20240929.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-30",
+     "p": 0.39,
+     "text": "1.In May, the company announced new commitments to further support LGBTQIA2+ partners and communities, including an expanded partnership with the National Center for Transgender Equality, providing transgender, non-binary, and gender non-conforming partners support for name and gender marker changes.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922424000041/sbux-6302024xexhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-29",
+     "p": 0.54,
+     "text": "Our R&D expenses have increased proportionately with total revenues as we continue to expand our product roadmap and technologies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.42,
+     "text": "Our Supercharger network continued to expand in Q3 with over 2,800 new stalls in the quarter, a 22% growth of the network YoY.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043432/exhibit.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.92,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-29",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and products, and the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.92,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-29",
+     "p": 0.91,
+     "text": "We are simultaneously ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and products, and the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.87,
+     "text": "A number of merchandise categories have been impacted by inflation due to, among other things, global supply chain disruptions and the uncertain economic and geopolitical environment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-03-13",
+     "p": 0.79,
+     "text": "Increased demand for online purchases of products, which we experienced during the COVID-19 pandemic, can impact our fulfillment operations, as well as those of our third-party carriers, resulting in delays in delivering products to customers and increases in our out-of-stock levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000062/hd-20240128.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-24",
+     "p": 0.75,
+     "text": "We continue to increase the production of our energy storage products to meet high levels of demand, including the construction of a new Megafactory in Shanghai and the ongoing ramp at our Megafactory in Lathrop, California.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024032662/tsla-20240630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.65,
+     "text": "We continue to increase the production and capabilities of our energy storage products to meet high levels of demand, including the introduction of Powerwall 3 in 2024, the construction of a new Megafactory in Shanghai and the ongoing ramp at our Megafactory in Lathrop, California.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.52,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities, the construction of future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-01",
+     "p": 0.27,
+     "text": "•BYD, a manufacturer of new energy vehicles, selected AWS as its preferred cloud provider to support the automaker’s global business, innovate new services to enhance the driving experience, and lower vehicle development costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000006/amzn-20231231xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-24",
+     "p": 0.63,
+     "text": "We are focused on profitable growth, including by leveraging existing factories and production lines to introduce new and more affordable products, further improving and deploying our FSD capabilities, including through our planned robotaxi product, reducing costs, increasing vehicle production, utilized capacity and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-04-24",
+     "p": 0.6,
+     "text": "We are focused on profitable growth, including by leveraging existing factories and production lines to introduce new and more affordable products, increasing vehicle production, utilized capacity and delivery capabilities, reducing costs, improving and developing our vehicles and battery technologies, vertically…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024017503/tsla-20240331.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-30",
+     "p": 0.39,
+     "text": "•A planned investment of $10 billion to build two data center complexes in Mississippi.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000081/amzn-20240331xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-23",
+     "p": 0.94,
+     "text": "The sequential increase of $3.9B was a result of positive free cash flow of $1.3B, driven by an inventory decrease of $1.8B and partially offset by AI infrastructure capex of $0.6B in Q2.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024032603/exhibit.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-23",
+     "p": 0.27,
+     "text": "To further improve our end-to-end training capability, we will continue to increase our core AI infrastructure capacity in the coming months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017024046895/tsla-ex99_1.htm"
+    }
+   ]
+  },
+  "2025": {
+   "labor": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-21",
+     "p": 0.98,
+     "text": "We and our suppliers have experienced, and may continue to experience, labor shortages at some of our distribution and fulfillment centers both due to the competitive labor market and unexpected events such as pandemics and quarantines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-24",
+     "p": 0.66,
+     "text": "In recent years, U.S. ports have been impacted by capacity constraints, port congestion and delays, periodic labor disputes, security issues, weather-related events, and natural disasters.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000049/low-20250131.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-11",
+     "p": 0.86,
+     "text": "Labor shortages have in the past resulted, and could in the future result, in higher wages and initial hiring costs, increasing our labor costs and labor costs at hotels in our system, which could reduce our revenues and profits.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004818/mar-20241231.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-11",
+     "p": 0.68,
+     "text": "We and the hotels in our system have in the past experienced, and could in the future experience, challenges hiring for certain positions due to various factors, such as increasing wage expectations or competition for labor from other industries, and these circumstances could continue or worsen in the future to an…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004818/mar-20241231.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-05",
+     "p": 0.9,
+     "text": "We and our franchisees have experienced and may continue to experience challenges in adequately staffing certain McDonald’s restaurants, which can negatively impact operations, including speed of service to customers, and customer satisfaction levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/exhibit992-9302025.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.98,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market (which has experienced, and may continue to experience, wage inflation and labor shortages), our position with respect to unions and the unionization of partners, increased employee turnover, changes in availability of our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.34,
+     "text": "•Announced Future Ready 2030, a $2.5 billion commitment to expand access to education and skills training for at least 50 million people, empowering both employees and the broader workforce.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000121/amzn-20250930xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-29",
+     "p": 0.39,
+     "text": "V E H I C L E C A P A C I T Y Current Installed Annual Vehicle Capacity Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-22",
+     "p": 0.29,
+     "text": "We remain on track for pilot launch of Robotaxi in Austin by June and builds of Optimus on our Fremont pilot production line in 2025, with wider deployment of bots doing useful work across our factories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018851/exhbit991.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-05-01",
+     "p": 0.63,
+     "text": "Supply Our active listings continued to grow at a healthy pace in Q1 2025, with supply growing approximately in-line with Nights and Experienced Booked.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312525109934/d40594dex991.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-26",
+     "p": 0.97,
+     "text": "We have worked, and continue to work, diligently to diversify our global supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000217/hd-20250803.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-28",
+     "p": 0.95,
+     "text": "Over the last decade, we have worked diligently to diversify our global supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000165/hd-20250504.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-05",
+     "p": 0.83,
+     "text": "Supply chain interruptions and related price increases have in the past and may in the future adversely affect us as well as our suppliers and franchisees, whose performance may have a significant impact on our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/exhibit992-9302025.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-05",
+     "p": 0.74,
+     "text": "Our ability to increase sales and profits depends on our System’s ability to meet expectations for safe food and on our ability to manage the potential impact on McDonald’s of food-borne illnesses and food or product safety issues that may arise in the future, including in the supply chain, restaurants or delivery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/exhibit992-9302025.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-28",
+     "p": 0.95,
+     "text": "The contraction was partially offset by the annualization of pricing and supply chain efficiencies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000013/sbux-12292024xexhibit991.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-28",
+     "p": 0.93,
+     "text": "This contraction was partially offset by supply chain and in-store efficiencies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000013/sbux-12292024xexhibit991.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-04-02",
+     "p": 0.96,
+     "text": "In the past, our ability to allocate, deliver and maintain our preferred mix and level of inventory has been impacted by temporary store closures, inflationary pressures, global supply chain disruptions and other challenges as a result of external events.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919825000010/tjx-20250201.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-29",
+     "p": 0.94,
+     "text": "Both Powerwall and Megapack continue to be supply constrained as we open new markets and demand for energy storage products continues to grow.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-23",
+     "p": 0.8,
+     "text": "As a result of rapidly evolving trade policy, uncertainty in the automotive and energy markets continues to increase, posing risks to our global supply chain and cost structure which could have a meaningfully adverse impact on demand for our products and our profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018911/tsla-20250331.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-13",
+     "p": 0.69,
+     "text": "Lastly, we are planning to expand our business beyond travel accommodations using our multi-year product roadmap to help drive long-term growth across new businesses.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-13",
+     "p": 0.67,
+     "text": "With this new tech platform, we can innovate faster and expand beyond short-term rentals into an extensible platform with a range of new offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312525026054/d915198dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-31",
+     "p": 0.76,
+     "text": "•Announced expansion of water recycling to 120+ AWS U.S. data centers by 2030, expected to preserve over 530 million gallons of drinking water annually.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000084/amzn-20250630xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-07",
+     "p": 0.4,
+     "text": "We seek to invest efficiently in several areas of technology and infrastructure, including AWS, and expansion of new and existing product categories and service offerings, as well as in infrastructure to enhance the customer experience and improve our process efficiencies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-29",
+     "p": 0.46,
+     "text": "At June 30, 2025, we had, in the aggregate, $1.0 billion of non-cancellable purchase obligations individually greater than $10 million, of which $235 million is payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000036/bkng-20250630.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-20",
+     "p": 0.43,
+     "text": "At December 31, 2024, we had, in the aggregate, $986 million of non-cancellable purchase obligations individually greater than $10 million, of which $208 million is payable within the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553125000010/bkng-20241231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-03-21",
+     "p": 0.43,
+     "text": "To help our merchandising organization keep pace with changing customer expectations and increasing desire for innovation, localization, and personalization, we are continuing to invest in tools to better leverage our data and drive a deeper level of collaboration with our suppliers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-03-21",
+     "p": 0.41,
+     "text": "Purchase obligations include all legally binding contracts such as firm commitments for inventory purchases, media and sponsorship spend, software and license commitments, and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-26",
+     "p": 0.34,
+     "text": "Our capital expenditures generally consist of investments in our strategic initiatives to enhance our ability to serve customers, improve existing stores, and support expansion plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000210/low-20251031.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-03-24",
+     "p": 0.3,
+     "text": "We continue to expand our offering of independently certified products that have validated environmental claims, preserve and protect natural resources, and help customers decrease energy and water consumption.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000049/low-20250131.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-11",
+     "p": 0.31,
+     "text": "In December 2024, we also announced the expansion of our outdoor-focused lodging offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828025004818/mar-20241231.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-05",
+     "p": 0.51,
+     "text": "We also continue to expand and refine our delivery initiatives, including through integrating delivery and mobile ordering.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000057/exhibit992-9302025.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-11-14",
+     "p": 0.42,
+     "text": "We will continue to expand our coffeehouse portfolio to meet customers where they are with formats that provide a warm and welcoming environment, enable multiple opportunities to connect and gather, and provide attractive returns on invested capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-04-02",
+     "p": 0.53,
+     "text": "We generally look for opportunities to continue to expand our operations globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919825000010/tjx-20250201.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-23",
+     "p": 0.98,
+     "text": "E N E R G Y & S E R V I C E S A N D O T H E R Energy Storage deployments (TTM; GWh) Energy and Services and Other gross profit (TTM; $M) Energy storage deployments continue to grow as we expand capacity for both Megapack and Powerwall to meet demand globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035738/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-01-29",
+     "p": 0.98,
+     "text": "O T H E R H I G H L I G H T S Energy Storage deployments (GWh) Energy and Services and Other gross profit ($M) Our Energy business continued to grow rapidly in 2024 as we expand capacity for both Megapack and Powerwall to meet demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025002993/exhibit991.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-23",
+     "p": 0.76,
+     "text": "Our ongoing focus on supply chain robustness has enabled a resilient vehicle capacity base despite trade and policy uncertainties.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035738/exhibit991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.66,
+     "text": "•Expanded Project Kuiper fleet to 150+ satellites, demonstrated industry-leading downlink speeds of 1+ Gbps, and announced commercial agreements with JetBlue, Australia’s National Broadband Network, and Kazakhtelecom (leading telecommunications provider in Kazakhstan).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000121/amzn-20250930xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.94,
+     "text": "In tandem with the launch of our Robotaxi business, we are focused on developing and optimizing dedicated infrastructure, including in relation to vehicle cleaning and maintenance, charging, security, teleoperations and fleet management, to ensure service quality as we continue to scale.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.72,
+     "text": "We are focused on growing and optimizing our manufacturing capacity, which includes capacity for manufacturing newer vehicle models and future vehicles utilizing aspects of our next generation platform, while maximizing production rate and efficiency at our Gigafactories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-04-23",
+     "p": 0.64,
+     "text": "Further, as it pertains to electric vehicles and lithium-ion batteries for our energy storage products, while the Company has continuously aimed for a strong domestic supply chain, certain parts and components are difficult or impossible to source within the United States.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018911/tsla-20250331.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.92,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.52,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities, the construction of future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035806/tsla-20250630.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-24",
+     "p": 0.66,
+     "text": "In recent years, U.S. ports have been impacted by capacity constraints, port congestion and delays, periodic labor disputes, security issues, weather-related events, and natural disasters.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000049/low-20250131.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.92,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.91,
+     "text": "Megapack 3 production will begin at Megafactory Houston in 2026 with up to 50 GWh per year of manufacturing capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-03-21",
+     "p": 0.81,
+     "text": "For instance, a number of merchandise categories were impacted by inflation in recent years due to, among other things, global supply chain disruptions and the uncertain economic and geopolitical environment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-03-21",
+     "p": 0.66,
+     "text": "Our merchandising team leverages technology and works closely with our inventory and supply chain teams, as well as our suppliers, to manage our assortments, drive innovation, manage the cost environment, and adjust inventory levels to respond to fluctuations in demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495025000085/hd-20250202.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-26",
+     "p": 0.68,
+     "text": "We will also continue to evaluate adjustments to our merchandise assortment, pricing, and global supply chain strategies, including continued country of origin diversification, as potential mitigating actions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000210/low-20251031.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-05-01",
+     "p": 0.35,
+     "text": "•Announced Ocelot, Amazon’s first quantum computing chip prototype that reduces resources needed for quantum error correction by up to 90%.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000034/amzn-20250331xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.7,
+     "text": "We are focused on profitable growth via a differentiated and efficiently managed product portfolio that leverages our existing factories and production lines, further improving and deploying our FSD (Supervised) capabilities, including future autonomous capabilities through our purpose-built Robotaxi product,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.67,
+     "text": "We are focused on profitable growth, including by leveraging existing factories and production lines to introduce new and more affordable products and services, further improving and deploying our FSD (Supervised) capabilities, including future autonomous capabilities through our purpose-built Robotaxi product,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035806/tsla-20250630.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-29",
+     "p": 0.69,
+     "text": "Product and distribution costs as a percentage of total net revenues decreased 30 basis points for the first two quarters of fiscal 2025, primarily due to supply chain efficiencies (approximately 60 basis points), partially offset by inflation and rising coffee prices (approximately 50 basis points).",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000034/sbux-20250330.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.67,
+     "text": "Given coffee’s central role in our operations and our limited ability to fully hedge against price increases, rising costs or supply shortages could materially impact our profitability and ability to meet customer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-04-23",
+     "p": 0.64,
+     "text": "Further, as it pertains to electric vehicles and lithium-ion batteries for our energy storage products, while the Company has continuously aimed for a strong domestic supply chain, certain parts and components are difficult or impossible to source within the United States.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018911/tsla-20250331.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.62,
+     "text": "We continue to increase the production and capabilities of our energy storage products to meet high levels of demand, including the ramps of our Megafactories in Shanghai and Lathrop, California, and the construction of a new Megafactory near Houston, Texas.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.52,
+     "text": "The cash we generate from our core operations enables us to fund ongoing operations and production, our research and development projects for new products and technologies including our proprietary battery cells, additional manufacturing ramps at existing manufacturing facilities, the construction of future…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025035806/tsla-20250630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.41,
+     "text": "A U T O M O T I V E Current Installed Annual Vehicle Capacity Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck >125,000…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-31",
+     "p": 0.42,
+     "text": "•Announced multi-billion dollar investments to expand cloud infrastructure and advance AI innovation in North Carolina, Pennsylvania, and Australia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000084/amzn-20250630xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-22",
+     "p": 0.41,
+     "text": "Furthermore, AI infrastructure is driving rapid load growth, which, along with traditional utility customer applications, is creating an outsized opportunity for our Energy storage products to stabilize the grid, shift energy when it is needed most and provide additional power capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018851/exhbit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.28,
+     "text": "We announced a deal to manufacture advanced semiconductors for AI inference and training in the U.S. with Samsung and further expanded our AI training compute capacity, bringing Cortex to a total of 81k H100 equivalents.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-22",
+     "p": 0.41,
+     "text": "Furthermore, AI infrastructure is driving rapid load growth, which, along with traditional utility customer applications, is creating an outsized opportunity for our Energy storage products to stabilize the grid, shift energy when it is needed most and provide additional power capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025018851/exhbit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.29,
+     "text": "This new and simplified architecture incorporates hardware, software and services in a single package up to medium voltage, enabling rapid utility-scale deployment with faster interconnection to the grid and reduced complexity for customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ]
+  },
+  "latest": {
+   "labor": [
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-02-12",
+     "p": 0.9,
+     "text": "We’ve started with a pilot in cities that are supply constrained due to excess demand or regulation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-06",
+     "p": 0.91,
+     "text": "Competition for qualified personnel is intense, particularly for software engineers, computer scientists, and other technical staff (including for artificial intelligence and machine learning technologies), and constrained labor markets have increased competition for personnel across other parts of our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-18",
+     "p": 0.94,
+     "text": "We and our suppliers have experienced, and may experience in the future, labor shortages at some of our distribution and fulfillment centers both due to the competitive labor market and unexpected events such as pandemics and quarantines.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.9,
+     "text": "We and our franchisees have experienced and may continue to experience challenges in adequately staffing certain McDonald’s restaurants, which can negatively impact operations, including speed of service to customers, and customer satisfaction levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.98,
+     "text": "Our ability to do so has been and may continue to be impacted by challenges in the labor market (which has experienced, and may continue to experience, wage inflation and labor shortages), our position with respect to unions and the unionization of partners, increased employee turnover, changes in availability of our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.34,
+     "text": "•Announced Future Ready 2030, a $2.5 billion commitment to expand access to education and skills training for at least 50 million people, empowering both employees and the broader workforce.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000121/amzn-20250930xex991.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-23",
+     "p": 0.28,
+     "text": "Additionally, since awarding its first Gable Grants in 2023, the Lowe’s Foundation has invested over $50 million to help solve the critical skilled trades workforce shortage through a growing network of community colleges and nonprofits in rural and urban communities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/low-20260130.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.76,
+     "text": "M A N U F A C T U R I N G & H A R D W A R E Installed Annual Manufacturing Capacity Region Product Capacity Status Automotive California Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck >125,000…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-28",
+     "p": 0.33,
+     "text": "We aim to maximize capital efficiency by scaling training compute judiciously, including when the training backlog gets too long or in anticipation of greater demand from our engineers to support our AI-related offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "ABNB",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-12",
+     "p": 0.84,
+     "text": "Due to the limited availability of companies insuring our risks, we have experienced and expect to continue to experience increased difficulty in obtaining appropriate policy limits and levels of coverage at a reasonable cost and with reasonable terms and conditions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-18",
+     "p": 0.97,
+     "text": "For many years, we have worked to diversify our global supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-03-18",
+     "p": 0.9,
+     "text": "We have worked, and continue to work, diligently to diversify our global supply chain and to implement other cost mitigation initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.83,
+     "text": "Supply chain interruptions and related price increases have in the past and may in the future adversely affect us as well as our suppliers and franchisees, whose performance may have a significant impact on our results.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.74,
+     "text": "Our ability to increase sales and profits depends on our System’s ability to meet expectations for safe food and on our ability to manage the potential impact on McDonald’s of food-borne illnesses and food or product safety issues that may arise in the future, including in the supply chain, restaurants or delivery.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.67,
+     "text": "It may also impact water availability across our supply chain and markets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.65,
+     "text": "Even without acute disruptions, our supply chain may not fully meet current or future business needs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.75,
+     "text": "As a result of rapidly evolving trade and fiscal policy, uncertainty in the automotive and energy markets continues to increase, posing risks to our global supply chain and cost structure which could have a meaningfully adverse impact on demand for our products and our profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-01-29",
+     "p": 0.73,
+     "text": "As a result of rapidly evolving trade and fiscal policy, uncertainty in the automotive and energy markets continues, posing risks to our global supply chain and cost structure which could have a meaningfully adverse impact on demand for our products and our profitability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-12",
+     "p": 0.66,
+     "text": "We are also extending our platform beyond stays with new offerings, such as Airbnb Services and redesigned experiences, with plans to continue to expand our business beyond travel accommodations using our multi-year product roadmap to help drive long-term growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm"
+    },
+    {
+     "symbol": "ABNB",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-05-07",
+     "p": 0.49,
+     "text": "We will continue to prioritize reinvestment to support growth across the business, specifically on efficient marketing spend, international expansion, and AI initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526211816/d23351dex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-29",
+     "p": 0.7,
+     "text": "•Announced plans to expand Same-Day Amazon Pharmacy delivery to nearly 4,500 U.S. cities and towns by year-end, with expanded GLP-1 selection, including Novo Nordisk’s Wegovy High Dose injectable and Eli Lilly and Company’s Zepbound KwikPen and Foundayo pill.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-30",
+     "p": 0.49,
+     "text": "•Next-generation OpenSearch Serverless, which gives agents fast access to search across massive volumes of data, scales capacity up to 20x faster than the previous generation, and offers up to 60% cost savings versus provisioning for peak.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.4,
+     "text": "\"We also increased the expected annual run-rate savings enabled by our Transformation Program, creating additional capacity to invest in our strategic priorities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000036/q2-26bkngearningsrelease.htm"
+    },
+    {
+     "symbol": "BKNG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-18",
+     "p": 0.38,
+     "text": "Through our Transformation Program (as defined below) we are driving efficiencies to create capacity to invest in long-term growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000009/bkng-20251231.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-03-18",
+     "p": 0.41,
+     "text": "Purchase obligations include all legally binding contracts such as firm commitments for inventory purchases, media and sponsorship spend, software and license commitments, and legally binding service contracts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-18",
+     "p": 0.33,
+     "text": "These new stores will continue to help relieve pressure at existing high-volume stores and add capacity in areas with less store coverage, helping us to improve the customer experience and drive sales growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-23",
+     "p": 0.56,
+     "text": "We continue to transform and expand our supply chain network and existing omnichannel capabilities to meet changing customer needs and expectations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/low-20260130.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-27",
+     "p": 0.34,
+     "text": "Our capital expenditures generally consist of investments in our strategic initiatives to enhance our ability to serve customers, improve existing stores, and support expansion plans.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000117/low-20260731.htm"
+    },
+    {
+     "symbol": "MAR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-10",
+     "p": 0.86,
+     "text": "We continued to expand our portfolio across chain scales, including advancing the expansion of our midscale offerings, and we also continued to strengthen our residential portfolio, signing 55 residential agreements in 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-04",
+     "p": 0.51,
+     "text": "We also continue to expand and refine our delivery initiatives, including through integrating delivery and mobile ordering.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000067/exhibit992-6302026.htm"
+    },
+    {
+     "symbol": "MCD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-07",
+     "p": 0.33,
+     "text": "•The Company expects net restaurant unit expansion will contribute approximately 2.5% to 2026 Systemwide sales growth, in constant currencies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-11-14",
+     "p": 0.42,
+     "text": "We will continue to expand our coffeehouse portfolio to meet customers where they are with formats that provide a warm and welcoming environment, enable multiple opportunities to connect and gather, and provide attractive returns on invested capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.28,
+     "text": "The joint venture is expected to reinvigorate sustainable growth in China through a focus on expansion, innovation and elevated customer experiences, with a shared long-term aspiration to grow to as many as 20,000 locations in China over time.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm"
+    },
+    {
+     "symbol": "TJX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-31",
+     "p": 0.63,
+     "text": "We generally look for opportunities to continue to expand our operations globally, such as our announced expansion into Spain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000008/tjx-20260131.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.72,
+     "text": "We have continued to expand and refine our Robotaxi service after its June 2025 launch, capitalizing on our AI investments and scalable mobility infrastructure to advance a service-driven business model.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-22",
+     "p": 0.62,
+     "text": "We are also increasing production of 4680 cells to support production ramps of both Cybercab and Tesla Semi and increased production of Model Y. Other Supporting Infrastructure We added over 2,400 net new Supercharging stalls, growing the network by 17% year-over-year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-18",
+     "p": 0.95,
+     "text": "Disruptions within our logistics or supply chain network, such as the industry-wide supply chain challenges that resulted from the COVID-19 pandemic, have adversely affected and may in the future adversely affect, our ability to receive and deliver inventory in a timely manner, impair our ability to meet customer…",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-18",
+     "p": 0.81,
+     "text": "Increased demand for online purchases of products can impact, and in the past has impacted, our fulfillment operations, as well as those of our third-party carriers, resulting in delays in delivering products to customers and increases in our out-of-stock levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-28",
+     "p": 0.95,
+     "text": "We have begun to produce battery packs for certain Model Ys with our 4680 cells, unlocking an additional vector of supply to help navigate increasingly complex supply chain challenges caused by trade barriers and tariff risks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.94,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy, robotics and other artificial intelligence enabled…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.71,
+     "text": "Our focus on affordability and utility across our vehicle lineup continues to be a key competitive advantage, particularly as gas-powered alternatives become more expensive due to their reliance on a more sensitive and less flexible energy supply chain.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-30",
+     "p": 0.66,
+     "text": "•Expanded Project Kuiper fleet to 150+ satellites, demonstrated industry-leading downlink speeds of 1+ Gbps, and announced commercial agreements with JetBlue, Australia’s National Broadband Network, and Kazakhtelecom (leading telecommunications provider in Kazakhstan).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000121/amzn-20250930xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.94,
+     "text": "In tandem with the launch of our Robotaxi business, we are focused on developing and optimizing dedicated infrastructure, including in relation to vehicle cleaning and maintenance, charging, security, teleoperations and fleet management, to ensure service quality as we continue to scale.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.72,
+     "text": "We are focused on growing and optimizing our manufacturing capacity, which includes capacity for manufacturing newer vehicle models and future vehicles utilizing aspects of our next generation platform, while maximizing production rate and efficiency at our Gigafactories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    }
+   ],
+   "manufacturing_capacity": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.94,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy, robotics and other artificial intelligence enabled…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.92,
+     "text": "We are simultaneously developing and ramping new products, building or ramping manufacturing facilities on three continents, piloting the development and manufacture of new battery cell technologies, expanding our Supercharger network and investing in autonomy and other artificial intelligence enabled training and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-03-18",
+     "p": 0.81,
+     "text": "Increased demand for online purchases of products can impact, and in the past has impacted, our fulfillment operations, as well as those of our third-party carriers, resulting in delays in delivering products to customers and increases in our out-of-stock levels.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-18",
+     "p": 0.7,
+     "text": "Our merchandising team leverages technology and works closely with our inventory and supply chain teams, as well as our suppliers, to manage our assortments, drive innovation, manage the cost environment, and adjust inventory levels to respond to shifts in demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-26",
+     "p": 0.68,
+     "text": "We will also continue to evaluate adjustments to our merchandise assortment, pricing, and global supply chain strategies, including continued country of origin diversification, as potential mitigating actions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066725000210/low-20251031.htm"
+    },
+    {
+     "symbol": "LOW",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-27",
+     "p": 0.67,
+     "text": "We continue to monitor and comply with these changes and evaluate potential impacts, including possible adjustments to our merchandise assortment, pricing, and global supply chain strategies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000117/low-20260731.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TSLA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.62,
+     "text": "We continue to increase the production and capabilities of our energy storage products to meet high levels of demand, including the ramps of our Megafactories in Shanghai and Lathrop, California, and the construction of a new Megafactory near Houston, Texas.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.76,
+     "text": "M A N U F A C T U R I N G & H A R D W A R E Installed Annual Manufacturing Capacity Region Product Capacity Status Automotive California Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck >125,000…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.41,
+     "text": "A U T O M O T I V E Current Installed Annual Vehicle Capacity Region Model Capacity Status California Model S / Model X 100,000 Production Model 3 / Model Y >550,000 Production Shanghai Model 3 / Model Y >950,000 Production Berlin Model Y >375,000 Production Texas Model Y >250,000 Production Cybertruck >125,000…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "HD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-03-18",
+     "p": 0.75,
+     "text": "As part of enhancing the interconnected experience, over the past several years, we have invested in our supply chain network with the goal of achieving the fastest, most efficient and most reliable delivery capabilities in home improvement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/hd-20260201.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-29",
+     "p": 0.67,
+     "text": "•Secured a commitment from OpenAI to consume approximately two gigawatts (GW) of Trainium capacity through AWS infrastructure to power its frontier models and advanced workloads, which begins ramping in 2027.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-22",
+     "p": 0.39,
+     "text": "S U P P O R T I N G I N F R A S T R U C T U R E Installed Annual Capacity Region Asset Capacity Status AI Training Compute Texas Cortex 1 >90 MW Production Cortex 2 >115 MW Production Battery Cell Manufacturing Nevada LFP 7 GWh Early Ramp Texas 4680 >40 GWh Production Cathode Materials 10 GWh Early Ramp Lithium…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-22",
+     "p": 0.29,
+     "text": "This new and simplified architecture incorporates hardware, software and services in a single package up to medium voltage, enabling rapid utility-scale deployment with faster interconnection to the grid and reduced complexity for customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/exhibit991.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-02-05",
+     "p": 0.48,
+     "text": "•Trainium4 is expected to start delivering in 2027, with 6 times the FP4 compute performance, 4 times more memory bandwidth, and 2 times more high memory bandwidth capacity than Trainium3.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000002/amzn-20251231xex991.htm"
+    },
+    {
+     "symbol": "AMZN",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-30",
+     "p": 0.34,
+     "text": "Graviton delivers up to 30 to 40% better price-performance than comparable instances, and Graviton5 delivers up to 25% better compute performance than Graviton4.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-01-29",
+     "p": 0.7,
+     "text": "We are focused on profitable growth via a differentiated and efficiently managed product portfolio that leverages our existing factories and production lines, further improving and deploying our FSD (Supervised) capabilities, including future autonomous capabilities through our purpose-built Robotaxi product,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.57,
+     "text": "AI Inference Compute Coinciding with Robotaxi and Optimus ramps, we are expanding our scope of manufacturing to include semiconductor fabrication, an important step to ensure sufficient and resilient chip supply.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.67,
+     "text": "Given coffee’s central role in our operations and our limited ability to fully hedge against price increases, rising costs or supply shortages could materially impact our profitability and ability to meet customer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-14",
+     "p": 0.64,
+     "text": "We supply strategic products, including coffee, to our licensees, and we may have limited ability to pass along increased costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm"
+    },
+    {
+     "symbol": "SBUX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-01-28",
+     "p": 0.49,
+     "text": "Further, we look forward to working with our new strategic joint venture partner, Boyu Capital, to expand into more cities across China, deliver exceptional coffee experiences, create new career opportunities for partners, and strengthen Starbucks position as a global brand for long-term growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000011/sbux-20251228.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.53,
+     "text": "S U P P O R T I N G I N F R A S T R U C T U R E Installed Annual Capacity Region Product Capacity Status AI Training Compute Texas Cortex 1 >100k H100e Production Cortex 2 >130k H100e Early Ramp Battery Manufacturing Nevada LFP 7 GWh Early Ramp Texas 4680 40 GWh Production Cathode Materials 10 GWh Early Ramp Lithium…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-28",
+     "p": 0.32,
+     "text": "This refinery enables us to domestically produce critical minerals in support of energy storage, battery manufacturing and ultimately for EV growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+    }
+   ],
+   "foundry_packaging": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-22",
+     "p": 0.57,
+     "text": "AI Inference Compute Coinciding with Robotaxi and Optimus ramps, we are expanding our scope of manufacturing to include semiconductor fabrication, an important step to ensure sufficient and resilient chip supply.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.47,
+     "text": "We continue to expand Cortex, our onsite training clusters at Gigafactory Texas, to provide sufficient compute resources for the development of our AI products and services, and are expanding our scope of manufacturing to include semiconductor and solar fabrication.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-01-29",
+     "p": 0.37,
+     "text": "In 2025, we further expanded Cortex, our training cluster at Gigafactory Texas, and announced a new collaboration with Samsung to manufacture advanced semiconductors for AI inference and training in the U.S. We are currently building Cortex 2 at Gigafactory Texas to further increase our AI training compute capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+    },
+    {
+     "symbol": "TSLA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-28",
+     "p": 0.34,
+     "text": "AI Training Compute We are currently building Cortex 2 at Gigafactory Texas to further increase our AI training compute capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+    }
+   ]
+  }
+ }
+}

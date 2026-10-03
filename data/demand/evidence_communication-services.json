@@ -1,0 +1,2823 @@
+{
+ "sector": "Communication Services",
+ "periods": {
+  "2022": {
+   "datacenter_capacity": [
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-08-10",
+     "p": 0.8,
+     "text": "During the quarter, we invested to reinforce our technology infrastructure, including additional data center capacity to support new publishers and demand partners onboarded from our MoPub acquisition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000119312522217369/d363851dex992.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.52,
+     "text": "We also expect to continue to invest in land and buildings for data centers and offices, and information technology assets, which includes servers and network equipment, to support the long-term growth of our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-26",
+     "p": 0.51,
+     "text": "We make investments in land and buildings for data centers and offices and information technology assets through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000090/goog-20220930.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-03",
+     "p": 0.97,
+     "text": "In 2022, we anticipate that cost of revenue will increase as we continue to expand our data center capacity and technical infrastructure to support user growth and engagement and the delivery of new products and services, and, to a lesser extent, due to higher content costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000018/fb-20211231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.37,
+     "text": "An increase in AI capacity is driving substantially all of our capital expenditure growth in 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000105/meta09302022-exhibit991.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "DIS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2022-11-29",
+     "p": 0.81,
+     "text": "Broader supply chain delays, such as those currently impacting global distribution may further exacerbate current inflationary pressures and impact our ability to sell and deliver goods or otherwise disrupt our operations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448922000213/dis-20221001.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-01",
+     "p": 0.94,
+     "text": "Q4 saw ongoing strong growth in our advertising business, which helped millions of businesses thrive and find new customers, a quarterly sales record for our Pixel phones despite supply constraints, and our Cloud business continuing to grow strongly.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000015/googexhibit991q42021.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-10",
+     "p": 0.59,
+     "text": "We plan to continue to consider opportunities to expand and diversify our operations through strategic acquisitions and partnerships.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100822000020/app-20220930.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-11",
+     "p": 0.51,
+     "text": "In April 2020, we entered into a share purchase agreement with Redemption Games, Inc. (Redemption Games).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100822000005/app-20211231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.96,
+     "text": "In cable, we are increasing the capacity of our broadband network and providing our customers with cutting-edge equipment that delivers the best in-home experience.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669122000016/ex991-3312022.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.89,
+     "text": "Cable Communications’ capital expenditures increased primarily due to increased spending on scalable infrastructure and line extensions, partially offset by decreased spending on customer premise equipment and support capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669122000009/cmcsa-20211231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-10",
+     "p": 0.53,
+     "text": "Capital expenditures for the DPEP segment are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448922000161/dis-20220702.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-11-29",
+     "p": 0.53,
+     "text": "Capital expenditures at DPEP are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and systems infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448922000213/dis-20221001.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.27,
+     "text": "•As online advertising evolves, we continue to expand our product offerings, which may affect our monetization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.26,
+     "text": "•As we continue to serve our users and expand our businesses, we will invest heavily in operating and capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-03",
+     "p": 0.35,
+     "text": "These agreements are generally entered into in order to secure either volume or price.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000018/fb-20211231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.33,
+     "text": "Conversely, our growth in cost of revenue is expected to accelerate, driven by infrastructure-related expenses and, to a lesser extent, Reality Labs hardware costs driven by the launch of our next generation of our consumer Quest headset later next year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000105/meta09302022-exhibit991.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-19",
+     "p": 0.4,
+     "text": "content spend-to-content amortization expense ratio peaked at 1.6x (along with peak negative FCF of -$3.3B in 2019) and is expected to be about 1.2-1.3x in 2022 and to decline going forward, based on our current plans, which assume no material expansion into new content categories in ‘23.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528022000256/ex991_q222.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-19",
+     "p": 0.27,
+     "text": "We are building a solid pipeline of new games that will launch over the next several years and are excited to see our members engage with these titles.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528022000256/ex991_q222.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.95,
+     "text": "The first quarter increase is due to ongoing capital spending for network upgrades and expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000042/t-20220331.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.67,
+     "text": "The increase for the first six months of 2022 is due to ongoing capital spending for network upgrades and expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000093/t-20220630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.59,
+     "text": "On July 26, 2019, we entered into an Asset Purchase Agreement with Sprint and DISH.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000018/tmus-20211231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.56,
+     "text": "On June 17, 2020, T-Mobile, Sprint and DISH entered into the First Amendment to the Asset Purchase Agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000018/tmus-20211231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-25",
+     "p": 0.82,
+     "text": "We are focusing our capital spending on adding capacity and density to our 4G LTE network, while also building our next generation 5G network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000050/vz-20220930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.76,
+     "text": "We are focusing our capital spending on adding capacity and density to our 4G Long-Term Evolution (LTE) network, while also building our next generation 5G network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000008/vz-20211231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-24",
+     "p": 0.56,
+     "text": "We have the capacity to initially borrow up to $2.5 billion under the Credit Agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710722000031/disca-20211231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-26",
+     "p": 0.55,
+     "text": "We had the capacity to initially borrow up to $2.5 billion under the Credit Agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710722000138/disca-20220331.htm"
+    }
+   ],
+   "components_parts": [
+    {
+     "symbol": "T",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.94,
+     "text": "The global pandemic has caused, and could again cause, delays in the development, manufacturing (including the sourcing of key components) and shipment of products, as well as continued tight labor market and actual or perceived inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000015/t-20211231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-03",
+     "p": 0.36,
+     "text": "On December 21, 2021, we entered into an agreement to sell the marketplace component of Xandr to Microsoft Corporation (Microsoft).",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000042/t-20220331.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.33,
+     "text": "On May 17, 2021, we entered into an agreement to combine our WarnerMedia segment, subject to certain exceptions, with a subsidiary of Discovery Inc. On December 21, 2021, we entered into an agreement to sell the marketplace component of Xandr to Microsoft Corporation (Microsoft).",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000015/t-20211231.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "T",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.94,
+     "text": "The global pandemic has caused, and could again cause, delays in the development, manufacturing (including the sourcing of key components) and shipment of products, as well as continued tight labor market and actual or perceived inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000015/t-20211231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-02",
+     "p": 0.34,
+     "text": "While our Reality Labs products and services may require more infrastructure capacity in the future, they do not require substantial capacity today and, as a result, are not a significant driver of 2022 capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000015/fb-12312021xexhibit991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000141/tmus-20220930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-06",
+     "p": 0.28,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel, customer base and business practices of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000084/tmus-20220331.htm"
+    }
+   ],
+   "finished_goods": [
+    {
+     "symbol": "VZ",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-22",
+     "p": 0.74,
+     "text": "The reduction was primarily due to working capital impacts from higher device activations, and increased inventory levels as part of the company's supply chain management in the current environment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000040/a2022q2exhibit99.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-22",
+     "p": 0.63,
+     "text": "The reduction was primarily due to working capital impacts as the increase in activation volumes to more normal levels impacted receivable levels, and inventory levels increased as part of supply chain management in the current environment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000015/a2022q1exhibit99.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-11",
+     "p": 0.73,
+     "text": "The expected increase in capital expenditures is due to higher spending on cruise ship fleet expansion, corporate facilities, and production facilities and technology at the DMED segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448922000100/dis-20220402.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-10",
+     "p": 0.63,
+     "text": "The expected increase in capital expenditures is due to higher spending on cruise ship fleet expansion and corporate facilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448922000161/dis-20220702.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.42,
+     "text": "We regularly enter into significant non-cancelable contractual obligations primarily related to data center operations and build-outs, information technology assets, office buildings, purchases of inventory, and network capacity arrangements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.63,
+     "text": "To support higher mobile data usage, our priority is to best utilize a wireless network that has sufficient spectrum and capacity to support these innovations on as broad a geographic basis as possible.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000102/t-20220930.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.34,
+     "text": "The increases were primarily due to ongoing capital spending for network upgrades and expansion, partially offset by updates to extend the estimated lives of our fiber assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000102/t-20220930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-06",
+     "p": 0.42,
+     "text": "Property and equipment capital expenditures primarily relate to the integration of our network and spectrum licenses, including acquired Sprint PCS and 2.5 GHz spectrum licenses and existing 600 MHz spectrum licenses as we build out our nationwide 5G network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000084/tmus-20220331.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.39,
+     "text": "Property and equipment capital expenditures primarily relate to the integration of our network and spectrum licenses, including acquired Sprint PCS and 2.5 GHz spectrum licenses, as we build out our nationwide 5G network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000141/tmus-20220930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-25",
+     "p": 0.99,
+     "text": "•an increase in rent expense of $178 million related to adding capacity to the networks to support demand and lease modifications for certain existing cell towers in April 2021 to support the build out of our 5G wireless network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000050/vz-20220930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-28",
+     "p": 0.32,
+     "text": "In January 2022, we began deploying C-Band spectrum, which as of June 30, 2022, covers approximately 135 million points of presence in the U.S. We expect to continue deploying C-Band spectrum as it becomes available to us through 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000043/vz-20220630.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-25",
+     "p": 0.57,
+     "text": "Under the REPAs, we plan to purchase the energy generated by up to an aggregate of approximately 2.8 gigawatts of capacity across multiple states, including Arizona, Illinois, Indiana, Iowa, Maryland, Nebraska, New York, North Carolina, Ohio, Pennsylvania, Texas and West Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000050/vz-20220930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-07-28",
+     "p": 0.57,
+     "text": "Under the REPAs, we plan to purchase the energy generated by up to an aggregate of approximately 2.6 gigawatts of capacity across multiple states, including Arizona, Illinois, Indiana, Iowa, Maryland, New York, North Carolina, Ohio, Pennsylvania, Texas and West Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271222000043/vz-20220630.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.52,
+     "text": "We also expect to continue to invest in land and buildings for data centers and offices, and information technology assets, which includes servers and network equipment, to support the long-term growth of our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-02",
+     "p": 0.38,
+     "text": "Our planned capital expenditures are primarily driven by investments in data centers, servers, network infrastructure, and office facilities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000015/fb-12312021xexhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-04-28",
+     "p": 0.35,
+     "text": "We anticipate that additional investments in our servers, data center capacity, network infrastructure, and office facilities, as well as scaling our headcount to support our growth, including in our Reality Labs initiatives, will continue to drive expense growth in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000057/meta-20220331.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "TMUS",
+     "status": "EASING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.36,
+     "text": "Roughly one-third of the 35,000 targeted sites have been decommissioned as of Q1 2022 with the remaining ramping in the second half of the year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000077/tmus03312022ex991.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-02",
+     "p": 0.52,
+     "text": "We also expect to continue to invest in land and buildings for data centers and offices, and information technology assets, which includes servers and network equipment, to support the long-term growth of our business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/goog-20211231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-26",
+     "p": 0.51,
+     "text": "We make investments in land and buildings for data centers and offices and information technology assets through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000090/goog-20220930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.37,
+     "text": "In 2012, we conveyed to Crown Castle International Corp. (“CCI”) the exclusive right to manage and operate approximately 6,200 tower sites (“CCI Lease Sites”) via a master prepaid lease with site lease terms ranging from 23 to 37 years.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000018/tmus-20211231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-11",
+     "p": 0.33,
+     "text": "Prior to the Merger, Sprint entered into a lease-out and leaseback arrangement with Global Signal Inc., a third party that was subsequently acquired by CCI, that conveyed to CCI the exclusive right to manage and operate approximately 6,400 tower sites (“Master Lease Sites”) via a master prepaid lease.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000018/tmus-20211231.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-16",
+     "p": 0.28,
+     "text": "In 2022, we expect that our gross capital investment, which includes capital expenditures and cash paid for vendor financing, will be in the $24,000 range with capital expenditures in the $20,000 range.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271722000015/t-20211231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.44,
+     "text": "We have entered into uncommitted financing lease facilities with certain third parties that provide us with the ability to enter into financing leases for network equipment and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000141/tmus-20220930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000141/tmus-20220930.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000141/tmus-20220930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-06",
+     "p": 0.28,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel, customer base and business practices of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369922000084/tmus-20220331.htm"
+    }
+   ]
+  },
+  "2023": {
+   "datacenter_capacity": [
+    {
+     "symbol": "META",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-07-27",
+     "p": 0.98,
+     "text": "We have experienced, and expect to continue to experience, various challenges with the supply chain related to supporting our technical infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/meta-20230630.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-04-27",
+     "p": 0.95,
+     "text": "Due to the effects of the COVID-19 pandemic and other factors, we have experienced, and expect to continue to experience, challenges with supply chain for our technical infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000067/meta-20230331.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.51,
+     "text": "We make investments in land and buildings for data centers and offices and information technology assets through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/goog-20230930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.49,
+     "text": "We also expect to continue to invest in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-04-26",
+     "p": 0.67,
+     "text": "This outlook reflects our ongoing build out of AI capacity to support ads, Feed and Reels, along with an increased investment in capacity for our generative AI initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000063/meta03312023-exhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.53,
+     "text": "We expect the majority of our investments in 2023 to be in data center capacity, servers, and network infrastructure supporting our FoAs and RL.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/meta-20230630.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "DIS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-11-21",
+     "p": 0.72,
+     "text": "Broader or targeted supply chain delays, such as those that have impacted global distribution from time to time, may further exacerbate inflationary pressures and impact our ability to sell and deliver goods or otherwise disrupt our operations.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448923000216/dis-20230930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-03",
+     "p": 0.73,
+     "text": "We face a number of risks related to manufacturing and supply chain management, which could affect our ability to supply both our products and our services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-08",
+     "p": 0.87,
+     "text": "This includes a positive impact on cash flow from operations attributed to delayed production spend, and a negative impact on the results of operations attributed to timing and performance of the remainder of the 2023 film slate, as well as the Company’s ability to produce, license, and deliver content, and declines…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710723000173/disca-20230930.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-28",
+     "p": 0.51,
+     "text": "In April 2020, we entered into a share purchase agreement with Redemption Games, Inc. (Redemption Games).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100823000006/app-20221231.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-28",
+     "p": 0.28,
+     "text": "Our future capital requirements, however, will depend on many factors, including our growth rate; sales and marketing activities; timing and extent of spending to support our research and development efforts; capital expenditures to purchase hardware and software; and our continued need to invest in our IT…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100823000006/app-20221231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.97,
+     "text": "We expect our capital expenditures for 2023 will be focused on increased investment in scalable infrastructure as we increase capacity and execute our plans to upgrade our network to deliver multigigabit speeds, in line extensions for the expansion of both business services and residential passings in our Cable…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669123000010/cmcsa-20221231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.87,
+     "text": "Cable Communications’ capital expenditures increased primarily due to increased spending on line extensions, scalable infrastructure, support capital and customer premise equipment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669123000010/cmcsa-20221231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-02-08",
+     "p": 0.53,
+     "text": "Capital expenditures for the DPEP segment are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448923000049/dis-20221231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-09",
+     "p": 0.49,
+     "text": "Capital expenditures at the DPEP segment are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448923000171/dis-20230701.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.27,
+     "text": "•As online advertising evolves, we continue to expand our product offerings, which may affect our monetization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.26,
+     "text": "•As we continue to serve our users and expand our businesses, we will invest heavily in operating and capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-01",
+     "p": 0.47,
+     "text": "Substantially all of our capital expenditures continue to support the Family of Apps.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000008/meta-12312022xexhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.28,
+     "text": "Our finance lease obligations include certain network infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/meta-20230930.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-01-19",
+     "p": 0.5,
+     "text": "In 2023, we’ll continue to expand our offering12 with more games, with a focus on Netflix-related IP.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000034/ex991_q422.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-04-18",
+     "p": 0.37,
+     "text": "Netflix is the leading streaming service based on engagement, revenue and profit and we are working to build on that in ‘23, by seeking to expand operating margin to 18%-20% and to generate at least +$3.5B of free cash flow (up from our prior expectation of at least $3.0B of FCF).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528023000119/ex991_q123.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-05-01",
+     "p": 0.51,
+     "text": "Depreciation expense increased in the first quarter of 2023, primarily due to ongoing capital spending for network upgrades and expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000022/t-20230331.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-13",
+     "p": 0.51,
+     "text": "Depreciation expense increased in 2022, primarily due to ongoing capital spending for network upgrades and expansion, partially offset by ceasing use of 3G network assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000011/t-20221231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-01",
+     "p": 0.58,
+     "text": "The company’s 5G network covers 325 million people (98% of Americans), and its super-fast Ultra Capacity 5G covers 265 million people nationwide.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000007/tmus12312022ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.52,
+     "text": "Subsequently, on August 25, 2023, we and the Sellers entered into Amendments No. 1 to the Amended and Restated License Purchase Agreements whereby we deferred the closings of certain additional licenses in Chicago and Dallas into the second closing tranche.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000151/tmus-20230930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.76,
+     "text": "We are focusing our capital spending on adding capacity and density to our 4G Long-Term Evolution (LTE) network, while also building our next generation 5G network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000012/vz-20221231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.72,
+     "text": "We are focusing our capital investment on building our next generation 5G network, while also adding capacity and density to our 4G LTE network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000063/vz-20230930.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.47,
+     "text": "DCL has the capacity to borrow up to $6.0 billion under the Revolving Credit Agreement (the “Credit Facility”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710723000019/disca-20221231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-24",
+     "p": 0.28,
+     "text": "We effected capital expenditures of $987 million in 2022, including amounts capitalized to support our next generation platforms, such as HBO Max and discovery+.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710723000019/disca-20221231.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "T",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-13",
+     "p": 0.94,
+     "text": "The global pandemic has caused, and could again cause, delays in the development, manufacturing (including the sourcing of key components) and shipment of products, as well as continued tight labor market and actual or perceived inflation.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000011/t-20221231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-08",
+     "p": 0.8,
+     "text": "As a result of the strikes, we have paused and may continue to pause certain theatrical and television productions, which has resulted in delayed production spending.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710723000173/disca-20230930.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-11-08",
+     "p": 0.65,
+     "text": "For example, the recently concluded WGA strike and ongoing SAG-AFTRA strike have caused, and are expected to continue to cause, delays in the production of our television programs and feature films and in the release of certain programming.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710723000173/disca-20230930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-03",
+     "p": 0.33,
+     "text": "We are incurring costs to build and maintain infrastructure to support cloud computing services, invest in cybersecurity, and hire talent, particularly to support and scale our sales force.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000151/tmus-20230930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-27",
+     "p": 0.71,
+     "text": "285 million people nationwide are covered by T-Mobile’s super-fast Ultra Capacity 5G, and the Un-carrier plans to reach 300 million people with Ultra Capacity this year.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000133/tmus06302023ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-04-27",
+     "p": 0.65,
+     "text": "275 million people nationwide are covered by T-Mobile’s super-fast Ultra Capacity 5G, and the Un-carrier plans to reach 300 million people with Ultra Capacity this year – nearly everyone in the country.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000086/tmus03312023ex991.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-03",
+     "p": 0.27,
+     "text": "The FCC also has established and is in the process of evaluating and potentially modifying its rules to make available additional spectrum that will likely be used for licensed and unlicensed commercial services, including new 5G services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669123000010/cmcsa-20221231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-26",
+     "p": 0.36,
+     "text": "These amounts consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000070/goog-20230630.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.33,
+     "text": "These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/goog-20230930.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-13",
+     "p": 0.63,
+     "text": "To support higher mobile data usage, our priority is to best utilize a wireless network that has sufficient spectrum and capacity to support these innovations on as broad a geographic basis as possible.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000011/t-20221231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-13",
+     "p": 0.38,
+     "text": "The expansion builds on our recent investments to convert to a software-based network, managing the migration of wireline customers to services using our fiber infrastructure to provide broadband technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000011/t-20221231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-25",
+     "p": 0.48,
+     "text": "The Company also announced its Ultra Capacity 5G network now covers 300 million people with dedicated mid-band spectrum, reaching its 2023 goal over two months ahead of schedule.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000149/tmus09302023ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-14",
+     "p": 0.47,
+     "text": "We continue to deploy spectrum to expand and deepen our 5G coverage, maintain our quality of service, meet increasing customer demands, and deploy new technologies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000016/tmus-20221231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.99,
+     "text": "•an increase in rent expense of $212 million related to adding capacity to the networks to support demand and lease modifications for certain existing cell towers in April 2021 to support the build out of our 5G wireless network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000012/vz-20221231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.98,
+     "text": "•an increase in rent expense of $198 million related to adding capacity to the networks to support demand and lease modifications for certain existing cell towers in April 2021 in connection with the build out of our 5G wireless network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000012/vz-20221231.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-28",
+     "p": 0.56,
+     "text": "Under the REPAs, we plan to purchase up to an aggregate of approximately 3.2 gigawatts of capacity across multiple states, including Arizona, Illinois, Indiana, Iowa, Maine, Maryland, Nebraska, New York, North Carolina, Ohio, Oklahoma, Pennsylvania, Texas and West Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000055/vz-20230630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.56,
+     "text": "Under the REPAs, we plan to purchase up to an aggregate of approximately 3.0 gigawatts of capacity across multiple states, including Arizona, Illinois, Indiana, Iowa, Maryland, Nebraska, New York, North Carolina, Ohio, Oklahoma, Pennsylvania, Texas and West Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271223000012/vz-20221231.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-03",
+     "p": 0.49,
+     "text": "We also expect to continue to invest in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/goog-20221231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.44,
+     "text": "We expect to continue to invest in our technical infrastructure, including servers, network equipment, and data centers, over the remainder of 2023 and into 2024 to support the growth of our business and our long-term initiatives, in particular in support of AI.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/goog-20230930.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.53,
+     "text": "We expect the majority of our investments in 2023 to be in data center capacity, servers, and network infrastructure supporting our FoAs and RL.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/meta-20230630.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-26",
+     "p": 0.31,
+     "text": "Looking ahead, while we will continue to refine our plans as we progress throughout this year, we currently expect total capital expenditures to grow in 2024, driven by our investments across both data centers and servers, particularly in support of our AI work.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000089/meta06302023-exhibit991.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-13",
+     "p": 0.27,
+     "text": "Capital expenditures in 2022 were $19,626, and when including $4,697 cash paid for vendor financing, capital investment was $24,323 ($4,182 higher than the prior year).",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271723000011/t-20221231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-04-27",
+     "p": 0.44,
+     "text": "We have entered into uncommitted financing lease facilities with certain third parties that provide us with the ability to enter into financing leases for network equipment and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000087/tmus-20230331.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000151/tmus-20230930.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-25",
+     "p": 0.55,
+     "text": "We anticipate our full-year 2024 capital expenditures will be in the range of $30-35 billion, with growth driven by investments in servers, including both non-artificial intelligence (AI) and AI hardware, and data centers as we ramp up construction on sites with the new data center architecture we announced late last…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000100/meta09302023-exhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-01",
+     "p": 0.28,
+     "text": "The reduced outlook reflects our updated plans for lower data center construction spend in 2023 as we shift to a new data center architecture that is more cost efficient and can support both AI and non-AI workloads.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000008/meta-12312022xexhibit991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000151/tmus-20230930.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-07-27",
+     "p": 0.37,
+     "text": "On March 30, 2023, we and the Sellers entered into Amended and Restated License Purchase Agreements pursuant to which we and the Sellers agreed to bifurcate the transaction into two tranches of licenses, with the closings on the acquisitions of certain licenses in Chicago, Dallas and New Orleans (together…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000134/tmus-20230630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-25",
+     "p": 0.36,
+     "text": "On September 12, 2023, we entered into a License Purchase Agreement with Comcast pursuant to which we will acquire spectrum in the 600 MHz band from Comcast in exchange for total cash consideration of between $1.2 billion and $3.3 billion, subject to an application for FCC approval.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369923000151/tmus-20230930.htm"
+    }
+   ]
+  },
+  "2024": {
+   "unspecified": [
+    {
+     "symbol": "WBD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-07",
+     "p": 0.79,
+     "text": "Effects included a positive impact on cash flow from operations attributed to delayed production spend, and a negative impact on the results of operations attributed to timing and performance of the 2023 film slate, as well as the Company’s ability to produce, license, and deliver content.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710724000187/disca-20240930.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-08-07",
+     "p": 0.42,
+     "text": "Conclusion As we celebrate the first anniversary of our enhanced AXON technology, we are excited by its potential to continue to improve our position in mobile gaming and enable our expansion into new advertising categories.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000053/a2q24applovinshareholder.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-11-06",
+     "p": 0.29,
+     "text": "To invest in a new technology, enter a new market or expand our offerings, we must invest financial resources and management attention.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000062/app-20240930.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-31",
+     "p": 0.97,
+     "text": "We expect our capital expenditures in 2024 will continue to be focused on investments in line extensions for the expansion of both business services and residential passings in the Connectivity & Platforms business, in scalable infrastructure as we increase capacity and continue to execute our plans to upgrade our…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/cmcsa-20231231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-31",
+     "p": 0.89,
+     "text": "Connectivity & Platforms’ capital expenditures increased primarily due to increased spending on line extensions and scalable infrastructure, partially offset by decreased spending on customer premise equipment and support capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/cmcsa-20231231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-02-07",
+     "p": 0.51,
+     "text": "expenditures related to the expansion of existing businesses and development of new projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448924000081/dis-20231230.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-11-14",
+     "p": 0.48,
+     "text": "Capital expenditures at Experiences are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and systems infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448924000276/dis-20240928.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-31",
+     "p": 0.27,
+     "text": "•As online advertising evolves, we continue to expand our product offerings, which may affect our monetization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-31",
+     "p": 0.26,
+     "text": "•As we continue to serve our users and expand our businesses, we will invest heavily in operating and capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-01",
+     "p": 0.37,
+     "text": "We currently expect our capital expenditures to grow significantly in 2025 as we invest to support our AI research and product development efforts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/meta-20240630.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-31",
+     "p": 0.29,
+     "text": "While we continue to refine our plans for next year, we currently expect significant capital expenditures growth in 2025 as we invest to support our artificial intelligence research and product development efforts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000065/meta-06302024xexhibit991.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-23",
+     "p": 0.63,
+     "text": "Depreciation expense increased in 2023, primarily due to ongoing capital spending for network upgrades and expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271724000009/t-20231231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-23",
+     "p": 0.37,
+     "text": "In December 2023, we announced plans to collaborate with Ericsson to lead the U.S. in commercial scale open radio access network (Open RAN) deployment to build a more robust ecosystem of network infrastructure providers and suppliers, fostering lower network costs, improved operational efficiencies and allowing for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271724000009/t-20231231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-23",
+     "p": 0.56,
+     "text": "On April 24, 2024, we entered into a merger agreement with Fund VI for the joint acquisition by us and Fund VI of Lumos from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000142/tmus-20240930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-23",
+     "p": 0.52,
+     "text": "Subsequently, on August 25, 2023, we and the Sellers entered into Amendments No. 1 to the Amended and Restated License Purchase Agreements, whereby we deferred the closings of certain additional licenses in Chicago and Dallas into the second closing tranche.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000142/tmus-20240930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-25",
+     "p": 0.72,
+     "text": "We are focusing our capital investment on building our next generation 5G network, while also adding capacity and density to our 4G LTE network.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000069/vz-20240930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-25",
+     "p": 0.46,
+     "text": "As of June 30, 2024, Verizon had 27 renewable energy purchase agreements (REPAs) with third parties.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000052/vz-20240630.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-23",
+     "p": 0.47,
+     "text": "Additionally, we have a multicurrency Revolving Credit Agreement and have the capacity to borrow up to $6.0 billion under the Credit Facility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710724000017/wbd-20231231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-07",
+     "p": 0.26,
+     "text": "We have a multicurrency revolving credit agreement (the “Revolving Credit Agreement”) and have the capacity to borrow up to $6.0 billion under the Revolving Credit Agreement (the “Credit Facility”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710724000165/disca-20240630.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-25",
+     "p": 0.67,
+     "text": "Under the REPAs, we plan to purchase up to an aggregate of approximately 3.5 gigawatts of capacity across multiple states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000052/vz-20240630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-25",
+     "p": 0.34,
+     "text": "As of September 30, 2024, Verizon had 28 renewable energy purchase agreements with third parties for a total of approximately 3.6 gigawatts of anticipated renewable energy capacity across multiple states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000069/vz-20240930.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.33,
+     "text": "These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory, and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-23",
+     "p": 0.63,
+     "text": "To support higher mobile data usage, our priority is to best utilize a wireless network that has sufficient spectrum and capacity to support these innovations on as broad a geographic basis as possible.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271724000009/t-20231231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-23",
+     "p": 0.36,
+     "text": "Depreciation expense increased in 2023, primarily due to ongoing capital spending for strategic initiatives such as fiber and network upgrades and expansion, which we expect to further increase in 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271724000009/t-20231231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-04-25",
+     "p": 0.58,
+     "text": "T-Mobile’s best-in-class Ultra Capacity 5G network has the deepest dedicated mid-band 5G spectrum deployment, with nearly 95% of 5G network traffic on mid-band including the recently deployed Auction 108 spectrum.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000062/tmus03312024ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-23",
+     "p": 0.58,
+     "text": "On April 24, 2024, we entered into a merger agreement with a fund operated by EQT, Infrastructure VI fund (“Fund VI”), for the joint acquisition by us and Fund VI of Lumos (“Lumos”), a fiber-to-the-home platform, from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000142/tmus-20240930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-09",
+     "p": 0.55,
+     "text": "Our 2024 capital program includes capital to fund advanced networks and services, including expanding and adding capacity and density to our core networks, deploying C-Band spectrum, and advancing our network architecture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000010/vz-20231231.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-11-06",
+     "p": 0.62,
+     "text": "As we have noted in the past, our margins for this business will fluctuate on a quarterly basis, primarily driven by our investment in infrastructure as we continue to scale and secure data center capacity to support future growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000059/a3q24applovinshareholder.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.51,
+     "text": "We make investments in land and buildings for data centers and offices and information technology assets through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.33,
+     "text": "These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory, and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-31",
+     "p": 0.53,
+     "text": "Capital expenditures decreased for the nine months ended September 30, 2024 compared to the same period in 2023 primarily reflecting decreased spending by the Connectivity & Platforms businesses driven by customer premise equipment and scalable infrastructure, partially offset by increased spending on line…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669124000056/cmcsa-20240930.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-31",
+     "p": 0.44,
+     "text": "We also continue to invest in our network to support higher-speed broadband offerings and to expand the number of homes and businesses passed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669124000056/cmcsa-20240930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.51,
+     "text": "We make investments in land and buildings for data centers and offices and information technology assets through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-01",
+     "p": 0.38,
+     "text": "We expect growth will be driven by investments in servers, including both AI and non-AI hardware, and data centers as we ramp up construction on sites with our previously announced new data center architecture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000010/meta-12312023xexhibit991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-02",
+     "p": 0.28,
+     "text": "Our integration strategy included deploying the acquired spectrum on the combined network assets to supplement capacity, migrating Sprint customers to our network and optimizing the combined assets by decommissioning redundant sites.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000008/tmus-20231231.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-01-31",
+     "p": 0.29,
+     "text": "We also expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.28,
+     "text": "We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-01",
+     "p": 0.38,
+     "text": "We expect growth will be driven by investments in servers, including both AI and non-AI hardware, and data centers as we ramp up construction on sites with our previously announced new data center architecture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000010/meta-12312023xexhibit991.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-23",
+     "p": 0.78,
+     "text": "T-Mobile shared plans to drive long-term value creation well into the future at its recent Capital Markets Day, with continued industry-leading growth in profitability leading to cash flows supporting an approximately $80 billion capacity for investments and stockholder returns through 2027.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000141/tmus09302024ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-23",
+     "p": 0.37,
+     "text": "Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369924000142/tmus-20240930.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-11-14",
+     "p": 0.34,
+     "text": "For example, in fiscal 2024, we announced plans for additional expansion of our fleet of cruise ships, and in recent years to expand investment in our Experiences segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448924000276/dis-20240928.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-11-14",
+     "p": 0.34,
+     "text": "The projected increase in capital expenditures is primarily due to higher spending at Experiences, attributable to continued investment in cruise ship fleet expansion and new guest offerings at our theme parks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448924000276/dis-20240928.htm"
+    }
+   ]
+  },
+  "2025": {
+   "real_estate": [
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-01-31",
+     "p": 0.96,
+     "text": "We expect our capital expenditures in 2025 will continue to be focused on investments in the Connectivity & Platforms business in scalable infrastructure as we increase capacity and continue to execute our plans to upgrade our network to deliver multigigabit symmetrical speeds, in line extensions for the expansion of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669125000011/cmcsa-20241231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.44,
+     "text": "We also continue to invest in our network to support higher-speed broadband offerings and to expand the number of homes and businesses passed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669125000054/cmcsa-20250930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.53,
+     "text": "We make investments in land, buildings, and servers and network equipment through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-17",
+     "p": 0.61,
+     "text": "Our expansion in Albuquerque, NM—adding four new soundstages to a 108-acre site—and our plan to invest roughly $1B to develop a state-of-the-art production facility (including 12 new soundstages) in Fort Monmouth, NJ, underscore our ongoing commitment to production in the US.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000322/ex991_q225.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-23",
+     "p": 0.81,
+     "text": "•iPhone 17 is fastest on T-Mobile’s network with median overall download speeds nearly 90% faster than one benchmark competitor as we continue to expand our network leadership with industry-leading deployment of new technologies (e.g. L4S deployed on all 5G sites with efficient capacity allocation; ~70% of sites…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000153/tmus09302025ex991.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-08-06",
+     "p": 0.35,
+     "text": "As we continue to grow, we will need an increasing amount of technical infrastructure, including network capacity and computing power, to continue to satisfy our needs and the needs of our clients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000072/app-20250630.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.47,
+     "text": "◦other technical infrastructure operations costs, including network capacity, energy, and equipment costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.33,
+     "text": "These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory, and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/goog-20250630.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.95,
+     "text": "The FCC licenses will be used to expand our 5G network, meet future capacity demands and support future wireless communications services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000171/t-20250930.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-23",
+     "p": 0.59,
+     "text": "As a result of this increased pace of organic fiber deployment, AT&T expects that by the end of 2030 it will reach approximately 50 million customer locations with its in-region fiber network and more than 60 million fiber locations when including the Lumen Mass Markets fiber assets it has agreed to acquire and plans…",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000076/t-2qx2025exhibit991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.68,
+     "text": "On April 24, 2024, we entered into a definitive agreement with a fund operated by EQT, EQT Infrastructure VI (“Fund VI”), to establish a joint venture between us and Fund VI to acquire Lumos (“Lumos”), a fiber-to-the-home platform, from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-24",
+     "p": 0.67,
+     "text": "On April 24, 2024, we entered into a definitive agreement with a fund operated by EQT, Infrastructure VI fund (“Fund VI”), to establish a joint venture between us and Fund VI to acquire Lumos (“Lumos”), a fiber-to-the-home platform, from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000079/tmus-20250331.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-12",
+     "p": 0.56,
+     "text": "Our 2025 capital program includes capital to fund advanced networks and services, including expanding and adding capacity and density to our core networks, the ongoing deployment of C-Band spectrum, and advancing our network architecture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000006/vz-20241231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.45,
+     "text": "In September 2024, we entered into an agreement to acquire Frontier Communications Parent, Inc. (Frontier), a U.S. provider of broadband internet and other communication services, as part of our fiber expansion strategy, and we expect to increase the capital expenditures we devote to our fiber networks in 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000116/vz-20250930.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "TMUS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-01-31",
+     "p": 0.94,
+     "text": "Despite these efforts, we may encounter technical challenges, regulatory hurdles, supply chain constraints, or unexpected delays in developing and deploying new network technologies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000012/tmus-20241231.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-27",
+     "p": 0.43,
+     "text": "We continue to expand our CTV business through the addition of new content advertisers and supply channels as well as through the application of AXON to CTV.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000018/app-20241231.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-05",
+     "p": 0.36,
+     "text": "We expect to continue to expand our international operations in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000081/app-20250930.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-01-31",
+     "p": 0.81,
+     "text": "Connectivity & Platforms’ capital expenditures remained consistent in 2024 compared to 2023 primarily due to increased spending on line extensions and support capital, offset by decreased spending on customer premise equipment and scalable infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669125000011/cmcsa-20241231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-01-31",
+     "p": 0.41,
+     "text": "Our technical services groups perform various tasks, including installations, plant maintenance and upgrades to our domestic network, and servicing and upgrades of customer premise equipment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000116669125000011/cmcsa-20241231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-11-13",
+     "p": 0.48,
+     "text": "Capital expenditures at Experiences are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and systems infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-06",
+     "p": 0.45,
+     "text": "Capital expenditures at the Experiences segment are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and technology.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000136/dis-20250628.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.27,
+     "text": "•As online advertising evolves, we continue to expand our product offerings, which may affect our monetization.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.26,
+     "text": "•As we continue to serve our users and expand our businesses, we will invest heavily in operating and capital expenditures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.48,
+     "text": "We are still working through our capacity plans for next year, but we expect to invest aggressively to meet these needs both by building our own infrastructure and contracting with third party cloud providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.48,
+     "text": "A central requirement to realizing these opportunities is infrastructure capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-17",
+     "p": 0.59,
+     "text": "We continue to expand our live programming with big, can’t miss special events.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000322/ex991_q225.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-17",
+     "p": 0.41,
+     "text": "While the majority of our content spend and production infrastructure investment is in the US, we now also spend billions of dollars per year making programming abroad.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000175/ex991_q125.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-12",
+     "p": 0.45,
+     "text": "Depreciation expense increased in 2024, primarily due to shortening of estimated economic lives of wireless equipment that will be replaced earlier than originally anticipated with our Open RAN deployment and network transformation, and ongoing capital spending for network upgrades and expansion, which we expect to…",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000013/t-20241231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-29",
+     "p": 0.37,
+     "text": "Depreciation expense increased in the first quarter of 2025, primarily due to ongoing capital spending for network upgrades and expansion, partially offset by lower depreciation impacts from our network modernization efforts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271725000023/t-20250331.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-23",
+     "p": 0.65,
+     "text": "On April 24, 2024, we entered into a definitive agreement with Fund VI to establish a joint venture between us and Fund VI to acquire Lumos from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000117/tmus-20250630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.52,
+     "text": "Subsequently, on August 25, 2023, we and the Sellers entered into Amendments No. 1 to the Amended and Restated License Purchase Agreements, whereby we deferred the closings of certain additional licenses in Chicago and Dallas into the second closing tranche.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-12",
+     "p": 0.46,
+     "text": "It will also support our broadband expansion plans including the launch of our fixed wireless access solution for multi-dwelling units.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000006/vz-20241231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.42,
+     "text": "We are consistently deploying new network architecture and technologies to secure our leadership in both fifth-generation (5G) and fourth-generation (4G) wireless networks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000116/vz-20250930.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-27",
+     "p": 0.47,
+     "text": "Additionally, we have a multicurrency revolving Credit Agreement and have the capacity to borrow up to $6.0 billion under the Credit Facility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000031/wbd-20241231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-06",
+     "p": 0.38,
+     "text": "Additionally, the co-production partnership is expected to create a K-drama pipeline for HBO Max globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000213/a992wbd3q25shareholderle.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-25",
+     "p": 0.59,
+     "text": "As of June 30, 2025, Verizon had 28 renewable energy purchase agreements with third parties for a total of approximately 3.7 gigawatts of anticipated renewable energy capacity across multiple states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000086/vz-20250630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.34,
+     "text": "As of September 30, 2025, Verizon had 28 renewable energy purchase agreements with third parties for a total of approximately 3.7 gigawatts of anticipated renewable energy capacity across multiple states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000116/vz-20250930.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.53,
+     "text": "We make investments in land, buildings, and servers and network equipment through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.31,
+     "text": "In 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-31",
+     "p": 0.34,
+     "text": "We also have $27.95 billion of contractual commitments as of June 30, 2025, mostly related to our investments in servers and network infrastructure, consumer hardware products in Reality Labs, and data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/meta-20250630.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-11-13",
+     "p": 0.47,
+     "text": "The projected increase in capital expenditures is primarily due to higher spending at Experiences, attributable to theme park and resort expansion and new attractions, partially offset by lower spending on cruise ship fleet expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-02-05",
+     "p": 0.34,
+     "text": "The projected increase in capital expenditures is primarily due to higher spending at Experiences, attributable to continued investment in cruise ship fleet expansion and new guest offerings at our theme parks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000067/dis-20241228.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-08-06",
+     "p": 0.35,
+     "text": "As we continue to grow, we will need an increasing amount of technical infrastructure, including network capacity and computing power, to continue to satisfy our needs and the needs of our clients.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000072/app-20250630.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.47,
+     "text": "◦other technical infrastructure operations costs, including network capacity, energy, and equipment costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-24",
+     "p": 0.33,
+     "text": "These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory, and network capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/goog-20250630.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.84,
+     "text": "In October 2025, we entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.37,
+     "text": "On September 12, 2023, we entered into a license purchase agreement with Comcast (the “Comcast License Purchase Agreement”), pursuant to which we will acquire spectrum in the 600 MHz band from Comcast in exchange for total cash consideration of between $1.2 billion and $3.3 billion, subject to an application for FCC…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-01-31",
+     "p": 0.36,
+     "text": "On September 12, 2023, we entered into a License Purchase Agreement with Comcast pursuant to which we will acquire spectrum in the 600 MHz band from Comcast in exchange for total cash consideration of between $1.2 billion and $3.3 billion, subject to an application for FCC approval.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000012/tmus-20241231.htm"
+    }
+   ]
+  },
+  "latest": {
+   "real_estate": [
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.96,
+     "text": "We expect our capital expenditures in 2026 will continue to be focused on investments in the Connectivity & Platforms business in scalable infrastructure as we increase capacity and continue to execute our plans to upgrade our network to deliver multigigabit symmetrical speeds, in the continued deployment of next…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.44,
+     "text": "We also continue to invest in our network to support higher-speed broadband offerings and to expand the number of homes and businesses passed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.53,
+     "text": "We make investments in land, buildings, and servers and network equipment through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-23",
+     "p": 0.81,
+     "text": "•iPhone 17 is fastest on T-Mobile’s network with median overall download speeds nearly 90% faster than one benchmark competitor as we continue to expand our network leadership with industry-leading deployment of new technologies (e.g. L4S deployed on all 5G sites with efficient capacity allocation; ~70% of sites…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000153/tmus09302025ex991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-11",
+     "p": 0.3,
+     "text": "•We have equipment deployed on macro cell sites and small cell/distributed antenna system sites across our network and leverage our CDC insights to optimize network positioning and performance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000010/tmus-20251231.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.59,
+     "text": "◦other technical infrastructure operations costs, including energy, equipment, and network capacity costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-05",
+     "p": 0.53,
+     "text": "The costs associated with operating our technical infrastructure - depreciation, energy, equipment, and network capacity - are expected to significantly increase as developing and serving AI offerings require more compute power than our historical consumer and enterprise offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-22",
+     "p": 0.95,
+     "text": "The FCC licenses will be used to expand our 5G network, meet future capacity demands and support future wireless communications services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000297/t-20260630.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-09",
+     "p": 0.63,
+     "text": "With recent spectrum acquisitions, including our pending transaction with EchoStar we are expanding the capacity of the wireless network over which these services are provided to support this growth initiative.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000120/t-20251231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-11",
+     "p": 0.68,
+     "text": "On April 24, 2024, we entered into a definitive agreement with a fund operated by EQT, EQT Infrastructure VI (“Fund VI”), to establish a joint venture between us and Fund VI to acquire Lumos (“Lumos”), a fiber-to-the-home platform, from EQT’s predecessor fund, EQT Infrastructure III.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000010/tmus-20251231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.55,
+     "text": "On April 24, 2026, we entered into a definitive agreement with an affiliate of Wren House Infrastructure Management Limited (“Wren House”) to establish a joint venture that will acquire i3 Broadband, one of Wren House’s existing fiber portfolio companies.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-31",
+     "p": 0.46,
+     "text": "On May 14, 2026, Verizon entered into an agreement in principle with AT&T Inc. and T-Mobile US, Inc., to form a new joint venture which aims to help end wireless dead zones in the U.S., including in rural areas, by pooling limited spectrum resources to increase capacity, improve the customer experience, and help…",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000046/vz-20260630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-17",
+     "p": 0.46,
+     "text": "It will also support our broadband investment plans and the expansion of our fiber broadband footprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000007/vz-20251231.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "DIS",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-05",
+     "p": 0.65,
+     "text": "Entertainment SVOD advertising revenues were up 3%, reflecting the impact of continued marketplace supply growth, which created a softer overall demand environment relative to fiscal Q2.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-05",
+     "p": 0.66,
+     "text": "Extended or unforeseen disruptions at these suppliers could impact our ability to meet customer demand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-19",
+     "p": 0.43,
+     "text": "We continue to expand our CTV business through the addition of new content advertisers and supply channels as well as through the application of Axon AI to CTV.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000010/app-20251231.htm"
+    },
+    {
+     "symbol": "APP",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-11-05",
+     "p": 0.36,
+     "text": "We expect to continue to expand our international operations in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000081/app-20250930.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-03",
+     "p": 0.77,
+     "text": "Connectivity & Platforms’ capital expenditures increased in 2025 primarily due to increased spending on customer premise equipment, scalable infrastructure and support capital.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm"
+    },
+    {
+     "symbol": "CMCSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-03",
+     "p": 0.46,
+     "text": "Our Connectivity & Platforms businesses use our HFC network in the United States, which we believe is sufficiently flexible and scalable to support our future technology requirements and enables us to continue to grow capacity and capabilities over time.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/cmcsa-20251231.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-08-05",
+     "p": 0.53,
+     "text": "We are looking forward to bringing additional cruise capacity online in the years ahead.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-11-13",
+     "p": 0.48,
+     "text": "Capital expenditures at Experiences are principally for theme park and resort expansion, new attractions, cruise ships, capital improvements and systems infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-30",
+     "p": 0.4,
+     "text": "In connection with certain of these agreements, we have agreed to provide credit backstops to support third-party data centers and power infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-05",
+     "p": 0.37,
+     "text": "Securing this capacity involves entering into complex, long-lead-time arrangements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.48,
+     "text": "We are still working through our capacity plans for next year, but we expect to invest aggressively to meet these needs both by building our own infrastructure and contracting with third party cloud providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.48,
+     "text": "A central requirement to realizing these opportunities is infrastructure capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm"
+    },
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-20",
+     "p": 0.27,
+     "text": "In 2026, we’ll also expand our offering of licensed titles.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-09",
+     "p": 0.43,
+     "text": "Depreciation expense increased in 2025, primarily due to ongoing capital spending for network upgrades and expansion, partially offset by lower depreciation impacts from our network modernization efforts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000120/t-20251231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-22",
+     "p": 0.37,
+     "text": "The amount of capital expenditures is influenced by demand for services and products, capacity needs and network enhancements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000297/t-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.52,
+     "text": "Subsequently, on August 25, 2023, we and the Sellers entered into Amendments No. 1 to the Amended and Restated License Purchase Agreements, whereby we deferred the closings of certain additional licenses in Chicago and Dallas into the second closing tranche.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.26,
+     "text": "The licenses are subject to an exclusive leasing arrangement between us and Comcast entered into contemporaneously with the Comcast License Purchase Agreement.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.42,
+     "text": "We are consistently deploying new network architecture and technologies to secure our leadership in both fifth-generation (5G) and fourth-generation (4G) wireless networks.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000116/vz-20250930.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-17",
+     "p": 0.35,
+     "text": "We record property, plant and equipment at cost.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000007/vz-20251231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-11-06",
+     "p": 0.38,
+     "text": "Additionally, the co-production partnership is expected to create a K-drama pipeline for HBO Max globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000213/a992wbd3q25shareholderle.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-05-06",
+     "p": 0.31,
+     "text": "We are also excited to continue our expansion into the telenovela space, with the revival of the popular Dona Beja series in Brazil.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000055/a992wbd1q26earningsshare.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-05",
+     "p": 0.77,
+     "text": "Increased Investment in Technical Infrastructure: We continue to invest in capital expenditures as we scale our technical infrastructure, in particular for AI, to meet the demand of our users and enterprise customers and to support research internally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.59,
+     "text": "◦other technical infrastructure operations costs, including energy, equipment, and network capacity costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-29",
+     "p": 0.52,
+     "text": "This reflects our expectations for higher component pricing this year and, to a lesser extent, additional data center costs to support future year capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-30",
+     "p": 0.41,
+     "text": "In particular, we have significantly increased our infrastructure investments in connection with our AI initiatives, including third-party cloud capacity arrangements and investments in servers, data centers, and network infrastructure, and expect our investments to continue to increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "DIS",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-11-13",
+     "p": 0.67,
+     "text": "Even when inflationary pressures moderate, we expect certain costs, such as for labor, to remain elevated.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-27",
+     "p": 0.71,
+     "text": "These increased competitive pressures have resulted in, and could continue to result in, increased costs, including with respect to talent and intellectual property rights.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000020/wbd-20251231.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-05",
+     "p": 0.26,
+     "text": "We are incurring significant and increasing costs and new liabilities, including contingent liabilities, to build and maintain infrastructure to support cloud computing services, invest in cybersecurity, and hire talent.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.51,
+     "text": "Our capital liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and UScellular and investments in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.46,
+     "text": "Our liquidity requirements for capital expenditures have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint, which is…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-30",
+     "p": 0.9,
+     "text": "We have also entered into an agreement to provide up to $33.3 billion of future backstops to support the build-out of data center and energy supply infrastructure, subject to finalization of terms with data center providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.74,
+     "text": "We have also entered into an agreement to provide an estimated $24.1 billion of future backstops to support the build-out of data center and energy supply infrastructure, subject to finalization of terms with data center providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-17",
+     "p": 0.7,
+     "text": "We also continue to expand our network coverage by partnering with satellite providers to enhance off-grid emergency and text messaging services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000007/vz-20251231.htm"
+    },
+    {
+     "symbol": "VZ",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.34,
+     "text": "As of September 30, 2025, Verizon had 28 renewable energy purchase agreements with third parties for a total of approximately 3.7 gigawatts of anticipated renewable energy capacity across multiple states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000116/vz-20250930.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-05",
+     "p": 0.67,
+     "text": "The projected increase in capital expenditures is due to higher spending at Experiences, attributable to theme park and resort expansion and new attractions, partially offset by lower spending on cruise ship fleet expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+    },
+    {
+     "symbol": "DIS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-05-06",
+     "p": 0.47,
+     "text": "The projected increase in capital expenditures is primarily due to higher spending at Experiences, attributable to theme park and resort expansion and new attractions, partially offset by lower spending on cruise ship fleet expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000037/dis-20260328.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.53,
+     "text": "We make investments in land, buildings, and servers and network equipment through purchases of property and equipment and lease arrangements to provide capacity for the growth of our services and products.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+     "symbol": "GOOGL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-05",
+     "p": 0.53,
+     "text": "The costs associated with operating our technical infrastructure - depreciation, energy, equipment, and network capacity - are expected to significantly increase as developing and serving AI offerings require more compute power than our historical consumer and enterprise offerings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-30",
+     "p": 0.5,
+     "text": "These commitments are mostly related to third-party cloud capacity arrangements and continued investments in servers and network infrastructure, data centers, and consumer hardware products in Reality Labs, with approximately $42.25 billion and $47.65 billion due in 2026 and 2027, respectively.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm"
+    },
+    {
+     "symbol": "META",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-30",
+     "p": 0.41,
+     "text": "In particular, we have significantly increased our infrastructure investments in connection with our AI initiatives, including third-party cloud capacity arrangements and investments in servers, data centers, and network infrastructure, and expect our investments to continue to increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.51,
+     "text": "Our capital liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and UScellular and investments in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.46,
+     "text": "Our liquidity requirements for capital expenditures have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint, which is…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "NFLX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-01-23",
+     "p": 0.29,
+     "text": "We have obtained commitments from financing sources to provide up to a $42.2 billion senior unsecured bridge term loan facility, and we have entered into a $5 billion senior unsecured revolving credit facility and a $20 billion senior unsecured delayed draw term loan facility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm"
+    },
+    {
+     "symbol": "T",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-22",
+     "p": 0.26,
+     "text": "Capital investment includes capital expenditures and cash paid for vendor financing ($0.4 billion in 2Q26, $0.2 billion in 2Q25).",
+     "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000294/t-2q2026exhibit991.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.51,
+     "text": "Our capital liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and UScellular and investments in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.46,
+     "text": "Our liquidity requirements for capital expenditures have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure, the integration of the networks, spectrum, technology, personnel and customer base of T-Mobile and Sprint, which is…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369925000154/tmus-20250930.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "TMUS",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-23",
+     "p": 0.37,
+     "text": "On May 30, 2025, we entered into a License and Unit Purchase Agreement with NEWLEVEL IV, L.P. and NEWLEVEL, LLC, both of which are affiliates of Grain Management, LLC (“Grain”), pursuant to which we will sell our 800 MHz spectrum licenses in exchange for cash consideration of $2.9 billion and the receipt of Grain’s…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-27",
+     "p": 0.38,
+     "text": "In 2025, we increased the issuance capacity under the commercial paper program from $1,000 million to $2,000 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000020/wbd-20251231.htm"
+    },
+    {
+     "symbol": "WBD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-06",
+     "p": 0.31,
+     "text": "In March 2025, we increased the issuance capacity under the commercial paper program from $1.0 billion to $2.0 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710725000216/wbd-20250930.htm"
+    }
+   ]
+  }
+ }
+}

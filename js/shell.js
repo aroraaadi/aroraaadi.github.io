@@ -37,6 +37,7 @@ const SECTIONS = [
       ["Vol engine", "research/volengine.html"],
       ["Revisions", "research/revisions.html"],
       ["Earnings calls", "research/transcripts.html"],
+      ["Demand tree", "research/demand.html"],
       ["Small caps", "research/smallcap.html"],
     ],
   },

@@ -1,0 +1,3909 @@
+{
+ "sector": "Real Estate",
+ "periods": {
+  "2022": {
+   "unspecified": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-04",
+     "p": 0.74,
+     "text": "Adverse global economic conditions like the ones we are currently experiencing with global inflation, the increased cost of power, and supply chain issues have created, and in the future may increase, risk to our business and financial outlook.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.63,
+     "text": "This could have a negative impact on the available utilization capacity of a given IBX data center, which could have a negative impact on our ability to grow revenues, affecting our financial performance, results of operations and cash flows.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-19",
+     "p": 0.84,
+     "text": "“The need for resilience in the supply chain continues to drive record demand despite today’s economic and geopolitical risks,” said Hamid R. Moghadam, co-founder and CEO, Prologis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022014685/pld-ex992_6.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.46,
+     "text": "In October 2022, we entered into an agreement with Stonepeak for Stonepeak to acquire additional common equity and mandatorily preferred equity interests in our U.S. data center business for total aggregate consideration of $570.0 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000118/amt-20220930.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.52,
+     "text": "We also had an increase of capital expenditures compared to 2021 to support various growth initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000033/cbre-20220930.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-03-01",
+     "p": 0.3,
+     "text": "As of December 31, 2021, we had $1.9 billion of capacity remaining under the 2021 program for a total capacity of approximately $1.98 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000010/cbre-20211231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.38,
+     "text": "We expect to incur additional operating expenses as we continue to expand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022016456/dlr-20220930x10q.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-17",
+     "p": 0.32,
+     "text": "“Demand for data center solutions remains robust, and we are investing organically as well as strategically to expand our global platform to provide customers the capacity and communities they require to execute their digital transformation strategies around the world.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022001343/dlr-20220217xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-27",
+     "p": 0.95,
+     "text": "In May, Equinix closed the acquisition of four data centers from Empresa Nacional De Telecomunicaciones S.A. (\"Entel\"), a leading Chilean telecommunications provider (the \"Entel Chile Acquisition\"), extending Platform Equinix® into Chile and bringing its global footprint to 70 metros across 31 countries.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000156459022026686/d323760dex991.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.81,
+     "text": "In March, Equinix announced its planned expansion into Chile through the intended acquisition of multiple data centers from Empresa Nacional De Telecomunicaciones S.A. (\"Entel\"), a leading Chilean telecommunications provider.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000156459022016068/d356545dex991.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-05",
+     "p": 0.36,
+     "text": "In April 2022, we amended and restated our unsecured credit facility, or our new credit facility, in order to increase the borrowing capacity to $4.25 billion and extend the initial term to June 2026 with two six-months extensions that can be exercised at our option.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672822000056/o-20220331.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-28",
+     "p": 0.81,
+     "text": "In June, we terminated our global senior credit facility (the “2019 Global Facility”) and entered into the 2022 Global Facility with a borrowing capacity of up to $3.0 billion and an extended initial maturity date of June 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022035526/pld-10q_20220930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-19",
+     "p": 0.41,
+     "text": "“Additionally, our embedded lease mark-to-market continued to expand to 62%, and we have substantially insulated our earnings and equity from foreign currency movements over the next several years.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022034581/pld-ex992_7.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-22",
+     "p": 0.84,
+     "text": "Our aggregate 4.6 million net rentable square foot pipeline of development and expansion facilities includes 1.3 million in California, 0.7 million in Florida, 0.5 million in Maryland, 0.3 million each in New Jersey, Texas and Washington, 0.2 million each in Hawaii, Michigan, Minnesota and New York and 0.4 million in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000009/psa-022222xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-03",
+     "p": 0.83,
+     "text": "Our aggregate 4.8 million net rentable square foot pipeline of development and expansion facilities includes 1.2 million in California, 0.6 million in Florida, 0.5 million in Texas, 0.4 million in Maryland, 0.3 million each in New Jersey and Washington, 0.2 million each in Hawaii, Michigan, Nevada and New York, and…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000017/psa-050322xex99_1.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.31,
+     "text": "At June 30, 2022, we had an aggregate available borrowing capacity of $7.3 billion under the Credit Facility and the Supplemental Facility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837022012019/spg-20220630x10q.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.6,
+     "text": "As of June 30, 2022, we had $2.7 billion of undrawn capacity on our unsecured revolving credit facility with $45.6 million borrowings outstanding and an additional $25.0 million restricted to support outstanding letters of credit.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026022000147/vtr-20220630.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.43,
+     "text": "As of December 31, 2021, we had $2.7 billion of undrawn capacity on our New Credit Facility with $56.4 million borrowings outstanding and an additional $24.9 million restricted to support outstanding letters of credit.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026022000057/vtr-20211231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-10",
+     "p": 0.63,
+     "text": "Further, we entered into a forward purchase agreement to acquire an additional community currently under development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000030/a1q22earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-11-07",
+     "p": 0.57,
+     "text": "StoryPoint Senior Living As previously announced, we entered into an agreement to expand our relationship with StoryPoint Senior Living, a preeminent senior living operator based in Brighton, Michigan, through the acquisition of 33 communities throughout Michigan, Ohio and Tennessee under an aligned RIDEA 3.0 contract.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000059/a3q22earningsrelease991.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022015409/dlr-20221026xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022016456/dlr-20220930x10q.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.74,
+     "text": "In October 2021, we entered into an agreement to form an additional joint venture in the form of a limited liability partnership with PGIM Real Estate, to further expand our xScale data center portfolio in Asia-Pacific (the \"Asia-Pacific 2 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022003171/eqix-20211231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.73,
+     "text": "•In March, we entered into an agreement to sell the Mexico 3 (\"MX3\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.71,
+     "text": "For example, costs for construction materials in our development business have increased as a result of inflation relating to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000027/cbre-20220630.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-09",
+     "p": 0.68,
+     "text": "For example, input costs for construction materials in our development business have increased as a result of inflation related to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000018/cbre-20220331.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-26",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022015409/dlr-20221026xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022016456/dlr-20220930x10q.htm"
+    }
+   ],
+   "labor": [
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.71,
+     "text": "For example, costs for construction materials in our development business have increased as a result of inflation relating to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000027/cbre-20220630.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-09",
+     "p": 0.68,
+     "text": "For example, input costs for construction materials in our development business have increased as a result of inflation related to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000018/cbre-20220331.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.68,
+     "text": "We have experienced recent inflationary impacts on our cost of operations, including labor, utilities and repairs and maintenance, and costs of development and expansion activities, and we may continue to experience such impacts in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000036/psa-20220930.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.89,
+     "text": "During 2021, a broader macro labor shortage drove increased labor costs at our communities, resulting in continued decline in NOI compared to 2020.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026022000057/vtr-20211231.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-17",
+     "p": 0.86,
+     "text": "Operating Expenses: A tight labor market, and increased staff absences due to COVID-19 protocols, have driven elevated labor and agency costs in the first quarter 2022 to date.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000115752322000217/a52581193ex99_1.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-05",
+     "p": 0.71,
+     "text": "For example, costs for construction materials in our development business have increased as a result of inflation relating to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000027/cbre-20220630.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-05-09",
+     "p": 0.68,
+     "text": "For example, input costs for construction materials in our development business have increased as a result of inflation related to supply chain issues and worker shortages.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811822000018/cbre-20220331.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-04",
+     "p": 0.81,
+     "text": "These Joint Ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the xScale sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.8,
+     "text": "While we are experiencing some construction delays, including those due to supply chain impacts from the COVID-19 pandemic, to date, the construction delays and additional costs are insignificant relative to the overall project duration and budget.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022003171/eqix-20211231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000118/amt-20220930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022016456/dlr-20220930x10q.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.72,
+     "text": "The facilities under \"expansion in process\" represent those facilities where construction is in process at June 30, 2022, and together with additional future expansion activities primarily related to our Same Store Facilities at June 30, 2022, we expect to add a total of 2.8 million net rentable square feet of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000029/psa-20220630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.64,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at September 30, 2022, and together with additional future expansion activities primarily related to our Same Store Facilities at September 30, 2022, we expect to add a total of 3.0 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000036/psa-20220930.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.43,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $891 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837022016109/spg-20220930x10q.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-11-07",
+     "p": 0.34,
+     "text": "(1) Includes development projects (construction in progress, development loans and in-substance real estate) and excludes redevelopments and expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000059/a3q22supplement992.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-05-10",
+     "p": 0.29,
+     "text": "Note: (1) Includes development projects (construction in progress, development loans and in-substance real estate) and excludes redevelopments and expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000030/a1q22supplement992.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-04",
+     "p": 0.81,
+     "text": "These Joint Ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the xScale sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.4,
+     "text": "Stonepeak Transaction—In July 2022, in connection with the funding of the CoreSite Acquisition, we entered into an agreement with certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles, collectively, “Stonepeak”) for Stonepeak to acquire a 29% noncontrolling ownership interest in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000118/amt-20220930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.28,
+     "text": "During the third quarter, in connection with the funding of the acquisition of CoreSite Realty Corporation (“CoreSite,” and the acquisition, the “CoreSite Acquisition”), the Company entered into an agreement pursuant to which certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000115/pressreleaseq32022.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-09",
+     "p": 0.33,
+     "text": "In April 2021, we increased our available liquidity by entering into a second global senior credit facility with an available borrowing capacity of $1.0 billion and we terminated the $500 million multi-currency term loan.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022004436/pld-10k_20211231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-04",
+     "p": 0.44,
+     "text": "• Liquidity profile remains exceptional at quarter end, approaching $2.0 billion of combined proceeds from unsettled equity issuances and expected dispositions and loan payoffs and providing significant investment capacity at an attractive cost of capital • Additionally, in June 2022 we closed on an amended $5.2…",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000119312522257269/d250345dex991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-09",
+     "p": 0.38,
+     "text": "As of June 30, 2022, we have total near-term available liquidity of approximately $4.1 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000048/well-20220630.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2022-11-04",
+     "p": 0.81,
+     "text": "These Joint Ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the xScale sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.3,
+     "text": "Looking ahead, we are excited about our positioning as the 5G ecosystem develops, leveraging our distributed portfolio of tower and land assets, together with our data center business, to support the networks of the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000115/pressreleaseq32022.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000118/amt-20220930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.96,
+     "text": "Finally, during the first quarter, BAM Digital Realty, a 50/50 joint venture between Digital Realty and Brookfield Infrastructure Partners, acquired a land parcel in Chennai, India for $34 million, of which Digital Realty’s pro rata share was approximately $17 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022006301/dlr-20220428xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-28",
+     "p": 0.37,
+     "text": "(7) Site was acquired by BAM Digital Realty, a 50/50 joint venture between Digital Realty and Brookfield Infrastructure Partners.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022006301/dlr-20220428xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.74,
+     "text": "In October 2021, we entered into an agreement to form an additional joint venture in the form of a limited liability partnership with PGIM Real Estate, to further expand our xScale data center portfolio in Asia-Pacific (the \"Asia-Pacific 2 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022003171/eqix-20211231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.73,
+     "text": "•In March, we entered into an agreement to sell the Mexico 3 (\"MX3\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828022028466/eqix-20220930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-03",
+     "p": 0.41,
+     "text": "As we look to continue to expand geographically across Europe, we hope to partner with new multinational clients that seek a real estate partner with an expanding geographic footprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672822000121/o-20220930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-08-04",
+     "p": 0.41,
+     "text": "Equally, as we look to continue to expand geographically across Europe, we hope to partner with new multinational clients that seek a real estate partner with an expanding geographic footprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672822000103/o-20220630.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-19",
+     "p": 0.66,
+     "text": "“With our well-positioned portfolio, irreplaceable land bank, abundant investment capacity and differentiated customer solutions, we expect to continue to outperform while delivering exceptional customer service.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022014685/pld-ex992_6.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-28",
+     "p": 0.27,
+     "text": "The Duke portfolio was primarily comprised of logistics real estate assets, including approximately 480 industrial operating properties, totaling 142 million square feet, which were highly complementary to our U.S. portfolio in terms of product quality, location and growth potential.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022035526/pld-10q_20220930.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-06-07",
+     "p": 0.44,
+     "text": "We use REVPOR and SS REVPOR to evaluate the revenue- generating capacity and profit potential of its seniors housing operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000119312522168606/d306291dex991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-11-07",
+     "p": 0.37,
+     "text": "We use REVPOR and SS REVPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670422000059/a3q22earningsrelease991.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-01",
+     "p": 0.72,
+     "text": "Our ability to do so continues to be challenged by various constraints such as difficulty in finding projects that meet our risk-adjusted yield expectations, and challenges in obtaining building permits for self-storage facilities in certain municipalities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331122000036/psa-20220930.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-11-04",
+     "p": 0.42,
+     "text": "The credit facility also includes an accordion feature that permits us to increase our aggregate borrowing capacity thereunder to up to $3.75 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026022000167/vtr-20220930.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-18",
+     "p": 0.4,
+     "text": "The New Credit Facility also includes an accordion feature that permits us to increase our aggregate borrowing capacity thereunder to up to $3.75 billion, subject to the satisfaction of certain conditions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026022000057/vtr-20211231.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-07-28",
+     "p": 0.28,
+     "text": "The data center campus will support the development of up to 20 megawatts of IT load.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837022011281/dlr-20220728xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-02-16",
+     "p": 0.6,
+     "text": "Equinix continued to organically expand its market-leading footprint with 41 major projects underway across 28 metros in 19 countries, representing over 20,000 cabinets of retail colocation space and over 80 megawatts of xScale capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000156459022005381/d318331dex991.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.58,
+     "text": "In April, Equinix completed its South Korean joint venture with GIC, which is expected to provide more than 45 megawatts of capacity to the Seoul market.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000156459022016068/d356545dex991.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-27",
+     "p": 0.4,
+     "text": "Stonepeak Transaction—In July 2022, in connection with the funding of the CoreSite Acquisition, we entered into an agreement with certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles, collectively, “Stonepeak”) for Stonepeak to acquire a 29% noncontrolling ownership interest in…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000118/amt-20220930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.28,
+     "text": "During the third quarter, in connection with the funding of the acquisition of CoreSite Realty Corporation (“CoreSite,” and the acquisition, the “CoreSite Acquisition”), the Company entered into an agreement pursuant to which certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles,…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000115/pressreleaseq32022.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2022-02-25",
+     "p": 0.33,
+     "text": "We believe carriers will be compelled to deploy additional equipment on existing networks while also rolling out more advanced wireless networks to address coverage and capacity needs resulting from this increasing mobile data usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000017/amt-20211231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.32,
+     "text": "5G is ramping up in the U.S. and Europe today, while 4G coverage and densification initiatives continue to grow in earlier stage markets, and it is clear to us that macro towers will continue to be critical infrastructure for carrier network investments over the next decade and beyond.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000065/pressreleaseq12022.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2022-10-28",
+     "p": 0.27,
+     "text": "The Duke portfolio was primarily comprised of logistics real estate assets, including approximately 480 industrial operating properties, totaling 142 million square feet, which were highly complementary to our U.S. portfolio in terms of product quality, location and growth potential.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459022035526/pld-10q_20220930.htm"
+    }
+   ],
+   "network_spectrum": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-04-27",
+     "p": 0.32,
+     "text": "5G is ramping up in the U.S. and Europe today, while 4G coverage and densification initiatives continue to grow in earlier stage markets, and it is clear to us that macro towers will continue to be critical infrastructure for carrier network investments over the next decade and beyond.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000065/pressreleaseq12022.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2022-10-27",
+     "p": 0.3,
+     "text": "Looking ahead, we are excited about our positioning as the 5G ecosystem develops, leveraging our distributed portfolio of tower and land assets, together with our data center business, to support the networks of the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350722000115/pressreleaseq32022.htm"
+    }
+   ]
+  },
+  "2023": {
+   "labor": [
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-27",
+     "p": 0.78,
+     "text": "We have experienced delays in construction activity in our markets due to government restrictions in specific locations and as a result of the availability of labor, and these delays have impacted and are continuing to impact some of our anticipated deliveries to our customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023002087/dlr-20221231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-27",
+     "p": 0.73,
+     "text": "We may continue to experience delays in construction activity, even after government restrictions are eased and construction labor becomes more readily available, due to increased safety protocols implemented in response to the COVID-19 pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023002087/dlr-20221231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-08-04",
+     "p": 0.93,
+     "text": "We are currently experiencing permitting delays in most metros due to reduced production from labor availability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023027511/eqix-20230630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-30",
+     "p": 0.68,
+     "text": "We have experienced recent inflationary impacts on our cost of operations including labor, utilities, and repairs and maintenance, and costs of development and expansion activities, and we may continue to experience such impacts in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000096/psa-20230930.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-23",
+     "p": 0.71,
+     "text": "These risks, and the potential impact thereof, may be exacerbated by the volume and complexity of such activity, as well as inflationary pressures, rising interest rates, supply chain disruptions and labor shortages, like those experienced in 2022.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837023001840/spg-20221231x10k.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-10",
+     "p": 0.63,
+     "text": "Increased labor costs and a shortage of available skilled and unskilled workers has and may continue to increase the cost of staffing our or our tenants’, managers’ or borrowers’ workforce, including employees at our senior housing communities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000070/vtr-20221231.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2023-08-04",
+     "p": 0.93,
+     "text": "We are currently experiencing permitting delays in most metros due to reduced production from labor availability.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023027511/eqix-20230630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-30",
+     "p": 0.72,
+     "text": "Our ability to do so continues to be challenged by various constraints such as difficulty in finding projects that meet our risk-adjusted yield expectations and challenges in obtaining building permits for self-storage facilities in certain municipalities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000096/psa-20230930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-07",
+     "p": 0.55,
+     "text": "In January 2023, we entered into a term loan agreement, permitting us to incur multicurrency term loans, up to an aggregate of $1.5 billion in total borrowings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000115/o-20230930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.33,
+     "text": "The Term Loan Agreement also permits us to incur additional term loans, up to an aggregate of $1.5 billion in total borrowings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000044/o-20221231.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-10",
+     "p": 0.29,
+     "text": "The New Credit Agreement also includes an accordion feature that permits us to increase our aggregate borrowings thereunder to up to $1.25 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000070/vtr-20221231.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023016866/dlr-20231026xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.72,
+     "text": "MRS6 can support the development of data center capacity of up to 50 megawatts of IT load to support the increasing demand from cloud service providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023016866/dlr-20231026xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.73,
+     "text": "•In March, we entered into an agreement to sell the Mexico 3 (\"MX3\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023004039/eqix-20221231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-03",
+     "p": 0.62,
+     "text": "Equinix continues to expand its Data Center Services portfolio with four openings in Frankfurt, Paris, Singapore and Sydney, and four newly approved projects in Frankfurt, Lagos, Melbourne and Rio de Janeiro.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000095017023017163/eqix-ex99_1.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-17",
+     "p": 0.43,
+     "text": "Development Starts TEI in third quarter represents investments in data center projects that started this quarter, and includes incremental spend of $161 million related to a prior development start for which square feet was previously reported.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017023053655/pld-ex99_1.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "WELL",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-21",
+     "p": 0.63,
+     "text": "For example, shortages and fluctuations in the price of lumber or in other important raw materials have resulted in and could continue to result in delays in the start or completion of, or increase the cost of, developing one or more of our projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000010/well-20221231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023016866/dlr-20231026xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-09",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023018593/dlr-20230930x10q.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-10",
+     "p": 0.66,
+     "text": "The COVID-19 pandemic, policy and other actions taken in response to the pandemic and other recent events, such the conflict between Russia and Ukraine and supply chain disruptions, have exacerbated, and may continue to exacerbate, increases in the consumer price index.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000070/vtr-20221231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-23",
+     "p": 0.32,
+     "text": "We seek opportunities to invest in and grow our operations through our capital expenditure program, acquisitions and platform expansion initiatives.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000023/amt-20221231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-23",
+     "p": 0.32,
+     "text": "On a fully converted basis, which is expected to occur four years from the date of the initial closing in August 2022, and on the basis of the currently outstanding equity, the Company will hold a controlling ownership interest of approximately 64% in its U.S. data center business, with Stonepeak holding…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000021/pressreleaseq42022.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-27",
+     "p": 0.39,
+     "text": "There was approximately $2.0 billion of capacity remaining under the company’s authorized stock repurchase program as of June 30, 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811823000022/cbre-20230727x8kexx991.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-27",
+     "p": 0.29,
+     "text": "In addition, the Revolving Credit Agreement also includes capacity for letters of credit not to exceed $300.0 million in the aggregate.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000162828023035353/cbre-20230930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-27",
+     "p": 0.91,
+     "text": "The 59 data centers held as investments in unconsolidated entities had an aggregate of approximately 38.2 million rentable square feet.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023002087/dlr-20221231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.78,
+     "text": "In addition, Digital Realty previously announced plans to expand its joint venture in India with Brookfield Infrastructure through the addition of Jio, a Reliance Industries, Ltd. company.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023016866/dlr-20231026xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.73,
+     "text": "Additionally, we entered into lease agreements with various landlords primarily for data center spaces and ground leases which have not yet commenced as of June 30, 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023027511/eqix-20230630.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-25",
+     "p": 0.71,
+     "text": "SX NEXT is leveraging Equinix's next-generation cable landing station architecture in its LA4 Los Angeles IBX data center to boost aggregate capacity on Southern Cross' Trans-Pacific networks by 500%.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000095017023055177/eqix-ex99_1.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.32,
+     "text": "We are also continuing the expansion and incorporation of “Green Lease Clauses” across our leases for access to utility and performance data through lease rollovers, sale-leaseback transactions, and initiatives which allow us to benchmark our properties and work with clients to identify and implement energy…",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000044/o-20221231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-11-06",
+     "p": 0.29,
+     "text": "As we look further to the future, we believe the enhanced scale and diversification afforded by Spirit’s complementary portfolio will support and expand our future growth runway.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000111/o-991q32023.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-14",
+     "p": 0.81,
+     "text": "In June, we terminated our global senior credit facility (the “2019 Global Facility”) and entered into the 2022 Global Facility with a borrowing capacity of up to $3.0 billion and an extended initial maturity date of June 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459023001902/pld-10k_20221231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-14",
+     "p": 0.73,
+     "text": "We also upsized our second global senior credit facility (the “2021 Global Facility”), increasing its borrowing capacity up to $2.0 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459023001902/pld-10k_20221231.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-21",
+     "p": 0.83,
+     "text": "Our aggregate 4.6 million net rentable square foot pipeline of development and expansion facilities includes 1.7 million in California, 0.6 million in Texas, 0.4 million in Maryland, 0.3 million each in Florida and Hawaii, 0.2 million each in New Jersey and Washington, and 0.9 million in other states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000011/psa-22123xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.78,
+     "text": "Our aggregate 4.6 million net rentable square foot pipeline of development and expansion facilities includes 1.6 million in California, 0.9 million in Texas, 0.4 million in Florida, 0.3 million each in Arizona, Hawaii, Maryland and Nevada, 0.2 million in Washington, and 0.4 million in other states.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000095/psa-103023xex99_1.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-03",
+     "p": 0.28,
+     "text": "On June 30, 2023, we had an aggregate available borrowing capacity of approximately $7.4 billion under the Credit Facilities, net of outstanding borrowings of $1.1 billion and letters of credit of $10.0 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837023013069/spg-20230630x10q.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.28,
+     "text": "The Credit Facility has an initial borrowing capacity of $5.0 billion which may be increased in the form of additional commitments in the aggregate not to exceed $1.0 billion, for a total aggregate size of $6.0 billion, subject to obtaining additional lender commitments and satisfying certain customary conditions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837023017324/spg-20230930x10q.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.61,
+     "text": "As of June 30, 2023, we had $2.7 billion of undrawn capacity on our unsecured revolving credit facility with $35.0 million outstanding and an additional $1.2 million restricted to support outstanding letters of credit.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000159/vtr-20230630.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-03",
+     "p": 0.37,
+     "text": "As of September 30, 2023, we had $2.7 billion of undrawn capacity on our unsecured revolving credit facility with $31.7 million outstanding and an additional $1.2 million restricted to support outstanding letters of credit.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000188/vtr-20230930.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-21",
+     "p": 0.31,
+     "text": "Concurrently with the above, Welltower and Integra Healthcare Properties (\"Integra\") entered into master leases for the skilled nursing portfolio.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000010/well-20221231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-21",
+     "p": 0.28,
+     "text": "Concurrently, Welltower and Integra Healthcare Properties (\"Integra\") entered into master leases for the skilled nursing portfolio.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000010/well-20221231.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-17",
+     "p": 0.77,
+     "text": "We expect that we will continue to experience limited availability of power and grid constraints in many markets as well as shortages of associated equipment because of the current high demands and finite nature of these resources.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023004039/eqix-20221231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-27",
+     "p": 0.72,
+     "text": "The parcel has the capacity to support a data center with a total IT load in excess of 40 megawatts and will be interconnected with Digital Realty’s existing Schiphol data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023012400/dlr-20230727xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-26",
+     "p": 0.72,
+     "text": "MRS6 can support the development of data center capacity of up to 50 megawatts of IT load to support the increasing demand from cloud service providers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023016866/dlr-20231026xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-05-03",
+     "p": 0.83,
+     "text": "The new projects, along with existing projects, will bring Equinix's contracted PPA capacity to 715 MW globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000095017023017163/eqix-ex99_1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-17",
+     "p": 0.7,
+     "text": "In the U.S., we purchase nearly 2.5 million megawatt-hours (\"MWh\") of green power annually from a portfolio of renewable energy projects, including 225 MW of wind power under long-term virtual power purchase agreements (\"VPPAs\") located in Texas and Oklahoma.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023004039/eqix-20221231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-14",
+     "p": 0.42,
+     "text": "During 2022, approximately 100 megawatts of solar generation capacity was installed on the roofs within our O&M portfolio.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459023001902/pld-10k_20221231.htm"
+    }
+   ],
+   "construction": [
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-27",
+     "p": 0.78,
+     "text": "We have experienced delays in construction activity in our markets due to government restrictions in specific locations and as a result of the availability of labor, and these delays have impacted and are continuing to impact some of our anticipated deliveries to our customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023002087/dlr-20221231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-27",
+     "p": 0.73,
+     "text": "We may continue to experience delays in construction activity, even after government restrictions are eased and construction labor becomes more readily available, due to increased safety protocols implemented in response to the COVID-19 pandemic.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023002087/dlr-20221231x10k.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.86,
+     "text": "(1)Includes the construction of approximately 2,650 to 3,750 communications sites globally and approximately $360 million of anticipated spend related to data center assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000161/amt-20230930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000161/amt-20230930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-09",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023018593/dlr-20230930x10q.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-02",
+     "p": 0.72,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at June 30, 2023, and together with additional future expansion activities primarily related to our Same Store Facilities at June 30, 2023, we expect to add a total of 2.3 million net rentable square feet of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000080/psa-20230630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-30",
+     "p": 0.64,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at September 30, 2023, and together with additional future expansion activities primarily related to our Same Store Facilities at September 30, 2023, we expect to add a total of 2.2 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331123000096/psa-20230930.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-05-04",
+     "p": 0.43,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $974 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837023007951/spg-20230331x10q.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-02",
+     "p": 0.3,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $1.3 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837023017324/spg-20230930x10q.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.34,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in-substance real estate) but excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000029/a3q23supplement992.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-31",
+     "p": 0.34,
+     "text": "(1) Includes development projects (construction in progress, development loans and in-substance real estate) and excludes redevelopments and expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000023/a2q23supplement992.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-27",
+     "p": 0.69,
+     "text": "The long-term trends of e-commerce adoption and supply chain resiliency continue to drive the need for increased warehouse space to store and distribute goods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017023055980/pld-20230930.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2023-02-10",
+     "p": 0.63,
+     "text": "Increased labor costs and a shortage of available skilled and unskilled workers has and may continue to increase the cost of staffing our or our tenants’, managers’ or borrowers’ workforce, including employees at our senior housing communities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026023000070/vtr-20221231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.86,
+     "text": "(1)Includes the construction of approximately 2,650 to 3,750 communications sites globally and approximately $360 million of anticipated spend related to data center assets.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000161/amt-20230930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-26",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000161/amt-20230930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-07-27",
+     "p": 0.53,
+     "text": "In Amsterdam during the second quarter, Digital Realty acquired the land and building shell of a previously leased 15 megawatts data center (AMS7) for €17 million or $18 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023012400/dlr-20230727xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-11-09",
+     "p": 0.3,
+     "text": "In July 2023, we received approximately $0.7 billion of gross proceeds from the contribution of our data centers to the joint venture with GI Partners for a net gain on sale of approximately $238 million and we received approximately $1.3 billion of gross proceeds from the contribution of our data centers to the…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023018593/dlr-20230930x10q.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-17",
+     "p": 0.73,
+     "text": "•In March, we entered into an agreement to sell the Mexico 3 (\"MX3\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023004039/eqix-20221231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-10-27",
+     "p": 0.38,
+     "text": "•In March, we sold the Mexico 3 (\"MX3\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828023035406/eqix-20230930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-22",
+     "p": 0.32,
+     "text": "As we look to continue to expand geographically across Europe, we focus upon building relationships with new multinational clients that seek a real estate partner with an expanding geographic footprint.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672823000044/o-20221231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-17",
+     "p": 0.32,
+     "text": "We remain focused on capturing our embedded lease mark-to-market, building out our land bank into a favorable future supply environment, and partnering with our customers to address their most critical pain points.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017023053655/pld-ex99_2.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-10-30",
+     "p": 0.37,
+     "text": "We use RevPOR, ExpPOR, SS RevPOR and SS ExpPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000029/a3q23earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2023-02-15",
+     "p": 0.37,
+     "text": "We use REVPOR and SS REVPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000006/a4q22earningsrelease991.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-23",
+     "p": 0.5,
+     "text": "In 2022, in connection with the funding of the CoreSite Acquisition, we entered into agreements with certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles, collectively, “Stonepeak”) for Stonepeak to acquire a noncontrolling ownership interest in our U.S. data center business for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000023/amt-20221231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-23",
+     "p": 0.44,
+     "text": "In July 2022, in connection with the funding of the CoreSite Acquisition, we entered into an agreement pursuant to which certain investment vehicles affiliated with Stonepeak acquired a noncontrolling ownership interest in our U.S. data center business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000023/amt-20221231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-04",
+     "p": 0.31,
+     "text": "We received approximately $743 million of gross proceeds from the contribution of our data centers to the joint venture and the associated financing, and maintained a 35% interest in the joint venture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837023013321/dlr-20230630x10q.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-14",
+     "p": 0.27,
+     "text": "As a result of our low leverage, available liquidity and investment capacity in the co-investment ventures, we have significant capacity to capitalize on opportunistic value-added investments as they arise.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459023001902/pld-10k_20221231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2023-08-01",
+     "p": 0.38,
+     "text": "As of June 30, 2023, we have total near-term available liquidity of approximately $6.3 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670423000025/well-20230630.htm"
+    }
+   ],
+   "vehicles_aircraft": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2023-02-23",
+     "p": 0.5,
+     "text": "In 2022, in connection with the funding of the CoreSite Acquisition, we entered into agreements with certain investment vehicles affiliated with Stonepeak Partners LP (such investment vehicles, collectively, “Stonepeak”) for Stonepeak to acquire a noncontrolling ownership interest in our U.S. data center business for…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000023/amt-20221231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2023-02-23",
+     "p": 0.44,
+     "text": "In July 2022, in connection with the funding of the CoreSite Acquisition, we entered into an agreement pursuant to which certain investment vehicles affiliated with Stonepeak acquired a noncontrolling ownership interest in our U.S. data center business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350723000023/amt-20221231.htm"
+    }
+   ]
+  },
+  "2024": {
+   "construction": [
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-23",
+     "p": 0.93,
+     "text": "During the pandemic and its related and other ongoing global supply chain issues, we have actively monitored our vendors and suppliers and remain in frequent communication with customers, contractors and suppliers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-23",
+     "p": 0.9,
+     "text": "We have experienced delays in construction activity in certain markets as a result of the availability of labor, and these delays have impacted and are continuing to impact some of our anticipated deliveries to our customers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-10-30",
+     "p": 0.88,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, unexpected power constraints, and development and construction delays, including those we are…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044355/eqix-20240930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-05-08",
+     "p": 0.82,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024021647/eqix-20240331.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-30",
+     "p": 0.96,
+     "text": "(2)Includes the construction of 2,500 to 3,500 communications sites globally, including approximately 800 in India, and $480 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000103/pressreleaseq22024.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-29",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000130/amt-20240930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-01",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024014149/dlr-20240930x10q.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-23",
+     "p": 0.44,
+     "text": "Equipment pool and other inventory represent the value of long-lead equipment and materials required for timely deployment and delivery of data center construction fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-30",
+     "p": 0.43,
+     "text": "Since its Q2 earnings call, the company leased an incremental 20 megawatts of capacity into its Seoul 2 (SL2x) asset, bringing total xScale leasing to 385 megawatts globally with nearly 90% of its operational and under-construction capacity leased.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044328/eqix-093024xpruploadhyperl.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.72,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at June 30, 2024, and together with additional future expansion activities primarily related to our Same Store Facilities at June 30, 2024, we expect to add a total of 1.6 million net rentable square feet of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331124000167/psa-20240630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.64,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at September 30, 2024, and together with additional future expansion activities primarily related to our Same Store Facilities at September 30, 2024, we expect to add a total of 1.7 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331124000193/psa-20240930.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-05-07",
+     "p": 0.43,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $931 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837024007058/spg-20240331x10q.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-08",
+     "p": 0.3,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $1.3 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837024014946/spg-20240930x10q.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-29",
+     "p": 0.34,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in-substance real estate) but excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670424000030/a2q24supplement992.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-13",
+     "p": 0.3,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in-substance real estate) and excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670424000004/a4q23supplement992.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-10-30",
+     "p": 0.88,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, unexpected power constraints, and development and construction delays, including those we are…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044355/eqix-20240930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-05-08",
+     "p": 0.82,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024021647/eqix-20240331.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-15",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001242/dlr-20240215xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-23",
+     "p": 0.86,
+     "text": "An additional 25 data centers in Europe totaling approximately 2.6 million square feet are exposed to 100-year flood zones.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-05-08",
+     "p": 0.64,
+     "text": "We have entered into joint ventures to develop and operate data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024021647/eqix-20240331.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-07",
+     "p": 0.5,
+     "text": "This increased power consumption has driven us to build out our new IBX data centers to support power and cooling needs twice that of previous IBX data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024035638/eqix-20240630.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-25",
+     "p": 0.3,
+     "text": "This includes the development of data centers with an aggregate TEI of $1.1 billion, on a consolidated basis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024117407/pld-20240930.htm"
+    }
+   ],
+   "raw_materials": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-15",
+     "p": 0.93,
+     "text": "(3) Represents long-lead time equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001242/dlr-20240215xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-01",
+     "p": 0.75,
+     "text": "(5) Represents long-lead equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024014149/dlr-20240930x10q.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "AMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-27",
+     "p": 0.68,
+     "text": "Current and future inflationary effects may be driven by, among other things, supply chain disruptions, governmental stimulus or fiscal policies, as well as ongoing global military conflicts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000011/amt-20231231.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-20",
+     "p": 0.82,
+     "text": "Less available and more expensive debt capital constrained asset and fund monetization and our ability to source new debt capital to fund development projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811824000006/cbre-20231231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-23",
+     "p": 0.9,
+     "text": "However, the full extent and impact of global supply chain constraints on our future supply chain and procurement process cannot be reasonably estimated at this time and it could have a material adverse impact on our business and financial condition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-23",
+     "p": 0.85,
+     "text": "Although to date, we have been able to manage through disruptions in our supply chain and procurement process due to the pandemic and other global events, continuing disruptions could have a material adverse impact on our business and financial condition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-16",
+     "p": 0.81,
+     "text": "Additionally, any sustained military action in the area of the Red Sea could contribute to supply chain challenges.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024005350/eqix-20231231.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-22",
+     "p": 0.76,
+     "text": "As have many companies, we and our third party vendors have been impacted by security incidents in the past and will likely continue to experience security incidents of varying degrees.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837024001532/spg-20231231x10k.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-15",
+     "p": 0.76,
+     "text": "The COVID-19 pandemic, policy and other actions taken in response to the pandemic and other recent events, such as the conflicts between Russia and Ukraine and in the Middle East and supply chain disruptions, have exacerbated, and may continue to exacerbate, increases in the consumer price index.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000067/vtr-20231231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-07-30",
+     "p": 0.68,
+     "text": "Ltd. and ATC TIPL, which holds our operations in India, we entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT will acquire a 100% ownership interest in ATC TIPL (the “Pending ATC TIPL…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000105/amt-20240630.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-27",
+     "p": 0.63,
+     "text": "Ltd. and ATC Telecom Infrastructure Private Limited (“ATC TIPL”), which holds our operations in India, we entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT will acquire a 100% ownership…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000011/amt-20231231.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-25",
+     "p": 0.4,
+     "text": "•Acquisitions and Investments – During the second quarter, CBRE made acquisitions totaling approximately $290.9 million in cash and non-cash consideration, primarily for Direct Line Global, a leading provider of technical facilities management services for data center owners and operators.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811824000021/cbre-20240725x8kexx991.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-20",
+     "p": 0.31,
+     "text": "The increase is due to higher compensation expense, higher infrastructure costs supporting business growth, charges associated with the integration of acquisitions and expenses from acquired entities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811824000006/cbre-20231231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-23",
+     "p": 0.45,
+     "text": "Two U.S. data centers totaling approximately 0.5 million square feet are exposed to 100-year flood zones designated by the U.S. Federal Emergency Management Agency as special flood hazard areas.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-01",
+     "p": 0.38,
+     "text": "We expect to incur additional operating expenses as we continue to expand.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024014149/dlr-20240930x10q.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-07",
+     "p": 0.73,
+     "text": "Additionally, we entered into lease agreements with various landlords primarily for data center spaces and ground leases which have not yet commenced as of June 30, 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024035638/eqix-20240630.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.66,
+     "text": "•In August, we announced our plans for expansion of our footprint in Mumbai, India, to address the country’s rising demand for digital infrastructure.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024005350/eqix-20231231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-06",
+     "p": 0.5,
+     "text": "As of June 30, 2024, our pro-rata share of secured debt of unconsolidated entities was approximately $659.2 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000118/o-20240630.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-05-06",
+     "p": 0.37,
+     "text": "(3) Includes $38.1 million of investments in an unconsolidated U.S. data center joint venture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000072/o-991q12024.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-13",
+     "p": 0.46,
+     "text": "On April 5, 2023, we amended and restated our 2021 global senior credit facility (the \"2021 Global Facility\") as the 2023 Global Facility, increasing its borrowing capacity to $3.0 billion and extended the initial maturity date to June 2027.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024014539/pld-20231231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-13",
+     "p": 0.3,
+     "text": "On August 25, 2023, we amended and restated the Japanese yen revolver, increasing its borrowing capacity for total commitments of ¥58.5 billion ($414 million at December 31, 2023) and extended the initial maturity date to August 2027.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024014539/pld-20231231.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-30",
+     "p": 0.82,
+     "text": "Our aggregate 4.0 million net rentable square foot pipeline of development and expansion facilities includes 1.3 million in Florida, 1.2 million in California, 0.6 million in Texas, and 0.1 million each in Arizona, Colorado, Georgia, Hawaii, Maryland, Nevada, New York, South Carolina, and Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331124000192/psa-103024xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-30",
+     "p": 0.8,
+     "text": "Our aggregate 3.8 million net rentable square foot pipeline of development and expansion facilities includes 1.0 million in Florida, 0.9 million in California, 0.6 million in Texas, 0.3 million in Nevada, 0.2 million each in Arizona and New York, and 0.1 million each in Colorado, Georgia, Hawaii, Maryland, South…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331124000166/psa-73024xex99_1.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-22",
+     "p": 0.32,
+     "text": "The Supplemental Facility, has a borrowing capacity of $3.5 to $4.5 billion during its term and provides for borrowings denominated in U.S. dollars, Euro, Yen, Pounds, Sterling, Canadian dollars and Australian dollars.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837024001532/spg-20231231x10k.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-08",
+     "p": 0.28,
+     "text": "The Credit Facility has an initial borrowing capacity of $5.0 billion which may be increased in the form of additional commitments in the aggregate not to exceed $1.0 billion, for a total aggregate size of $6.0 billion, subject to obtaining additional lender commitments and satisfying certain customary conditions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837024014946/spg-20240930x10q.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-08-02",
+     "p": 0.57,
+     "text": "As of June 30, 2024, we had $2.7 billion of undrawn capacity under our unsecured revolving credit facility with $3.2 million outstanding and an additional $0.8 million restricted to support outstanding letters of credit.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000200/vtr-20240630.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-31",
+     "p": 0.38,
+     "text": "•In May 2024, we entered into a $52.3 million fixed rate mortgage loan, which accrues interest at 6.02%, matures in 2034 and is secured by one outpatient medical building in California.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000248/vtr-20240930.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-15",
+     "p": 0.42,
+     "text": "In April 2022, we closed on an amended $5,200,000,000 unsecured credit facility, increasing our term loan capacity by $500,000,000.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670424000008/well-20231231.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-25",
+     "p": 0.69,
+     "text": "The long-term trends of e-commerce adoption and supply chain resiliency continue to drive the need for increased warehouse space to store and distribute goods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024117407/pld-20240930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-30",
+     "p": 0.96,
+     "text": "(2)Includes the construction of 2,500 to 3,500 communications sites globally, including approximately 800 in India, and $480 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000103/pressreleaseq22024.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-29",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000130/amt-20240930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-23",
+     "p": 0.89,
+     "text": "As of December 31, 2023, the 67 data centers held as investments in unconsolidated entities had an aggregate of approximately 10.7 million rentable square feet, and the 32 parcels of developable land we owned comprised approximately 743 acres.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001575/dlr-20231231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-15",
+     "p": 0.65,
+     "text": "This land can support the development of an additional data center (ATH5) with up to 15 megawatts of IT load.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001242/dlr-20240215xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.46,
+     "text": "In 2023, we opened nine new data centers, inclusive of new xScale sites via our joint ventures.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024005350/eqix-20231231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-16",
+     "p": 0.38,
+     "text": "•In March, we sold the Mexico 3 (\"MX3x\") data center site in connection with the formation of a new joint venture with GIC, to develop and operate xScale data centers in the Americas (the \"AMER 1 Joint Venture\").",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024005350/eqix-20231231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-25",
+     "p": 0.68,
+     "text": "Partnering with the world’s largest institutional investors through co-investment ventures allows us to expand our investment capacity, enhance and diversify our real estate returns and mitigate our exposure to foreign currency movements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024117407/pld-20240930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-16",
+     "p": 0.26,
+     "text": "Total Expected Investment (\"TEI\") represents total estimated cost of development or expansion, including land, development and leasing costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024114848/pld-ex99_1.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-15",
+     "p": 0.47,
+     "text": "We are focused on leveraging our differentiated platform to drive continued organic SHOP performance and investing in senior housing to expand our participation in the compelling multiyear growth opportunity that is underway.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000115752324000251/a53896557ex99_1.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-31",
+     "p": 0.35,
+     "text": "•In April 2024, we entered into an aggregate C$103.0 million ($75.5 million) fixed rate mortgage loans, which accrue interest at a blended rate of 4.90%, mature in 2029 and are secured by two senior housing communities in Canada.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000248/vtr-20240930.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-28",
+     "p": 0.37,
+     "text": "We use RevPOR, ExpPOR, SS RevPOR and SS ExpPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670424000037/a3q24earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-07-29",
+     "p": 0.34,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in-substance real estate) but excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670424000030/a2q24supplement992.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-10-30",
+     "p": 0.88,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, unexpected power constraints, and development and construction delays, including those we are…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044355/eqix-20240930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-11-01",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024014149/dlr-20240930x10q.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-15",
+     "p": 0.65,
+     "text": "This land can support the development of an additional data center (ATH5) with up to 15 megawatts of IT load.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024001242/dlr-20240215xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2024-02-16",
+     "p": 0.65,
+     "text": "In the U.S., we purchase nearly 2.6 million megawatt-hours (\"MWh\") of green power annually from a portfolio of renewable energy projects, utility green tariffs and Renewable Energy Certificates (\"RECs\"), including 225 MW of wind power under long-term power purchase agreements (\"PPAs\") located in Texas and Oklahoma.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024005350/eqix-20231231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-10-30",
+     "p": 0.56,
+     "text": "Through this joint venture, Equinix expects to build new state-of-the-art xScale facilities on multiple campuses across the U.S., each with multi-hundred megawatts of capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044328/eqix-093024xpruploadhyperl.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-01-17",
+     "p": 0.83,
+     "text": "Solar Operating and Development Portfolios – Owned and Managed 4Q 2023 Supplemental Capital Deployment 25 In addition, we acquired a battery energy storage system with 10 MW of capacity in December 2023.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017024004825/pld-ex99_1.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-05-08",
+     "p": 0.82,
+     "text": "These joint ventures could also be negatively impacted by inflation, supply chain issues, an inability to obtain financing on favorable terms or at all, an inability to fill the data center sites with customers as planned, and development and construction delays, including those we are currently experiencing in many…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024021647/eqix-20240331.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-05-03",
+     "p": 0.27,
+     "text": "We received approximately $385 million of gross proceeds from the contribution of our data center to the joint venture and the associated financing and retained a 25% interest in the joint venture.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837024006671/dlr-20240331x10q.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-11-04",
+     "p": 0.36,
+     "text": "(2) The three months ended September 30, 2024 includes £15.4 million of Sterling-denominated investments, €14.3 million of Euro-denominated investments, and $6.5 million of investments in an unconsolidated U.S. data center joint venture, converted at the applicable exchange rates on the funding dates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000127/o-991q32024.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-11-04",
+     "p": 0.34,
+     "text": "The nine months ended September 30, 2024 includes £50.6 million of Sterling-denominated investments, €38.9 million of Euro-denominated investments, and $58.7 million of investments in an unconsolidated U.S. data center joint venture, converted at the applicable exchange rates on the funding dates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000127/o-991q32024.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.72,
+     "text": "Our ability to do so continues to be challenged by various constraints such as difficulty in finding projects that meet our risk-adjusted yield expectations and challenges in obtaining building permits for self-storage facilities in certain municipalities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331124000193/psa-20240930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.39,
+     "text": "•In October, we entered into an agreement to form a joint venture to develop and operate xScale data centers in the Americas region (the \"AMER 3 Joint Venture\"), subject to regulatory approval and other closing conditions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044355/eqix-20240930.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2024-02-21",
+     "p": 0.58,
+     "text": "The 2023 term loan agreement also permits us to incur additional term loans, up to an aggregate of $1.5 billion in total borrowings, pursuant to an accordion expansion feature, which is subject to obtaining lender commitments and other customary conditions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000047/o-20231231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2024-02-21",
+     "p": 0.55,
+     "text": "In January 2023, we entered into a term loan agreement, permitting us to incur multicurrency term loans, up to an aggregate of $1.5 billion in total borrowings.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672824000047/o-20231231.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-05-02",
+     "p": 0.5,
+     "text": "The New Credit Facility also includes an accordion feature that permits us to increase our aggregate borrowing capacity thereunder to up to $3.75 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000139/vtr-20240331.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-31",
+     "p": 0.38,
+     "text": "The revolving credit facility also includes an accordion feature that permits us to increase our aggregate borrowing capacity thereunder to up to $3.75 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026024000248/vtr-20240930.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2024-05-08",
+     "p": 0.68,
+     "text": "Similarly, current relations between the U.S. and China have created increased supply chain risk due to successive U.S. legislation promoting decoupling from China on semiconductors, memory, and specific telecommunications equipment makers, and having to source for alternative suppliers for key components outside of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024021647/eqix-20240331.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2024-10-30",
+     "p": 0.35,
+     "text": "•In April, we sold the Silicon Valley 12 (“SV12”) data center site in connection with the formation of a new joint venture to develop and operate an xScale data center in the Americas region (the “AMER 2 Joint Venture”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024044355/eqix-20240930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2024-02-14",
+     "p": 0.33,
+     "text": "◦In December, Equinix announced plans to expand support for advanced liquid cooling technologies—including direct-to-chip—to more than 100 of its International Business ExchangeTM (IBX®) data centers in more than 45 metros around the world.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828024004799/eqix-123123xpr8kupload.htm"
+    }
+   ]
+  },
+  "2025": {
+   "construction": [
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-25",
+     "p": 0.98,
+     "text": "During the ongoing global supply chain constraints, we have actively monitored our suppliers and remain in frequent communication with customers, contractors and suppliers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-12",
+     "p": 0.7,
+     "text": "In certain instances we have elected to pre-buy certain equipment and materials to mitigate supply chain issues before our construction plans are finalized.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-28",
+     "p": 0.87,
+     "text": "(1)Includes the construction of 1,850 to 2,450 communications sites globally and $600 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000147/pressreleaseq32025.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000149/amt-20250930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.31,
+     "text": "We invest significant capital into new logistics properties through acquisitions and development activity, including both built-to-suit and speculative development and redevelopment of properties into industrial properties and data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025099770/pld-20250630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.72,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at June 30, 2025, and together with additional future expansion activities primarily related to our Same Store Facilities at June 30, 2025, we expect to add a total of 1.2 million net rentable square feet of…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331125000120/psa-20250630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.64,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at September 30, 2025, and together with additional future expansion activities primarily related to our Same Store Facilities at September 30, 2025, we expect to add a total of 1.3 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828025047163/psa-20250930.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-04",
+     "p": 0.38,
+     "text": "We executed over 21 million square feet of leases, opened a fully-leased, new Premium Outlet in the U.S., delivered 16 significant redevelopment projects, including an expansion of a leading Premium Outlet in South Korea, and strengthened our industry-leading balance sheet.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465925009105/tm254065d2_ex99-1.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-06",
+     "p": 0.28,
+     "text": "In addition, we have redevelopment and expansion projects, including the addition of anchors, big box tenants, and restaurants, underway at properties in North America.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465925107395/spg-20250930x10q.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-28",
+     "p": 0.33,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in substance real estate) but excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000018/a1q25supplement992.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-28",
+     "p": 0.29,
+     "text": "(1) Includes development and redevelopment projects (construction in progress, development loans and in substance real estate) and excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000018/a1q25supplement992.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-24",
+     "p": 0.89,
+     "text": "Initially launched with five megawatts of IT load capacity, CGK11 is expected to support up to 32 megawatts.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025005434/dlr-20250424xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-30",
+     "p": 0.8,
+     "text": "◦In April, Equinix announced the signing of its first renewable energy power purchase agreement (PPA) in Japan, securing 30 MW of renewable electricity capacity scheduled to commence in 2028.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025021080/eqix-033125xpr8k.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-16",
+     "p": 0.97,
+     "text": "“We delivered exceptional results this quarter—signing leases totaling 58 million square feet, breaking ground on new build-to-suits with strategic customers and expanding our power capacity to support the growing demand for data centers,” said Dan Letter, president of Prologis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025054485/pld-ex99_2.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-15",
+     "p": 0.46,
+     "text": "“With additional advanced power contracts, Prologis now has a 5.2-gigawatt allocation of utility-fed capacity secured or in advanced stages, which we expect to use to unlock significant data center opportunities.”",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525239551/pld-ex99_2.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.75,
+     "text": "(5) Represents long-lead equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465925104945/dlr-20250930x10q.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-12",
+     "p": 0.76,
+     "text": "•In April, we sold the Silicon Valley 12 (“SV12”) data center site in connection with the formation of a new joint venture (\"JV\") to develop and operate the first xScale data center in the U.S. The facility will be built out in two phases and is expected to provide more than 28 MW of power capacity when completed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.3,
+     "text": "This includes the development of data centers with an aggregate TEI of $0.9 billion, on a consolidated basis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025099770/pld-20250630.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "VTR",
+     "status": "LIVE",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-12",
+     "p": 0.85,
+     "text": "“We expect compelling demand for senior housing to continue because of the secular trend of a large and growing aging population, and supply to remain muted.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000049/fullyear2024earningsrelease.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-28",
+     "p": 0.87,
+     "text": "(1)Includes the construction of 1,850 to 2,450 communications sites globally and $600 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000147/pressreleaseq32025.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000149/amt-20250930.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-01",
+     "p": 0.5,
+     "text": "The initial portfolio includes five operating data centers plus four land sites with access to power for data center development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025006125/dlr-20250331x10q.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-31",
+     "p": 0.45,
+     "text": "The initial portfolio includes five operating data centers plus three land sites with access to power for data center development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465925104945/dlr-20250930x10q.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.57,
+     "text": "◦The company recently announced the advancement of its power strategy in partnership with leading energy companies to develop reliable, sustainability-minded electricity solutions—including expanded utility arrangements, on-site generation technologies and next-generation nuclear energy—to support its global data…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.56,
+     "text": "Partnering with many of the world’s largest institutional investors through co-investment ventures allows us to expand our investment capacity, enhance and diversify our real estate returns and mitigate our exposure to foreign currency movements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-15",
+     "p": 0.26,
+     "text": "Total Expected Investment (\"TEI\") represents total estimated cost of development or expansion, including land, development and leasing costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525239551/pld-ex99_1.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-12",
+     "p": 0.41,
+     "text": "Ventas also has an active pipeline of attractive senior housing investments consistent with the Company’s investment criteria and intends to continue to expand its SHOP footprint and increase its enterprise growth.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000049/fullyear2024earningsrelease.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-13",
+     "p": 0.38,
+     "text": "In September 2024, we provided new secured debt financing of $109.0 million to the owner of a senior housing property, secured by the asset and with additional credit support.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000052/vtr-20241231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-27",
+     "p": 0.67,
+     "text": "Additional Acquisition Pipeline We entered into a definitive agreement to acquire a trophy seniors housing portfolio along the East Coast, including properties in Boston and Westchester County, New York.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000037/a3q25earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-27",
+     "p": 0.37,
+     "text": "We use RevPOR, ExpPOR, SS RevPOR and SS ExpPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000037/a3q25earningsrelease991.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "AMT",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-25",
+     "p": 0.63,
+     "text": "Additionally, certain natural disasters or unforeseen events could lead to supply chain delays or shortages, which could impact our operational and financial performance.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000025/amt-20241231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-25",
+     "p": 0.85,
+     "text": "supply chain constraints on our future supply chain and procurement process cannot be reasonably estimated at this time and it could have a material adverse impact on our business and financial condition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-25",
+     "p": 0.81,
+     "text": "Although to date, we have been able to manage through disruptions in our supply chain and procurement process due to the high demand and other global events, continuing disruptions could have a material adverse impact on our business and financial condition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "These challenges have driven us to invest in and commit to future purchases in advance of our standard practice to mitigate risks associated with these supply chain issues.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000062/eqix-20250930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.87,
+     "text": "These constraints could have a negative impact on our ability to grow revenues, affecting our financial performance, results of operations and cash flows and the growth opportunities presented by the adoption of new technologies, including AI.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000062/eqix-20250930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-04-29",
+     "p": 0.87,
+     "text": "Long-term trends, including the growth of e-commerce and modernization of the supply chain, continue to drive demand toward creating supply chain resiliency through leasing additional space to store and distribute goods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025060107/pld-20250331.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.84,
+     "text": "We remain well positioned to support them as they navigate ongoing supply chain shifts and uncertainty.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-25",
+     "p": 0.54,
+     "text": "Ltd. and ATC Telecom Infrastructure Private Limited (“ATC TIPL”), which held our operations in India, entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT agreed to acquire a 100% ownership…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000025/amt-20241231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.52,
+     "text": "Ltd. and ATC Telecom Infrastructure Private Limited (“ATC TIPL”), entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT agreed to acquire a 100% ownership interest in ATC TIPL (the “ATC TIPL…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000149/amt-20250930.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-23",
+     "p": 0.45,
+     "text": "In addition, the 5-Year Revolving Credit Agreement also includes capacity for letters of credit not to exceed $300 million in the aggregate and capacity for swingline loans not to exceed $300 million in the aggregate.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811825000025/cbre-20250930.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-14",
+     "p": 0.41,
+     "text": "Our capital deployment totaled approximately $1.8 billion, and included $1.1 billion in M&A and other strategic investments, including the acquisition of J&J Worldwide Services, a provider of outsourcing services to the U.S. federal government and Direct Line Global, which provides technical data center management.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811825000005/cbre-20241231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-25",
+     "p": 0.73,
+     "text": "As of December 31, 2024, the 78 data centers held as investments in unconsolidated entities had an aggregate of approximately 9.2 million rentable square feet.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-25",
+     "p": 0.72,
+     "text": "In addition, we are investing in our consolidated and unconsolidated portfolio to organically expand our capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000155837025001424/dlr-20241231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.73,
+     "text": "Additionally, we entered into lease agreements with various landlords primarily for data center spaces and ground leases which have not yet commenced as of June 30, 2025.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000029/eqix-20250630.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-07-30",
+     "p": 0.63,
+     "text": "◦Equinix Fabric outperformed, with provisioned capacity now over 100 terabits.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000028/june302025pressrelease-8k.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-06",
+     "p": 0.65,
+     "text": "The capacity of the Realty Income revolving credit facility is updated to $4.0 billion with an accordion expansion feature up to $5.0 billion, which is subject to obtaining lender commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672825000096/o-20250331.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-06",
+     "p": 0.57,
+     "text": "In April 2025, we closed on the recast and expansion of an aggregate $5.38 billion multi-currency unsecured credit facility.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672825000096/o-20250331.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.3,
+     "text": "This includes data centers with an aggregate TEI of $1.0 billion, on a consolidated basis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.26,
+     "text": "In May 2025, we amended and restated one of our global credit facilities while maintaining its existing borrowing capacity of $3.0 billion and extending the maturity date to June 2029, with an option to extend to June 2030.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-02-24",
+     "p": 0.82,
+     "text": "Our aggregate 4.0 million net rentable square foot pipeline of development and expansion facilities includes 1.5 million in Florida, 1.1 million in California, 0.5 million in Texas, and 0.1 million each in Arizona, Colorado, Georgia, Hawaii, Idaho, Nevada, New York, South Carolina, and Virginia.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331125000034/psa-022425xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.8,
+     "text": "Our aggregate 3.9 million net rentable square foot pipeline of development and expansion facilities includes 2.2 million in Florida, 0.5 million in California, 0.3 million in Texas, 0.2 million in South Carolina, and 0.1 million each in Arizona, Colorado, Georgia, Washington DC, Idaho, North Carolina, and Tennessee.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828025047143/psa-102925xex99_1.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-21",
+     "p": 0.44,
+     "text": "The Supplemental Facility, has a borrowing capacity of $3.5 to $4.5 billion during its term subject to obtaining additional lender commitments and satisfying certain customary conditions precedent and provides for borrowings denominated in U.S. dollars, Euro, Yen, Pounds, Sterling, Canadian dollars and Australian…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837025001271/spg-20241231x10k.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-08-07",
+     "p": 0.34,
+     "text": "On June 30, 2025, we had an aggregate available borrowing capacity of approximately $7.4 billion under the Credit Facilities, net of letters of credit of $8.6 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000155837025010639/spg-20250630x10q.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-01",
+     "p": 0.8,
+     "text": "In April 2025, we entered into an amendment to our unsecured revolving credit facility that increased its borrowing capacity from $2.75 billion to $3.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000155/vtr-20250331.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-30",
+     "p": 0.74,
+     "text": "In April 2025, Ventas increased the capacity of its unsecured credit facility by $750 million to an aggregate $3.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000110465925042582/tm2513611d1_ex99-1.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.43,
+     "text": "We also strive to support physicians in our outpatient medical buildings with the critical infrastructure needed to deliver quality care.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000040/well-20250930.htm"
+    }
+   ],
+   "logistics": [
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2025-02-14",
+     "p": 0.9,
+     "text": "Our logistics facilities and the global supply chain are and may continue to be exposed to severe weather events, such as storms or floods.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025021272/pld-20241231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-25",
+     "p": 0.33,
+     "text": "We believe carriers will be compelled to deploy additional equipment on existing networks while also rolling out more advanced wireless networks to address coverage and capacity needs resulting from this increasing mobile data usage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000025/amt-20241231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-12",
+     "p": 0.31,
+     "text": "•IBX Data Centers are our carrier-neutral colocation data centers, providing our customers with the secure, reliable and robust environments (including space and power) necessary to aggregate and distribute information and connect digital and business ecosystems globally.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-15",
+     "p": 0.44,
+     "text": "“We are extending our leadership position in logistics to data centers, where we are investing to meet the growing power demands of digital infrastructure,” said Dan Letter, president of Prologis.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525239551/pld-ex99_2.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.31,
+     "text": "We invest significant capital into new logistics properties through acquisitions and development activity, including both built-to-suit and speculative development and redevelopment of properties into industrial properties and data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025099770/pld-20250630.htm"
+    }
+   ],
+   "compute_chips": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-04-30",
+     "p": 0.62,
+     "text": "Current relations between the U.S. and China have created increased supply chain risk due to successive U.S. legislation promoting decoupling from China on semiconductors and specific telecommunications equipment makers, and having to source for alternative suppliers for key components outside of China.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025021086/eqix-20250331.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-12",
+     "p": 0.76,
+     "text": "•In April, we sold the Silicon Valley 12 (“SV12”) data center site in connection with the formation of a new joint venture (\"JV\") to develop and operate the first xScale data center in the U.S. The facility will be built out in two phases and is expected to provide more than 28 MW of power capacity when completed.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-12",
+     "p": 0.35,
+     "text": "•In April, we sold the Silicon Valley 12 (“SV12”) data center site in connection with the formation of a new joint venture to develop and operate an xScale data center in the Americas region (the “AMER 2 Joint Venture”).",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    }
+   ],
+   "permits_approvals": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-07-30",
+     "p": 0.71,
+     "text": "We are currently experiencing permitting delays in most metros.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000029/eqix-20250630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.72,
+     "text": "Our ability to do so continues to be challenged by various constraints such as difficulty in finding projects that meet our risk-adjusted yield expectations and challenges in obtaining building permits for self-storage facilities in certain municipalities.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828025047163/psa-20250930.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-12",
+     "p": 0.31,
+     "text": "•In October, we entered into an agreement to form a joint venture to develop and operate xScale data centers in the Americas region (the \"AMER 3 Joint Venture\"), subject to regulatory approval and other closing conditions which were satisfied on October 30, 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2025-02-12",
+     "p": 0.29,
+     "text": "•In October, we entered into an agreement to form a joint venture to develop and operate data centers in the Americas region, subject to regulatory approval and other closing conditions which were satisfied on October 30, 2024.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828025005126/eqix-20241231.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-30",
+     "p": 0.34,
+     "text": "It matures in June 2027 and includes an accordion feature that permits Ventas Realty to increase the aggregate borrowings thereunder to up to $1.25 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000277/vtr-20250930.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-05-01",
+     "p": 0.32,
+     "text": "As amended, the unsecured revolving credit facility includes an accordion feature that permits us to increase our aggregate borrowing capacity thereunder to up to $4.5 billion, subject to the satisfaction of certain conditions, including the receipt of additional commitments for such increase.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000155/vtr-20250331.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "risk",
+     "filed": "2025-08-07",
+     "p": 0.41,
+     "text": "Furthermore, the REIT distribution requirements may increase the financing we need to fund capital expenditures, future growth and expansion initiatives, which would increase our total leverage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672825000131/o-20250630.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-07-30",
+     "p": 0.26,
+     "text": "At June 30, 2025, we had total available liquidity of approximately $7 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000095017025099770/pld-20250630.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-04-30",
+     "p": 0.53,
+     "text": "• In April 2025, Ventas increased its liquidity by expanding its unsecured credit facility by $750 million to an aggregate $3.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000110465925042582/tm2513611d1_ex99-1.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2025-02-13",
+     "p": 0.38,
+     "text": "In September 2024, we provided new secured debt financing of $109.0 million to the owner of a senior housing property, secured by the asset and with additional credit support.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000052/vtr-20241231.htm"
+    }
+   ]
+  },
+  "latest": {
+   "construction": [
+    {
+     "symbol": "WELL",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-12",
+     "p": 0.99,
+     "text": "We have experienced delays and disruptions to property redevelopment as a result of supply chain issues and construction material and labor shortages, and may experience additional or more significant delays in the future.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000010/well-20251231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-28",
+     "p": 0.87,
+     "text": "(1)Includes the construction of 1,700 to 2,300 communications sites globally and $695 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000131/pressreleaseq22026.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000133/amt-20260630.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-23",
+     "p": 0.38,
+     "text": "Includes land and capacity held or actively under construction in preparation for future data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/dlr-20260723xex99d1.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.31,
+     "text": "We invest significant capital into new properties through acquisition and development activity, including build-to-suit development, speculative development and redevelopment of properties into industrial properties and data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526323746/pld-20260630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-29",
+     "p": 0.64,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at September 30, 2025, and together with additional future expansion activities primarily related to our Same Store Facilities at September 30, 2025, we expect to add a total of 1.3 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828025047163/psa-20250930.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-12",
+     "p": 0.59,
+     "text": "The facilities under “expansion in process” represent those facilities where construction is in process at December 31, 2025, and together with additional future expansion activities primarily related to our Same Store Facilities at December 31, 2025, we expect to add a total of 0.9 million net rentable square feet…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026007696/psa-20251231.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.3,
+     "text": "Our share of the costs of all new development, redevelopment and expansion projects currently under construction is approximately $1.1 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926093360/spg-20260630x10q.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-11-06",
+     "p": 0.28,
+     "text": "In addition, we have redevelopment and expansion projects, including the addition of anchors, big box tenants, and restaurants, underway at properties in North America.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465925107395/spg-20250930x10q.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-29",
+     "p": 0.38,
+     "text": "Additionally, we entered into forward purchase agreements to acquire five properties currently under development for C$1 billion, contingent upon completion of construction.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000021/well-20260331.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-27",
+     "p": 0.28,
+     "text": "(1) Includes development projects (construction in progress, development loans and in substance real estate) but excludes expansion projects.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000037/a3q25supplement992.htm"
+    }
+   ],
+   "electric_power": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-K",
+     "channel": "risk",
+     "filed": "2026-02-11",
+     "p": 0.75,
+     "text": "We expect that we will continue to experience limited availability of water and power and grid constraints in many markets as well as shortages of associated equipment because of the current high demands and finite nature of these resources.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-24",
+     "p": 0.38,
+     "text": "Our data center facilities are well-suited for this, as they have a rich ecosystem of network and cloud interconnections coupled with purpose-built capacity designed to support AI and other higher-density deployments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-23",
+     "p": 0.9,
+     "text": "This parcel is near another assemblage of land announced last quarter that is expected to support up to 85 megawatts of IT capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926047702/dlr-20260423xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-23",
+     "p": 0.9,
+     "text": "This parcel is proximate to Digital Realty’s existing Atlanta campus and is expected to support over one gigawatt of IT capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926047702/dlr-20260423xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-02-11",
+     "p": 0.98,
+     "text": "•Delivered record capacity in 2025, with 23,250 retail cabinets and 90+ MW of xScale capacity, while continuing to expand capacity to meet growing demand across the business.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000030/february112026pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-16",
+     "p": 0.8,
+     "text": "Advanced Stage Power is utility-fed power capacity that is not yet secured but is in advanced discussions with the applicable utilities and is expected to support our data center development pipeline.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526305416/pld-ex99_1.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-16",
+     "p": 0.78,
+     "text": "Secured Power is utility-fed power capacity that is subject to binding agreements with utilities and expected to support our data center development pipeline, including capacity currently under development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526305416/pld-ex99_1.htm"
+    }
+   ],
+   "unspecified": [
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.91,
+     "text": "These challenges have driven us to invest in and commit to future purchases in advance of our standard practice to mitigate risks associated with these supply chain issues.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000147/eqix-20260630.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.87,
+     "text": "These constraints could have a negative impact on our ability to grow revenues, affecting our financial performance, results of operations and cash flows and the growth opportunities presented by the adoption of new technologies, including AI.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000147/eqix-20260630.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "LIVE",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.84,
+     "text": "We remain well positioned to support them as they navigate ongoing supply chain shifts and uncertainty.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-24",
+     "p": 0.54,
+     "text": "Ltd. and ATC Telecom Infrastructure Private Limited (“ATC TIPL”), which held our operations in India, entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT agreed to acquire a 100% ownership…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000035/amt-20251231.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.52,
+     "text": "Ltd. and ATC Telecom Infrastructure Private Limited (“ATC TIPL”), entered into an agreement with Data Infrastructure Trust (“DIT”), an infrastructure investment trust sponsored by an affiliate of Brookfield Asset Management, pursuant to which DIT agreed to acquire a 100% ownership interest in ATC TIPL (the “ATC TIPL…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000149/amt-20250930.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.45,
+     "text": "In addition, the 5-Year Revolving Credit Agreement also includes capacity for letters of credit not to exceed $300 million in the aggregate and capacity for swingline loans not to exceed $300 million in the aggregate.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+    },
+    {
+     "symbol": "CBRE",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.27,
+     "text": "Critical infrastructure reflected expansion of CBRE’s work for data centers, as well as contribution from the recent Pearce acquisition.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-23",
+     "p": 0.94,
+     "text": "This facility is unleased, with initial IT capacity expected to deliver in the second half of 2026 to support a connected campus.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926047702/dlr-20260423xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-31",
+     "p": 0.72,
+     "text": "We are investing in our portfolio, which includes consolidated and unconsolidated projects, to organically expand our capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926089296/dlr-20260630x10q.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.73,
+     "text": "Additionally, we entered into lease agreements with various landlords primarily for data center spaces and ground leases which have not yet commenced as of June 30, 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000147/eqix-20260630.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-11",
+     "p": 0.59,
+     "text": "In parallel, we continue to expand renewable energy coverage across our portfolio.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.72,
+     "text": "In December 2025, we secured an additional $816.3 million in commitments for the Fund, bringing total commitments to approximately $1.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000011/o-20251231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-25",
+     "p": 0.66,
+     "text": "The aggregate capacity of the RI Credit Facilities can be increased to up to $5.0 billion pursuant to an accordion expansion feature, which is subject to obtaining lender commitments.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000011/o-20251231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-30",
+     "p": 0.4,
+     "text": "We continue to invest in capabilities that support customer operations, including energy, data, procurement and technology-enabled services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526197850/pld-20260331.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.3,
+     "text": "We continue to invest in capabilities that support customer operations, including energy and digital infrastructure, strategic advisory, procurement, supply chain solutions and technology-enabled services.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526323746/pld-20260630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.8,
+     "text": "Our aggregate 3.9 million net rentable square foot pipeline of development and expansion facilities includes 2.2 million in Florida, 0.5 million in California, 0.3 million in Texas, 0.2 million in South Carolina, and 0.1 million each in Arizona, Colorado, Georgia, Washington DC, Idaho, North Carolina, and Tennessee.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828025047143/psa-102925xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-04-27",
+     "p": 0.71,
+     "text": "Our Newly Developed and Expanded Facilities includes a total of 120 self-storage facilities with 13.7 million net rentable square feet.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026027487/psa-20260331.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.34,
+     "text": "On June 30, 2026, we had an aggregate available borrowing capacity of approximately $7.7 billion under the Credit Facilities, net of letters of credit of $3.1 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926093360/spg-20260630x10q.htm"
+    },
+    {
+     "symbol": "SPG",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-08-10",
+     "p": 0.28,
+     "text": "The Credit Facility has an initial borrowing capacity of $5.0 billion which may be increased in the form of additional commitments in the aggregate not to exceed $1.0 billion, for a total aggregate size of $6.0 billion, subject to obtaining additional lender commitments and satisfying certain customary conditions…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926093360/spg-20260630x10q.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-06",
+     "p": 0.31,
+     "text": "•In April 2025, we amended our unsecured revolving credit facility to, among other things, increase our borrowing capacity from $2.75 billion to $3.5 billion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026026000006/vtr-20251231.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-28",
+     "p": 0.5,
+     "text": "Additionally, we entered into forward purchase agreements to acquire five properties currently under development.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000018/a1q26earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.43,
+     "text": "We also strive to support physicians in our outpatient medical buildings with the critical infrastructure needed to deliver quality care.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000040/well-20250930.htm"
+    }
+   ],
+   "datacenter_capacity": [
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.75,
+     "text": "(5) Represents long-lead equipment and materials required for timely deployment and delivery of data center fit-out.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-13",
+     "p": 0.74,
+     "text": "The campuses are planned to support the construction of 10 data centers with approximately 500 megawatts of potential IT load capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.65,
+     "text": "In addition, to serve the growing hyperscale requirements, we have entered into joint venture partnership arrangements across our Americas, EMEA and Asia-Pacific regions to develop and operate xScale data centers.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000147/eqix-20260630.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-01-21",
+     "p": 0.65,
+     "text": "During the quarter, the company expanded its data center power pipeline to 5.7 gigawatts of capacity secured or in advanced stages of procurement and surpassed its 1 gigawatt target for installed solar and battery storage.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526017256/pld-ex99_2.htm"
+    }
+   ],
+   "real_estate": [
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-28",
+     "p": 0.87,
+     "text": "(1)Includes the construction of 1,700 to 2,300 communications sites globally and $695 million of development spend in the Company’s Data Centers segment.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000131/pressreleaseq22026.htm"
+    },
+    {
+     "symbol": "AMT",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-28",
+     "p": 0.29,
+     "text": "Accordingly, we expect to continue to deploy capital through our annual capital expenditure program, including land purchases and new site and data center facility construction, and through acquisitions.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000133/amt-20260630.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-23",
+     "p": 0.9,
+     "text": "This parcel is near another assemblage of land announced last quarter that is expected to support up to 85 megawatts of IT capacity.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926047702/dlr-20260423xex99d1.htm"
+    },
+    {
+     "symbol": "DLR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-02-05",
+     "p": 0.85,
+     "text": "In conjunction with this transaction, Digital Realty also agreed to acquire adjacent land that can support up to 14 megawatts of IT capacity, providing clear capacity for future expansion.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926010887/dlr-20260205xex99d1.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.91,
+     "text": "It recently closed on land deals in several metros, which brings total developable capacity to approximately 3 gigawatts, executing on plans to double its data center capacity by 2029.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "EQIX",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-29",
+     "p": 0.57,
+     "text": "◦The company recently announced the advancement of its power strategy in partnership with leading energy companies to develop reliable, sustainability-minded electricity solutions—including expanded utility arrangements, on-site generation technologies and next-generation nuclear energy—to support its global data…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123925000061/october292025pressrelease-.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2025-10-28",
+     "p": 0.56,
+     "text": "Partnering with many of the world’s largest institutional investors through co-investment ventures allows us to expand our investment capacity, enhance and diversify our real estate returns and mitigate our exposure to foreign currency movements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525253512/pld-20250930.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-16",
+     "p": 0.26,
+     "text": "Total Expected Investment (\"TEI\") represents total estimated cost of development or expansion, including land, development and leasing costs.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526305416/pld-ex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.38,
+     "text": "The Developed and Expanded Facilities include 111 facilities that were developed on new sites or expanded to increase their net rentable square footage that are not fully stabilized and 9 expansion projects that are currently in process at June 30, 2026.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026050612/psa-20260630.htm"
+    },
+    {
+     "symbol": "VTR",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-29",
+     "p": 0.7,
+     "text": "“Our portfolio and platform are built to meet this moment, and we continue to expand our senior housing footprint,” Cafaro continued.",
+     "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026026000022/q22026earningsrelease.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2025-10-27",
+     "p": 0.67,
+     "text": "Additional Acquisition Pipeline We entered into a definitive agreement to acquire a trophy seniors housing portfolio along the East Coast, including properties in Boston and Westchester County, New York.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670425000037/a3q25earningsrelease991.htm"
+    },
+    {
+     "symbol": "WELL",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-27",
+     "p": 0.37,
+     "text": "We use RevPOR, ExpPOR, SS RevPOR and SS ExpPOR to evaluate the revenue-generating capacity and profit potential of our Seniors Housing Operating portfolio independent of fluctuating occupancy rates.",
+     "url": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000026/a2q26earningsrelease991.htm"
+    }
+   ],
+   "capital_funding": [
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "mda",
+     "filed": "2026-02-25",
+     "p": 0.32,
+     "text": "In addition to these sources of liquidity, in 2025 we launched a perpetual life fund, raising approximately $1.5 billion in commitments from institutional investors.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000011/o-20251231.htm"
+    },
+    {
+     "symbol": "O",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-25",
+     "p": 0.29,
+     "text": "In June 2025, we invested £121.5 million in a mortgage loan secured by an office property in London which provides for additional funding commitments of £20.5 million.",
+     "url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000011/o-20251231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-K",
+     "channel": "business",
+     "filed": "2026-02-13",
+     "p": 0.62,
+     "text": "Partnering with many of the world’s largest institutional investors through co-investment ventures broadens our access to capital, and allows us to expand our investment capacity and enhance and diversify our returns, while mitigating our exposure to foreign currency movements.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526051453/pld-20251231.htm"
+    },
+    {
+     "symbol": "PLD",
+     "status": "SECURING",
+     "form": "10-Q",
+     "channel": "mda",
+     "filed": "2026-07-29",
+     "p": 0.49,
+     "text": "Partnering with many of the world’s largest institutional investors through co-investment ventures broadens our access to capital and allows us to expand our investment capacity and enhance and diversify our returns through a combination of co-investment performance and recurring fee-based income from asset…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526323746/pld-20260630.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-29",
+     "p": 0.38,
+     "text": "As of June 30, 2026, the Company had approximately $3.8 billion of liquidity through a combination of cash, undrawn capacity on its credit facility, and expected retained cash flow over the next twelve months.",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026050608/psa-072926xex99_1.htm"
+    }
+   ],
+   "power_equipment": [
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-07-29",
+     "p": 0.29,
+     "text": "Funds Available for Distribution (“FAD”): FFO adjusted to exclude certain non-cash charges and to deduct recurring capital expenditures, which do not include capital expenditures for energy efficiencies, including the installation of solar panels, heat pumps, and LED lighting; or capital expenditures for other…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026050608/psa-072926xex99_1.htm"
+    },
+    {
+     "symbol": "PSA",
+     "status": "SECURING",
+     "form": "8-K",
+     "channel": "earnings",
+     "filed": "2026-04-27",
+     "p": 0.28,
+     "text": "Funds Available for Distribution (“FAD”): FFO adjusted to exclude certain non-cash charges and to deduct recurring capital expenditures, which do not include capital expenditures for energy efficiencies including the installation of LED lighting, solar panels, and heat pumps; or capital expenditures for other…",
+     "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026027484/psa-042726xex99_1.htm"
+    }
+   ]
+  }
+ }
+}

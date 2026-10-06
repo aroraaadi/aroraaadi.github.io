@@ -284,6 +284,55 @@ function universe() {
     "each a percentile in the universe; convexity is the inverse of size, the tilt to pure plays. The weights are the author's and untested.";
 }
 
+/* ---------- the swing sleeve (venture/swing.py, venture/book.py) ---------- */
+
+function swingPanel() {
+  const W = VB?.swing, panel = document.getElementById("sw-panel");
+  if (!W) { if (panel) panel.hidden = true; return; }
+  const S = W.stats;
+  document.getElementById("sw-meta").textContent = `up to ${W.max_open} trades of ${(W.slot * 100).toFixed(0)}% · the thesis core is ${(W.core_share * 100).toFixed(0)}% of the book`;
+  renderStats("sw-strip", [
+    { label: "Open swing trades", value: String(W.open.length), delta: W.orders.length ? `${W.orders.length} to buy at the next open` : "no orders pending" },
+    { label: "Closed", value: String(S.n), delta: S.win == null ? "none yet" : `${Math.round(S.win * 100)}% winners` },
+    { label: "Average trade", value: S.mean == null ? "–" : sp(S.mean, 2), tone: tn(S.mean) },
+    { label: "Swing P&L", value: usd(S.pnl), tone: tn(S.pnl), delta: "paper, no fees" },
+    { label: "Rules trading", value: String(W.live_rules.length), delta: W.live_rules.join(", ") || "none passed the test" },
+  ]);
+  const rows = [...W.open.map((t) => ({ ...t, status: "open" })),
+                ...W.orders.map((o) => ({ symbol: o.symbol, rule: o.rule, status: "buy at open", entry_date: o.placed })),
+                ...W.closed.slice(0, 15).map((c) => ({ ...c, status: c.why, gain: c.ret, last: c.exit }))];
+  renderTable(document.getElementById("sw-open"), rows, [
+    { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) },
+    { key: "rule", label: "Rule", fmt: (v) => el("span", { class: "note", text: v }) },
+    { key: "status", label: "Status", fmt: (v) => el("span", { class: `pill ${v === "target" ? "up" : v === "stop" ? "down" : v === "open" ? "on" : "muted"}`, text: v }) },
+    { key: "entry_date", label: "Entered", fmt: (v) => el("span", { class: "tk-date", text: v || "–" }) },
+    { key: "entry", label: "Entry", num: true, fmt: (v) => (v == null ? "–" : usd(v, 2)) },
+    { key: "stop", label: "Stop", num: true, fmt: (v) => (v == null ? "–" : usd(v, 2)) },
+    { key: "target", label: "Target", num: true, fmt: (v) => (v == null ? "–" : usd(v, 2)) },
+    { key: "gain", label: "Return", num: true, fmt: (v) => (v == null ? "–" : el("span", { class: `tk-vs ${tn(v)}`, text: sp(v, 1) })) },
+  ]);
+  const B = W.backtest || {};
+  const bt = Object.entries(B).map(([k, v]) => ({ key: k, ...v, in_mean: v.in_sample.mean, out_mean: v.out_of_sample.mean,
+    out_t: v.out_of_sample.t, out_n: v.out_of_sample.n, out_win: v.out_of_sample.win }));
+  renderTable(document.getElementById("sw-bt"), bt, [
+    { key: "key", label: "Rule", fmt: (v, r) => el("span", { title: r.rule, text: v }) },
+    { key: "hold_days", label: "Hold", num: true, fmt: (v) => `${v}d` },
+    { key: "in_mean", label: "In sample", num: true, fmt: (v) => sp(v, 2) },
+    { key: "out_n", label: "Out: trades", num: true },
+    { key: "out_mean", label: "Out: mean", num: true, fmt: (v) => el("span", { class: `tk-vs ${tn(v)}`, text: sp(v, 2) }) },
+    { key: "out_t", label: "t", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(1)) },
+    { key: "out_win", label: "Winners", num: true, fmt: (v) => (v == null ? "–" : `${Math.round(v * 100)}%`) },
+    { key: "trades_live", label: "Trades live", fmt: (v, r) => el("span", { class: `pill ${v ? "on" : "muted"}`, text: v ? "yes" : r.control ? "control" : "no" }) },
+  ], { sortKey: "out_mean", dir: -1 });
+  document.getElementById("sw-note").textContent =
+    `Each rule was judged on two years of the theme's daily prices and headlines: decided at the close, bought at the next open, ` +
+    `out at its stop, target or time limit (stop first when a day touches both). Rules were judged before ${W.backtest_split} and tested ` +
+    `unchanged after it, net of ${(W.backtest_cost * 1e4).toFixed(0)}bp a side. A rule trades only if its out-of-sample average trade ` +
+    "is positive with t ≥ 2 and it also made money in sample; the repo's stricter |t| ≥ 3 is rarely met on two years. One-week " +
+    "moves tend to reverse unless news backs them, which is why the news rules are separated from the price-only ones. The hedged " +
+    "pair needs a short sale, which a TFSA cannot make: it is shown for comparison only.";
+}
+
 /* ---------- the managed book (venture/book.py) ---------- */
 
 let VB = null;
@@ -383,7 +432,7 @@ function vbook() {
   ff.replaceChildren(el("button", { class: "active", "data-flag": "", text: "All" }),
     ...DATA.evidence.map((e) => el("button", { "data-flag": e.key, text: e.key })));
   registerCommands(DATA.rows.map((r) => ({ key: r.symbol, hint: r.profile_label || "", act: () => detail(r) })));
-  thesis(); vbook(); universe(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
+  thesis(); vbook(); swingPanel(); universe(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
   pitches();
   const hash = decodeURIComponent(location.hash.slice(1));
   const hit = hash && DATA.rows.find((r) => r.symbol === hash);

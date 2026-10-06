@@ -1189,3 +1189,21 @@ button.dm-n.picked { border-color: var(--accent); box-shadow: inset 2px 0 0 var(
 /* Weekly digest. */
 .dg-list { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; font-size: var(--t-sm); line-height: 1.45; }
 .dg-list .note { display: block; }
+
+/* Venture thesis: an essay, set for reading. */
+.vx-thesis { max-width: 74ch; margin: var(--sp-4) 0 var(--sp-6); }
+.vx-kicker { font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--book, var(--accent)); margin: 0 0 6px; }
+.vx-thesis h1 { font-family: var(--font-display); font-size: 46px; line-height: 1.02; margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
+.vx-dek { font-size: 19px; line-height: 1.5; color: var(--ink-2); margin: 0 0 10px; text-wrap: pretty; }
+.vx-by { font-size: var(--t-xs); color: var(--muted); margin: 0 0 var(--sp-5); letter-spacing: .02em; }
+.vx-body h2 { font-family: var(--font-display); font-weight: var(--fw-normal); font-size: 26px; margin: var(--sp-5) 0 8px;
+  text-transform: none; letter-spacing: -0.005em; color: var(--ink); }
+.vx-body p { font-size: 16px; line-height: 1.68; margin: 0 0 14px; color: var(--ink); text-wrap: pretty; }
+.vx-proj { margin: var(--sp-5) 0 var(--sp-3); }
+.vx-proj table td:first-child { font-weight: var(--fw-med); }
+.vx-src { font-size: var(--t-xs); color: var(--muted); padding-left: 1.2em; display: grid; gap: 3px; }
+.vx-src a { color: var(--muted); }
+.vx-pillars { height: 14px; display: flex; border-radius: 3px; overflow: hidden; }
+.vx-old { margin-top: var(--sp-6); }
+.vx-old > summary { cursor: pointer; font-family: var(--font-display); font-size: 22px; padding: var(--sp-3) 0; color: var(--ink-2); }
+@media (max-width: 640px) { .vx-thesis h1 { font-size: 34px; } .vx-dek { font-size: 17px; } }

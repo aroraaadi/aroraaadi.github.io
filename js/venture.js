@@ -3,7 +3,7 @@
    volume and attention are shown as context; the page says what is and is
    not established, because the data does. */
 
-import { loadJSON, showError, fmtPct, el, renderTable, base, renderStats, fmtDay, tok } from "./common.js";
+import { loadJSON, showError, fmtPct, el, renderTable, base, renderStats, fmtDay, tok, breakdownColors } from "./common.js";
 import { draw, lineConfig } from "./charts.js";
 import { renderShell, setAsOf, registerCommands } from "./shell.js";
 
@@ -235,6 +235,55 @@ function wire() {
   });
 }
 
+/* ---------- the thesis and the universe (venture/thesis.py, venture/theme.py) ---------- */
+
+let VT = null;
+
+function thesis() {
+  const T = VT?.thesis, art = document.getElementById("vx-thesis");
+  if (!T) { if (art) art.hidden = true; return; }
+  document.getElementById("vx-title").textContent = T.title;
+  document.getElementById("vx-dek").textContent = T.dek;
+  document.getElementById("vx-by").textContent = `${T.author} · ${fmtDay(T.date)} · an opinion with a scenario attached, not a forecast`;
+  const body = document.getElementById("vx-body"); body.innerHTML = "";
+  for (const [h, paras] of T.sections) {
+    body.appendChild(el("h2", { text: h }));
+    paras.forEach((t) => body.appendChild(el("p", { text: t })));
+  }
+  const P = T.projections;
+  renderTable(document.getElementById("vx-proj"), P.rows.map((r) => ({ a: r[0], b: r[1], c: r[2] })), [
+    { key: "a", label: "" }, { key: "b", label: P.head[1] }, { key: "c", label: P.head[2] },
+  ]);
+  document.getElementById("vx-proj-cap").textContent = P.caption;
+  const src = document.getElementById("vx-src"); src.innerHTML = "";
+  T.sources.forEach(([label, url]) => src.appendChild(el("li", {}, [
+    el("a", { href: /^https?:/.test(url) ? url : base() + url, target: /^https?:/.test(url) ? "_blank" : null, rel: "noopener", text: label })])));
+}
+
+function universe() {
+  if (!VT) return;
+  const rows = VT.rows.map((r) => ({ ...r, purity: r.exposure?.purity, growthv: r.revenue_growth }));
+  const held = new Set((VB?.positions || []).map((p) => p.symbol));
+  renderTable(document.getElementById("vu-table"), rows.slice(0, 60), [
+    { key: "rank", label: "#", num: true },
+    { key: "symbol", label: "Stock", fmt: (v, r) => el("span", { class: "tk-sym" }, [el("span", { class: "sym", text: v, title: r.name || "" }),
+        held.has(v) ? el("span", { class: "pill on", text: "held" }) : null]) },
+    { key: "pillar_label", label: "Pillar" },
+    { key: "purity", label: "Purity", num: true, fmt: (v) => (v == null ? "–" : `${Math.round(v * 100)}%`) },
+    { key: "growthv", label: "Revenue growth", num: true, fmt: (v) => sp(v, 0) },
+    { key: "mcap", label: "Market cap", num: true, fmt: (v) => (v == null ? "–" : v >= 1e9 ? `US$${(v / 1e9).toFixed(1)}bn` : `US$${(v / 1e6).toFixed(0)}m`) },
+    { key: "flags_evidence", label: "Evidence", fmt: (v) => el("span", { class: "note", text: (v || []).join(", ") || "–" }) },
+    { key: "theme_score", label: "Score", num: true, fmt: (v) => v.toFixed(2) },
+  ], { sortKey: "rank", dir: 1 });
+  const U = VT.universe;
+  document.getElementById("vu-meta").textContent = `${U.ranked} ranked of ${U.members} ETF holdings · top 60 shown`;
+  document.getElementById("vu-note").textContent =
+    `Candidates are every US-listed holding of ${Object.keys(VT.etfs).join(", ")} (their latest SEC N-PORT filings), worth at least ` +
+    `US$${VT.rules.min_mcap / 1e6}m. Purity is the share of the company's own 10-K business description (or profile, for a foreign filer) ` +
+    `that names the thesis; a company needs ${VT.rules.min_purity * 100}%. Score = ${Object.entries(VT.weights).map(([k, w]) => `${w} ${k}`).join(" + ")}, ` +
+    "each a percentile in the universe; convexity is the inverse of size, the tilt to pure plays. The weights are the author's and untested.";
+}
+
 /* ---------- the managed book (venture/book.py) ---------- */
 
 let VB = null;
@@ -269,9 +318,9 @@ function vbook() {
   [["Venture book", accent], ["Your Questrade portfolio", ink], ["S&P 500", muted]].forEach(([t, c]) =>
     lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-line", style: `border-top-color:${c}` }), el("span", { text: t })])));
   document.getElementById("vb-note").textContent =
-    `Before ${fmtDay(VB.managed_from)} the book held the screen's first recorded suggestion (${fmtDay(VB.inception)}); from then the rules ` +
-    "below manage it. The Questrade line is the time-weighted return of both TFSAs in Canadian dollars; the venture book " +
-    "is in US dollars and pays no fees or taxes. Different currencies and costs: read the shapes, not the decimals.";
+    `The book started at US$100,000 on ${fmtDay(VB.inception)}, the day its mandate was set; every line starts at 100 then. ` +
+    "The Questrade line is the time-weighted return of both TFSAs in Canadian dollars; the venture book is in US dollars " +
+    "and pays no fees or taxes. Different currencies and costs: read the shapes, not the decimals.";
 
   renderTable(document.getElementById("vb-pos"), VB.positions, [
     { key: "symbol", label: "Stock", fmt: (v, r2) => el("a", { class: "sym", href: `#${v}`, text: v, title: r2.name || "" }) },
@@ -280,9 +329,23 @@ function vbook() {
     { key: "entry", label: "Entry", num: true, fmt: (v, r2) => el("span", { title: r2.entry_date, text: usd(v, 2) }) },
     { key: "last", label: "Last", num: true, fmt: (v) => usd(v, 2) },
     { key: "gain", label: "Gain", num: true, fmt: (v) => el("span", { class: `tk-vs ${tn(v)}`, text: sp(v) }) },
+    { key: "pillar", label: "Pillar", fmt: (v) => el("span", { class: "note", text: v || "–" }) },
     { key: "why", label: "Why it is held", fmt: (v) => el("span", { class: "note", text: v ? `score ${v.adj} · ${(v.flags || []).join(", ")}` : "inception holding" }) },
   ], { sortKey: "weight", dir: -1 });
   document.getElementById("vb-pos-meta").textContent = `${VB.positions.length} names · ${(VB.cash_weight * 100).toFixed(0)}% cash`;
+  const byP = {};
+  VB.positions.forEach((p) => { byP[p.pillar || "Other"] = (byP[p.pillar || "Other"] || 0) + p.weight; });
+  const pil = Object.entries(byP).sort((a, b) => b[1] - a[1]), cols = breakdownColors(pil.length);
+  const bar = document.getElementById("vb-pillars");
+  bar.replaceChildren(...pil.map(([k, w], i) => el("i", { style: `flex:${w};background:${cols[i]}`, title: `${k} ${(w * 100).toFixed(0)}%` })));
+  bar.setAttribute("aria-label", pil.map(([k, w]) => `${k} ${(w * 100).toFixed(0)}%`).join(", "));
+  const pl = document.getElementById("vb-pillar-legend"); pl.innerHTML = "";
+  pil.forEach(([k, w], i) => pl.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-rect", style: `background:${cols[i]}` }),
+    el("span", { text: `${k} ${(w * 100).toFixed(0)}%` })])));
+  const P = VB.previous;
+  document.getElementById("vb-previous").textContent = P
+    ? `${P.label}, ${fmtDay(P.inception)} to ${fmtDay(P.closed)}: closed at ${sp(P.ret, 2)} over ${P.trades} trades when the mandate changed to physical AI and quantum.`
+    : "";
   const heads = Object.entries(VB.news || {}).flatMap(([s, v]) => v.slice(0, 1).map((h) => `${s}: ${h.title}`)).slice(0, 4);
   document.getElementById("vb-pos-note").textContent = heads.length ? `This week's news on holdings: ${heads.join(" · ")}` : "";
 
@@ -308,6 +371,7 @@ function vbook() {
 (async function init() {
   renderShell();
   VB = await loadJSON("data/venture_book.json").catch(() => null);
+  VT = await loadJSON("data/venture_theme.json").catch(() => null);
   const content = document.getElementById("content");
   try { DATA = await loadJSON("data/venture.json"); }
   catch (err) { showError(content, err); return; }
@@ -319,7 +383,7 @@ function vbook() {
   ff.replaceChildren(el("button", { class: "active", "data-flag": "", text: "All" }),
     ...DATA.evidence.map((e) => el("button", { "data-flag": e.key, text: e.key })));
   registerCommands(DATA.rows.map((r) => ({ key: r.symbol, hint: r.profile_label || "", act: () => detail(r) })));
-  vbook(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
+  thesis(); vbook(); universe(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
   pitches();
   const hash = decodeURIComponent(location.hash.slice(1));
   const hit = hash && DATA.rows.find((r) => r.symbol === hash);

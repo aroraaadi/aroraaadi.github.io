@@ -1,0 +1,216 @@
+/* Design tokens — a research desk, not a dashboard template.
+   ------------------------------------------------------------------
+   Redesigned 2026-09-21 for two books; re-grounded 2026-09-22 dark-first;
+   revised 2026-09-27 for a more considered execution.
+
+   What this revision changes, and why:
+
+   THE GROUND IS OURS. The previous build borrowed TradingView's hexes, which
+   made the site read as a copy of a tool rather than as a publication. The
+   neutrals now carry a faint blue bias of their own — a grey that leans toward
+   the accent reads as chosen where a flat grey reads as inherited — and sit a
+   few points deeper so the type has more room. Dark stays the default; light
+   is defined in full and the toggle wins in both directions.
+
+   THREE FACES, THREE JOBS. Page titles and book names are set in a
+   high-contrast serif (Instrument Serif) so the site has the typographic
+   authority of a research letter rather than a settings screen. Running text
+   and controls are a news grotesk (Schibsted Grotesk), drawn for small sizes
+   on screens. Every figure stays in a mono with tabular numerals (JetBrains
+   Mono) so columns align and values stop jittering.
+
+   SIGNED VALUES KEEP THEIR TONES. Up is a teal-green, down a warm red. Teal
+   separates from red under the common colour-vision deficiencies better than
+   green does, and colour is never the only cue: every signed figure carries a
+   sign or an arrow.
+
+   Theme resolution, unchanged in shape:
+     1. [data-theme="light"|"dark"] on <html>  — explicit choice, wins
+     2. prefers-color-scheme                    — otherwise
+     3. bare :root                              — dark
+
+   Two hues carry book identity: --usd (cobalt) and --cad (copper), with
+   --venture (green) for the screen-run fund. They mark a BOOK wherever one
+   is named — nav, cards, chart series — and are never used for signed
+   values. [data-book] on <html> or a container binds --book.
+
+   The categorical ramp (--s1..--s8) is carried over unchanged. It was built
+   by a greedy max-min search over an OKLCH grid so every prefix n=2..8 passes
+   all-pairs CVD separation, validated on a light ground (#fcfcfb) and a dark
+   one (#0B0D10). The dark ground here (#0c0f14) is within a few points of the
+   luminance it was validated at, so the separation holds; re-run the
+   validator after touching any --s* value. Charts keep a direct label or an
+   HTML legend as the secondary cue. */
+
+:root {
+  color-scheme: dark;
+
+  /* ground — cool graphite with a faint blue bias */
+  --page:       #0c0f14;
+  --surface:    #12161d;
+  --surface-2:  #0f1218;
+  --raised:     #181d26;
+
+  /* ink */
+  --ink:        #e6e9ee;
+  --ink-2:      #a3abb8;
+  --muted:      #6f7887;
+
+  /* structure */
+  --border:     #1f2530;
+  --border-2:   #2b3341;
+  --grid:       #171c24;
+  --baseline:   #3b4453;
+
+  /* focus and links only — never data */
+  --accent:     #4f8cff;
+  --accent-dim: #16233d;
+
+  /* the three books */
+  --usd:        #6ea0ff;
+  --usd-soft:   #142238;
+  --cad:        #e3a256;
+  --cad-soft:   #33240f;
+  --venture:    #4ec295;
+  --venture-soft: #103227;
+  --book:       var(--accent);
+  --book-soft:  var(--accent-dim);
+
+  /* signed values + severity. Colour is never the sole cue. */
+  --up:         #2fb89d;
+  --up-soft:    #0f2e29;
+  --down:       #f26d68;
+  --down-soft:  #3a1b1b;
+  --warn:       #dfa53a;
+  --warn-soft:  #33270e;
+  --crit:       #f26d68;
+
+  /* benchmark context lines — desaturated so the subject series reads */
+  --ctx-1:      #6f7887;
+  --ctx-2:      #3b4453;
+
+  /* categorical — prefix-safe, see header */
+  --s1: #b27ae0;  --s2: #26c281;  --s3: #34b8d4;  --s4: #c2a33c;
+  --s5: #d489a4;  --s6: #5b8def;  --s7: #e0653a;  --s8: #2e9e86;
+
+  /* sequential ramp: 250 = lowest, 650 = highest */
+  --ramp-250: #1b3a6b; --ramp-350: #24508f; --ramp-450: #2f66b8;
+  --ramp-550: #4d80ff; --ramp-650: #86a9ff;
+
+  /* type scale */
+  --t-xs:   11px;
+  --t-sm:   12px;
+  --t-base: 13px;
+  --t-md:   15px;
+  --t-lg:   21px;
+  --t-xl:   34px;
+  --t-2xl:  52px;
+
+  --lh-tight: 1.08;
+  --lh-base:  1.5;
+
+  --fw-normal: 400;
+  --fw-med:    500;
+  --fw-bold:   600;
+  --fw-black:  700;
+
+  /* three faces: a serif for titles, a grotesk for text, a mono for figures */
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-ui:      "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num:     "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* space scale — 4px base */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 80px;
+
+  --r-sm: 3px;
+  --r-md: 4px;
+  --r-lg: 6px;
+  --r-pill: 999px;
+
+  --shadow-pop: 0 16px 40px rgba(0, 0, 0, 0.55);
+
+  --content-max: 1360px;
+}
+
+[data-book="usd"] { --book: var(--usd); --book-soft: var(--usd-soft); }
+[data-book="cad"] { --book: var(--cad); --book-soft: var(--cad-soft); }
+[data-book="venture"] { --book: var(--venture); --book-soft: var(--venture-soft); }
+
+/* Light ground — the OS preference, unless the viewer chose dark. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --page:       #f5f6f8;
+    --surface:    #ffffff;
+    --surface-2:  #f8f9fb;
+    --raised:     #ffffff;
+    --ink:        #111419;
+    --ink-2:      #4a5464;
+    --muted:      #7a8492;
+    --border:     #e2e6ec;
+    --border-2:   #ccd3dc;
+    --grid:       #eef1f5;
+    --baseline:   #b3bcc8;
+    --accent:     #1f4fd1;
+    --accent-dim: #dde6fb;
+    --usd:        #2457d5;
+    --usd-soft:   #e6edfc;
+    --cad:        #b0641a;
+    --cad-soft:   #f8ecdf;
+    --venture:    #1f8a5b;
+    --venture-soft: #e3f4eb;
+    --up:         #0f7a6c;
+    --up-soft:    #dff2ef;
+    --down:       #d0392f;
+    --down-soft:  #fbe6e4;
+    --warn:       #a56b00;
+    --warn-soft:  #fbf1dc;
+    --crit:       #d0392f;
+    --ctx-1:      #7a8492;
+    --ctx-2:      #b3bcc8;
+    --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
+    --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+    --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+    --ramp-550: #2a63d6; --ramp-650: #16407f;
+    --shadow-pop: 0 16px 40px rgba(17, 20, 25, 0.14);
+  }
+}
+
+/* Light ground — explicit choice. Same values; the toggle must win both ways. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page:       #f5f6f8;
+  --surface:    #ffffff;
+  --surface-2:  #f8f9fb;
+  --raised:     #ffffff;
+  --ink:        #111419;
+  --ink-2:      #4a5464;
+  --muted:      #7a8492;
+  --border:     #e2e6ec;
+  --border-2:   #ccd3dc;
+  --grid:       #eef1f5;
+  --baseline:   #b3bcc8;
+  --accent:     #1f4fd1;
+  --accent-dim: #dde6fb;
+  --usd:        #2457d5;
+  --usd-soft:   #e6edfc;
+  --cad:        #b0641a;
+  --cad-soft:   #f8ecdf;
+  --venture:    #1f8a5b;
+  --venture-soft: #e3f4eb;
+  --up:         #0f7a6c;
+  --up-soft:    #dff2ef;
+  --down:       #d0392f;
+  --down-soft:  #fbe6e4;
+  --warn:       #a56b00;
+  --warn-soft:  #fbf1dc;
+  --crit:       #d0392f;
+  --ctx-1:      #7a8492;
+  --ctx-2:      #b3bcc8;
+  --s1: #a655d9;  --s2: #00b162;  --s3: #00a6c3;  --s4: #ad8e00;
+  --s5: #c37292;  --s6: #4d80ff;  --s7: #d14000;  --s8: #008167;
+  --ramp-250: #c4d6ff; --ramp-350: #93b3f7; --ramp-450: #5b8aec;
+  --ramp-550: #2a63d6; --ramp-650: #16407f;
+  --shadow-pop: 0 16px 40px rgba(17, 20, 25, 0.14);
+}

@@ -328,9 +328,44 @@ function swingPanel() {
     `Each rule was judged on two years of the theme's daily prices and headlines: decided at the close, bought at the next open, ` +
     `out at its stop, target or time limit (stop first when a day touches both). Rules were judged before ${W.backtest_split} and tested ` +
     `unchanged after it, net of ${(W.backtest_cost * 1e4).toFixed(0)}bp a side. A rule trades only if its out-of-sample average trade ` +
-    "is positive with t ≥ 2 and it also made money in sample; the repo's stricter |t| ≥ 3 is rarely met on two years. One-week " +
-    "moves tend to reverse unless news backs them, which is why the news rules are separated from the price-only ones. The hedged " +
-    "pair needs a short sale, which a TFSA cannot make: it is shown for comparison only.";
+    "is positive with t ≥ 2 and it also made money in sample. The rules that trade now come from the fourteen-year small-cap test " +
+    "below, because two years of seventy-three names could not tell any rule from luck once thousands were tried. The hedged pair " +
+    "needs a short sale, which a TFSA cannot make: it is shown for comparison only.";
+}
+
+/* ---------- the labs (venture/lab.py, lab_pit.py, market_lab.py) ---------- */
+
+let VL = null;
+
+function lab() {
+  const panel = document.getElementById("lab-panel");
+  if (!VL) { if (panel) panel.hidden = true; return; }
+  const T = VL.theme, P = VL.pit, M = VL.market;
+  document.getElementById("lab-meta").textContent = `re-run every Monday · ${fmtDay(VL.as_of)}`;
+  renderStats("lab-strip", [
+    T ? { label: "Theme names, two years", value: T.tested.toLocaleString(), delta: `rules tried; ${T.passed_in_sample} worked in sample, ${T.passed_out_of_sample} after` } : null,
+    P ? { label: "Small caps, 2013 to now", value: P.tested.toLocaleString(), delta: `rules on ${P.names.toLocaleString()} names; ${P.passed_in_sample} worked to 2020` } : null,
+    { label: "Adopted", value: String(Object.keys(VL.adopted || {}).length), delta: Object.keys(VL.adopted || {}).join(", ") || "none" },
+    M ? { label: "SPY trend switch, 2018 on", value: sp(M.chosen_result.out_of_sample.cagr, 1), delta: `a year, against ${sp(M.buy_and_hold.out_of_sample.cagr, 1)} buy and hold` } : null,
+  ]);
+  const body = document.getElementById("lab-body"); body.innerHTML = "";
+  const para = (t) => body.appendChild(el("p", { text: t }));
+  if (T) para(`Every permutation we could build on the thesis names — strong and weak days, multi-day extremes, breakouts, gaps, earnings surprises, insider purchases, news bursts, laggards in a pillar, correlated pairs — each crossed with news, trend, market and volatility filters, holds of one to seven days and four exits: ${T.tested.toLocaleString()} rules. ${T.passed_in_sample} made money from late 2024 to December 2025; none survived the false-discovery correction after it. The best twenty-five in sample averaged ${sp(T.decay.top25_in_mean, 2)} a trade in sample and ${sp(T.decay.top25_out_mean, 2)} after: positive, but not distinguishable from luck on seventy-three names and two years.`);
+  if (P) para(`So the price-and-volume families were re-run on fourteen years of point-in-time small caps, failures included (${P.names.toLocaleString()} names). One family held in both halves: buying a sharp three-to-five-day fall (short-term reversal, documented since Jegadeesh 1990). Momentum, breakouts and the trend filters did not. The reversal variant chosen on 2013-2020 earned the swing sleeve its rule; it is re-checked weekly and stops trading if it stops replicating.`);
+  if (M) para(`At the market level, twenty years of SPY: a trend switch (${M.chosen}) cut the worst drawdown from ${sp(M.buy_and_hold.in_sample.max_dd, 0)} to ${sp(M.chosen_result.in_sample.max_dd, 0)} before 2018 but earned less after it (${sp(M.chosen_result.out_of_sample.cagr, 1)} a year against ${sp(M.buy_and_hold.out_of_sample.cagr, 1)}): it protects, it does not maximise. The FOMC-day drift (t ${M.calendar.fomc_decision_day.in_sample.t_vs_others} before 2018) vanished after; the turn of the month and the weekday showed nothing; SPY earned more overnight than during the day. Idle swing cash therefore sits in SPY.`);
+  const rows = (P?.top || []).map((r) => ({ rule: r.rule, in_mean: r.in_sample.mean, in_t: r.in_sample.t, out_mean: r.out_of_sample.mean, out_t: r.out_of_sample.t, n: r.out_of_sample.n }));
+  renderTable(document.getElementById("lab-table"), rows, [
+    { key: "rule", label: "Best rules, 2013-2020 (small caps)", fmt: (v) => el("span", { class: "note", text: v }) },
+    { key: "in_mean", label: "To 2020", num: true, fmt: (v) => sp(v, 2) },
+    { key: "in_t", label: "t", num: true },
+    { key: "out_mean", label: "2021 on", num: true, fmt: (v) => el("span", { class: `tk-vs ${tn(v)}`, text: sp(v, 2) }) },
+    { key: "out_t", label: "t", num: true },
+    { key: "n", label: "Trades", num: true, fmt: (v) => (v || 0).toLocaleString() },
+  ], { sortKey: "in_t", dir: -1 });
+  document.getElementById("lab-note").textContent =
+    "Protocol: each rule judged only on the earlier period; survivors tested once on the later one; returns averaged by week before the " +
+    "t-statistic; the Benjamini-Hochberg procedure across everything tried; 10bp a side. Small-cap trades buy at the next close and sell at a " +
+    "later close. Past replication is evidence, not a promise: reversal trades buy names that are falling for a reason as often as by accident.";
 }
 
 /* ---------- the managed book (venture/book.py) ---------- */
@@ -421,6 +456,7 @@ function vbook() {
   renderShell();
   VB = await loadJSON("data/venture_book.json").catch(() => null);
   VT = await loadJSON("data/venture_theme.json").catch(() => null);
+  VL = await loadJSON("data/venture_lab.json").catch(() => null);
   const content = document.getElementById("content");
   try { DATA = await loadJSON("data/venture.json"); }
   catch (err) { showError(content, err); return; }
@@ -432,7 +468,7 @@ function vbook() {
   ff.replaceChildren(el("button", { class: "active", "data-flag": "", text: "All" }),
     ...DATA.evidence.map((e) => el("button", { "data-flag": e.key, text: e.key })));
   registerCommands(DATA.rows.map((r) => ({ key: r.symbol, hint: r.profile_label || "", act: () => detail(r) })));
-  thesis(); vbook(); swingPanel(); universe(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
+  thesis(); vbook(); swingPanel(); lab(); universe(); headline(); macro(); evidence(); baseRates(); paint(); portfolio(); themes(); wire();
   pitches();
   const hash = decodeURIComponent(location.hash.slice(1));
   const hit = hash && DATA.rows.find((r) => r.symbol === hash);

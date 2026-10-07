@@ -61,8 +61,8 @@ function evidence() {
     { key: "label", label: "Signal" },
     { key: "grade", label: "Evidence", fmt: (v) => el("span", { class: `pill ${GRADE_CLASS[v] || ""}`, text: v }) },
     { key: "weight", label: "Weight", num: true, fmt: (v) => (v > 0 ? "+" : "") + v.toFixed(1) },
-    { key: "note", label: "What it means here" },
-    { key: "sources_txt", label: "Sources" },
+    { key: "note", label: "What it means here", cls: () => "wrap" },
+    { key: "sources_txt", label: "Sources", cls: () => "wrap note" },
   ]);
 }
 
@@ -123,7 +123,7 @@ function paint() {
     { key: "spike_z", label: "Attn z", num: true, fmt: (v) => num(v, 1) },
     { key: "base_p_double", label: "P(2×)", num: true, fmt: (v) => pct(v, 1) },
     { key: "base_p_halve", label: "P(½)", num: true, fmt: (v) => pct(v, 1) },
-    { key: "flags_n", label: "Flags", fmt: (_, r) => el("span", { class: "flags" }, r.flags.map(flagPill)) },
+    { key: "flags_n", label: "Flags", cls: () => "vx-flags-cell", fmt: (_, r) => el("span", { class: "flags" }, r.flags.map(flagPill)) },
   ]);
 }
 
@@ -157,11 +157,10 @@ async function pitches() {
     return;
   }
   host.replaceChildren(
-    ...idx.pitches.map((p) => el("div", { class: "alloc-row" }, [
+    ...idx.pitches.map((p) => el("div", { class: "vx-pitch" }, [
       el("a", { class: "sym", href: base() + p.path, target: "_blank", rel: "noopener", text: p.symbol }),
-      el("span", { class: "muted", text: p.call }),
-      el("span", { class: "spacer" }),
-      el("a", { class: "note", href: base() + p.path, target: "_blank", rel: "noopener", text: "PDF ↗" }),
+      el("span", { class: "vx-pitch-call", text: p.call }),
+      el("a", { class: "vx-pitch-pdf", href: base() + p.path, target: "_blank", rel: "noopener", text: "Open PDF ↗" }),
     ])),
     idx.without_thesis.length
       ? el("p", { class: "note", text: `In the portfolio without a written thesis, so no PDF: ${idx.without_thesis.join(", ")}.` })
@@ -172,9 +171,9 @@ async function pitches() {
 function themes() {
   const host = document.getElementById("themes");
   host.replaceChildren(...Object.entries(DATA.themes).filter(([, t]) => t.names.length).map(([k, t]) =>
-    el("div", { class: "alloc-row" }, [
-      el("span", { class: "clabel", text: t.label }),
-      el("span", { class: "flags" }, t.names.map((s) => el("span", { class: "chip", text: s }))),
+    el("div", { class: "vx-theme" }, [
+      el("span", { class: "vx-theme-l", text: t.label }),
+      el("span", { class: "vx-theme-names" }, t.names.map((s) => el("span", { class: "chip", text: s }))),
     ])));
   if (!host.children.length) host.replaceChildren(el("p", { class: "note", text: "No candidate matches an emerging-industry keyword." }));
 }
@@ -235,6 +234,50 @@ function wire() {
   });
 }
 
+/* ---------- labels ---------- */
+
+const RULE_NAMES = {
+  reversal_3d: "Short-term reversal", news_breakout: "News breakout", news_momentum: "News momentum",
+  breakout_volume: "Volume breakout", gap_and_go: "Gap and go", fade_newsless_drop: "Fade a news-less drop",
+  pullback_uptrend: "Pullback in an uptrend", golden_cross: "50/200 EMA golden cross",
+  golden_cross_pullback: "Pullback above a golden cross", news_momentum_trend: "News momentum in an uptrend",
+  breakout_trend: "Breakout in an uptrend", fade_newsless_spike: "News-less spike (control)",
+  pairs_long_laggard: "Pairs: buy the laggard", pairs_hedged: "Pairs: long/short (control)",
+};
+const ruleName = (k) => RULE_NAMES[k] || k;
+
+/* "multi_day/3d<=-10% | none | hold 10" -> "3-day fall of 10% or more · hold 10 sessions" */
+function labRule(code) {
+  const [sig, flt, hold] = code.split(" | ");
+  const parts = sig.split("/");
+  let what = sig;
+  const m = (re) => sig.match(re);
+  let x;
+  if ((x = m(/multi_day\/(\d)d<=-(\d+)%/))) what = `${x[1]}-day fall of ${x[2]}% or more`;
+  else if ((x = m(/multi_day\/(\d)d>=(\d+)%/))) what = `${x[1]}-day rise of ${x[2]}% or more`;
+  else if ((x = m(/day_down\/r1<=-(\d+)%\/vol>=([\d.]+)/))) what = `1-day fall of ${x[1]}% or more` + (+x[2] > 1 ? ` on ${x[2]}× volume` : "");
+  else if ((x = m(/day_up\/r1>=(\d+)%\/vol>=([\d.]+)/))) what = `1-day rise of ${x[1]}% or more` + (+x[2] > 1 ? ` on ${x[2]}× volume` : "");
+  else if ((x = m(/breakout\/hi(\d+)\/vol>=([\d.]+)/))) what = `${x[1]}-day high` + (+x[2] > 1 ? ` on ${x[2]}× volume` : "");
+  void parts;
+  const when = { none: "", above50: " · above the 50-day", ema_up: " · 50 EMA over 200", spy_up: " · SPY above its 200-day", vix_low: " · VIX under 20" }[flt] ?? ` · ${flt}`;
+  return `${what}${when} · hold ${(hold || "").replace("hold ", "")} sessions`;
+}
+
+const FLAG_LABELS = { SUE_TOP: "earnings surprise", INSIDER_BUY: "insider buying", INSIDER_CLUSTER: "insider cluster",
+  QUALITY_NEAR_HIGH: "quality near its high", QUIET_STRENGTH: "quiet strength", SMALLCAP_TOP: "small-cap screen",
+  BEST_IDEA: "a fund's best idea", HELD_BY_FUNDS: "held by funds", INITIATED: "analyst initiation" };
+const flagLabel = (f) => FLAG_LABELS[f]
+  || ((typeof DATA !== "undefined" && DATA?.evidence) || []).find((e) => e.key === f)?.label?.replace(/^./, (c) => c.toLowerCase())
+  || f.toLowerCase().replace(/_/g, " ");
+/* sma150_buf2 -> "150-day average, 2% band"; ema50x200 -> "50/200-day EMA cross"; sma10m_monthly -> "10-month average". */
+function trendName(k) {
+  let x;
+  if ((x = /^sma(\d+)_buf(\d+)$/.exec(k || ""))) return `${x[1]}-day average` + (+x[2] ? `, ${x[2]}% band` : "");
+  if ((x = /^ema(\d+)x(\d+)$/.exec(k || ""))) return `${x[1]}/${x[2]}-day EMA cross`;
+  if (k === "sma10m_monthly") return "10-month average, checked monthly";
+  return k;
+}
+
 /* ---------- the thesis and the universe (venture/thesis.py, venture/theme.py) ---------- */
 
 let VT = null;
@@ -250,10 +293,13 @@ function thesis() {
     body.appendChild(el("h2", { text: h }));
     paras.forEach((t) => body.appendChild(el("p", { text: t })));
   }
-  const P = T.projections;
-  renderTable(document.getElementById("vx-proj"), P.rows.map((r) => ({ a: r[0], b: r[1], c: r[2] })), [
-    { key: "a", label: "" }, { key: "b", label: P.head[1] }, { key: "c", label: P.head[2] },
-  ]);
+  // The scenario as stacked cards: a three-column table does not fit beside the essay.
+  const P = T.projections, proj = document.getElementById("vx-proj"); proj.innerHTML = "";
+  P.rows.forEach(([what, now, then]) => proj.appendChild(el("div", { class: "vx-card" }, [
+    el("div", { class: "vx-card-h", text: what }),
+    el("div", { class: "vx-card-row" }, [el("span", { class: "vx-card-l", text: "2026" }), el("span", { text: now })]),
+    el("div", { class: "vx-card-row then" }, [el("span", { class: "vx-card-l", text: "2030" }), el("span", { text: then })]),
+  ])));
   document.getElementById("vx-proj-cap").textContent = P.caption;
   const src = document.getElementById("vx-src"); src.innerHTML = "";
   T.sources.forEach(([label, url]) => src.appendChild(el("li", {}, [
@@ -272,7 +318,7 @@ function universe() {
     { key: "purity", label: "Purity", num: true, fmt: (v) => (v == null ? "–" : `${Math.round(v * 100)}%`) },
     { key: "growthv", label: "Revenue growth", num: true, fmt: (v) => sp(v, 0) },
     { key: "mcap", label: "Market cap", num: true, fmt: (v) => (v == null ? "–" : v >= 1e9 ? `US$${(v / 1e9).toFixed(1)}bn` : `US$${(v / 1e6).toFixed(0)}m`) },
-    { key: "flags_evidence", label: "Evidence", fmt: (v) => el("span", { class: "note", text: (v || []).join(", ") || "–" }) },
+    { key: "flags_evidence", label: "Evidence", fmt: (v) => el("span", { class: "note", text: (v || []).map(flagLabel).join(", ") || "–" }) },
     { key: "theme_score", label: "Score", num: true, fmt: (v) => v.toFixed(2) },
   ], { sortKey: "rank", dir: 1 });
   const U = VT.universe;
@@ -296,11 +342,16 @@ function swingPanel() {
     { label: "Closed", value: String(S.n), delta: S.win == null ? "none yet" : `${Math.round(S.win * 100)}% winners` },
     { label: "Average trade", value: S.mean == null ? "–" : sp(S.mean, 2), tone: tn(S.mean) },
     { label: "Swing P&L", value: usd(S.pnl), tone: tn(S.pnl), delta: "paper, no fees" },
-    { label: "Rules trading", value: String(W.live_rules.length), delta: W.live_rules.join(", ") || "none passed the test" },
+    { label: "Rules trading", value: String(W.live_rules.length), delta: W.live_rules.map(ruleName).join(", ") || "none passed the test" },
   ]);
   const rows = [...W.open.map((t) => ({ ...t, status: "open" })),
                 ...W.orders.map((o) => ({ symbol: o.symbol, rule: o.rule, status: "buy at open", entry_date: o.placed })),
                 ...W.closed.slice(0, 15).map((c) => ({ ...c, status: c.why, gain: c.ret, last: c.exit }))];
+  const empty = document.getElementById("sw-empty"), openWrap = document.getElementById("sw-open").closest(".panel-b");
+  empty.hidden = rows.length > 0;
+  openWrap.hidden = rows.length === 0;
+  empty.textContent = rows.length ? "" : `No swing trades yet. Each evening the rules are checked at the close; a signal becomes an order ` +
+    `for the next open. ${W.live_rules.length ? `Trading now: ${W.live_rules.map(ruleName).join(", ")}.` : "No rule is trading."}`;
   renderTable(document.getElementById("sw-open"), rows, [
     { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) },
     { key: "rule", label: "Rule", fmt: (v) => el("span", { class: "note", text: v }) },
@@ -311,11 +362,16 @@ function swingPanel() {
     { key: "target", label: "Target", num: true, fmt: (v) => (v == null ? "–" : usd(v, 2)) },
     { key: "gain", label: "Return", num: true, fmt: (v) => (v == null ? "–" : el("span", { class: `tk-vs ${tn(v)}`, text: sp(v, 1) })) },
   ]);
-  const B = W.backtest || {};
-  const bt = Object.entries(B).map(([k, v]) => ({ key: k, ...v, in_mean: v.in_sample.mean, out_mean: v.out_of_sample.mean,
-    out_t: v.out_of_sample.t, out_n: v.out_of_sample.n, out_win: v.out_of_sample.win }));
+  const B = W.backtest || {}, live = new Set(W.live_rules || []);
+  const adopted = Object.entries(W.adopted || {}).map(([k, v]) => ({ key: k, rule: v.lab_rule, hold_days: 10,
+    in_mean: v.in_sample.mean, out_mean: v.out_of_sample.mean, out_t: v.out_of_sample.t, out_n: v.out_of_sample.n,
+    out_win: v.out_of_sample.win, trades_live: live.has(k), source: "14 years, 4,549 small caps" }));
+  const bt = adopted.concat(Object.entries(B).filter(([k]) => !(W.adopted || {})[k]).map(([k, v]) => ({ key: k, ...v,
+    in_mean: v.in_sample.mean, out_mean: v.out_of_sample.mean, out_t: v.out_of_sample.t, out_n: v.out_of_sample.n,
+    out_win: v.out_of_sample.win, trades_live: live.has(k), source: "2 years, theme names" })));
   renderTable(document.getElementById("sw-bt"), bt, [
-    { key: "key", label: "Rule", fmt: (v, r) => el("span", { title: r.rule, text: v }) },
+    { key: "key", label: "Rule", fmt: (v, r) => el("span", { title: r.rule, text: ruleName(v) }) },
+    { key: "source", label: "Tested on", fmt: (v) => el("span", { class: "note", text: v }) },
     { key: "hold_days", label: "Hold", num: true, fmt: (v) => `${v}d` },
     { key: "in_mean", label: "In sample", num: true, fmt: (v) => sp(v, 2) },
     { key: "out_n", label: "Out: trades", num: true },
@@ -323,7 +379,7 @@ function swingPanel() {
     { key: "out_t", label: "t", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(1)) },
     { key: "out_win", label: "Winners", num: true, fmt: (v) => (v == null ? "–" : `${Math.round(v * 100)}%`) },
     { key: "trades_live", label: "Trades live", fmt: (v, r) => el("span", { class: `pill ${v ? "on" : "muted"}`, text: v ? "yes" : r.control ? "control" : "no" }) },
-  ], { sortKey: "out_mean", dir: -1 });
+  ], { sortKey: "out_t", dir: -1 });
   document.getElementById("sw-note").textContent =
     `Each rule was judged on two years of the theme's daily prices and headlines: decided at the close, bought at the next open, ` +
     `out at its stop, target or time limit (stop first when a day touches both). Rules were judged before ${W.backtest_split} and tested ` +
@@ -345,17 +401,17 @@ function lab() {
   renderStats("lab-strip", [
     T ? { label: "Theme names, two years", value: T.tested.toLocaleString(), delta: `rules tried; ${T.passed_in_sample} worked in sample, ${T.passed_out_of_sample} after` } : null,
     P ? { label: "Small caps, 2013 to now", value: P.tested.toLocaleString(), delta: `rules on ${P.names.toLocaleString()} names; ${P.passed_in_sample} worked to 2020` } : null,
-    { label: "Adopted", value: String(Object.keys(VL.adopted || {}).length), delta: Object.keys(VL.adopted || {}).join(", ") || "none" },
+    { label: "Adopted", value: String(Object.keys(VL.adopted || {}).length), delta: Object.keys(VL.adopted || {}).map(ruleName).join(", ") || "none" },
     M ? { label: "SPY trend switch, 2018 on", value: sp(M.chosen_result.out_of_sample.cagr, 1), delta: `a year, against ${sp(M.buy_and_hold.out_of_sample.cagr, 1)} buy and hold` } : null,
   ]);
   const body = document.getElementById("lab-body"); body.innerHTML = "";
   const para = (t) => body.appendChild(el("p", { text: t }));
   if (T) para(`Every permutation we could build on the thesis names — strong and weak days, multi-day extremes, breakouts, gaps, earnings surprises, insider purchases, news bursts, laggards in a pillar, correlated pairs — each crossed with news, trend, market and volatility filters, holds of one to seven days and four exits: ${T.tested.toLocaleString()} rules. ${T.passed_in_sample} made money from late 2024 to December 2025; none survived the false-discovery correction after it. The best twenty-five in sample averaged ${sp(T.decay.top25_in_mean, 2)} a trade in sample and ${sp(T.decay.top25_out_mean, 2)} after: positive, but not distinguishable from luck on seventy-three names and two years.`);
   if (P) para(`So the price-and-volume families were re-run on fourteen years of point-in-time small caps, failures included (${P.names.toLocaleString()} names). One family held in both halves: buying a sharp three-to-five-day fall (short-term reversal, documented since Jegadeesh 1990). Momentum, breakouts and the trend filters did not. The reversal variant chosen on 2013-2020 earned the swing sleeve its rule; it is re-checked weekly and stops trading if it stops replicating.`);
-  if (M) para(`At the market level, twenty years of SPY: a trend switch (${M.chosen}) cut the worst drawdown from ${sp(M.buy_and_hold.in_sample.max_dd, 0)} to ${sp(M.chosen_result.in_sample.max_dd, 0)} before 2018 but earned less after it (${sp(M.chosen_result.out_of_sample.cagr, 1)} a year against ${sp(M.buy_and_hold.out_of_sample.cagr, 1)}): it protects, it does not maximise. The FOMC-day drift (t ${M.calendar.fomc_decision_day.in_sample.t_vs_others} before 2018) vanished after; the turn of the month and the weekday showed nothing; SPY earned more overnight than during the day. Idle swing cash therefore sits in SPY.`);
+  if (M) para(`At the market level, twenty years of SPY: a trend switch (${trendName(M.chosen)}) cut the worst drawdown from ${sp(M.buy_and_hold.in_sample.max_dd, 0)} to ${sp(M.chosen_result.in_sample.max_dd, 0)} before 2018 but earned less after it (${sp(M.chosen_result.out_of_sample.cagr, 1)} a year against ${sp(M.buy_and_hold.out_of_sample.cagr, 1)}): it protects, it does not maximise. The FOMC-day drift (t ${M.calendar.fomc_decision_day.in_sample.t_vs_others} before 2018) vanished after; the turn of the month and the weekday showed nothing; SPY earned more overnight than during the day. Idle swing cash therefore sits in SPY.`);
   const rows = (P?.top || []).map((r) => ({ rule: r.rule, in_mean: r.in_sample.mean, in_t: r.in_sample.t, out_mean: r.out_of_sample.mean, out_t: r.out_of_sample.t, n: r.out_of_sample.n }));
   renderTable(document.getElementById("lab-table"), rows, [
-    { key: "rule", label: "Best rules, 2013-2020 (small caps)", fmt: (v) => el("span", { class: "note", text: v }) },
+    { key: "rule", label: "Best rules, 2013-2020 (small caps)", fmt: (v) => el("span", { title: v, text: labRule(v) }) },
     { key: "in_mean", label: "To 2020", num: true, fmt: (v) => sp(v, 2) },
     { key: "in_t", label: "t", num: true },
     { key: "out_mean", label: "2021 on", num: true, fmt: (v) => el("span", { class: `tk-vs ${tn(v)}`, text: sp(v, 2) }) },
@@ -396,12 +452,23 @@ function vbook() {
   ] });
   cfg.options.plugins.legend = { display: false };
   cfg.options.plugins.tooltip = { callbacks: { label: (c) => ` ${c.dataset.label}: ${sp(c.parsed.y / 100 - 1, 2)}` } };
-  cfg.data.datasets.forEach((d) => { d.spanGaps = true; });
-  draw("vb-chart", cfg);
+  cfg.data.datasets.forEach((d) => { d.spanGaps = true; if (C.length < 12) { d.pointRadius = 3; } });
+  const box = document.getElementById("vb-chart").closest(".chart");
+  if (C.length < 2) {
+    // One session of record: a chart of a single point is an empty grid.
+    box.hidden = true;
+    document.getElementById("vb-legend").hidden = true;
+  } else {
+    box.hidden = false;
+    document.getElementById("vb-legend").hidden = false;
+    draw("vb-chart", cfg);
+  }
   const lg = document.getElementById("vb-legend"); lg.innerHTML = "";
   [["Venture book", accent], ["Your Questrade portfolio", ink], ["S&P 500", muted]].forEach(([t, c]) =>
     lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-line", style: `border-top-color:${c}` }), el("span", { text: t })])));
-  document.getElementById("vb-note").textContent =
+  document.getElementById("vb-note").textContent = (C.length < 2
+    ? `The record starts on ${fmtDay(VB.inception)}; the chart draws itself from the next session, when there is a second point to join. `
+    : "") +
     `The book started at US$100,000 on ${fmtDay(VB.inception)}, the day its mandate was set; every line starts at 100 then. ` +
     "The Questrade line is the time-weighted return of both TFSAs in Canadian dollars; the venture book is in US dollars " +
     "and pays no fees or taxes. Different currencies and costs: read the shapes, not the decimals.";
@@ -414,12 +481,17 @@ function vbook() {
     { key: "last", label: "Last", num: true, fmt: (v) => usd(v, 2) },
     { key: "gain", label: "Gain", num: true, fmt: (v) => el("span", { class: `tk-vs ${tn(v)}`, text: sp(v) }) },
     { key: "pillar", label: "Pillar", fmt: (v) => el("span", { class: "note", text: v || "–" }) },
-    { key: "why", label: "Why it is held", fmt: (v) => el("span", { class: "note", text: v ? `score ${v.adj} · ${(v.flags || []).join(", ")}` : "inception holding" }) },
+    { key: "why", label: "Why it is held", fmt: (v) => el("span", { class: "note",
+        text: v ? [`theme score ${v.adj}`, ...(v.flags || []).map(flagLabel)].join(" · ") : "inception holding" }) },
   ], { sortKey: "weight", dir: -1 });
   document.getElementById("vb-pos-meta").textContent = `${VB.positions.length} names · ${(VB.cash_weight * 100).toFixed(0)}% cash`;
   const byP = {};
   VB.positions.forEach((p) => { byP[p.pillar || "Other"] = (byP[p.pillar || "Other"] || 0) + p.weight; });
   const pil = Object.entries(byP).sort((a, b) => b[1] - a[1]), cols = breakdownColors(pil.length);
+  // The rest of the book: the swing sleeve's idle cash parked in SPY, then cash.
+  const spyW = VB.nav ? ((VB.swing || {}).parked_in_spy || 0) / VB.nav : 0;
+  if (spyW > 0.001) { pil.push(["Swing sleeve, parked in SPY", spyW]); cols.push(tok("--muted")); }
+  if ((VB.cash_weight || 0) > 0.001) { pil.push(["Cash", VB.cash_weight]); cols.push(tok("--border-2")); }
   const bar = document.getElementById("vb-pillars");
   bar.replaceChildren(...pil.map(([k, w], i) => el("i", { style: `flex:${w};background:${cols[i]}`, title: `${k} ${(w * 100).toFixed(0)}%` })));
   bar.setAttribute("aria-label", pil.map(([k, w]) => `${k} ${(w * 100).toFixed(0)}%`).join(", "));
@@ -439,7 +511,7 @@ function vbook() {
     { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) },
     { key: "value", label: "Value", num: true, fmt: (v) => usd(v) },
     { key: "price", label: "Price", num: true, fmt: (v) => usd(v, 2) },
-    { key: "reason", label: "Why", cls: () => "note" },
+    { key: "reason", label: "Why", cls: () => "note wrap", fmt: (v) => (v || "").replace(/ \(\)$/, "").replace(/\(([A-Z_, ]+)\)$/, (_, f) => `· ${f.split(/,\s*/).map(flagLabel).join(", ")}`) },
   ], { sortKey: "date", dir: -1 });
   document.getElementById("vb-tr-meta").textContent = `${VB.n_trades} trades since ${fmtDay(VB.inception)}`;
   const R = VB.rules;

@@ -1191,7 +1191,37 @@ button.dm-n.picked { border-color: var(--accent); box-shadow: inset 2px 0 0 var(
 .dg-list .note { display: block; }
 
 /* Venture thesis: an essay, set for reading. */
-.vx-thesis { max-width: 74ch; margin: var(--sp-4) 0 var(--sp-6); }
+.vx-thesis { margin: var(--sp-4) 0 var(--sp-6); }
+.vx-head { max-width: 78ch; }
+.vx-grid { display: grid; grid-template-columns: minmax(0, 70ch) minmax(260px, 1fr); gap: var(--sp-6); align-items: start; }
+.vx-aside { position: sticky; top: 80px; display: grid; gap: var(--sp-3); padding: var(--sp-4); border: 1px solid var(--border);
+  border-radius: var(--r-md, 8px); background: var(--surface); }
+.vx-aside-h { font-size: var(--t-xs); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0; font-weight: var(--fw-med); }
+.vx-proj { display: grid; gap: 10px; }
+.vx-card { border-top: 1px solid var(--border); padding-top: 8px; display: grid; gap: 4px; }
+.vx-card:first-child { border-top: 0; padding-top: 0; }
+.vx-card-h { font-weight: var(--fw-med); font-size: var(--t-sm); color: var(--ink); }
+.vx-card-row { display: grid; grid-template-columns: 38px 1fr; gap: 8px; font-size: var(--t-sm); color: var(--ink-2); line-height: 1.4; }
+.vx-card-row.then { color: var(--ink); }
+.vx-card-l { font-family: var(--font-num); font-size: var(--t-xs); color: var(--muted); padding-top: 2px; }
+.vx-card-row.then .vx-card-l { color: var(--book, var(--accent)); }
+@media (max-width: 1100px) { .vx-grid { grid-template-columns: minmax(0, 1fr); } .vx-aside { position: static; } }
+.vx-pitch { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: var(--sp-3); align-items: baseline;
+  padding: 10px 0; border-bottom: 1px solid var(--grid); }
+.vx-pitch-call { color: var(--ink-2); }
+.vx-pitch-pdf { white-space: nowrap; font-size: var(--t-sm); }
+.vx-theme { display: grid; grid-template-columns: minmax(160px, 240px) minmax(0, 1fr); gap: var(--sp-4); align-items: start;
+  padding: 10px 0; border-bottom: 1px solid var(--grid); }
+.vx-theme:last-child { border-bottom: 0; }
+.vx-theme-l { font-size: var(--t-sm); color: var(--ink-2); line-height: 1.4; padding-top: 3px; }
+.vx-theme-names { display: flex; flex-wrap: wrap; gap: 6px; }
+td.vx-flags-cell { white-space: normal; min-width: 300px; }
+td.vx-flags-cell .flags { flex-wrap: wrap; }
+@media (max-width: 640px) {
+  .vx-theme { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .vx-pitch { grid-template-columns: 60px minmax(0, 1fr); }
+  .vx-pitch-pdf { grid-column: 2; }
+}
 .vx-kicker { font-size: var(--t-xs); letter-spacing: .12em; text-transform: uppercase; color: var(--book, var(--accent)); margin: 0 0 6px; }
 .vx-thesis h1 { font-family: var(--font-display); font-size: 46px; line-height: 1.02; margin: 0 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
 .vx-dek { font-size: 19px; line-height: 1.5; color: var(--ink-2); margin: 0 0 10px; text-wrap: pretty; }
@@ -1204,6 +1234,7 @@ button.dm-n.picked { border-color: var(--accent); box-shadow: inset 2px 0 0 var(
 .vx-src { font-size: var(--t-xs); color: var(--muted); padding-left: 1.2em; display: grid; gap: 3px; }
 .vx-src a { color: var(--muted); }
 .vx-pillars { height: 14px; display: flex; border-radius: 3px; overflow: hidden; }
+.vx-pillars + .legend { margin-top: var(--sp-3); row-gap: var(--sp-2); }
 .vx-old { margin-top: var(--sp-6); }
 .vx-old > summary { cursor: pointer; font-family: var(--font-display); font-size: 22px; padding: var(--sp-3) 0; color: var(--ink-2); }
 @media (max-width: 640px) { .vx-thesis h1 { font-size: 34px; } .vx-dek { font-size: 17px; } }

@@ -42,6 +42,7 @@ const SECTIONS = [
       ["Earnings calls", "research/transcripts.html"],
       ["Revisions", "research/revisions.html", "Ideas"],
       ["Demand tree", "research/demand.html"],
+      ["Power", "research/power.html"],
       ["Small caps", "research/smallcap.html"],
     ],
   },

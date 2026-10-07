@@ -383,6 +383,11 @@ export async function analytics(spec) {
       `not how independent the holdings are.`;
   }
 
+  const THEME_NAMES = { ai: "AI", quantum: "Quantum", semiconductors: "Semiconductors", space: "Space",
+    cloud_software: "Cloud software", robotics: "Robotics", clean_energy: "Clean energy", fintech: "Fintech",
+    financials: "Financials", infrastructure: "Infrastructure", traditional_energy: "Oil and gas",
+    cannabis_consumer: "Cannabis and consumer", untagged: "No theme tag" };
+
   function themes() {
     const host = document.getElementById("theme-bars");
     const t = M.theme_exposure || {};
@@ -393,17 +398,18 @@ export async function analytics(spec) {
       document.getElementById("theme-note").textContent = "";
       return;
     }
-    const colors = breakdownColors(keys.length);
+    // Tagged themes largest first; untagged last, set apart, since it is the absence of a theme.
+    const tagged = keys.filter((k) => k !== "untagged").sort((a, b) => t[b] - t[a]);
+    const colors = breakdownColors(tagged.length);
     const max = Math.max(...Object.values(t), 0.01);
-    keys.forEach((k, i) => {
-      const c = k === "untagged" ? tok("--muted") : colors[i];
-      host.appendChild(el("div", { class: "alloc-row" }, [
-        el("span", { class: "dot", style: `background:${c}` }),
-        el("span", { class: "sym", text: k }),
-        el("span", { class: "meter" }, [el("i", { style: `width:${(t[k] / max * 100).toFixed(1)}%;background:${c}` })]),
-        el("span", { class: "num", text: fmtPct(t[k], 1) }),
-      ]));
-    });
+    const row = (k, c, extra = "") => el("div", { class: `alloc-row theme-row${extra}` }, [
+      el("span", { class: "dot", style: `background:${c}` }),
+      el("span", { class: "theme-l", text: THEME_NAMES[k] || k.replace(/_/g, " ").replace(/^./, (x) => x.toUpperCase()) }),
+      el("span", { class: "meter" }, [el("i", { style: `width:${(t[k] / max * 100).toFixed(1)}%;background:${c}` })]),
+      el("span", { class: "num", text: fmtPct(t[k], 1) }),
+    ]);
+    tagged.forEach((k, i) => host.appendChild(row(k, colors[i])));
+    if (t.untagged) host.appendChild(row("untagged", tok("--muted"), " total"));
     document.getElementById("theme-note").textContent =
       `${fmtPct(1 - (t.untagged || 0), 0)} of the book carries a theme tag. Classification is the ` +
       `ETF-intersection signal only, so it reflects what thematic ETFs own, not measured revenue exposure.`;

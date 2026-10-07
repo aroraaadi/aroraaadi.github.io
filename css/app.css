@@ -647,6 +647,9 @@ footer {
 }
 .alloc-row:hover { background: var(--surface-2); }
 .alloc-row .dot { margin: 0; }
+.alloc-row.theme-row { grid-template-columns: 12px minmax(7.5em, 10em) 1fr 56px; gap: var(--sp-3); }
+.alloc-row .theme-l { font-size: var(--t-sm); color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.alloc-row.theme-row.total .theme-l { color: var(--ink-2); }
 .alloc-row.total { border-bottom: 0; border-top: 1px solid var(--border-2); color: var(--ink-2); margin-top: var(--sp-1); }
 
 /* ---------- optimizer search + chips ---------- */

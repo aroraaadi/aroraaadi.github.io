@@ -131,11 +131,41 @@ function coefs() {
   avg.forEach((f, i) => lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-line", style: `border-top-color:${cols[i]}` }), el("span", { text: D.labels[f] })])));
 }
 
+async function live() {
+  let L = null;
+  try { L = await loadJSON("data/statarb_live.json"); } catch { $("sa-live-note").textContent = "The paper account has not been published yet."; return; }
+  const E = L.expected || {};
+  $("sa-live-meta").textContent = L.started ? `Alpaca paper account · since ${fmtDate(L.started)}` : "Alpaca paper account";
+  renderStats("sa-live-strip", [
+    { label: "Equity index", value: L.index == null ? "–" : L.index.toFixed(2), delta: "100 at the start · no dollars shown" },
+    { label: "Days traded", value: String(L.days), delta: L.hit_rate == null ? "" : `${fmtPct(L.hit_rate, 0)} of days up · backtest ${fmtPct(E.hit_rate, 0)}` },
+    { label: "Sharpe so far", value: L.sharpe == null ? "–" : L.sharpe.toFixed(2), delta: E.sharpe ? `backtest ${E.sharpe.toFixed(2)} free, ${E.at_25bp_sharpe.toFixed(2)} at 25 bp` : "" },
+    { label: "Book", value: `${L.positions} positions`, delta: `${fmtPct(L.gross_long, 0)} long · ${fmtPct(L.gross_short, 0)} short · ${L.tranches_open} tranches` },
+  ]);
+  if (L.series.length > 1) {
+    const cfg = lineConfig({ labels: L.series.map((p) => p.date), yFmt: (v) => v.toFixed(1), series: [
+      { label: "Paper equity, 100 at start", data: L.series.map((p) => p.index), color: tok("--accent"), width: 2, fill: true }] });
+    cfg.options.plugins.legend = { display: false };
+    draw("sa-live-chart", cfg);
+  } else {
+    $("sa-live-chart").closest(".chart").style.display = "none";
+  }
+  $("sa-live-note").textContent = L.note + (L.days < 20 ? ` ${L.days} days is nothing yet: at the backtest's daily vol, twenty days of noise is ±${(2 * (E.daily_vol || 0) * Math.sqrt(20) * 100).toFixed(1)}% around the mean.` : "");
+  renderTable($("sa-live-tr"), [...L.tranches].reverse(), [
+    { key: "trade_date", label: "Traded at the close of", fmt: (v) => fmtDate(v) },
+    { key: "signal_date", label: "Signal from", cls: () => "note", fmt: (v) => fmtDate(v) },
+    { key: "status", label: "Status", cls: () => "note" },
+    { key: "longs", label: "Longs", num: true }, { key: "shorts", label: "Shorts", num: true }, { key: "filled", label: "Filled", num: true },
+    { key: "long_names", label: "Top longs", cls: () => "note wrap", fmt: (v) => (v || []).slice(0, 6).join(" ") },
+    { key: "short_names", label: "Top shorts", cls: () => "note wrap", fmt: (v) => (v || []).slice(0, 6).join(" ") },
+  ]);
+}
+
 (async function init() {
   renderShell();
   try { D = await loadJSON("data/statarb.json"); } catch (err) { showError($("error"), err); return; }
   setAsOf(D.as_of);
-  strip(); known(); models(); equity(); costs(); years(); coefs();
+  strip(); known(); models(); equity(); costs(); years(); coefs(); live();
   $("sa-method").textContent = D.method;
   $("sa-eq-mode").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     $("sa-eq-mode").querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); eqMode = b.dataset.k; equity(); }));

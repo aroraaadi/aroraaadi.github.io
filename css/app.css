@@ -1274,3 +1274,9 @@ td.pw-deal-size { min-width: 10em; max-width: 18em; }
   .pw-demand, .pw-card-b, .pw-card-top { grid-template-columns: 1fr; }
   .pw-fact { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ---------- Stat arb (research/statarb.html) ---------- */
+.sa-row { display: grid; grid-template-columns: 8em minmax(0, 1fr) minmax(0, 1fr); gap: var(--sp-4); padding: var(--sp-3) 0; border-bottom: 1px solid var(--grid); font-size: var(--t-sm); line-height: 1.5; }
+.sa-row:last-child { border-bottom: 0; }
+.sa-k { color: var(--ink-2); text-transform: uppercase; letter-spacing: .05em; font-size: 11px; padding-top: 3px; }
+@media (max-width: 760px) { .sa-row { grid-template-columns: 1fr; gap: var(--sp-1); } }

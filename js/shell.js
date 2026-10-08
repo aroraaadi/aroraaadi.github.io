@@ -45,6 +45,7 @@ const SECTIONS = [
       ["Power", "research/power.html"],
       ["Renaissance 13F", "research/rentech.html"],
       ["Stat arb", "research/statarb.html"],
+      ["Swing setups", "research/swing.html"],
       ["Small caps", "research/smallcap.html"],
     ],
   },

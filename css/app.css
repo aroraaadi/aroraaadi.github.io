@@ -1280,3 +1280,7 @@ td.pw-deal-size { min-width: 10em; max-width: 18em; }
 .sa-row:last-child { border-bottom: 0; }
 .sa-k { color: var(--ink-2); text-transform: uppercase; letter-spacing: .05em; font-size: 11px; padding-top: 3px; }
 @media (max-width: 760px) { .sa-row { grid-template-columns: 1fr; gap: var(--sp-1); } }
+
+/* ---------- Swing setups (research/swing.html) ---------- */
+td.sw-why { min-width: 18em; max-width: 30em; font-size: var(--t-sm); line-height: 1.35; }
+#sw-entries td, #sw-rec-trades td { padding-top: 6px; padding-bottom: 6px; }

@@ -1250,7 +1250,7 @@ td.vx-flags-cell .flags { flex-wrap: wrap; }
 .pw-src { display: flex; flex-wrap: wrap; gap: 4px var(--sp-3); font-size: var(--t-sm); }
 .pw-fact { display: grid; grid-template-columns: minmax(9em, 13em) 1fr; gap: var(--sp-3); padding: 6px 0; border-bottom: 1px solid var(--grid); font-size: var(--t-sm); }
 .pw-fact-k { color: var(--ink-2); }
-.pw-groups { flex-wrap: wrap; }
+.pw-groups, .seg.wrap { flex-wrap: wrap; }
 .pw-co { display: inline-flex; gap: 6px; align-items: baseline; white-space: nowrap; }
 .pw-group-h { font-family: var(--font-display); font-weight: 400; font-size: 20px; margin: var(--sp-5) 0 var(--sp-2); }
 .pw-card { border: 1px solid var(--border); border-radius: 6px; background: var(--surface); margin-bottom: var(--sp-2); }

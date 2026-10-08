@@ -1284,3 +1284,5 @@ td.pw-deal-size { min-width: 10em; max-width: 18em; }
 /* ---------- Swing setups (research/swing.html) ---------- */
 td.sw-why { min-width: 18em; max-width: 30em; font-size: var(--t-sm); line-height: 1.35; }
 #sw-entries td, #sw-rec-trades td { padding-top: 6px; padding-bottom: 6px; }
+#sw-rules td:last-child, #sw-ideas td:first-child, #sw-papers td { max-width: 26em; }
+#sw-papers td:nth-child(3), #sw-papers td:nth-child(7) { max-width: 30em; }

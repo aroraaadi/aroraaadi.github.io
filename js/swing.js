@@ -55,7 +55,7 @@ function entries() {
   $("sw-e-meta").textContent = `${rows.length} shown · entered at the next open · built ${S.built.replace("T", " ")}`;
   $("sw-e-note").textContent = side === "long"
     ? "Buy at the next open; the stop and target are set off the signal close in units of the 14-day ATR. A setup with no stop leaves at the close of its last held session."
-    : "Sell short at the next open; the stop sits above, the target below. Borrow and locate costs are not modelled; a name Alpaca does not mark shortable is flagged.";
+    : "A short setup is expressed by buying an at-the-money put about a month out (nothing is sold short): the stop above and the target below are the underlying's levels, and the put is priced by Black-Scholes at the name's realised volatility times 1.25 with a 5% half-spread each way. A name with no listed options is flagged.";
   $("sw-e-foot").textContent = `Size is the share of equity under the ${S.size_policy.replace("_", " ")} policy, capped at a tenth of equity and 5% risk; "risk unit" is the stop ` +
     `distance (or one ATR). Rank: evidence grade first, then ${S.model_in_use ? "the trade model's expected return" : "the stat-arb model's rank for the side (the trade model's expectation is shown as a diagnostic until it clears its bar)"}. ` +
     `Flags are shown, not hidden: a report within ${S.context.earnings_skip_days} sessions, a stressed regime for longs, a name that cannot be shorted, a rule the live record has paused.`;
@@ -232,6 +232,58 @@ function timingPanel() {
     `Waiting for confirmation costs the first day of the move; a limit misses the names that never come back. The test is what says whether the wait is worth it.`;
 }
 
+let PM = null, pmMode = "reliable";
+const famLabel = (k) => k.replace(/_/g, " ");
+function permutePanel() {
+  if (!PM) { $("sw-pm-note").textContent = "The permutation search runs with the weekly lab."; return; }
+  const c = PM.counts;
+  $("sw-pm-meta").textContent = `${PM.tried.toLocaleString()} rules · ${fmtDate(PM.as_of)} · ${Math.round(PM.seconds / 60)} min`;
+  renderStats("sw-pm-strip", [
+    { label: "Tried", value: PM.tried.toLocaleString(), delta: `${Object.keys(PM.by_family).length} signal families × ${Object.keys(PM.by_filter_family).length} filter families × ${PM.holds.length} holds × 2 sides` },
+    { label: "Worked in sample", value: c.in_sample_t3.toLocaleString(), delta: `t ≥ 3 before ${PM.split.slice(0, 4)}` },
+    { label: "Pass the FDR", value: PM.fdr_passed.toLocaleString(), delta: "Benjamini-Hochberg at 10% across everything tried" },
+    { label: "Established · replicated", value: `${c.established} · ${c.replicated}`, delta: "out-of-sample t ≥ 3 · in t ≥ 3 and out t ≥ 2" },
+    { label: "Reliable", value: String(c.reliable), tone: c.reliable ? "up" : "warn", delta: "established, FDR, both halves and 4 of 6 years positive, still earns at $5+ and $5m a day" },
+  ]);
+  const d = PM.decay || {};
+  $("sw-pm-note").textContent = `Selection decay: the ${d.k} best rules in sample averaged ${spct(d.in_mean, 2)} a trade before ${PM.split.slice(0, 4)} and ${spct(d.out_mean, 2)} after; ${fmtPct(d.out_positive, 0)} stayed positive and ${fmtPct(d.out_t2, 0)} kept t ≥ 2. ` +
+    `Costs ${PM.cost_bp} bp a side (${PM.cost_bp_high} bp shown), weekly-clustered t, the point-in-time panel with its failures, next-close entry, no stops.`;
+  const ruleCols = [
+    { key: "rule", label: "Rule", fmt: (v) => v.replace(/\|/g, " · ").replace(/_/g, " ") },
+    { key: "grade", label: "Grade", fmt: gradePill },
+    { key: "ins", label: "In sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
+    { key: "oos", label: "Out of sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
+    { key: "oos", label: "Trades out", num: true, fmt: (b) => (b.n == null ? "–" : b.n.toLocaleString()) },
+    { key: "oos_25bp_mean", label: "At 25 bp", num: true, fmt: (v) => spct(v, 2) },
+    { key: "years_positive", label: "Years +", num: true, fmt: (v, r) => `${v}/${r.years}` },
+    { key: "halves", label: "2021-23 · 2024-26", num: true, fmt: (h) => (h || []).map((v) => spct(v, 1)).join(" · ") },
+    { key: "liquid", label: "$5+ · $5m/day", num: true, fmt: (l) => (l ? el("span", {}, [el("span", { text: spct(l.oos.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(l.oos.t)]) : el("span", { class: "note", text: "–" })) },
+    { key: "fdr_pass", label: "FDR", cls: () => "note", fmt: (v) => (v ? "pass" : "–") },
+  ];
+  const famCols = [
+    { key: "key", label: "Family", fmt: famLabel }, { key: "tried", label: "Tried", num: true, fmt: (v) => v.toLocaleString() },
+    { key: "in_sample_t3", label: "Worked in sample", num: true }, { key: "fdr", label: "FDR", num: true }, { key: "replicated", label: "Established or replicated", num: true },
+    { key: "reliable", label: "Reliable", num: true, fmt: (v) => el("span", { class: v ? "up" : "note", text: String(v) }) },
+    { key: "best", label: "Best out of sample", cls: () => "note wrap", fmt: (b) => (b ? `${b.rule.replace(/\|/g, " · ").replace(/_/g, " ")}: ${spct(b.oos.mean, 2)}, t ${b.oos.t == null ? "–" : b.oos.t.toFixed(1)}` : "–") },
+  ];
+  if (pmMode === "reliable") {
+    renderTable($("sw-pm-table"), PM.reliable, ruleCols);
+    $("sw-pm-foot").textContent = PM.reliable.length ? "Reliable is the whole bar at once; a rule here is still one sample from one market, and its first live test is the ledger." : "Nothing cleared the whole bar: the rules that looked established either failed in one half of the test period, or earned only in names under $5 or $5m a day, where a close is a bid or an ask print.";
+  } else if (pmMode === "leaderboard") {
+    renderTable($("sw-pm-table"), PM.leaderboard, ruleCols);
+    $("sw-pm-foot").textContent = "The eighty best by out-of-sample t across everything tried. Read the in-sample column beside it: a rule that was nothing before 2021 and strong after is the kind a search finds by luck.";
+  } else if (pmMode === "families") {
+    renderTable($("sw-pm-table"), Object.entries(PM.by_family).map(([k, v]) => ({ key: k, ...v })), famCols);
+    $("sw-pm-foot").textContent = "Signal families: what enters. 'all' is every name every day, so the filter alone is the rule (the calendar, the market, a fundamental tercile). fund single and fund pair enter monthly on the panel's update.";
+  } else if (pmMode === "filters") {
+    renderTable($("sw-pm-table"), Object.entries(PM.by_filter_family).map(([k, v]) => ({ key: k, ...v })), famCols);
+    $("sw-pm-foot").textContent = "Filter families: on which names or days. The share that replicates within a family is the number to compare across families, not the count.";
+  } else {
+    renderTable($("sw-pm-table"), PM.worst, ruleCols);
+    $("sw-pm-foot").textContent = "The worst out of sample. A reliably negative rule is not a short: its mirror was tried in the same grid and is graded on its own.";
+  }
+}
+
 let I = null;
 function ideasPanel() {
   if (!I) { $("sw-i-note").textContent = "The idea engine runs with the weekly lab."; return; }
@@ -356,13 +408,14 @@ function bookPanel() {
     cfg.options.plugins.legend = { display: false };
     draw("sw-b-chart", cfg);
   } else { $("sw-b-chart").closest(".chart").style.display = "none"; }
-  $("sw-b-note").textContent = `Paper money: ${B.rules.max_positions} positions at most, a tenth of NAV each, ${B.rules.cost_bp} bp a side on every fill, only setups graded ${B.rules.grades.join(" or ")}, ` +
-    `the long book hedged with a short in ${B.rules.hedge} so the return is the setups' over the market. Fills are the next session's real open; nothing is sent to a broker.`;
+  $("sw-b-note").textContent = `Paper money: ${B.rules.max_positions} positions at most, a tenth of NAV each, ${B.rules.cost_bp} bp a side on every stock fill, only setups graded ${B.rules.grades.join(" or ")}. ` +
+    (B.rules.hedge ? `The long book is hedged with a short in ${B.rules.hedge}. ` : `Longs buy the ${B.rules.long_via || "stock"}; shorts buy an at-the-money ${B.rules.short_via || "put"} about ${B.rules.option_days || 30} days out (Black-Scholes at realised vol × ${B.rules.iv_premium || 1.25}, ${((B.rules.option_spread || 0.05) * 100).toFixed(0)}% half-spread each way, whole contracts); nothing is sold short and there is no index hedge, so the book carries its market exposure. `) +
+    `Fills are the next session's real open; nothing is sent to a broker.`;
   if (bMode === "positions") {
     const rows = B.positions.map((p) => ({ ...p, live: q[p.symbol]?.price }));
     renderTable($("sw-b-table"), rows, [
-      { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) }, { key: "rule", label: "Setup", fmt: ruleLabel }, { key: "side", label: "Side", cls: () => "note" },
-      { key: "qty", label: "Shares", num: true }, { key: "fill_px", label: "Filled at", num: true, fmt: (v) => v.toFixed(2) }, { key: "fill_date", label: "On", fmt: fmtDate },
+      { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) }, { key: "rule", label: "Setup", fmt: ruleLabel }, { key: "side", label: "Side", cls: () => "note", fmt: (v, r) => (r.instrument && r.instrument !== "stock" ? `${v} (${r.instrument} ${r.strike?.toFixed(2)} ${fmtDate(r.expiry)})` : v) },
+      { key: "qty", label: "Shares", num: true, fmt: (v, r) => (r.instrument && r.instrument !== "stock" ? `${v} contract${v === 1 ? "" : "s"}` : v) }, { key: "fill_px", label: "Filled at", num: true, fmt: (v) => v.toFixed(2) }, { key: "fill_date", label: "On", fmt: fmtDate },
       { key: "last", label: "Last close", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "live", label: "Live", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) },
       { key: "stop", label: "Stop", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "target", label: "Target", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) },
       { key: "sessions", label: "Held", num: true, fmt: (v, r) => (r.rule === "hedge" ? "–" : `${v} of ${r.hold}`) },
@@ -399,6 +452,7 @@ function wire() {
   seg("sw-e-grade", (k) => { gradeMode = k; entries(); });
   seg("sw-b-mode", (k) => { bMode = k; bookPanel(); });
   seg("sw-l-mode", (k) => { lMode = k; learnPanel(); });
+  seg("sw-pm-mode", (k) => { pmMode = k; permutePanel(); });
 }
 
 (async function init() {
@@ -410,8 +464,9 @@ function wire() {
   try { I = await loadJSON("data/swing_ideas.json"); } catch { I = null; }
   try { P = await loadJSON("data/swing_papers.json"); } catch { P = null; }
   try { LN = await loadJSON("data/swing_learn.json"); } catch { LN = null; }
+  try { PM = await loadJSON("data/swing_permute.json"); } catch { PM = null; }
   setAsOf(S.as_of);
-  strip(); bookPanel(); entries(); storiesPanel(); learnPanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
+  strip(); bookPanel(); entries(); storiesPanel(); learnPanel(); permutePanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
   live(); setInterval(live, 60_000);
   onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); });
 })();

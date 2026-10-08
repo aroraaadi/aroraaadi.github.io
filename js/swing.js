@@ -36,6 +36,7 @@ function entries() {
     { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) },
     { key: "rule", label: "Setup", fmt: (v, r) => el("span", { title: (r.also || []).length ? `also: ${r.also.map(ruleLabel).join(", ")}` : "", text: ruleLabel(v) + ((r.also || []).length ? ` +${r.also.length}` : "") }) },
     { key: "grade", label: "Evidence", fmt: gradePill },
+    { key: "model", label: "Model", num: true, fmt: (m) => (m && m.mu != null ? el("span", { class: m.in_use ? (m.mu > 0 ? "up" : "down") : "note", title: `chart ${spct(m.tech, 2)} · fundamentals ${spct(m.fund, 2)} · setup ${spct(m.base, 2)}${m.in_use ? "" : " · diagnostic"}`, text: spct(m.mu, 2) }) : "–") },
     { key: "signal_close", label: "Signal close", num: true, fmt: (v) => v.toFixed(2) },
     { key: "q", label: "Live", num: true, fmt: (q) => (q ? el("span", { class: q.day_pct > 0 ? "up" : q.day_pct < 0 ? "down" : "", text: `${q.price.toFixed(2)} (${spct(q.day_pct)})` }) : "–") },
     { key: "timing", label: "Entry plan", cls: () => "note", fmt: (v, r) => planLabel(r) },
@@ -56,7 +57,106 @@ function entries() {
     ? "Buy at the next open; the stop and target are set off the signal close in units of the 14-day ATR. A setup with no stop leaves at the close of its last held session."
     : "Sell short at the next open; the stop sits above, the target below. Borrow and locate costs are not modelled; a name Alpaca does not mark shortable is flagged.";
   $("sw-e-foot").textContent = `Size is the share of equity under the ${S.size_policy.replace("_", " ")} policy, capped at a tenth of equity and 5% risk; "risk unit" is the stop ` +
-    `distance (or one ATR). Rank: evidence grade first, then the stat-arb model's rank for the side. Flags are shown, not hidden: a report within ${S.context.earnings_skip_days} sessions, a stressed regime for longs, a name that cannot be shorted.`;
+    `distance (or one ATR). Rank: evidence grade first, then ${S.model_in_use ? "the trade model's expected return" : "the stat-arb model's rank for the side (the trade model's expectation is shown as a diagnostic until it clears its bar)"}. ` +
+    `Flags are shown, not hidden: a report within ${S.context.earnings_skip_days} sessions, a stressed regime for longs, a name that cannot be shorted, a rule the live record has paused.`;
+}
+
+function storiesPanel() {
+  const rows = (side === "long" ? S.long : S.short).filter((r) => STRONG.has(r.grade) && r.story).slice(0, 12);
+  const box = $("sw-stories"); box.innerHTML = "";
+  $("sw-st-meta").textContent = rows.length ? `${rows.length} of tonight's ${side} setups with established or replicated evidence` : "no strong setups tonight";
+  rows.forEach((r) => {
+    const st = r.story, m = st.model || r.model;
+    const head = el("div", { class: "sw-story-h" }, [
+      el("span", { class: "sym", text: r.symbol }), el("span", { class: "note", text: ruleLabel(r.rule) }), gradePill(r.grade),
+      el("span", { class: "spacer" }),
+      m && m.mu != null ? el("span", { class: m.in_use ? (m.mu > 0 ? "up" : "down") : "note", text: `model ${spct(m.mu, 2)}` }) : el("span"),
+    ]);
+    const kids = [head, el("p", { class: "sw-story-t", text: st.text })];
+    if ((st.headlines || []).length) {
+      kids.push(el("ul", { class: "sw-story-news" }, st.headlines.map((h) => el("li", {}, [
+        h.url ? el("a", { href: h.url, target: "_blank", rel: "noopener", text: `“${h.title}”` }) : el("span", { text: `“${h.title}”` }),
+        el("span", { class: "note", text: ` ${h.publisher || ""} · ${fmtDate(h.session)}` }),
+      ]))));
+    }
+    if (m && m.mu != null) {
+      const w = Math.max(Math.abs(m.tech), Math.abs(m.fund), Math.abs(m.base), 1e-6);
+      kids.push(el("div", { class: "sw-story-bars" }, [["chart", m.tech], ["fundamentals", m.fund], ["setup", m.base]].map(([k, v]) =>
+        el("div", { class: "sw-bar-row" }, [el("span", { class: "note", text: k }), el("div", { class: "sw-bar" }, [el("div", { class: `sw-bar-fill ${v >= 0 ? "pos" : "neg"}`, style: `width:${(50 * Math.abs(v) / w).toFixed(1)}%;${v >= 0 ? "left:50%" : "right:50%"}` })]),
+          el("span", { class: "num " + (v > 0 ? "up" : v < 0 ? "down" : ""), text: spct(v, 2) })]))));
+    }
+    box.appendChild(el("div", { class: "sw-story" }, kids));
+  });
+}
+
+let LN = null, lMode = "coef";
+function learnPanel() {
+  if (!LN) { $("sw-l-note").textContent = "The trade model is fitted with the weekly lab and updated each evening from the ledger."; return; }
+  const b = LN.models.both, t = LN.models.tech, f = LN.models.fund, add = LN.added_by_fundamentals, lv = LN.live, sc = lv.score || {};
+  $("sw-l-meta").textContent = `fitted ${fmtDate(LN.fitted)} · ${LN.rules.length} setups pooled · ${LN.n_train.toLocaleString()} trades to ${LN.split.slice(0, 4)}, ${LN.n_test.toLocaleString()} after`;
+  renderStats("sw-l-strip", [
+    { label: "Combined model, out of sample", value: b.oos.ic == null ? "–" : `IC ${b.oos.ic.toFixed(3)}`, tone: b.oos.t == null ? "" : b.oos.t >= 3 ? "up" : b.oos.t <= -3 ? "down" : "", delta: `t ${b.oos.t == null ? "–" : b.oos.t.toFixed(1)} over ${b.oos.weeks} weeks · top third − bottom third ${spct(b.oos.spread?.diff, 2)} (t ${b.oos.spread?.t == null ? "–" : b.oos.spread.t.toFixed(1)})` },
+    { label: "Chart alone · story alone", value: `${t.oos.ic == null ? "–" : t.oos.ic.toFixed(3)} · ${f.oos.ic == null ? "–" : f.oos.ic.toFixed(3)}`, delta: `t ${t.oos.t == null ? "–" : t.oos.t.toFixed(1)} · t ${f.oos.t == null ? "–" : f.oos.t.toFixed(1)}` },
+    { label: "What the story adds", value: add.mean == null ? "–" : `${add.mean >= 0 ? "+" : ""}${add.mean.toFixed(3)} IC`, tone: add.t == null ? "" : add.t >= 3 ? "up" : add.t <= -3 ? "down" : "", delta: `paired over ${add.weeks} weeks, t ${add.t == null ? "–" : add.t.toFixed(1)}` },
+    { label: "In use", value: LN.use ? "yes" : "no", tone: LN.use ? "up" : "warn", delta: LN.use ? "orders candidates within a grade; a negative expectation is not traded" : "published as a diagnostic until the out-of-sample t clears 3" },
+    { label: "Learned from the record", value: `${lv.n} trades`, delta: sc.ic != null ? `live IC ${sc.ic.toFixed(3)} (t ${sc.t == null ? "–" : sc.t.toFixed(1)}) · sign agreement ${fmtPct(sc.sign_agreement, 0)} · panel weight ${fmtPct(lv.prior_weight, 0)}` : `panel weight ${fmtPct(lv.prior_weight, 0)} · scored once five trades close` },
+  ]);
+  $("sw-l-note").textContent = LN.method.split("\n\n").slice(0, 1).join(" ");
+  const tbl = $("sw-l-table"), chart = $("sw-l-chart").closest(".chart");
+  chart.style.display = lMode === "history" ? "" : "none";
+  if (lMode === "coef") {
+    const rows = LN.coefficients.filter((c) => c.block !== "base").sort((a, b) => Math.abs(b.prior_t) - Math.abs(a.prior_t));
+    renderTable(tbl, rows, [
+      { key: "label", label: "Term" }, { key: "block", label: "Block", cls: () => "note" },
+      { key: "prior", label: "Fitted β (per s.d.)", num: true, fmt: (v) => spct(v, 3) }, { key: "prior_t", label: "t", num: true, fmt: (v) => tcell(v) },
+      { key: "live", label: "After the record", num: true, fmt: (v, r) => el("span", { class: Math.sign(v) !== Math.sign(r.prior) && Math.abs(v - r.prior) > 1e-5 ? "warn" : "", text: spct(v, 3) }) },
+      { key: "live", label: "Moved", num: true, fmt: (v, r) => { const d = (lv.drift || []).find((x) => x.name === r.name); return d ? `${d.moved_se.toFixed(2)} s.e.` : "0.00 s.e."; } },
+    ]);
+    $("sw-l-foot").textContent = "β is the change in expected net return per one standard deviation of the term across the fitted trades, every other term held; " +
+      "t is the posterior mean over its standard error. The base terms (intercept and one per setup) carry each setup's own mean and are not shown. " +
+      `"After the record" is the posterior once the ${lv.n} closed live trades are folded in; "moved" is that shift in prior standard errors.`;
+  } else if (lMode === "tests") {
+    const rows = ["tech", "fund", "both"].map((k) => ({ model: { tech: "chart only", fund: "story only", both: "both" }[k], ...LN.models[k] }));
+    renderTable(tbl, rows, [
+      { key: "model", label: "Model" }, { key: "lam", label: "Shrinkage λ", num: true, fmt: (v) => v.toLocaleString() },
+      { key: "ins", label: "In sample IC", num: true, fmt: (b) => el("span", {}, [el("span", { text: (b.ic == null ? "–" : b.ic.toFixed(3)) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
+      { key: "oos", label: "Out of sample IC", num: true, fmt: (b) => el("span", {}, [el("span", { text: (b.ic == null ? "–" : b.ic.toFixed(3)) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
+      { key: "oos", label: "Top third − bottom third", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.spread?.diff, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.spread?.t)]) },
+      { key: "oos", label: "Calibration slope", num: true, fmt: (b) => (b.calibration_slope == null ? "–" : b.calibration_slope.toFixed(2)) },
+      { key: "oos", label: "Trades out", num: true, fmt: (b) => b.n.toLocaleString() },
+    ]);
+    $("sw-l-foot").textContent = "IC is the Spearman correlation of prediction and outcome within each entry week, averaged over weeks (its t over weeks). " +
+      "The spread is the mean net return of the top third of predictions less the bottom third, weekly-averaged before the t. A calibration slope of 1 means a predicted " +
+      "+1% was worth +1%. λ was chosen by leave-one-year-out cross-validation inside the fitted years. The paired test of both against chart only is the test of whether the story adds.";
+  } else if (lMode === "rules") {
+    const rows = Object.entries(LN.per_rule || {}).map(([k, v]) => ({ rule: k, ...v }));
+    renderTable(tbl, rows, [
+      { key: "rule", label: "Setup", fmt: ruleLabel },
+      { key: "prior_mean", label: "Lab mean (prior)", num: true, fmt: (v, r) => `${spct(v, 2)} ± ${r.prior_se == null ? "–" : fmtPct(r.prior_se, 2)}` },
+      { key: "live_n", label: "Live trades", num: true }, { key: "live_mean", label: "Live mean", num: true, fmt: (v) => spct(v, 2) },
+      { key: "post_mean", label: "Posterior mean", num: true, fmt: (v, r) => (v == null ? "–" : `${spct(v, 2)} ± ${fmtPct(r.post_se, 2)}`) },
+      { key: "p_positive", label: "P(mean > 0)", num: true, fmt: (v) => (v == null ? "–" : el("span", { class: v < 0.5 ? "down" : v > 0.95 ? "up" : "", text: fmtPct(v, 0) })) },
+      { key: "paused", label: "Book", fmt: (v) => el("span", { class: `pill ${v ? "down" : "up"}`, text: v ? "paused" : "trading" }) },
+    ]);
+    $("sw-l-foot").textContent = "Each setup's mean trade as a normal posterior: the lab's out-of-sample mean and standard error as the prior, the closed live suggestions as the data " +
+      "(the trade-level standard deviation from the lab). A setup is paused for the book once thirty live trades leave P(mean > 0) under a half; the weekly refit reconsiders it.";
+  } else {
+    const H = LN.history || [];
+    renderTable(tbl, H.slice().reverse().slice(0, 60), [
+      { key: "date", label: "Evening", fmt: fmtDate }, { key: "folded", label: "Trades folded", num: true }, { key: "n_live", label: "Live in all", num: true },
+      { key: "ic", label: "Live IC", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(3)) }, { key: "ic_t", label: "t", num: true, fmt: (v) => tcell(v) },
+      { key: "sign_agreement", label: "Sign agreement", num: true, fmt: (v) => fmtPct(v, 0) }, { key: "prior_weight", label: "Panel weight", num: true, fmt: (v) => fmtPct(v, 0) },
+      { key: "drift", label: "Moved most", cls: () => "note wrap", fmt: (v) => (v || []).map((d) => `${LN.labels?.[d.name] || d.name} ${d.moved_se >= 0 ? "+" : ""}${d.moved_se.toFixed(2)} s.e.`).join(" · ") },
+    ]);
+    const pts = H.filter((h) => h.ic != null);
+    if (pts.length >= 2) {
+      const cfg = lineConfig({ labels: pts.map((h) => h.date), yFmt: (v) => v.toFixed(2), series: [{ label: "Live IC", data: pts.map((h) => h.ic), color: tok("--accent"), width: 2 }] });
+      cfg.options.plugins.legend = { display: false };
+      draw("sw-l-chart", cfg);
+    } else { chart.style.display = "none"; }
+    $("sw-l-foot").textContent = "One row per evening the model learned: how many closed suggestions were folded in, the running rank correlation of its live predictions with their " +
+      "outcomes, the share whose sign it called, the weight the panel fit still carries, and the coefficients that moved most since the fit.";
+  }
 }
 
 function rules() {
@@ -272,7 +372,8 @@ function bookPanel() {
     renderTable($("sw-b-table"), B.orders, [
       { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) }, { key: "rule", label: "Setup", fmt: ruleLabel }, { key: "grade", label: "Grade", fmt: gradePill },
       { key: "side", label: "Side", cls: () => "note" }, { key: "notional", label: "Size", num: true, fmt: (v) => usd(v, 0) }, { key: "hold", label: "Hold", num: true, fmt: (v) => `${v}d` },
-      { key: "signal_date", label: "Signal", fmt: fmtDate },
+      { key: "signal_date", label: "Signal", fmt: fmtDate }, { key: "mu", label: "Model", num: true, fmt: (v) => spct(v, 2) },
+      { key: "story", label: "The story", cls: () => "note wrap sw-why", fmt: (v) => (v ? v.split(". ").slice(0, 3).join(". ") + (v.split(". ").length > 3 ? "…" : "") : "") },
     ]);
   } else {
     renderTable($("sw-b-table"), B.closed, [
@@ -294,9 +395,10 @@ async function live() {
 function wire() {
   const seg = (id, set) => $(id).querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     $(id).querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); set(b.dataset.k); }));
-  seg("sw-e-side", (k) => { side = k; entries(); });
+  seg("sw-e-side", (k) => { side = k; entries(); storiesPanel(); });
   seg("sw-e-grade", (k) => { gradeMode = k; entries(); });
   seg("sw-b-mode", (k) => { bMode = k; bookPanel(); });
+  seg("sw-l-mode", (k) => { lMode = k; learnPanel(); });
 }
 
 (async function init() {
@@ -307,8 +409,9 @@ function wire() {
   try { B = await loadJSON("data/swing_book.json"); } catch { B = null; }
   try { I = await loadJSON("data/swing_ideas.json"); } catch { I = null; }
   try { P = await loadJSON("data/swing_papers.json"); } catch { P = null; }
+  try { LN = await loadJSON("data/swing_learn.json"); } catch { LN = null; }
   setAsOf(S.as_of);
-  strip(); bookPanel(); entries(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
+  strip(); bookPanel(); entries(); storiesPanel(); learnPanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
   live(); setInterval(live, 60_000);
-  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); });
+  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); });
 })();

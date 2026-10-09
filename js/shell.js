@@ -46,6 +46,7 @@ const SECTIONS = [
       ["Renaissance 13F", "research/rentech.html"],
       ["Stat arb", "research/statarb.html"],
       ["Swing setups", "research/swing.html"],
+      ["Layered strategy", "research/layered.html"],
       ["Small caps", "research/smallcap.html"],
     ],
   },

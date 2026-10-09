@@ -116,6 +116,12 @@ function detail(d) {
   box.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+/* The ETF-theme keys in words: "cannabis_consumer" -> "Cannabis & consumer". */
+const THEME_WORDS = { ai: "AI", cloud_software: "Cloud software", clean_energy: "Clean energy", cannabis_consumer: "Cannabis & consumer",
+                      robotics: "Robotics", quantum: "Quantum", semis: "Semiconductors", cyber: "Cybersecurity", fintech: "Fintech",
+                      space: "Space", nuclear: "Nuclear", defense: "Defence", biotech: "Biotech", ev: "EVs", infrastructure: "Infrastructure" };
+const themeName = (k) => THEME_WORDS[k] || String(k).replace(/_/g, " ").replace(/^./, (c) => c.toUpperCase());
+
 const SORTS = { weight: "weight", pe: "pe", roic: "roic", revenue: "rev", theme: "themeScore" };
 
 function paint() {
@@ -141,7 +147,7 @@ function paint() {
     // "core" means thematic ETFs own it, not that it earns theme revenue.
     { key: "theme", label: "Theme", fmt: (v, r) =>
         v ? el("span", { class: "pill", title: `${r.tier} · score ${r.themeScore?.toFixed(2)}`,
-                         text: `${v}·${(r.tier || "").split("_")[0]}` })
+                         text: `${themeName(v)}${r.tier ? ` · ${String(r.tier).split("_")[0]}` : ""}` })
           : el("span", { class: "note", text: "—" }) },
     { key: "weight", label: "Wt", num: true, fmt: (v) => (v == null ? "—" : fmtPct(v, 2)) },
     { key: "price", label: "Price", num: true, fmt: (v) => (v == null ? "—" : "$" + num(v, 2)) },

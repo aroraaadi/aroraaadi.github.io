@@ -251,6 +251,9 @@ export function renderShell({ asOf = null, asOfLabel = "AS OF" } = {}) {
   const header = el("header", { class: "shell" }, [el("div", { class: "shell-in" }, kids)]);
   const mount = document.getElementById("shell");
   mount.replaceWith(header);
+  wireSubnav(header.querySelector(".shell-r2"));
+  wireSubnav(header.querySelector(".shell-sections"));
+  pageContents();
 
   document.getElementById("theme-btn").addEventListener("click", toggleTheme);
   document.getElementById("lock-btn")?.addEventListener("click", lockSite);
@@ -315,6 +318,45 @@ if (typeof document !== "undefined" && document.addEventListener) {
   });
 }
 
+/* The second-level menu scrolls sideways when it holds more pages than fit:
+   bring the current page into view and fade whichever edge has more. */
+function wireSubnav(nav) {
+  if (!nav) return;
+  const cur = nav.querySelector('[aria-current="page"]');
+  if (cur) nav.scrollLeft = Math.max(0, cur.offsetLeft - nav.clientWidth / 3);
+  const edges = () => {
+    nav.classList.toggle("more-r", nav.scrollLeft + nav.clientWidth < nav.scrollWidth - 4);
+    nav.classList.toggle("more-l", nav.scrollLeft > 4);
+  };
+  nav.addEventListener("scroll", edges, { passive: true });
+  window.addEventListener("resize", edges);
+  edges();
+}
+
+/* Long pages get an "On this page" strip of links to their panels, built from
+   the panel headings that are already in the page. */
+function pageContents() {
+  const heads = [...document.querySelectorAll("main .panel > .panel-h h2, #main .panel > .panel-h h2, .panel > .panel-h h2")]
+    .filter((h, i, a) => a.indexOf(h) === i && h.textContent.trim());
+  if (heads.length < 7 || document.querySelector(".page-toc")) return;
+  const used = new Set();
+  const links = heads.map((h) => {
+    const panel = h.closest(".panel");
+    let id = panel.id || "p-" + h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
+    while (used.has(id)) id += "-2";
+    used.add(id);
+    panel.id = id;
+    return el("a", { href: `#${id}`, text: h.textContent.trim() });
+  });
+  const toc = el("nav", { class: "page-toc", "aria-label": "On this page" }, [el("span", { class: "page-toc-k", text: "On this page" }), ...links]);
+  // Just above the first panel, at the level of the page's own blocks: below the headline and its figures, never inside them.
+  const first = document.querySelector(".panel");
+  const main = first?.closest("main") || document.querySelector("main");
+  let at = first;
+  while (at && at.parentElement && at.parentElement !== main) at = at.parentElement;
+  if (at && at.parentElement) at.before(toc);
+}
+
 function lockSite() {
   try { sessionStorage.removeItem("site-key"); } catch { /* none */ }
   try { LOCK_CHANNEL?.postMessage({ lock: true }); } catch { /* other tabs keep their key */ }
@@ -334,7 +376,7 @@ if (typeof document !== "undefined" && document.addEventListener) {
   setTimeout(() => syncPressed(), 1500);
 }
 
-export function setAsOf(text, label = "AS OF", { ages = true, note = "" } = {}) {
+export function setAsOf(text, label = "AS OF", { ages = true, note = "", maxAge = 3 } = {}) {
   const n = document.getElementById("asof");
   if (!n) return;
   n.innerHTML = "";
@@ -345,7 +387,7 @@ export function setAsOf(text, label = "AS OF", { ages = true, note = "" } = {}) 
     return;
   }
   const age = /^\d{4}-\d{2}-\d{2}/.test(String(text)) ? businessDaysSince(text) : null;
-  const stale = age != null && age > 3;
+  const stale = age != null && age > maxAge;            // pages refreshed weekly pass a longer allowance
   n.classList.toggle("stale", stale);
   if (stale) {
     n.append(el("span", { class: "asof-age", text: ` · ${age} business days old` }));

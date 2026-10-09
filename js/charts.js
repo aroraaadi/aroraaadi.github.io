@@ -148,7 +148,11 @@ export function liveMarker(dates, liveStart) {
    unreadable. The switch is at roughly four months. */
 const dateTicks = (labels) => {
   const span = labels.length;
-  const byDay = span > 1 && span <= 90;
+  // Day labels only when the axis covers a few months; quarter-end points spanning years read as "Jun 30 Mar 31".
+  const first = labels[0], last = labels[span - 1];
+  const days = typeof first === "string" && typeof last === "string" && /^\d{4}-\d{2}-\d{2}/.test(first) && /^\d{4}-\d{2}-\d{2}/.test(last)
+    ? (parseDate(last) - parseDate(first)) / 864e5 : null;
+  const byDay = span > 1 && span <= 90 && (days == null || days <= 150);
   // Not every line chart has dates on its x-axis: the volatility signature
   // plot is labelled in minutes and the spike-decay chart in day counts.
   // Formatting those as dates printed "Invalid Date" across the axis.
@@ -161,7 +165,8 @@ const dateTicks = (labels) => {
     },
     maxRotation: 0,
     autoSkip: true,
-    maxTicksLimit: 8,
+    autoSkipPadding: 14,
+    maxTicksLimit: typeof window !== "undefined" && window.innerWidth < 760 ? 4 : 8,   // phone: fewer, so dates don't run together
   };
 };
 
@@ -210,6 +215,17 @@ export function lineConfig({ labels, series, yFmt = (v) => v, plugins = [] }) {
 
 /* Replaces 7 near-identical horizontal-bar blocks whose barThickness (15/18/
    20/22) and right padding (42/44/46/48) had drifted apart accidentally. */
+/* Category labels on a horizontal bar chart: the long sector names lose their first letters on a phone. */
+const SHORT = { "Information Technology": "Info tech", "Communication Services": "Comm services", "Consumer Discretionary": "Cons. discretionary",
+                "Consumer Staples": "Cons. staples", "Health Care": "Health care", "Real Estate": "Real estate", "Financial Services": "Financials",
+                "Consumer Cyclical": "Cons. cyclical", "Consumer Defensive": "Cons. defensive", "Basic Materials": "Materials" };
+function shortLabel(s) {
+  const narrow = typeof window !== "undefined" && window.innerWidth < 760;
+  if (!narrow || typeof s !== "string") return s;
+  const t = SHORT[s] || s;
+  return t.length > 18 ? t.slice(0, 17) + "…" : t;
+}
+
 export function hbarConfig({ labels, values, colors, valueLabels, fmt = (v) => v + "%",
                              thickness = 14, padRight = 52 }) {
   return {
@@ -232,7 +248,7 @@ export function hbarConfig({ labels, values, colors, valueLabels, fmt = (v) => v
         x: { grid: { color: tok("--grid") }, border: { display: false },
              ticks: { callback: fmt } },
         y: { grid: { display: false }, border: { color: tok("--baseline") },
-             ticks: { color: tok("--ink-2"), font: { size: 11 } } },
+             ticks: { color: tok("--ink-2"), font: { size: 11 }, callback(v) { return shortLabel(this.getLabelForValue(v)); } } },
       },
       plugins: {
         tooltip: { callbacks: { label: (c) => ` ${fmt(c.parsed.x)}` } },

@@ -50,7 +50,9 @@ async function init() {
   setAsOf(`${INDEX.length} symbols · 3y`, "UNIVERSE");
   wireControls();
   wireSearch();
-  renderAll();
+  // Open on the holdings rather than on three empty charts; "Clear" starts from nothing.
+  await loadHoldings();
+  if (state.selected.length < 2) renderAll();
   onThemeChange(renderAll);
 }
 
@@ -293,7 +295,7 @@ async function renderAll() {
   }
 
   if (state.selected.length < 2) {
-    note.textContent = "Search and add at least 2 stocks to build a frontier.";
+    note.textContent = "Add at least two stocks (search above, or load your holdings) to build a frontier.";
     // charts.js owns the instance registry — this module's local `charts` map
     // was never assigned to, so the old cleanup here was a no-op and stale
     // frontier/weights/risk charts survived "Clear".
@@ -301,7 +303,7 @@ async function renderAll() {
     document.getElementById("tiles").innerHTML = "";
     document.getElementById("frontier-legend").innerHTML = "";
     document.getElementById("heatmap")?.replaceChildren();
-    document.getElementById("frontier-note").textContent = "";
+    document.getElementById("frontier-note").textContent = "The frontier, the optimal weights and each name's share of risk appear here once two or more stocks are chosen.";
     return;
   }
 

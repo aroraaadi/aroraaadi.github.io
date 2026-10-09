@@ -73,7 +73,7 @@ function table(rows, id) {
       key: `p_${k}`, label, num: true, fmt: (v) => bar(v),
     })),
     { key: "market_cap", label: "Mkt cap", num: true,
-      fmt: (v) => (v == null ? "—" : `$${(v / 1e6).toFixed(0)}m`) },
+      fmt: (v) => (v == null ? "—" : v >= 1e9 ? `$${(v / 1e9).toFixed(1)}bn` : `$${(v / 1e6).toFixed(0)}m`) },
     { key: "rev_cagr_3y", label: "Rev 3y", num: true, cls: (r) => signClass(r.rev_cagr_3y),
       fmt: (v) => (v == null ? "—" : fmtPct(v, 0)) },
     // Net debt over REVENUE, not over EBITDA: defined for every operating

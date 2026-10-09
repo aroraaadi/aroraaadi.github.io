@@ -40,18 +40,31 @@ const FEATURE_LABEL = {
    `signed` centres it so a negative reading grows leftward. */
 function bar(value, { signed = false, max = 1, slot = 0 } = {}) {
   const pct = Math.min(Math.abs(value) / max, 1) * 100;
-  const fill = el("span", {
-    class: "bar-fill",
-    style: `width:${pct.toFixed(1)}%;background:${slotColor(slot)};` +
-           (signed && value < 0 ? "margin-left:auto;" : ""),
-  });
-  return el("span", {
-    class: "bar",
-    style: "display:inline-flex;width:100%;max-width:120px;height:8px;" +
-           "border-radius:4px;background:var(--line);overflow:hidden;" +
-           "vertical-align:middle;",
-  }, [fill]);
+  const track = "display:inline-flex;position:relative;width:100%;max-width:120px;height:8px;border-radius:4px;background:var(--line);overflow:hidden;vertical-align:middle;";
+  if (!signed) {
+    return el("span", { class: "bar", style: track }, [el("span", { class: "bar-fill", style: `width:${pct.toFixed(1)}%;background:${slotColor(slot)};` })]);
+  }
+  // Signed: zero in the middle, positives grow right, negatives grow left, so every row shares one zero line.
+  const half = (pct / 2).toFixed(1);
+  return el("span", { class: "bar", style: track }, [
+    el("span", { style: "position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--baseline);" }),
+    el("span", { class: "bar-fill", style: `position:absolute;top:0;bottom:0;width:${half}%;background:${slotColor(slot)};` +
+                                           (value < 0 ? `right:50%;` : `left:50%;`) }),
+  ]);
 }
+
+const CLUSTER_LABEL = { ai_complex: "AI complex", real_economy: "Real economy", power_energy: "Power and energy", financials: "Financials",
+                        consumer: "Consumer", healthcare: "Health care", other: "Other" };
+const clusterLabel = (k) => CLUSTER_LABEL[k] || String(k).replace(/_/g, " ").replace(/^./, (c) => c.toUpperCase());
+/* Words for the engine's keys inside free text ("regime unchanged (inflation_energy_shock)"). */
+const plain = (t) => String(t || "").replace(/\b[a-z]+(?:_[a-z0-9]+)+\b/g, (k) => REGIME_LABEL[k] || CLUSTER_LABEL[k] || k.replace(/_/g, " "));
+const NARROW = typeof window !== "undefined" && window.innerWidth < 760;
+const ACTION_LABEL = { ADD_TO: "Add to", TRIM: "Trim", EXIT: "Exit", ENTER: "Enter", HOLD: "Hold", REGIME_TILT: "Regime tilt", BUY: "Buy", SELL: "Sell" };
+const actionLabel = (v) => {
+  const [head, ...rest] = String(v || "").split(" ");
+  const w = ACTION_LABEL[head] || head.replace(/_/g, " ").toLowerCase().replace(/^./, (c) => c.toUpperCase());
+  return rest.length ? `${w}: ${(REGIME_LABEL[rest.join(" ")] || rest.join(" ").replace(/_/g, " "))}` : w;
+};
 
 function renderDecision(d) {
   const host = document.getElementById("decision");
@@ -100,11 +113,11 @@ function renderDecision(d) {
     host.appendChild(el("p", { class: "note", style: "margin-top:12px", text: d.ce_note }));
   }
   if (d.regime_note) {
-    host.appendChild(el("p", { class: "note", text: `Regime: ${d.regime_note}` }));
+    host.appendChild(el("p", { class: "note", text: `Regime: ${plain(d.regime_note)}` }));
   }
 
   const breached = Object.entries(d.bands_breached || {})
-    .sort((a, b) => Math.abs(b[1].gap) - Math.abs(a[1].gap)).slice(0, 8);
+    .sort((a, b) => Math.abs(b[1].gap) - Math.abs(a[1].gap));
   if (breached.length) {
     host.appendChild(el("div", { style: "margin-top:12px" }, [
       el("div", { class: "clabel", text: `Outside the band (${Object.keys(d.bands_breached).length})` }),
@@ -226,7 +239,7 @@ function renderActions(a) {
       ? ` — ${a.not_taken.length} candidate(s) were considered and rejected; the table below says why.` : "."}`;
   }
   renderTable(document.getElementById("act-table"), rows, [
-    { key: "type", label: "Action", fmt: (v) => el("span", { class: "pill", text: v }) },
+    { key: "type", label: "Action", fmt: (v) => el("span", { class: "pill", text: actionLabel(v) }) },
     { key: "symbol", label: "Name", fmt: (v) => el("span", { class: "sym", text: v }) },
     { key: "from", label: "From", num: true, fmt: (v) => (v == null ? "—" : fmtPct(v, 1)) },
     { key: "to", label: "To", num: true, fmt: (v) => (v == null ? "—" : fmtPct(v, 1)) },
@@ -244,9 +257,11 @@ function renderActions(a) {
     // The PROMOTE notes are a couple of sentences. Left on one line they run
     // off the side of the table; wrapping is better than a horizontal scroll
     // for the column that carries the actual reasoning.
-    { key: "triggers", label: "Why", cls: () => "wrap", fmt: (v, r) =>
-        el("span", { class: "note", text: r.note ? `${v} — ${r.note}` : v }) },
-  ], { sortKey: "net", dir: -1 });
+    // On a phone the reason goes under the name instead of into a column off the side of the screen.
+    ...(NARROW ? [] : [{ key: "triggers", label: "Why", cls: () => "wrap", fmt: (v, r) =>
+        el("span", { class: "note", text: plain(r.note ? `${v} — ${r.note}` : v) }) }]),
+  ].map((c) => (NARROW && c.key === "symbol" ? { ...c, cls: () => "wrap", fmt: (v, r) => el("span", {}, [el("span", { class: "sym", text: v }),
+      el("div", { class: "note", text: plain(r.note ? `${r.triggers} — ${r.note}` : r.triggers) })]) } : c)), { sortKey: "net", dir: -1 });
 
   const nt = (a.not_taken || []).map((x) => ({
     type: x.type || "—",
@@ -255,18 +270,20 @@ function renderActions(a) {
     reason: x.reason || "",
   }));
   renderTable(document.getElementById("nt-table"), nt, [
-    { key: "type", label: "Action" },
-    { key: "symbol", label: "Name", fmt: (v) => el("span", { class: "sym", text: v }) },
+    { key: "type", label: "Action", fmt: (v) => actionLabel(v) },
+    { key: "symbol", label: "Name", cls: () => (NARROW ? "wrap" : ""), fmt: (v, r) => (NARROW
+        ? el("span", {}, [el("span", { class: "sym", text: v }), el("div", { class: "note", text: plain(r.reason) })])
+        : el("span", { class: "sym", text: v })) },
     { key: "net", label: "Net", num: true,
       fmt: (v) => (v == null ? "—" : `${signed(v, 0)} bp`) },
-    { key: "reason", label: "Why not", cls: () => "wrap",
-      fmt: (v) => el("span", { class: "note", text: v }) },
-  ]);
+    ...(NARROW ? [] : [{ key: "reason", label: "Why not", cls: () => "wrap",
+      fmt: (v) => el("span", { class: "note", text: plain(v) }) }]),
+  ], { empty: "Nothing was considered and set aside today." });
 
   const src = a.sources || {};
   document.getElementById("sources").textContent =
-    `Sources — ${Object.entries(src).map(([k, v]) => `${k}: ${v}`).join("; ")}. ` +
-    (a.nav_note || "");
+    `Built from ${Object.keys(src).length} inputs, the newest dated ${Object.values(src).map((v) => String(v).match(/\d{4}-\d{2}-\d{2}/)?.[0]).filter(Boolean).sort().pop() || "today"}. ` +
+    plain(a.nav_note || "");
 }
 
 function renderClusters(port) {
@@ -280,8 +297,8 @@ function renderClusters(port) {
   host.appendChild(el("div", { style: "display:grid;gap:6px" }, rows.map(([k, v], i) => {
     const cap = caps[k];
     const near = cap != null && v >= cap - 0.005;
-    return el("div", { style: "display:grid;grid-template-columns:minmax(0,1fr) minmax(60px,160px) 110px;align-items:center;gap:10px" }, [
-      el("span", { text: k }),
+    return el("div", { class: "cluster-row" }, [
+      el("span", { class: "cluster-k", text: clusterLabel(k), title: clusterLabel(k) }),
       bar(v, { max: Math.max(0.5, cap || 0.5), slot: near ? 1 : i + 2 }),
       el("span", { class: "num", text: `${fmtPct(v, 1)} / ${cap != null ? fmtPct(cap, 0) : "—"}${near ? " ●" : ""}` }),
     ]);

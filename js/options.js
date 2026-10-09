@@ -1,5 +1,5 @@
 /* The options hedge page. Reads docs/data/options.json only. */
-import { loadJSON, showError, fmtPct, fmtNum, el, renderTable, signClass, signed } from "./common.js";
+import { loadJSON, words, showError, fmtPct, fmtNum, el, renderTable, signClass, signed } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 
 const pct = (x, dp = 1) => (x == null ? "—" : fmtPct(x, dp));
@@ -38,7 +38,7 @@ function renderProposal(d) {
     { key: "mid", label: "Mid", num: true, fmt: (v) => fmtNum(v, 2) },
     { key: "delta", label: "Delta", num: true, fmt: (v) => signed(v, 2) },
     { key: "iv", label: "IV", num: true, fmt: (v) => pct(v, 1) },
-  ]);
+  ], { empty: kind === "NONE" ? "No hedge proposed today, so there are no legs to show." : "No legs priced for this proposal." });
 }
 
 function renderSignal(d) {
@@ -62,7 +62,7 @@ function renderSurface(d) {
     stat("ATM IV 30d", pct(s.atm_iv_30, 1), `60d ${pct(s.atm_iv_60, 1)}`),
     stat("25Δ skew", s.skew_25d_30 == null ? "—" : `${signed(s.skew_25d_30 * 100, 1)} pts`, "put IV minus call IV"),
     stat("Term 30/90", fmtNum(s.term_ratio_30_90, 2), s.term_ratio_30_90 > 1 ? "inverted" : "contango"),
-    stat("IV rank, 1y", fmtNum(c.iv_rank_1y, 2), `percentile ${fmtNum(c.iv_pct_1y, 2)} · on ${c.rank_source || "—"}`),
+    stat("IV rank, 1y", fmtNum(c.iv_rank_1y, 2), `percentile ${fmtNum(c.iv_pct_1y, 2)} · on ${words(c.rank_source) || "—"}`),
     stat("IV − realised 21d", c.iv_minus_rv21 == null ? "—" : `${signed(c.iv_minus_rv21 * 100, 1)} pts`, "the premium being paid"),
   ]));
 }
@@ -84,8 +84,10 @@ function renderBudget(d) {
   const bud = d.budget || {}, q = d.data_quality || {};
   host.appendChild(el("div", { class: "strip" }, [
     stat("Budget", bud.cap_bp_yr == null ? "—" : `${fmtNum(bud.cap_bp_yr, 0)} bp/yr`, `used ${fmtNum(bud.spent_ytd_bp || 0, 0)} bp`),
-    stat("Data", q.source || "—", q.delayed ? `delayed ${q.delayed} min` : "real-time"),
-    stat("Flags", Object.entries(q.flags || {}).map(([k, v]) => `${k} ${v}`).join(" · ") || "—", `snapshot ${fmtNum(q.snapshot_age_h, 1)} h old`),
+    stat("Data", words(q.source) || "—", q.delayed ? `delayed ${q.delayed} min` : "real-time"),
+    stat("Quotes usable", (() => { const f = q.flags || {}, tot = Object.values(f).reduce((a, b) => a + b, 0);
+           return tot ? `${fmtNum(100 * (f.ok || 0) / tot, 0)}%` : "—"; })(),
+         `${Object.entries(q.flags || {}).filter(([k]) => k !== "ok").map(([k, v]) => `${words(k).toLowerCase()} ${v}`).join(" · ")} · snapshot ${fmtNum(q.snapshot_age_h, 1)} h old`),
     stat("Covered calls", (d.covered_call_candidates || []).join(", ") || "none eligible", "at cap, not FIXED/FLOORS, ≥100 sh"),
   ]));
 }

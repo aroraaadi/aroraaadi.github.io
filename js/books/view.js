@@ -16,7 +16,7 @@ import {
   normActivity, ACTIVITY_PENDING,
 } from "../common.js";
 import {
-  applyChartDefaults, draw, lineConfig, doughnutConfig, describeCanvas,
+  applyChartDefaults, draw, lineConfig, doughnutConfig, describeCanvas, hbarConfig,
 } from "../charts.js";
 import { renderShell, setAsOf, onThemeChange, registerCommands } from "../shell.js";
 
@@ -94,8 +94,8 @@ export async function overview(spec) {
     //: The quote header. A book is read the way a symbol is read: what it is,
     //: where it stands, how far it has moved — before any of the panels below.
     ticker(document.getElementById("book-ticker"), {
-      symbol: spec.key.toUpperCase(),
-      name: B.label,
+      symbol: `${spec.key.toUpperCase()} book`,
+      name: `${B.label} · value index, 100 at the split`,   // an index, not a dollar amount
       value: last.value_index,
       valueFmt: (v) => fmtNum(v, 2),
       change: last.value_index / 100 - 1,
@@ -154,7 +154,7 @@ export async function overview(spec) {
       ...(spec.showModelColumn ? [{ key: "in_model", label: "Model", fmt: (v2) =>
           v2 ? el("span", { class: "pill book", text: "in model" })
              : el("span", { class: "pill warn", text: "outside model" }) }] : []),
-      { key: "stale", label: "Price", fmt: (v2) => v2
+      { key: "stale", label: "Price source", fmt: (v2) => v2
           ? el("span", { class: "pill warn", text: "book cost" })
           : el("span", { class: "note", text: "live" }) },
     ], { sortKey: "weight", dir: -1 });
@@ -341,21 +341,11 @@ export async function analytics(spec) {
     const colors = ser.map((_, i) => slotColor(i));
     buildLegend("sector-legend", ser.map((x, i) => ({ label: x.sector, color: colors[i], shape: "rect" })));
     document.getElementById("sector-box").style.height = `${40 + ser.length * 26}px`;
-    draw("sector-chart", {
-      type: "bar",
-      data: { labels: ser.map((x) => x.sector), datasets: [{
-        data: ser.map((x) => +(x.weight * 100).toFixed(2)), backgroundColor: colors,
-        barThickness: 14, borderRadius: { topRight: 2, bottomRight: 2 }, borderSkipped: "start" }] },
-      options: {
-        indexAxis: "y", responsive: true, maintainAspectRatio: false,
-        layout: { padding: { right: 48 } },
-        scales: {
-          x: { grid: { color: tok("--grid") }, border: { display: false }, ticks: { callback: (v2) => v2 + "%" } },
-          y: { grid: { display: false }, border: { color: tok("--baseline") } },
-        },
-        plugins: { tooltip: { callbacks: { label: (c) => ` ${c.parsed.x}%` } } },
-      },
-    });
+    // The shared factory: short labels on a phone, a value at the end of each bar, an axis scaled to the data.
+    draw("sector-chart", hbarConfig({
+      labels: ser.map((x) => x.sector), values: ser.map((x) => +(x.weight * 100).toFixed(2)), colors,
+      valueLabels: ser.map((x) => (x.weight * 100).toFixed(1) + "%"), fmt: (v2) => v2 + "%", padRight: 48,
+    }));
     describeCanvas("sector-chart", `Sector exposure: ${ser.map((x) => `${x.sector} ${(x.weight * 100).toFixed(1)}%`).join(", ")}.`);
     document.getElementById("conc-note").textContent =
       `Effective names ${fmtNum(M.effective_n)} of ${(M.risk_contrib || []).length} measured — HHI ${fmtNum(M.hhi, 4)}.`;

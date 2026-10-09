@@ -445,7 +445,7 @@ function vbook() {
     { label: "Next rebalance", value: VB.next_rebalance ? fmtDay(VB.next_rebalance) : "–", delta: `${VB.n_trades} trades so far` },
   ]);
   const accent = tok("--accent"), ink = tok("--ink-2"), muted = tok("--muted");
-  const cfg = lineConfig({ labels: C.map((p) => p.date), yFmt: (v) => `${v >= 100 ? "+" : ""}${(v - 100).toFixed(0)}%`, series: [
+  const cfg = lineConfig({ labels: C.map((p) => p.date), yFmt: (v) => `${v >= 100 ? "+" : ""}${(v - 100).toFixed(Math.abs(v - 100) < 10 && v % 1 ? 1 : 0)}%`, series: [
     { label: "Venture book", data: C.map((p) => p.venture), color: accent, width: 2.25 },
     { label: "Your Questrade portfolio", data: C.map((p) => p.questrade), color: ink, width: 1.5 },
     { label: "S&P 500", data: C.map((p) => p.spx), color: muted, width: 1.25, dash: [4, 3] },

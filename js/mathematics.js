@@ -6,7 +6,7 @@
    constant the code used, not one typed into a page. KaTeX renders after the
    values are in place. If KaTeX fails to load the TeX source stays readable. */
 
-import { loadJSON, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed } from "./common.js";
+import { loadJSON, words, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 
 /* A live value goes two places: into a prose slot if one exists, and into
@@ -114,11 +114,11 @@ function momentum(M) {
   const band = PORT?.vol_target_band;
 
   renderStats("math-live", [
-    { label: "View source", value: C.view_source || "—", delta: "what feeds Black-Litterman" },
+    { label: "View source", value: words(C.view_source) || "—", delta: "what feeds Black-Litterman" },
     { label: "Risk aversion λ", value: num(er.risk_aversion, 2), delta: er.universe_beta != null ? `β ${num(er.universe_beta, 2)} × ERP ${pct(er.erp_forward ?? C.erp_forward, 1)}` : "" },
     { label: "τ · confidence", value: `${C.bl_tau ?? er.tau ?? "0.05"} · ${C.bl_view_confidence ?? "0.50"}`, delta: `${er.n_views ?? "—"} views` },
-    { label: "Vol band", value: band ? band.map((x) => pct(x, 0)).join("–") : "—", delta: PORT ? `model ${pct(PORT.model_vol)} · ${PORT.vol_band_used || ""}` : "" },
-    { label: "EWMA λ", value: String(C.ewma_lambda ?? RISK?.vol_forecast?.ewma_lambda ?? "0.94"), delta: C.vol_forecast_method ? `method ${C.vol_forecast_method}` : "" },
+    { label: "Vol band", value: band ? band.map((x) => pct(x, 0)).join("–") : "—", delta: PORT ? `model ${pct(PORT.model_vol)}${Array.isArray(PORT.vol_band_used) ? ` · band in use ${PORT.vol_band_used.map((x) => pct(x, 0)).join("–")}` : PORT.vol_band_used ? ` · ${PORT.vol_band_used}` : ""}` : "" },
+    { label: "EWMA λ", value: String(C.ewma_lambda ?? RISK?.vol_forecast?.ewma_lambda ?? "0.94"), delta: C.vol_forecast_method ? `method ${words(C.vol_forecast_method)}` : "" },
     { label: "Signal weighting", value: SIG?.weighting?.startsWith("ic") ? "IC-driven" : "static", delta: SIG?.snapshot_counts ? `${Math.min(...Object.values(SIG.snapshot_counts))} of ${C.min_ic_snapshots ?? 6} snapshots` : "" },
   ]);
 
@@ -133,7 +133,7 @@ function momentum(M) {
   set("m-weighting", SIG?.weighting || "—");
   const icv = (k) => (SIG?.[k]?.ic != null ? num(SIG[k].ic, 3) : "—");
   set("m-ic-mom", icv("momentum")); set("m-ic-value", icv("value")); set("m-ic-quality", icv("quality")); set("m-ic-short", icv("short_interest"));
-  if (SIG?.snapshot_counts) set("m-ic-n", Object.entries(SIG.snapshot_counts).map(([k, n]) => `${k} ${n}`).join(", "));
+  if (SIG?.snapshot_counts) set("m-ic-n", Object.entries(SIG.snapshot_counts).map(([k, n]) => `${words(k).toLowerCase()} ${n}`).join(", "));
 
   // §2 momentum
   momentum(MOM);
@@ -155,13 +155,13 @@ function momentum(M) {
   const eq = RISK?.eq_weight_vol || {};
   if (eq.pca != null) set("m-eqw-pca", pct(eq.pca)); if (eq.lw != null) set("m-eqw-lw", pct(eq.lw));
   set("m-ewma-lambda", String(C.ewma_lambda ?? RISK?.vol_forecast?.ewma_lambda ?? 0.94));
-  set("m-vol-method", `method in force: ${C.vol_forecast_method || RISK?.vol_forecast?.method || "ewma"}`);
+  set("m-vol-method", `method in force: ${words(C.vol_forecast_method || RISK?.vol_forecast?.method || "ewma")}`);
 
   // §8 optimizer
   set("m-name-cap", pct(C.name_cap ?? PORT?.max_weight, 1)); set("m-min-pos", String(C.min_positions ?? PORT?.constraints?.min_positions ?? 8));
   set("m-prune", pct(C.prune_threshold ?? 0.02, 0)); set("m-gamma", C.tc_gamma_effective != null ? String(C.tc_gamma_effective) : "0.0002");
   const caps = C.cluster_caps || PORT?.cluster_caps || {};
-  set("m-cluster-caps", Object.entries(caps).map(([k, c]) => `${k.replace("_", " ")} ${pct(c, 0)}`).join(" · ") || "—");
+  set("m-cluster-caps", Object.entries(caps).map(([k, c]) => `${words(k)} ${pct(c, 0)}`).join(" · ") || "—");
   if (PORT?.model_vol != null) set("m-model-vol", pct(PORT.model_vol));
   if (band) set("m-band", band.map((x) => pct(x, 0)).join("–"));
 

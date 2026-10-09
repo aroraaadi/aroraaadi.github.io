@@ -180,6 +180,10 @@ function scatter() {
 
 /* ---------- deals ---------- */
 
+const DEAL_TYPE = { ppa: "PPA", esa: "ESA", jv: "JV", ltsa: "LTSA", epc: "EPC", credit_sale: "credit sale", mou: "MOU", loi: "LOI" };
+const dealType = (v) => { const s = String(v || ""); const head = s.split(" ")[0].toLowerCase();
+  return DEAL_TYPE[head] ? DEAL_TYPE[head] + s.slice(head.length) : s.replace(/_/g, " "); };
+
 function deals() {
   renderTable($("pw-deals"), D.deals, [
     { key: "sort_date", label: "Date", fmt: (_, r) => r.date || "–" },
@@ -187,13 +191,15 @@ function deals() {
     { key: "counterparty", label: "With, and what", cls: () => "wrap pw-deal-what", fmt: (v, r) => el("div", {}, [
       el("div", { class: "pw-deal-cp", text: v || "–" }),
       el("div", { class: "note" }, [el("span", { text: `${r.description || ""} ` }), r.url ? link(r.url, host(r.url)) : null].filter(Boolean))]) },
-    { key: "type", label: "Type", cls: () => "note" },
+    { key: "type", label: "Type", cls: () => "note", fmt: (v) => dealType(v) },
     { key: "size", label: "Size", cls: () => "note wrap pw-deal-size" },
-    { key: "value_usd", label: "Value", num: true, fmt: (v) => (v ? bn(v) : "–") },
-    { key: "term_years", label: "Years", num: true, fmt: (v) => (v ? String(v) : "–") },
+    // Most deals do not disclose a value or a term: blank says "not disclosed" more quietly than a dash.
+    { key: "value_usd", label: "Value", num: true, fmt: (v) => (v ? bn(v) : "") },
+    { key: "term_years", label: "Years", num: true, fmt: (v) => (v ? String(v) : "") },
   ], { sortKey: "sort_date", dir: -1 });
   const n = new Set(D.deals.map((d) => d.symbol)).size;
-  $("pw-deal-meta").textContent = `${D.deals.length} deals across ${n} companies`;
+  const nv = D.deals.filter((d) => d.value_usd).length, nt = D.deals.filter((d) => d.term_years).length;
+  $("pw-deal-meta").textContent = `${D.deals.length} deals across ${n} companies · a value disclosed for ${nv}, a term for ${nt}; blank means not disclosed`;
 }
 
 /* ---------- cards ---------- */
@@ -251,6 +257,9 @@ function cards() {
   try { D = await loadJSON("data/power.json"); } catch (err) { showError($("error"), err); return; }
   setAsOf(D.as_of);
   demand(); dcAndConstraints(); groups(); table(); scatter(); deals(); cards();
-  $("pw-method").textContent = D.method;
+  // The method text is the build's docstring: one paragraph per block, file paths left out.
+  const mbox = $("pw-method"); mbox.innerHTML = "";
+  String(D.method || "").split(/\n\s*\n/).map((p) => p.replace(/\s+/g, " ").trim()).filter(Boolean)
+    .forEach((p) => mbox.appendChild(el("p", { text: p.replace(/\s*\(?(?:power|data|docs)\/[\w<>./-]+\)?/g, "").replace(/\s+([,.;:])/g, "$1") })));
   onThemeChange(() => { applyChartDefaults(); demand(); scatter(); });
 })();

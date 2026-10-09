@@ -139,9 +139,25 @@ export const signed = (x, dp = 0) =>
    `action`; the CIBC statement ledger emits `activity`; home.js and book.js
    read `action` raw and would have rendered a blank column for the legacy
    file. Every activity table goes through this. */
+/* An engine key in words: "iv_above_forecast_rv" -> "IV above forecast RV", "ewma" -> "EWMA". */
+const ACRONYM = new Set(["iv", "rv", "ewma", "dcf", "vix", "ovx", "spy", "har", "garch", "qlike", "fdr", "ic", "pe", "ev", "fcf", "sue", "tsx", "ftd", "atr", "ema", "vwap", "dte", "otm", "itm", "atm"]);
+const KEY_WORDS = { combo_i: "inverse-loss blend", no_bid: "no bid", vix_proxy: "VIX (36 years)", mu_j: "jump mean", sigma_j: "jump vol",
+                    lambda: "jump rate", kappa: "reversion speed", theta: "long-run variance", xi: "vol of vol", rho: "correlation", v0: "start variance",
+                    questrade: "Questrade", yfinance: "Yahoo Finance", ibkr: "IBKR", fmp: "FMP" };
+export function words(k) {
+  if (k == null) return "";
+  const s = String(k);
+  if (KEY_WORDS[s]) return KEY_WORDS[s];
+  if (!/^[a-z0-9]+(_[a-z0-9]+)*$/i.test(s)) return s;              // already prose
+  return s.split("_").map((w, i) => (ACRONYM.has(w.toLowerCase()) ? w.toUpperCase() : i === 0 ? w.charAt(0).toUpperCase() + w.slice(1) : w)).join(" ");
+}
+
+/* Questrade's internal activity codes, in words (the log and its filter chips showed "tf6", "brw", "lfj"). */
+const ACTIVITY_WORDS = { tf6: "transfer in", tfo: "transfer out", brw: "journal", lfj: "lending rebate", fxt: "fx conversion",
+                         fch: "fee", dis: "split", div: "dividend", int: "interest", con: "contribution", wdr: "withdrawal" };
 export const normActivity = (r) => ({
   date: r.date,
-  activity: (r.action || r.activity || r.kind || "").toLowerCase(),
+  activity: (() => { const a = (r.action || r.activity || r.kind || "").toLowerCase(); return ACTIVITY_WORDS[a] || a; })(),
   symbol: r.symbol || null,
   description: r.description || "",
   currency: r.currency || "",
@@ -263,7 +279,7 @@ export function buildLegend(target, items) {
 
 /* Sortable table headers — the site previously had no column sorting anywhere.
    rows: array of objects; cols: [{key, label, num, fmt, cls}] */
-export function renderTable(tbodyOrTable, rows, cols, { sortKey = null, dir = -1 } = {}) {
+export function renderTable(tbodyOrTable, rows, cols, { sortKey = null, dir = -1, empty = "Nothing to show yet." } = {}) {
   const table = tbodyOrTable.tagName === "TABLE" ? tbodyOrTable : tbodyOrTable.closest("table");
   const tbody = table.querySelector("tbody");
   let key = sortKey, d = dir;
@@ -278,6 +294,9 @@ export function renderTable(tbodyOrTable, rows, cols, { sortKey = null, dir = -1
         })
       : rows;
     tbody.innerHTML = "";
+    if (!data.length) {                                       // say why the table is empty instead of showing a bare header
+      tbody.appendChild(el("tr", { class: "empty-row" }, [el("td", { colspan: String(cols.length), class: "note", text: empty })]));
+    }
     for (const r of data) {
       tbody.appendChild(el("tr", {}, cols.map((c) => {
         const raw = r[c.key];
@@ -302,7 +321,12 @@ export function renderTable(tbodyOrTable, rows, cols, { sortKey = null, dir = -1
   thead.innerHTML = "";
   for (const c of cols) {
     const th = el("th", { class: [c.num ? "num" : "", "sortable"].join(" "),
-                          "data-key": c.key, text: c.label, scope: "col", tabindex: "0" });
+                          "data-key": c.key, scope: "col", tabindex: "0" });
+    // Headers are set in capitals; a Greek letter would turn into another symbol (σ into Σ), so it keeps its case.
+    String(c.label ?? "").split(/([\u0370-\u03ff]+)/).forEach((part, i) => {
+      if (!part) return;
+      th.append(i % 2 ? el("span", { class: "greek", text: part }) : document.createTextNode(part));
+    });
     const act = () => { if (key === c.key) d = -d; else { key = c.key; d = c.num ? -1 : 1; } paint(); };
     th.addEventListener("click", act);
     th.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); act(); } });

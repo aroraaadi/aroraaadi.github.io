@@ -133,7 +133,13 @@ function coefs() {
 
 async function live() {
   let L = null;
-  try { L = await loadJSON("data/statarb_live.json"); } catch { $("sa-live-note").textContent = "The paper account has not been published yet."; return; }
+  try { L = await loadJSON("data/statarb_live.json"); } catch {
+    $("sa-live-note").textContent = "Not trading yet. The paper account's record (equity, each day's tranche, and the gap to the backtest) appears here from its first trade.";
+    for (const id of ["sa-live-strip", "sa-live-chart", "sa-live-tr"]) {
+      const n = $(id); const box = n?.closest(".chart") || n?.closest(".panel-b") || n; if (box && id !== "sa-live-strip") box.style.display = "none"; else if (n) n.style.display = "none";
+    }
+    return;
+  }
   const E = L.expected || {};
   $("sa-live-meta").textContent = L.started ? `Alpaca paper account · since ${fmtDate(L.started)}` : "Alpaca paper account";
   renderStats("sa-live-strip", [
@@ -166,7 +172,11 @@ async function live() {
   try { D = await loadJSON("data/statarb.json"); } catch (err) { showError($("error"), err); return; }
   setAsOf(D.as_of);
   strip(); known(); models(); equity(); costs(); years(); coefs(); live();
-  $("sa-method").textContent = D.method;
+  // The method is the run's own docstring: paragraphs, without the command line and the file names.
+  const box = $("sa-method"); box.style.whiteSpace = "normal"; box.innerHTML = "";
+  String(D.method || "").split(/\n\s*\n/).map((p) => p.replace(/\s+/g, " ").trim())
+    .filter((p) => p && !/^python3? |^\S+\.(py|json)\b/.test(p))
+    .forEach((p) => box.appendChild(el("p", { text: p.replace(/\s*\(?(?:data|docs)\/[\w./-]+\)?/g, "").replace(/\s+([,.;])/g, "$1") })));
   $("sa-eq-mode").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     $("sa-eq-mode").querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); eqMode = b.dataset.k; equity(); }));
   onThemeChange(() => { applyChartDefaults(); equity(); coefs(); });

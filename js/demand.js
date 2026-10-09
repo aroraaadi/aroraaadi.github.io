@@ -265,7 +265,8 @@ function model() {
     { key: "f1", label: "F1", num: true, fmt: (v, r) => (v == null ? "–" : `${v.toFixed(2)}${r.ci ? ` (${r.ci[0].toFixed(2)}–${r.ci[1].toFixed(2)})` : ""}`) },
     { key: "lex", label: "Keyword rule F1", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) },
     { key: "t", label: "t vs rule", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(1)) },
-    { key: "verdict", label: "Verdict", fmt: (v, r) => el("span", { class: `pill ${v === "established" ? "established" : "low"}`, text: v, title: r.why || "" }) },
+    { key: "verdict", label: "Verdict", cls: () => "wrap", fmt: (v, r) => el("span", {}, [el("span", { class: `pill ${v === "established" ? "established" : "low"}`, text: v }),
+        r.why ? el("div", { class: "note", text: r.why }) : null].filter(Boolean)) },
   ]);
   const c = M.consistency.binary, u = M.uncued;
   set("dm-model-note",
@@ -363,7 +364,7 @@ function notBuilt(reason) {
     return;
   }
   if (!IDX.built) { notBuilt(IDX.reason); return; }
-  setAsOf(IDX.as_of);
+  setAsOf(IDX.as_of, "AS OF", { maxAge: 8 });   // refreshed weekly (run_daily WEEKLY) from quarterly filings
   IDX.sectors.forEach((s) => state.sectors.add(s.id));
   const latest = IDX.tree.latest;
   const shared = IDX.sectors.reduce((a, s) => a + latest[s.id].needs.length, 0);

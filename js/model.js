@@ -330,9 +330,9 @@ function dcf(proj) {
   const gs = [-0.01, -0.005, 0, 0.005, 0.01].map((d) => A.g + d);
   const grid = sensitivity({ years: proj.years, assumptions: A, waccs, growths: gs });
   renderGrid(document.getElementById("g-sens"), {
-    rows: gs.map((g, gi) => ({ key: `g${gi}`, label: `g ${fmtPct(g, 2)}`,
+    rows: gs.map((g, gi) => ({ key: `g${gi}`, label: `Terminal growth ${fmtPct(g, 2)}`,
       fmt: (x) => (x == null ? "n/a" : "$" + x.toFixed(0)) })),
-    cols: waccs.map((w) => ({ label: fmtPct(w, 1), actual: false })),
+    cols: waccs.map((w) => ({ label: `WACC ${fmtPct(w, 1)}`, actual: false })),
     values: waccs.map((_, wi) => Object.fromEntries(gs.map((_, gi) => [`g${gi}`, grid[gi][wi]]))),
     editable: false,
   });

@@ -1,6 +1,6 @@
 /* The live vol surface: reads docs/data/vol_surface.json, polls it, draws
    the surface, the smiles, the term structure, prices in the browser. */
-import { loadJSON, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed, tok, alpha, slotColors, buildLegend } from "./common.js";
+import { loadJSON, words, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed, tok, alpha, slotColors, buildLegend } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 import { draw, applyChartDefaults } from "./charts.js";
 import { bs } from "./bs.js";
@@ -202,7 +202,7 @@ function models() {
   const rows = Object.entries(m).map(([k, v]) => ({ model: v.label, np: v.n_params, out: v.rmse_out, inn: v.rmse_in,
     front: (v.by_tenor || {}).front, mid: (v.by_tenor || {}).mid, back: (v.by_tenor || {}).back,
     pw: (v.by_wing || {}).put_wing, atm: (v.by_wing || {}).atm, cw: (v.by_wing || {}).call_wing,
-    params: Object.entries(v.params).map(([a, b]) => `${a} ${Number(b).toFixed(3)}`).join(" · ") + (k === "heston" ? ` · Feller ${v.feller ? "holds" : "violated"}` : ""),
+    params: Object.entries(v.params).map(([a, b]) => `${words(a)} ${Number(b).toFixed(3)}`).join(" · ") + (k === "heston" ? ` · Feller ${v.feller ? "holds" : "violated"}` : ""),
     secs: v.seconds }));
   const f = (v) => (v == null ? "—" : fmtNum(v, 2));
   renderTable(document.getElementById("vs-models"), rows, [

@@ -61,6 +61,7 @@
   --border-2:   #2b3341;
   --grid:       #171c24;
   --baseline:   #3b4453;
+  --scroll-shade: rgba(0, 0, 0, .55);   /* the edge shadow on a table that scrolls */
 
   /* focus and links only — never data */
   --accent:     #4f8cff;
@@ -152,6 +153,7 @@
     --border-2:   #ccd3dc;
     --grid:       #eef1f5;
     --baseline:   #b3bcc8;
+    --scroll-shade: rgba(17, 20, 25, .16);
     --accent:     #1f4fd1;
     --accent-dim: #dde6fb;
     --usd:        #2457d5;
@@ -191,6 +193,7 @@
   --border-2:   #ccd3dc;
   --grid:       #eef1f5;
   --baseline:   #b3bcc8;
+  --scroll-shade: rgba(17, 20, 25, .16);
   --accent:     #1f4fd1;
   --accent-dim: #dde6fb;
   --usd:        #2457d5;

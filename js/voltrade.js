@@ -1,5 +1,5 @@
 /* The SPY vol strategy page: reads docs/data/vol_strategy.json only. */
-import { loadJSON, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed, signClass, tok, slotColors, buildLegend } from "./common.js";
+import { loadJSON, words, showError, fmtPct, fmtNum, el, renderStats, renderTable, signed, signClass, tok, slotColors, buildLegend } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
 import { draw, lineConfig, applyChartDefaults } from "./charts.js";
 
@@ -35,7 +35,7 @@ function checks() {
     // The forecaster the rules were graded on. If it could not run, the graded rule
     // cannot run either: an ungraded substitute wearing a graded rule's name is the
     // one failure this page must not hide.
-    { chk: "Graded forecaster available", val: ch.forecast_model || (ch.forecast_ok === false ? "degraded" : "yes"),
+    { chk: "Graded forecaster available", val: words(ch.forecast_model) || (ch.forecast_ok === false ? "degraded" : "yes"),
       thr: "the race winner", ok: ch.forecast_ok !== false,
       role: ch.forecast_ok === false ? "selling is gated off until the vol engine runs" : "required to sell" },
     { chk: "Implied above forecast realised", val: pts(ch.expected_vrp), thr: `≥ ${pts(th.vrp_min_sell, 0)}`, ok: ch.paid, role: "required to sell" },
@@ -52,7 +52,7 @@ function checks() {
     { key: "ok", label: "State", fmt: (v) => el("span", { class: `pill ${v ? "up" : "warn"}`, text: v ? "pass" : "no" }) },
     { key: "role", label: "Role in the live rules" },
   ]);
-  document.getElementById("vt-reasons").textContent = `Signal: ${D.signal.structure ? STRUCT[D.signal.structure] : "nothing"} — ${D.signal.reasons.join(", ")}.`;
+  document.getElementById("vt-reasons").textContent = `Signal: ${D.signal.structure ? STRUCT[D.signal.structure] : "nothing"} — ${D.signal.reasons.map((x) => words(x).toLowerCase()).join(", ")}.`;
 }
 
 function proposal() {
@@ -77,7 +77,7 @@ function proposal() {
   const ex = d.exits || {};
   const exits = [ex.dte != null ? `close or roll at ${ex.dte} DTE` : null, ex.profit_take != null ? `take profit at ${pct(ex.profit_take, 0)} of the credit` : null,
                  ex.stop_mult != null ? `stop at ${ex.stop_mult}× the credit` : null, ex.front_dte != null ? `close when the front leg reaches ${ex.front_dte} DTE` : null].filter(Boolean);
-  host.appendChild(el("p", { class: "note", style: "margin-top:10px", text: `Exits: ${exits.join("; ")}.` }));
+  host.after(el("p", { class: "note", style: "margin-top:10px", text: `Exits: ${exits.join("; ")}.` }));   // under the tiles, not one of them
   // payoff
   const pay = D.payoff || [];
   if (pay.length) {

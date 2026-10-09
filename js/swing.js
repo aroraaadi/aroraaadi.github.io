@@ -12,10 +12,49 @@ const STRONG = new Set(["established", "replicated"]);
 const spct = (x, dp = 1) => (x == null ? "–" : (x > 0 ? "+" : "") + fmtPct(x, dp));
 const tcell = (t) => el("span", { class: t == null ? "note" : Math.abs(t) >= 3 ? (t > 0 ? "up" : "down") : Math.abs(t) >= 2 ? "" : "note", text: t == null ? "–" : t.toFixed(1) });
 const gradePill = (g) => el("span", { class: `pill ${GRADE_TONE[g] || ""}`, text: g || "untested" });
-const ruleLabel = (k) => k.replace(/_/g, " ").replace(/\b(long|short)$/, "").trim();
+/* Setup and rule names in words. The registry's setups by name; the search grids' rules ("down3_12|sp_top|hold 10|long") by parts. */
+const SETUP_WORDS = {
+  reversal_3d_long: "3-day fall of 10%+, hold 10", reversal_3d_long_h5: "3-day fall of 10%+, hold 5", reversal_3d_stop_long: "3-day fall of 10%+, with a stop",
+  reversal_1d_long: "1-day fall of 5%+ on volume", reversal_5d_long: "5-day fall of 15%+", reversal_quiet_long: "3-day fall with no news",
+  reversal_3d_short: "3-day spike of 15%+ with no news", reversal_1d_short: "1-day spike of 10%+ with no news", lottery_short: "Lottery names still rising",
+  reversal_small_long: "3-day fall of 8%+, small cap", reversal_sue_long: "6% fall after an earnings beat", reversal_5d_small_long: "5-day fall of 18%+, small cap",
+  pead_long: "Beat the market liked", pead_short: "Miss the market punished", mom_pullback_long: "Dip near a 52-week high", golden_cross_long: "50/200 EMA cross",
+  mom_rank_long: "Top momentum on a down day", breakout_volume_long: "20-day high on 2x volume", breakdown_volume_short: "20-day low on 2x volume",
+  gap_and_go_long: "Gap up, strong close", news_breakout_long: "Move on good news and volume", attention_fade_short: "Headline spike on an up day",
+  squeeze_breakout_long: "Squeeze breaking up", squeeze_breakdown_short: "Squeeze breaking down", spike_fade_control: "Control: buy a news-less spike",
+};
+const FIELD_WORDS = { sp: "sales/price", bm: "book/market", ey: "earnings yield", fcfy: "FCF yield", ebit_ev: "EBIT/EV", gp_a: "gross profitability", roa: "ROA",
+  cop_a: "cash profitability", accruals: "accruals", asset_growth: "asset growth", deleverage: "deleveraging", nsi: "share issuance", ivol: "idiosyncratic vol",
+  beta: "beta", max5: "max daily gain", mom_12_1: "12-1 momentum", mom_6_1: "6-1 momentum", mom_12_7: "12-7 momentum", rev_1m: "1-month reversal", resmom: "residual momentum",
+  pth: "52-week high", fip: "frog-in-the-pan", mom_vs: "vol-scaled momentum", log_size: "size", sue: "earnings surprise", earn_streak: "surprise streak" };
+const FILTER_WORDS = { none: "", vol2: "on 2x volume", low_turnover: "on light volume", high_turnover: "on heavy volume", above50: "above its 50-day", below50: "below its 50-day",
+  ema_up: "EMA9 over EMA21", spy_up: "SPY above its 200-day", spy_down: "SPY below its 200-day", vix_low: "VIX under 20", vix_high: "VIX above its median",
+  vix_inverted: "VIX curve inverted", vix_normal: "VIX curve normal", held_13f: "held by Renaissance", not_13f: "not held by Renaissance", ftd_high: "heavy fails to deliver",
+  ftd_low: "light fails to deliver", sue_pos: "after an earnings beat", gpa_top: "top-third profitability", accr_low: "low accruals", no_issue: "no share issuance",
+  ivol_low: "low idiosyncratic vol", small: "small cap", turn_of_month: "turn of the month", january: "in January", december: "in December", monday: "on Mondays", friday: "on Fridays", monthly: "" };
+function signalWords(sg) {
+  let m;
+  if ((m = sg.match(/^(down|up)(\d+)ind_(\d+)$/))) return `${m[2]}-day ${m[1] === "down" ? "fall" : "rise"} of ${m[3]}%+ vs sector`;
+  if ((m = sg.match(/^(down|up)(\d+)_(\d+)$/))) return `${m[2]}-day ${m[1] === "down" ? "fall" : "rise"} of ${m[3]}%+`;
+  if ((m = sg.match(/^(hi|lo)(\d+)$/))) return `${m[2]}-day ${m[1] === "hi" ? "high" : "low"}`;
+  if ((m = sg.match(/^(.+)_(top|bottom)(\d+)?$/)) && FIELD_WORDS[m[1]]) return `${m[2]} ${m[3] ? m[3] + "%" : "third"} by ${FIELD_WORDS[m[1]]}`;
+  if ((m = sg.match(/^(.+)_(top|bottom)&(.+)_(top|bottom)$/))) return `${signalWords(m[1] + "_" + m[2])} and ${signalWords(m[3] + "_" + m[4])}`;
+  return { all: "every name", vsurge_up: "3x-volume up day", vsurge_down: "3x-volume down day", quiet_up: "quiet up day", vol_top: "top-decile volatility",
+           vol_bottom: "bottom-decile volatility", mom_top: "top-decile momentum", mom_bottom: "bottom-decile momentum", mom_top_dip: "top momentum on a dip",
+           pth_high: "near a 52-week high", hi252: "52-week high", lottery: "lottery names", volume_top: "top-decile volume up day", mom_lowvol: "top momentum, light volume",
+           mom_highvol: "top momentum, heavy volume" }[sg] || sg.replace(/_/g, " ");
+}
+function filterWords(f) {
+  if (f in FILTER_WORDS) return FILTER_WORDS[f];
+  const m = f.match(/^(.+)_(top|bottom)$/);
+  return m && FIELD_WORDS[m[1]] ? `${m[2]} third by ${FIELD_WORDS[m[1]]}` : f.replace(/_/g, " ");
+}
+/* "down3_12|sp_top|hold 10|long" -> "3-day fall of 12%+ · top third by sales/price · hold 10 · long" */
+const gridRule = (r) => { const [sg, f, h, side] = String(r).split("|"); return [signalWords(sg), filterWords(f || ""), h, side].filter(Boolean).join(" · "); };
+const ruleLabel = (k) => SETUP_WORDS[k] || (String(k).includes("|") ? gridRule(k) : String(k).replace(/_/g, " ").replace(/\b(long|short)$/, "").trim());
 const fmtPx = (v) => (v == null ? "–" : v.toFixed(2));
 const PLAN_NAMES = { next_open: "next open", confirm_ema: "close above EMA9, then open", confirm_vwap: "close above anchored VWAP, then open",
-  fib_bounce_382: "stop-entry at the 38.2% bounce", fib_dip_382: "limit 38.2% lower", fib_target_382: "next open; take profit at 38.2%", fib_target_618: "next open; take profit at 61.8%", ema21_filter: "next open (above EMA21 only)" };
+  fib_bounce_382: "stop-entry at the 38.2% bounce", fib_dip_382: "limit 38.2% lower", fib_target_382: "next open; take profit at 38.2%", fib_target_618: "next open; take profit at 61.8%", ema21_filter: "next open (above EMA21 only)", overnight_only: "buy the close, sell the next open" };
 const planLabel = (r) => { const p = r.plan || {}; const n = PLAN_NAMES[r.timing] || r.timing || "next open"; return p.level ? `${n} (${p.level.toFixed(2)})` : n; };
 
 function strip() {
@@ -61,10 +100,12 @@ function entries() {
     `Flags are shown, not hidden: a report within ${S.context.earnings_skip_days} sessions, a stressed regime for longs, a name that cannot be shorted, a rule the live record has paused.`;
 }
 
+let storiesAll = false;
 function storiesPanel() {
-  const rows = (side === "long" ? S.long : S.short).filter((r) => STRONG.has(r.grade) && r.story).slice(0, 12);
+  const every = (side === "long" ? S.long : S.short).filter((r) => STRONG.has(r.grade) && r.story).slice(0, 12);
+  const rows = storiesAll ? every : every.slice(0, 3);
   const box = $("sw-stories"); box.innerHTML = "";
-  $("sw-st-meta").textContent = rows.length ? `${rows.length} of tonight's ${side} setups with established or replicated evidence` : "no strong setups tonight";
+  $("sw-st-meta").textContent = every.length ? `${every.length} of tonight's ${side} setups with established or replicated evidence` : "no strong setups tonight";
   rows.forEach((r) => {
     const st = r.story, m = st.model || r.model;
     const head = el("div", { class: "sw-story-h" }, [
@@ -72,7 +113,7 @@ function storiesPanel() {
       el("span", { class: "spacer" }),
       m && m.mu != null ? el("span", { class: m.in_use ? (m.mu > 0 ? "up" : "down") : "note", text: `model ${spct(m.mu, 2)}` }) : el("span"),
     ]);
-    const kids = [head, el("p", { class: "sw-story-t", text: st.text })];
+    const kids = [head, el("p", { class: "sw-story-t", text: st.summary || st.text })];
     if ((st.headlines || []).length) {
       kids.push(el("ul", { class: "sw-story-news" }, st.headlines.map((h) => el("li", {}, [
         h.url ? el("a", { href: h.url, target: "_blank", rel: "noopener", text: `“${h.title}”` }) : el("span", { text: `“${h.title}”` }),
@@ -87,6 +128,11 @@ function storiesPanel() {
     }
     box.appendChild(el("div", { class: "sw-story" }, kids));
   });
+  if (every.length > 3) {
+    const b = el("button", { class: "btn-more", text: storiesAll ? "Show three" : `Show all ${every.length}` });
+    b.addEventListener("click", () => { storiesAll = !storiesAll; storiesPanel(); });
+    box.appendChild(el("div", { class: "sw-stories-more" }, [b]));
+  }
 }
 
 let LN = null, lMode = "coef";
@@ -173,7 +219,8 @@ function rules() {
     { key: "oos_mean", label: "Out of sample", num: true, fmt: (v, r) => el("span", {}, [el("span", { text: spct(v, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(r.oos_t)]) },
     { key: "oos_n", label: "Trades out", num: true, fmt: (v) => (v == null ? "–" : v.toLocaleString()) },
     { key: "oos_25bp_mean", label: "At 25 bp", num: true, fmt: (v) => spct(v, 2) },
-    { key: "tier_b", label: "With stops", cls: () => "note", fmt: (b) => (b && b.trades ? `${b.trades.toLocaleString()} trades · mean R ${b.mean_r == null ? "–" : b.mean_r.toFixed(2)} · stops ${fmtPct((b.exits?.stop || 0) / b.trades, 0)}` : "–") },
+    { key: "tier_b", label: "On today's names", cls: () => "note", fmt: (b) => (b && b.trades ? `${b.trades.toLocaleString()} trades · ` +
+        (b.stop_atr ? `mean R ${b.mean_r == null ? "–" : b.mean_r.toFixed(2)} · ${fmtPct((b.exits?.stop || 0) / b.trades, 0)} stopped out` : "time exit, no stop") : "–") },
     { key: "literature", label: "Source", cls: () => "note wrap" },
   ]);
   $("sw-r-meta").textContent = `${rows.length} setups · FDR: ${L.fdr_passed} of ${L.tried} pass at ${(0.1 * 100).toFixed(0)}%`;
@@ -189,10 +236,13 @@ function sizing() {
   if (!keys.length) { $("sw-s-note").textContent = "The sizing race needs the OHLC lab run."; return; }
   if (!sizeRule || !keys.includes(sizeRule)) sizeRule = keys.includes("reversal_3d_long") ? "reversal_3d_long" : keys[0];
   const seg = $("sw-s-rule"); seg.innerHTML = "";
-  keys.forEach((k) => { const b = el("button", { text: ruleLabel(k), "aria-pressed": String(k === sizeRule) }); if (k === sizeRule) b.classList.add("active");
-    b.addEventListener("click", () => { sizeRule = k; sizing(); }); seg.appendChild(b); });
+  const sel = el("select", { id: "sw-s-select", "aria-label": "Setup" }, keys.map((k) => el("option", { value: k, text: `${ruleLabel(k)} (${B[k].direction || ""})` })));
+  sel.value = sizeRule;
+  sel.addEventListener("change", () => { sizeRule = sel.value; sizing(); });
+  seg.appendChild(el("label", { class: "field" }, [el("span", { text: "Setup" }), sel]));
   const z = B[sizeRule].sizing, inp = z._inputs;
-  const rows = Object.entries(z).filter(([k]) => k !== "_inputs").map(([k, v]) => ({ policy: k.replace(/_/g, " "), ...v }));
+  const POLICY = { fixed_1pct: "fixed 1% risk", fixed_2pct: "fixed 2% risk", quarter_kelly: "quarter Kelly", half_kelly: "half Kelly", full_kelly: "full Kelly", vol_target: "volatility target" };
+  const rows = Object.entries(z).filter(([k]) => k !== "_inputs").map(([k, v]) => ({ policy: POLICY[k] || k.replace(/_/g, " "), ...v }));
   renderTable($("sw-sizing"), rows, [
     { key: "policy", label: "Policy" },
     { key: "mean_size", label: "Mean size", num: true, fmt: (v) => (v == null ? "–" : `${(v * 100).toFixed(1)}%`) },
@@ -225,7 +275,7 @@ function timingPanel() {
     { key: "ins", label: "In sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
     { key: "oos", label: "Out of sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
     { key: "trades", label: "Trades", num: true, fmt: (v) => v.toLocaleString() },
-    { key: "exits", label: "Exits", cls: () => "note", fmt: (e) => `${e.stop} stop · ${e.target} target · ${e.time} time` },
+    { key: "exits", label: "Exits", cls: () => "note", fmt: (e) => `${e.stop.toLocaleString()} stop · ${e.target.toLocaleString()} target · ${e.time.toLocaleString()} time` },
   ]);
   $("sw-t-note").textContent = `Each variant is applied to every signal of ${ruleLabel(tRule)} on today's names with real ranges, judged before 2025 and tested on 2025 on, net of 10 bp. ` +
     `The book adopts a variant only when, out of sample, it fills at least half the signals and beats the next-open fill on both mean and t; today's choice: ${PLAN_NAMES[T[tRule].choice] || T[tRule].choice}. ` +
@@ -330,7 +380,7 @@ function permutePanel() {
   $("sw-pm-note").textContent = `Selection decay: the ${d.k} best rules in sample averaged ${spct(d.in_mean, 2)} a trade before ${PM.split.slice(0, 4)} and ${spct(d.out_mean, 2)} after; ${fmtPct(d.out_positive, 0)} stayed positive and ${fmtPct(d.out_t2, 0)} kept t ≥ 2. ` +
     `Costs ${PM.cost_bp} bp a side (${PM.cost_bp_high} bp shown), weekly-clustered t, the point-in-time panel with its failures, next-close entry, no stops.`;
   const ruleCols = [
-    { key: "rule", label: "Rule", fmt: (v) => v.replace(/\|/g, " · ").replace(/_/g, " ") },
+    { key: "rule", label: "Rule", fmt: (v) => gridRule(v) },
     { key: "grade", label: "Grade", fmt: gradePill },
     { key: "ins", label: "In sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
     { key: "oos", label: "Out of sample", num: true, fmt: (b) => el("span", {}, [el("span", { text: spct(b.mean, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(b.t)]) },
@@ -345,7 +395,7 @@ function permutePanel() {
     { key: "key", label: "Family", fmt: famLabel }, { key: "tried", label: "Tried", num: true, fmt: (v) => v.toLocaleString() },
     { key: "in_sample_t3", label: "Worked in sample", num: true }, { key: "fdr", label: "FDR", num: true }, { key: "replicated", label: "Established or replicated", num: true },
     { key: "reliable", label: "Reliable", num: true, fmt: (v) => el("span", { class: v ? "up" : "note", text: String(v) }) },
-    { key: "best", label: "Best out of sample", cls: () => "note wrap", fmt: (b) => (b ? `${b.rule.replace(/\|/g, " · ").replace(/_/g, " ")}: ${spct(b.oos.mean, 2)}, t ${b.oos.t == null ? "–" : b.oos.t.toFixed(1)}` : "–") },
+    { key: "best", label: "Best out of sample", cls: () => "note wrap", fmt: (b) => (b ? `${gridRule(b.rule)}: ${spct(b.oos.mean, 2)}, t ${b.oos.t == null ? "–" : b.oos.t.toFixed(1)}` : "–") },
   ];
   if (pmMode === "reliable") {
     renderTable($("sw-pm-table"), PM.reliable, ruleCols);
@@ -371,12 +421,13 @@ function ideasPanel() {
   $("sw-i-meta").textContent = `${I.tried.toLocaleString()} rules tried · ${I.fdr_passed} pass the FDR · ${I.ideas.length} replicate`;
   const cov = I.extra_coverage || {};
   const bf = I.by_filter || {};
-  const best = Object.entries(bf).sort((a, b) => (b[1].mean_oos_t || -9) - (a[1].mean_oos_t || -9)).slice(0, 6).map(([k, v]) => `${k.replace(/_/g, " ")} (mean out-of-sample t ${v.mean_oos_t == null ? "–" : v.mean_oos_t.toFixed(1)}, ${v.replicated} replicate)`);
-  $("sw-i-note").textContent = I.method.split("\n\n")[0] + (best.length ? ` Filters that helped most across the grid: ${best.join("; ")}.` : "") +
-    (Object.keys(cov).length ? ` Coverage of the extra data on the last day: ${Object.entries(cov).map(([k, v]) => `${k} ${fmtPct(v, 0)}`).join(", ")}.` : "");
+  const best = Object.entries(bf).sort((a, b) => (b[1].mean_oos_t || -9) - (a[1].mean_oos_t || -9)).slice(0, 6).map(([k, v]) => `${filterWords(k) || "no filter"} (mean out-of-sample t ${v.mean_oos_t == null ? "–" : v.mean_oos_t.toFixed(1)}, ${v.replicated} replicate)`);
+  const COV = { ftd: "fails to deliver", held13f: "Renaissance's 13F", sector: "sector", r3_ind: "move vs sector", vix_term: "VIX curve" };
+  $("sw-i-note").textContent = I.method.split("\n\n")[0].replace(/\s*\(swing\/[\w.]+\)/g, "") + (best.length ? ` Filters that helped most across the grid: ${best.join("; ")}.` : "") +
+    (Object.keys(cov).length ? ` Share of names each extra source covers on the last day: ${Object.entries(cov).map(([k, v]) => `${COV[k] || k} ${fmtPct(v, 0)}`).join(", ")}.` : "");
   const rows = (I.ideas.length ? I.ideas : I.leaderboard.slice(0, 25)).map((r) => ({ ...r, ins_m: r.ins.mean, ins_t: r.ins.t, oos_m: r.oos.mean, oos_t: r.oos.t, n: r.oos.n }));
   renderTable($("sw-ideas"), rows, [
-    { key: "rule", label: "Rule", fmt: (v) => v.replace(/\|/g, " · ").replace(/_/g, " ") },
+    { key: "rule", label: "Rule", fmt: (v) => gridRule(v) },
     { key: "grade", label: "Grade", fmt: gradePill },
     { key: "ins_m", label: "In sample", num: true, fmt: (v, r) => el("span", {}, [el("span", { text: spct(v, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(r.ins_t)]) },
     { key: "oos_m", label: "Out of sample", num: true, fmt: (v, r) => el("span", {}, [el("span", { text: spct(v, 2) + " " }), el("span", { class: "note", text: "t " }), tcell(r.oos_t)]) },
@@ -419,8 +470,12 @@ function papersPanel() {
   ]);
   const S_ = P.summary || {};
   $("sw-p-meta").textContent = `${P.papers.length} papers · surveyed ${fmtDate(P.as_of)}`;
-  $("sw-p-note").textContent = [S_.what_works?.length ? `Works: ${S_.what_works.join("; ")}.` : "", S_.what_fails?.length ? `Fails or unsupported: ${S_.what_fails.join("; ")}.` : "",
-    S_.gaps?.length ? `Gaps: ${S_.gaps.join("; ")}.` : ""].filter(Boolean).join(" ");
+  const tidy = (t) => t.replace(/\.\s*;/g, ";").replace(/\.{2,}/g, ".").replace(/\s+([;,.])/g, "$1");
+  const pn = $("sw-p-note"); pn.innerHTML = "";
+  [["Works", S_.what_works], ["Fails or unsupported", S_.what_fails], ["Gaps", S_.gaps]].forEach(([k, xs]) => {
+    if (!xs?.length) return;
+    pn.appendChild(el("p", {}, [el("b", { text: `${k}. ` }), el("span", { text: tidy(xs.map((x) => x.replace(/\.$/, "")).join("; ") + ".") })]));
+  });
 }
 
 function record() {
@@ -443,8 +498,8 @@ function record() {
     { key: "rule", label: "Setup" }, { key: "n", label: "Closed", num: true },
     { key: "hit", label: "Hit", num: true, fmt: (v) => fmtPct(v, 0) }, { key: "mean", label: "Mean", num: true, fmt: (v) => spct(v, 2) },
     { key: "mean_r", label: "R", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "t", label: "t", num: true, fmt: tcell },
-    { key: "exits", label: "Exits", cls: () => "note", fmt: (e) => `${e.stop} stop · ${e.target} target · ${e.time} time` },
-  ]);
+    { key: "exits", label: "Exits", cls: () => "note", fmt: (e) => `${e.stop.toLocaleString()} stop · ${e.target.toLocaleString()} target · ${e.time.toLocaleString()} time` },
+  ], { empty: "No suggestion has closed yet: each is scored once its hold ends, the first on about Oct 15." });
   renderTable($("sw-rec-trades"), R.recent, [
     { key: "signal_date", label: "Signal", fmt: (v) => fmtDate(v) }, { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) },
     { key: "rule", label: "Setup", fmt: ruleLabel }, { key: "grade", label: "Grade", fmt: gradePill }, { key: "direction", label: "Side", cls: () => "note" },
@@ -460,7 +515,8 @@ function method() {
   const box = $("sw-method"); box.innerHTML = "";
   [S.method, L.method].forEach((t) => t && box.appendChild(el("p", { text: t })));
   [
-    "Of the roughly 15,000 rule permutations this repo has tried, none cleared a 10% false-discovery bar on its own; one family, short-term reversal, replicated in every variant on fourteen years of small caps including the ones that failed. That is why most rows above read untested or failed.",
+    (PM ? `The permutation search has tried ${PM.tried.toLocaleString()} rules on the panel; ${PM.fdr_passed.toLocaleString()} clear a 10% false-discovery bar and ${PM.counts.reliable} clear every check, nearly all of them short-term reversal in cheap, profitable or small names. ` : "") +
+    "Most setups that are not a form of short-term reversal read untested or failed above; that family is the one that replicated on fourteen years of small caps, failures included.",
     "Costs: 10 bp a side is a liquid-name haircut and 25 bp is nearer the truth for a $5 name; shorts also pay to borrow, which is not modelled.",
     "Daily closes only: stops are checked against each day's high and low with the pessimistic order (stop first, gaps at the open). A stop hit at 10:30 is seen at the close.",
     "The regime gate uses today's stress probability, which the backtest cannot use historically; the lab gates on SPY's 200-day average instead.",
@@ -476,7 +532,7 @@ const susd = (x) => (x == null ? "–" : (x >= 0 ? "+" : "−") + "$" + Math.abs
 function bookPanel() {
   if (!B) { $("sw-b-note").textContent = "The book has not stepped yet."; return; }
   const q = Q?.quotes || {};
-  $("sw-b-meta").textContent = `since ${fmtDate(B.started)} · stepped ${fmtDate(B.days[B.days.length - 1].date)} · hedged with ${B.rules.hedge}`;
+  $("sw-b-meta").textContent = `since ${fmtDate(B.started)} · stepped ${fmtDate(B.days[B.days.length - 1].date)} · ${B.rules.hedge ? `hedged with ${B.rules.hedge}` : `longs in stock, shorts as bought ${B.rules.short_via || "put"}s`}`;
   renderStats("sw-b-strip", [
     { label: "NAV", value: usd(B.nav), tone: B.return_total > 0 ? "up" : B.return_total < 0 ? "down" : "", delta: `${spct(B.return_total, 2)} on ${usd(B.start_cash, 0)}` },
     { label: "Today", value: susd(B.pnl_today), tone: B.pnl_today > 0 ? "up" : B.pnl_today < 0 ? "down" : "", delta: `${B.days.length} sessions recorded` },
@@ -501,14 +557,14 @@ function bookPanel() {
       { key: "stop", label: "Stop", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "target", label: "Target", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) },
       { key: "sessions", label: "Held", num: true, fmt: (v, r) => (r.rule === "hedge" ? "–" : `${v} of ${r.hold}`) },
       { key: "pnl", label: "P&L", num: true, fmt: (v) => el("span", { class: v > 0 ? "up" : v < 0 ? "down" : "", text: susd(v) }) },
-    ]);
+    ], { empty: B.orders.length ? `No positions yet: ${B.orders.length} order${B.orders.length === 1 ? "" : "s"} fill at the next open (see "Orders for the next open").` : "No open positions." });
   } else if (bMode === "orders") {
     renderTable($("sw-b-table"), B.orders, [
       { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) }, { key: "rule", label: "Setup", fmt: ruleLabel }, { key: "grade", label: "Grade", fmt: gradePill },
       { key: "side", label: "Side", cls: () => "note" }, { key: "notional", label: "Size", num: true, fmt: (v) => usd(v, 0) }, { key: "hold", label: "Hold", num: true, fmt: (v) => `${v}d` },
       { key: "signal_date", label: "Signal", fmt: fmtDate }, { key: "mu", label: "Model", num: true, fmt: (v) => spct(v, 2) },
       { key: "story", label: "The story", cls: () => "note wrap sw-why", fmt: (v) => (v ? v.split(". ").slice(0, 3).join(". ") + (v.split(". ").length > 3 ? "…" : "") : "") },
-    ]);
+    ], { empty: "No orders for the next open: no strong setup cleared the book's gates tonight, or every slot is full." });
   } else {
     renderTable($("sw-b-table"), B.closed, [
       { key: "exit_date", label: "Closed", fmt: fmtDate }, { key: "symbol", label: "Stock", fmt: (v) => el("span", { class: "sym", text: v }) }, { key: "rule", label: "Setup", fmt: ruleLabel },
@@ -516,7 +572,7 @@ function bookPanel() {
       { key: "exit_px", label: "Out", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "why", label: "Why", cls: () => "note" },
       { key: "ret", label: "Return", num: true, fmt: (v) => el("span", { class: v > 0 ? "up" : v < 0 ? "down" : "", text: spct(v, 2) }) },
       { key: "pnl", label: "P&L", num: true, fmt: (v) => el("span", { class: v > 0 ? "up" : v < 0 ? "down" : "", text: susd(v) }) },
-    ]);
+    ], { empty: "No closed trades yet: the first positions leave after their five- or ten-day holds." });
   }
 }
 

@@ -121,7 +121,7 @@ async function openName(sym) {
     document.getElementById("tx-reader").hidden = true;
     return;
   }
-  setAsOf(IDX.as_of.slice(0, 10));
+  setAsOf(IDX.as_of.slice(0, 10), "AS OF", { maxAge: 8 });   // refreshed weekly (run_daily WEEKLY) from quarterly filings
   const pulled = IDX.names.filter((r) => r.status === "ok");
   const withCall = IDX.with_call_content || [];
   const fmp = IDX.fmp_transcripts || {};

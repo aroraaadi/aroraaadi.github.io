@@ -44,11 +44,23 @@ export async function loadText(path) {
 }
 
 const MIME = { pdf: "application/pdf", md: "text/plain; charset=utf-8", csv: "text/csv; charset=utf-8",
-               json: "application/json", txt: "text/plain; charset=utf-8" };
+               json: "application/json", txt: "text/plain; charset=utf-8",
+               xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" };
 
 /** Open a sealed document (a pitch PDF, a note) in a new tab, decrypted. The
     tab is opened before the fetch so the browser counts it as the click's. */
 export async function openSealed(href) {
+  const ext0 = (href.split("?")[0].split(".").pop() || "").toLowerCase();
+  if (ext0 === "xlsx") {                                   // a workbook is saved, not shown in a tab
+    try {
+      const bytes = await fetchOpen(new URL(href, location.href).href, {});
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([bytes], { type: MIME.xlsx }));
+      a.download = href.split("?")[0].split("/").pop();
+      document.body.appendChild(a); a.click(); a.remove();
+    } catch (err) { alert(`Could not download ${href}: ${err.message}`); }
+    return;
+  }
   const w = window.open("", "_blank");
   try {
     // The link's own href, resolved against this page: it already carries the base.

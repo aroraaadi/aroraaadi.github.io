@@ -1300,3 +1300,10 @@ td.sw-why { min-width: 18em; max-width: 30em; font-size: var(--t-sm); line-heigh
 .sw-bar-fill.pos { background: var(--up); }
 .sw-bar-fill.neg { background: var(--down); }
 @media (max-width: 760px) { .sw-stories { grid-template-columns: 1fr; } }
+/* the trade journal: a spreadsheet, gridlines and row numbers */
+.sheet { border-collapse: collapse; font-size: var(--t-sm); }
+.sheet th, .sheet td { border: 1px solid var(--border); padding: 3px 8px; white-space: nowrap; }
+.sheet thead th { position: sticky; top: 0; background: var(--panel); z-index: 1; }
+.sheet td.sheet-rn, .sheet th:first-child { color: var(--muted); background: var(--page); text-align: right; min-width: 2.5em; font-family: var(--font-num); }
+.sheet tbody tr:hover td { background: var(--page); }
+.sw-j-dl { margin: var(--sp-2) 0; font-size: var(--t-sm); }

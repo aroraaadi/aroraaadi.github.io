@@ -232,6 +232,87 @@ function timingPanel() {
     `Waiting for confirmation costs the first day of the move; a limit misses the names that never come back. The test is what says whether the wait is worth it.`;
 }
 
+let JN = null, jMode = "trades";
+const VERDICT_PILL = { edge: "up", "no edge": "down", "too early": "warn", "not yet decided": "muted" };
+const verdictPill = (v) => el("span", { class: `pill ${VERDICT_PILL[v] || ""}`, text: v || "–" });
+const pnlCell = (v) => (v == null ? "–" : el("span", { class: v > 0 ? "up" : v < 0 ? "down" : "", text: susd(v) }));
+const retCell = (v, dp = 2) => (v == null ? "–" : el("span", { class: v > 0 ? "up" : v < 0 ? "down" : "", text: spct(v, dp) }));
+function sheetRows(rows) { return rows.map((r, i) => ({ _row: i + 1, ...r })); }
+const ROWNUM = { key: "_row", label: "", num: true, cls: () => "sheet-rn" };
+function journalPanel() {
+  if (!JN) { $("sw-j-note").textContent = "The journal is written each evening after the book steps."; return; }
+  const e = JN.edge, es = JN.edge_suggestions, ea = JN.alpaca?.edge, R = JN.replay;
+  $("sw-j-meta").textContent = `${JN.trades.length} book trades · ${JN.suggestions.total.toLocaleString()} suggestions · ${fmtDate(JN.as_of)}`;
+  renderStats("sw-j-strip", [
+    { label: "The $10,000 book", value: e.verdict, tone: VERDICT_PILL[e.verdict], delta: `${e.closed} closed · ${e.open} open · ${e.pending} pending · ${e.verdict_why}` },
+    { label: "Every suggestion", value: es.verdict, tone: VERDICT_PILL[es.verdict], delta: `${es.closed} closed of ${JN.suggestions.total} logged` },
+    { label: "Alpaca paper fills", value: ea ? ea.verdict : "not trading yet", tone: ea ? VERDICT_PILL[ea.verdict] : "warn", delta: ea ? `${ea.closed} closed` : "the mirror sends orders once its job is loaded" },
+    { label: "Replay 2025-26 (random tiebreak)", value: R ? R.edge.verdict : "–", tone: R ? VERDICT_PILL[R.edge.verdict] : "", delta: R ? `${R.edge.closed} trades · mean ${spct(R.edge.mean, 2)} · t ${R.edge.t == null ? "–" : R.edge.t.toFixed(1)} · vs IWM ${spct(R.edge.excess_iwm_mean, 2)}` : "" },
+  ]);
+  $("sw-j-note").textContent = "The test was fixed before any trade: under 30 closed trades it says too early; it calls an edge only when an always-valid sequential test " +
+    "(it stays a 5% test however often the page is opened) rejects zero with a positive mean and the trades beat IWM over their own windows with t ≥ 2; it calls no edge " +
+    "when that test rejects zero the other way, or the live mean falls below the interval the backtest predicts. The workbook carries every number, with filters and subtotals.";
+  const T = $("sw-j-table"), chart = $("sw-j-chart").closest(".chart");
+  chart.style.display = jMode === "replay" || jMode === "orders" ? "" : "none";
+  const tradeCols = (dollars = true) => [ROWNUM,
+    { key: "status", label: "Status", cls: () => "note" }, { key: "signal_date", label: "Signal", fmt: (v) => v || "–" }, { key: "symbol", label: "Symbol", fmt: (v) => el("span", { class: "sym", text: v }) },
+    { key: "setup", label: "Setup", fmt: (v) => (v ? ruleLabel(v) : "–") }, { key: "side", label: "Side", cls: () => "note" }, { key: "instrument", label: "Instrument", cls: () => "note" },
+    { key: "fill_date", label: "Filled", fmt: (v) => v || "–" }, { key: "fill_price", label: "Fill", num: true, fmt: (v) => fmtPx(v) }, { key: "qty", label: "Qty", num: true, fmt: (v) => (v == null ? "–" : v) },
+    { key: "exit_date", label: "Exited", fmt: (v) => v || "–" }, { key: "exit_price", label: "Exit", num: true, fmt: (v) => fmtPx(v) }, { key: "exit_reason", label: "Why", cls: () => "note", fmt: (v) => v || "" },
+    { key: "days_held", label: "Days", num: true, fmt: (v) => (v == null ? "–" : v) },
+    ...(dollars ? [{ key: "net_pnl", label: "Net P&L", num: true, fmt: pnlCell }] : []),
+    { key: "ret", label: "Return", num: true, fmt: (v) => retCell(v) }, { key: "mae", label: "MAE", num: true, fmt: (v) => retCell(v, 1) }, { key: "mfe", label: "MFE", num: true, fmt: (v) => retCell(v, 1) },
+    { key: "iwm_window", label: "IWM same window", num: true, fmt: (v) => retCell(v) }, { key: "excess_iwm", label: "vs IWM", num: true, fmt: (v) => retCell(v) }];
+  if (jMode === "trades") {
+    renderTable(T, sheetRows(JN.trades), tradeCols());
+    $("sw-j-foot").textContent = "Every order the book placed, one row each: pending until it fills at the next open, open while held, closed with the exit and why. MAE and MFE are the worst and best point during the hold against the fill; IWM is over the trade's own window.";
+  } else if (jMode === "alpaca") {
+    renderTable(T, sheetRows(JN.alpaca?.trades || []), tradeCols());
+    $("sw-j-foot").textContent = "The same decisions on Alpaca's paper account: shares bought market-on-open for longs, the put nearest the money 21-45 days out for shorts. Real paper fills, so the gap to the book's simulated fills is measured, not assumed.";
+  } else if (jMode === "edge") {
+    const L = [["Closed trades", "closed", (v) => v], ["Mean return a trade (net)", "mean", spct], ["Median", "median", spct], ["Hit rate", "hit", (v) => fmtPct(v, 0)],
+      ["Average win", "avg_win", spct], ["Average loss", "avg_loss", spct], ["Payoff", "payoff", (v) => (v == null ? "–" : v.toFixed(2))], ["Profit factor", "profit_factor", (v) => (v == null ? "–" : v.toFixed(2))],
+      ["t over weekly clusters", "t", (v) => (v == null ? "–" : v.toFixed(2))], ["Bootstrap 95% low", "ci_low", spct], ["Bootstrap 95% high", "ci_high", spct],
+      ["Mean excess over IWM", "excess_iwm_mean", spct], ["t of the excess", "excess_iwm_t", (v) => (v == null ? "–" : v.toFixed(2))],
+      ["Always-valid p", "seq_p", (v) => (v == null ? "–" : v.toFixed(3))], ["Backtest interval, low", "lab_low", spct], ["Backtest interval, high", "lab_high", spct],
+      ["Against the backtest", "vs_lab", (v) => v || "–"], ["Trades needed for t 3", "trades_for_t3", (v) => (v == null ? "–" : v.toLocaleString())], ["Verdict", "verdict", (v) => verdictPill(v)]];
+    renderTable(T, sheetRows(L.map(([label, k, f]) => ({ label, book: f(e?.[k]), sugg: f(es?.[k]), alp: ea ? f(ea[k]) : "–", rep: R ? f(R.edge[k]) : "–" }))), [ROWNUM,
+      { key: "label", label: "Statistic" }, { key: "book", label: "The book", num: true }, { key: "sugg", label: "Every suggestion", num: true },
+      { key: "alp", label: "Alpaca fills", num: true }, { key: "rep", label: "Replay 2025-26", num: true }]);
+    $("sw-j-foot").textContent = "Returns per trade net of costs. The t clusters trades by entry week; the excess is each trade's return less IWM's over the same days; the backtest interval is the lab's out-of-sample mean ± 1.96 standard errors for this many trades.";
+  } else if (jMode === "replay") {
+    renderTable(T, sheetRows((R?.trades || []).slice().reverse()), tradeCols());
+    const d = R?.daily || [];
+    if (d.length) {
+      const cfg = lineConfig({ labels: d.map((x) => x.date), yFmt: (v) => fmtPct(v, 0), series: [
+        { label: "Book (replay)", data: d.map((x) => x.cum_ret), color: tok("--accent"), width: 2 },
+        { label: "IWM", data: d.map((x) => x.iwm_cum), color: tok("--muted"), width: 1.5 },
+        { label: "SPY", data: d.map((x) => x.spy_cum), color: tok("--ink-2"), width: 1, dash: [4, 3] }] });
+      draw("sw-j-chart", cfg);
+    }
+    $("sw-j-foot").textContent = "A REPLAY, NOT A TEST. " + (R?.caveats || "").replace(/\s+/g, " ").replace(/- /g, "") + " The last four hundred trades are listed; the workbook holds all of them.";
+  } else {
+    const O = R?.orders || {};
+    const NAMES = { random: "random (published)", biggest_fall: "biggest fall first", low_vol: "quietest first" };
+    renderTable(T, sheetRows(Object.entries(O).map(([k, v]) => ({ order: NAMES[k] || k, ...v }))), [ROWNUM,
+      { key: "order", label: "When more fire than there are slots" }, { key: "closed", label: "Trades", num: true },
+      { key: "mean", label: "Mean", num: true, fmt: (v) => retCell(v) }, { key: "median", label: "Median", num: true, fmt: (v) => retCell(v) }, { key: "hit", label: "Hit", num: true, fmt: (v) => fmtPct(v, 0) },
+      { key: "t", label: "t", num: true, fmt: (v) => tcell(v) }, { key: "excess_iwm_mean", label: "vs IWM", num: true, fmt: (v) => retCell(v) },
+      { key: "alpha_annual", label: "Alpha / yr", num: true, fmt: (v) => retCell(v, 1) }, { key: "t_alpha", label: "t (NW)", num: true, fmt: (v) => tcell(v) },
+      { key: "beta", label: "Beta to IWM", num: true, fmt: (v) => (v == null ? "–" : v.toFixed(2)) }, { key: "book", label: "Book", num: true, fmt: (v) => retCell(v, 1) },
+      { key: "iwm", label: "IWM", num: true, fmt: (v) => retCell(v, 1) }, { key: "max_drawdown", label: "Worst drawdown", num: true, fmt: (v) => retCell(v, 1) },
+      { key: "verdict", label: "Verdict", fmt: verdictPill }]);
+    const keys = Object.keys(O);
+    if (keys.length) {
+      const pal = [tok("--accent"), tok("--down"), tok("--up")];
+      const cfg = lineConfig({ labels: O[keys[0]].curve.map((x) => x[0]), yFmt: (v) => fmtPct(v, 0), series: keys.map((k, i) => ({ label: NAMES[k] || k, data: O[k].curve.map((x) => x[1]), color: pal[i % 3], width: 2 }))
+        .concat(R?.daily?.length ? [{ label: "IWM", data: R.daily.map((x) => x.iwm_cum), color: tok("--muted"), width: 1.5, dash: [4, 3] }] : []) });
+      draw("sw-j-chart", cfg);
+    }
+    $("sw-j-foot").textContent = "The same replay with three ways of choosing among the day's candidates when there are more than ten. Biggest-fall-first fills the slots with the most violent names, which stopped rebounding after 2020 (the trade model's finding); quietest-first is the best of the three, but that order was picked after seeing that finding, so it is a hypothesis for the live record, not a result.";
+  }
+}
+
 let PM = null, pmMode = "reliable";
 const famLabel = (k) => k.replace(/_/g, " ");
 function permutePanel() {
@@ -453,6 +534,7 @@ function wire() {
   seg("sw-b-mode", (k) => { bMode = k; bookPanel(); });
   seg("sw-l-mode", (k) => { lMode = k; learnPanel(); });
   seg("sw-pm-mode", (k) => { pmMode = k; permutePanel(); });
+  seg("sw-j-mode", (k) => { jMode = k; journalPanel(); });
 }
 
 (async function init() {
@@ -465,8 +547,9 @@ function wire() {
   try { P = await loadJSON("data/swing_papers.json"); } catch { P = null; }
   try { LN = await loadJSON("data/swing_learn.json"); } catch { LN = null; }
   try { PM = await loadJSON("data/swing_permute.json"); } catch { PM = null; }
+  try { JN = await loadJSON("data/swing_journal.json"); } catch { JN = null; }
   setAsOf(S.as_of);
-  strip(); bookPanel(); entries(); storiesPanel(); learnPanel(); permutePanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
+  strip(); bookPanel(); journalPanel(); entries(); storiesPanel(); learnPanel(); permutePanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
   live(); setInterval(live, 60_000);
-  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); });
+  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); journalPanel(); });
 })();

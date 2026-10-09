@@ -309,7 +309,7 @@ if (typeof document !== "undefined" && document.addEventListener) {
     const a = e.target?.closest?.("a[href]");
     if (!a || !storedKey()) return;
     const href = a.getAttribute("href");
-    if (/^(https?:|mailto:|#)/.test(href) || !/\.(pdf|md|csv|txt)(\?|#|$)/i.test(href)) return;
+    if (/^(https?:|mailto:|#)/.test(href) || !/\.(pdf|md|csv|txt|xlsx)(\?|#|$)/i.test(href)) return;
     e.preventDefault();
     import("./common.js").then((m) => m.openSealed(href));
   });

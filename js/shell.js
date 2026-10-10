@@ -48,6 +48,7 @@ const SECTIONS = [
       ["Swing setups", "research/swing.html"],
       ["Layered strategy", "research/layered.html"],
       ["Small caps", "research/smallcap.html"],
+      ["Data and discoveries", "research/data.html", "Data"],
     ],
   },
   {

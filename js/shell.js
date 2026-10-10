@@ -33,6 +33,7 @@ const SECTIONS = [
       ["Rebalances", "research/holdings.html"],
       ["Optimizer", "research/mvo.html"],
       ["Regime", "research/regime.html"],
+      ["Global macro", "research/macro.html"],
       ["Options", "research/options.html", "Options & vol"],
       ["Vol surface", "research/volsurface.html"],
       ["SPY vol", "research/voltrade.html"],

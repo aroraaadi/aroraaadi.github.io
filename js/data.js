@@ -45,7 +45,7 @@ function best(s) {
 function studies() {
   const rows = (D?.studies || []).map((s) => {
     const b = s.error ? null : best(s);
-    return { title: s.title, hyp: s.hypothesis, domains: (s.domains || []).join(" + "), events: s.events, error: s.error,
+    return { title: s.title, hyp: s.hypothesis, caveat: s.caveat, domains: (s.domains || []).join(" + "), events: s.events, error: s.error,
       grade: b?.g, where: b ? `${b.u === "liquid" ? "top 2,500" : "all"} · ${b.h}d` : "–", jnet: b?.j.net, jt: b?.j.t, tnet: b?.c.net, tt: b?.c.t };
   }).sort((a, b) => (GRADE[b.grade] || 0) - (GRADE[a.grade] || 0) || Math.abs(b.tt || 0) - Math.abs(a.tt || 0));
   $("dt-d-meta").textContent = D ? `${rows.length} studies · ${D.n_tests} tests · run ${day(D.built)}` : "";
@@ -56,7 +56,8 @@ function studies() {
       + (D.news_months?.missing?.length ? ` The headline feed is still being pulled: ${D.news_months.missing.length} months are missing, so the news studies use only the months it has.` : "")
     : "The discovery run has not produced results yet.";
   renderTable($("dt-studies"), rows, [
-    { key: "title", label: "Question", cls: () => "wrap", fmt: (v, r) => el("div", {}, [el("strong", { text: v }), el("div", { class: "note", text: r.hyp })]) },
+    { key: "title", label: "Question", cls: () => "wrap", fmt: (v, r) => el("div", {}, [el("strong", { text: v }), el("div", { class: "note", text: r.hyp }),
+      ...(r.caveat ? [el("div", { class: "note", text: "Caveat: " + r.caveat })] : [])]) },
     { key: "domains", label: "Joins", cls: () => "note" },
     { key: "events", label: "Events", num: true, fmt: int },
     { key: "where", label: "Strongest", cls: () => "note" },

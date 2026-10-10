@@ -278,7 +278,7 @@ function timingPanel() {
     { key: "exits", label: "Exits", cls: () => "note", fmt: (e) => `${e.stop.toLocaleString()} stop · ${e.target.toLocaleString()} target · ${e.time.toLocaleString()} time` },
   ]);
   $("sw-t-note").textContent = `Each variant is applied to every signal of ${ruleLabel(tRule)} on today's names with real ranges, judged before 2025 and tested on 2025 on, net of 10 bp. ` +
-    `The book adopts a variant only when, out of sample, it fills at least half the signals and beats the next-open fill on both mean and t; today's choice: ${PLAN_NAMES[T[tRule].choice] || T[tRule].choice}. ` +
+    `The book picks a variant on the judged years alone (it must fill at least half the signals there and beat the next-open fill on both mean and t); the test years can only veto the pick, never make it. Today's choice: ${PLAN_NAMES[T[tRule].choice] || T[tRule].choice}. ` +
     `Waiting for confirmation costs the first day of the move; a limit misses the names that never come back. The test is what says whether the wait is worth it.`;
 }
 

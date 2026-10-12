@@ -20,6 +20,10 @@ function strip() {
     { label: "vs 60/40", value: fmtSigned(ex.sixty_forty), tone: tone(ex.sixty_forty) },
     { label: "vs the rule", value: fmtSigned(ex.rule), tone: tone(ex.rule) },
     { label: "vs SPY", value: fmtSigned(ex.spy), tone: tone(ex.spy) },
+    { label: "Net / gross", value: c.exposure ? `${fmtPct(c.exposure.net, 0)} / ${fmtPct(c.exposure.gross, 0)}` : "–",
+      delta: c.exposure ? `long ${fmtPct(c.exposure.long, 0)} · short ${fmtPct(c.exposure.short, 0)}` : "" },
+    { label: "Short side", value: c.sides ? fmtSigned(c.sides.short_contribution) : "–", tone: tone(c.sides?.short_contribution),
+      delta: c.sides ? `${c.sides.shorts_right}/${c.sides.shorts} right · borrow ${money(c.sides.borrow_usd, "USD", 0)}` : "" },
     { label: "Max drawdown", value: dd.book == null ? "–" : fmtPct(dd.book), delta: dd.sixty_forty == null ? "" : `60/40 ${fmtPct(dd.sixty_forty)}` },
     { label: "Costs", value: c.costs_usd == null ? "–" : usd(c.costs_usd), delta: c.cost_drag == null ? "" : `${fmtPct(c.cost_drag, 2)} of capital` },
     { label: "Weekly runs", value: `${(r.weekly || 0) - (r.failed || 0)} ok`, tone: r.failed ? "down" : "",
@@ -64,10 +68,11 @@ function holdingsTable() {
     { key: "symbol", label: "Line" },
     { key: "name", label: "Index", cls: () => "note" },
     { key: "bucket", label: "Bucket" },
+    { key: "side", label: "Side", fmt: (v) => pill(v, v === "short" ? "down" : "up") },
     { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v) },
     { key: "target", label: "Target", num: true, fmt: (v) => fmtPct(v) },
     { key: "value", label: "Value", num: true, fmt: (v) => usd(v) },
-  ], { sortKey: "weight", empty: "Nothing held yet." });
+  ], { sortKey: "value", empty: "Nothing held yet." });
 }
 
 async function latest() {
@@ -151,7 +156,7 @@ function trades() {
     { key: "date", label: "Date", fmt: day },
     { key: "decision", label: "Decision" },
     { key: "symbol", label: "Line" },
-    { key: "side", label: "Side", fmt: (v) => pill(v, v === "buy" ? "up" : "down") },
+    { key: "side", label: "Side", fmt: (v) => pill(v, v === "buy" || v === "cover" ? "up" : "down") },
     { key: "units", label: "Units", num: true, fmt: (v) => Number(v).toFixed(2) },
     { key: "price", label: "Close", num: true, fmt: (v) => Number(v).toFixed(2) },
     { key: "value", label: "Value", num: true, fmt: (v) => usd(v) },
@@ -199,6 +204,7 @@ function rules() {
     { key: "bucket", label: "Bucket" },
     { key: "name", label: "Index", cls: () => "note" },
     { key: "cost_bp", label: "Cost a side (bp)", num: true },
+    { key: "borrow_pct", label: "Borrow %/yr", num: true },
   ]);
 }
 

@@ -53,7 +53,7 @@ function events() {
       ]),
     ]));
   });
-  set("ev-count", `${D.events.length} of ${D.events_found.toLocaleString()} events, from ${D.stories.toLocaleString()} stories in ${D.window_hours} hours`);
+  set("ev-count", `${D.events.length} of ${D.events_found.toLocaleString()} events, from ${(D.stories_found ?? D.stories).toLocaleString()} stories in ${D.window_hours} hours`);
   set("ev-note", `${D.method.events} ${D.method.direct} ${D.method.thematic}`);
 }
 

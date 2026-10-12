@@ -1,8 +1,9 @@
 /* Current events: what is happening, what it says about each holding, and,
    separately, how the portfolio moved and which events reach it.
 
-   events.json is rebuilt every evening by run_daily (news/events.py). Every
-   headline is quoted with its publisher and link; nothing is summarised. */
+   events.json is rebuilt from IBKR's news feed every ten minutes (news/events.py --live) and once more each evening by
+   run_daily; this page polls it every minute and redraws when it changes. Every headline is quoted with its
+   provider (and a link when the source has one: IBKR's feed has none); nothing is summarised. */
 
 import { loadJSON, showError, el, fmtPct, fmtDate, renderStats, tone, signedPct as pct } from "./common.js";
 import { renderShell, setAsOf } from "./shell.js";
@@ -12,17 +13,25 @@ const set = (id, t) => { const n = $(id); if (n) n.textContent = t; };
 const ago = (h) => (h < 1 ? `${Math.max(1, Math.round(h * 60))} min ago` : h < 48 ? `${Math.round(h)} h ago` : `${Math.round(h / 24)} days ago`);
 const when = (iso) => { const d = new Date(iso); return d.toLocaleString("en-CA", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); };
 let D = null;
+const openEvents = new Set();                       // headlines the reader expanded, kept across a redraw
+// A headline links out when it has a URL (FMP's feed does, IBKR's does not); otherwise it is plain text.
+const link = (url, text, attrs = {}) => (url ? el("a", { ...attrs, href: url, target: "_blank", rel: "noopener", text }) : el("span", { ...attrs, text }));
+const agoFrom = (iso) => ago((Date.now() - new Date(iso).getTime()) / 3600000);
 
 function events() {
   const host = $("ev-list"); host.innerHTML = "";
   D.events.forEach((e, i) => {
-    const open = { v: false };
-    const items = el("ul", { class: "ev-items", hidden: true }, e.items.map((it) => el("li", {}, [
-      el("a", { href: it.url, target: "_blank", rel: "noopener", text: it.title }),
+    const open = { v: openEvents.has(e.headline) };
+    const items = el("ul", { class: "ev-items", hidden: !open.v }, e.items.map((it) => el("li", {}, [
+      link(it.url, it.title),
       el("span", { class: "note", text: ` · ${it.publisher} · ${when(it.at)}` })])));
-    const more = el("button", { class: "ev-more", type: "button", "aria-expanded": "false",
-                                text: `${e.stories} stor${e.stories === 1 ? "y" : "ies"} from ${e.publishers.length} outlets` });
-    more.addEventListener("click", () => { open.v = !open.v; items.hidden = !open.v; more.setAttribute("aria-expanded", String(open.v)); });
+    const unit = D.source === "ibkr" ? "provider" : "outlet";
+    const more = el("button", { class: "ev-more", type: "button", "aria-expanded": String(open.v),
+                                text: `${e.stories} stor${e.stories === 1 ? "y" : "ies"} from ${e.publishers.length} ${unit}${e.publishers.length === 1 ? "" : "s"}` });
+    more.addEventListener("click", () => {
+      open.v = !open.v; items.hidden = !open.v; more.setAttribute("aria-expanded", String(open.v));
+      if (open.v) openEvents.add(e.headline); else openEvents.delete(e.headline);
+    });
     const reach = [];
     if (e.direct_tickers.length) reach.push(el("span", { class: "ev-reach direct" }, [
       el("b", { text: "Names " }), el("span", { class: "flags" }, e.direct_tickers.map((t) => el("span", { class: "pill on", text: t }))),
@@ -34,11 +43,11 @@ function events() {
     host.appendChild(el("li", { class: "ev" }, [
       el("span", { class: "ev-rank", text: String(i + 1) }),
       el("div", { class: "ev-main" }, [
-        el("a", { class: "ev-head", href: e.url, target: "_blank", rel: "noopener", text: e.headline }),
+        link(e.url, e.headline, { class: "ev-head" }),
         e.summary ? el("p", { class: "ev-sum", text: e.summary }) : null,
         el("div", { class: "ev-tags" }, [
           ...e.topics.map((t) => el("span", { class: "pill muted", text: t })),
-          el("span", { class: "note", text: ago(e.hours_ago) })]),
+          el("span", { class: "note", text: agoFrom(e.latest) })]),
         el("div", { class: "ev-reaches" }, reach),
         more, items,
       ]),
@@ -69,7 +78,7 @@ function companies() {
       ]),
       c.headlines.length
         ? el("ul", { class: "co-heads" }, c.headlines.slice(0, 3).map((h) => el("li", {}, [
-            el("a", { href: h.url, target: "_blank", rel: "noopener", text: h.title }),
+            link(h.url, h.title),
             el("span", { class: "note", text: ` · ${h.publisher} · ${when(h.at)}` })])))
         : el("p", { class: "note", text: "No news in the last seven days." }),
     ]));
@@ -121,6 +130,20 @@ function portfolio() {
     `${D.method.moves}`);
 }
 
+function sourceLine() {
+  const si = D.source_info || {};
+  const live = Date.now() - new Date(D.built).getTime() < 3600000;
+  return D.source === "ibkr"
+    ? `IBKR news (${(si.providers || []).join(", ") || "its providers"}) · latest story ${si.latest ? when(si.latest) : "–"} · rebuilt ${when(D.built)}, every ten minutes${live ? "" : " (not updating: the collector or the site push has stopped)"}`
+    : `FMP news, not IBKR: ${si.reason || "the IBKR store is empty"} · built ${when(D.built)}`;
+}
+
+function draw() {
+  setAsOf(D.as_of);
+  set("ev-meta", sourceLine());
+  events(); companies(); portfolio();
+}
+
 (async function init() {
   renderShell();
   try {
@@ -128,7 +151,12 @@ function portfolio() {
   } catch (err) {
     showError($("error"), err); return;
   }
-  setAsOf(D.as_of);
-  set("ev-meta", `Built ${when(D.built)} · FMP news · updated every evening`);
-  events(); companies(); portfolio();
+  draw();
+  // Follow the ten-minute rebuilds: GitHub Pages serves the new file within a minute or two of the push.
+  setInterval(async () => {
+    try {
+      const next = await loadJSON("data/events.json");
+      if (next.built !== D.built) { D = next; draw(); }
+    } catch { /* keep what is on screen */ }
+  }, 60_000);
 })();

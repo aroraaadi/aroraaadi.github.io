@@ -4,6 +4,7 @@
 import { loadJSON, showError, el, fmtPct, fmtDate, renderStats, renderTable, tok } from "./common.js";
 import { renderShell, setAsOf, onThemeChange } from "./shell.js";
 import { draw, lineConfig, applyChartDefaults } from "./charts.js";
+import { drawPriceChart, clearPriceChart } from "./pricechart.js";
 
 const $ = (id) => document.getElementById(id);
 let S = null, L = null, R = null, Q = null, side = "long", gradeMode = "strong", sizeRule = null;
@@ -98,6 +99,27 @@ function entries() {
   $("sw-e-foot").textContent = `Size is the share of equity under the ${S.size_policy.replace("_", " ")} policy, capped at a tenth of equity and 5% risk; "risk unit" is the stop ` +
     `distance (or one ATR). Rank: evidence grade first, then ${S.model_in_use ? "the trade model's expected return" : "the stat-arb model's rank for the side (the trade model's expectation is shown as a diagnostic until it clears its bar)"}. ` +
     `Flags are shown, not hidden: a report within ${S.context.earnings_skip_days} sessions, a stressed regime for longs, a name that cannot be shorted, a rule the live record has paused.`;
+}
+
+/* Click a stock in tonight's entries (or the book) to see its candles with the scan's levels. */
+let BARS = undefined;                       // undefined: not asked yet; null: no file
+let charted = null;                         // the setup row on screen, for a theme change
+
+async function showChart(sym) {
+  const row = [...S.long, ...S.short].find((r) => r.symbol === sym && r.direction === side)
+    || [...S.long, ...S.short].find((r) => r.symbol === sym);
+  if (!row) return;
+  if (BARS === undefined) { try { BARS = await loadJSON("data/swing_bars.json"); } catch { BARS = null; } }
+  const panel = $("sw-chart-panel");
+  const bars = BARS && BARS.bars[sym];
+  panel.hidden = false;
+  $("sw-chart-title").textContent = `${sym} · ${ruleLabel(row.rule)} · ${row.direction}`;
+  const ok = bars && drawPriceChart($("sw-chart"), bars, row);
+  charted = ok ? row : null;
+  $("sw-chart-note").textContent = ok
+    ? `Last ${bars.t.length} sessions to ${bars.t[bars.t.length - 1]}. Blue and amber lines are the 9- and 21-day EMAs; solid lines are the scan's signal close${row.stop ? ", stop and target" : ""}; dashed lines are VWAP, the 38.2% and 61.8% Fibonacci levels and the swing range, as the scan computed them.`
+    : "No price bars published for this name.";
+  panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 let storiesAll = false;
@@ -591,6 +613,11 @@ function wire() {
   seg("sw-l-mode", (k) => { lMode = k; learnPanel(); });
   seg("sw-pm-mode", (k) => { pmMode = k; permutePanel(); });
   seg("sw-j-mode", (k) => { jMode = k; journalPanel(); });
+  $("sw-entries").addEventListener("click", (ev) => {
+    const sym = ev.target.closest("tr")?.querySelector(".sym")?.textContent;
+    if (sym) showChart(sym);
+  });
+  $("sw-chart-close").addEventListener("click", () => { clearPriceChart(); charted = null; $("sw-chart-panel").hidden = true; });
 }
 
 (async function init() {
@@ -607,5 +634,5 @@ function wire() {
   setAsOf(S.as_of);
   strip(); bookPanel(); journalPanel(); entries(); storiesPanel(); learnPanel(); permutePanel(); formingPanel(); timingPanel(); ideasPanel(); rules(); sizing(); record(); papersPanel(); method(); wire();
   live(); setInterval(live, 60_000);
-  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); journalPanel(); });
+  onThemeChange(() => { applyChartDefaults(); record(); bookPanel(); learnPanel(); journalPanel(); if (charted) showChart(charted.symbol); });
 })();

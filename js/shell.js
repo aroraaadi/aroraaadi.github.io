@@ -56,6 +56,8 @@ const SECTIONS = [
     id: "venture", label: "Venture", root: "venture/index.html", book: "venture",
     nav: [],
   },
+  // The Global Macro Regime Agent's paper book (owner, 2026-10-12: its own tab, marked work in progress).
+  { id: "agent", label: "Macro agent · WIP", root: "agent.html", nav: [] },
   // Three top-level items that answer one question, "how does it work",
   // read as one section with a second row (2026-10 review: 11 sections).
   {

@@ -1369,3 +1369,12 @@ th .greek { text-transform: none; }                             /* σ stays σ i
 
 /* Bucket selector chips (Global macro page). */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* The swing page: a stock in tonight's entries opens its chart. */
+#sw-entries .sym { cursor: pointer; text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }
+#sw-entries .sym:hover { color: var(--accent); }
+
+/* The work-in-progress notice on the Macro agent tab. */
+.wip { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3, 12px); margin: 0 0 var(--sp-4, 16px);
+       padding: 10px 14px; border: 1px solid var(--warn); border-radius: 8px; background: var(--warn-soft);
+       color: var(--ink); font-size: var(--t-sm, 13px); }

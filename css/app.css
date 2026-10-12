@@ -1366,3 +1366,6 @@ th .greek { text-transform: none; }                             /* σ stays σ i
   /* two tiles a row on a phone: an odd last tile takes the whole row instead of leaving a blank cell */
   .strip > .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
+
+/* Bucket selector chips (Global macro page). */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }

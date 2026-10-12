@@ -123,6 +123,74 @@ function retTable() {
   ], { empty: "The lab has not run yet." });
 }
 
+let BUCKET = null, SERIES = null;
+
+function trendPill(v) {
+  if (v == null) return el("span", { class: "note", text: "–" });
+  return el("span", { class: `pill ${v ? "up" : "down"}`, text: v ? "uptrend" : "downtrend" });
+}
+
+function chips(id, items, current, pick) {
+  const box = $(id); box.innerHTML = "";
+  items.forEach((it) => {
+    const b = el("button", { type: "button", class: `pill${it.key === current ? " on" : ""}`, role: "tab", "aria-selected": String(it.key === current), text: it.label });
+    b.addEventListener("click", () => pick(it.key));
+    box.appendChild(b);
+  });
+}
+
+function buckets() {
+  const bs = M?.buckets || [];
+  $("mc-k-meta").textContent = bs.length ? `${bs.reduce((a, b) => a + b.n, 0)} ETFs in ${bs.length} buckets · total return` : "";
+  $("mc-k-note").textContent = bs.length
+    ? "Each bucket's lines as of the last close, on total-return prices. Uptrend is the layer's trend rule: the mean of the 1-, 3- and 12-month returns in excess of T-bills is above zero. Pick a bucket below to see every line in it."
+    : "The buckets are published with the next macro state run.";
+  renderTable($("mc-buckets"), bs.map((b) => ({ ...b, key: b.key })), [
+    { key: "label", label: "Bucket", fmt: (v) => el("strong", { text: v }) },
+    { key: "n", label: "Lines", num: true },
+    { key: "up_share", label: "In uptrend", num: true, fmt: (v) => (v == null ? "–" : fmtPct(v, 0)) },
+    { key: "median_r3m", label: "Median 3 months", num: true, fmt: (v) => spct(v, 1) },
+  ], { empty: "Not published yet." });
+  if (!bs.length) return;
+  BUCKET = BUCKET || bs[0].key;
+  chips("mc-k-chips", bs, BUCKET, (k) => { BUCKET = k; buckets(); });
+  const b = bs.find((x) => x.key === BUCKET) || bs[0];
+  renderTable($("mc-bucket"), b.rows, [
+    { key: "symbol", label: "Line", fmt: (v) => el("span", { class: "sym", text: v }) },
+    { key: "name", label: "What it holds", cls: () => "note" },
+    { key: "r1m", label: "1 month", num: true, fmt: (v) => spct(v, 1) },
+    { key: "r3m", label: "3 months", num: true, fmt: (v) => spct(v, 1) },
+    { key: "r12m", label: "12 months", num: true, fmt: (v) => spct(v, 1) },
+    { key: "trend", label: "Trend", fmt: trendPill },
+    { key: "vol3m", label: "Vol, 3 months", num: true, fmt: (v) => (v == null ? "–" : fmtPct(v, 0)) },
+    { key: "dd", label: "From 52-week high", num: true, fmt: (v) => spct(v, 1) },
+  ], { sortKey: "r3m", dir: -1 });
+}
+
+const UNIT = (n) => (["claims"].includes(n) ? "count" : ["dollar_broad", "dollar_afe", "dollar_eme", "usdcad", "usdjpy", "eurusd", "wti", "natgas", "copper", "cpi", "nfci", "cfnai", "vix", "vix3m"].includes(n) ? "level" : "pct");
+const val = (v, n) => (v == null ? "–" : UNIT(n) === "pct" ? `${v.toFixed(2)}%` : UNIT(n) === "count" ? Math.round(v).toLocaleString() : v.toFixed(v >= 100 ? 1 : 2));
+const chg = (v, n) => (v == null ? "–" : (v >= 0 ? "+" : "\u2212") + (UNIT(n) === "pct" ? `${Math.abs(v * 100).toFixed(0)} bp` : UNIT(n) === "count" ? Math.round(Math.abs(v)).toLocaleString() : Math.abs(v).toFixed(2)));
+
+function series() {
+  const sb = M?.series_buckets || [];
+  $("mc-s-meta").textContent = sb.length ? `${sb.reduce((a, b) => a + b.rows.length, 0)} series from FRED` : "";
+  $("mc-s-note").textContent = sb.length
+    ? "Each value is placed on the day it became public (the publication lag applied), so a monthly figure can be weeks old. Percentile is where today's value sits in the series' own history since 1995. Series that are revised after release are marked; the tested macro state never uses them."
+    : "";
+  if (!sb.length) return;
+  SERIES = SERIES || sb[0].label;
+  chips("mc-s-chips", sb.map((b) => ({ key: b.label, label: b.label })), SERIES, (k) => { SERIES = k; series(); });
+  const b = sb.find((x) => x.label === SERIES) || sb[0];
+  renderTable($("mc-series"), b.rows, [
+    { key: "label", label: "Series", cls: () => "wrap", fmt: (v, r) => el("div", {}, [el("strong", { text: v }), el("div", { class: "note", text: `${r.fred_id}${r.revised ? " · revised after release" : ""}` })]) },
+    { key: "value", label: "Latest", num: true, fmt: (v, r) => val(v, r.name) },
+    { key: "available", label: "Public on", cls: () => "note", fmt: (v) => fmtDate(v) },
+    { key: "ch1m", label: "1 month", num: true, fmt: (v, r) => chg(v, r.name) },
+    { key: "ch3m", label: "3 months", num: true, fmt: (v, r) => chg(v, r.name) },
+    { key: "pct", label: "Percentile", num: true, fmt: (v) => (v == null ? "–" : fmtPct(v, 0)) },
+  ]);
+}
+
 async function main() {
   renderShell();
   applyChartDefaults();
@@ -130,7 +198,7 @@ async function main() {
   try { L = await loadJSON("data/macro_lab.json"); } catch { L = null; }
   if (!M) { showError($("error"), new Error("The macro state has not been published yet.")); return; }
   setAsOf(M.as_of, "AS OF");
-  strip(); history(); books(); riskTable(); retTable();
+  strip(); history(); buckets(); series(); books(); riskTable(); retTable();
   $("mc-method").textContent = (M.method || "") + (L ? "\n\nTests:\n" + L.method : "");
   onThemeChange(() => { applyChartDefaults(); history(); });
 }

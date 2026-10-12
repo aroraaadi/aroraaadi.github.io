@@ -15,6 +15,22 @@
 const API = "https://financialmodelingprep.com/stable";
 const KEY_STORE = "qp-fmp-key";
 
+/* Owner, 2026-10-12: FMP is limited to 75 calls in any 60 seconds. The Python clients share one
+   window (src/data/fmp_limit.py); a browser tab cannot see that file, so each tab holds its own
+   sliding window and queues the rest. Retries count. */
+const MAX_PER_MINUTE = 75;
+const WINDOW_MS = 60000;
+const stamps = [];
+let gate = Promise.resolve();
+const throttle = () => (gate = gate.then(async () => {
+  for (;;) {
+    const now = Date.now();
+    while (stamps.length && now - stamps[0] >= WINDOW_MS) stamps.shift();
+    if (stamps.length < MAX_PER_MINUTE) { stamps.push(now); return; }
+    await sleep(stamps[0] + WINDOW_MS - now + 10);
+  }
+}));
+
 export class FMPError extends Error {
   constructor(message, status) { super(message); this.status = status; }
 }
@@ -38,6 +54,7 @@ export async function get(endpoint, params = {}, { retries = 3 } = {}) {
   for (let attempt = 0; attempt < retries; attempt++) {
     let res;
     try {
+      await throttle();
       res = await fetch(url);
     } catch (e) {
       last = new FMPError(`network error on ${endpoint}: ${e.message}`, 0);

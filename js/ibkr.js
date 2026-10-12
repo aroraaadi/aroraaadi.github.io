@@ -129,7 +129,7 @@ function nav() {
     lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-line", style: `border-top-color:${c}` }), el("span", { text: t })])));
 }
 
-const KIND = { deposit: "Deposit", withdrawal: "Withdrawal", buy: "Bought", sell: "Sold", dividend: "Distribution", fee: "Data fee", credit: "Credit" };
+const KIND = { deposit: "Deposit", withdrawal: "Withdrawal", buy: "Bought", sell: "Sold", dividend: "Distribution", fee: "Data fee", credit: "Credit", withholding: "Withholding tax", unexplained: "Unexplained" };
 
 function ledger() {
   const rows = [...D.ledger].reverse();

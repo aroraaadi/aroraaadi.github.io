@@ -1,4 +1,4 @@
-/* The Macro agent tab: the daily macro desk. Today's scenario, forward scenarios and the critics, the watchlist,
+/* LS books > Macro desk: the daily macro desk. Today's scenario, forward scenarios and the critics, the watchlist,
    the news, the paper book and its Alpaca mirror, the research behind it, and every run. */
 import { loadJSON, showError, fmtPct, fmtDate, fmtSigned, money, tone, el, renderStats, renderTable, tok, alpha, slotColor } from "./common.js";
 import { renderShell, setAsOf, onThemeChange } from "./shell.js";

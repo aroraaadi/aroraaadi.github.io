@@ -45,9 +45,6 @@ const SECTIONS = [
       ["Demand tree", "research/demand.html"],
       ["Power", "research/power.html"],
       ["Renaissance 13F", "research/rentech.html"],
-      ["Stat arb", "research/statarb.html"],
-      ["Swing setups", "research/swing.html"],
-      ["Layered strategy", "research/layered.html"],
       ["Small caps", "research/smallcap.html"],
       ["Data and discoveries", "research/data.html", "Data"],
     ],
@@ -56,8 +53,17 @@ const SECTIONS = [
     id: "venture", label: "Venture", root: "venture/index.html", book: "venture",
     nav: [],
   },
-  // The Global Macro Regime Agent's paper book (owner, 2026-10-12: its own tab, marked work in progress).
-  { id: "agent", label: "Macro agent · WIP", root: "agent.html", nav: [] },
+  // Every portfolio traded (or built to trade) on an Alpaca paper account, long and short (owner, 2026-10-13:
+  // "LS books"): the equity long/short books, then the macro desk. The pages keep their paths.
+  {
+    id: "ls", label: "LS books", root: "research/statarb.html",
+    nav: [
+      ["Stat arb", "research/statarb.html", "Equity long/short"],
+      ["Swing", "research/swing.html"],
+      ["Layered", "research/layered.html"],
+      ["Macro desk · WIP", "agent.html", "Macro"],
+    ],
+  },
   // Three top-level items that answer one question, "how does it work",
   // read as one section with a second row (2026-10 review: 11 sections).
   {

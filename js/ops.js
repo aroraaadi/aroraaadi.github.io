@@ -37,6 +37,8 @@ function main_(C) {
     { label: "Jobs loaded", value: `${C.jobs.length - jobsDown} / ${C.jobs.length}`, tone: jobsDown ? "down" : "up" },
     { label: "Alerts, 36h", value: String((C.alerts || []).length), tone: (C.alerts || []).length ? "down" : "" },
     { label: "Setup open", value: String(C.setup.filter((s) => s.status === "todo").length) },
+    ...(C.ai_spend ? [{ label: "AI spend this month", value: `$${C.ai_spend.spent.toFixed(2)}`, delta: `of the $${C.ai_spend.cap.toFixed(0)} cap`,
+      tone: C.ai_spend.spent > 0.8 * C.ai_spend.cap ? "down" : "" }] : []),
   ]);
   daily(C);
   $("ops-n-meta").textContent = n.date ? `run of ${fmtDate(n.date)}` : "";

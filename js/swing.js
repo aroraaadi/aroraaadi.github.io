@@ -554,7 +554,7 @@ const susd = (x) => (x == null ? "–" : (x >= 0 ? "+" : "−") + "$" + Math.abs
 function bookPanel() {
   if (!B) { $("sw-b-note").textContent = "The book has not stepped yet."; return; }
   const q = Q?.quotes || {};
-  $("sw-b-meta").textContent = `since ${fmtDate(B.started)} · stepped ${fmtDate(B.days[B.days.length - 1].date)} · ${B.rules.hedge ? `hedged with ${B.rules.hedge}` : `longs in stock, shorts as bought ${B.rules.short_via || "put"}s`}`;
+  $("sw-b-meta").textContent = `since ${fmtDate(B.started)} · ${B.days.length ? `stepped ${fmtDate(B.days[B.days.length - 1].date)}` : "not stepped yet"} · the special-situations book (its own page under LS books)`;
   renderStats("sw-b-strip", [
     { label: "NAV", value: usd(B.nav), tone: B.return_total > 0 ? "up" : B.return_total < 0 ? "down" : "", delta: `${spct(B.return_total, 2)} on ${usd(B.start_cash, 0)}` },
     { label: "Today", value: susd(B.pnl_today), tone: B.pnl_today > 0 ? "up" : B.pnl_today < 0 ? "down" : "", delta: `${B.days.length} sessions recorded` },

@@ -54,14 +54,18 @@ const SECTIONS = [
     nav: [],
   },
   // Every portfolio traded (or built to trade) on an Alpaca paper account, long and short (owner, 2026-10-13:
-  // "LS books"): the equity long/short books, then the macro desk. The pages keep their paths.
+  // "LS books", renamed "Paper books" 2026-10-13): the equity long/short books, then the macro desk. The pages keep their paths.
   {
-    id: "ls", label: "LS books", root: "research/statarb.html",
+    id: "ls", label: "Paper books", root: "research/lsengine.html",
     nav: [
-      ["Stat arb", "research/statarb.html", "Equity long/short"],
-      ["Swing", "research/swing.html"],
-      ["Layered", "research/layered.html"],
+      ["Book", "research/lsengine.html", "L/S engine"],
+      ["Signals", "research/ls-signals.html"],
+      ["Risk & target", "research/ls-risk.html"],
+      ["Trades", "research/ls-trades.html"],
+      ["Evidence", "research/ls-evidence.html"],
+      ["Method", "research/ls-method.html"],
       ["Macro desk", "agent.html", "Macro"],
+      ["Findings", "research/findings.html", "Results"],
     ],
   },
   // Three top-level items that answer one question, "how does it work",
@@ -72,6 +76,7 @@ const SECTIONS = [
       ["Methodology", "methodology.html"],
       ["Mathematics", "mathematics.html"],
       ["Notes", "blog.html"],
+      ["Decisions", "thisweek.html"],
       ["Daily checklist", "ops.html"],
     ],
   },

@@ -2,7 +2,9 @@
    the news, the paper book and its Alpaca mirror, the research behind it, and every run. */
 import { loadJSON, showError, fmtPct, fmtDate, fmtSigned, money, tone, el, renderStats, renderTable, tok, alpha, slotColor } from "./common.js";
 import { renderShell, setAsOf, onThemeChange } from "./shell.js";
-import { applyChartDefaults, draw, lineConfig, hbarConfig } from "./charts.js";
+import { applyChartDefaults, draw, lineConfig, hbarConfig, doughnutConfig } from "./charts.js";
+import { ticker, sparkline } from "./terminal.js";
+import { squarify, boxColor } from "./treemap.js";
 
 const $ = (id) => document.getElementById(id);
 const usd = (x) => money(x, "USD", 0);
@@ -12,7 +14,7 @@ const STATUS_TONE = { ok: "up", refused: "down", failed: "down", degraded: "warn
 const GRADE_TONE = { established: "established", replicated: "up", suggestive: "warn", failed: "down", untested: "muted" };
 const DIR = { up: 1, down: -1, flat: 0 };
 const pill = (text, t) => el("span", { class: `pill ${t || "muted"}`, text });
-let A = null, S = null, P = null, M = null;
+let A = null, S = null, P = null, M = null, LV = null;
 let period = "r1m";
 
 /* ------------------------------------------------------------------ tabs */
@@ -337,6 +339,7 @@ function holdingsTable() {
   ]);
   renderTable($("ag-hold"), pos, [
     { key: "symbol", label: "Line", fmt: (v, r) => el("span", { title: r.desc || "", text: v }) },
+    { key: "spark", label: "6 months", fmt: (_, r) => sparkline(SPARK[r.symbol] || []) },
     { key: "group", label: "Group" },
     { key: "side", label: "Side", fmt: (v) => pill(v, v === "short" ? "down" : "up") },
     { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v) },
@@ -538,8 +541,10 @@ function calls() {
 }
 
 function trades() {
-  const t = A.trades || [];
-  $("ag-t-meta").textContent = `${t.length} fills`;
+  const all = A.trades || [];
+  const q = ($("dk-fill-q")?.value || "").trim().toLowerCase();
+  const t = q ? all.filter((x) => [x.symbol, x.decision, x.side, x.date].join(" ").toLowerCase().includes(q)) : all;
+  $("ag-t-meta").textContent = q ? `${t.length} of ${all.length} fills` : `${all.length} fills`;
   renderTable($("ag-trades"), t, [
     { key: "date", label: "Date", fmt: day }, { key: "decision", label: "Decision" }, { key: "symbol", label: "Line" },
     { key: "side", label: "Side", fmt: (v) => pill(v, v === "buy" || v === "cover" ? "up" : "down") },
@@ -600,19 +605,137 @@ function record() {
   ]);
 }
 
+/* ------------------------------------------------------------------ live, allocation, distribution */
+const SPARK = {};
+
+function sessionHours() {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short",
+    hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date()).map((p) => [p.type, p.value]));
+  const m = (+parts.hour % 24) * 60 + +parts.minute;
+  return !["Sat", "Sun"].includes(parts.weekday) && m >= 565 && m <= 990;
+}
+
+function liveFresh() {
+  return LV && LV.last_mark === A.last_marked && LV.nav != null && Date.now() - new Date(LV.stamp) < 6 * 3600_000;
+}
+
+function livePanel() {
+  const J = A.journal || {}, D = J.daily || [], last = D[D.length - 1];
+  const live = liveFresh();
+  if (live) {
+    const vs = LV.day_pct != null && LV.sixty_forty_day != null ? LV.day_pct - LV.sixty_forty_day : null;
+    ticker($("dk-ticker"), { symbol: "MACRO DESK", name: "paper book · live", value: LV.nav, valueFmt: usd, change: LV.day_pct,
+      meta: [["Day P&L", smoney(LV.day_pnl)], ["60/40 today", fmtSigned(LV.sixty_forty_day, 2)], ["ACWI today", fmtSigned(LV.acwi_day, 2)],
+             ["vs 60/40", vs == null ? "–" : fmtSigned(vs, 2)], ["Since start", fmtSigned(LV.nav / A.capital - 1)]] });
+    $("dk-live-meta").textContent = `prices at ${new Date(LV.stamp).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })} ET · every 10 min in the session` +
+      (LV.unquoted?.length ? ` · no quote for ${LV.unquoted.join(", ")}` : "");
+  } else if (last) {
+    ticker($("dk-ticker"), { symbol: "MACRO DESK", name: `paper book · close of ${day(last.date)}`, value: last.nav, valueFmt: usd, change: last.day_ret,
+      meta: [["Day P&L", smoney(last.day_pnl)], ["vs 60/40", fmtSigned(last.excess_day, 2)], ["Since start", fmtSigned(last.cum_ret)],
+             ["Drawdown", fmtPct(last.drawdown)], ["Net / gross", last.net == null ? "–" : `${fmtPct(last.net, 0)} / ${fmtPct(last.gross, 0)}`]] });
+    $("dk-live-meta").textContent = "last close; live prices every 10 minutes in the session";
+  } else {
+    ticker($("dk-ticker"), { symbol: "MACRO DESK", name: "paper book · not started", value: A.capital, valueFmt: usd, change: null,
+      meta: [["First fill", A.pending ? `after ${day(A.pending.decided_date)}` : "–"]] });
+    $("dk-live-meta").textContent = "goes live once the first target has filled";
+  }
+  positionsMap();
+}
+
+function positionsMap() {
+  const host = $("dk-tmap");
+  const pos = ((A.journal || {}).positions || []).filter((p) => p.symbol !== "SGOV" && p.value);
+  const lv = liveFresh() ? Object.fromEntries((LV.positions || []).map((p) => [p.symbol, p])) : {};
+  host.innerHTML = "";
+  if (!pos.length) { host.hidden = true; $("dk-tmap-note").textContent = "The map fills in once the book holds risky lines."; return; }
+  host.hidden = false;
+  const narrow = window.matchMedia && window.matchMedia("(max-width: 640px)").matches;
+  const W = 100, H = narrow ? 130 : 46, px = (host.clientWidth || 1200) / W;
+  const total = pos.reduce((s, p) => s + Math.abs(p.value), 0);
+  const boxes = [];
+  squarify(pos.map((item) => ({ item, area: (Math.abs(item.value) / total) * W * H })), 0, 0, W, H, boxes);
+  for (const b of boxes) {
+    const p = b.item, g = lv[p.symbol]?.day_pct ?? p.day_pct ?? 0;
+    const pnlDir = p.side === "short" ? -g : g;                              // a short gains when the line falls
+    const label = `${p.symbol}${p.side === "short" ? " ▼" : ""}`;
+    const bw = b.w * px, bh = b.h * px, size = Math.max(10, Math.min(56, (bw - 16) / (0.74 * label.length), bh * 0.42));
+    host.appendChild(el("div", { class: "tk-box", tabindex: "0", role: "img",
+      "aria-label": `${p.symbol}, ${p.side}, ${fmtPct(p.weight, 1)} of the book, ${fmtSigned(g, 2)} today`,
+      style: `left:${b.x}%;top:${(b.y / H) * 100}%;width:${b.w}%;height:${(b.h / H) * 100}%;background:${boxColor(pnlDir, 0.03)}`,
+      title: `${p.symbol} · ${p.side} ${fmtPct(Math.abs(p.weight), 1)}\n${fmtSigned(g, 2)} today (${pnlDir >= 0 ? "a gain" : "a loss"} for the book)\n${p.desc || ""}` }, [
+      el("span", { class: "tk-box-t", text: label, style: `font-size:${size.toFixed(0)}px` }),
+      bh > size * 2.1 && bw > 54 ? el("span", { class: "tk-box-g", text: `${fmtSigned(g, 2)} · ${fmtPct(Math.abs(p.weight), 0)}` }) : null]));
+  }
+  $("dk-tmap-note").textContent = `box size is the line's weight · colour is ${liveFresh() ? "today's move so far" : "the last session's move"} as P&L for the book (a falling short is green), full at ±3%`;
+}
+
+function allocation() {
+  const J = A.journal || {};
+  let w = Object.fromEntries((J.positions || []).map((p) => [p.symbol, p.weight]));
+  let label = "as held";
+  if (!Object.keys(w).filter((k) => k !== "SGOV").length && A.pending) { w = A.pending.target; label = "the pending target"; }
+  $("dk-alloc-meta").textContent = label;
+  const groups = S?.groups || {};
+  const net = {}, gross = {};
+  for (const [s, v] of Object.entries(w)) {
+    if (s === "SGOV") continue;
+    const g = (S?.lines || []).find((x) => x.symbol === s)?.group || "other";
+    net[g] = (net[g] || 0) + v; gross[g] = (gross[g] || 0) + Math.abs(v);
+  }
+  const keys = Object.keys(gross).sort((a, b) => gross[b] - gross[a]);
+  if (!keys.length) { ["dk-alloc-net", "dk-alloc-gross"].forEach((id) => { $(id).closest(".chart").hidden = true; }); return; }
+  ["dk-alloc-net", "dk-alloc-gross"].forEach((id) => { $(id).closest(".chart").hidden = false; });
+  draw("dk-alloc-net", hbarConfig({ labels: keys.map((k) => groups[k] || k), values: keys.map((k) => net[k] * 100),
+    colors: keys.map((k) => tok(net[k] >= 0 ? "--up" : "--down")), fmt: (v) => `${Number(v).toFixed(0)}%`,
+    valueLabels: keys.map((k) => fmtSigned(net[k], 0)) }));
+  const cols = keys.map((_, i) => slotColor(i));
+  const tot = keys.reduce((a, k) => a + gross[k], 0);
+  draw("dk-alloc-gross", doughnutConfig({ labels: keys.map((k) => groups[k] || k), values: keys.map((k) => gross[k] / tot * 100), colors: cols,
+    fmt: (v) => `${v.toFixed(1)}% of gross` }));
+  $("dk-alloc-legend").replaceChildren(...keys.map((k, i) => el("span", { class: "key" }, [
+    el("span", { class: "swatch-rect", style: `background:${cols[i]}` }), el("span", { text: `${groups[k] || k} ${fmtPct(gross[k], 0)}` })])));
+}
+
+function distribution() {
+  const D = ((A.journal || {}).daily || []).map((x) => x.day_ret).filter((v) => v != null);
+  if (D.length < 10) { $("dk-dist").closest(".chart").hidden = true; $("dk-dist-meta").textContent = "after ten sessions"; return; }
+  $("dk-dist").closest(".chart").hidden = false;
+  const lo = Math.min(...D), hi = Math.max(...D), n = 21, step = (hi - lo) / n || 0.001;
+  const bins = Array.from({ length: n }, (_, i) => lo + step * (i + 0.5));
+  const counts = bins.map(() => 0);
+  D.forEach((v) => { counts[Math.min(n - 1, Math.floor((v - lo) / step))] += 1; });
+  draw("dk-dist", { type: "bar", data: { labels: bins.map((b) => fmtSigned(b, 2)), datasets: [{ label: "Sessions", data: counts,
+      backgroundColor: bins.map((b) => alpha(tok(b >= 0 ? "--up" : "--down"), 0.7)) }] },
+    options: { responsive: true, maintainAspectRatio: false, scales: { x: { grid: { display: false }, ticks: { maxTicksLimit: 7, maxRotation: 0 } } } } });
+  const m = D.reduce((a, b) => a + b, 0) / D.length;
+  $("dk-dist-meta").textContent = `${D.length} sessions · mean ${fmtSigned(m, 3)} · ${D.filter((v) => v > 0).length} up`;
+}
+
+async function pollLive() {
+  if (!sessionHours()) return;
+  try {
+    const lv = await loadJSON("data/desk_live.json");
+    if (LV && lv.stamp === LV.stamp) return;
+    LV = lv; livePanel();
+  } catch { /* no live file yet */ }
+}
+
 async function main() {
   renderShell();
   applyChartDefaults();
   try { A = await loadJSON("data/macro_agent.json"); } catch { showError($("error"), new Error("The macro desk has not published yet.")); return; }
-  [S, P, M] = await Promise.all(["data/desk_snapshot.json", "data/desk_pairs.json", "data/desk_alpaca.json"]
+  [S, P, M, LV] = await Promise.all(["data/desk_snapshot.json", "data/desk_pairs.json", "data/desk_alpaca.json", "data/desk_live.json"]
     .map((f) => loadJSON(f).catch(() => null)));
+  (S?.lines || []).forEach((x) => { SPARK[x.symbol] = x.spark; });
   setAsOf(A.latest?.date || A.last_marked || String(A.built).slice(0, 10), "DESK", { maxAge: 4 });
   tabs();
   periodButtons();
-  strip(); today(); scenarios(); cross(); verdict(); chart(); performance(); monthlyGrid(); attributionPanel(); riskPanel(); meketa();
+  strip(); today(); scenarios(); cross(); livePanel(); allocation(); distribution(); verdict(); chart(); performance(); monthlyGrid(); attributionPanel(); riskPanel(); meketa();
   holdingsTable(); journalTables(); mirror(); decisions(); calls(); trades(); research(); record();
+  $("dk-fill-q")?.addEventListener("input", trades);
+  setInterval(pollLive, 60_000);
   await news();
-  onThemeChange(() => { applyChartDefaults(); today(); scenarios(); cross(); chart(); performance(); attributionPanel(); mirror(); });
+  onThemeChange(() => { applyChartDefaults(); today(); scenarios(); cross(); livePanel(); allocation(); distribution(); chart(); performance(); attributionPanel(); mirror(); });
 }
 
 main();

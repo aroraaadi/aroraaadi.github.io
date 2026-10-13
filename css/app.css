@@ -1378,3 +1378,23 @@ th .greek { text-transform: none; }                             /* σ stays σ i
 .wip { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3, 12px); margin: 0 0 var(--sp-4, 16px);
        padding: 10px 14px; border: 1px solid var(--warn); border-radius: 8px; background: var(--warn-soft);
        color: var(--ink); font-size: var(--t-sm, 13px); }
+
+/* ---------- macro desk (agent.html) ---------- */
+
+.desk-tabs { margin: var(--sp-4) 0 var(--sp-5); }
+.scen-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--sp-4); }
+.scen-card { border: 1px solid var(--border); border-radius: var(--r-sm); padding: var(--sp-4); background: var(--surface); }
+.scen-card.rejected { opacity: 0.55; }
+.scen-card h3 { margin: 0 0 var(--sp-2); font-size: var(--t-md); color: var(--ink); }
+.scen-card p, .scen-card li { color: var(--ink-2); font-size: var(--t-sm); line-height: 1.5; }
+.scen-card ol, .scen-card ul { padding-left: 1.2em; margin: var(--sp-2) 0; }
+.prob-row { display: grid; grid-template-columns: 74px 1fr 44px; gap: var(--sp-2); align-items: center; font-size: var(--t-xs); color: var(--muted); }
+.prob-row .meter > i.prior { background: var(--muted); }
+.desk-heat { display: grid; gap: var(--sp-4); }
+.desk-heat h3 { margin: 0 0 var(--sp-2); font-size: var(--t-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.heat-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 4px; }
+.heat-tile { border-radius: var(--r-sm); padding: 6px 8px; font-size: var(--t-xs); color: var(--ink); border: 1px solid var(--border); cursor: help; }
+.heat-tile b { display: block; font-size: var(--t-sm); }
+.heat-tile .num { font-family: var(--font-num); }
+.heat-tile .off { color: var(--muted); }
+.crit-cell { font-family: var(--font-num); cursor: help; }

@@ -1398,3 +1398,15 @@ th .greek { text-transform: none; }                             /* σ stays σ i
 .heat-tile .num { font-family: var(--font-num); }
 .heat-tile .off { color: var(--muted); }
 .crit-cell { font-family: var(--font-num); cursor: help; }
+
+/* ---------- daily checklist (ops.html) ---------- */
+
+.ops-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
+.ops-list li { display: grid; grid-template-columns: 22px 1fr auto; gap: var(--sp-3); align-items: start;
+  border: 1px solid var(--border); border-radius: var(--r-sm); padding: var(--sp-3) var(--sp-4); background: var(--surface); }
+.ops-list li.done { opacity: 0.6; }
+.ops-list input { margin-top: 3px; width: 16px; height: 16px; }
+.ops-list strong { color: var(--ink); }
+.ops-list p { margin: 4px 0 0; color: var(--ink-2); font-size: var(--t-sm); }
+.ops-list code, td code { font-family: var(--font-num); font-size: var(--t-xs); color: var(--ink); background: var(--surface-2);
+  border: 1px solid var(--border); padding: 1px 5px; border-radius: var(--r-sm); word-break: break-word; }

@@ -66,6 +66,7 @@ const SECTIONS = [
       ["Methodology", "methodology.html"],
       ["Mathematics", "mathematics.html"],
       ["Notes", "blog.html"],
+      ["Daily checklist", "ops.html"],
     ],
   },
 ];

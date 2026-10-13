@@ -61,7 +61,7 @@ const SECTIONS = [
       ["Stat arb", "research/statarb.html", "Equity long/short"],
       ["Swing", "research/swing.html"],
       ["Layered", "research/layered.html"],
-      ["Macro desk · WIP", "agent.html", "Macro"],
+      ["Macro desk", "agent.html", "Macro"],
     ],
   },
   // Three top-level items that answer one question, "how does it work",

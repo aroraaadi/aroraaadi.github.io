@@ -1,6 +1,6 @@
 /* LS books > Macro desk: the daily macro desk. Today's scenario, forward scenarios and the critics, the watchlist,
    the news, the paper book and its Alpaca mirror, the research behind it, and every run. */
-import { loadJSON, showError, fmtPct, fmtDate, fmtSigned, money, tone, el, renderStats, renderTable, tok, alpha, slotColor } from "./common.js";
+import { loadJSON, showError, fmtPct, fmtDate, fmtSigned, money, tone, el, renderStats, renderTable, tok, alpha, slotColor, buildLegend } from "./common.js";
 import { renderShell, setAsOf, onThemeChange } from "./shell.js";
 import { applyChartDefaults, draw, lineConfig, hbarConfig, doughnutConfig } from "./charts.js";
 import { ticker, sparkline } from "./terminal.js";
@@ -292,17 +292,64 @@ function verdict() {
 function chart() {
   const n = A.nav || [];
   if (!n.length) {
-    $("ag-chart").closest(".chart").hidden = true;
-    $("ag-c-note").textContent = "The line starts on the first fill.";
+    const H = (A.journal || {}).hypothetical || [];
+    if (!H.length) {
+      $("ag-chart").closest(".chart").hidden = true;
+      $("ag-c-legend").replaceChildren();
+      $("ag-c-note").textContent = "The line starts on the first fill.";
+      return;
+    }
+    // Before the first fill: the target, held over the last six months (hypothetical, labelled as such).
+    $("ag-chart").closest(".chart").hidden = false;
+    const hl = [["book", A.pending ? `Target of ${A.pending.id} (hypothetical)` : "Current book (hypothetical)", "--accent", 2.2, [5, 4]],
+                ["sixty_forty", "60/40 (SPY/AGG)", "--ink-2", 1.4], ["acwi", "ACWI", "--muted", 1.3]];
+    draw("ag-chart", lineConfig({ labels: H.map((x) => x.date), yFmt: (v) => fmtSigned(v, 1),
+      series: hl.map(([k, label, color, width, dash]) => ({ label, data: H.map((x) => x[k]), color: tok(color), width, dash })) }));
+    buildLegend("ag-c-legend", hl.map(([k, label, color]) => ({ label: `${label} ${fmtSigned(H[H.length - 1][k])}`, color: tok(color), shape: "line" })));
+    $("ag-c-meta").textContent = "no fill yet · last six months, hypothetical";
+    $("ag-c-note").textContent = `Not a record: ${A.pending ? `decision ${A.pending.id}'s target` : "the current weights"} held over the last six months, rebalanced daily, before costs. ` +
+      `The real line replaces this on the first fill${A.pending ? `, at the first close after ${day(A.pending.decided_date)}` : ""}.`;
     return;
   }
   $("ag-chart").closest(".chart").hidden = false;
-  const lines = [["nav", "Macro desk", "--accent", 2.2], ["sixty_forty", "60/40 (SPY/AGG)", "--ink-2", 1.4],
-                 ["rule", "Quadrant rule", "--warn", 1.4], ["acwi", "ACWI", "--muted", 1.2], ["sgov", "Cash (SGOV)", "--grid", 1.2]];
-  draw("ag-chart", lineConfig({ labels: n.map((x) => x.date), yFmt: (v) => usd(v),
-    series: lines.map(([k, label, color, width]) => ({ label, data: n.map((x) => x[k]), color: tok(color), width })) }));
+  const lines = [["nav", "Macro desk", "--accent", 2.4], ["sixty_forty", "60/40 (SPY/AGG)", "--ink-2", 1.4],
+                 ["acwi", "ACWI", "--muted", 1.3], ["rule", "Quadrant rule", "--warn", 1.3], ["sgov", "Cash (SGOV)", "--grid", 1.2]];
+  const cap = A.capital;
+  draw("ag-chart", lineConfig({ labels: n.map((x) => x.date), yFmt: (v) => fmtSigned(v, 1),
+    series: lines.map(([k, label, color, width]) => ({ label, data: n.map((x) => (x[k] == null ? null : x[k] / cap - 1)), color: tok(color), width })) }));
+  buildLegend("ag-c-legend", lines.map(([k, label, color]) => ({ label: `${label} ${fmtSigned(n[n.length - 1][k] / cap - 1)}`, color: tok(color), shape: "line" })));
   $("ag-c-meta").textContent = `${day(n[0].date)} to ${day(n[n.length - 1].date)}`;
-  $("ag-c-note").textContent = "Every line starts with the book's capital on its first fill and pays the same costs. 60/40 and the quadrant rule rebalance on the book's fill dates; ACWI and SGOV are bought and held.";
+  $("ag-c-note").textContent = "Return since the first fill. Every line starts with the book's capital on that day and pays the same costs; 60/40 and the quadrant rule rebalance on the book's fill dates, ACWI and SGOV are bought and held.";
+}
+
+function currentPortfolio() {
+  const J = A.journal || {};
+  const held = (J.positions || []).filter((p) => p.weight);
+  const live = liveFresh() ? Object.fromEntries((LV.positions || []).map((p) => [p.symbol, p])) : {};
+  let rows, note;
+  if (held.length) {
+    rows = held.map((p) => ({ ...p, today: live[p.symbol]?.day_pct ?? p.day_pct, since: p.unrealized_pct }));
+    $("dk-cp-meta").textContent = liveFresh() ? "live" : `at the ${day(A.last_marked)} close`;
+    const ex = A.scorecard?.exposure;
+    note = ex ? `Net ${fmtPct(ex.net, 0)} · gross ${fmtPct(ex.gross, 0)} · long ${fmtPct(ex.long, 0)} · short ${fmtPct(ex.short, 0)} · cash in SGOV ${fmtPct(ex.cash, 0)}.` : "";
+    if (A.pending) note += ` Decision ${A.pending.id} changes it at the next close.`;
+  } else if (A.pending) {
+    rows = Object.entries(A.pending.target).map(([symbol, weight]) => ({ symbol, weight, side: weight < 0 ? "short" : "long",
+      group: (S?.lines || []).find((x) => x.symbol === symbol)?.group, ...(((A.decisions || []).find((d) => d.id === A.pending.id)?.attribution || {})[symbol] || {}) }));
+    $("dk-cp-meta").textContent = `target of ${A.pending.id}`;
+    note = `Not filled yet: decision ${A.pending.id} of ${day(A.pending.decided_date)} fills at the first close after it. Until then the book is all cash.`;
+  } else {
+    rows = []; note = "All cash: no decision has filled.";
+  }
+  $("dk-cp-note").textContent = note;
+  renderTable($("dk-cp"), rows, [
+    { key: "symbol", label: "Line", fmt: (v) => el("span", { title: S?.lines?.find((x) => x.symbol === v)?.desc || "", text: v }) },
+    { key: "side", label: "Side", fmt: (v) => pill(v, v === "short" ? "down" : "up") },
+    { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v) },
+    { key: "scenario", label: "Scenario" },
+    { key: "since", label: "Since entry", num: true, fmt: (v) => cellPct(v) },
+    { key: "today", label: "Today", num: true, fmt: (v) => cellPct(v) },
+  ], { sortKey: "weight", empty: "All cash." });
 }
 
 function meketa() {
@@ -716,7 +763,7 @@ async function pollLive() {
   try {
     const lv = await loadJSON("data/desk_live.json");
     if (LV && lv.stamp === LV.stamp) return;
-    LV = lv; livePanel();
+    LV = lv; livePanel(); currentPortfolio();
   } catch { /* no live file yet */ }
 }
 
@@ -730,7 +777,7 @@ async function main() {
   setAsOf(A.latest?.date || A.last_marked || String(A.built).slice(0, 10), "DESK", { maxAge: 4 });
   tabs();
   periodButtons();
-  strip(); today(); scenarios(); cross(); livePanel(); allocation(); distribution(); verdict(); chart(); performance(); monthlyGrid(); attributionPanel(); riskPanel(); meketa();
+  strip(); chart(); currentPortfolio(); today(); scenarios(); cross(); livePanel(); allocation(); distribution(); verdict(); performance(); monthlyGrid(); attributionPanel(); riskPanel(); meketa();
   holdingsTable(); journalTables(); mirror(); decisions(); calls(); trades(); research(); record();
   $("dk-fill-q")?.addEventListener("input", trades);
   setInterval(pollLive, 60_000);

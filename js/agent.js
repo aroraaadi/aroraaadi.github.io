@@ -321,21 +321,171 @@ function meketa() {
 }
 
 function holdingsTable() {
-  const p = A.pending;
+  const p = A.pending, J = A.journal || {};
   $("ag-pending").textContent = p
     ? `Pending: decision ${p.id} of ${day(p.decided_date)} fills at the first close after it: ${Object.entries(p.target).map(([s, w]) => `${s} ${fmtPct(w, 0)}`).join(", ")}.`
     : "No target waiting to fill.";
   $("ag-h-meta").textContent = A.last_marked ? `at the ${day(A.last_marked)} close` : "";
-  renderTable($("ag-hold"), A.holdings || [], [
-    { key: "symbol", label: "Line" },
-    { key: "bucket", label: "Group" },
+  const pos = J.positions || [];
+  renderStats("dk-pos-strip", [
+    { label: "Lines held", value: String(pos.filter((x) => x.symbol !== "SGOV").length) },
+    { label: "Unrealised P&L", value: J.unrealized == null ? "–" : smoney(J.unrealized), tone: tone(J.unrealized) },
+    { label: "Realised P&L", value: J.realized == null ? "–" : smoney(J.realized), tone: tone(J.realized) },
+    { label: "Today's P&L", value: pos.length ? smoney(pos.reduce((a, x) => a + (x.day_pnl || 0), 0)) : "–", tone: tone(pos.reduce((a, x) => a + (x.day_pnl || 0), 0)) },
+    { label: "Trading costs", value: J.costs == null ? "–" : usd(J.costs) },
+    { label: "Borrow paid", value: J.borrow == null ? "–" : money(J.borrow, "USD", 2) },
+  ]);
+  renderTable($("ag-hold"), pos, [
+    { key: "symbol", label: "Line", fmt: (v, r) => el("span", { title: r.desc || "", text: v }) },
+    { key: "group", label: "Group" },
     { key: "side", label: "Side", fmt: (v) => pill(v, v === "short" ? "down" : "up") },
     { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v) },
-    { key: "target", label: "Target", num: true, fmt: (v) => fmtPct(v) },
-    { key: "value", label: "Value", num: true, fmt: (v) => usd(v) },
+    { key: "avg_entry", label: "Avg entry", num: true, fmt: (v) => (v == null ? "–" : Number(v).toFixed(2)) },
+    { key: "last", label: "Last", num: true, fmt: (v) => Number(v).toFixed(2) },
+    { key: "entry_date", label: "Since", fmt: day },
+    { key: "days_held", label: "Sessions", num: true },
+    { key: "unrealized", label: "Unrealised", num: true, fmt: pnl },
+    { key: "unrealized_pct", label: "%", num: true, fmt: (v) => cellPct(v) },
+    { key: "day_pct", label: "Today", num: true, fmt: (v) => cellPct(v) },
+    { key: "day_pnl", label: "Day P&L", num: true, fmt: pnl },
     { key: "scenario", label: "Scenario" },
     { key: "type", label: "Type", fmt: (v) => (v || "").replace("_", " ") },
-  ], { sortKey: "value", empty: "Nothing held yet." });
+  ], { sortKey: "weight", empty: "Nothing held yet: the first target fills at the first close after its decision." });
+}
+
+/* ------------------------------------------------------------------ tracking (desk/journal.py) */
+const smoney = (x) => (x == null ? "–" : (x > 0 ? "+" : "") + money(x, "USD", 0));
+const pnl = (v) => (v == null ? "–" : el("span", { class: tone(v), text: smoney(v) }));
+const cellPct = (v, dp = 2) => (v == null ? "–" : el("span", { class: tone(v), text: fmtSigned(v, dp) }));
+const sheetRows = (rows) => rows.map((r, i) => ({ _row: i + 1, ...r }));
+const ROWNUM = { key: "_row", label: "", num: true, cls: () => "sheet-rn" };
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function performance() {
+  const J = A.journal || {}, st = J.stats;
+  $("dk-pr-meta").textContent = A.inception ? `since ${day(A.inception)}` : "starts on the first fill";
+  renderTable($("dk-periods"), J.periods || [], [
+    { key: "period", label: "Period" },
+    { key: "nav", label: "Desk", num: true, fmt: (v) => cellPct(v) },
+    { key: "sixty_forty", label: "60/40", num: true, fmt: (v) => cellPct(v) },
+    { key: "acwi", label: "ACWI", num: true, fmt: (v) => cellPct(v) },
+    { key: "sgov", label: "Cash", num: true, fmt: (v) => cellPct(v) },
+    { key: "rule", label: "Quadrant rule", num: true, fmt: (v) => cellPct(v) },
+    { key: "vs", label: "Desk − 60/40", num: true, fmt: (_, r) => cellPct(r.nav != null && r.sixty_forty != null ? r.nav - r.sixty_forty : null) },
+  ], { empty: "No marks yet." });
+  const n = (v, dp = 2) => (v == null ? "–" : Number(v).toFixed(dp));
+  renderStats("dk-stats", st ? [
+    { label: "Sessions", value: String(st.sessions) }, { label: "Total", value: fmtSigned(st.total), tone: tone(st.total) },
+    { label: "CAGR", value: st.cagr == null ? "–" : fmtPct(st.cagr) }, { label: "Vol", value: fmtPct(st.vol) },
+    { label: "Sharpe", value: n(st.sharpe) }, { label: "Sortino", value: n(st.sortino) },
+    { label: "Max drawdown", value: fmtPct(st.max_drawdown), tone: "down" }, { label: "Calmar", value: n(st.calmar) },
+    { label: "Beta / ACWI", value: n(st.beta_acwi) }, { label: "Alpha / ACWI", value: st.alpha_acwi == null ? "–" : fmtSigned(st.alpha_acwi), tone: tone(st.alpha_acwi) },
+    { label: "Corr. / ACWI", value: n(st.corr_acwi) }, { label: "Up / down capture", value: `${n(st.up_capture)} / ${n(st.down_capture)}` },
+    { label: "Tracking error", value: fmtPct(st.tracking_error) }, { label: "Info ratio / 60/40", value: n(st.info_ratio) },
+    { label: "VaR 95 (day)", value: fmtPct(st.var95, 2) }, { label: "CVaR 95 (day)", value: fmtPct(st.cvar95, 2) },
+    { label: "Best / worst day", value: `${fmtSigned(st.best_day, 2)} / ${fmtSigned(st.worst_day, 2)}` },
+    { label: "Days up", value: fmtPct(st.pct_positive, 0) },
+  ] : [{ label: "Statistics", value: "–", delta: "after five sessions" }]);
+  const D = J.daily || [];
+  const charts = [["dk-dd", "dk-pnl", "dk-exp"]];
+  if (!D.length) { charts[0].forEach((id) => { $(id).closest(".chart").hidden = true; }); return; }
+  charts[0].forEach((id) => { $(id).closest(".chart").hidden = false; });
+  draw("dk-dd", lineConfig({ labels: D.map((x) => x.date), yFmt: (v) => fmtPct(v, 1),
+    series: [{ label: "Drawdown", data: D.map((x) => x.drawdown), color: tok("--down"), width: 1.5, fill: true }] }));
+  draw("dk-pnl", { type: "bar", data: { labels: D.map((x) => x.date), datasets: [
+      { label: "Desk", data: D.map((x) => x.day_ret), backgroundColor: D.map((x) => alpha(tok((x.day_ret || 0) >= 0 ? "--up" : "--down"), 0.75)) },
+      { label: "Desk − 60/40", data: D.map((x) => x.excess_day), backgroundColor: alpha(tok("--ink-2"), 0.35) }] },
+    options: { responsive: true, maintainAspectRatio: false, scales: { y: { ticks: { callback: (v) => fmtPct(v, 1) } }, x: { grid: { display: false }, ticks: { maxTicksLimit: 8, maxRotation: 0, callback(v) { return day(this.getLabelForValue(v)).replace(/, \d{4}$/, ""); } } } },
+      plugins: { tooltip: { callbacks: { label: (c) => ` ${c.dataset.label}: ${fmtSigned(c.parsed.y, 2)}` } } } } });
+  const beat = D.filter((x) => (x.excess_day || 0) > 0).length;
+  $("dk-pnl-meta").textContent = `beat 60/40 on ${beat} of ${D.length} days`;
+  draw("dk-exp", lineConfig({ labels: D.map((x) => x.date), yFmt: (v) => fmtPct(v, 0),
+    series: [{ label: "Gross", data: D.map((x) => x.gross), color: tok("--accent"), width: 1.8 },
+             { label: "Net", data: D.map((x) => x.net), color: tok("--warn"), width: 1.8 }] }));
+}
+
+function monthlyGrid() {
+  const M = (A.journal || {}).monthly || [];
+  const years = [...new Set(M.map((m) => m.month.slice(0, 4)))].sort().reverse();
+  const rows = years.map((y) => {
+    const r = { year: y };
+    let g = 1, b = 1;
+    M.filter((m) => m.month.startsWith(y)).forEach((m) => { r[m.month.slice(5)] = m; g *= 1 + (m.book || 0); b *= 1 + (m.sixty_forty || 0); });
+    r.ytd = { book: g - 1, excess: g - b };
+    return r;
+  });
+  const cell = (m) => (m ? el("span", { class: tone(m.book), title: `60/40 ${fmtSigned(m.sixty_forty)} · excess ${fmtSigned(m.excess)}`, text: fmtSigned(m.book) }) : "");
+  renderTable($("dk-monthly"), rows, [
+    { key: "year", label: "Year" },
+    ...MONTHS.map((mo, i) => ({ key: String(i + 1).padStart(2, "0"), label: mo, num: true, fmt: (v) => cell(v) })),
+    { key: "ytd", label: "Year", num: true, fmt: (v) => el("span", { class: tone(v.book), title: `vs 60/40 ${fmtSigned(v.excess)}`, text: fmtSigned(v.book) }) },
+  ], { empty: "The first month fills in after the first fill." });
+}
+
+function attributionPanel() {
+  const a = (A.journal || {}).attribution;
+  if (!a) { $("dk-attr").closest(".chart").hidden = true; $("dk-at-meta").textContent = "after two marked sessions"; return; }
+  $("dk-attr").closest(".chart").hidden = false;
+  $("dk-at-meta").textContent = `summed daily: ${fmtSigned(a.total_summed, 2)} = lines ${fmtSigned(a.explained, 2)} + costs, borrow and cash ${fmtSigned(a.other, 2)}`;
+  const L = [...a.lines].filter((x) => x.symbol !== "SGOV").sort((x, y) => y.contribution - x.contribution);
+  const show = L.length > 12 ? [...L.slice(0, 6), ...L.slice(-6)] : L;
+  draw("dk-attr", hbarConfig({ labels: show.map((x) => x.symbol), values: show.map((x) => x.contribution * 100),
+    colors: show.map((x) => tok(x.contribution >= 0 ? "--up" : "--down")), fmt: (v) => `${Number(v).toFixed(2)}%`,
+    valueLabels: show.map((x) => fmtSigned(x.contribution, 2)) }));
+  const t = (id, rows, label, f = (v) => v) => renderTable($(id), rows, [
+    { key: "key", label, fmt: f }, { key: "contribution", label: "Contribution", num: true, fmt: (v) => cellPct(v) }], { sortKey: "contribution" });
+  t("dk-attr-s", a.scenarios, "Scenario");
+  t("dk-attr-t", a.types, "Trade type", (v) => String(v).replace("_", " "));
+  t("dk-attr-g", a.groups, "Watchlist group", (v) => S?.groups?.[v] || v);
+}
+
+function riskPanel() {
+  const J = A.journal || {}, r = J.ex_ante;
+  $("dk-rk-meta").textContent = J.ahead_is_pending ? "the book after its pending fill" : "the book as held";
+  renderStats("dk-risk", r ? [
+    { label: "Ex-ante vol", value: fmtPct(r.vol), delta: "target 8%" }, { label: "1-day VaR 95", value: fmtPct(r.var95_1d, 2) },
+    { label: "1-day CVaR 95", value: fmtPct(r.cvar95_1d, 2) }, { label: "Beta / ACWI", value: r.beta_acwi == null ? "–" : r.beta_acwi.toFixed(2) },
+    { label: "Corr. / ACWI", value: r.corr_acwi == null ? "–" : r.corr_acwi.toFixed(2), tone: (r.corr_acwi || 0) > 0.6 ? "down" : "" },
+  ] : [{ label: "Ex-ante risk", value: "–", delta: "nothing at risk: all cash" }]);
+  renderTable($("dk-riskshare"), r?.risk_share || [], [
+    { key: "symbol", label: "Line" }, { key: "weight", label: "Weight", num: true, fmt: (v) => fmtPct(v) },
+    { key: "share", label: "Share of risk", num: true, fmt: (v) => cellPct(v, 1) },
+  ], { empty: "No risk lines." });
+  const al = J.alignment || [];
+  $("dk-al-meta2").textContent = J.ahead_is_pending ? "the book after its pending fill" : "the book as held";
+  renderTable($("dk-align"), al, [
+    { key: "id", label: "#" }, { key: "name", label: "Scenario" },
+    { key: "posterior", label: "Posterior", num: true, fmt: (v) => fmtPct(v, 0) },
+    { key: "status", label: "Critics", fmt: (v) => pill(v || "–", v === "kept" ? "on" : "down") },
+    { key: "alignment", label: "Book's net bet on it", num: true, fmt: (v) => cellPct(v, 1) },
+  ], { sortKey: "alignment", empty: "No scenarios yet." });
+}
+
+function journalTables() {
+  const J = A.journal || {}, e = J.edge || {};
+  const trips = sheetRows(J.trips || []);
+  if (!J.workbook) $("dk-xlsx").hidden = true;
+  $("dk-edge").replaceChildren(pill(e.verdict || "too early", e.verdict === "edge" ? "up" : e.verdict === "no edge" ? "down" : "warn"), " ",
+    e.closed ? `${e.closed} closed trips: mean ${fmtSigned(e.mean, 2)}, hit rate ${fmtPct(e.hit, 0)}, payoff ${e.payoff == null ? "–" : e.payoff.toFixed(2)}, profit factor ${e.profit_factor == null ? "–" : e.profit_factor.toFixed(2)}${e.t == null ? "" : `, t ${e.t.toFixed(2)} on weekly clusters`}. ${e.verdict_why || ""}`
+             : (e.verdict_why || "No closed trip yet."));
+  renderTable($("dk-trips"), trips, [ROWNUM,
+    { key: "symbol", label: "Line" }, { key: "status", label: "Status", fmt: (v) => pill(v, v === "open" ? "warn" : "muted") },
+    { key: "side", label: "Side" }, { key: "scenario", label: "Scen." }, { key: "type", label: "Type", fmt: (v) => (v || "").replace("_", " ") },
+    { key: "entry_date", label: "Entry", fmt: day }, { key: "avg_entry", label: "Avg in", num: true, fmt: (v) => Number(v).toFixed(2) },
+    { key: "exit_date", label: "Exit", fmt: day }, { key: "exit_price", label: "Out", num: true, fmt: (v) => (v == null ? "–" : Number(v).toFixed(2)) },
+    { key: "days_held", label: "Sess.", num: true }, { key: "gross_pnl", label: "Gross", num: true, fmt: pnl },
+    { key: "costs", label: "Costs", num: true, fmt: (v) => money(v, "USD", 2) }, { key: "net_pnl", label: "Net", num: true, fmt: pnl },
+    { key: "ret", label: "Return", num: true, fmt: (v) => cellPct(v) }, { key: "excess_6040", label: "vs 60/40", num: true, fmt: (v) => cellPct(v) },
+    { key: "decisions", label: "Decisions", cls: () => "note" },
+  ], { empty: "No trades yet." });
+  renderTable($("dk-daily"), sheetRows([...(J.daily || [])].reverse()), [ROWNUM,
+    { key: "date", label: "Date", fmt: day }, { key: "nav", label: "NAV", num: true, fmt: (v) => usd(v) },
+    { key: "day_pnl", label: "Day P&L", num: true, fmt: pnl }, { key: "day_ret", label: "Day", num: true, fmt: (v) => cellPct(v) },
+    { key: "cum_ret", label: "Since start", num: true, fmt: (v) => cellPct(v) }, { key: "sixty_forty_cum", label: "60/40", num: true, fmt: (v) => cellPct(v) },
+    { key: "excess_day", label: "vs 60/40", num: true, fmt: (v) => cellPct(v) }, { key: "drawdown", label: "Drawdown", num: true, fmt: (v) => fmtPct(v) },
+    { key: "gross", label: "Gross", num: true, fmt: (v) => fmtPct(v, 0) }, { key: "net", label: "Net", num: true, fmt: (v) => fmtPct(v, 0) },
+    { key: "lines", label: "Lines", num: true },
+  ], { empty: "No marked sessions yet." });
 }
 
 function mirror() {
@@ -389,7 +539,7 @@ function calls() {
 
 function trades() {
   const t = A.trades || [];
-  $("ag-t-meta").textContent = `${t.length} trades`;
+  $("ag-t-meta").textContent = `${t.length} fills`;
   renderTable($("ag-trades"), t, [
     { key: "date", label: "Date", fmt: day }, { key: "decision", label: "Decision" }, { key: "symbol", label: "Line" },
     { key: "side", label: "Side", fmt: (v) => pill(v, v === "buy" || v === "cover" ? "up" : "down") },
@@ -459,9 +609,10 @@ async function main() {
   setAsOf(A.latest?.date || A.last_marked || String(A.built).slice(0, 10), "DESK", { maxAge: 4 });
   tabs();
   periodButtons();
-  strip(); today(); scenarios(); cross(); verdict(); chart(); meketa(); holdingsTable(); mirror(); decisions(); calls(); trades(); research(); record();
+  strip(); today(); scenarios(); cross(); verdict(); chart(); performance(); monthlyGrid(); attributionPanel(); riskPanel(); meketa();
+  holdingsTable(); journalTables(); mirror(); decisions(); calls(); trades(); research(); record();
   await news();
-  onThemeChange(() => { applyChartDefaults(); today(); scenarios(); cross(); chart(); mirror(); });
+  onThemeChange(() => { applyChartDefaults(); today(); scenarios(); cross(); chart(); performance(); attributionPanel(); mirror(); });
 }
 
 main();

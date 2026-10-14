@@ -418,6 +418,7 @@ td.neg, .neg { color: var(--down); }
 
 button.pill { font-family: inherit; cursor: pointer; }
 button.pill:hover { border-color: var(--baseline); color: var(--ink); }
+button.pill.on:hover { color: var(--page); }   /* the selected pill's fill is --ink, so ink text vanished under the pointer */
 
 /* A run of small pills (flags, names) wraps instead of overflowing its cell. */
 .flags { display: inline-flex; flex-wrap: wrap; gap: 4px; vertical-align: middle; }

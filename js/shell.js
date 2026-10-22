@@ -47,7 +47,6 @@ const SECTIONS = [
       ["Demand tree", "research/demand.html"],
       ["Power", "research/power.html"],
       ["Renaissance 13F", "research/rentech.html"],
-      ["Small caps", "research/smallcap.html"],
       ["Data and discoveries", "research/data.html", "Data"],
     ],
   },

@@ -40,9 +40,13 @@ export async function overview(spec) {
   const s = await Promise.allSettled([
     loadJSON(`data/metrics_${spec.key}.json`), loadJSON("data/book_history.json"),
     loadJSON(`data/transactions_${spec.key}.json`),
+    spec.key === "usd" ? loadJSON("data/portfolio.json") : Promise.reject(),
   ]);
   const v = (i) => (s[i].status === "fulfilled" ? s[i].value : null);
-  const MET = v(0), HIST = v(1), TX = v(2);
+  const MET = v(0), HIST = v(1), TX = v(2), MODEL = v(3);
+  // The model's vol ceiling beside the book's realised vol (2026-10-21, PM memo: the book ran 28% against a 22% ceiling
+  // and nothing on the page said so).
+  const ceiling = MODEL && (MODEL.vol_target_band || [])[1];
   const positions = () => [...B.positions].sort((a, b) => b.weight - a.weight);
 
   setAsOf(PF.as_of);
@@ -61,7 +65,9 @@ export async function overview(spec) {
       { label: "Share of both books", value: fmtPct(B.share_of_total, 0), delta: "combined value" },
       MET ? { label: `Beta vs ${MET.benchmark}`, value: fmtNum(MET.beta),
               delta: `down ${fmtNum(MET.beta_down)} · up ${fmtNum(MET.beta_up)}` } : null,
-      MET ? { label: "Volatility", value: fmtPct(MET.vol_annual), delta: "3y, current weights" } : null,
+      MET ? { label: "Volatility", value: fmtPct(MET.vol_annual),
+              tone: ceiling && MET.vol_annual > ceiling ? "down" : undefined,
+              delta: ceiling ? `3y, current weights; the model's ceiling is ${fmtPct(ceiling, 0)}` : "3y, current weights" } : null,
       MET ? { label: "Max drawdown", value: fmtPct(MET.max_drawdown), tone: "down", delta: "3y, hypothetical" } : null,
       spec.holdingsOnly ? null : { label: spec.driftLabel, value: fmtPct(B.drift_one_way, 1),
         tone: spec.driftTone(B.drift_one_way),
@@ -240,12 +246,10 @@ export async function analytics(spec) {
   let M = null, VIEW = "held";
 
   function groups() {
+    // Risk only (2026-10-21, PM memo): these are today's weights replayed over three years on names chosen with
+    // hindsight, so a return, Sharpe, Sortino or Calmar from them (it read CAGR 49%, Sharpe 1.56) says nothing about skill.
     renderStats("g-return", [
-      { label: "CAGR", value: pct(M.cagr) },
       { label: "Volatility", value: pct(M.vol_annual) },
-      { label: "Sharpe", value: fmtNum(M.sharpe) },
-      { label: "Sortino", value: fmtNum(M.sortino) },
-      { label: "Calmar", value: fmtNum(M.calmar) },
       { label: "Max drawdown", value: pct(M.max_drawdown), tone: "down" },
       { label: "Downside dev.", value: pct(M.downside_dev) },
     ]);

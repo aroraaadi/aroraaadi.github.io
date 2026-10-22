@@ -44,8 +44,9 @@ function headline() {
     { label: "Gain since", value: money(h.start_gain), tone: tone(h.start_gain),
       delta: h.added_since_start ? `excludes ${money(h.added_since_start)} deposited since` : "no deposits since" },
     { label: "Return since", value: signedPct(h.twr), tone: tone(h.twr), delta: `SPY ${signedPct(h.spy)} same dates, ${money(h.spy_value - h.start_value)} on the same money` },
-    { label: "Net contributions", value: money(h.contributed),
-      delta: `all deposits less withdrawals since ${h.first_contribution.slice(0, 4)}; value is ${money(h.gain)} (${signedPct(h.gain_pct)}) above` },
+    // One basis on the strip (2026-10-21, PM memo): since the Questrade start. Net contributions since 2024 sat beside
+    // the start value and read as a contradiction; the money-weighted figure is in the attribution note.
+    { label: "Against SPY", value: pts(h.twr - h.spy), tone: tone(h.twr - h.spy), delta: "return since, less SPY's on the same dates" },
     { label: "Holdings", value: String(h.positions), delta: `${money(h.cash)} in cash` },
   ]);
 }
@@ -247,32 +248,26 @@ function performance() {
     `the sync recorded a value since ${fmtDate(c.since)}, the rebuild was within ${fmtPct(c.worst_gap, 1)} of it.`;
 }
 
-/* ---------- daily return vs SPY ---------- */
+/* ---------- ahead of or behind SPY ---------- */
 
+/* One line, the fund's growth over SPY's on the same days (2026-10-21, PM memo: 67 pairs of daily bars were noise). */
 function daily() {
   const D = TK.daily || [];
   if (!D.length) return;
-  const accent = tok("--accent"), ink = tok("--ink-2"), grid = tok("--grid"), base = tok("--baseline");
+  const accent = tok("--accent"), grid = tok("--grid"), base = tok("--baseline");
   const pct = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2)}%`;
   const labels = D.map((d) => d.date);
+  let f = 1, m = 1;
+  const excess = D.map((d) => { f *= 1 + d.fund; m *= 1 + d.spy; return (f / m - 1) * 100; });
   draw("tk-daily", {
-    type: "bar",
-    data: { labels, datasets: [
-      { label: "Fund", data: D.map((d) => d.fund * 100), backgroundColor: accent, borderRadius: 1, barPercentage: 0.9, categoryPercentage: 0.8 },
-      { label: "SPY", data: D.map((d) => d.spy * 100), backgroundColor: alpha(ink, 0.55), borderRadius: 1, barPercentage: 0.9, categoryPercentage: 0.8 },
-    ] },
+    type: "line",
+    data: { labels, datasets: [{ label: "Ahead of SPY", data: excess, borderColor: accent, backgroundColor: alpha(accent, 0.12),
+                                 fill: "origin", borderWidth: 1.75, pointRadius: 0, tension: 0 }] },
     options: {
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
-      plugins: {
-        legend: { display: false },
-        tooltip: { callbacks: {
-          title: (it) => fmtDate(labels[it[0].dataIndex]),
-          label: (c) => ` ${c.dataset.label}: ${pct(c.parsed.y)}`,
-          footer: (it) => { const d = D[it[0].dataIndex]; const x = (d.fund - d.spy) * 100;
-                            return `Fund ${x >= 0 ? "ahead" : "behind"} by ${Math.abs(x).toFixed(2)} pts`; },
-        } },
-      },
+      plugins: { legend: { display: false },
+                 tooltip: { callbacks: { title: (it) => fmtDate(labels[it[0].dataIndex]), label: (c) => ` Fund against SPY: ${pct(c.parsed.y)}` } } },
       scales: {
         x: { grid: { display: false }, border: { color: base },
              ticks: { maxTicksLimit: 8, autoSkip: true, maxRotation: 0,
@@ -282,19 +277,14 @@ function daily() {
       },
     },
   });
-  const lg = $("tk-daily-legend"); lg.innerHTML = "";
-  [["Fund", accent], ["SPY", alpha(ink, 0.55)]].forEach(([t, c]) =>
-    lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-rect", style: `background:${c}` }), el("span", { text: t })])));
-  const ahead = D.filter((d) => d.fund > d.spy).length;
-  const opp = D.filter((d) => Math.sign(d.fund) !== Math.sign(d.spy) && d.fund !== 0 && d.spy !== 0).length;
-  const mean = (k) => D.reduce((s, d) => s + d[k], 0) / D.length;
+  $("tk-daily-legend").innerHTML = "";
+  const last = excess[excess.length - 1];
   $("tk-daily-meta").textContent = `${D.length} trading days since ${fmtDate(TK.headline.since)}` +
-    (LIVE && LIVE.market === "open" ? " · today's bar is live" : "");
+    (LIVE && LIVE.market === "open" ? " · today is live" : "");
   $("tk-daily-note").textContent =
-    `The fund beat SPY on ${ahead} of ${D.length} days and moved the opposite way on ${opp}. ` +
-    `Average day: fund ${pct(mean("fund") * 100)}, SPY ${pct(mean("spy") * 100)}. ` +
-    "Each bar is one US trading day's return; SPY with dividends reinvested net of the 15% TFSA withholding, both in Canadian dollars, so a move in the " +
-    "exchange rate shows in both.";
+    `The fund's growth over SPY's since ${fmtDate(TK.headline.since)}, compounded day by day: ${pct(last)} now ` +
+    `(${last >= 0 ? "ahead" : "behind"}). Above zero the fund is ahead. SPY with dividends reinvested net of the 15% TFSA ` +
+    "withholding, both in Canadian dollars.";
 }
 
 /* ---------- attribution and the model ---------- */
@@ -312,9 +302,12 @@ function attribution() {
     { label: "From the stocks", value: pts(S.explained - S.currency), tone: tone(S.explained - S.currency), delta: "price moves, in their own currency" },
     { label: "From the US dollar", value: pts(S.currency), tone: tone(S.currency), delta: "USD/CAD on the US holdings" },
     { label: "Other", value: pts(S.other), tone: tone(S.other), delta: "options, a fee rebate, fills, compounding" },
-    { label: "Money-weighted", value: S.mwr_since_first == null ? "–" : `${signedPct(S.mwr_since_first)} a year`,
-      delta: `every deposit since ${S.first_deposit.slice(0, 4)}, timing included` },
   ]);
+  // The point of the panel in one sentence (2026-10-21, PM memo): it used to sit in a 15-line note.
+  const stocks = S.explained - S.currency;
+  $("at-lead").textContent = `${signedPct(S.twr)} against SPY's ${signedPct(S.spy)}: the stocks gave ${pts(stocks)}, ` +
+    `the US dollar ${pts(S.currency)} and everything else (options, a fee rebate, fills) ${pts(S.other)}` +
+    (stocks < 0 && S.twr > 0 ? ". The gain did not come from stock picking." : ".");
   const H = AT.holdings, top = H.slice(0, 5), bottom = H.slice(-5).filter((r) => !top.includes(r)).reverse();
   const max = Math.max(...H.map((r) => Math.abs(r.contribution)), 1e-9);
   const bars = $("at-bars"); bars.innerHTML = "";
@@ -339,7 +332,8 @@ function attribution() {
         `${e.factor} ${e.beta >= 0 ? "+" : "−"}${Math.abs(e.beta).toFixed(2)} (t ${e.t})`).join(", ") +
       `; ${Math.round(F.r2 * 100)}% of daily moves explained. A market beta above one means the book moves more than SPY.`
     : "";
-  $("at-note").textContent = `Weight shows the book's share then SPY's. ${AT.method.contribution} ${AT.method.sectors} ${AT.method.other} ${AT.method.blended}`;
+  $("at-note").textContent = `Weight shows the book's share then SPY's. ${AT.method.contribution} ${AT.method.sectors} ${AT.method.other} ${AT.method.blended}` +
+    (S.mwr_since_first == null ? "" : ` Money-weighted, every deposit since ${S.first_deposit.slice(0, 4)} with its timing: ${signedPct(S.mwr_since_first)} a year (a different window from the figures above).`);
 }
 
 function modelVsHeld() {

@@ -152,7 +152,9 @@ const dateTicks = (labels) => {
   const first = labels[0], last = labels[span - 1];
   const days = typeof first === "string" && typeof last === "string" && /^\d{4}-\d{2}-\d{2}/.test(first) && /^\d{4}-\d{2}-\d{2}/.test(last)
     ? (parseDate(last) - parseDate(first)) / 864e5 : null;
-  const byDay = span > 1 && span <= 90 && (days == null || days <= 150);
+  // Judged on the calendar span when the labels are dates: a daily-padded 97-day series fell back to month labels and
+  // printed "Jul 26" four times (2026-10-21).
+  const byDay = span > 1 && (days != null ? days <= 150 : span <= 90);
   // Not every line chart has dates on its x-axis: the volatility signature
   // plot is labelled in minutes and the spike-decay chart in day counts.
   // Formatting those as dates printed "Invalid Date" across the axis.

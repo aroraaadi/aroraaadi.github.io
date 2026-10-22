@@ -1,7 +1,7 @@
 /* Held vs model: the USD Questrade book as held against the engine's
    suggestion, day by day (held_vs_model.py). */
 
-import { loadJSON, showError, el, fmtPct, fmtDate, renderStats, renderTable, tok, signedPct, tone } from "./common.js";
+import { loadJSON, showError, el, fmtPct, fmtDate, renderStats, renderTable, tok, signedPct, tone, alpha } from "./common.js";
 import { renderShell, setAsOf, onThemeChange } from "./shell.js";
 import { draw, lineConfig, applyChartDefaults } from "./charts.js";
 
@@ -18,6 +18,10 @@ function head() {
   renderStats("hm-strip", [
     { label: "Held", value: signedPct(S.held, 2), tone: tone(S.held), delta: `including ${fmtPct(S.cash, 1)} cash` },
     { label: "Model's suggestion", value: signedPct(S.model, 2), tone: tone(S.model), delta: "fully invested, no costs" },
+    S.spy_beta == null ? null : { label: "Beta-matched S&P", value: signedPct(S.spy_beta, 2), tone: tone(S.spy_beta),
+      delta: `SPY × ${S.beta}, the held book's beta; held ${signedPct(S.held - S.spy_beta, 2)} against it` },
+    S.universe == null ? null : { label: "Cap-weighted universe", value: signedPct(S.universe, 2), tone: tone(S.universe),
+      delta: `the model's prior; model ${signedPct(S.model - S.universe, 2)} against it` },
     { label: "Difference", value: signedPct(S.difference, 2), tone: tone(S.difference), delta: S.difference >= 0 ? "held ahead" : "model ahead" },
     { label: "Days held was ahead", value: `${S.days_held_ahead} of ${D.sessions}`, delta: "session by session" },
     { label: "Overlap", value: fmtPct(S.overlap, 0), delta: "weight the two books share" },
@@ -29,16 +33,21 @@ function chart() {
   const cfg = lineConfig({ labels: D.series.map((p) => p.date), yFmt: (v) => `${v >= 100 ? "+" : ""}${(v - 100).toFixed(1)}%`, series: [
     { label: "Held", data: D.series.map((p) => p.held), color: accent, width: 2 },
     { label: "Model's suggestion", data: D.series.map((p) => p.model), color: ink, width: 1.5, dash: [4, 3] },
+    // 2026-10-21 (PM memo): the yardsticks a 1.5-beta book should be judged against.
+    ...(D.summary.spy_beta == null ? [] : [{ label: "Beta-matched S&P", data: D.series.map((p) => p.spy_beta), color: alpha(ink, 0.45), width: 1.25 }]),
+    ...(D.summary.universe == null ? [] : [{ label: "Cap-weighted universe", data: D.series.map((p) => p.universe), color: alpha(ink, 0.45), width: 1.25, dash: [1, 3] }]),
   ] });
   cfg.options.plugins.legend = { display: false };
   cfg.options.plugins.tooltip = { callbacks: { label: (c) => ` ${c.dataset.label}: ${signedPct(c.parsed.y / 100 - 1, 2)}` } };
   draw("hm-chart", cfg);
   const lg = $("hm-legend"); lg.innerHTML = "";
-  [["Held", accent], ["Model's suggestion", ink]].forEach(([t, c]) =>
+  [["Held", accent], ["Model's suggestion", ink],
+   ...(D.summary.spy_beta == null ? [] : [["Beta-matched S&P", alpha(ink, 0.45)]]),
+   ...(D.summary.universe == null ? [] : [["Cap-weighted universe (dotted)", alpha(ink, 0.45)]])].forEach(([t, c]) =>
     lg.appendChild(el("span", { class: "key" }, [el("span", { class: "swatch-line", style: `border-top-color:${c}` }), el("span", { text: t })])));
   $("hm-meta").textContent = `${fmtDate(D.since)} to ${fmtDate(D.as_of)}`;
   const M = D.method;
-  $("hm-note").textContent = `${M.held} ${M.model} ${M.costs}`;
+  $("hm-note").textContent = `${M.held} ${M.model} ${M.benchmarks || ""} ${M.costs}`;
 }
 
 function weights() {

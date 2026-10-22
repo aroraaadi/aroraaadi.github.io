@@ -19,7 +19,7 @@ function coverage() {
   const rows = IDX.names.map((r) => ({
     symbol: r.symbol, name: r.name, filings: r.filings || 0, latest: r.latest_report || (r.latest || "").slice(0, 10) || null,
     call: KIND_ORDER.filter((k) => CALL_KINDS.has(k) && r.counts?.[k]).length > 0,
-    counts: r.counts || {}, status: r.status,
+    counts: r.counts || {}, status: r.status, latest_call: r.latest_call || null, behind: !!r.calls_behind,
   }));
   renderTable(document.getElementById("tx-cov"), rows, [
     { key: "symbol", label: "Name", fmt: (v) => el("span", { class: "sym", text: v }) },
@@ -29,7 +29,12 @@ function coverage() {
     { key: "counts", label: "Documents", fmt: (c) => el("span", { class: "flags" },
         KIND_ORDER.filter((k) => c[k]).map((k) => el("span", { class: `pill ${CALL_KINDS.has(k) ? "book" : ""}`, text: `${SHORT[k]} ${c[k]}` }))) },
     { key: "filings", label: "Quarters", num: true },
-    { key: "latest", label: "Latest", fmt: (v) => (v ? fmtDate(v) : "—") },
+    { key: "latest", label: "Latest release", fmt: (v) => (v ? fmtDate(v) : "—") },
+    // 2026-10-22: the feed can lag a quarter; "behind" = a newer release exists without its call.
+    { key: "latest_call", label: "Newest call", fmt: (v, r) => v
+        ? el("span", { class: r.behind ? "pill down" : "", text: fmtDate(v) + (r.behind ? " · behind" : ""),
+                       title: r.behind ? "the feed has not published this quarter's call yet" : "" })
+        : "—" },
   ], { sortKey: "symbol", dir: 1 });
   const tbody = document.querySelector("#tx-cov tbody");
   [...tbody.querySelectorAll("tr")].forEach((tr) => {

@@ -24,7 +24,7 @@ const SECTIONS = [
     ],
   },
   {
-    id: "research", label: "Research", root: "research/heldmodel.html",
+    id: "research", label: "Research", root: "research/hub.html",
     // Pages read as groups; the third element names the group a page starts.
     nav: [
       ["Held vs model", "research/heldmodel.html", "Model"],
@@ -77,11 +77,25 @@ const SECTIONS = [
       ["Methodology", "methodology.html"],
       ["Mathematics", "mathematics.html"],
       ["Notes", "blog.html"],
-      ["Decisions", "thisweek.html"],
-      ["Daily checklist", "ops.html"],
     ],
   },
+  // The owner's operating pages, off the top row (2026-10-22, PM memo: operator notes sat in the reader's navigation).
+  // Reached from the header's "Ops" link and the command palette; on these pages the second row shows both.
+  { id: "ops", label: "Ops", root: "thisweek.html", hidden: true, nav: [
+      ["Decisions", "thisweek.html"],
+      ["Daily checklist", "ops.html"],
+    ] },
 ];
+
+/* The pages of a grouped section, by group: [[group, [[label, path], ...]], ...]. */
+export function sectionGroups(id) {
+  const out = [];
+  for (const [label, p, group] of (SECTIONS.find((s) => s.id === id) || { nav: [] }).nav) {
+    if (group || !out.length) out.push([group || "", []]);
+    out[out.length - 1][1].push([label, p]);
+  }
+  return out;
+}
 
 const DIRS = new Set(["usd", "cad", "research", "venture"]);
 
@@ -238,13 +252,15 @@ export function renderShell({ asOf = null, asOfLabel = "AS OF" } = {}) {
   const r1 = el("div", { class: "shell-r1" }, [
     el("a", { class: "brand", href: href("index.html") }, [mark, el("span", { class: "brand-word", text: "Two Books" })]),
     el("nav", { class: "shell-sections", "aria-label": "Sections" },
-      SECTIONS.map((s) =>
+      SECTIONS.filter((s) => !s.hidden).map((s) =>
         el("a", { href: href(s.root), "data-book": s.book || null,
                   "aria-current": s.id === section.id ? "page" : null },
            [s.book ? el("span", { class: "bk", "aria-hidden": "true" }) : null,
             el("span", { text: s.label })]))),
     el("div", { class: "shell-right" }, [
       el("span", { class: "asof", id: "asof" }),
+      el("a", { class: "icon-btn", href: href("thisweek.html"), title: "Decisions and the daily checklist", text: "Ops",
+                "aria-current": section.id === "ops" ? "page" : null }),
       el("button", { class: "icon-btn", id: "cmdk-btn", type: "button",
                      "aria-label": "Open command palette (press /)", text: "⌘ /" }),
       el("button", { class: "icon-btn", id: "theme-btn", type: "button",
@@ -259,8 +275,17 @@ export function renderShell({ asOf = null, asOfLabel = "AS OF" } = {}) {
 
   const kids = [r1];
   if (section.nav.length) {
+    // A grouped section with many pages (Research: 21) shows only the current group, after a link to its index
+    // (2026-10-22, PM memo: the row overflowed at 1440px). On the index itself the row lists the groups.
+    let nav = section.nav;
+    if (section.id === "research") {
+      const groups = sectionGroups("research");
+      const mine = groups.find(([, pages]) => pages.some(([, p]) => p === here));
+      nav = [["All research", section.root], ...(mine ? mine[1].map(([l, p], i) => [l, p, i === 0 ? mine[0] : undefined])
+                                                 : groups.map(([g, pages]) => [g, pages[0][1]]))];
+    }
     kids.push(el("nav", { class: "shell-r2", "aria-label": `${section.label} pages` },
-      section.nav.flatMap(([label, p, group]) => [
+      nav.flatMap(([label, p, group]) => [
         group ? el("span", { class: "r2-group", "aria-hidden": "true", text: group }) : null,
         el("a", { href: href(p), text: label,
                   "aria-current": p === here ? "page" : null })].filter(Boolean))));

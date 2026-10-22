@@ -120,6 +120,13 @@ function card(D, sym) {
   for (const c of r.consistency || []) lines.push(`${c.severity.toUpperCase()}: ${c.note}${c.year ? " (" + c.year + ")" : ""}.`);
   const path = (r.drift || {}).path;
   if (path) lines.push(`Drift to ${fmtDate(path.ttm_end)}: revenue ${fmtNum(path.revenue.score, 2)}, EBIT margin ${fmtNum(path.ebit_margin.score, 2)} (0 base, +1 bull, −1 bear)${path.judged ? "" : "; under a quarter of the year has elapsed"}.`);
+  const sv = r.sensitivity;
+  if (sv && sv.base != null) {
+    const span = (a, b) => (a == null || b == null ? "–" : `${pct(a, 1)}–${pct(b, 1)}`);
+    lines.push(`Terminal assumptions: implied return ${pct(sv.base, 1)} (g ±1pt: ${span(sv.g_down, sv.g_up)}` +
+      (sv.ronic_down != null ? `; RONIC ±5pt: ${span(sv.ronic_down, sv.ronic_up)}` : "") +
+      `)${sv.tv_share != null ? `; terminal value ${pct(sv.tv_share, 0)} of value` : ""}.`);
+  }
   if (r.stress) lines.push("Macro stress, change in base value: " + Object.entries(r.stress).map(([k, v]) => `${SHOCK[k] || k} ${pct(v, 0)}`).join(", ") + ".");
   if (r.gate) for (const x of [...(r.gate.reasons || []), ...(r.gate.watch || [])]) lines.push(`Gate: ${x}`);
   b.appendChild(el("ul", {}, lines.map((t) => el("li", { text: t }))));

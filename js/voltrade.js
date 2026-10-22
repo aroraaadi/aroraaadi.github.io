@@ -8,7 +8,7 @@ const pct = (x, dp = 1) => (x == null ? "—" : fmtPct(x, dp));
 const pts = (x, dp = 1) => (x == null ? "—" : `${signed(x * 100, dp)} pts`);
 const bp = (x, dp = 0) => (x == null || Number.isNaN(x) ? "—" : `${signed(x, dp)} bp`);
 const tstat = (t) => (t == null || Number.isNaN(t) ? "—" : fmtNum(t, 2));
-const GRADE = { established: "up", "established against": "down", "not established": "", "no test": "" };
+const GRADE = { established: "", "established against": "down", "not established": "", "no test": "" };
 const STRUCT = { short_condor: "Short iron condor", long_straddle: "Long straddle", calendar: "Calendar" };
 const MODE = { rules_as_written: "Papers' rules as written", sell_gated_rank: "Sell, gated, IV rank required", sell_gated: "Sell, gated (the policy)",
                always_short: "Always short condor", always_long: "Always long straddle", never: "Never" };
@@ -103,7 +103,10 @@ function verdicts() {
   renderTable(document.getElementById("vt-verdicts"), rows, [
     { key: "rule", label: "Rule" }, { key: "claim", label: "What it claims" }, { key: "n", label: "n", num: true },
     { key: "t", label: "t", num: true, cls: (r) => signClass(Math.abs(r.t) >= 3 ? r.t : 0), fmt: tstat },
-    { key: "grade", label: "Grade", fmt: (v) => el("span", { class: `pill ${GRADE[v] || ""}`, text: v }) },
+    // Every option here is priced by Black-Scholes off VIX (no stored option prices), so a pass is a property of
+    // that pricing model, not evidence (2026-10-22, PM memo); the internal grade still switches the rule on.
+    { key: "grade", label: "Grade", fmt: (v) => el("span", { class: `pill ${GRADE[v] || ""}`,
+        text: v === "established" ? "synthetic pass, not evidence" : v }) },
     { key: "detail", label: "" },
     { key: "live", label: "Traded", fmt: (v) => (v == null ? "—" : el("span", { class: `pill ${v ? "on" : ""}`, text: v ? "yes" : "no" })) },
   ]);

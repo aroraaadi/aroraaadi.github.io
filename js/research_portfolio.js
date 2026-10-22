@@ -24,6 +24,11 @@ function renderAll() {
       delta: PORT.vol_band_met ? "inside target band" : "outside band",
       deltaTone: PORT.vol_band_met ? "up" : "down" },
     { label: "Vol target", value: PORT.vol_target_band.map((v) => fmtPct(v, 0)).join("–") },
+    // The model's vol is an estimate; this is the same weights over the last year (2026-10-22).
+    PORT.realised_vol == null ? null : { label: "Realised, last year", value: fmtPct(PORT.realised_vol),
+      delta: PORT.realised_vol > PORT.vol_target_band[1] ? "above the ceiling" : "inside the ceiling",
+      deltaTone: PORT.realised_vol > PORT.vol_target_band[1] ? "down" : "up" },
+    PORT.book_beta == null ? null : { label: "Beta to the S&P", value: PORT.book_beta.toFixed(2), delta: `cap ${PORT.beta_cap}` },
     { label: "Max position", value: fmtPct(PORT.max_weight, 0) },
     { label: "Min-var vol", value: fmtPct(PORT.min_var_vol) },
   ]);

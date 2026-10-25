@@ -111,6 +111,21 @@ function timeCharts() {
 
 function render() { strip(); tables(); curveChart(); timeCharts(); }
 
+/* Free-text notes under the breadth line, saved on a debounce (as the company model's notes are). */
+function wireNotes() {
+  const box = $("mk-notes"), state = $("mk-notes-state"), KEY = "mk-notes-breadth";
+  let t = null;
+  try { box.value = localStorage.getItem(KEY) || ""; } catch { box.value = ""; }
+  box.addEventListener("input", () => {
+    clearTimeout(t);
+    state.textContent = "Saving…";
+    t = setTimeout(() => {
+      try { localStorage.setItem(KEY, box.value); state.textContent = `Saved ${new Date().toLocaleTimeString()}`; }
+      catch { state.textContent = "Could not save (private browsing?)"; }
+    }, 500);
+  });
+}
+
 async function main() {
   renderShell();
   applyChartDefaults();
@@ -118,6 +133,7 @@ async function main() {
   if (!M) { showError($("error"), new Error("The market overview has not been published yet.")); return; }
   setAsOf(M.as_of, "AS OF");
   $("mk-method").textContent = M.method;
+  wireNotes();
   render();
   onThemeChange(() => { applyChartDefaults(); render(); });
 }

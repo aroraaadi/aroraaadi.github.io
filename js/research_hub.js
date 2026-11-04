@@ -1,5 +1,5 @@
 // Research: one page that says what each research page answers, by group (2026-10-22, PM memo: 21 tabs in one row).
-import { el } from "./common.js";
+import { el, loadJSON, base } from "./common.js";
 import { renderShell, sectionGroups } from "./shell.js";
 
 const WHAT = {
@@ -35,3 +35,11 @@ for (const [group, pages] of sectionGroups("research")) {
       el("li", {}, [el("a", { href: `../${p}`, text: label }), el("span", { class: "note", text: ` · ${WHAT[p] || ""}` })])))]),
   ]));
 }
+
+// Pitches: every single-name pitch PDF, newest first (docs/data/pitches.json; links open sealed via shell.js).
+loadJSON("data/pitches.json").then(({ pitches }) => root.prepend(el("div", { class: "panel" }, [
+  el("div", { class: "panel-h" }, [el("h2", { text: "Pitches" }), el("span", { class: "spacer" }), el("span", { class: "note", text: "PDF" })]),
+  el("div", { class: "panel-b" }, [el("ul", { class: "hub-list" }, pitches.map((p) =>
+    el("li", {}, [el("a", { href: base() + p.path, target: "_blank", rel: "noopener", text: `${p.symbol} · ${p.date}` }),
+                  el("span", { class: "note", text: ` · ${p.call}` })])))]),
+]))).catch(() => {});
